@@ -1,0 +1,18 @@
+﻿using Core.DataAccess;
+using Core.Entities;
+using Entities.Concrete;
+using Entities.DTOs;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccess.Abstract
+{
+    public interface IGiderDal : IEntityRepository<Gider>
+    {
+        List<GiderDetailDto> GetGiderDetails();
+        List<GiderDetailDto> GetListGiderDetailsKoyAndDonemId(int koyId, byte donemId);
+    }
+}
