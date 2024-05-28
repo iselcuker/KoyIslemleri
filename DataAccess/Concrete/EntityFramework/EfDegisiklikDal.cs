@@ -11,5 +11,6 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfDegisiklikDal : EfEntityRepositoryBase<Degisiklik, KoyButcesiContext>, IDegisiklikDal
     {
+
     }
 }

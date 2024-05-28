@@ -15,13 +15,20 @@ namespace Forms
 {
     public partial class FrmTahminiButce : Form
     {
+
+
         private TahminiButceManager tahminiButceManager;
         private TahminiButceGelirManager tahminiButceGelirManager;
+
         private KoyManager koyManager;
         private DonemManager donemManager;
         private int _seciliKoyIndex;
         private byte _seciliDonemIndex;
 
+        private FrmAnaSayfa _anaSayfaForm;
+        private FrmTahminiButce _tahminiButceForm;
+
+        private decimal kalanButceTutari; // Kalan bütçe tutarını takip etmek için
 
         public FrmTahminiButce(int seciliKoyIndex, byte seciliDonemIndex)
         {
@@ -32,31 +39,49 @@ namespace Forms
             _seciliDonemIndex = seciliDonemIndex;
 
             tahminiButceManager = new TahminiButceManager(new EfTahminiButceDal());
+
             koyManager = new KoyManager(new EfKoyDal());
             donemManager = new DonemManager(new EfDonemDal());
 
+
+
             pnlEkButceButonlari.Visible = false;
+
+
         }
 
         public void load_form(object Form)
         {
-            if (this.pnlButceFormlari.Controls.Count > 0)
-                this.pnlButceFormlari.Controls.RemoveAt(0);
+            try
+            {
+                // Kalan bütçeyi yükleme
+                List<TahminiButce> tahminiButceList = tahminiButceManager.GetListByKoyIdAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
+                if (tahminiButceList != null && tahminiButceList.Count > 0)
+                {
+                    kalanButceTutari = tahminiButceList.Sum(tb => tb.TahminiButceTutari);
+                }
+                else
+                {
+                    MessageBox.Show("Tahmini bütçe bulunamadı!");
+                }
 
-            Form frm = Form as Form;
-            frm.TopLevel = false;
-            this.pnlButceFormlari.Controls.Add(frm);
-            this.pnlButceFormlari.Tag = frm;
+                // Mevcut gelirleri topla ve kalan bütçeden çıkar
+                List<TahminiButceGelir> mevcutGelirler = tahminiButceGelirManager.GetListByKoyIdAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
+                decimal toplamGelir = mevcutGelirler.Sum(g => g.TahimiGelirTutari);
+                kalanButceTutari -= toplamGelir;
 
-            //lblButceTutari.Visible = false;
-            //txtButceTutari.Visible = false;
-            //pcBoxKaydet.Visible = false;
-            //pcBoxSil.Visible = false;
-            //pcBoxGuncelle.Visible = false;
-            //dgwTahminiButceler.Visible = false;
-            //pcBoxEkButce.Visible = false;
-            pnlButceButonlari.Visible = true;
-            frm.Show();
+                if (kalanButceTutari <= 0)
+                {
+                    pcBoxTahminiGelir.Enabled = false; // Kalan bütçe sıfır veya negatif ise butonu devre dışı bırak
+                    MessageBox.Show("Tahmini Bütçe Tutarına Ulaştınız. Yeni kayıt giremezsiniz.");
+                }
+
+                TahminiButceler();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Tahmini bütçe yüklenirken bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void pcBoxTahminiGelir_Click(object sender, EventArgs e)
@@ -81,8 +106,19 @@ namespace Forms
 
         private void pcBoxTahminiGider_Click(object sender, EventArgs e)
         {
-            load_form(new FrmTahminiGider());
-            // pnlButceFormlari.Location = new Point(200, 210);
+            FrmAnaSayfa frmAnaSayfa = Application.OpenForms["FrmAnaSayfa"] as FrmAnaSayfa;
+            if (frmAnaSayfa != null)
+            {
+                Koy secilenKoy = frmAnaSayfa.CmbKoy.SelectedItem as Koy;
+                int seciliKoyIndex = secilenKoy?.Id ?? _seciliKoyIndex;
+
+                Donem secilenDonem = frmAnaSayfa.CmbDonem.SelectedItem as Donem;
+                byte seciliDonemIndex = secilenDonem != null ? Convert.ToByte(secilenDonem.Id) : _seciliDonemIndex;
+                FrmTahminiGider frmTahminiGider = new FrmTahminiGider(seciliKoyIndex, seciliDonemIndex);
+                load_form(new FrmTahminiGider(seciliKoyIndex, seciliDonemIndex));
+            }
+
+
         }
 
         private void pcBoxIdariIsler_Click(object sender, EventArgs e)
@@ -113,34 +149,8 @@ namespace Forms
             //pnlButceFormlari.Location = new Point(200, 210);
         }
 
-        //private void pcBoxKaydet_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        if (!string.IsNullOrEmpty(txtButceTutari.Text))
-        //        {
-        //            TahminiButce yeniTahminiButce = new TahminiButce();
-        //            yeniTahminiButce.KoyId = _seciliKoyIndex;
-        //            yeniTahminiButce.DonemId = _seciliDonemIndex;
-        //            yeniTahminiButce.TahminiButceTutari = Convert.ToDecimal(txtButceTutari.Text);
 
-        //            tahminiButceManager.Add(yeniTahminiButce);
-        //            MessageBox.Show("Tahmini Bütçe Kaydı Yapıldı");
-        //            txtButceTutari.Text = "";
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Lütfen Boş Alanları Doldurunuz!");
-        //        }
-        //    }
-        //    catch (Exception)
-        //    {
-        //        MessageBox.Show("Tahmini Bütçe Kaydı Yapılamadı !!!");
-        //        throw;
-        //    }
-        //}
-
-        private bool tahminiButceKaydedildi = false;
+        private bool tahminiButceIkınciKayitKontrolu = false;
 
         private void pcBoxKaydet_Click(object sender, EventArgs e)
         {
@@ -162,11 +172,10 @@ namespace Forms
                     yeniTahminiButce.TahminiButceTutari = Convert.ToDecimal(txtButceTutari.Text);
 
                     tahminiButceManager.Add(yeniTahminiButce);
+                    tahminiButceIkınciKayitKontrolu = true; // aynı kaydın birden fazla girilememesi kontrolü
+                    TahminiButceler();
                     MessageBox.Show("Tahmini Bütçe Kaydı Yapıldı");
                     txtButceTutari.Text = "";
-
-                    tahminiButceKaydedildi = true; // Bayrağı true olarak işaretleyelim
-                    TahminiButceler();
                 }
                 else
                 {
@@ -179,11 +188,6 @@ namespace Forms
                 throw;
             }
         }
-
-
-
-
-
 
         private void TahminiButceler()
         {
@@ -221,7 +225,6 @@ namespace Forms
                     // Kullanıcının satır boyutlarını değiştirmesini engelle.
                     dgvTahminiButceler.AllowUserToResizeRows = false;
                 }
-
             }
             catch (Exception)
             {
@@ -232,7 +235,40 @@ namespace Forms
 
         private void FrmTahminiButce_Load(object sender, EventArgs e)
         {
-            TahminiButceler();
+            //TahminiButceler();
+            try
+            {
+                // Kalan bütçeyi yükleme
+                List<TahminiButce> tahminiButceList = tahminiButceManager.GetListByKoyIdAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
+                if (tahminiButceList != null && tahminiButceList.Count > 0)
+                {
+                    kalanButceTutari = tahminiButceList.Sum(tb => tb.TahminiButceTutari);
+                }
+                else
+                {
+                    MessageBox.Show("Tahmini bütçe bulunamadı!");
+                }
+
+                TahminiButceler();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Tahmini bütçe yüklenirken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        private void load_form(Form frm)
+        {
+            if (frm.IsDisposed) // Eğer form zaten atıldıysa işlem yapma
+                return;
+
+            if (this.pnlButceFormlari.Controls.Count > 0)
+                this.pnlButceFormlari.Controls.RemoveAt(0);
+
+            frm.TopLevel = false;
+            this.pnlButceFormlari.Controls.Add(frm);
+            this.pnlButceFormlari.Tag = frm;
+            frm.Show();
         }
 
         private void dgvTahminiButceler_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -254,7 +290,7 @@ namespace Forms
             }
         }
 
-        private void pcBoxGuncelle_Click(object sender, EventArgs e)
+        public void pcBoxGuncelle_Click(object sender, EventArgs e)
         {
             try
             {
@@ -310,7 +346,7 @@ namespace Forms
             }
         }
 
-        private void pcBoxSil_Click(object sender, EventArgs e)
+        public void pcBoxSil_Click(object sender, EventArgs e)
         {
             try
             {
@@ -321,12 +357,9 @@ namespace Forms
 
                     // Gider silinir
                     tahminiButceManager.Delete(new TahminiButce { Id = silinecekTahminiButceId });
-
-
-
+                    txtButceTutari.Text = string.Empty;
                     // Giderler listesi yenilenir
                     TahminiButceler();
-                    
                 }
             }
             catch (Exception ex)

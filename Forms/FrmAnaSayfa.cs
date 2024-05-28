@@ -18,6 +18,12 @@ namespace Forms
         private DonemManager donemManager;
         private TahminiButceGelirManager tahminiButceGelirManager;
 
+        //BOTUN KONTROLÜ ÝÇÝN
+        private FrmTahminiButce tahminiButceForm;
+        private FrmTahminiGelir tahminiGelirForm;
+
+
+
         NotManager notManager;
 
         private FrmGelir _frmGelir;
@@ -36,6 +42,17 @@ namespace Forms
         public FrmAnaSayfa()
         {
             InitializeComponent();
+
+            // seciliKoyIndex ve seciliDonemIndex deðerlerini uygun þekilde ayarlayýn
+            int seciliKoyIndex = 0; // Örneðin, ilk köy seçili
+            byte seciliDonemIndex = 0; // Örneðin, ilk dönem seçili
+
+
+            new FrmTahminiButce(seciliKoyIndex, seciliDonemIndex);
+
+
+            // FrmTahminiGelir formunu oluþtur
+            tahminiGelirForm = new FrmTahminiGelir(seciliKoyIndex, seciliDonemIndex);
 
             koyManager = new KoyManager(new EfKoyDal());
             donemManager = new DonemManager(new EfDonemDal());
@@ -93,14 +110,11 @@ namespace Forms
                 if (frmAnaSayfa != null)
                 {
                     // Toplam gelir ve giderleri etiketlere ekleyerek yazdýralým
-                    //frmAnaSayfa.lblToplamGelir.Text = string.Format("{0:}.-TL", toplamGelir);
                     frmAnaSayfa.lblToplamGelir.Text = string.Format("{0:#,0.00}.-TL", toplamGelir);
-                    //frmAnaSayfa.lblToplamGider.Text = string.Format("{0:}.-TL", toplamGider);
                     frmAnaSayfa.lblToplamGider.Text = string.Format("{0:#,0.00}.-TL", toplamGider);
                 }
             }
         }
-
 
         //ilçe verilerini kullanýcýya sunmak ve bir ComboBox içinde görüntülemek için IlceleriDoldur() adýnda bir metot yazýyoruz
         private void IlceleriDoldur()
@@ -304,7 +318,6 @@ namespace Forms
                 int seciliKoyIndex = secilenKoy.Id;
                 Donem secilenDonem = cmbDonem.SelectedItem as Donem;
                 byte seciliDonemIndex = Convert.ToByte(secilenDonem.Id);
-                // FrmGelir formunu oluþtururken cmbKoy ve cmbDonem'in seçili index deðerini parametre olarak geçirin
                 FrmTahminiButce frmTahminiButce = new FrmTahminiButce(seciliKoyIndex, seciliDonemIndex);
                 load_form(frmTahminiButce);
             }
@@ -341,10 +354,9 @@ namespace Forms
             {
                 MessageBox.Show("Lütfen Kesin Hesap Ýþlemi Yapacaðýnýz Köyü Seçiniz...");
             }
-
         }
 
-        private void cmbKoy_SelectedIndexChanged(object sender, EventArgs e)
+        public void cmbKoy_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
@@ -371,7 +383,7 @@ namespace Forms
             }
         }
 
-        private void cmbDonem_SelectedIndexChanged(object sender, EventArgs e)
+        public void cmbDonem_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {

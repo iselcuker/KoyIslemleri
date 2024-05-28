@@ -18,13 +18,7 @@ namespace Business.Concrete
         {
             _tahminiButceDal = tahminiButceDal;
         }
-        //ITahminiButceDal _tahminiButceDal;
-
-        //public TahminiButceManager(ITahminiButceDal tahminiButceDal)
-        //{
-        //    _tahminiButceDal = tahminiButceDal;
-        //}
-
+      
         public void Add(TahminiButce tahminiButce)
         {
             _tahminiButceDal.Add(tahminiButce);

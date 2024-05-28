@@ -21,10 +21,13 @@ namespace DataAccess.Concrete.EntityFramework
                              on tahminiButceGelir.GelirKategoriId equals gelirkategori.Id
                              join koy in context.Koys
                              on tahminiButceGelir.KoyId equals koy.Id
+                             
                              join donem in context.Donems
                              on tahminiButceGelir.DonemId equals donem.Id
+
                              join degisiklik in context.Degisikliks
-                             on tahminiButceGelir.DegisiklikId equals degisiklik.Id
+                             on tahminiButceGelir.DegisiklikId equals degisiklik.Id into degisiklikGroup
+                             from degisiklik in degisiklikGroup.DefaultIfEmpty()
                              where tahminiButceGelir.KoyId == koyId && tahminiButceGelir.DonemId == donemId
                              select new TahminiButceGelirDetailDto
                              {
@@ -36,11 +39,12 @@ namespace DataAccess.Concrete.EntityFramework
                                  DonemAdi = donem.DonemAdi,
                                  DonemId = donem.Id,
                                  TahimiGelirTutari = tahminiButceGelir.TahimiGelirTutari,
-                                 DegisiklikAdi = degisiklik.DegisiklikAdi,
-                                 DegisiklikId = degisiklik.Id,
+                                 DegisiklikAdi = degisiklik != null ? degisiklik.DegisiklikAdi : "",
+                                 DegisiklikId = tahminiButceGelir.DegisiklikId,
                              };
                 return result.ToList();
             }
         }
+
     }
 }

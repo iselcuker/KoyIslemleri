@@ -39,7 +39,7 @@
             lblGiderKategori = new Label();
             txtTutar = new TextBox();
             cmbDegisiklik = new ComboBox();
-            label1 = new Label();
+            lblDegisiklik = new Label();
             pcBoxSil = new PictureBox();
             pcBoxGuncelle = new PictureBox();
             pcBoxKaydet = new PictureBox();
@@ -75,9 +75,9 @@
             dgvTahminiGiderler.BorderStyle = BorderStyle.Fixed3D;
             dgvTahminiGiderler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiGiderler.Location = new Point(0, 290);
+            dgvTahminiGiderler.Location = new Point(8, 283);
             dgvTahminiGiderler.Name = "dgvTahminiGiderler";
-            dgvTahminiGiderler.Size = new Size(810, 330);
+            dgvTahminiGiderler.Size = new Size(792, 385);
             dgvTahminiGiderler.TabIndex = 131;
             // 
             // lblTutar
@@ -85,7 +85,7 @@
             lblTutar.AutoSize = true;
             lblTutar.Font = new Font("Lucida Calligraphy", 14.25F);
             lblTutar.ImeMode = ImeMode.NoControl;
-            lblTutar.Location = new Point(10, 177);
+            lblTutar.Location = new Point(10, 174);
             lblTutar.Name = "lblTutar";
             lblTutar.Size = new Size(70, 24);
             lblTutar.TabIndex = 127;
@@ -99,17 +99,18 @@
             cmbGiderAltKategori.Font = new Font("Verdana", 14.25F);
             cmbGiderAltKategori.ForeColor = SystemColors.MenuText;
             cmbGiderAltKategori.FormattingEnabled = true;
-            cmbGiderAltKategori.Location = new Point(217, 100);
+            cmbGiderAltKategori.Location = new Point(217, 97);
             cmbGiderAltKategori.Name = "cmbGiderAltKategori";
             cmbGiderAltKategori.Size = new Size(396, 31);
             cmbGiderAltKategori.TabIndex = 122;
+            cmbGiderAltKategori.SelectedIndexChanged += cmbGiderAltKategori_SelectedIndexChanged;
             // 
             // lblGiderAltKategori
             // 
             lblGiderAltKategori.AutoSize = true;
             lblGiderAltKategori.Font = new Font("Lucida Calligraphy", 14.25F);
             lblGiderAltKategori.ImeMode = ImeMode.NoControl;
-            lblGiderAltKategori.Location = new Point(10, 105);
+            lblGiderAltKategori.Location = new Point(10, 102);
             lblGiderAltKategori.Name = "lblGiderAltKategori";
             lblGiderAltKategori.Size = new Size(203, 24);
             lblGiderAltKategori.TabIndex = 125;
@@ -144,7 +145,7 @@
             // 
             txtTutar.Cursor = Cursors.IBeam;
             txtTutar.Font = new Font("Lucida Calligraphy", 14.25F);
-            txtTutar.Location = new Point(217, 175);
+            txtTutar.Location = new Point(217, 172);
             txtTutar.Name = "txtTutar";
             txtTutar.Size = new Size(209, 33);
             txtTutar.TabIndex = 124;
@@ -157,27 +158,27 @@
             cmbDegisiklik.Font = new Font("Verdana", 14.25F);
             cmbDegisiklik.ForeColor = SystemColors.MenuText;
             cmbDegisiklik.FormattingEnabled = true;
-            cmbDegisiklik.Location = new Point(217, 137);
+            cmbDegisiklik.Location = new Point(217, 134);
             cmbDegisiklik.Name = "cmbDegisiklik";
             cmbDegisiklik.Size = new Size(396, 31);
             cmbDegisiklik.TabIndex = 133;
             // 
-            // label1
+            // lblDegisiklik
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Lucida Calligraphy", 14.25F);
-            label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(10, 142);
-            label1.Name = "label1";
-            label1.Size = new Size(109, 24);
-            label1.TabIndex = 134;
-            label1.Text = "Değişiklik";
+            lblDegisiklik.AutoSize = true;
+            lblDegisiklik.Font = new Font("Lucida Calligraphy", 14.25F);
+            lblDegisiklik.ImeMode = ImeMode.NoControl;
+            lblDegisiklik.Location = new Point(10, 139);
+            lblDegisiklik.Name = "lblDegisiklik";
+            lblDegisiklik.Size = new Size(109, 24);
+            lblDegisiklik.TabIndex = 134;
+            lblDegisiklik.Text = "Değişiklik";
             // 
             // pcBoxSil
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(308, 218);
+            pcBoxSil.Location = new Point(308, 211);
             pcBoxSil.Name = "pcBoxSil";
             pcBoxSil.Size = new Size(85, 65);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -188,7 +189,7 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(399, 219);
+            pcBoxGuncelle.Location = new Point(399, 212);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -199,23 +200,24 @@
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(217, 218);
+            pcBoxKaydet.Location = new Point(217, 211);
             pcBoxKaydet.Name = "pcBoxKaydet";
             pcBoxKaydet.Size = new Size(85, 65);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxKaydet.TabIndex = 137;
             pcBoxKaydet.TabStop = false;
+            pcBoxKaydet.Click += pcBoxKaydet_Click;
             // 
             // FrmTahminiGider
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(810, 757);
+            ClientSize = new Size(810, 686);
             Controls.Add(pcBoxSil);
             Controls.Add(pcBoxGuncelle);
             Controls.Add(pcBoxKaydet);
             Controls.Add(cmbDegisiklik);
-            Controls.Add(label1);
+            Controls.Add(lblDegisiklik);
             Controls.Add(pnlGiderBaslik);
             Controls.Add(dgvTahminiGiderler);
             Controls.Add(lblTutar);
@@ -250,7 +252,7 @@
         private Label lblGiderKategori;
         private TextBox txtTutar;
         private ComboBox cmbDegisiklik;
-        private Label label1;
+        private Label lblDegisiklik;
         private PictureBox pcBoxSil;
         private PictureBox pcBoxGuncelle;
         private PictureBox pcBoxKaydet;

@@ -14,7 +14,7 @@ namespace Entities.Concrete
         public byte DonemId { get; set; }
         public byte GiderKategoriId { get; set; }
         public byte GiderAltKategoriId { get; set; }
-        public byte DegisiklikId { get; set; }
+        public byte? DegisiklikId { get; set; }
         public decimal Tutar { get; set; }
     }
 }
