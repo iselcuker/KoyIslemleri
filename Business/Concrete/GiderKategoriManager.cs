@@ -33,7 +33,7 @@ namespace Business.Concrete
             return _giderKategoriDal.GetAll();
         }
 
-        public GiderKategori GetById(int giderKategoriId)
+        public GiderKategori GetById(byte giderKategoriId)
         {
             return _giderKategoriDal.Get(gik=>gik.Id==giderKategoriId);
         }

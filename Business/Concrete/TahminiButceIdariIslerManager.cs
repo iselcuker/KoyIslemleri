@@ -1,6 +1,8 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,6 +53,11 @@ namespace Business.Concrete
         public List<TahminiButceIdariIsler> GetListKoyId(int koyId)
         {
             return _tahminiButceIdariIslerDal.GetAll(tbiis => tbiis.KoyId == koyId);
+        }
+
+        public List<TahminiButceIdariIslerDetailDto> GetTahminiButceIdariIslerDetails(int koyId, byte donemId)
+        {
+            return _tahminiButceIdariIslerDal.GetTahminiButceIdariIslerDetails(koyId, donemId);
         }
 
         public void Update(TahminiButceIdariIsler tahminiButceİdariIsler)

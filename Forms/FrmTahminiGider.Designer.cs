@@ -43,6 +43,8 @@
             pcBoxSil = new PictureBox();
             pcBoxGuncelle = new PictureBox();
             pcBoxKaydet = new PictureBox();
+            label1 = new Label();
+            lblYeniTutar = new Label();
             pnlGiderBaslik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvTahminiGiderler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxSil).BeginInit();
@@ -208,6 +210,28 @@
             pcBoxKaydet.TabStop = false;
             pcBoxKaydet.Click += pcBoxKaydet_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Calibri", 12F);
+            label1.ImeMode = ImeMode.NoControl;
+            label1.Location = new Point(459, 179);
+            label1.Name = "label1";
+            label1.Size = new Size(129, 19);
+            label1.TabIndex = 127;
+            label1.Text = "Kalan Gider Tutarı:";
+            // 
+            // lblYeniTutar
+            // 
+            lblYeniTutar.AutoSize = true;
+            lblYeniTutar.Font = new Font("Calibri", 12F);
+            lblYeniTutar.ImeMode = ImeMode.NoControl;
+            lblYeniTutar.Location = new Point(594, 179);
+            lblYeniTutar.Name = "lblYeniTutar";
+            lblYeniTutar.Size = new Size(17, 19);
+            lblYeniTutar.TabIndex = 127;
+            lblYeniTutar.Text = "0";
+            // 
             // FrmTahminiGider
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -220,6 +244,8 @@
             Controls.Add(lblDegisiklik);
             Controls.Add(pnlGiderBaslik);
             Controls.Add(dgvTahminiGiderler);
+            Controls.Add(lblYeniTutar);
+            Controls.Add(label1);
             Controls.Add(lblTutar);
             Controls.Add(cmbGiderAltKategori);
             Controls.Add(lblGiderAltKategori);
@@ -256,5 +282,7 @@
         private PictureBox pcBoxSil;
         private PictureBox pcBoxGuncelle;
         private PictureBox pcBoxKaydet;
+        private Label label1;
+        private Label lblYeniTutar;
     }
 }

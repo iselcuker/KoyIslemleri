@@ -11,9 +11,13 @@ namespace Entities.DTOs
     {
         public int TahminiButceIdariIslerId { get; set; }
         public string KoyAdi { get; set; }
+        public int KoyId { get; set; }
         public string DonemAdi { get; set; }
+        public byte DonemId { get; set; }
         public string IdariIslerKategoriAdi { get; set; }
+        public byte IdariIslerKategoriId { get; set; }
         public string IdariIslerAltKategoriAdi { get; set; }
+        public byte IdariIslerAltKategoriId { get; set; }
         public decimal TahminiIdariIslarTutari { get; set; }
 
     }

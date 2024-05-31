@@ -221,6 +221,10 @@ namespace Forms
                 dgvGiderler.EnableHeadersVisualStyles = false; //Başlık yazı rengini değiştermek için bu özelliğin false yapılması gerekir
                 dgvGiderler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray; //Başlık arka plan rengi
 
+                dgvGiderler.Columns["GiderKategoriAdi"].HeaderText = "Kategori";
+                dgvGiderler.Columns["GiderAltKategoriAdi"].HeaderText = "Alt Kategori";
+                dgvGiderler.Columns["EvrakNo"].HeaderText = "Evrak No";
+
                 ToplamGider(); // Veriler yenilendiğinde toplamı hesapla
             }
             catch (Exception ex)

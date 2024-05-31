@@ -27,8 +27,8 @@ namespace Forms
         ////AnaSayfada comboboxlardan yapılan seçimlerin index lerini getirmek için (int seciliKoyIndex,byte seciliDonemIndex) şeklinde formun constructorunda iki parametreyi FrmGelir formuna geçiyoruz
         public FrmGelir(int seciliKoyIndex, byte seciliDonemIndex)
         {
-            _seciliKoyIndex = seciliKoyIndex;
-            _seciliDonemIndex = seciliDonemIndex;
+            //_seciliKoyIndex = seciliKoyIndex;
+            //_seciliDonemIndex = seciliDonemIndex;
 
             InitializeComponent();
 
@@ -275,6 +275,9 @@ namespace Forms
                 dgvGelirler.ColumnHeadersHeight = 40;
                 dgvGelirler.EnableHeadersVisualStyles = false; //Başlık yazı rengini değiştermek için bu özelliğin false yapılması gerekir
                 dgvGelirler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray; //Başlık arka plan rengi
+
+                dgvGelirler.Columns["GelirKategoriAdi"].HeaderText = "Kategori";
+                dgvGelirler.Columns["EvrakNo"].HeaderText = "Evrak No";
 
 
                 ToplamGelir(); // Veriler yenilendiğinde toplamı hesapla

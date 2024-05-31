@@ -1,4 +1,5 @@
 ﻿using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,5 +18,7 @@ namespace Business.Abstract
         void Add(TahminiButceIdariIsler tahminiButceİdariIsler);
         void Delete(TahminiButceIdariIsler tahminiButceİdariIsler);
         void Update(TahminiButceIdariIsler tahminiButceİdariIsler);
+
+        List<TahminiButceIdariIslerDetailDto> GetTahminiButceIdariIslerDetails(int koyId, byte donemId); 
     }
 }

@@ -35,17 +35,17 @@
             cmbIdariIslerKategori = new ComboBox();
             lblIdariKategori = new Label();
             txtTutar = new TextBox();
-            dgvTahminiIdariIsler = new DataGridView();
             lblBaslik = new Label();
             pnlGiderBaslik = new Panel();
             pcBoxSil = new PictureBox();
             pcBoxGuncelle = new PictureBox();
             pcBoxKaydet = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)dgvTahminiIdariIsler).BeginInit();
+            dgvTahminiIdariIsler = new DataGridView();
             pnlGiderBaslik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcBoxSil).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxGuncelle).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxKaydet).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvTahminiIdariIsler).BeginInit();
             SuspendLayout();
             // 
             // lblTutar
@@ -117,18 +117,6 @@
             txtTutar.Size = new Size(209, 33);
             txtTutar.TabIndex = 135;
             // 
-            // dgvTahminiIdariIsler
-            // 
-            dgvTahminiIdariIsler.BackgroundColor = SystemColors.Control;
-            dgvTahminiIdariIsler.BorderStyle = BorderStyle.Fixed3D;
-            dgvTahminiIdariIsler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
-            dgvTahminiIdariIsler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiIdariIsler.Dock = DockStyle.Bottom;
-            dgvTahminiIdariIsler.Location = new Point(0, 315);
-            dgvTahminiIdariIsler.Name = "dgvTahminiIdariIsler";
-            dgvTahminiIdariIsler.Size = new Size(807, 390);
-            dgvTahminiIdariIsler.TabIndex = 142;
-            // 
             // lblBaslik
             // 
             lblBaslik.AutoSize = true;
@@ -158,6 +146,7 @@
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxSil.TabIndex = 144;
             pcBoxSil.TabStop = false;
+            pcBoxSil.Click += pcBoxSil_Click;
             // 
             // pcBoxGuncelle
             // 
@@ -169,6 +158,7 @@
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxGuncelle.TabIndex = 145;
             pcBoxGuncelle.TabStop = false;
+            pcBoxGuncelle.Click += pcBoxGuncelle_Click;
             // 
             // pcBoxKaydet
             // 
@@ -180,12 +170,33 @@
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxKaydet.TabIndex = 146;
             pcBoxKaydet.TabStop = false;
+            pcBoxKaydet.Click += pcBoxKaydet_Click;
+            // 
+            // dgvTahminiIdariIsler
+            // 
+            dgvTahminiIdariIsler.AllowUserToAddRows = false;
+            dgvTahminiIdariIsler.AllowUserToDeleteRows = false;
+            dgvTahminiIdariIsler.AllowUserToResizeColumns = false;
+            dgvTahminiIdariIsler.AllowUserToResizeRows = false;
+            dgvTahminiIdariIsler.BackgroundColor = SystemColors.Control;
+            dgvTahminiIdariIsler.BorderStyle = BorderStyle.Fixed3D;
+            dgvTahminiIdariIsler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
+            dgvTahminiIdariIsler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTahminiIdariIsler.Location = new Point(10, 308);
+            dgvTahminiIdariIsler.Name = "dgvTahminiIdariIsler";
+            dgvTahminiIdariIsler.ReadOnly = true;
+            dgvTahminiIdariIsler.RowHeadersWidth = 51;
+            dgvTahminiIdariIsler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvTahminiIdariIsler.Size = new Size(785, 385);
+            dgvTahminiIdariIsler.TabIndex = 147;
+            dgvTahminiIdariIsler.CellDoubleClick += dgvTahminiIdariIsler_CellDoubleClick;
             // 
             // FrmTahminiIdariIsler
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(807, 705);
+            Controls.Add(dgvTahminiIdariIsler);
             Controls.Add(pcBoxSil);
             Controls.Add(pcBoxGuncelle);
             Controls.Add(pcBoxKaydet);
@@ -195,18 +206,17 @@
             Controls.Add(cmbIdariIslerKategori);
             Controls.Add(lblIdariKategori);
             Controls.Add(txtTutar);
-            Controls.Add(dgvTahminiIdariIsler);
             Controls.Add(pnlGiderBaslik);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmTahminiIdariIsler";
             Text = "FrmTahminiIdariIsler";
             Load += FrmTahminiIdariIsler_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvTahminiIdariIsler).EndInit();
             pnlGiderBaslik.ResumeLayout(false);
             pnlGiderBaslik.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pcBoxSil).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxGuncelle).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxKaydet).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvTahminiIdariIsler).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -218,11 +228,11 @@
         private ComboBox cmbIdariIslerKategori;
         private Label lblIdariKategori;
         private TextBox txtTutar;
-        public DataGridView dgvTahminiIdariIsler;
         private Label lblBaslik;
         private Panel pnlGiderBaslik;
         private PictureBox pcBoxSil;
         private PictureBox pcBoxGuncelle;
         private PictureBox pcBoxKaydet;
+        public DataGridView dgvTahminiIdariIsler;
     }
 }

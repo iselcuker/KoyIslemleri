@@ -11,6 +11,6 @@ namespace DataAccess.Abstract
 {
     public interface ITahminiButceIdariIslerDal : IEntityRepository<TahminiButceIdariIsler>
     {
-        List<TahminiButceIdariIslerDetailDto> GetTahminiButceIdariIslerDetails();
+        List<TahminiButceIdariIslerDetailDto> GetTahminiButceIdariIslerDetails(int koyId, byte donemId);
     }
 }

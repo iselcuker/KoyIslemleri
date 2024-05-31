@@ -10,7 +10,7 @@ namespace Business.Abstract
     public interface IGiderKategoriService
     {
         List<GiderKategori> GetAll();
-        GiderKategori GetById(int giderKategoriId);
+        GiderKategori GetById(byte giderKategoriId);
         void Add(GiderKategori giderKategori);
         void Delete(GiderKategori giderKategori);
         void Update(GiderKategori giderKategori);

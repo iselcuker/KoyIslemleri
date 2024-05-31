@@ -115,7 +115,7 @@ namespace Forms
                 Donem secilenDonem = frmAnaSayfa.CmbDonem.SelectedItem as Donem;
                 byte seciliDonemIndex = secilenDonem != null ? Convert.ToByte(secilenDonem.Id) : _seciliDonemIndex;
                 FrmTahminiGider frmTahminiGider = new FrmTahminiGider(seciliKoyIndex, seciliDonemIndex);
-                load_form(new FrmTahminiGider(seciliKoyIndex, seciliDonemIndex));
+                load_form(frmTahminiGider);
             }
 
 
@@ -123,8 +123,22 @@ namespace Forms
 
         private void pcBoxIdariIsler_Click(object sender, EventArgs e)
         {
-            load_form(new FrmTahminiIdariIsler());
-            // pnlButceFormlari.Location = new Point(200, 210);
+            // FrmAnaSayfa formunu bul ve seçili köy ve dönem indexlerini al
+            FrmAnaSayfa frmAnaSayfa = Application.OpenForms["FrmAnaSayfa"] as FrmAnaSayfa;
+
+            if (frmAnaSayfa != null)
+            {
+                // FrmAnaSayfa formundaki ComboBox'lardan seçili köy ve dönem indexlerini al
+                Koy secilenKoy = frmAnaSayfa.CmbKoy.SelectedItem as Koy;
+                int seciliKoyIndex = secilenKoy?.Id ?? _seciliKoyIndex;
+
+                Donem secilenDonem = frmAnaSayfa.CmbDonem.SelectedItem as Donem;
+                byte seciliDonemIndex = secilenDonem != null ? Convert.ToByte(secilenDonem.Id) : _seciliDonemIndex;
+
+                // FrmTahminiGelir formunu oluştur ve load_form metoduyla yükle
+                FrmTahminiIdariIsler frmTahminiIdariIsler = new FrmTahminiIdariIsler(seciliKoyIndex, seciliDonemIndex);
+                load_form(frmTahminiIdariIsler);
+            }
         }
 
         private void pcBoxEkButce_Click(object sender, EventArgs e)

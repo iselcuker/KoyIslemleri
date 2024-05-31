@@ -17,10 +17,12 @@ namespace Forms
         private KoyManager koyManager;
         private DonemManager donemManager;
         private TahminiButceGelirManager tahminiButceGelirManager;
+        private TahminiButceGiderManager tahminiButceGiderManager;
 
         //BOTUN KONTROLÜ ÝÇÝN
         private FrmTahminiButce tahminiButceForm;
         private FrmTahminiGelir tahminiGelirForm;
+        private FrmTahminiGider tahminiGiderForm;
 
 
 
@@ -53,6 +55,7 @@ namespace Forms
 
             // FrmTahminiGelir formunu oluþtur
             tahminiGelirForm = new FrmTahminiGelir(seciliKoyIndex, seciliDonemIndex);
+            tahminiGiderForm = new FrmTahminiGider(seciliKoyIndex, seciliDonemIndex);
 
             koyManager = new KoyManager(new EfKoyDal());
             donemManager = new DonemManager(new EfDonemDal());

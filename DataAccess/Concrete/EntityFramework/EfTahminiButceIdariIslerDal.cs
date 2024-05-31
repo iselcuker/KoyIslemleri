@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfTahminiButceIdariIslerDal : EfEntityRepositoryBase<TahminiButceIdariIsler, KoyButcesiContext>, ITahminiButceIdariIslerDal
     {
-        public List<TahminiButceIdariIslerDetailDto> GetTahminiButceIdariIslerDetails()
+        public List<TahminiButceIdariIslerDetailDto> GetTahminiButceIdariIslerDetails(int koyId, byte donemId)
         {
             using (KoyButcesiContext context = new KoyButcesiContext())
             {
@@ -34,10 +34,15 @@ namespace DataAccess.Concrete.EntityFramework
                              {
                                  TahminiButceIdariIslerId = tahminiButceIdariIsler.Id,
                                  KoyAdi = koy.KoyAdi,
+                                 KoyId=koy.Id,
                                  DonemAdi = donem.DonemAdi,
+                                 DonemId=donem.Id,
                                  IdariIslerKategoriAdi = idariIslerKategori.IdariIslerKategoriAdi,
+                                 IdariIslerKategoriId=idariIslerKategori.Id,
                                  IdariIslerAltKategoriAdi = idariIslerAltKategori.IdariIslerAltKategoriAdi,
+                                 IdariIslerAltKategoriId=idariIslerAltKategori.Id,
                                  TahminiIdariIslarTutari = tahminiButceIdariIsler.TahminiIdariIslarTutari,
+
                              };
                 return result.ToList();
             }

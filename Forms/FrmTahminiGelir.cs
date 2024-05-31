@@ -296,7 +296,6 @@ namespace Forms
             }
         }
 
-
         private decimal GetToplamTahminiGelir(int koyId, byte donemId)
         {
             using (KoyButcesiContext context = new KoyButcesiContext())
@@ -498,8 +497,6 @@ namespace Forms
                 // Hata durumunda kullanıcıya bilgi ver
                 MessageBox.Show("Gelir güncellenirken bir hata oluştu: " + ex.Message);
             }
-
-
 
             // Seçili satırın indeksini al
             int rowIndex = dgvTahminiGelirler.SelectedCells[0].RowIndex;
