@@ -53,7 +53,7 @@
             lblTutar.AutoSize = true;
             lblTutar.Font = new Font("Lucida Calligraphy", 14.25F);
             lblTutar.ImeMode = ImeMode.NoControl;
-            lblTutar.Location = new Point(10, 192);
+            lblTutar.Location = new Point(10, 158);
             lblTutar.Name = "lblTutar";
             lblTutar.Size = new Size(70, 24);
             lblTutar.TabIndex = 138;
@@ -67,7 +67,7 @@
             cmbIdariIslerAltKategori.Font = new Font("Verdana", 14.25F);
             cmbIdariIslerAltKategori.ForeColor = SystemColors.MenuText;
             cmbIdariIslerAltKategori.FormattingEnabled = true;
-            cmbIdariIslerAltKategori.Location = new Point(217, 150);
+            cmbIdariIslerAltKategori.Location = new Point(217, 116);
             cmbIdariIslerAltKategori.Name = "cmbIdariIslerAltKategori";
             cmbIdariIslerAltKategori.Size = new Size(396, 31);
             cmbIdariIslerAltKategori.TabIndex = 133;
@@ -77,7 +77,7 @@
             lblIdariAltKategori.AutoSize = true;
             lblIdariAltKategori.Font = new Font("Lucida Calligraphy", 14.25F);
             lblIdariAltKategori.ImeMode = ImeMode.NoControl;
-            lblIdariAltKategori.Location = new Point(10, 155);
+            lblIdariAltKategori.Location = new Point(10, 121);
             lblIdariAltKategori.Name = "lblIdariAltKategori";
             lblIdariAltKategori.Size = new Size(196, 24);
             lblIdariAltKategori.TabIndex = 136;
@@ -91,7 +91,7 @@
             cmbIdariIslerKategori.Font = new Font("Verdana", 14.25F);
             cmbIdariIslerKategori.ForeColor = SystemColors.MenuText;
             cmbIdariIslerKategori.FormattingEnabled = true;
-            cmbIdariIslerKategori.Location = new Point(217, 112);
+            cmbIdariIslerKategori.Location = new Point(217, 78);
             cmbIdariIslerKategori.Name = "cmbIdariIslerKategori";
             cmbIdariIslerKategori.Size = new Size(396, 31);
             cmbIdariIslerKategori.TabIndex = 134;
@@ -102,7 +102,7 @@
             lblIdariKategori.AutoSize = true;
             lblIdariKategori.Font = new Font("Lucida Calligraphy", 14.25F);
             lblIdariKategori.ImeMode = ImeMode.NoControl;
-            lblIdariKategori.Location = new Point(10, 120);
+            lblIdariKategori.Location = new Point(10, 86);
             lblIdariKategori.Name = "lblIdariKategori";
             lblIdariKategori.Size = new Size(202, 24);
             lblIdariKategori.TabIndex = 137;
@@ -112,7 +112,7 @@
             // 
             txtTutar.Cursor = Cursors.IBeam;
             txtTutar.Font = new Font("Lucida Calligraphy", 14.25F);
-            txtTutar.Location = new Point(217, 190);
+            txtTutar.Location = new Point(217, 156);
             txtTutar.Name = "txtTutar";
             txtTutar.Size = new Size(209, 33);
             txtTutar.TabIndex = 135;
@@ -120,10 +120,10 @@
             // lblBaslik
             // 
             lblBaslik.AutoSize = true;
-            lblBaslik.Font = new Font("321impact", 50.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblBaslik.Location = new Point(84, 9);
+            lblBaslik.Font = new Font("321impact", 35.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            lblBaslik.Location = new Point(158, 4);
             lblBaslik.Name = "lblBaslik";
-            lblBaslik.Size = new Size(641, 76);
+            lblBaslik.Size = new Size(443, 53);
             lblBaslik.TabIndex = 1;
             lblBaslik.Text = "TAHMİNİ İDARİ İŞLER";
             // 
@@ -133,14 +133,14 @@
             pnlGiderBaslik.Dock = DockStyle.Top;
             pnlGiderBaslik.Location = new Point(0, 0);
             pnlGiderBaslik.Name = "pnlGiderBaslik";
-            pnlGiderBaslik.Size = new Size(807, 91);
+            pnlGiderBaslik.Size = new Size(807, 60);
             pnlGiderBaslik.TabIndex = 143;
             // 
             // pcBoxSil
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(308, 229);
+            pcBoxSil.Location = new Point(308, 195);
             pcBoxSil.Name = "pcBoxSil";
             pcBoxSil.Size = new Size(85, 65);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -152,7 +152,7 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(399, 230);
+            pcBoxGuncelle.Location = new Point(399, 196);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -164,7 +164,7 @@
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(217, 229);
+            pcBoxKaydet.Location = new Point(217, 195);
             pcBoxKaydet.Name = "pcBoxKaydet";
             pcBoxKaydet.Size = new Size(85, 65);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -182,12 +182,12 @@
             dgvTahminiIdariIsler.BorderStyle = BorderStyle.Fixed3D;
             dgvTahminiIdariIsler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiIdariIsler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiIdariIsler.Location = new Point(10, 308);
+            dgvTahminiIdariIsler.Location = new Point(10, 281);
             dgvTahminiIdariIsler.Name = "dgvTahminiIdariIsler";
             dgvTahminiIdariIsler.ReadOnly = true;
             dgvTahminiIdariIsler.RowHeadersWidth = 51;
             dgvTahminiIdariIsler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvTahminiIdariIsler.Size = new Size(785, 385);
+            dgvTahminiIdariIsler.Size = new Size(785, 412);
             dgvTahminiIdariIsler.TabIndex = 147;
             dgvTahminiIdariIsler.CellDoubleClick += dgvTahminiIdariIsler_CellDoubleClick;
             // 

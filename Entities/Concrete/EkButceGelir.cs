@@ -13,6 +13,7 @@ namespace Entities.Concrete
         public int KoyId { get; set; }
         public byte DonemId { get; set; }
         public byte GelirKategoriId { get; set; }
+        public byte? DegisiklikId { get; set; }
         public decimal EkGelirTutari { get; set; }
     }
 }

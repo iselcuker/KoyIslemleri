@@ -17,8 +17,15 @@ namespace Forms
     {
         GiderKategoriManager giderKategoriManager;
         GiderAltKategoriManager giderAltKategoriManager;
+        DegisiklikManager degisiklikManager;
+        TahminiButceGelirManager tahminiButceGelirManager;
+        KoyManager koyManager;
+        DonemManager donemManager;
+        //AnaSayfada comboboxlardan yapılan seçimlerin index lerini getirmek için
+        int _seciliKoyIndex;
+        byte _seciliDonemIndex;
 
-        public FrmEkGider()
+        public FrmEkGider(int seciliKoyIndex, byte seciliDonemIndex)
         {
             InitializeComponent();
             GiderKategoriManager _giderKategoriManager = new GiderKategoriManager(new EfGiderKategoriDal());
@@ -26,6 +33,21 @@ namespace Forms
 
             GiderAltKategoriManager _giderAltKategoriManager = new GiderAltKategoriManager(new EfGiderAltKategoriDal());
             giderAltKategoriManager = _giderAltKategoriManager;
+
+            TahminiButceGelirManager _tahminiButceGelirManager = new TahminiButceGelirManager(new EfTahminiButceGelirDal());
+            tahminiButceGelirManager = _tahminiButceGelirManager;
+
+            DegisiklikManager _degisiklikManager = new DegisiklikManager(new EfDegisiklikDal());
+            degisiklikManager = _degisiklikManager;
+
+            _seciliKoyIndex = seciliKoyIndex;
+            _seciliDonemIndex = seciliDonemIndex;
+
+            KoyManager _koyManager = new KoyManager(new EfKoyDal());
+            koyManager = _koyManager;
+
+            DonemManager _donemManager = new DonemManager(new EfDonemDal());
+            donemManager = _donemManager;
         }
 
         private void GiderKategoriDoldur()

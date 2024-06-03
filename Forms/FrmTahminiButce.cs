@@ -15,8 +15,6 @@ namespace Forms
 {
     public partial class FrmTahminiButce : Form
     {
-
-
         private TahminiButceManager tahminiButceManager;
         private TahminiButceGelirManager tahminiButceGelirManager;
 
@@ -27,6 +25,8 @@ namespace Forms
 
         private FrmAnaSayfa _anaSayfaForm;
         private FrmTahminiButce _tahminiButceForm;
+
+       
 
         private decimal kalanButceTutari; // Kalan bütçe tutarını takip etmek için
 
@@ -43,10 +43,7 @@ namespace Forms
             koyManager = new KoyManager(new EfKoyDal());
             donemManager = new DonemManager(new EfDonemDal());
 
-
-
-            pnlEkButceButonlari.Visible = false;
-
+            //pnlEkButceButonlari.Visible = false;
 
         }
 
@@ -140,29 +137,6 @@ namespace Forms
                 load_form(frmTahminiIdariIsler);
             }
         }
-
-        private void pcBoxEkButce_Click(object sender, EventArgs e)
-        {
-            load_form(new FrmEkButce());
-            pnlButceButonlari.Visible = false;
-            //pnlButceFormlari.Location = new Point(200, 210);
-            pnlEkButceButonlari.Visible = true;
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            load_form(new FrmEkGelir());
-            pnlButceButonlari.Visible = false;
-            //pnlButceFormlari.Location = new Point(200, 210);
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            load_form(new FrmEkGider());
-            pnlButceButonlari.Visible = false;
-            //pnlButceFormlari.Location = new Point(200, 210);
-        }
-
 
         private bool tahminiButceIkınciKayitKontrolu = false;
 
@@ -258,10 +232,6 @@ namespace Forms
                 {
                     kalanButceTutari = tahminiButceList.Sum(tb => tb.TahminiButceTutari);
                 }
-                else
-                {
-                    MessageBox.Show("Tahmini bütçe bulunamadı!");
-                }
 
                 TahminiButceler();
             }
@@ -356,7 +326,7 @@ namespace Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Gider Güncellenirken Bir Hata Oluştu: " + ex.Message);
+                MessageBox.Show("Tahmini Bütçe Güncellenirken Bir Hata Oluştu: " + ex.Message);
             }
         }
 
@@ -378,8 +348,14 @@ namespace Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Gider silinirken bir hata oluştu: " + ex.Message);
+                MessageBox.Show("Tahmini Bütçe silinirken bir hata oluştu: " + ex.Message);
             }
+        }
+
+        private void dgvTahminiButceler_DataSourceChanged(object sender, EventArgs e)
+        {
+            // DataGridView'deki satır sayısına bakarak pnlButceButonlari'nı gizle veya göster
+            pnlButceButonlari.Visible = dgvTahminiButceler.RowCount > 0;
         }
     }
 }

@@ -581,6 +581,24 @@ namespace Forms
                 MessageBox.Show("Not silinirken bir hata oluþtu: " + ex.Message);
             }
         }
+
+        private void pcBoxEkButce_Click(object sender, EventArgs e)
+        {
+
+            if (cmbKoy.SelectedIndex > 0)
+            {
+                Koy secilenKoy = cmbKoy.SelectedItem as Koy; // cmbKoy'den seçilen öge aslýnda bir Koy'dur
+                int seciliKoyIndex = secilenKoy.Id;
+                Donem secilenDonem = cmbDonem.SelectedItem as Donem;
+                byte seciliDonemIndex = Convert.ToByte(secilenDonem.Id);
+                FrmEkButce frmEkButce = new FrmEkButce(seciliKoyIndex, seciliDonemIndex);
+                load_form(frmEkButce);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Ýþlem Yapacaðýnýz Köyü Seçiniz...");
+            }
+        }
     }
 }
 
