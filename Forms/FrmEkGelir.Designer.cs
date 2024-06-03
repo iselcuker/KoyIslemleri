@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEkGelir));
             pnlGelirBaslik = new Panel();
             lblBaslik = new Label();
-            label6 = new Label();
+            lblTutar = new Label();
             cmbDegisiklik = new ComboBox();
             lblDegisiklik = new Label();
             cmbGelirKategori = new ComboBox();
-            label1 = new Label();
+            lblGelirKategori = new Label();
             txtTutar = new TextBox();
             pcBoxSil = new PictureBox();
             pcBoxGuncelle = new PictureBox();
@@ -67,16 +67,16 @@
             lblBaslik.TabIndex = 1;
             lblBaslik.Text = "EK GELİR";
             // 
-            // label6
+            // lblTutar
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Verdana", 14.25F);
-            label6.ImeMode = ImeMode.NoControl;
-            label6.Location = new Point(9, 148);
-            label6.Name = "label6";
-            label6.Size = new Size(58, 23);
-            label6.TabIndex = 127;
-            label6.Text = "Tutar";
+            lblTutar.AutoSize = true;
+            lblTutar.Font = new Font("Verdana", 14.25F);
+            lblTutar.ImeMode = ImeMode.NoControl;
+            lblTutar.Location = new Point(9, 148);
+            lblTutar.Name = "lblTutar";
+            lblTutar.Size = new Size(58, 23);
+            lblTutar.TabIndex = 127;
+            lblTutar.Text = "Tutar";
             // 
             // cmbDegisiklik
             // 
@@ -114,17 +114,18 @@
             cmbGelirKategori.Name = "cmbGelirKategori";
             cmbGelirKategori.Size = new Size(396, 31);
             cmbGelirKategori.TabIndex = 123;
+            cmbGelirKategori.SelectedIndexChanged += cmbGelirKategori_SelectedIndexChanged;
             // 
-            // label1
+            // lblGelirKategori
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 14.25F);
-            label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(9, 74);
-            label1.Name = "label1";
-            label1.Size = new Size(142, 23);
-            label1.TabIndex = 126;
-            label1.Text = "Gelir Kategori";
+            lblGelirKategori.AutoSize = true;
+            lblGelirKategori.Font = new Font("Verdana", 14.25F);
+            lblGelirKategori.ImeMode = ImeMode.NoControl;
+            lblGelirKategori.Location = new Point(9, 74);
+            lblGelirKategori.Name = "lblGelirKategori";
+            lblGelirKategori.Size = new Size(142, 23);
+            lblGelirKategori.TabIndex = 126;
+            lblGelirKategori.Text = "Gelir Kategori";
             // 
             // txtTutar
             // 
@@ -196,11 +197,11 @@
             Controls.Add(pcBoxGuncelle);
             Controls.Add(pcBoxKaydet);
             Controls.Add(pnlGelirBaslik);
-            Controls.Add(label6);
+            Controls.Add(lblTutar);
             Controls.Add(cmbDegisiklik);
             Controls.Add(lblDegisiklik);
             Controls.Add(cmbGelirKategori);
-            Controls.Add(label1);
+            Controls.Add(lblGelirKategori);
             Controls.Add(txtTutar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmEkGelir";
@@ -221,11 +222,11 @@
         private Panel pnlGelirBaslik;
         private Label lblBaslik;
         public DataGridView dgvTahminiEkGelirler;
-        private Label label6;
+        private Label lblTutar;
         private ComboBox cmbDegisiklik;
         private Label lblDegisiklik;
         private ComboBox cmbGelirKategori;
-        private Label label1;
+        private Label lblGelirKategori;
         private TextBox txtTutar;
         private PictureBox pcBoxSil;
         private PictureBox pcBoxGuncelle;

@@ -16,77 +16,51 @@ namespace Forms
 {
     public partial class FrmEkGelir : Form
     {
-        GelirKategoriManager gelirKategoriManager;
-        DegisiklikManager degisiklikManager;
-        EkButceGelirManager ekButceGelirManager;
-        KoyManager koyManager;
-        DonemManager donemManager;
-        //AnaSayfada comboboxlardan yapılan seçimlerin index lerini getirmek için
-        int _seciliKoyIndex;
-        byte _seciliDonemIndex;
+        private GelirKategoriManager gelirKategoriManager;
+        private DegisiklikManager degisiklikManager;
+        private EkButceGelirManager ekButceGelirManager;
+        private KoyManager koyManager;
+        private DonemManager donemManager;
+
+        // Ana sayfada comboboxlardan yapılan seçimlerin indexlerini getirmek için
+        private int _seciliKoyIndex;
+        private byte _seciliDonemIndex;
 
         public FrmEkGelir(int seciliKoyIndex, byte seciliDonemIndex)
         {
             InitializeComponent();
 
-            EkButceGelirManager _ekButceGelirManager = new EkButceGelirManager(new EfEkButceGelirDal());
-            ekButceGelirManager = _ekButceGelirManager;
+            ekButceGelirManager = new EkButceGelirManager(new EfEkButceGelirDal());
+            gelirKategoriManager = new GelirKategoriManager(new EfGelirKategoriDal());
+            degisiklikManager = new DegisiklikManager(new EfDegisiklikDal());
+            koyManager = new KoyManager(new EfKoyDal());
+            donemManager = new DonemManager(new EfDonemDal());
 
-            GelirKategoriManager _gelirKategoriManager = new GelirKategoriManager(new EfGelirKategoriDal());
-            gelirKategoriManager = _gelirKategoriManager;
-
-            DegisiklikManager _degisiklikManager = new DegisiklikManager(new EfDegisiklikDal());
-            degisiklikManager = _degisiklikManager;
-
+            // Ana sayfada comboboxlardan yapılan seçimlerin indexlerini getirmek için
             _seciliKoyIndex = seciliKoyIndex;
             _seciliDonemIndex = seciliDonemIndex;
 
-            KoyManager _koyManager = new KoyManager(new EfKoyDal());
-            koyManager = _koyManager;
-
-            DonemManager _donemManager = new DonemManager(new EfDonemDal());
-            donemManager = _donemManager;
+            // Combobox'ları doldurma metotlarını çağır
+            LoadGelirKategoriler();
+            LoadDegisiklikler();
         }
 
-        private void GelirKategoriDoldur()
+        private void LoadGelirKategoriler()
         {
+            var gelirKategoriler = gelirKategoriManager.GetAll();
 
-            try
-            {
-                List<GelirKategori> gelirKategoriler = gelirKategoriManager.GetAll();
-                cmbGelirKategori.Items.Clear();
-                cmbGelirKategori.Items.Add("-Gelir Türü Seçiniz-");
-                foreach (var kategori in gelirKategoriler)
-                {
-                    cmbGelirKategori.Items.Add(kategori);
-                }
-                cmbGelirKategori.SelectedIndex = 0;
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Gelir Türü Getirilirken Hata Oluştu!");
-                throw;
-            }
+            cmbGelirKategori.DisplayMember = "GelirKategoriAdi"; // GelirKategori nesnesinde görüntülenecek özellik
+            cmbGelirKategori.ValueMember = "Id"; // GelirKategori nesnesinde seçildiğinde kullanılacak özellik
+            cmbGelirKategori.DataSource = gelirKategoriler;
         }
 
-        private void DegisiklikDoldur()
+        private void LoadDegisiklikler()
         {
-            try
-            {
-                List<Degisiklik> degisiklikler = degisiklikManager.GetAll();
-                cmbDegisiklik.Items.Clear();
-                cmbDegisiklik.Items.Add(new ComboBoxItem("-Değişiklik Gerekiyorsa Seçiniz-", null));
-                foreach (var degisiklik in degisiklikler)
-                {
-                    cmbDegisiklik.Items.Add(new ComboBoxItem(degisiklik.DegisiklikAdi, degisiklik));
-                }
-                cmbDegisiklik.SelectedIndex = 0;
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Değişiklikler Getirilirken Hata Oluştu!");
-                throw;
-            }
+            var degisiklikler = degisiklikManager.GetAll();
+
+            cmbDegisiklik.DisplayMember = "DegisiklikAdi"; // Degisiklik nesnesinde görüntülenecek özellik
+            cmbDegisiklik.ValueMember = "Id"; // Degisiklik nesnesinde seçildiğinde kullanılacak özellik
+            cmbDegisiklik.DataSource = degisiklikler;
         }
 
         //Degisiklik Doldurmak için Kullanıyorum
@@ -111,8 +85,10 @@ namespace Forms
         {
             try
             {
-                GelirKategoriDoldur();
-                DegisiklikDoldur();
+                lblDegisiklik.Visible = false;
+                cmbDegisiklik.Visible = false;
+                lblTutar.Location = new Point(9, 111);
+                txtTutar.Location = new Point(176, 106);
             }
             catch (Exception)
             {
@@ -141,34 +117,26 @@ namespace Forms
                 // Kategorinin seçili olup olmadığını kontrol et
                 if (cmbGelirKategori.SelectedIndex < 0 || !(cmbGelirKategori.SelectedItem is GelirKategori))
                 {
-                    MessageBox.Show("Lütfen geçerli bir gelir kategorisi seçiniz!");
+                    MessageBox.Show("Lütfen geçerli Gelir Türü seçiniz!");
+                    return;
+                }
+
+                // Alt kategorinin seçili olup olmadığını kontrol et
+                if (cmbDegisiklik.SelectedIndex < 0 || !(cmbDegisiklik.SelectedItem is Degisiklik))
+                {
+                    MessageBox.Show("Lütfen geçerli bir Değişiklik seçiniz!");
                     return;
                 }
 
                 // Gelir kategorisi olarak dönüştür
                 GelirKategori selectedGelirKategori = (GelirKategori)cmbGelirKategori.SelectedItem;
+                Degisiklik selectedDegisiklik = (Degisiklik)cmbDegisiklik.SelectedItem;
 
                 // Tutarın boş olup olmadığını kontrol et
                 if (string.IsNullOrEmpty(txtTutar.Text))
                 {
-                    MessageBox.Show("Lütfen Tahmini Gelir Miktarını Giriniz !!!");
+                    MessageBox.Show("Lütfen Tutarı Giriniz !!!");
                     return;
-                }
-
-                // Degisiklik seçiliyse, Degisiklik nesnesini al
-                Degisiklik selectedDegisiklik = null;
-                if (cmbDegisiklik.SelectedIndex > 0)
-                {
-                    var selectedItem = cmbDegisiklik.SelectedItem as ComboBoxItem;
-                    if (selectedItem != null && selectedItem.Value is Degisiklik)
-                    {
-                        selectedDegisiklik = (Degisiklik)selectedItem.Value;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Geçerli bir Degisiklik Türü seçiniz!");
-                        return;
-                    }
                 }
 
                 // Girilen tutarı decimal tipine dönüştür
@@ -178,28 +146,49 @@ namespace Forms
                     return;
                 }
 
-                // Yeni tahmini gelir oluştur
-                EkButceGelir yeniEkButceGelir = new EkButceGelir
+                // Yeni tahmini idari işler oluştur
+                EkButceGelir yeniEkGelir = new EkButceGelir
                 {
                     KoyId = _seciliKoyIndex,
                     DonemId = _seciliDonemIndex,
                     EkGelirTutari = girilenTutar,
                     GelirKategoriId = selectedGelirKategori.Id,
-                    DegisiklikId = selectedDegisiklik?.Id
+                    DegisiklikId = selectedDegisiklik.Id
                 };
-                //EkTahminiButceGelir tablosuna yeni kaydı ekle
-                ekButceGelirManager.Add(yeniEkButceGelir);
 
-                // ComboBox'tan kaydedilen öğeyi kaldır
-                cmbGelirKategori.Items.Remove(selectedGelirKategori);
+                // TahminiButceGelir tablosuna yeni kaydı ekle
+                ekButceGelirManager.Add(yeniEkGelir);
 
-                // Temizle ve gelirleri güncelle
+                // Temizle ve idari işleri güncelle
                 Temizle();
-                //TahminiGelirler();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Tahmini Gelir Kaydı Yapılamadı !!! " + ex.Message);
+                MessageBox.Show("Ek Bütçe için Gelir Kaydı Yapılamadı !!! " + ex.Message);
+            }
+        }
+
+        private void cmbGelirKategori_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbGelirKategori.Text == "Hasılat" || cmbGelirKategori.Text == "Resim ve harçlar" || cmbGelirKategori.Text == "Köy vakıf ve avarız geliri" || cmbGelirKategori.Text == "İstikrazlar")
+            {
+                cmbDegisiklik.Visible = true;
+                lblDegisiklik.Visible = true;
+
+                ////Degisiklik görünür olduğunda Tutar'ın lokasyonu
+                lblTutar.Location = new Point(9, 148);
+                txtTutar.Location = new Point(176, 146);
+
+                LoadDegisiklikler();
+            }
+            else
+            {
+                lblDegisiklik.Visible = false;
+                cmbDegisiklik.Visible = false;
+                lblTutar.Location = new Point(9, 111);
+                txtTutar.Location = new Point(176, 106);
+
+                cmbDegisiklik.SelectedIndex = -1;
             }
         }
     }
