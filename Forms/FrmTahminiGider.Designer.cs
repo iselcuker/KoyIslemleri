@@ -79,8 +79,10 @@
             dgvTahminiGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTahminiGiderler.Location = new Point(8, 283);
             dgvTahminiGiderler.Name = "dgvTahminiGiderler";
+            dgvTahminiGiderler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvTahminiGiderler.Size = new Size(792, 385);
             dgvTahminiGiderler.TabIndex = 131;
+            dgvTahminiGiderler.CellDoubleClick += dgvTahminiGiderler_CellDoubleClick;
             // 
             // lblTutar
             // 
@@ -186,6 +188,7 @@
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxSil.TabIndex = 135;
             pcBoxSil.TabStop = false;
+            pcBoxSil.Click += pcBoxSil_Click;
             // 
             // pcBoxGuncelle
             // 
@@ -197,6 +200,7 @@
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxGuncelle.TabIndex = 136;
             pcBoxGuncelle.TabStop = false;
+            pcBoxGuncelle.Click += pcBoxGuncelle_Click;
             // 
             // pcBoxKaydet
             // 

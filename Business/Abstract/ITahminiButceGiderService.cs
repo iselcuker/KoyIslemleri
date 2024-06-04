@@ -19,6 +19,6 @@ namespace Business.Abstract
         void Delete(TahminiButceGider tahminiButceGider);
         void Update(TahminiButceGider tahminiButceGider);
 
-        List<TahminiButceGiderDetailDto> GetTahminiButceGiderDetails();
+        List<TahminiButceGiderDetailDto> GetTahminiButceGiderDetails(int koyId, byte donemId);
     }
 }

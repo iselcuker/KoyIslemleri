@@ -11,6 +11,6 @@ namespace DataAccess.Abstract
 {
     public interface ITahminiButceGiderDal : IEntityRepository<TahminiButceGider>
     {
-        List<TahminiButceGiderDetailDto> GetTahminiButceGiderDetails();
+        List<TahminiButceGiderDetailDto> GetTahminiButceGiderDetails(int koyId, byte donemId);
     }
 }

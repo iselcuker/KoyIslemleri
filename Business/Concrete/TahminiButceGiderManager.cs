@@ -54,9 +54,9 @@ namespace Business.Concrete
             return _tahminiButceGiderDal.GetAll(tbgi => tbgi.KoyId == koyId);
         }
 
-        public List<TahminiButceGiderDetailDto> GetTahminiButceGiderDetails()
+        public List<TahminiButceGiderDetailDto> GetTahminiButceGiderDetails(int koyId, byte donemId)
         {
-            return _tahminiButceGiderDal.GetTahminiButceGiderDetails();
+            return _tahminiButceGiderDal.GetTahminiButceGiderDetails(koyId, donemId);
         }
 
         public void Update(TahminiButceGider tahminiButceGider)
