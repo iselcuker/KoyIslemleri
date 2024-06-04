@@ -41,6 +41,8 @@
             pcBoxGuncelle = new PictureBox();
             pcBoxKaydet = new PictureBox();
             dgvTahminiEkGelirler = new DataGridView();
+            lblKalanTutar = new Label();
+            lblKalan = new Label();
             pnlGelirBaslik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcBoxSil).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxGuncelle).BeginInit();
@@ -90,6 +92,7 @@
             cmbDegisiklik.Name = "cmbDegisiklik";
             cmbDegisiklik.Size = new Size(396, 31);
             cmbDegisiklik.TabIndex = 122;
+            cmbDegisiklik.SelectedIndexChanged += cmbDegisiklik_SelectedIndexChanged;
             // 
             // lblDegisiklik
             // 
@@ -146,6 +149,7 @@
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxSil.TabIndex = 133;
             pcBoxSil.TabStop = false;
+            pcBoxSil.Click += pcBoxSil_Click;
             // 
             // pcBoxGuncelle
             // 
@@ -157,6 +161,7 @@
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxGuncelle.TabIndex = 134;
             pcBoxGuncelle.TabStop = false;
+            pcBoxGuncelle.Click += pcBoxGuncelle_Click;
             // 
             // pcBoxKaydet
             // 
@@ -186,12 +191,33 @@
             dgvTahminiEkGelirler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvTahminiEkGelirler.Size = new Size(785, 366);
             dgvTahminiEkGelirler.TabIndex = 136;
+            dgvTahminiEkGelirler.CellDoubleClick += dgvTahminiEkGelirler_CellDoubleClick;
+            // 
+            // lblKalanTutar
+            // 
+            lblKalanTutar.AutoSize = true;
+            lblKalanTutar.Location = new Point(639, 74);
+            lblKalanTutar.Name = "lblKalanTutar";
+            lblKalanTutar.Size = new Size(66, 15);
+            lblKalanTutar.TabIndex = 137;
+            lblKalanTutar.Text = "Kalan Tutar";
+            // 
+            // lblKalan
+            // 
+            lblKalan.AutoSize = true;
+            lblKalan.Location = new Point(661, 95);
+            lblKalan.Name = "lblKalan";
+            lblKalan.Size = new Size(19, 15);
+            lblKalan.TabIndex = 138;
+            lblKalan.Text = "00";
             // 
             // FrmEkGelir
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(807, 705);
+            Controls.Add(lblKalan);
+            Controls.Add(lblKalanTutar);
             Controls.Add(dgvTahminiEkGelirler);
             Controls.Add(pcBoxSil);
             Controls.Add(pcBoxGuncelle);
@@ -231,6 +257,8 @@
         private PictureBox pcBoxSil;
         private PictureBox pcBoxGuncelle;
         private PictureBox pcBoxKaydet;
+        private Label lblKalanTutar;
+        private Label lblKalan;
         //public DataGridView dgvTahminiEkGelirler;
     }
 }

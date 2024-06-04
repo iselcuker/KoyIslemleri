@@ -11,6 +11,6 @@ namespace DataAccess.Abstract
 {
     public interface IEkButceGelirDal : IEntityRepository<EkButceGelir>
     {
-        List<EkButceGelirDetailDto> GetEkButceGelirDetails();
+        List<EkButceGelirDetailDto> GetEkButceGelirDetails(int koyId, byte donemId);
     }
 }

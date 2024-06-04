@@ -17,6 +17,6 @@ namespace Business.Abstract
         void Delete(EkButceGelir ekButceGelir);
         void Update(EkButceGelir ekButceGelir);
 
-        List<EkButceGelirDetailDto> GetEkButceGelirDetails();
+        List<EkButceGelirDetailDto> GetEkButceGelirDetails(int koyId, byte donemId);
     }
 }

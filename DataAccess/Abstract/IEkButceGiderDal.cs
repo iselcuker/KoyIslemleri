@@ -11,6 +11,6 @@ namespace DataAccess.Abstract
 {
     public interface IEkButceGiderDal : IEntityRepository<EkButceGider>
     {
-        List<EkButceGiderDetailDto> GetEkButceGiderDetails();
+        List<EkButceGiderDetailDto> GetEkButceGiderDetails(int koyId, byte donemId);
     }
 }

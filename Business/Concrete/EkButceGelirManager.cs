@@ -44,9 +44,9 @@ namespace Business.Concrete
             return _ekButceGelir.Get(ebge => ebge.Id == ekbutceGelirId);
         }
 
-        public List<EkButceGelirDetailDto> GetEkButceGelirDetails()
+        public List<EkButceGelirDetailDto> GetEkButceGelirDetails(int koyId, byte donemId)
         {
-            return _ekButceGelir.GetEkButceGelirDetails();
+            return _ekButceGelir.GetEkButceGelirDetails(koyId, donemId);
         }
 
         public void Update(EkButceGelir ekButceGelir)

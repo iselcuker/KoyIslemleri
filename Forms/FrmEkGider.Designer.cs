@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEkGider));
-            label1 = new Label();
+            lblDegisiklik = new Label();
             cmbDegisiklik = new ComboBox();
             pnlGiderBaslik = new Panel();
             lblBaslik = new Label();
@@ -42,24 +42,24 @@
             pcBoxSil = new PictureBox();
             pcBoxGuncelle = new PictureBox();
             pcBoxKaydet = new PictureBox();
-            dgvTahminiGiderler = new DataGridView();
+            dgvTahminiEkGiderler = new DataGridView();
             pnlGiderBaslik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcBoxSil).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxGuncelle).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxKaydet).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvTahminiGiderler).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvTahminiEkGiderler).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // lblDegisiklik
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Lucida Calligraphy", 14.25F);
-            label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(10, 148);
-            label1.Name = "label1";
-            label1.Size = new Size(109, 24);
-            label1.TabIndex = 147;
-            label1.Text = "Değişiklik";
+            lblDegisiklik.AutoSize = true;
+            lblDegisiklik.Font = new Font("Lucida Calligraphy", 14.25F);
+            lblDegisiklik.ImeMode = ImeMode.NoControl;
+            lblDegisiklik.Location = new Point(10, 143);
+            lblDegisiklik.Name = "lblDegisiklik";
+            lblDegisiklik.Size = new Size(109, 24);
+            lblDegisiklik.TabIndex = 147;
+            lblDegisiklik.Text = "Değişiklik";
             // 
             // cmbDegisiklik
             // 
@@ -69,7 +69,7 @@
             cmbDegisiklik.Font = new Font("Verdana", 14.25F);
             cmbDegisiklik.ForeColor = SystemColors.MenuText;
             cmbDegisiklik.FormattingEnabled = true;
-            cmbDegisiklik.Location = new Point(217, 143);
+            cmbDegisiklik.Location = new Point(217, 140);
             cmbDegisiklik.Name = "cmbDegisiklik";
             cmbDegisiklik.Size = new Size(396, 31);
             cmbDegisiklik.TabIndex = 146;
@@ -98,7 +98,7 @@
             lblTutar.AutoSize = true;
             lblTutar.Font = new Font("Lucida Calligraphy", 14.25F);
             lblTutar.ImeMode = ImeMode.NoControl;
-            lblTutar.Location = new Point(10, 183);
+            lblTutar.Location = new Point(10, 181);
             lblTutar.Name = "lblTutar";
             lblTutar.Size = new Size(70, 24);
             lblTutar.TabIndex = 140;
@@ -112,17 +112,18 @@
             cmbGiderAltKategori.Font = new Font("Verdana", 14.25F);
             cmbGiderAltKategori.ForeColor = SystemColors.MenuText;
             cmbGiderAltKategori.FormattingEnabled = true;
-            cmbGiderAltKategori.Location = new Point(217, 106);
+            cmbGiderAltKategori.Location = new Point(217, 103);
             cmbGiderAltKategori.Name = "cmbGiderAltKategori";
             cmbGiderAltKategori.Size = new Size(396, 31);
             cmbGiderAltKategori.TabIndex = 135;
+            cmbGiderAltKategori.SelectedIndexChanged += cmbGiderAltKategori_SelectedIndexChanged;
             // 
             // lblGiderAltKategori
             // 
             lblGiderAltKategori.AutoSize = true;
             lblGiderAltKategori.Font = new Font("Lucida Calligraphy", 14.25F);
             lblGiderAltKategori.ImeMode = ImeMode.NoControl;
-            lblGiderAltKategori.Location = new Point(10, 111);
+            lblGiderAltKategori.Location = new Point(10, 106);
             lblGiderAltKategori.Name = "lblGiderAltKategori";
             lblGiderAltKategori.Size = new Size(203, 24);
             lblGiderAltKategori.TabIndex = 138;
@@ -147,7 +148,7 @@
             lblGiderKategori.AutoSize = true;
             lblGiderKategori.Font = new Font("Lucida Calligraphy", 14.25F);
             lblGiderKategori.ImeMode = ImeMode.NoControl;
-            lblGiderKategori.Location = new Point(10, 74);
+            lblGiderKategori.Location = new Point(10, 69);
             lblGiderKategori.Name = "lblGiderKategori";
             lblGiderKategori.Size = new Size(163, 24);
             lblGiderKategori.TabIndex = 139;
@@ -157,7 +158,7 @@
             // 
             txtTutar.Cursor = Cursors.IBeam;
             txtTutar.Font = new Font("Lucida Calligraphy", 14.25F);
-            txtTutar.Location = new Point(217, 181);
+            txtTutar.Location = new Point(217, 177);
             txtTutar.Name = "txtTutar";
             txtTutar.Size = new Size(209, 33);
             txtTutar.TabIndex = 137;
@@ -166,55 +167,60 @@
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(308, 224);
+            pcBoxSil.Location = new Point(308, 216);
             pcBoxSil.Name = "pcBoxSil";
             pcBoxSil.Size = new Size(85, 65);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxSil.TabIndex = 148;
             pcBoxSil.TabStop = false;
+            pcBoxSil.Click += pcBoxSil_Click;
             // 
             // pcBoxGuncelle
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(399, 225);
+            pcBoxGuncelle.Location = new Point(399, 216);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxGuncelle.TabIndex = 149;
             pcBoxGuncelle.TabStop = false;
+            pcBoxGuncelle.Click += pcBoxGuncelle_Click;
             // 
             // pcBoxKaydet
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(217, 224);
+            pcBoxKaydet.Location = new Point(217, 216);
             pcBoxKaydet.Name = "pcBoxKaydet";
             pcBoxKaydet.Size = new Size(85, 65);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxKaydet.TabIndex = 150;
             pcBoxKaydet.TabStop = false;
+            pcBoxKaydet.Click += pcBoxKaydet_Click;
             // 
-            // dgvTahminiGiderler
+            // dgvTahminiEkGiderler
             // 
-            dgvTahminiGiderler.BackgroundColor = SystemColors.Control;
-            dgvTahminiGiderler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
-            dgvTahminiGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiGiderler.Location = new Point(10, 296);
-            dgvTahminiGiderler.Name = "dgvTahminiGiderler";
-            dgvTahminiGiderler.Size = new Size(792, 355);
-            dgvTahminiGiderler.TabIndex = 151;
+            dgvTahminiEkGiderler.BackgroundColor = SystemColors.Control;
+            dgvTahminiEkGiderler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
+            dgvTahminiEkGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTahminiEkGiderler.Location = new Point(10, 296);
+            dgvTahminiEkGiderler.Name = "dgvTahminiEkGiderler";
+            dgvTahminiEkGiderler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvTahminiEkGiderler.Size = new Size(792, 325);
+            dgvTahminiEkGiderler.TabIndex = 151;
+            dgvTahminiEkGiderler.CellDoubleClick += dgvTahminiEkGiderler_CellDoubleClick;
             // 
             // FrmEkGider
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(807, 705);
-            Controls.Add(dgvTahminiGiderler);
+            Controls.Add(dgvTahminiEkGiderler);
             Controls.Add(pcBoxSil);
             Controls.Add(pcBoxGuncelle);
             Controls.Add(pcBoxKaydet);
-            Controls.Add(label1);
+            Controls.Add(lblDegisiklik);
             Controls.Add(cmbDegisiklik);
             Controls.Add(pnlGiderBaslik);
             Controls.Add(lblTutar);
@@ -232,14 +238,14 @@
             ((System.ComponentModel.ISupportInitialize)pcBoxSil).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxGuncelle).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxKaydet).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvTahminiGiderler).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvTahminiEkGiderler).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private Label lblDegisiklik;
         private ComboBox cmbDegisiklik;
         private Panel pnlGiderBaslik;
         private Label lblBaslik;
@@ -252,6 +258,6 @@
         private PictureBox pcBoxSil;
         private PictureBox pcBoxGuncelle;
         private PictureBox pcBoxKaydet;
-        public DataGridView dgvTahminiGiderler;
+        public DataGridView dgvTahminiEkGiderler;
     }
 }

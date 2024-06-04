@@ -18,6 +18,6 @@ namespace Business.Abstract
         void Delete(EkButceGider ekButceGider);
         void Update(EkButceGider ekButceGider);
 
-        List<EkButceGiderDetailDto> GetEkButceGiderDetails();
+        List<EkButceGiderDetailDto> GetEkButceGiderDetails(int koyId, byte donemId);
     }
 }

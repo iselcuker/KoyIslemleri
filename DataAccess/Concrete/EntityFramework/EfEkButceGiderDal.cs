@@ -12,11 +12,17 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfEkButceGiderDal : EfEntityRepositoryBase<EkButceGider, KoyButcesiContext>, IEkButceGiderDal
     {
-        public List<EkButceGiderDetailDto> GetEkButceGiderDetails()
+        public List<EkButceGiderDetailDto> GetEkButceGiderDetails(int koyId, byte donemId)
         {
             using (KoyButcesiContext context = new KoyButcesiContext())
             {
                 var result = from ekButceGider in context.EkButceGiders
+
+                             join giderkategori in context.GiderKategoris
+                             on ekButceGider.GiderKategoriId equals giderkategori.Id
+
+                             join giderAltKategori in context.GiderAltKategoris
+                             on ekButceGider.GiderAltKategoriId equals giderAltKategori.Id
 
                              join koy in context.Koys
                              on ekButceGider.KoyId equals koy.Id
@@ -24,19 +30,24 @@ namespace DataAccess.Concrete.EntityFramework
                              join donem in context.Donems
                              on ekButceGider.DonemId equals donem.Id
 
-                             join giderKategori in context.GelirKategoris
-                             on ekButceGider.GiderKategoriId equals giderKategori.Id
+                             join degisiklik in context.Degisikliks
+                             on ekButceGider.DegisiklikId equals degisiklik.Id into degisiklikGroup
 
-                             join giderAltKategori in context.GiderAltKategoris
-                             on ekButceGider.GiderAltKategoriId equals giderAltKategori.Id
-
+                             from degisiklik in degisiklikGroup.DefaultIfEmpty()
+                             where ekButceGider.KoyId == koyId && ekButceGider.DonemId == donemId
                              select new EkButceGiderDetailDto
                              {
                                  EkButceGiderId = ekButceGider.Id,
-                                 KoyAdi = koy.KoyAdi,
-                                 DonemAdi = donem.DonemAdi,
-                                 GiderKategoriAdi = giderKategori.GelirKategoriAdi,
+                                 GiderKategoriAdi = giderkategori.GiderKategoriAdi,
+                                 GiderKategoriId = ekButceGider.GiderKategoriId,
                                  GiderAltKategoriAdi = giderAltKategori.GiderAltKategoriAdi,
+                                 GiderAltKategoriId = ekButceGider.GiderAltKategoriId,
+                                 KoyAdi = koy.KoyAdi,
+                                 KoyId = koy.Id,
+                                 DonemAdi = donem.DonemAdi,
+                                 DonemId = donem.Id,
+                                 DegisiklikAdi = degisiklik != null ? degisiklik.DegisiklikAdi : "",
+                                 DegisiklikId = ekButceGider.DegisiklikId,
                                  EkGiderTutari = ekButceGider.EkGiderTutari,
                              };
                 return result.ToList();
