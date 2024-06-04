@@ -110,61 +110,6 @@ namespace Forms
 
         private void cmbGiderKategori_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    // Temizleme: cmbGiderAltKategori'nin içeriğini temizler.
-            //    cmbGiderAltKategori.Items.Clear();
-
-            //    // Seçilen kategori index'i kontrol edilir. 
-            //    // Eğer 0'dan büyükse (yoksa "Seçiniz" gibi bir değer seçilmiştir), işlemlere devam edilir.
-            //    if (cmbGiderKategori.SelectedIndex > 0)
-            //    {
-            //        // Seçilen gider kategorisi cmbGiderKategori'den alınır ve GiderKategori tipine dönüştürülür.
-            //        GiderKategori secilenGiderKategori = cmbGiderKategori.SelectedItem as GiderKategori;
-
-            //        // Seçilen kategorinin alt kategorileri GetByGiderKategoriId metodu ile alınır.
-            //        List<GiderAltKategori> secilenKategorinAltKategorisi = giderAltKategoriManager.GetByGiderKategoriId(secilenGiderKategori.Id);
-
-            //        // cmbGiderAltKategori'nin öğeleri olarak seçilen kategorinin alt kategorileri eklenir.
-            //        cmbGiderAltKategori.Items.AddRange(secilenKategorinAltKategorisi.ToArray());
-
-            //        // İlk alt kategori seçildiğinde sadece gerekli durumlarda Degisiklik görünürlüğünü ayarla
-            //        GiderAltKategori ilkAltKategori = secilenKategorinAltKategorisi.FirstOrDefault();
-            //        if (ilkAltKategori != null &&
-            //            (ilkAltKategori.GiderAltKategoriAdi == "Yangın Vesaiti Masrafı" ||
-            //             ilkAltKategori.GiderAltKategoriAdi == "Aydınlatma Masrafı" ||
-            //             ilkAltKategori.GiderAltKategoriAdi == "Vergi ve Sigorta Masrafı" ||
-            //             ilkAltKategori.GiderAltKategoriAdi == "Köy Borçları, İstikraz Taksit ve Faizleri" ||
-            //             ilkAltKategori.GiderAltKategoriAdi == "Mahkeme ve Keşif Masrafları" ||
-            //             ilkAltKategori.GiderAltKategoriAdi == "İstimlak Masrafları" ||
-            //             ilkAltKategori.GiderAltKategoriAdi == "Umulmadık Masraflar"))
-            //        {
-            //            lblDegisiklik.Visible = true;
-            //            cmbDegisiklik.Visible = true;
-            //            //lblTutar.Location = new Point(10, 181);
-            //            //txtTutar.Location = new Point(217, 177);
-            //            //pcBoxKaydet.Location = new Point(217, 216);
-            //            //pcBoxSil.Location = new Point(308, 216);
-            //            //pcBoxGuncelle.Location = new Point(399, 216);
-            //        }
-            //        else
-            //        {
-            //            lblDegisiklik.Visible = false;
-            //            cmbDegisiklik.Visible = false;
-            //            //lblTutar.Location = new Point(10, 143);
-            //            //txtTutar.Location = new Point(217, 140);
-            //            //pcBoxKaydet.Location = new Point(217, 177);
-            //            //pcBoxSil.Location = new Point(308, 177);
-            //            //pcBoxGuncelle.Location = new Point(399, 177);
-            //        }
-            //    }
-            //}
-            //catch (Exception)
-            //{
-            //    // Hata durumunda hatayı yukarıya bildir.
-            //    throw;
-            //}
-
             try
             {
                 // Temizleme: cmbGiderAltKategori'nin içeriğini temizler.
