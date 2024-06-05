@@ -365,20 +365,18 @@ namespace Forms
             {
                 lblDonem.Visible = true;
                 cmbDonem.Visible = true;
-
                 // Diðer elemanlarý gizle
                 grpNot.Visible = false;
                 grpSonDurum.Visible = false;
                 pnlBaslik.Visible = false;
                 pnlButonlar.Visible = false;
                 pnlFormlar.Visible = false;
-
                 Baslik();
-
                 PaneldekiFormuKapat();
-
                 rchBoxNot.Text = "";
                 lblToplamGelir.Text = "";
+                NotGetir();
+                Sonuc();
             }
             catch (Exception ex)
             {
@@ -399,9 +397,7 @@ namespace Forms
                 NotGetir();
                 lblToplamGelir.Text = "";
                 PaneldekiFormuKapat();
-
                 GuncelleGelirVeGider();
-
                 Sonuc();
             }
             catch (Exception ex)

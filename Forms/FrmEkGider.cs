@@ -116,7 +116,7 @@ namespace Forms
 
                 // Seçilen kategori index'i kontrol edilir. 
                 // Eğer 0'dan büyükse (yoksa "Seçiniz" gibi bir değer seçilmiştir), işlemlere devam edilir.
-                if (cmbGiderKategori.SelectedIndex > 0)
+                if (cmbGiderKategori.SelectedIndex >= 0)
                 {
                     // Seçilen gider kategorisi cmbGiderKategori'den alınır ve GiderKategori tipine dönüştürülür.
                     GiderKategori secilenGiderKategori = cmbGiderKategori.SelectedItem as GiderKategori;

@@ -154,7 +154,6 @@
             lblGiderToplami2 = new Label();
             lblDonem2 = new Label();
             lblMuhta = new Label();
-            lblOkulMuduru = new Label();
             lblImam = new Label();
             lblAza4 = new Label();
             lblKatip = new Label();
@@ -183,7 +182,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1571, 1070);
+            pictureBox1.Size = new Size(1115, 790);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
@@ -1402,21 +1401,11 @@
             // 
             lblMuhta.AutoSize = true;
             lblMuhta.Font = new Font("Tw Cen MT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblMuhta.Location = new Point(860, 766);
+            lblMuhta.Location = new Point(790, 711);
             lblMuhta.Name = "lblMuhta";
             lblMuhta.Size = new Size(156, 17);
             lblMuhta.TabIndex = 168;
             lblMuhta.Text = "Abdurrahman SELÇUKER";
-            // 
-            // lblOkulMuduru
-            // 
-            lblOkulMuduru.AutoSize = true;
-            lblOkulMuduru.Font = new Font("Tw Cen MT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblOkulMuduru.Location = new Point(1099, 766);
-            lblOkulMuduru.Name = "lblOkulMuduru";
-            lblOkulMuduru.Size = new Size(156, 17);
-            lblOkulMuduru.TabIndex = 168;
-            lblOkulMuduru.Text = "Abdurrahman SELÇUKER";
             // 
             // lblImam
             // 
@@ -1482,7 +1471,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1571, 1070);
+            ClientSize = new Size(1118, 793);
             Controls.Add(lblAza2);
             Controls.Add(lblAza1);
             Controls.Add(label111);
@@ -1533,7 +1522,6 @@
             Controls.Add(lblImam);
             Controls.Add(lblKatip);
             Controls.Add(lblAza4);
-            Controls.Add(lblOkulMuduru);
             Controls.Add(lblMuhta);
             Controls.Add(lblTahminiGiderToplami);
             Controls.Add(lblTahminiGelirToplami);
@@ -1749,7 +1737,6 @@
         private Label lblGiderToplami2;
         private Label lblDonem2;
         private Label lblMuhta;
-        private Label lblOkulMuduru;
         private Label lblImam;
         private Label lblAza4;
         private Label lblKatip;
