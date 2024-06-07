@@ -118,6 +118,7 @@ namespace Forms
                 EkButceGelirleri();
                 lblDegisiklik.Visible = false;
                 cmbDegisiklik.Visible = false;
+
                 lblTutar.Location = new Point(9, 111);
                 txtTutar.Location = new Point(176, 106);
             }
@@ -160,6 +161,86 @@ namespace Forms
 
         private void pcBoxKaydet_Click(object sender, EventArgs e)
         {
+            //try
+            //{
+            //    // Kategorinin seçili olup olmadığını kontrol et
+            //    if (cmbGelirKategori.SelectedIndex < 0 || !(cmbGelirKategori.SelectedItem is GelirKategori))
+            //    {
+            //        MessageBox.Show("Lütfen geçerli Gelir Türü seçiniz!");
+            //        return;
+            //    }
+
+            //    // Gelir kategorisinin metinsel değerini al
+            //    string selectedGelirKategori = ((GelirKategori)cmbGelirKategori.SelectedItem).GelirKategoriAdi;
+
+            //    // Eğer seçilen gelir kategorisi belirli bir değer ise
+            //    if (selectedGelirKategori == "Hasılat" || selectedGelirKategori == "Resim ve harçlar" || selectedGelirKategori == "Köy vakıf ve avarız geliri" || selectedGelirKategori == "İstikrazlar")
+            //    {
+            //        // Alt kategorinin seçili olup olmadığını kontrol et
+            //        if (cmbDegisiklik.SelectedIndex > 0 || !(cmbDegisiklik.SelectedItem is Degisiklik))
+            //        {
+            //            MessageBox.Show("Lütfen geçerli bir Değişiklik seçiniz!");
+            //            return;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        // Eğer seçilen gelir kategorisi belirli bir değer değilse, cmbDegisiklik'ten seçim yapılmasına gerek yok
+            //        // Dolayısıyla, işlemi devam ettir ve işlemi durdurma
+            //        // Ancak, eğer cmbDegisiklik seçiliyse, bu kategori için seçim yapmaya gerek olmadığı için uyarı verme
+            //        if (cmbDegisiklik.SelectedIndex >= 0)
+            //        {
+            //            MessageBox.Show("Bu Gelir Türü için cmbDegisiklik'ten seçim yapmanıza gerek yok!");
+            //        }
+            //    }
+
+            //    // Tutarın boş olup olmadığını kontrol et
+            //    if (string.IsNullOrEmpty(txtTutar.Text))
+            //    {
+            //        MessageBox.Show("Lütfen Tutarı Giriniz !!!");
+            //        return;
+            //    }
+
+            //    // Girilen tutarı decimal tipine dönüştür
+            //    if (!decimal.TryParse(txtTutar.Text, out decimal girilenTutar))
+            //    {
+            //        MessageBox.Show("Lütfen geçerli bir tutar giriniz!");
+            //        return;
+            //    }
+
+            //    // Yeni tahmini idari işler oluştur
+            //    EkButceGelir yeniEkGelir = new EkButceGelir
+            //    {
+            //        KoyId = _seciliKoyIndex,
+            //        DonemId = _seciliDonemIndex,
+            //        EkGelirTutari = girilenTutar,
+            //        GelirKategoriId = ((GelirKategori)cmbGelirKategori.SelectedItem).Id
+            //    };
+
+            //    // Eğer seçilen gelir kategorisi belirli bir değer ise
+            //    if (selectedGelirKategori == "Hasılat" || selectedGelirKategori == "Resim ve harçlar" || selectedGelirKategori == "Köy vakıf ve avarız geliri" || selectedGelirKategori == "İstikrazlar")
+            //    {
+            //        // Seçilen değişiklik id'sini ekle
+            //        yeniEkGelir.DegisiklikId = ((Degisiklik)cmbDegisiklik.SelectedItem).Id;
+            //    }
+
+            //    // TahminiButceGelir tablosuna yeni kaydı ekle
+            //    ekButceGelirManager.Add(yeniEkGelir);
+
+            //    // Temizle ve idari işleri güncelle
+            //    EkButceGelirleri();
+
+            //    // Eklenen satırı seç
+            //    SelectRowInDataGridView(yeniEkGelir.Id);
+
+            //    Temizle();
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Ek Bütçe için Gelir Kaydı Yapılamadı !!! " + ex.Message);
+            //}
+
+
             try
             {
                 // Kategorinin seçili olup olmadığını kontrol et
@@ -184,12 +265,11 @@ namespace Forms
                 }
                 else
                 {
-                    // Eğer seçilen gelir kategorisi belirli bir değer değilse, cmbDegisiklik'ten seçim yapılmasına gerek yok
-                    // Dolayısıyla, işlemi devam ettir ve işlemi durdurma
-                    // Ancak, eğer cmbDegisiklik seçiliyse, bu kategori için seçim yapmaya gerek olmadığı için uyarı verme
+                    // Eğer seçilen gelir kategorisi belirli bir değer değilse ve cmbDegisiklik seçiliyse, uyarı ver ve işlemi durdur
                     if (cmbDegisiklik.SelectedIndex >= 0)
                     {
                         MessageBox.Show("Bu Gelir Türü için cmbDegisiklik'ten seçim yapmanıza gerek yok!");
+                        return;
                     }
                 }
 
@@ -207,7 +287,14 @@ namespace Forms
                     return;
                 }
 
-                // Yeni tahmini idari işler oluştur
+                // Eğer cmbDegisiklik seçiliyse ve "-Değişiklik Seçiniz-" seçiliyse, uyarı ver ve işlemi durdur
+                if (cmbDegisiklik.SelectedIndex >= 0 && cmbDegisiklik.SelectedItem.ToString() == "-Değişiklik Seçiniz-")
+                {
+                    MessageBox.Show("Lütfen bir Değişiklik seçiniz!");
+                    return;
+                }
+
+                // Yeni tahmini idari işleri oluştur
                 EkButceGelir yeniEkGelir = new EkButceGelir
                 {
                     KoyId = _seciliKoyIndex,
@@ -254,8 +341,14 @@ namespace Forms
                 // cmbDegisiklik seçilebilir hale getir
                 cmbDegisiklik.Visible = true;
                 lblDegisiklik.Visible = true;
+
                 lblTutar.Location = new Point(9, 148);
                 txtTutar.Location = new Point(176, 146);
+                pcBoxKaydet.Location = new Point(176, 185);
+                pcBoxSil.Location = new Point(267, 185);
+                pcBoxGuncelle.Location = new Point(358, 185);
+
+
 
                 LoadDegisiklikler();
             }
@@ -264,6 +357,13 @@ namespace Forms
                 // cmbDegisiklik seçilemez hale getir ve varsayılan değeri seç
                 cmbDegisiklik.Visible = false;
                 lblDegisiklik.Visible = false;
+
+                lblTutar.Location = new Point(9, 111);
+                txtTutar.Location = new Point(176, 106);
+                pcBoxKaydet.Location = new Point(176,146);
+                pcBoxSil.Location = new Point(267,146);
+                pcBoxGuncelle.Location = new Point(358,146);
+
                 cmbDegisiklik.SelectedItem = null; // Seçili öğeyi temizle
             }
         }
@@ -362,6 +462,92 @@ namespace Forms
 
         private void pcBoxGuncelle_Click(object sender, EventArgs e)
         {
+            //try
+            //{
+            //    // Seçili satırın indeksini al
+            //    if (dgvTahminiEkGelirler.SelectedRows.Count == 0)
+            //    {
+            //        MessageBox.Show("Güncellemek için bir satır seçiniz!");
+            //        return;
+            //    }
+
+            //    DataGridViewRow selectedRow = dgvTahminiEkGelirler.SelectedRows[0];
+            //    int selectedRowIndex = selectedRow.Index;
+
+            //    // Kategorinin seçili olup olmadığını kontrol et
+            //    if (cmbGelirKategori.SelectedIndex < 0 || !(cmbGelirKategori.SelectedItem is GelirKategori))
+            //    {
+            //        MessageBox.Show("Lütfen geçerli Gelir Türü seçiniz!");
+            //        return;
+            //    }
+
+            //    // Gelir kategorisinin metinsel değerini al
+            //    string selectedGelirKategori = ((GelirKategori)cmbGelirKategori.SelectedItem).GelirKategoriAdi;
+
+            //    // Eğer seçilen gelir kategorisi belirli bir değer ise
+            //    if (selectedGelirKategori == "Hasılat" || selectedGelirKategori == "Resim ve harçlar" || selectedGelirKategori == "Köy vakıf ve avarız geliri" || selectedGelirKategori == "İstikrazlar")
+            //    {
+            //        // Alt kategorinin seçili olup olmadığını kontrol et
+            //        if (cmbDegisiklik.SelectedIndex < 0 || !(cmbDegisiklik.SelectedItem is Degisiklik))
+            //        {
+            //            MessageBox.Show("Lütfen geçerli bir Değişiklik seçiniz!");
+            //            return;
+            //        }
+            //    }
+
+            //    // Tutarın boş olup olmadığını kontrol et
+            //    if (string.IsNullOrEmpty(txtTutar.Text))
+            //    {
+            //        MessageBox.Show("Lütfen Tutarı Giriniz !!!");
+            //        return;
+            //    }
+
+            //    // Girilen tutarı decimal tipine dönüştür
+            //    if (!decimal.TryParse(txtTutar.Text, out decimal girilenTutar))
+            //    {
+            //        MessageBox.Show("Lütfen geçerli bir tutar giriniz!");
+            //        return;
+            //    }
+
+            //    // Güncellenecek tahmini idari işleri oluştur
+            //    EkButceGelir guncellenecekEkGelir = new EkButceGelir
+            //    {
+            //        Id = (int)selectedRow.Cells["EkButceGelirId"].Value, // EkButceGelir kaydının Id'sini kullanarak güncelleme yapılacak
+            //        KoyId = _seciliKoyIndex,
+            //        DonemId = _seciliDonemIndex,
+            //        EkGelirTutari = girilenTutar,
+            //        GelirKategoriId = ((GelirKategori)cmbGelirKategori.SelectedItem).Id
+            //    };
+
+            //    // Eğer seçilen gelir kategorisi belirli bir değer ise
+            //    if (selectedGelirKategori == "Hasılat" || selectedGelirKategori == "Resim ve harçlar" || selectedGelirKategori == "Köy vakıf ve avarız geliri" || selectedGelirKategori == "İstikrazlar")
+            //    {
+            //        // Seçilen değişiklik id'sini ekle
+            //        guncellenecekEkGelir.DegisiklikId = ((Degisiklik)cmbDegisiklik.SelectedItem).Id;
+            //    }
+            //    else
+            //    {
+            //        guncellenecekEkGelir.DegisiklikId = null; // Diğer kategoriler için DegisiklikId null olabilir
+            //    }
+
+            //    // TahminiButceGelir tablosunda mevcut kaydı güncelle
+            //    ekButceGelirManager.Update(guncellenecekEkGelir);
+
+            //    // Temizle ve idari işleri güncelle
+            //    EkButceGelirleri();
+
+            //    // Eklenen veya güncellenen satırı seç
+            //    SelectRowInDataGridView(guncellenecekEkGelir.Id);
+
+            //    Temizle();
+
+            //    MessageBox.Show("Kayıt başarıyla güncellendi!");
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Ek Bütçe için Gelir Kaydı Güncellenemedi !!! " + ex.Message);
+            //}
+
             try
             {
                 // Seçili satırın indeksini al
@@ -394,6 +580,15 @@ namespace Forms
                         return;
                     }
                 }
+                else
+                {
+                    // Eğer seçilen gelir kategorisi belirli bir değer değilse ve cmbDegisiklik seçiliyse, uyarı ver ve işlemi durdur
+                    if (cmbDegisiklik.SelectedIndex >= 0)
+                    {
+                        MessageBox.Show("Bu Gelir Türü için cmbDegisiklik'ten seçim yapmanıza gerek yok!");
+                        return;
+                    }
+                }
 
                 // Tutarın boş olup olmadığını kontrol et
                 if (string.IsNullOrEmpty(txtTutar.Text))
@@ -406,6 +601,13 @@ namespace Forms
                 if (!decimal.TryParse(txtTutar.Text, out decimal girilenTutar))
                 {
                     MessageBox.Show("Lütfen geçerli bir tutar giriniz!");
+                    return;
+                }
+
+                // Eğer cmbDegisiklik seçiliyse ve "-Değişiklik Seçiniz-" seçiliyse, uyarı ver ve işlemi durdur
+                if (cmbDegisiklik.SelectedIndex >= 0 && cmbDegisiklik.SelectedItem.ToString() == "-Değişiklik Seçiniz-")
+                {
+                    MessageBox.Show("Lütfen bir Değişiklik seçiniz!");
                     return;
                 }
 
@@ -427,25 +629,23 @@ namespace Forms
                 }
                 else
                 {
-                    guncellenecekEkGelir.DegisiklikId = null; // Diğer kategoriler için DegisiklikId null olabilir
+                    guncellenecekEkGelir.DegisiklikId = null; // Değişiklik olmadığı durumda null ata
                 }
 
-                // TahminiButceGelir tablosunda mevcut kaydı güncelle
+                // TahminiButceGelir tablosunda güncelleme yap
                 ekButceGelirManager.Update(guncellenecekEkGelir);
 
-                // Temizle ve idari işleri güncelle
-                EkButceGelirleri();
+                // Güncellenen satırın bilgilerini yenile
+                DataGridViewRow updatedRow = dgvTahminiEkGelirler.Rows[selectedRowIndex];
+                updatedRow.Cells["GelirKategori"].Value = cmbGelirKategori.Text;//________________________________________________
+                updatedRow.Cells["Tutar"].Value = girilenTutar.ToString("C2");
 
-                // Eklenen veya güncellenen satırı seç
-                SelectRowInDataGridView(guncellenecekEkGelir.Id);
-
+                // Temizle
                 Temizle();
-
-                MessageBox.Show("Kayıt başarıyla güncellendi!");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ek Bütçe için Gelir Kaydı Güncellenemedi !!! " + ex.Message);
+                MessageBox.Show("Ek Bütçe için Gelir Güncelleme Yapılamadı !!! " + ex.Message);
             }
         }
 

@@ -155,7 +155,7 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(358, 186);
+            pcBoxGuncelle.Location = new Point(358, 185);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;

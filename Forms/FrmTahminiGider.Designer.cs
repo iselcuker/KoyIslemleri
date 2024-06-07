@@ -73,14 +73,18 @@
             // 
             // dgvTahminiGiderler
             // 
+            dgvTahminiGiderler.AllowUserToAddRows = false;
+            dgvTahminiGiderler.AllowUserToDeleteRows = false;
+            dgvTahminiGiderler.AllowUserToResizeColumns = false;
+            dgvTahminiGiderler.AllowUserToResizeRows = false;
             dgvTahminiGiderler.BackgroundColor = SystemColors.Control;
-            dgvTahminiGiderler.BorderStyle = BorderStyle.Fixed3D;
+            dgvTahminiGiderler.BorderStyle = BorderStyle.None;
             dgvTahminiGiderler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTahminiGiderler.Location = new Point(8, 283);
             dgvTahminiGiderler.Name = "dgvTahminiGiderler";
             dgvTahminiGiderler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvTahminiGiderler.Size = new Size(792, 385);
+            dgvTahminiGiderler.Size = new Size(795, 330);
             dgvTahminiGiderler.TabIndex = 131;
             dgvTahminiGiderler.CellDoubleClick += dgvTahminiGiderler_CellDoubleClick;
             // 
@@ -182,7 +186,7 @@
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(308, 211);
+            pcBoxSil.Location = new Point(308, 171);
             pcBoxSil.Name = "pcBoxSil";
             pcBoxSil.Size = new Size(85, 65);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -194,7 +198,7 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(399, 212);
+            pcBoxGuncelle.Location = new Point(399, 171);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -206,7 +210,7 @@
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(217, 211);
+            pcBoxKaydet.Location = new Point(217, 171);
             pcBoxKaydet.Name = "pcBoxKaydet";
             pcBoxKaydet.Size = new Size(85, 65);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -219,7 +223,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 12F);
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(459, 179);
+            label1.Location = new Point(547, 179);
             label1.Name = "label1";
             label1.Size = new Size(129, 19);
             label1.TabIndex = 127;
@@ -230,7 +234,7 @@
             lblYeniTutar.AutoSize = true;
             lblYeniTutar.Font = new Font("Calibri", 12F);
             lblYeniTutar.ImeMode = ImeMode.NoControl;
-            lblYeniTutar.Location = new Point(594, 179);
+            lblYeniTutar.Location = new Point(682, 179);
             lblYeniTutar.Name = "lblYeniTutar";
             lblYeniTutar.Size = new Size(17, 19);
             lblYeniTutar.TabIndex = 127;

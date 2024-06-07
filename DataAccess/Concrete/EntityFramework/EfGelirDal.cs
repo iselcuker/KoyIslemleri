@@ -31,7 +31,6 @@ namespace DataAccess.Concrete.EntityFramework
                              select new GelirDetailDto
                              {
                                  GelirId = g.Id, //GelirDetailDto'daki Id'yi Gelirs'deki Id'den al
-                                 //GelirKategorAdi = gelirkategori.GelirKategoriAdi, //GelirDetailDto'daki GelirKategorAdi adını GelirKategoris'deki GelirKategoriAdi'ndan al
                                  KoyAdi = koy.KoyAdi, //GelirDetailDto'daki KoyAdi'ni Koys'deki KoyAdi'ndan al
                                  DonemAdi = donem.DonemAdi,
                                  Tutar = g.Tutar,

@@ -129,6 +129,8 @@
             // 
             dgvEkButceler.AllowUserToAddRows = false;
             dgvEkButceler.AllowUserToDeleteRows = false;
+            dgvEkButceler.AllowUserToResizeColumns = false;
+            dgvEkButceler.AllowUserToResizeRows = false;
             dgvEkButceler.BackgroundColor = SystemColors.Control;
             dgvEkButceler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvEkButceler.Location = new Point(3, 174);

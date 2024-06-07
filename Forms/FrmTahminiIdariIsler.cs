@@ -114,6 +114,8 @@ namespace Forms
                         cmbIdariIslerAltKategori.DisplayMember = "AltKategoriAdi"; // Görüntülenecek alan
                         cmbIdariIslerAltKategori.ValueMember = "Id"; // Değer olarak kullanılacak alan
                         cmbIdariIslerAltKategori.DataSource = secilenKategorinAltKategorisi;
+
+
                     }
                 }
             }
@@ -122,6 +124,14 @@ namespace Forms
                 MessageBox.Show("Alt kategoriler getirilirken hata oluştu");
                 throw;
             }
+        }
+
+        // Yeni kaydı ekledikten veya güncelledikten sonra ilgili satırı seçin ve görünür hale getirin
+        private void SelectAndScrollToRow(int rowIndex)
+        {
+            dgvTahminiIdariIsler.ClearSelection(); // Mevcut seçimi kaldırın
+            dgvTahminiIdariIsler.Rows[rowIndex].Selected = true; // İlgili satırı seçin
+            dgvTahminiIdariIsler.FirstDisplayedScrollingRowIndex = rowIndex; // İlgili satırı görünür hale getirin
         }
 
         private void pcBoxKaydet_Click(object sender, EventArgs e)
@@ -172,6 +182,11 @@ namespace Forms
 
                 // TahminiButceGelir tablosuna yeni kaydı ekle
                 tahminiIdariIslerManager.Add(yeniIdariIsler);
+
+                // Yeni eklenen kaydın indeksini alın
+                int newRowIndex = dgvTahminiIdariIsler.Rows.Count - 1;
+                // Yeni eklenen satırı seçin ve görünür hale getirin
+                SelectAndScrollToRow(newRowIndex);
 
                 // Temizle ve idari işleri güncelle
                 Temizle();
@@ -354,6 +369,11 @@ namespace Forms
 
                 // TahminiButceIdariIsler tablosundaki kaydı güncelle
                 tahminiIdariIslerManager.Update(guncellenmisIdariIsler);
+
+                // Güncellenen satırın indeksini alın
+                int updatedRowIndex = dgvTahminiIdariIsler.CurrentRow.Index;
+                // Güncellenen satırı seçin ve görünür hale getirin
+                SelectAndScrollToRow(updatedRowIndex);
 
                 // Temizle ve idari işleri güncelle
                 Temizle();

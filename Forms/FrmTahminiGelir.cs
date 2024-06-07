@@ -268,6 +268,10 @@ namespace Forms
                 // Temizle ve gelirleri güncelle
                 Temizle();
                 TahminiGelirler();
+
+                // Eklenen satırı seç ve görünür yap
+                dgvTahminiGelirler.Rows[dgvTahminiGelirler.Rows.Count - 1].Selected = true;
+                dgvTahminiGelirler.FirstDisplayedScrollingRowIndex = dgvTahminiGelirler.Rows.Count - 1;
             }
             catch (Exception ex)
             {
@@ -372,6 +376,7 @@ namespace Forms
                 dgvTahminiGelirler.ColumnHeadersHeight = 40; // Başlık yüksekliği
                 dgvTahminiGelirler.EnableHeadersVisualStyles = false; // Başlık yazı rengini değiştirmek için
                 dgvTahminiGelirler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray; // Başlık arka plan rengi
+               
             }
             catch (Exception ex)
             {
@@ -452,8 +457,6 @@ namespace Forms
                 byte degisiklikId = (byte)cmbDegisiklik.SelectedIndex;
                 decimal tutar = Convert.ToDecimal(txtTutar.Text);
 
-
-
                 // Güncelleme işlemini yap
                 TahminiButceGelir guncellenecekTahminiGelir = new TahminiButceGelir
                 {
@@ -463,8 +466,6 @@ namespace Forms
                     GelirKategoriId = gelirKategoriId,
                     DegisiklikId = degisiklikId,
                     TahimiGelirTutari = tutar,
-
-
                 };
 
                 // Güncelleme işlemini yapmak için GelirManager üzerinden Update metodunu çağır
@@ -496,54 +497,6 @@ namespace Forms
             {
                 // Hata durumunda kullanıcıya bilgi ver
                 MessageBox.Show("Gelir güncellenirken bir hata oluştu: " + ex.Message);
-            }
-
-            // Seçili satırın indeksini al
-            int rowIndex = dgvTahminiGelirler.SelectedCells[0].RowIndex;
-
-            // Seçili satırın verilerini al
-            if (rowIndex >= 0 && rowIndex < dgvTahminiGelirler.Rows.Count)
-            {
-                DataGridViewRow selectedRow = dgvTahminiGelirler.Rows[rowIndex];
-
-                // Verileri ilgili alanlardan al
-                int tahminiGelirId = Convert.ToInt32(selectedRow.Cells["TahminiButceGelirId"].Value);
-                byte gelirKategoriId = Convert.ToByte(selectedRow.Cells["GelirKategoriId"].Value);
-                byte degisiklikId = Convert.ToByte(selectedRow.Cells["DegisiklikId"].Value);
-                decimal tahminiGelirTutari = Convert.ToDecimal(selectedRow.Cells["TahimiGelirTutari"].Value);
-
-                // Güncellenecek nesneyi oluştur
-                TahminiButceGelir guncellenecekGelir = new TahminiButceGelir
-                {
-                    Id = tahminiGelirId,
-                    KoyId = _seciliKoyIndex,
-                    DonemId = _seciliDonemIndex,
-                    GelirKategoriId = gelirKategoriId,
-                    DegisiklikId = degisiklikId,
-                    TahimiGelirTutari = tahminiGelirTutari
-                };
-
-                try
-                {
-                    // Güncelleme işlemini yap
-                    tahminiButceGelirManager.Update(guncellenecekGelir);
-
-                    // DataGridView'i güncelle
-                    TahminiGelirler();
-
-                    // Kullanıcıya bilgi ver
-                    MessageBox.Show("Güncelleme işlemi başarıyla tamamlandı!");
-                }
-                catch (Exception ex)
-                {
-                    // Hata durumunda kullanıcıya bilgi ver
-                    MessageBox.Show("Güncelleme işlemi sırasında bir hata oluştu: " + ex.Message);
-                }
-            }
-            else
-            {
-                // Eğer bir satır seçilmemişse kullanıcıya uyarı ver
-                MessageBox.Show("Lütfen güncellenecek bir satır seçiniz!");
             }
         }
 

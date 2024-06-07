@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmKesinHesap1));
-            pictureBox1 = new PictureBox();
             hScrollBarYatay = new HScrollBar();
             vScrollBarDikey = new VScrollBar();
             lblButcedekiHasilat = new Label();
@@ -50,7 +49,6 @@
             label66 = new Label();
             label67 = new Label();
             label68 = new Label();
-            label69 = new Label();
             label71 = new Label();
             label72 = new Label();
             label73 = new Label();
@@ -113,14 +111,13 @@
             label156 = new Label();
             label157 = new Label();
             label158 = new Label();
-            label2 = new Label();
             lblButcedekiResim = new Label();
             lblButcedekiYardim = new Label();
             lblButcedekiCeza = new Label();
             lblButcedekiDevir = new Label();
             lblButcedekiTurluGelir = new Label();
             lblButcedekiIstikraz = new Label();
-            lblButcedekiKoyVaki = new Label();
+            lblButcedekiKoyVakif = new Label();
             lblButceGelirToplami = new Label();
             lblButceGenelGelirToplam = new Label();
             label1 = new Label();
@@ -133,16 +130,16 @@
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label19 = new Label();
-            label20 = new Label();
-            label21 = new Label();
+            lblMunzamGenelToplami = new Label();
+            lblMunzamToplami = new Label();
+            lblMunzamDevir = new Label();
+            lblMunzamTurluGelir = new Label();
+            lblMunzamIstikraz = new Label();
+            lblMunzamKoyVakif = new Label();
+            lblMunzamYardim = new Label();
+            lblMunzamCeza = new Label();
+            lblMunzamResim = new Label();
+            lblMunzamHasilat = new Label();
             lblTahsilGenelToplam = new Label();
             lblTahsilToplami = new Label();
             lblTahsilDevir = new Label();
@@ -163,20 +160,12 @@
             label39 = new Label();
             label40 = new Label();
             label41 = new Label();
-            KesinHesap1Yazdir = new System.Drawing.Printing.PrintDocument();
+            pictureBox1 = new PictureBox();
+            printDocument1 = new System.Drawing.Printing.PrintDocument();
+            printPreviewDialog1 = new PrintPreviewDialog();
             btnYazdir = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1115, 790);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // hScrollBarYatay
             // 
@@ -196,7 +185,7 @@
             // 
             lblButcedekiHasilat.AutoSize = true;
             lblButcedekiHasilat.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblButcedekiHasilat.Location = new Point(136, 299);
+            lblButcedekiHasilat.Location = new Point(139, 300);
             lblButcedekiHasilat.Name = "lblButcedekiHasilat";
             lblButcedekiHasilat.Size = new Size(37, 13);
             lblButcedekiHasilat.TabIndex = 10;
@@ -371,16 +360,6 @@
             label68.Size = new Size(73, 14);
             label68.TabIndex = 62;
             label68.Text = "99.999.999,99";
-            // 
-            // label69
-            // 
-            label69.AutoSize = true;
-            label69.Font = new Font("Tw Cen MT", 8.25F);
-            label69.Location = new Point(1022, 364);
-            label69.Name = "label69";
-            label69.Size = new Size(73, 14);
-            label69.TabIndex = 61;
-            label69.Text = "99.999.999,99";
             // 
             // label71
             // 
@@ -1002,21 +981,11 @@
             label158.TabIndex = 122;
             label158.Text = "99.999.999,99";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Tw Cen MT", 8.25F);
-            label2.Location = new Point(966, 422);
-            label2.Name = "label2";
-            label2.Size = new Size(73, 14);
-            label2.TabIndex = 146;
-            label2.Text = "99.999.999,99";
-            // 
             // lblButcedekiResim
             // 
             lblButcedekiResim.AutoSize = true;
             lblButcedekiResim.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblButcedekiResim.Location = new Point(136, 321);
+            lblButcedekiResim.Location = new Point(139, 322);
             lblButcedekiResim.Name = "lblButcedekiResim";
             lblButcedekiResim.Size = new Size(37, 13);
             lblButcedekiResim.TabIndex = 145;
@@ -1026,7 +995,7 @@
             // 
             lblButcedekiYardim.AutoSize = true;
             lblButcedekiYardim.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblButcedekiYardim.Location = new Point(136, 364);
+            lblButcedekiYardim.Location = new Point(139, 365);
             lblButcedekiYardim.Name = "lblButcedekiYardim";
             lblButcedekiYardim.Size = new Size(37, 13);
             lblButcedekiYardim.TabIndex = 148;
@@ -1036,7 +1005,7 @@
             // 
             lblButcedekiCeza.AutoSize = true;
             lblButcedekiCeza.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblButcedekiCeza.Location = new Point(136, 342);
+            lblButcedekiCeza.Location = new Point(139, 343);
             lblButcedekiCeza.Name = "lblButcedekiCeza";
             lblButcedekiCeza.Size = new Size(12, 13);
             lblButcedekiCeza.TabIndex = 147;
@@ -1046,7 +1015,7 @@
             // 
             lblButcedekiDevir.AutoSize = true;
             lblButcedekiDevir.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblButcedekiDevir.Location = new Point(136, 451);
+            lblButcedekiDevir.Location = new Point(139, 452);
             lblButcedekiDevir.Name = "lblButcedekiDevir";
             lblButcedekiDevir.Size = new Size(12, 13);
             lblButcedekiDevir.TabIndex = 152;
@@ -1056,7 +1025,7 @@
             // 
             lblButcedekiTurluGelir.AutoSize = true;
             lblButcedekiTurluGelir.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblButcedekiTurluGelir.Location = new Point(136, 429);
+            lblButcedekiTurluGelir.Location = new Point(139, 430);
             lblButcedekiTurluGelir.Name = "lblButcedekiTurluGelir";
             lblButcedekiTurluGelir.Size = new Size(37, 13);
             lblButcedekiTurluGelir.TabIndex = 151;
@@ -1066,27 +1035,27 @@
             // 
             lblButcedekiIstikraz.AutoSize = true;
             lblButcedekiIstikraz.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblButcedekiIstikraz.Location = new Point(136, 408);
+            lblButcedekiIstikraz.Location = new Point(139, 409);
             lblButcedekiIstikraz.Name = "lblButcedekiIstikraz";
             lblButcedekiIstikraz.Size = new Size(32, 13);
             lblButcedekiIstikraz.TabIndex = 150;
             lblButcedekiIstikraz.Text = "80000";
             // 
-            // lblButcedekiKoyVaki
+            // lblButcedekiKoyVakif
             // 
-            lblButcedekiKoyVaki.AutoSize = true;
-            lblButcedekiKoyVaki.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblButcedekiKoyVaki.Location = new Point(136, 386);
-            lblButcedekiKoyVaki.Name = "lblButcedekiKoyVaki";
-            lblButcedekiKoyVaki.Size = new Size(12, 13);
-            lblButcedekiKoyVaki.TabIndex = 149;
-            lblButcedekiKoyVaki.Text = "0";
+            lblButcedekiKoyVakif.AutoSize = true;
+            lblButcedekiKoyVakif.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblButcedekiKoyVakif.Location = new Point(139, 387);
+            lblButcedekiKoyVakif.Name = "lblButcedekiKoyVakif";
+            lblButcedekiKoyVakif.Size = new Size(12, 13);
+            lblButcedekiKoyVakif.TabIndex = 149;
+            lblButcedekiKoyVakif.Text = "0";
             // 
             // lblButceGelirToplami
             // 
             lblButceGelirToplami.AutoSize = true;
             lblButceGelirToplami.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblButceGelirToplami.Location = new Point(136, 473);
+            lblButceGelirToplami.Location = new Point(139, 474);
             lblButceGelirToplami.Name = "lblButceGelirToplami";
             lblButceGelirToplami.Size = new Size(12, 13);
             lblButceGelirToplami.TabIndex = 153;
@@ -1096,7 +1065,7 @@
             // 
             lblButceGenelGelirToplam.AutoSize = true;
             lblButceGenelGelirToplam.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblButceGenelGelirToplam.Location = new Point(136, 690);
+            lblButceGenelGelirToplam.Location = new Point(139, 691);
             lblButceGenelGelirToplam.Name = "lblButceGenelGelirToplam";
             lblButceGenelGelirToplam.Size = new Size(12, 13);
             lblButceGenelGelirToplam.TabIndex = 154;
@@ -1106,7 +1075,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(268, 690);
+            label1.Location = new Point(273, 691);
             label1.Name = "label1";
             label1.Size = new Size(12, 13);
             label1.TabIndex = 164;
@@ -1116,7 +1085,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(268, 473);
+            label3.Location = new Point(273, 474);
             label3.Name = "label3";
             label3.Size = new Size(12, 13);
             label3.TabIndex = 163;
@@ -1126,7 +1095,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(268, 451);
+            label4.Location = new Point(273, 452);
             label4.Name = "label4";
             label4.Size = new Size(12, 13);
             label4.TabIndex = 162;
@@ -1136,7 +1105,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(268, 429);
+            label5.Location = new Point(273, 430);
             label5.Name = "label5";
             label5.Size = new Size(12, 13);
             label5.TabIndex = 161;
@@ -1146,7 +1115,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(268, 408);
+            label6.Location = new Point(273, 409);
             label6.Name = "label6";
             label6.Size = new Size(12, 13);
             label6.TabIndex = 160;
@@ -1156,7 +1125,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(268, 386);
+            label7.Location = new Point(273, 387);
             label7.Name = "label7";
             label7.Size = new Size(12, 13);
             label7.TabIndex = 159;
@@ -1166,7 +1135,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(268, 364);
+            label8.Location = new Point(273, 365);
             label8.Name = "label8";
             label8.Size = new Size(12, 13);
             label8.TabIndex = 158;
@@ -1176,7 +1145,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(268, 342);
+            label9.Location = new Point(273, 343);
             label9.Name = "label9";
             label9.Size = new Size(12, 13);
             label9.TabIndex = 157;
@@ -1186,7 +1155,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(268, 321);
+            label10.Location = new Point(273, 322);
             label10.Name = "label10";
             label10.Size = new Size(12, 13);
             label10.TabIndex = 156;
@@ -1196,117 +1165,117 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(268, 299);
+            label11.Location = new Point(273, 300);
             label11.Name = "label11";
             label11.Size = new Size(12, 13);
             label11.TabIndex = 155;
             label11.Text = "0";
             // 
-            // label12
+            // lblMunzamGenelToplami
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.Location = new Point(202, 690);
-            label12.Name = "label12";
-            label12.Size = new Size(12, 13);
-            label12.TabIndex = 174;
-            label12.Text = "0";
+            lblMunzamGenelToplami.AutoSize = true;
+            lblMunzamGenelToplami.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMunzamGenelToplami.Location = new Point(207, 691);
+            lblMunzamGenelToplami.Name = "lblMunzamGenelToplami";
+            lblMunzamGenelToplami.Size = new Size(12, 13);
+            lblMunzamGenelToplami.TabIndex = 174;
+            lblMunzamGenelToplami.Text = "0";
             // 
-            // label13
+            // lblMunzamToplami
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(202, 473);
-            label13.Name = "label13";
-            label13.Size = new Size(12, 13);
-            label13.TabIndex = 173;
-            label13.Text = "0";
+            lblMunzamToplami.AutoSize = true;
+            lblMunzamToplami.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMunzamToplami.Location = new Point(207, 474);
+            lblMunzamToplami.Name = "lblMunzamToplami";
+            lblMunzamToplami.Size = new Size(12, 13);
+            lblMunzamToplami.TabIndex = 173;
+            lblMunzamToplami.Text = "0";
             // 
-            // label14
+            // lblMunzamDevir
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.Location = new Point(202, 451);
-            label14.Name = "label14";
-            label14.Size = new Size(12, 13);
-            label14.TabIndex = 172;
-            label14.Text = "0";
+            lblMunzamDevir.AutoSize = true;
+            lblMunzamDevir.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMunzamDevir.Location = new Point(207, 452);
+            lblMunzamDevir.Name = "lblMunzamDevir";
+            lblMunzamDevir.Size = new Size(12, 13);
+            lblMunzamDevir.TabIndex = 172;
+            lblMunzamDevir.Text = "0";
             // 
-            // label15
+            // lblMunzamTurluGelir
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.Location = new Point(202, 429);
-            label15.Name = "label15";
-            label15.Size = new Size(12, 13);
-            label15.TabIndex = 171;
-            label15.Text = "0";
+            lblMunzamTurluGelir.AutoSize = true;
+            lblMunzamTurluGelir.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMunzamTurluGelir.Location = new Point(207, 430);
+            lblMunzamTurluGelir.Name = "lblMunzamTurluGelir";
+            lblMunzamTurluGelir.Size = new Size(12, 13);
+            lblMunzamTurluGelir.TabIndex = 171;
+            lblMunzamTurluGelir.Text = "0";
             // 
-            // label16
+            // lblMunzamIstikraz
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label16.Location = new Point(202, 408);
-            label16.Name = "label16";
-            label16.Size = new Size(12, 13);
-            label16.TabIndex = 170;
-            label16.Text = "0";
+            lblMunzamIstikraz.AutoSize = true;
+            lblMunzamIstikraz.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMunzamIstikraz.Location = new Point(207, 409);
+            lblMunzamIstikraz.Name = "lblMunzamIstikraz";
+            lblMunzamIstikraz.Size = new Size(12, 13);
+            lblMunzamIstikraz.TabIndex = 170;
+            lblMunzamIstikraz.Text = "0";
             // 
-            // label17
+            // lblMunzamKoyVakif
             // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label17.Location = new Point(202, 386);
-            label17.Name = "label17";
-            label17.Size = new Size(12, 13);
-            label17.TabIndex = 169;
-            label17.Text = "0";
+            lblMunzamKoyVakif.AutoSize = true;
+            lblMunzamKoyVakif.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMunzamKoyVakif.Location = new Point(207, 387);
+            lblMunzamKoyVakif.Name = "lblMunzamKoyVakif";
+            lblMunzamKoyVakif.Size = new Size(12, 13);
+            lblMunzamKoyVakif.TabIndex = 169;
+            lblMunzamKoyVakif.Text = "0";
             // 
-            // label18
+            // lblMunzamYardim
             // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label18.Location = new Point(202, 364);
-            label18.Name = "label18";
-            label18.Size = new Size(12, 13);
-            label18.TabIndex = 168;
-            label18.Text = "0";
+            lblMunzamYardim.AutoSize = true;
+            lblMunzamYardim.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMunzamYardim.Location = new Point(207, 365);
+            lblMunzamYardim.Name = "lblMunzamYardim";
+            lblMunzamYardim.Size = new Size(12, 13);
+            lblMunzamYardim.TabIndex = 168;
+            lblMunzamYardim.Text = "0";
             // 
-            // label19
+            // lblMunzamCeza
             // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label19.Location = new Point(202, 342);
-            label19.Name = "label19";
-            label19.Size = new Size(12, 13);
-            label19.TabIndex = 167;
-            label19.Text = "0";
+            lblMunzamCeza.AutoSize = true;
+            lblMunzamCeza.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMunzamCeza.Location = new Point(207, 343);
+            lblMunzamCeza.Name = "lblMunzamCeza";
+            lblMunzamCeza.Size = new Size(12, 13);
+            lblMunzamCeza.TabIndex = 167;
+            lblMunzamCeza.Text = "0";
             // 
-            // label20
+            // lblMunzamResim
             // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label20.Location = new Point(202, 321);
-            label20.Name = "label20";
-            label20.Size = new Size(12, 13);
-            label20.TabIndex = 166;
-            label20.Text = "0";
+            lblMunzamResim.AutoSize = true;
+            lblMunzamResim.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMunzamResim.Location = new Point(207, 322);
+            lblMunzamResim.Name = "lblMunzamResim";
+            lblMunzamResim.Size = new Size(12, 13);
+            lblMunzamResim.TabIndex = 166;
+            lblMunzamResim.Text = "0";
             // 
-            // label21
+            // lblMunzamHasilat
             // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label21.Location = new Point(202, 299);
-            label21.Name = "label21";
-            label21.Size = new Size(12, 13);
-            label21.TabIndex = 165;
-            label21.Text = "0";
+            lblMunzamHasilat.AutoSize = true;
+            lblMunzamHasilat.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMunzamHasilat.Location = new Point(207, 300);
+            lblMunzamHasilat.Name = "lblMunzamHasilat";
+            lblMunzamHasilat.Size = new Size(12, 13);
+            lblMunzamHasilat.TabIndex = 165;
+            lblMunzamHasilat.Text = "0";
             // 
             // lblTahsilGenelToplam
             // 
             lblTahsilGenelToplam.AutoSize = true;
             lblTahsilGenelToplam.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTahsilGenelToplam.Location = new Point(368, 690);
+            lblTahsilGenelToplam.Location = new Point(372, 691);
             lblTahsilGenelToplam.Name = "lblTahsilGenelToplam";
             lblTahsilGenelToplam.Size = new Size(12, 13);
             lblTahsilGenelToplam.TabIndex = 184;
@@ -1316,7 +1285,7 @@
             // 
             lblTahsilToplami.AutoSize = true;
             lblTahsilToplami.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTahsilToplami.Location = new Point(368, 473);
+            lblTahsilToplami.Location = new Point(372, 474);
             lblTahsilToplami.Name = "lblTahsilToplami";
             lblTahsilToplami.Size = new Size(12, 13);
             lblTahsilToplami.TabIndex = 183;
@@ -1326,7 +1295,7 @@
             // 
             lblTahsilDevir.AutoSize = true;
             lblTahsilDevir.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTahsilDevir.Location = new Point(368, 451);
+            lblTahsilDevir.Location = new Point(372, 452);
             lblTahsilDevir.Name = "lblTahsilDevir";
             lblTahsilDevir.Size = new Size(12, 13);
             lblTahsilDevir.TabIndex = 182;
@@ -1336,7 +1305,7 @@
             // 
             lblTahsilTurluGelir.AutoSize = true;
             lblTahsilTurluGelir.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTahsilTurluGelir.Location = new Point(368, 429);
+            lblTahsilTurluGelir.Location = new Point(372, 430);
             lblTahsilTurluGelir.Name = "lblTahsilTurluGelir";
             lblTahsilTurluGelir.Size = new Size(39, 13);
             lblTahsilTurluGelir.TabIndex = 181;
@@ -1346,7 +1315,7 @@
             // 
             lblTahsilIstikraz.AutoSize = true;
             lblTahsilIstikraz.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTahsilIstikraz.Location = new Point(368, 408);
+            lblTahsilIstikraz.Location = new Point(372, 409);
             lblTahsilIstikraz.Name = "lblTahsilIstikraz";
             lblTahsilIstikraz.Size = new Size(32, 13);
             lblTahsilIstikraz.TabIndex = 180;
@@ -1356,7 +1325,7 @@
             // 
             lblTahsilKoyVakif.AutoSize = true;
             lblTahsilKoyVakif.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTahsilKoyVakif.Location = new Point(368, 386);
+            lblTahsilKoyVakif.Location = new Point(372, 387);
             lblTahsilKoyVakif.Name = "lblTahsilKoyVakif";
             lblTahsilKoyVakif.Size = new Size(44, 13);
             lblTahsilKoyVakif.TabIndex = 179;
@@ -1366,7 +1335,7 @@
             // 
             lblTahsilYardim.AutoSize = true;
             lblTahsilYardim.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTahsilYardim.Location = new Point(368, 364);
+            lblTahsilYardim.Location = new Point(372, 365);
             lblTahsilYardim.Name = "lblTahsilYardim";
             lblTahsilYardim.Size = new Size(37, 13);
             lblTahsilYardim.TabIndex = 178;
@@ -1376,7 +1345,7 @@
             // 
             lblTahsilCeza.AutoSize = true;
             lblTahsilCeza.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTahsilCeza.Location = new Point(368, 342);
+            lblTahsilCeza.Location = new Point(372, 343);
             lblTahsilCeza.Name = "lblTahsilCeza";
             lblTahsilCeza.Size = new Size(12, 13);
             lblTahsilCeza.TabIndex = 177;
@@ -1386,7 +1355,7 @@
             // 
             lblTahsilResim.AutoSize = true;
             lblTahsilResim.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTahsilResim.Location = new Point(368, 321);
+            lblTahsilResim.Location = new Point(372, 322);
             lblTahsilResim.Name = "lblTahsilResim";
             lblTahsilResim.Size = new Size(12, 13);
             lblTahsilResim.TabIndex = 176;
@@ -1396,7 +1365,7 @@
             // 
             lblTahsilHasilat.AutoSize = true;
             lblTahsilHasilat.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTahsilHasilat.Location = new Point(368, 299);
+            lblTahsilHasilat.Location = new Point(372, 300);
             lblTahsilHasilat.Name = "lblTahsilHasilat";
             lblTahsilHasilat.Size = new Size(37, 13);
             lblTahsilHasilat.TabIndex = 175;
@@ -1406,7 +1375,7 @@
             // 
             label32.AutoSize = true;
             label32.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label32.Location = new Point(435, 690);
+            label32.Location = new Point(439, 691);
             label32.Name = "label32";
             label32.Size = new Size(12, 13);
             label32.TabIndex = 194;
@@ -1416,7 +1385,7 @@
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label33.Location = new Point(435, 473);
+            label33.Location = new Point(439, 474);
             label33.Name = "label33";
             label33.Size = new Size(12, 13);
             label33.TabIndex = 193;
@@ -1426,7 +1395,7 @@
             // 
             label34.AutoSize = true;
             label34.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label34.Location = new Point(435, 451);
+            label34.Location = new Point(439, 452);
             label34.Name = "label34";
             label34.Size = new Size(12, 13);
             label34.TabIndex = 192;
@@ -1436,7 +1405,7 @@
             // 
             label35.AutoSize = true;
             label35.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label35.Location = new Point(435, 429);
+            label35.Location = new Point(439, 430);
             label35.Name = "label35";
             label35.Size = new Size(12, 13);
             label35.TabIndex = 191;
@@ -1446,7 +1415,7 @@
             // 
             label36.AutoSize = true;
             label36.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label36.Location = new Point(435, 408);
+            label36.Location = new Point(439, 409);
             label36.Name = "label36";
             label36.Size = new Size(12, 13);
             label36.TabIndex = 190;
@@ -1456,7 +1425,7 @@
             // 
             label37.AutoSize = true;
             label37.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label37.Location = new Point(435, 386);
+            label37.Location = new Point(439, 387);
             label37.Name = "label37";
             label37.Size = new Size(12, 13);
             label37.TabIndex = 189;
@@ -1466,7 +1435,7 @@
             // 
             label38.AutoSize = true;
             label38.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label38.Location = new Point(435, 364);
+            label38.Location = new Point(439, 365);
             label38.Name = "label38";
             label38.Size = new Size(12, 13);
             label38.TabIndex = 188;
@@ -1476,7 +1445,7 @@
             // 
             label39.AutoSize = true;
             label39.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label39.Location = new Point(435, 342);
+            label39.Location = new Point(439, 343);
             label39.Name = "label39";
             label39.Size = new Size(12, 13);
             label39.TabIndex = 187;
@@ -1486,7 +1455,7 @@
             // 
             label40.AutoSize = true;
             label40.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label40.Location = new Point(435, 321);
+            label40.Location = new Point(439, 322);
             label40.Name = "label40";
             label40.Size = new Size(12, 13);
             label40.TabIndex = 186;
@@ -1496,15 +1465,31 @@
             // 
             label41.AutoSize = true;
             label41.Font = new Font("Tw Cen MT", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label41.Location = new Point(435, 299);
+            label41.Location = new Point(439, 300);
             label41.Name = "label41";
             label41.Size = new Size(12, 13);
             label41.TabIndex = 185;
             label41.Text = "0";
             // 
-            // KesinHesap1Yazdir
+            // pictureBox1
             // 
-            KesinHesap1Yazdir.DocumentName = "KesinHesap1Yazdir";
+            pictureBox1.Image = Properties.Resources.KesinHesap1;
+            pictureBox1.Location = new Point(2, 1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1115, 790);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 196;
+            pictureBox1.TabStop = false;
+            // 
+            // printPreviewDialog1
+            // 
+            printPreviewDialog1.AutoScrollMargin = new Size(0, 0);
+            printPreviewDialog1.AutoScrollMinSize = new Size(0, 0);
+            printPreviewDialog1.ClientSize = new Size(400, 300);
+            printPreviewDialog1.Enabled = true;
+            printPreviewDialog1.Icon = (Icon)resources.GetObject("printPreviewDialog1.Icon");
+            printPreviewDialog1.Name = "printPreviewDialog1";
+            printPreviewDialog1.Visible = false;
             // 
             // btnYazdir
             // 
@@ -1542,16 +1527,16 @@
             Controls.Add(lblTahsilCeza);
             Controls.Add(lblTahsilResim);
             Controls.Add(lblTahsilHasilat);
-            Controls.Add(label12);
-            Controls.Add(label13);
-            Controls.Add(label14);
-            Controls.Add(label15);
-            Controls.Add(label16);
-            Controls.Add(label17);
-            Controls.Add(label18);
-            Controls.Add(label19);
-            Controls.Add(label20);
-            Controls.Add(label21);
+            Controls.Add(lblMunzamGenelToplami);
+            Controls.Add(lblMunzamToplami);
+            Controls.Add(lblMunzamDevir);
+            Controls.Add(lblMunzamTurluGelir);
+            Controls.Add(lblMunzamIstikraz);
+            Controls.Add(lblMunzamKoyVakif);
+            Controls.Add(lblMunzamYardim);
+            Controls.Add(lblMunzamCeza);
+            Controls.Add(lblMunzamResim);
+            Controls.Add(lblMunzamHasilat);
             Controls.Add(label1);
             Controls.Add(label3);
             Controls.Add(label4);
@@ -1567,10 +1552,9 @@
             Controls.Add(lblButcedekiDevir);
             Controls.Add(lblButcedekiTurluGelir);
             Controls.Add(lblButcedekiIstikraz);
-            Controls.Add(lblButcedekiKoyVaki);
+            Controls.Add(lblButcedekiKoyVakif);
             Controls.Add(lblButcedekiYardim);
             Controls.Add(lblButcedekiCeza);
-            Controls.Add(label2);
             Controls.Add(lblButcedekiResim);
             Controls.Add(label136);
             Controls.Add(label137);
@@ -1631,7 +1615,6 @@
             Controls.Add(label66);
             Controls.Add(label67);
             Controls.Add(label68);
-            Controls.Add(label69);
             Controls.Add(label71);
             Controls.Add(label72);
             Controls.Add(label73);
@@ -1659,15 +1642,12 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmKesinHesap1";
             Text = "FrmKesinHesap1";
-            Load += FrmKesinHesap1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private HScrollBar hScrollBarYatay;
         private VScrollBar vScrollBarDikey;
         private Label lblButcedekiHasilat;
@@ -1688,7 +1668,6 @@
         private Label label66;
         private Label label67;
         private Label label68;
-        private Label label69;
         private Label label71;
         private Label label72;
         private Label label73;
@@ -1751,14 +1730,13 @@
         private Label label156;
         private Label label157;
         private Label label158;
-        private Label label2;
         private Label lblButcedekiResim;
         private Label lblButcedekiYardim;
         private Label lblButcedekiCeza;
         private Label lblButcedekiDevir;
         private Label lblButcedekiTurluGelir;
         private Label lblButcedekiIstikraz;
-        private Label lblButcedekiKoyVaki;
+        private Label lblButcedekiKoyVakif;
         private Label lblButceGelirToplami;
         private Label lblButceGenelGelirToplam;
         private Label label1;
@@ -1771,16 +1749,16 @@
         private Label label9;
         private Label label10;
         private Label label11;
-        private Label label12;
-        private Label label13;
-        private Label label14;
-        private Label label15;
-        private Label label16;
-        private Label label17;
-        private Label label18;
-        private Label label19;
-        private Label label20;
-        private Label label21;
+        private Label lblMunzamGenelToplami;
+        private Label lblMunzamToplami;
+        private Label lblMunzamDevir;
+        private Label lblMunzamTurluGelir;
+        private Label lblMunzamIstikraz;
+        private Label lblMunzamKoyVakif;
+        private Label lblMunzamYardim;
+        private Label lblMunzamCeza;
+        private Label lblMunzamResim;
+        private Label lblMunzamHasilat;
         private Label lblTahsilGenelToplam;
         private Label lblTahsilToplami;
         private Label lblTahsilDevir;
@@ -1801,7 +1779,9 @@
         private Label label39;
         private Label label40;
         private Label label41;
-        private System.Drawing.Printing.PrintDocument KesinHesap1Yazdir;
+        private PictureBox pictureBox1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private PrintPreviewDialog printPreviewDialog1;
         private Button btnYazdir;
     }
 }

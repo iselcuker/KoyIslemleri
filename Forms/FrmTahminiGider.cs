@@ -48,6 +48,18 @@ namespace Forms
             LoadDegisiklikler();
         }
 
+        private void OgeYerlestir()
+        {
+            lblDegisiklik.Visible = false;
+            cmbDegisiklik.Visible = false;
+            lblTutar.Location = new Point(10, 139);
+            txtTutar.Location = new Point(217, 134);
+
+            pcBoxKaydet.Location = new Point(217, 171);
+            pcBoxSil.Location = new Point(308, 171);
+            pcBoxGuncelle.Location = new Point(399, 171);
+        }
+
         // ComboBox'ları doldurma fonksiyonlarınızı gözden geçirin
         private void FillGiderKategori()
         {
@@ -98,14 +110,7 @@ namespace Forms
             FillGiderKategori();
             LoadDegisiklikler();
             TahminiButceGiderleri();
-            lblDegisiklik.Visible = false;
-            cmbDegisiklik.Visible = false;
-            //lblTutar.Location = new Point(10, 139);
-            //txtTutar.Location = new Point(217, 1134);
-
-            //pcBoxKaydet.Location = new Point(217, 177);
-            //pcBoxSil.Location = new Point(308, 177);
-            //pcBoxGuncelle.Location = new Point(399, 177);
+            OgeYerlestir();
         }
 
         private void cmbGiderKategori_SelectedIndexChanged(object sender, EventArgs e)
@@ -144,8 +149,7 @@ namespace Forms
                     }
                     else
                     {
-                        lblDegisiklik.Visible = false;
-                        cmbDegisiklik.Visible = false;
+                        OgeYerlestir();
                     }
                 }
             }
@@ -184,6 +188,11 @@ namespace Forms
                 dgvTahminiGiderler.ColumnHeadersHeight = 40; // Başlık yüksekliği
                 dgvTahminiGiderler.EnableHeadersVisualStyles = false; // Başlık yazı rengini değiştirmek için
                 dgvTahminiGiderler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray; // Başlık arka plan rengi
+                dgvTahminiGiderler.ColumnHeadersDefaultCellStyle.WrapMode = DataGridViewTriState.False;
+
+                dgvTahminiGiderler.Columns["GiderKategoriAdi"].HeaderText = "KATEGORİ";
+                dgvTahminiGiderler.Columns["GiderAltKategoriAdi"].HeaderText = "ALT KATEGORİ";
+                dgvTahminiGiderler.Columns["DegisiklikAdi"].HeaderText = "DEĞİŞİKLİK";
             }
             catch (Exception ex)
             {
@@ -305,6 +314,7 @@ namespace Forms
 
                 // TahminiButceGelir tablosuna yeni kaydı ekle
                 tahminiButceGiderManager.Add(yeniTahminiGider);
+                OgeYerlestir();
 
                 // Temizle ve idari işleri güncelle
                 TahminiButceGiderleri();
@@ -340,21 +350,17 @@ namespace Forms
                     {
                         lblDegisiklik.Visible = true;
                         cmbDegisiklik.Visible = true;
-                        //lblTutar.Location = new Point(10, 181);
-                        //txtTutar.Location = new Point(217, 177);
-                        //pcBoxKaydet.Location = new Point(217, 216);
-                        //pcBoxSil.Location = new Point(308, 216);
-                        //pcBoxGuncelle.Location = new Point(399, 216);
+
+                        lblTutar.Location = new Point(10, 174);
+                        txtTutar.Location = new Point(217, 172);
+                        pcBoxKaydet.Location = new Point(217, 211);
+                        pcBoxSil.Location = new Point(308, 211);
+                        pcBoxGuncelle.Location = new Point(399, 211);
                     }
                     else
                     {
                         lblDegisiklik.Visible = false;
                         cmbDegisiklik.Visible = false;
-                        //lblTutar.Location = new Point(10, 143);
-                        //txtTutar.Location = new Point(217, 140);
-                        //pcBoxKaydet.Location = new Point(217, 177);
-                        //pcBoxSil.Location = new Point(308, 177);
-                        //pcBoxGuncelle.Location = new Point(399, 177);
                     }
                 }
             }
@@ -371,15 +377,8 @@ namespace Forms
             cmbGiderAltKategori.SelectedIndex = -1;
             lblDegisiklik.Visible = false;
             cmbDegisiklik.Visible = false;
-            //lblTutar.Location = new Point(10, 143);
-            //txtTutar.Location = new Point(217, 140);
-            //pcBoxKaydet.Location = new Point(217, 177);
-            //pcBoxSil.Location = new Point(308, 177);
-            //pcBoxGuncelle.Location = new Point(399, 177);
             txtTutar.Text = string.Empty;
-
             cmbGiderKategori.Focus();
-
             // Degisiklik ComboBox'u sıfırlama
             cmbDegisiklik.SelectedIndex = -1;
         }
@@ -517,6 +516,14 @@ namespace Forms
 
                 // TahminiButceGelir tablosunda mevcut kaydı güncelle
                 tahminiButceGiderManager.Update(guncellenecekTahminiGider);
+                lblDegisiklik.Visible = false;
+                cmbDegisiklik.Visible = false;
+                lblTutar.Location = new Point(10, 139);
+                txtTutar.Location = new Point(217, 134);
+
+                pcBoxKaydet.Location = new Point(217, 171);
+                pcBoxSil.Location = new Point(308, 171);
+                pcBoxGuncelle.Location = new Point(399, 171);
 
                 // Temizle ve idari işleri güncelle
                 TahminiButceGiderleri();
@@ -559,6 +566,7 @@ namespace Forms
                 {
                     // Veritabanından kaydı sil
                     tahminiButceGiderManager.Delete(new TahminiButceGider { Id = tahminiButceGiderId });
+                    OgeYerlestir();
 
                     // Kullanıcıya başarı mesajı göster
                     MessageBox.Show("Kayıt başarıyla silindi!");

@@ -28,35 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pnlGelirBaslik = new Panel();
-            lblBaslik = new Label();
             btnKesinHesap1 = new Button();
             btnKesinHesap2 = new Button();
             pnlKesinHesaplar = new Panel();
-            pnlGelirBaslik.SuspendLayout();
+            btnYazdir1 = new Button();
+            button1 = new Button();
+            btnYazdir = new Button();
             SuspendLayout();
-            // 
-            // pnlGelirBaslik
-            // 
-            pnlGelirBaslik.Controls.Add(lblBaslik);
-            pnlGelirBaslik.Location = new Point(0, 0);
-            pnlGelirBaslik.Name = "pnlGelirBaslik";
-            pnlGelirBaslik.Size = new Size(582, 80);
-            pnlGelirBaslik.TabIndex = 133;
-            // 
-            // lblBaslik
-            // 
-            lblBaslik.AutoSize = true;
-            lblBaslik.Font = new Font("321impact", 50.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblBaslik.Location = new Point(12, 9);
-            lblBaslik.Name = "lblBaslik";
-            lblBaslik.Size = new Size(517, 76);
-            lblBaslik.TabIndex = 1;
-            lblBaslik.Text = "KESİN HESAPLAR";
             // 
             // btnKesinHesap1
             // 
-            btnKesinHesap1.Location = new Point(994, 12);
+            btnKesinHesap1.Location = new Point(1145, 12);
             btnKesinHesap1.Name = "btnKesinHesap1";
             btnKesinHesap1.Size = new Size(109, 35);
             btnKesinHesap1.TabIndex = 134;
@@ -66,7 +48,7 @@
             // 
             // btnKesinHesap2
             // 
-            btnKesinHesap2.Location = new Point(1129, 12);
+            btnKesinHesap2.Location = new Point(1145, 225);
             btnKesinHesap2.Name = "btnKesinHesap2";
             btnKesinHesap2.Size = new Size(109, 35);
             btnKesinHesap2.TabIndex = 134;
@@ -76,34 +58,63 @@
             // 
             // pnlKesinHesaplar
             // 
-            pnlKesinHesaplar.Location = new Point(0, 81);
+            pnlKesinHesaplar.Location = new Point(7, 12);
             pnlKesinHesaplar.Name = "pnlKesinHesaplar";
-            pnlKesinHesaplar.Size = new Size(1250, 868);
+            pnlKesinHesaplar.Size = new Size(1134, 1046);
             pnlKesinHesaplar.TabIndex = 135;
+            // 
+            // btnYazdir1
+            // 
+            btnYazdir1.Location = new Point(1147, 53);
+            btnYazdir1.Name = "btnYazdir1";
+            btnYazdir1.Size = new Size(107, 41);
+            btnYazdir1.TabIndex = 196;
+            btnYazdir1.Text = "Kesin Hesap 1 Yazdır";
+            btnYazdir1.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(1147, 296);
+            button1.Name = "button1";
+            button1.Size = new Size(107, 55);
+            button1.TabIndex = 197;
+            button1.Text = "Kesin Hesap 1Y";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // btnYazdir
+            // 
+            btnYazdir.Location = new Point(1161, 371);
+            btnYazdir.Name = "btnYazdir";
+            btnYazdir.Size = new Size(75, 23);
+            btnYazdir.TabIndex = 198;
+            btnYazdir.Text = "Yazdır";
+            btnYazdir.UseVisualStyleBackColor = true;
+            btnYazdir.Click += btnYazdir_Click;
             // 
             // FrmKesinHesap
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1250, 950);
+            ClientSize = new Size(1256, 1070);
+            Controls.Add(btnYazdir);
+            Controls.Add(button1);
+            Controls.Add(btnYazdir1);
             Controls.Add(pnlKesinHesaplar);
             Controls.Add(btnKesinHesap2);
             Controls.Add(btnKesinHesap1);
-            Controls.Add(pnlGelirBaslik);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmKesinHesap";
             Text = "FrmKesinHesap";
-            pnlGelirBaslik.ResumeLayout(false);
-            pnlGelirBaslik.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel pnlGelirBaslik;
-        private Label lblBaslik;
         private Button btnKesinHesap1;
         private Button btnKesinHesap2;
         private Panel pnlKesinHesaplar;
+        private Button btnYazdir1;
+        private Button button1;
+        private Button btnYazdir;
     }
 }

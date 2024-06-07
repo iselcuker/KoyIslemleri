@@ -14,61 +14,104 @@ namespace Forms
 {
     public partial class FrmKesinHesap1 : Form
     {
-        Bitmap memoryImage;
+        private PrintDocument printDocument;
+        private PrintPreviewDialog printPreviewDialog;
+        private Bitmap memoryImage;
 
         public FrmKesinHesap1()
         {
             InitializeComponent();
+
+            // Baskı işlemini gerçekleştirmek için bir PrintDocument nesnesi oluşturulur
+            printDocument = new PrintDocument();
+            printDocument.PrintPage += PrintDocument_PrintPage;
+
+            // Kağıt boyutunu yatay olarak ayarlamak için DefaultPageSettings kullanılır
+            printDocument.DefaultPageSettings.Landscape = true;
+
+            // Baskı önizlemesi için bir PrintPreviewDialog nesnesi oluşturulur
+            printPreviewDialog = new PrintPreviewDialog();
+            printPreviewDialog.Document = printDocument;
         }
 
-        private void FrmKesinHesap1_Load(object sender, EventArgs e)
+        private void CaptureFullScreen()
         {
+            //// Formun tamamının ekran görüntüsünü yakala
+            //Graphics myGraphics = this.CreateGraphics();
+            //Size s = this.Size;
+            //memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+            //Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            //Point screenPoint = this.PointToScreen(Point.Empty);
+            //memoryGraphics.CopyFromScreen(screenPoint.X, screenPoint.Y, 0, 0, s);
 
+            // Butonu geçici olarak gizle
+            btnYazdir.Visible = false;
+
+            // Formun tamamının ekran görüntüsünü yakala
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            Point screenPoint = this.PointToScreen(Point.Empty);
+            memoryGraphics.CopyFromScreen(screenPoint.X, screenPoint.Y, 0, 0, s);
+
+            // Butonu tekrar göster
+            btnYazdir.Visible = true;
         }
 
-        // Formun görüntüsünü yakalayan metot
-        private void CaptureScreen()
+        private void CaptureArea(Rectangle captureRectangle)
         {
-            // Ekran görüntüsünün tam form alanını kapsadığından emin olmak için formu yeniden çiziyoruz
-            this.Refresh();
-            // Formun client alanının boyutlarını alıyoruz
-            Rectangle bounds = this.Bounds;
+            //// Belirtilen dikdörtgen alanına göre bir bitmap oluşturulur
+            //memoryImage = new Bitmap(captureRectangle.Width, captureRectangle.Height);
+            //Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            //memoryGraphics.CopyFromScreen(captureRectangle.Location, Point.Empty, captureRectangle.Size);
 
-            // Formun içerik alanını yakalıyoruz
-            memoryImage = new Bitmap(bounds.Width, bounds.Height);
-            using (Graphics g = Graphics.FromImage(memoryImage))
-            {
-                g.CopyFromScreen(bounds.Location, Point.Empty, bounds.Size);
-            }
+            // Butonu geçici olarak gizle
+            btnYazdir.Visible = false;
+
+            // Belirtilen dikdörtgen alanına göre bir bitmap oluşturulur
+            memoryImage = new Bitmap(captureRectangle.Width, captureRectangle.Height);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            memoryGraphics.CopyFromScreen(captureRectangle.Location, Point.Empty, captureRectangle.Size);
+
+            // Butonu tekrar göster
+            btnYazdir.Visible = true;
         }
 
-        private void KesinHesap1Yazdir_PrintPage(object sender, PrintPageEventArgs e)
+        private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
-            // Ekran görüntüsünü yazdırma alanına çiziyoruz
+            // Yakalanan ekran görüntüsünü yazdır
             e.Graphics.DrawImage(memoryImage, 0, 0);
+        }
+
+        public void PrintForm()
+        {
+            // Formun tamamının ekran görüntüsünü yakala
+            CaptureFullScreen();
+
+            // Baskı önizlemesi için PrintPreviewDialog gösterilir
+            DialogResult result = printPreviewDialog.ShowDialog();
+
+            // Eğer kullanıcı önizlemeyi onayladıysa baskı işlemi gerçekleştirilir
+            if (result == DialogResult.OK && printDocument.PrinterSettings.IsValid)
+            {
+                printDocument.Print();
+            }
         }
 
         private void btnYazdir_Click(object sender, EventArgs e)
         {
-            CaptureScreen();
-            PrintDialog printDialog1 = new PrintDialog();
-            printDialog1.Document = KesinHesap1Yazdir;
+            // Formun tamamının ekran görüntüsünü yakala
+            CaptureFullScreen();
 
-            if (printDialog1.ShowDialog() == DialogResult.OK)
+            // Baskı önizlemesi için PrintPreviewDialog gösterilir
+            DialogResult result = printPreviewDialog.ShowDialog();
+
+            // Eğer kullanıcı önizlemeyi onayladıysa baskı işlemi gerçekleştirilir
+            if (result == DialogResult.OK && printDocument.PrinterSettings.IsValid)
             {
-                KesinHesap1Yazdir.Print();
+                printDocument.Print();
             }
         }
-
-        //private void btnPrint_Click(object sender, EventArgs e)
-        //{
-        //    CaptureScreen();
-        //    printDialog1.Document = printDocument1;
-
-        //    if (printDialog1.ShowDialog() == DialogResult.OK)
-        //    {
-        //        printDocument1.Print();
-        //    }
-        //}
     }
 }

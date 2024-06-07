@@ -152,7 +152,7 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(399, 196);
+            pcBoxGuncelle.Location = new Point(399, 195);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -179,15 +179,15 @@
             dgvTahminiIdariIsler.AllowUserToResizeColumns = false;
             dgvTahminiIdariIsler.AllowUserToResizeRows = false;
             dgvTahminiIdariIsler.BackgroundColor = SystemColors.Control;
-            dgvTahminiIdariIsler.BorderStyle = BorderStyle.Fixed3D;
+            dgvTahminiIdariIsler.BorderStyle = BorderStyle.None;
             dgvTahminiIdariIsler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiIdariIsler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiIdariIsler.Location = new Point(10, 281);
+            dgvTahminiIdariIsler.Location = new Point(12, 266);
             dgvTahminiIdariIsler.Name = "dgvTahminiIdariIsler";
             dgvTahminiIdariIsler.ReadOnly = true;
             dgvTahminiIdariIsler.RowHeadersWidth = 51;
             dgvTahminiIdariIsler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvTahminiIdariIsler.Size = new Size(785, 412);
+            dgvTahminiIdariIsler.Size = new Size(785, 328);
             dgvTahminiIdariIsler.TabIndex = 147;
             dgvTahminiIdariIsler.CellDoubleClick += dgvTahminiIdariIsler_CellDoubleClick;
             // 
@@ -195,7 +195,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(807, 705);
+            ClientSize = new Size(807, 635);
             Controls.Add(dgvTahminiIdariIsler);
             Controls.Add(pcBoxSil);
             Controls.Add(pcBoxGuncelle);

@@ -33,15 +33,6 @@ namespace Forms
         {
             InitializeComponent();
 
-            //// Parametre olarak alınan değerleri sınıf değişkenlerine atayın
-            //_seciliKoyIndex = seciliKoyIndex;
-            //_seciliDonemIndex = seciliDonemIndex;
-
-            //ekButceManager = new EkButceManager(new EfEkButceDal());
-
-            //koyManager = new KoyManager(new EfKoyDal());
-            //donemManager = new DonemManager(new EfDonemDal());,
-
             // Parametre olarak alınan değerleri sınıf değişkenlerine atayın
             _seciliKoyIndex = seciliKoyIndex;
             _seciliDonemIndex = seciliDonemIndex;
@@ -138,7 +129,7 @@ namespace Forms
                     dgvEkButceler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
                     dgvEkButceler.ColumnHeadersHeight = 40;
 
-                    dgvEkButceler.Columns["EkButceTutari"].HeaderText = "Tutar";
+                    dgvEkButceler.Columns["EkButceTutari"].HeaderText = "TUTAR";
 
                     // DataGridView'in sütunlarının yeniden düzenlenmesini engelle.
                     dgvEkButceler.AllowUserToOrderColumns = false;
