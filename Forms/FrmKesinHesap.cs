@@ -59,7 +59,7 @@ namespace Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            load_form(new FrmKesinHesap1Y());
+            load_form(new FrmKesinHesap2Y());
         }
 
         private void btnYazdir_Click(object sender, EventArgs e)

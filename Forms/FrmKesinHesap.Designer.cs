@@ -32,8 +32,9 @@
             btnKesinHesap2 = new Button();
             pnlKesinHesaplar = new Panel();
             btnYazdir1 = new Button();
-            button1 = new Button();
+            btnKesinHesap = new Button();
             btnYazdir = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // btnKesinHesap1
@@ -58,7 +59,7 @@
             // 
             // pnlKesinHesaplar
             // 
-            pnlKesinHesaplar.Location = new Point(7, 12);
+            pnlKesinHesaplar.Location = new Point(7, 5);
             pnlKesinHesaplar.Name = "pnlKesinHesaplar";
             pnlKesinHesaplar.Size = new Size(1134, 1046);
             pnlKesinHesaplar.TabIndex = 135;
@@ -72,15 +73,15 @@
             btnYazdir1.Text = "Kesin Hesap 1 Yazdır";
             btnYazdir1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnKesinHesap
             // 
-            button1.Location = new Point(1147, 296);
-            button1.Name = "button1";
-            button1.Size = new Size(107, 55);
-            button1.TabIndex = 197;
-            button1.Text = "Kesin Hesap 1Y";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnKesinHesap.Location = new Point(1147, 296);
+            btnKesinHesap.Name = "btnKesinHesap";
+            btnKesinHesap.Size = new Size(107, 55);
+            btnKesinHesap.TabIndex = 197;
+            btnKesinHesap.Text = "Kesin Hesap 1Y";
+            btnKesinHesap.UseVisualStyleBackColor = true;
+            btnKesinHesap.Click += button1_Click;
             // 
             // btnYazdir
             // 
@@ -92,13 +93,24 @@
             btnYazdir.UseVisualStyleBackColor = true;
             btnYazdir.Click += btnYazdir_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(1145, 411);
+            button2.Name = "button2";
+            button2.Size = new Size(107, 55);
+            button2.TabIndex = 197;
+            button2.Text = "Kesin Hesap 2Y";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button1_Click;
+            // 
             // FrmKesinHesap
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1256, 1070);
             Controls.Add(btnYazdir);
-            Controls.Add(button1);
+            Controls.Add(button2);
+            Controls.Add(btnKesinHesap);
             Controls.Add(btnYazdir1);
             Controls.Add(pnlKesinHesaplar);
             Controls.Add(btnKesinHesap2);
@@ -114,7 +126,8 @@
         private Button btnKesinHesap2;
         private Panel pnlKesinHesaplar;
         private Button btnYazdir1;
-        private Button button1;
+        private Button btnKesinHesap;
         private Button btnYazdir;
+        private Button button2;
     }
 }
