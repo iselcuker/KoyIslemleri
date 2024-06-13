@@ -64,7 +64,7 @@
             lblIptalSaglikToplami = new Label();
             panel590 = new Panel();
             p101 = new Panel();
-            lblBKSaglıkToplami = new Label();
+            lblBKSaglik = new Label();
             panel592 = new Panel();
             p115 = new Panel();
             lblIptalToplamBayindirlik = new Label();
@@ -94,7 +94,7 @@
             lblMunzamToplamBayindirlik = new Label();
             panel612 = new Panel();
             p111 = new Panel();
-            lblBKToplamBayindirlik = new Label();
+            lblBKBayindirlik = new Label();
             panel614 = new Panel();
             label8 = new Label();
             label202 = new Label();
@@ -116,7 +116,7 @@
             lblMunzamKulturToplami = new Label();
             panel627 = new Panel();
             p96 = new Panel();
-            lblBKKulturToplami = new Label();
+            lblBKKultur = new Label();
             panel629 = new Panel();
             panel630 = new Panel();
             label231 = new Label();
@@ -129,7 +129,7 @@
             lblIptalIdariIslerToplami = new Label();
             panel633 = new Panel();
             p86 = new Panel();
-            lblBKIdariIslerToplami = new Label();
+            lblBKIdariIsler = new Label();
             panel635 = new Panel();
             p95 = new Panel();
             lblIptalZiraatToplami = new Label();
@@ -159,7 +159,7 @@
             lblMunzamZiraatToplami = new Label();
             panel655 = new Panel();
             p91 = new Panel();
-            lblBKZiraatToplami = new Label();
+            lblBKZiraat = new Label();
             panel659 = new Panel();
             label9 = new Label();
             label10 = new Label();
@@ -173,7 +173,7 @@
             panel543 = new Panel();
             label13 = new Label();
             p80 = new Panel();
-            lblIptalAsker = new Label();
+            lblIptalAskerYardim = new Label();
             panel545 = new Panel();
             p76 = new Panel();
             lblBKAskerYardim = new Label();
@@ -189,7 +189,7 @@
             p84 = new Panel();
             lblOdenenAskerToplami = new Label();
             p79 = new Panel();
-            lblOdenenAsker = new Label();
+            lblOdenenAskerYardim = new Label();
             panel556 = new Panel();
             panel557 = new Panel();
             p83 = new Panel();
@@ -208,10 +208,8 @@
             p81 = new Panel();
             lblBKAskerToplami = new Label();
             panel569 = new Panel();
-            panel570 = new Panel();
-            label222 = new Label();
-            label236 = new Label();
-            label190 = new Label();
+            label14 = new Label();
+            label19 = new Label();
             label191 = new Label();
             panel571 = new Panel();
             label197 = new Label();
@@ -341,7 +339,7 @@
             lblMunzamMahkeme = new Label();
             panel352 = new Panel();
             p41 = new Panel();
-            lblBKMahkemeKesif = new Label();
+            lblBKMahkeme = new Label();
             panel354 = new Panel();
             panel355 = new Panel();
             label18 = new Label();
@@ -381,7 +379,7 @@
             panel377 = new Panel();
             panel378 = new Panel();
             p37 = new Panel();
-            lblMunzamKoyBorcui = new Label();
+            lblMunzamKoyBorcu = new Label();
             panel380 = new Panel();
             p36 = new Panel();
             lblBKKoyBorcu = new Label();
@@ -430,7 +428,6 @@
             panel274 = new Panel();
             label65 = new Label();
             label66 = new Label();
-            p5 = new Panel();
             lblIptalYolKopru = new Label();
             panel298 = new Panel();
             p1 = new Panel();
@@ -566,7 +563,7 @@
             lblMunzamToplamTurluİsler = new Label();
             panel16 = new Panel();
             p116 = new Panel();
-            lblBKToplamTurluIsler = new Label();
+            lblBKTurluIsler = new Label();
             panel19 = new Panel();
             p130 = new Panel();
             lblIptalToplamAsker = new Label();
@@ -584,7 +581,7 @@
             lblMunzamToplamAsker = new Label();
             panel30 = new Panel();
             p126 = new Panel();
-            lblBKToplamAsker = new Label();
+            lblBKAsker = new Label();
             panel32 = new Panel();
             label5 = new Label();
             label6 = new Label();
@@ -640,7 +637,7 @@
             panel62 = new Panel();
             panel63 = new Panel();
             p19 = new Panel();
-            lblOdenenAydinlatla = new Label();
+            lblOdenenAydinlatma = new Label();
             panel65 = new Panel();
             p18 = new Panel();
             lblTahakkukAydinlatma = new Label();
@@ -748,7 +745,7 @@
             p134 = new Panel();
             lblToplamGider = new Label();
             p133 = new Panel();
-            lblToplamGelir = new Label();
+            lblYekun = new Label();
             p135 = new Panel();
             lblButceSonucu = new Label();
             panel123 = new Panel();
@@ -852,6 +849,7 @@
             p142 = new Panel();
             lblBKGider = new Label();
             p139 = new Panel();
+            p5 = new Panel();
             panel281.SuspendLayout();
             panel280.SuspendLayout();
             panel277.SuspendLayout();
@@ -899,7 +897,6 @@
             p82.SuspendLayout();
             p81.SuspendLayout();
             panel569.SuspendLayout();
-            panel570.SuspendLayout();
             panel571.SuspendLayout();
             panel572.SuspendLayout();
             p70.SuspendLayout();
@@ -960,7 +957,6 @@
             p11.SuspendLayout();
             panel327.SuspendLayout();
             panel274.SuspendLayout();
-            p5.SuspendLayout();
             p1.SuspendLayout();
             p10.SuspendLayout();
             p2.SuspendLayout();
@@ -1073,6 +1069,7 @@
             p143.SuspendLayout();
             p142.SuspendLayout();
             p139.SuspendLayout();
+            p5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel281
@@ -1083,7 +1080,7 @@
             panel281.Controls.Add(label285);
             panel281.Controls.Add(label286);
             panel281.Controls.Add(label287);
-            panel281.Location = new Point(634, 52);
+            panel281.Location = new Point(629, 44);
             panel281.Name = "panel281";
             panel281.Size = new Size(18, 66);
             panel281.TabIndex = 932;
@@ -1151,7 +1148,7 @@
             panel280.Controls.Add(label280);
             panel280.Controls.Add(label281);
             panel280.Controls.Add(label282);
-            panel280.Location = new Point(516, 52);
+            panel280.Location = new Point(511, 44);
             panel280.Name = "panel280";
             panel280.Size = new Size(18, 66);
             panel280.TabIndex = 931;
@@ -1219,7 +1216,7 @@
             panel277.Controls.Add(label275);
             panel277.Controls.Add(label276);
             panel277.Controls.Add(label277);
-            panel277.Location = new Point(430, 52);
+            panel277.Location = new Point(425, 44);
             panel277.Name = "panel277";
             panel277.Size = new Size(18, 66);
             panel277.TabIndex = 930;
@@ -1285,7 +1282,7 @@
             panel276.Controls.Add(label307);
             panel276.Controls.Add(label306);
             panel276.Controls.Add(label305);
-            panel276.Location = new Point(336, 52);
+            panel276.Location = new Point(331, 44);
             panel276.Name = "panel276";
             panel276.Size = new Size(26, 66);
             panel276.TabIndex = 929;
@@ -1332,7 +1329,7 @@
             panel190.Controls.Add(label265);
             panel190.Controls.Add(label266);
             panel190.Controls.Add(label267);
-            panel190.Location = new Point(289, 52);
+            panel190.Location = new Point(284, 44);
             panel190.Name = "panel190";
             panel190.Size = new Size(18, 66);
             panel190.TabIndex = 928;
@@ -1395,7 +1392,7 @@
             // panel586
             // 
             panel586.BorderStyle = BorderStyle.FixedSingle;
-            panel586.Location = new Point(634, 659);
+            panel586.Location = new Point(629, 647);
             panel586.Name = "panel586";
             panel586.Size = new Size(18, 23);
             panel586.TabIndex = 927;
@@ -1405,7 +1402,7 @@
             panel588.BorderStyle = BorderStyle.FixedSingle;
             panel588.Controls.Add(label233);
             panel588.Controls.Add(label200);
-            panel588.Location = new Point(32, 682);
+            panel588.Location = new Point(27, 670);
             panel588.Name = "panel588";
             panel588.Size = new Size(103, 23);
             panel588.TabIndex = 914;
@@ -1436,7 +1433,7 @@
             // 
             p110.BorderStyle = BorderStyle.FixedSingle;
             p110.Controls.Add(lblIptalSaglikToplami);
-            p110.Location = new Point(566, 659);
+            p110.Location = new Point(561, 647);
             p110.Name = "p110";
             p110.Size = new Size(68, 23);
             p110.TabIndex = 926;
@@ -1455,7 +1452,7 @@
             // panel590
             // 
             panel590.BorderStyle = BorderStyle.FixedSingle;
-            panel590.Location = new Point(634, 682);
+            panel590.Location = new Point(629, 670);
             panel590.Name = "panel590";
             panel590.Size = new Size(18, 23);
             panel590.TabIndex = 913;
@@ -1463,27 +1460,27 @@
             // p101
             // 
             p101.BorderStyle = BorderStyle.FixedSingle;
-            p101.Controls.Add(lblBKSaglıkToplami);
-            p101.Location = new Point(135, 659);
+            p101.Controls.Add(lblBKSaglik);
+            p101.Location = new Point(130, 647);
             p101.Name = "p101";
             p101.Size = new Size(68, 23);
             p101.TabIndex = 915;
             // 
-            // lblBKSaglıkToplami
+            // lblBKSaglik
             // 
-            lblBKSaglıkToplami.AutoSize = true;
-            lblBKSaglıkToplami.Font = new Font("Segoe UI", 6.75F);
-            lblBKSaglıkToplami.Location = new Point(3, 4);
-            lblBKSaglıkToplami.Margin = new Padding(1, 0, 1, 0);
-            lblBKSaglıkToplami.Name = "lblBKSaglıkToplami";
-            lblBKSaglıkToplami.Size = new Size(10, 12);
-            lblBKSaglıkToplami.TabIndex = 3;
-            lblBKSaglıkToplami.Text = "0";
+            lblBKSaglik.AutoSize = true;
+            lblBKSaglik.Font = new Font("Segoe UI", 6.75F);
+            lblBKSaglik.Location = new Point(3, 4);
+            lblBKSaglik.Margin = new Padding(1, 0, 1, 0);
+            lblBKSaglik.Name = "lblBKSaglik";
+            lblBKSaglik.Size = new Size(10, 12);
+            lblBKSaglik.TabIndex = 3;
+            lblBKSaglik.Text = "0";
             // 
             // panel592
             // 
             panel592.BorderStyle = BorderStyle.FixedSingle;
-            panel592.Location = new Point(534, 659);
+            panel592.Location = new Point(529, 647);
             panel592.Name = "panel592";
             panel592.Size = new Size(32, 23);
             panel592.TabIndex = 925;
@@ -1492,7 +1489,7 @@
             // 
             p115.BorderStyle = BorderStyle.FixedSingle;
             p115.Controls.Add(lblIptalToplamBayindirlik);
-            p115.Location = new Point(566, 682);
+            p115.Location = new Point(561, 670);
             p115.Name = "p115";
             p115.Size = new Size(68, 23);
             p115.TabIndex = 912;
@@ -1511,7 +1508,7 @@
             // panel594
             // 
             panel594.BorderStyle = BorderStyle.FixedSingle;
-            panel594.Location = new Point(203, 659);
+            panel594.Location = new Point(198, 647);
             panel594.Name = "panel594";
             panel594.Size = new Size(18, 23);
             panel594.TabIndex = 916;
@@ -1519,7 +1516,7 @@
             // panel595
             // 
             panel595.BorderStyle = BorderStyle.FixedSingle;
-            panel595.Location = new Point(534, 682);
+            panel595.Location = new Point(529, 670);
             panel595.Name = "panel595";
             panel595.Size = new Size(32, 23);
             panel595.TabIndex = 911;
@@ -1527,7 +1524,7 @@
             // panel596
             // 
             panel596.BorderStyle = BorderStyle.FixedSingle;
-            panel596.Location = new Point(516, 659);
+            panel596.Location = new Point(511, 647);
             panel596.Name = "panel596";
             panel596.Size = new Size(18, 23);
             panel596.TabIndex = 924;
@@ -1535,7 +1532,7 @@
             // panel597
             // 
             panel597.BorderStyle = BorderStyle.FixedSingle;
-            panel597.Location = new Point(516, 682);
+            panel597.Location = new Point(511, 670);
             panel597.Name = "panel597";
             panel597.Size = new Size(18, 23);
             panel597.TabIndex = 910;
@@ -1544,7 +1541,7 @@
             // 
             p102.BorderStyle = BorderStyle.FixedSingle;
             p102.Controls.Add(lblMunzamSaglikToplami);
-            p102.Location = new Point(221, 659);
+            p102.Location = new Point(216, 647);
             p102.Name = "p102";
             p102.Size = new Size(68, 23);
             p102.TabIndex = 917;
@@ -1564,7 +1561,7 @@
             // 
             p114.BorderStyle = BorderStyle.FixedSingle;
             p114.Controls.Add(lblOdenenToplamBayindirlik);
-            p114.Location = new Point(448, 682);
+            p114.Location = new Point(443, 670);
             p114.Name = "p114";
             p114.Size = new Size(68, 23);
             p114.TabIndex = 909;
@@ -1584,7 +1581,7 @@
             // 
             p104.BorderStyle = BorderStyle.FixedSingle;
             p104.Controls.Add(lblOdenenSaglikToplami);
-            p104.Location = new Point(448, 659);
+            p104.Location = new Point(443, 647);
             p104.Name = "p104";
             p104.Size = new Size(68, 23);
             p104.TabIndex = 923;
@@ -1603,7 +1600,7 @@
             // panel601
             // 
             panel601.BorderStyle = BorderStyle.FixedSingle;
-            panel601.Location = new Point(430, 682);
+            panel601.Location = new Point(425, 670);
             panel601.Name = "panel601";
             panel601.Size = new Size(18, 23);
             panel601.TabIndex = 908;
@@ -1611,7 +1608,7 @@
             // panel602
             // 
             panel602.BorderStyle = BorderStyle.FixedSingle;
-            panel602.Location = new Point(289, 659);
+            panel602.Location = new Point(284, 647);
             panel602.Name = "panel602";
             panel602.Size = new Size(18, 23);
             panel602.TabIndex = 918;
@@ -1620,7 +1617,7 @@
             // 
             p113.BorderStyle = BorderStyle.FixedSingle;
             p113.Controls.Add(lblTahakkukToplamBayindirlik);
-            p113.Location = new Point(362, 682);
+            p113.Location = new Point(357, 670);
             p113.Name = "p113";
             p113.Size = new Size(68, 23);
             p113.TabIndex = 907;
@@ -1639,7 +1636,7 @@
             // panel604
             // 
             panel604.BorderStyle = BorderStyle.FixedSingle;
-            panel604.Location = new Point(430, 659);
+            panel604.Location = new Point(425, 647);
             panel604.Name = "panel604";
             panel604.Size = new Size(18, 23);
             panel604.TabIndex = 922;
@@ -1647,7 +1644,7 @@
             // panel605
             // 
             panel605.BorderStyle = BorderStyle.FixedSingle;
-            panel605.Location = new Point(342, 682);
+            panel605.Location = new Point(337, 670);
             panel605.Name = "panel605";
             panel605.Size = new Size(20, 23);
             panel605.TabIndex = 906;
@@ -1655,7 +1652,7 @@
             // panel606
             // 
             panel606.BorderStyle = BorderStyle.FixedSingle;
-            panel606.Location = new Point(307, 659);
+            panel606.Location = new Point(302, 647);
             panel606.Name = "panel606";
             panel606.Size = new Size(35, 23);
             panel606.TabIndex = 919;
@@ -1663,7 +1660,7 @@
             // panel607
             // 
             panel607.BorderStyle = BorderStyle.FixedSingle;
-            panel607.Location = new Point(307, 682);
+            panel607.Location = new Point(302, 670);
             panel607.Name = "panel607";
             panel607.Size = new Size(35, 23);
             panel607.TabIndex = 905;
@@ -1672,7 +1669,7 @@
             // 
             p103.BorderStyle = BorderStyle.FixedSingle;
             p103.Controls.Add(lblTahakkukSaglıkToplami);
-            p103.Location = new Point(362, 659);
+            p103.Location = new Point(357, 647);
             p103.Name = "p103";
             p103.Size = new Size(68, 23);
             p103.TabIndex = 921;
@@ -1691,7 +1688,7 @@
             // panel609
             // 
             panel609.BorderStyle = BorderStyle.FixedSingle;
-            panel609.Location = new Point(289, 682);
+            panel609.Location = new Point(284, 670);
             panel609.Name = "panel609";
             panel609.Size = new Size(18, 23);
             panel609.TabIndex = 904;
@@ -1699,7 +1696,7 @@
             // panel610
             // 
             panel610.BorderStyle = BorderStyle.FixedSingle;
-            panel610.Location = new Point(342, 659);
+            panel610.Location = new Point(337, 647);
             panel610.Name = "panel610";
             panel610.Size = new Size(20, 23);
             panel610.TabIndex = 920;
@@ -1708,7 +1705,7 @@
             // 
             p112.BorderStyle = BorderStyle.FixedSingle;
             p112.Controls.Add(lblMunzamToplamBayindirlik);
-            p112.Location = new Point(221, 682);
+            p112.Location = new Point(216, 670);
             p112.Name = "p112";
             p112.Size = new Size(68, 23);
             p112.TabIndex = 903;
@@ -1727,7 +1724,7 @@
             // panel612
             // 
             panel612.BorderStyle = BorderStyle.FixedSingle;
-            panel612.Location = new Point(203, 682);
+            panel612.Location = new Point(198, 670);
             panel612.Name = "panel612";
             panel612.Size = new Size(18, 23);
             panel612.TabIndex = 902;
@@ -1735,29 +1732,29 @@
             // p111
             // 
             p111.BorderStyle = BorderStyle.FixedSingle;
-            p111.Controls.Add(lblBKToplamBayindirlik);
-            p111.Location = new Point(135, 682);
+            p111.Controls.Add(lblBKBayindirlik);
+            p111.Location = new Point(130, 670);
             p111.Name = "p111";
             p111.Size = new Size(68, 23);
             p111.TabIndex = 901;
             // 
-            // lblBKToplamBayindirlik
+            // lblBKBayindirlik
             // 
-            lblBKToplamBayindirlik.AutoSize = true;
-            lblBKToplamBayindirlik.Font = new Font("Segoe UI", 6.75F);
-            lblBKToplamBayindirlik.Location = new Point(3, 4);
-            lblBKToplamBayindirlik.Margin = new Padding(1, 0, 1, 0);
-            lblBKToplamBayindirlik.Name = "lblBKToplamBayindirlik";
-            lblBKToplamBayindirlik.Size = new Size(10, 12);
-            lblBKToplamBayindirlik.TabIndex = 3;
-            lblBKToplamBayindirlik.Text = "0";
+            lblBKBayindirlik.AutoSize = true;
+            lblBKBayindirlik.Font = new Font("Segoe UI", 6.75F);
+            lblBKBayindirlik.Location = new Point(3, 4);
+            lblBKBayindirlik.Margin = new Padding(1, 0, 1, 0);
+            lblBKBayindirlik.Name = "lblBKBayindirlik";
+            lblBKBayindirlik.Size = new Size(10, 12);
+            lblBKBayindirlik.TabIndex = 3;
+            lblBKBayindirlik.Text = "0";
             // 
             // panel614
             // 
             panel614.BorderStyle = BorderStyle.FixedSingle;
             panel614.Controls.Add(label8);
             panel614.Controls.Add(label202);
-            panel614.Location = new Point(32, 659);
+            panel614.Location = new Point(27, 647);
             panel614.Name = "panel614";
             panel614.Size = new Size(103, 23);
             panel614.TabIndex = 900;
@@ -1787,7 +1784,7 @@
             // label203
             // 
             label203.AutoSize = true;
-            label203.Location = new Point(289, 572);
+            label203.Location = new Point(284, 560);
             label203.Margin = new Padding(1, 0, 1, 0);
             label203.Name = "label203";
             label203.Size = new Size(128, 15);
@@ -1797,7 +1794,7 @@
             // panel616
             // 
             panel616.BorderStyle = BorderStyle.FixedSingle;
-            panel616.Location = new Point(634, 636);
+            panel616.Location = new Point(629, 624);
             panel616.Name = "panel616";
             panel616.Size = new Size(18, 23);
             panel616.TabIndex = 898;
@@ -1806,7 +1803,7 @@
             // 
             p100.BorderStyle = BorderStyle.FixedSingle;
             p100.Controls.Add(lblIptalKulturToplami);
-            p100.Location = new Point(566, 636);
+            p100.Location = new Point(561, 624);
             p100.Name = "p100";
             p100.Size = new Size(68, 23);
             p100.TabIndex = 897;
@@ -1825,7 +1822,7 @@
             // panel618
             // 
             panel618.BorderStyle = BorderStyle.FixedSingle;
-            panel618.Location = new Point(534, 636);
+            panel618.Location = new Point(529, 624);
             panel618.Name = "panel618";
             panel618.Size = new Size(32, 23);
             panel618.TabIndex = 896;
@@ -1833,7 +1830,7 @@
             // panel619
             // 
             panel619.BorderStyle = BorderStyle.FixedSingle;
-            panel619.Location = new Point(516, 636);
+            panel619.Location = new Point(511, 624);
             panel619.Name = "panel619";
             panel619.Size = new Size(18, 23);
             panel619.TabIndex = 895;
@@ -1842,7 +1839,7 @@
             // 
             p99.BorderStyle = BorderStyle.FixedSingle;
             p99.Controls.Add(lblOdenenKulturToplami);
-            p99.Location = new Point(448, 636);
+            p99.Location = new Point(443, 624);
             p99.Name = "p99";
             p99.Size = new Size(68, 23);
             p99.TabIndex = 894;
@@ -1861,7 +1858,7 @@
             // panel621
             // 
             panel621.BorderStyle = BorderStyle.FixedSingle;
-            panel621.Location = new Point(430, 636);
+            panel621.Location = new Point(425, 624);
             panel621.Name = "panel621";
             panel621.Size = new Size(18, 23);
             panel621.TabIndex = 893;
@@ -1870,7 +1867,7 @@
             // 
             p98.BorderStyle = BorderStyle.FixedSingle;
             p98.Controls.Add(lblTahakkukKulturToplami);
-            p98.Location = new Point(362, 636);
+            p98.Location = new Point(357, 624);
             p98.Name = "p98";
             p98.Size = new Size(68, 23);
             p98.TabIndex = 892;
@@ -1889,7 +1886,7 @@
             // panel623
             // 
             panel623.BorderStyle = BorderStyle.FixedSingle;
-            panel623.Location = new Point(342, 636);
+            panel623.Location = new Point(337, 624);
             panel623.Name = "panel623";
             panel623.Size = new Size(20, 23);
             panel623.TabIndex = 891;
@@ -1897,7 +1894,7 @@
             // panel624
             // 
             panel624.BorderStyle = BorderStyle.FixedSingle;
-            panel624.Location = new Point(307, 636);
+            panel624.Location = new Point(302, 624);
             panel624.Name = "panel624";
             panel624.Size = new Size(35, 23);
             panel624.TabIndex = 890;
@@ -1905,7 +1902,7 @@
             // panel625
             // 
             panel625.BorderStyle = BorderStyle.FixedSingle;
-            panel625.Location = new Point(289, 636);
+            panel625.Location = new Point(284, 624);
             panel625.Name = "panel625";
             panel625.Size = new Size(18, 23);
             panel625.TabIndex = 889;
@@ -1914,7 +1911,7 @@
             // 
             p97.BorderStyle = BorderStyle.FixedSingle;
             p97.Controls.Add(lblMunzamKulturToplami);
-            p97.Location = new Point(221, 636);
+            p97.Location = new Point(216, 624);
             p97.Name = "p97";
             p97.Size = new Size(68, 23);
             p97.TabIndex = 888;
@@ -1933,7 +1930,7 @@
             // panel627
             // 
             panel627.BorderStyle = BorderStyle.FixedSingle;
-            panel627.Location = new Point(203, 636);
+            panel627.Location = new Point(198, 624);
             panel627.Name = "panel627";
             panel627.Size = new Size(18, 23);
             panel627.TabIndex = 887;
@@ -1941,27 +1938,27 @@
             // p96
             // 
             p96.BorderStyle = BorderStyle.FixedSingle;
-            p96.Controls.Add(lblBKKulturToplami);
-            p96.Location = new Point(135, 636);
+            p96.Controls.Add(lblBKKultur);
+            p96.Location = new Point(130, 624);
             p96.Name = "p96";
             p96.Size = new Size(68, 23);
             p96.TabIndex = 886;
             // 
-            // lblBKKulturToplami
+            // lblBKKultur
             // 
-            lblBKKulturToplami.AutoSize = true;
-            lblBKKulturToplami.Font = new Font("Segoe UI", 6.75F);
-            lblBKKulturToplami.Location = new Point(3, 4);
-            lblBKKulturToplami.Margin = new Padding(1, 0, 1, 0);
-            lblBKKulturToplami.Name = "lblBKKulturToplami";
-            lblBKKulturToplami.Size = new Size(10, 12);
-            lblBKKulturToplami.TabIndex = 3;
-            lblBKKulturToplami.Text = "0";
+            lblBKKultur.AutoSize = true;
+            lblBKKultur.Font = new Font("Segoe UI", 6.75F);
+            lblBKKultur.Location = new Point(3, 4);
+            lblBKKultur.Margin = new Padding(1, 0, 1, 0);
+            lblBKKultur.Name = "lblBKKultur";
+            lblBKKultur.Size = new Size(10, 12);
+            lblBKKultur.TabIndex = 3;
+            lblBKKultur.Text = "3";
             // 
             // panel629
             // 
             panel629.BorderStyle = BorderStyle.FixedSingle;
-            panel629.Location = new Point(634, 590);
+            panel629.Location = new Point(629, 578);
             panel629.Name = "panel629";
             panel629.Size = new Size(18, 23);
             panel629.TabIndex = 885;
@@ -1971,7 +1968,7 @@
             panel630.BorderStyle = BorderStyle.FixedSingle;
             panel630.Controls.Add(label231);
             panel630.Controls.Add(label204);
-            panel630.Location = new Point(32, 636);
+            panel630.Location = new Point(27, 624);
             panel630.Name = "panel630";
             panel630.Size = new Size(103, 23);
             panel630.TabIndex = 872;
@@ -2004,7 +2001,7 @@
             panel631.Controls.Add(label182);
             panel631.Controls.Add(label193);
             panel631.Controls.Add(label205);
-            panel631.Location = new Point(32, 613);
+            panel631.Location = new Point(27, 601);
             panel631.Name = "panel631";
             panel631.Size = new Size(103, 23);
             panel631.TabIndex = 871;
@@ -2046,7 +2043,7 @@
             // 
             p90.BorderStyle = BorderStyle.FixedSingle;
             p90.Controls.Add(lblIptalIdariIslerToplami);
-            p90.Location = new Point(566, 590);
+            p90.Location = new Point(561, 578);
             p90.Name = "p90";
             p90.Size = new Size(68, 23);
             p90.TabIndex = 884;
@@ -2065,7 +2062,7 @@
             // panel633
             // 
             panel633.BorderStyle = BorderStyle.FixedSingle;
-            panel633.Location = new Point(634, 613);
+            panel633.Location = new Point(629, 601);
             panel633.Name = "panel633";
             panel633.Size = new Size(18, 23);
             panel633.TabIndex = 870;
@@ -2073,27 +2070,27 @@
             // p86
             // 
             p86.BorderStyle = BorderStyle.FixedSingle;
-            p86.Controls.Add(lblBKIdariIslerToplami);
-            p86.Location = new Point(135, 590);
+            p86.Controls.Add(lblBKIdariIsler);
+            p86.Location = new Point(130, 578);
             p86.Name = "p86";
             p86.Size = new Size(68, 23);
             p86.TabIndex = 873;
             // 
-            // lblBKIdariIslerToplami
+            // lblBKIdariIsler
             // 
-            lblBKIdariIslerToplami.AutoSize = true;
-            lblBKIdariIslerToplami.Font = new Font("Segoe UI", 6.75F);
-            lblBKIdariIslerToplami.Location = new Point(3, 4);
-            lblBKIdariIslerToplami.Margin = new Padding(1, 0, 1, 0);
-            lblBKIdariIslerToplami.Name = "lblBKIdariIslerToplami";
-            lblBKIdariIslerToplami.Size = new Size(10, 12);
-            lblBKIdariIslerToplami.TabIndex = 3;
-            lblBKIdariIslerToplami.Text = "0";
+            lblBKIdariIsler.AutoSize = true;
+            lblBKIdariIsler.Font = new Font("Segoe UI", 6.75F);
+            lblBKIdariIsler.Location = new Point(3, 4);
+            lblBKIdariIsler.Margin = new Padding(1, 0, 1, 0);
+            lblBKIdariIsler.Name = "lblBKIdariIsler";
+            lblBKIdariIsler.Size = new Size(10, 12);
+            lblBKIdariIsler.TabIndex = 3;
+            lblBKIdariIsler.Text = "1";
             // 
             // panel635
             // 
             panel635.BorderStyle = BorderStyle.FixedSingle;
-            panel635.Location = new Point(534, 590);
+            panel635.Location = new Point(529, 578);
             panel635.Name = "panel635";
             panel635.Size = new Size(32, 23);
             panel635.TabIndex = 883;
@@ -2102,7 +2099,7 @@
             // 
             p95.BorderStyle = BorderStyle.FixedSingle;
             p95.Controls.Add(lblIptalZiraatToplami);
-            p95.Location = new Point(566, 613);
+            p95.Location = new Point(561, 601);
             p95.Name = "p95";
             p95.Size = new Size(68, 23);
             p95.TabIndex = 869;
@@ -2121,7 +2118,7 @@
             // panel637
             // 
             panel637.BorderStyle = BorderStyle.FixedSingle;
-            panel637.Location = new Point(203, 590);
+            panel637.Location = new Point(198, 578);
             panel637.Name = "panel637";
             panel637.Size = new Size(18, 23);
             panel637.TabIndex = 874;
@@ -2129,7 +2126,7 @@
             // panel638
             // 
             panel638.BorderStyle = BorderStyle.FixedSingle;
-            panel638.Location = new Point(534, 613);
+            panel638.Location = new Point(529, 601);
             panel638.Name = "panel638";
             panel638.Size = new Size(32, 23);
             panel638.TabIndex = 868;
@@ -2137,7 +2134,7 @@
             // panel639
             // 
             panel639.BorderStyle = BorderStyle.FixedSingle;
-            panel639.Location = new Point(516, 590);
+            panel639.Location = new Point(511, 578);
             panel639.Name = "panel639";
             panel639.Size = new Size(18, 23);
             panel639.TabIndex = 882;
@@ -2145,7 +2142,7 @@
             // panel640
             // 
             panel640.BorderStyle = BorderStyle.FixedSingle;
-            panel640.Location = new Point(516, 613);
+            panel640.Location = new Point(511, 601);
             panel640.Name = "panel640";
             panel640.Size = new Size(18, 23);
             panel640.TabIndex = 867;
@@ -2154,7 +2151,7 @@
             // 
             p87.BorderStyle = BorderStyle.FixedSingle;
             p87.Controls.Add(lblMunzamIdariIslerToplami);
-            p87.Location = new Point(221, 590);
+            p87.Location = new Point(216, 578);
             p87.Name = "p87";
             p87.Size = new Size(68, 23);
             p87.TabIndex = 875;
@@ -2174,7 +2171,7 @@
             // 
             p94.BorderStyle = BorderStyle.FixedSingle;
             p94.Controls.Add(lblOdenenZiraatToplami);
-            p94.Location = new Point(448, 613);
+            p94.Location = new Point(443, 601);
             p94.Name = "p94";
             p94.Size = new Size(68, 23);
             p94.TabIndex = 866;
@@ -2194,7 +2191,7 @@
             // 
             p89.BorderStyle = BorderStyle.FixedSingle;
             p89.Controls.Add(lblOdenenIdariIslerToplami);
-            p89.Location = new Point(448, 590);
+            p89.Location = new Point(443, 578);
             p89.Name = "p89";
             p89.Size = new Size(68, 23);
             p89.TabIndex = 881;
@@ -2213,7 +2210,7 @@
             // panel644
             // 
             panel644.BorderStyle = BorderStyle.FixedSingle;
-            panel644.Location = new Point(430, 613);
+            panel644.Location = new Point(425, 601);
             panel644.Name = "panel644";
             panel644.Size = new Size(18, 23);
             panel644.TabIndex = 865;
@@ -2221,7 +2218,7 @@
             // panel645
             // 
             panel645.BorderStyle = BorderStyle.FixedSingle;
-            panel645.Location = new Point(289, 590);
+            panel645.Location = new Point(284, 578);
             panel645.Name = "panel645";
             panel645.Size = new Size(18, 23);
             panel645.TabIndex = 876;
@@ -2230,7 +2227,7 @@
             // 
             p93.BorderStyle = BorderStyle.FixedSingle;
             p93.Controls.Add(lblTahakkukZiraatToplami);
-            p93.Location = new Point(362, 613);
+            p93.Location = new Point(357, 601);
             p93.Name = "p93";
             p93.Size = new Size(68, 23);
             p93.TabIndex = 864;
@@ -2249,7 +2246,7 @@
             // panel647
             // 
             panel647.BorderStyle = BorderStyle.FixedSingle;
-            panel647.Location = new Point(430, 590);
+            panel647.Location = new Point(425, 578);
             panel647.Name = "panel647";
             panel647.Size = new Size(18, 23);
             panel647.TabIndex = 880;
@@ -2257,7 +2254,7 @@
             // panel648
             // 
             panel648.BorderStyle = BorderStyle.FixedSingle;
-            panel648.Location = new Point(342, 613);
+            panel648.Location = new Point(337, 601);
             panel648.Name = "panel648";
             panel648.Size = new Size(20, 23);
             panel648.TabIndex = 863;
@@ -2265,7 +2262,7 @@
             // panel649
             // 
             panel649.BorderStyle = BorderStyle.FixedSingle;
-            panel649.Location = new Point(307, 590);
+            panel649.Location = new Point(302, 578);
             panel649.Name = "panel649";
             panel649.Size = new Size(35, 23);
             panel649.TabIndex = 877;
@@ -2273,7 +2270,7 @@
             // panel650
             // 
             panel650.BorderStyle = BorderStyle.FixedSingle;
-            panel650.Location = new Point(307, 613);
+            panel650.Location = new Point(302, 601);
             panel650.Name = "panel650";
             panel650.Size = new Size(35, 23);
             panel650.TabIndex = 862;
@@ -2282,7 +2279,7 @@
             // 
             p88.BorderStyle = BorderStyle.FixedSingle;
             p88.Controls.Add(lblTahakkukIdariIslerToplami);
-            p88.Location = new Point(362, 590);
+            p88.Location = new Point(357, 578);
             p88.Name = "p88";
             p88.Size = new Size(68, 23);
             p88.TabIndex = 879;
@@ -2301,7 +2298,7 @@
             // panel652
             // 
             panel652.BorderStyle = BorderStyle.FixedSingle;
-            panel652.Location = new Point(289, 613);
+            panel652.Location = new Point(284, 601);
             panel652.Name = "panel652";
             panel652.Size = new Size(18, 23);
             panel652.TabIndex = 861;
@@ -2309,7 +2306,7 @@
             // panel653
             // 
             panel653.BorderStyle = BorderStyle.FixedSingle;
-            panel653.Location = new Point(342, 590);
+            panel653.Location = new Point(337, 578);
             panel653.Name = "panel653";
             panel653.Size = new Size(20, 23);
             panel653.TabIndex = 878;
@@ -2318,7 +2315,7 @@
             // 
             p92.BorderStyle = BorderStyle.FixedSingle;
             p92.Controls.Add(lblMunzamZiraatToplami);
-            p92.Location = new Point(221, 613);
+            p92.Location = new Point(216, 601);
             p92.Name = "p92";
             p92.Size = new Size(68, 23);
             p92.TabIndex = 860;
@@ -2337,7 +2334,7 @@
             // panel655
             // 
             panel655.BorderStyle = BorderStyle.FixedSingle;
-            panel655.Location = new Point(203, 613);
+            panel655.Location = new Point(198, 601);
             panel655.Name = "panel655";
             panel655.Size = new Size(18, 23);
             panel655.TabIndex = 859;
@@ -2345,22 +2342,22 @@
             // p91
             // 
             p91.BorderStyle = BorderStyle.FixedSingle;
-            p91.Controls.Add(lblBKZiraatToplami);
-            p91.Location = new Point(135, 613);
+            p91.Controls.Add(lblBKZiraat);
+            p91.Location = new Point(130, 601);
             p91.Name = "p91";
             p91.Size = new Size(68, 23);
             p91.TabIndex = 858;
             // 
-            // lblBKZiraatToplami
+            // lblBKZiraat
             // 
-            lblBKZiraatToplami.AutoSize = true;
-            lblBKZiraatToplami.Font = new Font("Segoe UI", 6.75F);
-            lblBKZiraatToplami.Location = new Point(3, 4);
-            lblBKZiraatToplami.Margin = new Padding(1, 0, 1, 0);
-            lblBKZiraatToplami.Name = "lblBKZiraatToplami";
-            lblBKZiraatToplami.Size = new Size(10, 12);
-            lblBKZiraatToplami.TabIndex = 3;
-            lblBKZiraatToplami.Text = "0";
+            lblBKZiraat.AutoSize = true;
+            lblBKZiraat.Font = new Font("Segoe UI", 6.75F);
+            lblBKZiraat.Location = new Point(3, 4);
+            lblBKZiraat.Margin = new Padding(1, 0, 1, 0);
+            lblBKZiraat.Name = "lblBKZiraat";
+            lblBKZiraat.Size = new Size(10, 12);
+            lblBKZiraat.TabIndex = 3;
+            lblBKZiraat.Text = "2";
             // 
             // panel659
             // 
@@ -2372,7 +2369,7 @@
             panel659.Controls.Add(label211);
             panel659.Controls.Add(label212);
             panel659.Controls.Add(label213);
-            panel659.Location = new Point(12, 590);
+            panel659.Location = new Point(7, 578);
             panel659.Margin = new Padding(1, 3, 1, 3);
             panel659.Name = "panel659";
             panel659.Size = new Size(21, 178);
@@ -2451,7 +2448,7 @@
             // label187
             // 
             label187.AutoSize = true;
-            label187.Location = new Point(207, 504);
+            label187.Location = new Point(202, 494);
             label187.Margin = new Padding(1, 0, 1, 0);
             label187.Name = "label187";
             label187.Size = new Size(294, 15);
@@ -2461,7 +2458,7 @@
             // panel541
             // 
             panel541.BorderStyle = BorderStyle.FixedSingle;
-            panel541.Location = new Point(637, 522);
+            panel541.Location = new Point(631, 512);
             panel541.Name = "panel541";
             panel541.Size = new Size(18, 23);
             panel541.TabIndex = 798;
@@ -2470,7 +2467,7 @@
             // 
             panel543.BorderStyle = BorderStyle.FixedSingle;
             panel543.Controls.Add(label13);
-            panel543.Location = new Point(55, 545);
+            panel543.Location = new Point(49, 535);
             panel543.Name = "panel543";
             panel543.Size = new Size(83, 23);
             panel543.TabIndex = 784;
@@ -2489,27 +2486,27 @@
             // p80
             // 
             p80.BorderStyle = BorderStyle.FixedSingle;
-            p80.Controls.Add(lblIptalAsker);
-            p80.Location = new Point(569, 522);
+            p80.Controls.Add(lblIptalAskerYardim);
+            p80.Location = new Point(563, 512);
             p80.Name = "p80";
             p80.Size = new Size(68, 23);
             p80.TabIndex = 797;
             // 
-            // lblIptalAsker
+            // lblIptalAskerYardim
             // 
-            lblIptalAsker.AutoSize = true;
-            lblIptalAsker.Font = new Font("Segoe UI", 6.75F);
-            lblIptalAsker.Location = new Point(3, 4);
-            lblIptalAsker.Margin = new Padding(1, 0, 1, 0);
-            lblIptalAsker.Name = "lblIptalAsker";
-            lblIptalAsker.Size = new Size(10, 12);
-            lblIptalAsker.TabIndex = 4;
-            lblIptalAsker.Text = "0";
+            lblIptalAskerYardim.AutoSize = true;
+            lblIptalAskerYardim.Font = new Font("Segoe UI", 6.75F);
+            lblIptalAskerYardim.Location = new Point(3, 4);
+            lblIptalAskerYardim.Margin = new Padding(1, 0, 1, 0);
+            lblIptalAskerYardim.Name = "lblIptalAskerYardim";
+            lblIptalAskerYardim.Size = new Size(10, 12);
+            lblIptalAskerYardim.TabIndex = 4;
+            lblIptalAskerYardim.Text = "0";
             // 
             // panel545
             // 
             panel545.BorderStyle = BorderStyle.FixedSingle;
-            panel545.Location = new Point(637, 545);
+            panel545.Location = new Point(631, 535);
             panel545.Name = "panel545";
             panel545.Size = new Size(18, 23);
             panel545.TabIndex = 783;
@@ -2518,7 +2515,7 @@
             // 
             p76.BorderStyle = BorderStyle.FixedSingle;
             p76.Controls.Add(lblBKAskerYardim);
-            p76.Location = new Point(138, 522);
+            p76.Location = new Point(132, 512);
             p76.Name = "p76";
             p76.Size = new Size(68, 23);
             p76.TabIndex = 786;
@@ -2530,14 +2527,14 @@
             lblBKAskerYardim.Location = new Point(3, 4);
             lblBKAskerYardim.Margin = new Padding(1, 0, 1, 0);
             lblBKAskerYardim.Name = "lblBKAskerYardim";
-            lblBKAskerYardim.Size = new Size(10, 12);
+            lblBKAskerYardim.Size = new Size(35, 12);
             lblBKAskerYardim.TabIndex = 4;
-            lblBKAskerYardim.Text = "0";
+            lblBKAskerYardim.Text = "100000";
             // 
             // panel547
             // 
             panel547.BorderStyle = BorderStyle.FixedSingle;
-            panel547.Location = new Point(537, 522);
+            panel547.Location = new Point(531, 512);
             panel547.Name = "panel547";
             panel547.Size = new Size(32, 23);
             panel547.TabIndex = 796;
@@ -2546,7 +2543,7 @@
             // 
             p85.BorderStyle = BorderStyle.FixedSingle;
             p85.Controls.Add(lblIptalAskerToplami);
-            p85.Location = new Point(569, 545);
+            p85.Location = new Point(563, 535);
             p85.Name = "p85";
             p85.Size = new Size(68, 23);
             p85.TabIndex = 782;
@@ -2565,7 +2562,7 @@
             // panel549
             // 
             panel549.BorderStyle = BorderStyle.FixedSingle;
-            panel549.Location = new Point(206, 522);
+            panel549.Location = new Point(200, 512);
             panel549.Name = "panel549";
             panel549.Size = new Size(18, 23);
             panel549.TabIndex = 787;
@@ -2573,7 +2570,7 @@
             // panel550
             // 
             panel550.BorderStyle = BorderStyle.FixedSingle;
-            panel550.Location = new Point(537, 545);
+            panel550.Location = new Point(531, 535);
             panel550.Name = "panel550";
             panel550.Size = new Size(32, 23);
             panel550.TabIndex = 781;
@@ -2581,7 +2578,7 @@
             // panel551
             // 
             panel551.BorderStyle = BorderStyle.FixedSingle;
-            panel551.Location = new Point(519, 522);
+            panel551.Location = new Point(513, 512);
             panel551.Name = "panel551";
             panel551.Size = new Size(18, 23);
             panel551.TabIndex = 795;
@@ -2589,7 +2586,7 @@
             // panel552
             // 
             panel552.BorderStyle = BorderStyle.FixedSingle;
-            panel552.Location = new Point(519, 545);
+            panel552.Location = new Point(513, 535);
             panel552.Name = "panel552";
             panel552.Size = new Size(18, 23);
             panel552.TabIndex = 780;
@@ -2598,7 +2595,7 @@
             // 
             p77.BorderStyle = BorderStyle.FixedSingle;
             p77.Controls.Add(lblMunzamAskerYardim);
-            p77.Location = new Point(224, 522);
+            p77.Location = new Point(218, 512);
             p77.Name = "p77";
             p77.Size = new Size(68, 23);
             p77.TabIndex = 788;
@@ -2618,7 +2615,7 @@
             // 
             p84.BorderStyle = BorderStyle.FixedSingle;
             p84.Controls.Add(lblOdenenAskerToplami);
-            p84.Location = new Point(451, 545);
+            p84.Location = new Point(445, 535);
             p84.Name = "p84";
             p84.Size = new Size(68, 23);
             p84.TabIndex = 779;
@@ -2637,27 +2634,27 @@
             // p79
             // 
             p79.BorderStyle = BorderStyle.FixedSingle;
-            p79.Controls.Add(lblOdenenAsker);
-            p79.Location = new Point(451, 522);
+            p79.Controls.Add(lblOdenenAskerYardim);
+            p79.Location = new Point(445, 512);
             p79.Name = "p79";
             p79.Size = new Size(68, 23);
             p79.TabIndex = 794;
             // 
-            // lblOdenenAsker
+            // lblOdenenAskerYardim
             // 
-            lblOdenenAsker.AutoSize = true;
-            lblOdenenAsker.Font = new Font("Segoe UI", 6.75F);
-            lblOdenenAsker.Location = new Point(3, 4);
-            lblOdenenAsker.Margin = new Padding(1, 0, 1, 0);
-            lblOdenenAsker.Name = "lblOdenenAsker";
-            lblOdenenAsker.Size = new Size(10, 12);
-            lblOdenenAsker.TabIndex = 4;
-            lblOdenenAsker.Text = "0";
+            lblOdenenAskerYardim.AutoSize = true;
+            lblOdenenAskerYardim.Font = new Font("Segoe UI", 6.75F);
+            lblOdenenAskerYardim.Location = new Point(3, 4);
+            lblOdenenAskerYardim.Margin = new Padding(1, 0, 1, 0);
+            lblOdenenAskerYardim.Name = "lblOdenenAskerYardim";
+            lblOdenenAskerYardim.Size = new Size(30, 12);
+            lblOdenenAskerYardim.TabIndex = 4;
+            lblOdenenAskerYardim.Text = "29022";
             // 
             // panel556
             // 
             panel556.BorderStyle = BorderStyle.FixedSingle;
-            panel556.Location = new Point(433, 545);
+            panel556.Location = new Point(427, 535);
             panel556.Name = "panel556";
             panel556.Size = new Size(18, 23);
             panel556.TabIndex = 778;
@@ -2665,7 +2662,7 @@
             // panel557
             // 
             panel557.BorderStyle = BorderStyle.FixedSingle;
-            panel557.Location = new Point(292, 522);
+            panel557.Location = new Point(286, 512);
             panel557.Name = "panel557";
             panel557.Size = new Size(18, 23);
             panel557.TabIndex = 789;
@@ -2674,7 +2671,7 @@
             // 
             p83.BorderStyle = BorderStyle.FixedSingle;
             p83.Controls.Add(lblTahakkukAskerToplami);
-            p83.Location = new Point(365, 545);
+            p83.Location = new Point(359, 535);
             p83.Name = "p83";
             p83.Size = new Size(68, 23);
             p83.TabIndex = 777;
@@ -2693,7 +2690,7 @@
             // panel559
             // 
             panel559.BorderStyle = BorderStyle.FixedSingle;
-            panel559.Location = new Point(433, 522);
+            panel559.Location = new Point(427, 512);
             panel559.Name = "panel559";
             panel559.Size = new Size(18, 23);
             panel559.TabIndex = 793;
@@ -2701,7 +2698,7 @@
             // panel560
             // 
             panel560.BorderStyle = BorderStyle.FixedSingle;
-            panel560.Location = new Point(345, 545);
+            panel560.Location = new Point(339, 535);
             panel560.Name = "panel560";
             panel560.Size = new Size(20, 23);
             panel560.TabIndex = 776;
@@ -2709,7 +2706,7 @@
             // panel561
             // 
             panel561.BorderStyle = BorderStyle.FixedSingle;
-            panel561.Location = new Point(310, 522);
+            panel561.Location = new Point(304, 512);
             panel561.Name = "panel561";
             panel561.Size = new Size(35, 23);
             panel561.TabIndex = 790;
@@ -2717,7 +2714,7 @@
             // panel562
             // 
             panel562.BorderStyle = BorderStyle.FixedSingle;
-            panel562.Location = new Point(310, 545);
+            panel562.Location = new Point(304, 535);
             panel562.Name = "panel562";
             panel562.Size = new Size(35, 23);
             panel562.TabIndex = 775;
@@ -2726,7 +2723,7 @@
             // 
             p78.BorderStyle = BorderStyle.FixedSingle;
             p78.Controls.Add(lblTahakkukAskerYardim);
-            p78.Location = new Point(365, 522);
+            p78.Location = new Point(359, 512);
             p78.Name = "p78";
             p78.Size = new Size(68, 23);
             p78.TabIndex = 792;
@@ -2745,7 +2742,7 @@
             // panel564
             // 
             panel564.BorderStyle = BorderStyle.FixedSingle;
-            panel564.Location = new Point(292, 545);
+            panel564.Location = new Point(286, 535);
             panel564.Name = "panel564";
             panel564.Size = new Size(18, 23);
             panel564.TabIndex = 774;
@@ -2753,7 +2750,7 @@
             // panel565
             // 
             panel565.BorderStyle = BorderStyle.FixedSingle;
-            panel565.Location = new Point(345, 522);
+            panel565.Location = new Point(339, 512);
             panel565.Name = "panel565";
             panel565.Size = new Size(20, 23);
             panel565.TabIndex = 791;
@@ -2762,7 +2759,7 @@
             // 
             p82.BorderStyle = BorderStyle.FixedSingle;
             p82.Controls.Add(lblMunzamAskerToplami);
-            p82.Location = new Point(224, 545);
+            p82.Location = new Point(218, 535);
             p82.Name = "p82";
             p82.Size = new Size(68, 23);
             p82.TabIndex = 773;
@@ -2781,7 +2778,7 @@
             // panel567
             // 
             panel567.BorderStyle = BorderStyle.FixedSingle;
-            panel567.Location = new Point(206, 545);
+            panel567.Location = new Point(200, 535);
             panel567.Name = "panel567";
             panel567.Size = new Size(18, 23);
             panel567.TabIndex = 772;
@@ -2790,7 +2787,7 @@
             // 
             p81.BorderStyle = BorderStyle.FixedSingle;
             p81.Controls.Add(lblBKAskerToplami);
-            p81.Location = new Point(138, 545);
+            p81.Location = new Point(132, 535);
             p81.Name = "p81";
             p81.Size = new Size(68, 23);
             p81.TabIndex = 771;
@@ -2809,56 +2806,35 @@
             // panel569
             // 
             panel569.BorderStyle = BorderStyle.FixedSingle;
-            panel569.Controls.Add(panel570);
+            panel569.Controls.Add(label14);
+            panel569.Controls.Add(label19);
             panel569.Controls.Add(label191);
-            panel569.Location = new Point(55, 522);
+            panel569.Location = new Point(49, 512);
             panel569.Name = "panel569";
             panel569.Size = new Size(83, 23);
             panel569.TabIndex = 770;
             // 
-            // panel570
+            // label14
             // 
-            panel570.BorderStyle = BorderStyle.FixedSingle;
-            panel570.Controls.Add(label222);
-            panel570.Controls.Add(label236);
-            panel570.Controls.Add(label190);
-            panel570.Location = new Point(-2, -1);
-            panel570.Name = "panel570";
-            panel570.Size = new Size(83, 23);
-            panel570.TabIndex = 245;
+            label14.AutoSize = true;
+            label14.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label14.Location = new Point(3, 9);
+            label14.Margin = new Padding(1, 0, 1, 0);
+            label14.Name = "label14";
+            label14.Size = new Size(59, 13);
+            label14.TabIndex = 251;
+            label14.Text = "Yapılacak Yardım";
             // 
-            // label222
+            // label19
             // 
-            label222.AutoSize = true;
-            label222.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label222.Location = new Point(-1, 9);
-            label222.Margin = new Padding(1, 0, 1, 0);
-            label222.Name = "label222";
-            label222.Size = new Size(59, 13);
-            label222.TabIndex = 249;
-            label222.Text = "Yapılacak Yardım";
-            // 
-            // label236
-            // 
-            label236.AutoSize = true;
-            label236.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label236.Location = new Point(-1, -1);
-            label236.Margin = new Padding(1, 0, 1, 0);
-            label236.Name = "label236";
-            label236.Size = new Size(75, 13);
-            label236.TabIndex = 250;
-            label236.Text = "Muhtaç Asker Ailelerine";
-            // 
-            // label190
-            // 
-            label190.AutoSize = true;
-            label190.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label190.Location = new Point(9, 37);
-            label190.Margin = new Padding(1, 0, 1, 0);
-            label190.Name = "label190";
-            label190.Size = new Size(58, 13);
-            label190.TabIndex = 242;
-            label190.Text = "GİDERİN CİNSİ";
+            label19.AutoSize = true;
+            label19.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label19.Location = new Point(3, -1);
+            label19.Margin = new Padding(1, 0, 1, 0);
+            label19.Name = "label19";
+            label19.Size = new Size(75, 13);
+            label19.TabIndex = 252;
+            label19.Text = "Muhtaç Asker Ailelerine";
             // 
             // label191
             // 
@@ -2875,7 +2851,7 @@
             // 
             panel571.BorderStyle = BorderStyle.FixedSingle;
             panel571.Controls.Add(label197);
-            panel571.Location = new Point(34, 522);
+            panel571.Location = new Point(28, 512);
             panel571.Margin = new Padding(1, 3, 1, 3);
             panel571.Name = "panel571";
             panel571.Size = new Size(21, 46);
@@ -2895,7 +2871,7 @@
             // 
             panel572.BorderStyle = BorderStyle.FixedSingle;
             panel572.Controls.Add(label199);
-            panel572.Location = new Point(15, 522);
+            panel572.Location = new Point(7, 512);
             panel572.Margin = new Padding(1, 3, 1, 3);
             panel572.Name = "panel572";
             panel572.Size = new Size(21, 46);
@@ -2914,7 +2890,7 @@
             // panel429
             // 
             panel429.BorderStyle = BorderStyle.FixedSingle;
-            panel429.Location = new Point(634, 454);
+            panel429.Location = new Point(629, 447);
             panel429.Name = "panel429";
             panel429.Size = new Size(18, 23);
             panel429.TabIndex = 767;
@@ -2923,7 +2899,7 @@
             // 
             p70.BorderStyle = BorderStyle.FixedSingle;
             p70.Controls.Add(lblIptalKHGB);
-            p70.Location = new Point(566, 454);
+            p70.Location = new Point(561, 447);
             p70.Name = "p70";
             p70.Size = new Size(68, 23);
             p70.TabIndex = 766;
@@ -2942,7 +2918,7 @@
             // panel431
             // 
             panel431.BorderStyle = BorderStyle.FixedSingle;
-            panel431.Location = new Point(534, 454);
+            panel431.Location = new Point(529, 447);
             panel431.Name = "panel431";
             panel431.Size = new Size(32, 23);
             panel431.TabIndex = 765;
@@ -2950,7 +2926,7 @@
             // panel432
             // 
             panel432.BorderStyle = BorderStyle.FixedSingle;
-            panel432.Location = new Point(516, 454);
+            panel432.Location = new Point(511, 447);
             panel432.Name = "panel432";
             panel432.Size = new Size(18, 23);
             panel432.TabIndex = 764;
@@ -2959,7 +2935,7 @@
             // 
             p69.BorderStyle = BorderStyle.FixedSingle;
             p69.Controls.Add(lblOdenenKHGB);
-            p69.Location = new Point(448, 454);
+            p69.Location = new Point(443, 447);
             p69.Name = "p69";
             p69.Size = new Size(68, 23);
             p69.TabIndex = 763;
@@ -2971,14 +2947,14 @@
             lblOdenenKHGB.Location = new Point(3, 4);
             lblOdenenKHGB.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKHGB.Name = "lblOdenenKHGB";
-            lblOdenenKHGB.Size = new Size(10, 12);
+            lblOdenenKHGB.Size = new Size(30, 12);
             lblOdenenKHGB.TabIndex = 3;
-            lblOdenenKHGB.Text = "0";
+            lblOdenenKHGB.Text = "29022";
             // 
             // panel434
             // 
             panel434.BorderStyle = BorderStyle.FixedSingle;
-            panel434.Location = new Point(430, 454);
+            panel434.Location = new Point(425, 447);
             panel434.Name = "panel434";
             panel434.Size = new Size(18, 23);
             panel434.TabIndex = 762;
@@ -2987,7 +2963,7 @@
             // 
             p68.BorderStyle = BorderStyle.FixedSingle;
             p68.Controls.Add(lblTahakkukKHGB);
-            p68.Location = new Point(362, 454);
+            p68.Location = new Point(357, 447);
             p68.Name = "p68";
             p68.Size = new Size(68, 23);
             p68.TabIndex = 761;
@@ -3006,7 +2982,7 @@
             // panel436
             // 
             panel436.BorderStyle = BorderStyle.FixedSingle;
-            panel436.Location = new Point(342, 454);
+            panel436.Location = new Point(337, 447);
             panel436.Name = "panel436";
             panel436.Size = new Size(20, 23);
             panel436.TabIndex = 760;
@@ -3014,7 +2990,7 @@
             // panel437
             // 
             panel437.BorderStyle = BorderStyle.FixedSingle;
-            panel437.Location = new Point(307, 454);
+            panel437.Location = new Point(302, 447);
             panel437.Name = "panel437";
             panel437.Size = new Size(35, 23);
             panel437.TabIndex = 759;
@@ -3022,7 +2998,7 @@
             // panel438
             // 
             panel438.BorderStyle = BorderStyle.FixedSingle;
-            panel438.Location = new Point(289, 454);
+            panel438.Location = new Point(284, 447);
             panel438.Name = "panel438";
             panel438.Size = new Size(18, 23);
             panel438.TabIndex = 758;
@@ -3031,7 +3007,7 @@
             // 
             p67.BorderStyle = BorderStyle.FixedSingle;
             p67.Controls.Add(lblMunzamKHGB);
-            p67.Location = new Point(221, 454);
+            p67.Location = new Point(216, 447);
             p67.Name = "p67";
             p67.Size = new Size(68, 23);
             p67.TabIndex = 757;
@@ -3050,7 +3026,7 @@
             // panel440
             // 
             panel440.BorderStyle = BorderStyle.FixedSingle;
-            panel440.Location = new Point(203, 454);
+            panel440.Location = new Point(198, 447);
             panel440.Name = "panel440";
             panel440.Size = new Size(18, 23);
             panel440.TabIndex = 756;
@@ -3062,15 +3038,15 @@
             lblBKKHGB.Location = new Point(3, 4);
             lblBKKHGB.Margin = new Padding(1, 0, 1, 0);
             lblBKKHGB.Name = "lblBKKHGB";
-            lblBKKHGB.Size = new Size(10, 12);
+            lblBKKHGB.Size = new Size(35, 12);
             lblBKKHGB.TabIndex = 3;
-            lblBKKHGB.Text = "0";
+            lblBKKHGB.Text = "100000";
             // 
             // panel442
             // 
             panel442.BorderStyle = BorderStyle.FixedSingle;
             panel442.Controls.Add(label22);
-            panel442.Location = new Point(52, 454);
+            panel442.Location = new Point(47, 447);
             panel442.Name = "panel442";
             panel442.Size = new Size(83, 23);
             panel442.TabIndex = 754;
@@ -3090,7 +3066,7 @@
             // 
             panel443.BorderStyle = BorderStyle.FixedSingle;
             panel443.Controls.Add(lblIlkogretim);
-            panel443.Location = new Point(52, 431);
+            panel443.Location = new Point(47, 424);
             panel443.Name = "panel443";
             panel443.Size = new Size(83, 23);
             panel443.TabIndex = 753;
@@ -3109,7 +3085,7 @@
             // panel444
             // 
             panel444.BorderStyle = BorderStyle.FixedSingle;
-            panel444.Location = new Point(634, 431);
+            panel444.Location = new Point(629, 424);
             panel444.Name = "panel444";
             panel444.Size = new Size(18, 23);
             panel444.TabIndex = 752;
@@ -3118,7 +3094,7 @@
             // 
             p65.BorderStyle = BorderStyle.FixedSingle;
             p65.Controls.Add(lblIptalIlkogretim);
-            p65.Location = new Point(566, 431);
+            p65.Location = new Point(561, 424);
             p65.Name = "p65";
             p65.Size = new Size(68, 23);
             p65.TabIndex = 751;
@@ -3137,7 +3113,7 @@
             // panel446
             // 
             panel446.BorderStyle = BorderStyle.FixedSingle;
-            panel446.Location = new Point(534, 431);
+            panel446.Location = new Point(529, 424);
             panel446.Name = "panel446";
             panel446.Size = new Size(32, 23);
             panel446.TabIndex = 750;
@@ -3145,7 +3121,7 @@
             // panel447
             // 
             panel447.BorderStyle = BorderStyle.FixedSingle;
-            panel447.Location = new Point(516, 431);
+            panel447.Location = new Point(511, 424);
             panel447.Name = "panel447";
             panel447.Size = new Size(18, 23);
             panel447.TabIndex = 749;
@@ -3154,7 +3130,7 @@
             // 
             p64.BorderStyle = BorderStyle.FixedSingle;
             p64.Controls.Add(lblOdenenIlkogretim);
-            p64.Location = new Point(448, 431);
+            p64.Location = new Point(443, 424);
             p64.Name = "p64";
             p64.Size = new Size(68, 23);
             p64.TabIndex = 748;
@@ -3166,14 +3142,14 @@
             lblOdenenIlkogretim.Location = new Point(3, 4);
             lblOdenenIlkogretim.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIlkogretim.Name = "lblOdenenIlkogretim";
-            lblOdenenIlkogretim.Size = new Size(10, 12);
+            lblOdenenIlkogretim.Size = new Size(30, 12);
             lblOdenenIlkogretim.TabIndex = 3;
-            lblOdenenIlkogretim.Text = "0";
+            lblOdenenIlkogretim.Text = "29022";
             // 
             // panel449
             // 
             panel449.BorderStyle = BorderStyle.FixedSingle;
-            panel449.Location = new Point(430, 431);
+            panel449.Location = new Point(425, 424);
             panel449.Name = "panel449";
             panel449.Size = new Size(18, 23);
             panel449.TabIndex = 747;
@@ -3182,7 +3158,7 @@
             // 
             p63.BorderStyle = BorderStyle.FixedSingle;
             p63.Controls.Add(lblTahakkukIlkogretim);
-            p63.Location = new Point(362, 431);
+            p63.Location = new Point(357, 424);
             p63.Name = "p63";
             p63.Size = new Size(68, 23);
             p63.TabIndex = 746;
@@ -3201,7 +3177,7 @@
             // panel451
             // 
             panel451.BorderStyle = BorderStyle.FixedSingle;
-            panel451.Location = new Point(342, 431);
+            panel451.Location = new Point(337, 424);
             panel451.Name = "panel451";
             panel451.Size = new Size(20, 23);
             panel451.TabIndex = 745;
@@ -3209,7 +3185,7 @@
             // panel452
             // 
             panel452.BorderStyle = BorderStyle.FixedSingle;
-            panel452.Location = new Point(307, 431);
+            panel452.Location = new Point(302, 424);
             panel452.Name = "panel452";
             panel452.Size = new Size(35, 23);
             panel452.TabIndex = 744;
@@ -3217,7 +3193,7 @@
             // panel453
             // 
             panel453.BorderStyle = BorderStyle.FixedSingle;
-            panel453.Location = new Point(289, 431);
+            panel453.Location = new Point(284, 424);
             panel453.Name = "panel453";
             panel453.Size = new Size(18, 23);
             panel453.TabIndex = 743;
@@ -3226,7 +3202,7 @@
             // 
             p62.BorderStyle = BorderStyle.FixedSingle;
             p62.Controls.Add(lblMunzamIlkogretim);
-            p62.Location = new Point(221, 431);
+            p62.Location = new Point(216, 424);
             p62.Name = "p62";
             p62.Size = new Size(68, 23);
             p62.TabIndex = 742;
@@ -3245,7 +3221,7 @@
             // panel455
             // 
             panel455.BorderStyle = BorderStyle.FixedSingle;
-            panel455.Location = new Point(203, 431);
+            panel455.Location = new Point(198, 424);
             panel455.Name = "panel455";
             panel455.Size = new Size(18, 23);
             panel455.TabIndex = 741;
@@ -3254,7 +3230,7 @@
             // 
             p61.BorderStyle = BorderStyle.FixedSingle;
             p61.Controls.Add(lblBKIlkogretim);
-            p61.Location = new Point(135, 431);
+            p61.Location = new Point(130, 424);
             p61.Name = "p61";
             p61.Size = new Size(68, 23);
             p61.TabIndex = 740;
@@ -3266,14 +3242,14 @@
             lblBKIlkogretim.Location = new Point(3, 4);
             lblBKIlkogretim.Margin = new Padding(1, 0, 1, 0);
             lblBKIlkogretim.Name = "lblBKIlkogretim";
-            lblBKIlkogretim.Size = new Size(10, 12);
+            lblBKIlkogretim.Size = new Size(35, 12);
             lblBKIlkogretim.TabIndex = 3;
-            lblBKIlkogretim.Text = "0";
+            lblBKIlkogretim.Text = "100000";
             // 
             // panel386
             // 
             panel386.BorderStyle = BorderStyle.FixedSingle;
-            panel386.Location = new Point(634, 408);
+            panel386.Location = new Point(629, 401);
             panel386.Name = "panel386";
             panel386.Size = new Size(18, 23);
             panel386.TabIndex = 739;
@@ -3282,7 +3258,7 @@
             // 
             p60.BorderStyle = BorderStyle.FixedSingle;
             p60.Controls.Add(lblIptalTurluMasraf);
-            p60.Location = new Point(566, 408);
+            p60.Location = new Point(561, 401);
             p60.Name = "p60";
             p60.Size = new Size(68, 23);
             p60.TabIndex = 738;
@@ -3294,14 +3270,13 @@
             lblIptalTurluMasraf.Location = new Point(3, 5);
             lblIptalTurluMasraf.Margin = new Padding(1, 0, 1, 0);
             lblIptalTurluMasraf.Name = "lblIptalTurluMasraf";
-            lblIptalTurluMasraf.Size = new Size(10, 12);
+            lblIptalTurluMasraf.Size = new Size(0, 12);
             lblIptalTurluMasraf.TabIndex = 2;
-            lblIptalTurluMasraf.Text = "0";
             // 
             // panel388
             // 
             panel388.BorderStyle = BorderStyle.FixedSingle;
-            panel388.Location = new Point(534, 408);
+            panel388.Location = new Point(529, 401);
             panel388.Name = "panel388";
             panel388.Size = new Size(32, 23);
             panel388.TabIndex = 737;
@@ -3309,7 +3284,7 @@
             // panel389
             // 
             panel389.BorderStyle = BorderStyle.FixedSingle;
-            panel389.Location = new Point(516, 408);
+            panel389.Location = new Point(511, 401);
             panel389.Name = "panel389";
             panel389.Size = new Size(18, 23);
             panel389.TabIndex = 736;
@@ -3318,7 +3293,7 @@
             // 
             p59.BorderStyle = BorderStyle.FixedSingle;
             p59.Controls.Add(lblOdenenTurluMasraf);
-            p59.Location = new Point(448, 408);
+            p59.Location = new Point(443, 401);
             p59.Name = "p59";
             p59.Size = new Size(68, 23);
             p59.TabIndex = 735;
@@ -3337,7 +3312,7 @@
             // panel391
             // 
             panel391.BorderStyle = BorderStyle.FixedSingle;
-            panel391.Location = new Point(430, 408);
+            panel391.Location = new Point(425, 401);
             panel391.Name = "panel391";
             panel391.Size = new Size(18, 23);
             panel391.TabIndex = 734;
@@ -3346,7 +3321,7 @@
             // 
             p58.BorderStyle = BorderStyle.FixedSingle;
             p58.Controls.Add(lblTahakkukTurluMasraf);
-            p58.Location = new Point(362, 408);
+            p58.Location = new Point(357, 401);
             p58.Name = "p58";
             p58.Size = new Size(68, 23);
             p58.TabIndex = 733;
@@ -3358,14 +3333,13 @@
             lblTahakkukTurluMasraf.Location = new Point(3, 4);
             lblTahakkukTurluMasraf.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukTurluMasraf.Name = "lblTahakkukTurluMasraf";
-            lblTahakkukTurluMasraf.Size = new Size(10, 12);
+            lblTahakkukTurluMasraf.Size = new Size(0, 12);
             lblTahakkukTurluMasraf.TabIndex = 3;
-            lblTahakkukTurluMasraf.Text = "0";
             // 
             // panel393
             // 
             panel393.BorderStyle = BorderStyle.FixedSingle;
-            panel393.Location = new Point(342, 408);
+            panel393.Location = new Point(337, 401);
             panel393.Name = "panel393";
             panel393.Size = new Size(20, 23);
             panel393.TabIndex = 732;
@@ -3373,7 +3347,7 @@
             // panel394
             // 
             panel394.BorderStyle = BorderStyle.FixedSingle;
-            panel394.Location = new Point(307, 408);
+            panel394.Location = new Point(302, 401);
             panel394.Name = "panel394";
             panel394.Size = new Size(35, 23);
             panel394.TabIndex = 731;
@@ -3381,7 +3355,7 @@
             // panel395
             // 
             panel395.BorderStyle = BorderStyle.FixedSingle;
-            panel395.Location = new Point(289, 408);
+            panel395.Location = new Point(284, 401);
             panel395.Name = "panel395";
             panel395.Size = new Size(18, 23);
             panel395.TabIndex = 730;
@@ -3390,7 +3364,7 @@
             // 
             p57.BorderStyle = BorderStyle.FixedSingle;
             p57.Controls.Add(lblMunzamTurluMasraf);
-            p57.Location = new Point(221, 408);
+            p57.Location = new Point(216, 401);
             p57.Name = "p57";
             p57.Size = new Size(68, 23);
             p57.TabIndex = 729;
@@ -3402,14 +3376,13 @@
             lblMunzamTurluMasraf.Location = new Point(3, 4);
             lblMunzamTurluMasraf.Margin = new Padding(1, 0, 1, 0);
             lblMunzamTurluMasraf.Name = "lblMunzamTurluMasraf";
-            lblMunzamTurluMasraf.Size = new Size(10, 12);
+            lblMunzamTurluMasraf.Size = new Size(0, 12);
             lblMunzamTurluMasraf.TabIndex = 3;
-            lblMunzamTurluMasraf.Text = "0";
             // 
             // panel397
             // 
             panel397.BorderStyle = BorderStyle.FixedSingle;
-            panel397.Location = new Point(203, 408);
+            panel397.Location = new Point(198, 401);
             panel397.Name = "panel397";
             panel397.Size = new Size(18, 23);
             panel397.TabIndex = 728;
@@ -3418,7 +3391,7 @@
             // 
             p56.BorderStyle = BorderStyle.FixedSingle;
             p56.Controls.Add(lblBKTurluMasraf);
-            p56.Location = new Point(135, 408);
+            p56.Location = new Point(130, 401);
             p56.Name = "p56";
             p56.Size = new Size(68, 23);
             p56.TabIndex = 727;
@@ -3437,7 +3410,7 @@
             // panel399
             // 
             panel399.BorderStyle = BorderStyle.FixedSingle;
-            panel399.Location = new Point(634, 362);
+            panel399.Location = new Point(629, 355);
             panel399.Name = "panel399";
             panel399.Size = new Size(18, 23);
             panel399.TabIndex = 726;
@@ -3446,7 +3419,7 @@
             // 
             panel400.BorderStyle = BorderStyle.FixedSingle;
             panel400.Controls.Add(label21);
-            panel400.Location = new Point(52, 408);
+            panel400.Location = new Point(47, 401);
             panel400.Name = "panel400";
             panel400.Size = new Size(83, 23);
             panel400.TabIndex = 713;
@@ -3468,7 +3441,7 @@
             panel401.Controls.Add(label364);
             panel401.Controls.Add(label362);
             panel401.Controls.Add(label363);
-            panel401.Location = new Point(52, 385);
+            panel401.Location = new Point(47, 378);
             panel401.Name = "panel401";
             panel401.Size = new Size(83, 23);
             panel401.TabIndex = 712;
@@ -3510,7 +3483,7 @@
             // 
             p50.BorderStyle = BorderStyle.FixedSingle;
             p50.Controls.Add(lblIptalIstimlak);
-            p50.Location = new Point(566, 362);
+            p50.Location = new Point(561, 355);
             p50.Name = "p50";
             p50.Size = new Size(68, 23);
             p50.TabIndex = 725;
@@ -3529,7 +3502,7 @@
             // panel403
             // 
             panel403.BorderStyle = BorderStyle.FixedSingle;
-            panel403.Location = new Point(634, 385);
+            panel403.Location = new Point(629, 378);
             panel403.Name = "panel403";
             panel403.Size = new Size(18, 23);
             panel403.TabIndex = 711;
@@ -3538,7 +3511,7 @@
             // 
             p46.BorderStyle = BorderStyle.FixedSingle;
             p46.Controls.Add(lblBKIstimlak);
-            p46.Location = new Point(135, 362);
+            p46.Location = new Point(130, 355);
             p46.Name = "p46";
             p46.Size = new Size(68, 23);
             p46.TabIndex = 714;
@@ -3550,14 +3523,14 @@
             lblBKIstimlak.Location = new Point(3, 4);
             lblBKIstimlak.Margin = new Padding(1, 0, 1, 0);
             lblBKIstimlak.Name = "lblBKIstimlak";
-            lblBKIstimlak.Size = new Size(10, 12);
+            lblBKIstimlak.Size = new Size(35, 12);
             lblBKIstimlak.TabIndex = 3;
-            lblBKIstimlak.Text = "0";
+            lblBKIstimlak.Text = "100000";
             // 
             // panel405
             // 
             panel405.BorderStyle = BorderStyle.FixedSingle;
-            panel405.Location = new Point(534, 362);
+            panel405.Location = new Point(529, 355);
             panel405.Name = "panel405";
             panel405.Size = new Size(32, 23);
             panel405.TabIndex = 724;
@@ -3566,7 +3539,7 @@
             // 
             p55.BorderStyle = BorderStyle.FixedSingle;
             p55.Controls.Add(lblIptalUmulmadik);
-            p55.Location = new Point(566, 385);
+            p55.Location = new Point(561, 378);
             p55.Name = "p55";
             p55.Size = new Size(68, 23);
             p55.TabIndex = 710;
@@ -3585,7 +3558,7 @@
             // panel407
             // 
             panel407.BorderStyle = BorderStyle.FixedSingle;
-            panel407.Location = new Point(203, 362);
+            panel407.Location = new Point(198, 355);
             panel407.Name = "panel407";
             panel407.Size = new Size(18, 23);
             panel407.TabIndex = 715;
@@ -3593,7 +3566,7 @@
             // panel408
             // 
             panel408.BorderStyle = BorderStyle.FixedSingle;
-            panel408.Location = new Point(534, 385);
+            panel408.Location = new Point(529, 378);
             panel408.Name = "panel408";
             panel408.Size = new Size(32, 23);
             panel408.TabIndex = 709;
@@ -3601,7 +3574,7 @@
             // panel409
             // 
             panel409.BorderStyle = BorderStyle.FixedSingle;
-            panel409.Location = new Point(516, 362);
+            panel409.Location = new Point(511, 355);
             panel409.Name = "panel409";
             panel409.Size = new Size(18, 23);
             panel409.TabIndex = 723;
@@ -3609,7 +3582,7 @@
             // panel410
             // 
             panel410.BorderStyle = BorderStyle.FixedSingle;
-            panel410.Location = new Point(516, 385);
+            panel410.Location = new Point(511, 378);
             panel410.Name = "panel410";
             panel410.Size = new Size(18, 23);
             panel410.TabIndex = 708;
@@ -3618,7 +3591,7 @@
             // 
             p47.BorderStyle = BorderStyle.FixedSingle;
             p47.Controls.Add(lblMunzamIstimlak);
-            p47.Location = new Point(221, 362);
+            p47.Location = new Point(216, 355);
             p47.Name = "p47";
             p47.Size = new Size(68, 23);
             p47.TabIndex = 716;
@@ -3639,7 +3612,7 @@
             p54.BorderStyle = BorderStyle.FixedSingle;
             p54.Controls.Add(lblOdenenUmulmadik);
             p54.Font = new Font("Microsoft Sans Serif", 8.25F);
-            p54.Location = new Point(448, 385);
+            p54.Location = new Point(443, 378);
             p54.Name = "p54";
             p54.Size = new Size(68, 23);
             p54.TabIndex = 707;
@@ -3651,15 +3624,15 @@
             lblOdenenUmulmadik.Location = new Point(3, 4);
             lblOdenenUmulmadik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenUmulmadik.Name = "lblOdenenUmulmadik";
-            lblOdenenUmulmadik.Size = new Size(10, 12);
+            lblOdenenUmulmadik.Size = new Size(30, 12);
             lblOdenenUmulmadik.TabIndex = 3;
-            lblOdenenUmulmadik.Text = "0";
+            lblOdenenUmulmadik.Text = "29022";
             // 
             // p49
             // 
             p49.BorderStyle = BorderStyle.FixedSingle;
             p49.Controls.Add(lblOdenenIstimlak);
-            p49.Location = new Point(448, 362);
+            p49.Location = new Point(443, 355);
             p49.Name = "p49";
             p49.Size = new Size(68, 23);
             p49.TabIndex = 722;
@@ -3671,14 +3644,14 @@
             lblOdenenIstimlak.Location = new Point(3, 4);
             lblOdenenIstimlak.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIstimlak.Name = "lblOdenenIstimlak";
-            lblOdenenIstimlak.Size = new Size(10, 12);
+            lblOdenenIstimlak.Size = new Size(30, 12);
             lblOdenenIstimlak.TabIndex = 3;
-            lblOdenenIstimlak.Text = "0";
+            lblOdenenIstimlak.Text = "29022";
             // 
             // panel414
             // 
             panel414.BorderStyle = BorderStyle.FixedSingle;
-            panel414.Location = new Point(430, 385);
+            panel414.Location = new Point(425, 378);
             panel414.Name = "panel414";
             panel414.Size = new Size(18, 23);
             panel414.TabIndex = 706;
@@ -3686,7 +3659,7 @@
             // panel415
             // 
             panel415.BorderStyle = BorderStyle.FixedSingle;
-            panel415.Location = new Point(289, 362);
+            panel415.Location = new Point(284, 355);
             panel415.Name = "panel415";
             panel415.Size = new Size(18, 23);
             panel415.TabIndex = 717;
@@ -3695,7 +3668,7 @@
             // 
             p53.BorderStyle = BorderStyle.FixedSingle;
             p53.Controls.Add(lblTahakkukUmulmadik);
-            p53.Location = new Point(362, 385);
+            p53.Location = new Point(357, 378);
             p53.Name = "p53";
             p53.Size = new Size(68, 23);
             p53.TabIndex = 705;
@@ -3714,7 +3687,7 @@
             // panel417
             // 
             panel417.BorderStyle = BorderStyle.FixedSingle;
-            panel417.Location = new Point(430, 362);
+            panel417.Location = new Point(425, 355);
             panel417.Name = "panel417";
             panel417.Size = new Size(18, 23);
             panel417.TabIndex = 721;
@@ -3722,7 +3695,7 @@
             // panel418
             // 
             panel418.BorderStyle = BorderStyle.FixedSingle;
-            panel418.Location = new Point(342, 385);
+            panel418.Location = new Point(337, 378);
             panel418.Name = "panel418";
             panel418.Size = new Size(20, 23);
             panel418.TabIndex = 704;
@@ -3730,7 +3703,7 @@
             // panel419
             // 
             panel419.BorderStyle = BorderStyle.FixedSingle;
-            panel419.Location = new Point(307, 362);
+            panel419.Location = new Point(302, 355);
             panel419.Name = "panel419";
             panel419.Size = new Size(35, 23);
             panel419.TabIndex = 718;
@@ -3738,7 +3711,7 @@
             // panel420
             // 
             panel420.BorderStyle = BorderStyle.FixedSingle;
-            panel420.Location = new Point(307, 385);
+            panel420.Location = new Point(302, 378);
             panel420.Name = "panel420";
             panel420.Size = new Size(35, 23);
             panel420.TabIndex = 703;
@@ -3747,7 +3720,7 @@
             // 
             p48.BorderStyle = BorderStyle.FixedSingle;
             p48.Controls.Add(lblTahakkukIstimlak);
-            p48.Location = new Point(362, 362);
+            p48.Location = new Point(357, 355);
             p48.Name = "p48";
             p48.Size = new Size(68, 23);
             p48.TabIndex = 720;
@@ -3766,7 +3739,7 @@
             // panel422
             // 
             panel422.BorderStyle = BorderStyle.FixedSingle;
-            panel422.Location = new Point(289, 385);
+            panel422.Location = new Point(284, 378);
             panel422.Name = "panel422";
             panel422.Size = new Size(18, 23);
             panel422.TabIndex = 702;
@@ -3774,7 +3747,7 @@
             // panel423
             // 
             panel423.BorderStyle = BorderStyle.FixedSingle;
-            panel423.Location = new Point(342, 362);
+            panel423.Location = new Point(337, 355);
             panel423.Name = "panel423";
             panel423.Size = new Size(20, 23);
             panel423.TabIndex = 719;
@@ -3783,7 +3756,7 @@
             // 
             p52.BorderStyle = BorderStyle.FixedSingle;
             p52.Controls.Add(lblMunzamUmulmadik);
-            p52.Location = new Point(221, 385);
+            p52.Location = new Point(216, 378);
             p52.Name = "p52";
             p52.Size = new Size(68, 23);
             p52.TabIndex = 701;
@@ -3802,7 +3775,7 @@
             // panel425
             // 
             panel425.BorderStyle = BorderStyle.FixedSingle;
-            panel425.Location = new Point(203, 385);
+            panel425.Location = new Point(198, 378);
             panel425.Name = "panel425";
             panel425.Size = new Size(18, 23);
             panel425.TabIndex = 700;
@@ -3811,7 +3784,7 @@
             // 
             p51.BorderStyle = BorderStyle.FixedSingle;
             p51.Controls.Add(lblBKUmulmadik);
-            p51.Location = new Point(135, 385);
+            p51.Location = new Point(130, 378);
             p51.Name = "p51";
             p51.Size = new Size(68, 23);
             p51.TabIndex = 699;
@@ -3823,16 +3796,16 @@
             lblBKUmulmadik.Location = new Point(3, 4);
             lblBKUmulmadik.Margin = new Padding(1, 0, 1, 0);
             lblBKUmulmadik.Name = "lblBKUmulmadik";
-            lblBKUmulmadik.Size = new Size(10, 12);
+            lblBKUmulmadik.Size = new Size(35, 12);
             lblBKUmulmadik.TabIndex = 3;
-            lblBKUmulmadik.Text = "0";
+            lblBKUmulmadik.Text = "100000";
             // 
             // panel427
             // 
             panel427.BorderStyle = BorderStyle.FixedSingle;
             panel427.Controls.Add(panel428);
             panel427.Controls.Add(label173);
-            panel427.Location = new Point(52, 362);
+            panel427.Location = new Point(47, 355);
             panel427.Name = "panel427";
             panel427.Size = new Size(83, 23);
             panel427.TabIndex = 698;
@@ -3907,7 +3880,7 @@
             // label156
             // 
             label156.AutoSize = true;
-            label156.Location = new Point(274, 275);
+            label156.Location = new Point(269, 268);
             label156.Margin = new Padding(1, 0, 1, 0);
             label156.Name = "label156";
             label156.Size = new Size(103, 15);
@@ -3917,7 +3890,7 @@
             // panel341
             // 
             panel341.BorderStyle = BorderStyle.FixedSingle;
-            panel341.Location = new Point(634, 339);
+            panel341.Location = new Point(629, 332);
             panel341.Name = "panel341";
             panel341.Size = new Size(18, 23);
             panel341.TabIndex = 696;
@@ -3926,7 +3899,7 @@
             // 
             p45.BorderStyle = BorderStyle.FixedSingle;
             p45.Controls.Add(lblIptalMahkeme);
-            p45.Location = new Point(566, 339);
+            p45.Location = new Point(561, 332);
             p45.Name = "p45";
             p45.Size = new Size(68, 23);
             p45.TabIndex = 695;
@@ -3945,7 +3918,7 @@
             // panel343
             // 
             panel343.BorderStyle = BorderStyle.FixedSingle;
-            panel343.Location = new Point(534, 339);
+            panel343.Location = new Point(529, 332);
             panel343.Name = "panel343";
             panel343.Size = new Size(32, 23);
             panel343.TabIndex = 694;
@@ -3953,7 +3926,7 @@
             // panel344
             // 
             panel344.BorderStyle = BorderStyle.FixedSingle;
-            panel344.Location = new Point(516, 339);
+            panel344.Location = new Point(511, 332);
             panel344.Name = "panel344";
             panel344.Size = new Size(18, 23);
             panel344.TabIndex = 693;
@@ -3962,7 +3935,7 @@
             // 
             p44.BorderStyle = BorderStyle.FixedSingle;
             p44.Controls.Add(lblOdenenMahkeme);
-            p44.Location = new Point(448, 339);
+            p44.Location = new Point(443, 332);
             p44.Name = "p44";
             p44.Size = new Size(68, 23);
             p44.TabIndex = 692;
@@ -3974,14 +3947,14 @@
             lblOdenenMahkeme.Location = new Point(3, 4);
             lblOdenenMahkeme.Margin = new Padding(1, 0, 1, 0);
             lblOdenenMahkeme.Name = "lblOdenenMahkeme";
-            lblOdenenMahkeme.Size = new Size(10, 12);
+            lblOdenenMahkeme.Size = new Size(30, 12);
             lblOdenenMahkeme.TabIndex = 3;
-            lblOdenenMahkeme.Text = "0";
+            lblOdenenMahkeme.Text = "29022";
             // 
             // panel346
             // 
             panel346.BorderStyle = BorderStyle.FixedSingle;
-            panel346.Location = new Point(430, 339);
+            panel346.Location = new Point(425, 332);
             panel346.Name = "panel346";
             panel346.Size = new Size(18, 23);
             panel346.TabIndex = 691;
@@ -3990,7 +3963,7 @@
             // 
             p43.BorderStyle = BorderStyle.FixedSingle;
             p43.Controls.Add(lblTahakkukMahkeme);
-            p43.Location = new Point(362, 339);
+            p43.Location = new Point(357, 332);
             p43.Name = "p43";
             p43.Size = new Size(68, 23);
             p43.TabIndex = 690;
@@ -4009,7 +3982,7 @@
             // panel348
             // 
             panel348.BorderStyle = BorderStyle.FixedSingle;
-            panel348.Location = new Point(342, 339);
+            panel348.Location = new Point(337, 332);
             panel348.Name = "panel348";
             panel348.Size = new Size(20, 23);
             panel348.TabIndex = 689;
@@ -4017,7 +3990,7 @@
             // panel349
             // 
             panel349.BorderStyle = BorderStyle.FixedSingle;
-            panel349.Location = new Point(307, 339);
+            panel349.Location = new Point(302, 332);
             panel349.Name = "panel349";
             panel349.Size = new Size(35, 23);
             panel349.TabIndex = 688;
@@ -4025,7 +3998,7 @@
             // panel350
             // 
             panel350.BorderStyle = BorderStyle.FixedSingle;
-            panel350.Location = new Point(289, 339);
+            panel350.Location = new Point(284, 332);
             panel350.Name = "panel350";
             panel350.Size = new Size(18, 23);
             panel350.TabIndex = 687;
@@ -4034,7 +4007,7 @@
             // 
             p42.BorderStyle = BorderStyle.FixedSingle;
             p42.Controls.Add(lblMunzamMahkeme);
-            p42.Location = new Point(221, 339);
+            p42.Location = new Point(216, 332);
             p42.Name = "p42";
             p42.Size = new Size(68, 23);
             p42.TabIndex = 686;
@@ -4053,7 +4026,7 @@
             // panel352
             // 
             panel352.BorderStyle = BorderStyle.FixedSingle;
-            panel352.Location = new Point(203, 339);
+            panel352.Location = new Point(198, 332);
             panel352.Name = "panel352";
             panel352.Size = new Size(18, 23);
             panel352.TabIndex = 685;
@@ -4061,27 +4034,27 @@
             // p41
             // 
             p41.BorderStyle = BorderStyle.FixedSingle;
-            p41.Controls.Add(lblBKMahkemeKesif);
-            p41.Location = new Point(135, 339);
+            p41.Controls.Add(lblBKMahkeme);
+            p41.Location = new Point(130, 332);
             p41.Name = "p41";
             p41.Size = new Size(68, 23);
             p41.TabIndex = 684;
             // 
-            // lblBKMahkemeKesif
+            // lblBKMahkeme
             // 
-            lblBKMahkemeKesif.AutoSize = true;
-            lblBKMahkemeKesif.Font = new Font("Segoe UI", 6.75F);
-            lblBKMahkemeKesif.Location = new Point(3, 4);
-            lblBKMahkemeKesif.Margin = new Padding(1, 0, 1, 0);
-            lblBKMahkemeKesif.Name = "lblBKMahkemeKesif";
-            lblBKMahkemeKesif.Size = new Size(10, 12);
-            lblBKMahkemeKesif.TabIndex = 3;
-            lblBKMahkemeKesif.Text = "0";
+            lblBKMahkeme.AutoSize = true;
+            lblBKMahkeme.Font = new Font("Segoe UI", 6.75F);
+            lblBKMahkeme.Location = new Point(3, 4);
+            lblBKMahkeme.Margin = new Padding(1, 0, 1, 0);
+            lblBKMahkeme.Name = "lblBKMahkeme";
+            lblBKMahkeme.Size = new Size(35, 12);
+            lblBKMahkeme.TabIndex = 3;
+            lblBKMahkeme.Text = "100000";
             // 
             // panel354
             // 
             panel354.BorderStyle = BorderStyle.FixedSingle;
-            panel354.Location = new Point(634, 293);
+            panel354.Location = new Point(629, 286);
             panel354.Name = "panel354";
             panel354.Size = new Size(18, 23);
             panel354.TabIndex = 683;
@@ -4091,7 +4064,7 @@
             panel355.BorderStyle = BorderStyle.FixedSingle;
             panel355.Controls.Add(label18);
             panel355.Controls.Add(label157);
-            panel355.Location = new Point(52, 339);
+            panel355.Location = new Point(47, 332);
             panel355.Name = "panel355";
             panel355.Size = new Size(83, 23);
             panel355.TabIndex = 670;
@@ -4124,7 +4097,7 @@
             panel356.Controls.Add(label209);
             panel356.Controls.Add(label158);
             panel356.Controls.Add(label234);
-            panel356.Location = new Point(52, 316);
+            panel356.Location = new Point(47, 309);
             panel356.Name = "panel356";
             panel356.Size = new Size(83, 23);
             panel356.TabIndex = 669;
@@ -4166,7 +4139,7 @@
             // 
             p35.BorderStyle = BorderStyle.FixedSingle;
             p35.Controls.Add(lblIptalVergi);
-            p35.Location = new Point(566, 293);
+            p35.Location = new Point(561, 286);
             p35.Name = "p35";
             p35.Size = new Size(68, 23);
             p35.TabIndex = 682;
@@ -4185,7 +4158,7 @@
             // panel358
             // 
             panel358.BorderStyle = BorderStyle.FixedSingle;
-            panel358.Location = new Point(634, 316);
+            panel358.Location = new Point(629, 309);
             panel358.Name = "panel358";
             panel358.Size = new Size(18, 23);
             panel358.TabIndex = 668;
@@ -4194,7 +4167,7 @@
             // 
             p31.BorderStyle = BorderStyle.FixedSingle;
             p31.Controls.Add(lblBKVergi);
-            p31.Location = new Point(135, 293);
+            p31.Location = new Point(130, 286);
             p31.Name = "p31";
             p31.Size = new Size(68, 23);
             p31.TabIndex = 671;
@@ -4206,14 +4179,14 @@
             lblBKVergi.Location = new Point(3, 4);
             lblBKVergi.Margin = new Padding(1, 0, 1, 0);
             lblBKVergi.Name = "lblBKVergi";
-            lblBKVergi.Size = new Size(10, 12);
+            lblBKVergi.Size = new Size(35, 12);
             lblBKVergi.TabIndex = 3;
-            lblBKVergi.Text = "0";
+            lblBKVergi.Text = "100000";
             // 
             // panel360
             // 
             panel360.BorderStyle = BorderStyle.FixedSingle;
-            panel360.Location = new Point(534, 293);
+            panel360.Location = new Point(529, 286);
             panel360.Name = "panel360";
             panel360.Size = new Size(32, 23);
             panel360.TabIndex = 681;
@@ -4222,7 +4195,7 @@
             // 
             p40.BorderStyle = BorderStyle.FixedSingle;
             p40.Controls.Add(lblIptalKoyBorcu);
-            p40.Location = new Point(566, 316);
+            p40.Location = new Point(561, 309);
             p40.Name = "p40";
             p40.Size = new Size(68, 23);
             p40.TabIndex = 667;
@@ -4241,7 +4214,7 @@
             // panel362
             // 
             panel362.BorderStyle = BorderStyle.FixedSingle;
-            panel362.Location = new Point(203, 293);
+            panel362.Location = new Point(198, 286);
             panel362.Name = "panel362";
             panel362.Size = new Size(18, 23);
             panel362.TabIndex = 672;
@@ -4249,7 +4222,7 @@
             // panel363
             // 
             panel363.BorderStyle = BorderStyle.FixedSingle;
-            panel363.Location = new Point(534, 316);
+            panel363.Location = new Point(529, 309);
             panel363.Name = "panel363";
             panel363.Size = new Size(32, 23);
             panel363.TabIndex = 666;
@@ -4257,7 +4230,7 @@
             // panel364
             // 
             panel364.BorderStyle = BorderStyle.FixedSingle;
-            panel364.Location = new Point(516, 293);
+            panel364.Location = new Point(511, 286);
             panel364.Name = "panel364";
             panel364.Size = new Size(18, 23);
             panel364.TabIndex = 680;
@@ -4265,7 +4238,7 @@
             // panel365
             // 
             panel365.BorderStyle = BorderStyle.FixedSingle;
-            panel365.Location = new Point(516, 316);
+            panel365.Location = new Point(511, 309);
             panel365.Name = "panel365";
             panel365.Size = new Size(18, 23);
             panel365.TabIndex = 665;
@@ -4274,7 +4247,7 @@
             // 
             p32.BorderStyle = BorderStyle.FixedSingle;
             p32.Controls.Add(lblMunzamVergi);
-            p32.Location = new Point(221, 293);
+            p32.Location = new Point(216, 286);
             p32.Name = "p32";
             p32.Size = new Size(68, 23);
             p32.TabIndex = 673;
@@ -4288,13 +4261,13 @@
             lblMunzamVergi.Name = "lblMunzamVergi";
             lblMunzamVergi.Size = new Size(10, 12);
             lblMunzamVergi.TabIndex = 3;
-            lblMunzamVergi.Text = "0";
+            lblMunzamVergi.Text = "1";
             // 
             // p39
             // 
             p39.BorderStyle = BorderStyle.FixedSingle;
             p39.Controls.Add(lblOdenenKoyBorcu);
-            p39.Location = new Point(448, 316);
+            p39.Location = new Point(443, 309);
             p39.Name = "p39";
             p39.Size = new Size(68, 23);
             p39.TabIndex = 664;
@@ -4306,15 +4279,15 @@
             lblOdenenKoyBorcu.Location = new Point(3, 4);
             lblOdenenKoyBorcu.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKoyBorcu.Name = "lblOdenenKoyBorcu";
-            lblOdenenKoyBorcu.Size = new Size(10, 12);
+            lblOdenenKoyBorcu.Size = new Size(30, 12);
             lblOdenenKoyBorcu.TabIndex = 3;
-            lblOdenenKoyBorcu.Text = "0";
+            lblOdenenKoyBorcu.Text = "29022";
             // 
             // p34
             // 
             p34.BorderStyle = BorderStyle.FixedSingle;
             p34.Controls.Add(lblOdenenVergi);
-            p34.Location = new Point(448, 293);
+            p34.Location = new Point(443, 286);
             p34.Name = "p34";
             p34.Size = new Size(68, 23);
             p34.TabIndex = 679;
@@ -4326,14 +4299,14 @@
             lblOdenenVergi.Location = new Point(3, 4);
             lblOdenenVergi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenVergi.Name = "lblOdenenVergi";
-            lblOdenenVergi.Size = new Size(10, 12);
+            lblOdenenVergi.Size = new Size(30, 12);
             lblOdenenVergi.TabIndex = 3;
-            lblOdenenVergi.Text = "0";
+            lblOdenenVergi.Text = "29022";
             // 
             // panel369
             // 
             panel369.BorderStyle = BorderStyle.FixedSingle;
-            panel369.Location = new Point(430, 316);
+            panel369.Location = new Point(425, 309);
             panel369.Name = "panel369";
             panel369.Size = new Size(18, 23);
             panel369.TabIndex = 663;
@@ -4341,7 +4314,7 @@
             // panel370
             // 
             panel370.BorderStyle = BorderStyle.FixedSingle;
-            panel370.Location = new Point(289, 293);
+            panel370.Location = new Point(284, 286);
             panel370.Name = "panel370";
             panel370.Size = new Size(18, 23);
             panel370.TabIndex = 674;
@@ -4350,7 +4323,7 @@
             // 
             p38.BorderStyle = BorderStyle.FixedSingle;
             p38.Controls.Add(lblTahakkukKoyBorcu);
-            p38.Location = new Point(362, 316);
+            p38.Location = new Point(357, 309);
             p38.Name = "p38";
             p38.Size = new Size(68, 23);
             p38.TabIndex = 662;
@@ -4369,7 +4342,7 @@
             // panel372
             // 
             panel372.BorderStyle = BorderStyle.FixedSingle;
-            panel372.Location = new Point(430, 293);
+            panel372.Location = new Point(425, 286);
             panel372.Name = "panel372";
             panel372.Size = new Size(18, 23);
             panel372.TabIndex = 678;
@@ -4377,7 +4350,7 @@
             // panel373
             // 
             panel373.BorderStyle = BorderStyle.FixedSingle;
-            panel373.Location = new Point(342, 316);
+            panel373.Location = new Point(337, 309);
             panel373.Name = "panel373";
             panel373.Size = new Size(20, 23);
             panel373.TabIndex = 661;
@@ -4385,7 +4358,7 @@
             // panel374
             // 
             panel374.BorderStyle = BorderStyle.FixedSingle;
-            panel374.Location = new Point(307, 293);
+            panel374.Location = new Point(302, 286);
             panel374.Name = "panel374";
             panel374.Size = new Size(35, 23);
             panel374.TabIndex = 675;
@@ -4393,7 +4366,7 @@
             // panel375
             // 
             panel375.BorderStyle = BorderStyle.FixedSingle;
-            panel375.Location = new Point(307, 316);
+            panel375.Location = new Point(302, 309);
             panel375.Name = "panel375";
             panel375.Size = new Size(35, 23);
             panel375.TabIndex = 660;
@@ -4402,7 +4375,7 @@
             // 
             p33.BorderStyle = BorderStyle.FixedSingle;
             p33.Controls.Add(lblTahakkukVergi);
-            p33.Location = new Point(362, 293);
+            p33.Location = new Point(357, 286);
             p33.Name = "p33";
             p33.Size = new Size(68, 23);
             p33.TabIndex = 677;
@@ -4421,7 +4394,7 @@
             // panel377
             // 
             panel377.BorderStyle = BorderStyle.FixedSingle;
-            panel377.Location = new Point(289, 316);
+            panel377.Location = new Point(284, 309);
             panel377.Name = "panel377";
             panel377.Size = new Size(18, 23);
             panel377.TabIndex = 659;
@@ -4429,7 +4402,7 @@
             // panel378
             // 
             panel378.BorderStyle = BorderStyle.FixedSingle;
-            panel378.Location = new Point(342, 293);
+            panel378.Location = new Point(337, 286);
             panel378.Name = "panel378";
             panel378.Size = new Size(20, 23);
             panel378.TabIndex = 676;
@@ -4437,27 +4410,27 @@
             // p37
             // 
             p37.BorderStyle = BorderStyle.FixedSingle;
-            p37.Controls.Add(lblMunzamKoyBorcui);
-            p37.Location = new Point(221, 316);
+            p37.Controls.Add(lblMunzamKoyBorcu);
+            p37.Location = new Point(216, 309);
             p37.Name = "p37";
             p37.Size = new Size(68, 23);
             p37.TabIndex = 658;
             // 
-            // lblMunzamKoyBorcui
+            // lblMunzamKoyBorcu
             // 
-            lblMunzamKoyBorcui.AutoSize = true;
-            lblMunzamKoyBorcui.Font = new Font("Segoe UI", 6.75F);
-            lblMunzamKoyBorcui.Location = new Point(3, 4);
-            lblMunzamKoyBorcui.Margin = new Padding(1, 0, 1, 0);
-            lblMunzamKoyBorcui.Name = "lblMunzamKoyBorcui";
-            lblMunzamKoyBorcui.Size = new Size(10, 12);
-            lblMunzamKoyBorcui.TabIndex = 3;
-            lblMunzamKoyBorcui.Text = "0";
+            lblMunzamKoyBorcu.AutoSize = true;
+            lblMunzamKoyBorcu.Font = new Font("Segoe UI", 6.75F);
+            lblMunzamKoyBorcu.Location = new Point(3, 4);
+            lblMunzamKoyBorcu.Margin = new Padding(1, 0, 1, 0);
+            lblMunzamKoyBorcu.Name = "lblMunzamKoyBorcu";
+            lblMunzamKoyBorcu.Size = new Size(10, 12);
+            lblMunzamKoyBorcu.TabIndex = 3;
+            lblMunzamKoyBorcu.Text = "2";
             // 
             // panel380
             // 
             panel380.BorderStyle = BorderStyle.FixedSingle;
-            panel380.Location = new Point(203, 316);
+            panel380.Location = new Point(198, 309);
             panel380.Name = "panel380";
             panel380.Size = new Size(18, 23);
             panel380.TabIndex = 657;
@@ -4466,7 +4439,7 @@
             // 
             p36.BorderStyle = BorderStyle.FixedSingle;
             p36.Controls.Add(lblBKKoyBorcu);
-            p36.Location = new Point(135, 316);
+            p36.Location = new Point(130, 309);
             p36.Name = "p36";
             p36.Size = new Size(68, 23);
             p36.TabIndex = 656;
@@ -4478,16 +4451,16 @@
             lblBKKoyBorcu.Location = new Point(2, 4);
             lblBKKoyBorcu.Margin = new Padding(1, 0, 1, 0);
             lblBKKoyBorcu.Name = "lblBKKoyBorcu";
-            lblBKKoyBorcu.Size = new Size(10, 12);
+            lblBKKoyBorcu.Size = new Size(35, 12);
             lblBKKoyBorcu.TabIndex = 2;
-            lblBKKoyBorcu.Text = "0";
+            lblBKKoyBorcu.Text = "100000";
             // 
             // panel382
             // 
             panel382.BorderStyle = BorderStyle.FixedSingle;
             panel382.Controls.Add(panel383);
             panel382.Controls.Add(label160);
-            panel382.Location = new Point(52, 293);
+            panel382.Location = new Point(47, 286);
             panel382.Name = "panel382";
             panel382.Size = new Size(83, 23);
             panel382.TabIndex = 655;
@@ -4532,9 +4505,9 @@
             label215.Location = new Point(-1, -1);
             label215.Margin = new Padding(1, 0, 1, 0);
             label215.Name = "label215";
-            label215.Size = new Size(50, 13);
+            label215.Size = new Size(54, 13);
             label215.TabIndex = 244;
-            label215.Text = "Veri ve Sigorta";
+            label215.Text = "Vergi ve Sigorta";
             // 
             // label160
             // 
@@ -4558,7 +4531,7 @@
             panel384.Controls.Add(label176);
             panel384.Controls.Add(label161);
             panel384.Controls.Add(label167);
-            panel384.Location = new Point(31, 293);
+            panel384.Location = new Point(26, 286);
             panel384.Margin = new Padding(1, 3, 1, 3);
             panel384.Name = "panel384";
             panel384.Size = new Size(21, 205);
@@ -4648,7 +4621,7 @@
             // 
             panel385.BorderStyle = BorderStyle.FixedSingle;
             panel385.Controls.Add(label168);
-            panel385.Location = new Point(12, 293);
+            panel385.Location = new Point(7, 286);
             panel385.Margin = new Padding(1, 3, 1, 3);
             panel385.Name = "panel385";
             panel385.Size = new Size(21, 205);
@@ -4667,7 +4640,7 @@
             // label155
             // 
             label155.AutoSize = true;
-            label155.Location = new Point(257, 120);
+            label155.Location = new Point(252, 113);
             label155.Margin = new Padding(1, 0, 1, 0);
             label155.Name = "label155";
             label155.Size = new Size(160, 15);
@@ -4677,7 +4650,7 @@
             // panel328
             // 
             panel328.BorderStyle = BorderStyle.FixedSingle;
-            panel328.Location = new Point(634, 183);
+            panel328.Location = new Point(629, 176);
             panel328.Name = "panel328";
             panel328.Size = new Size(18, 23);
             panel328.TabIndex = 651;
@@ -4686,7 +4659,7 @@
             // 
             p15.BorderStyle = BorderStyle.FixedSingle;
             p15.Controls.Add(lblIptalVesait);
-            p15.Location = new Point(566, 183);
+            p15.Location = new Point(561, 176);
             p15.Name = "p15";
             p15.Size = new Size(68, 23);
             p15.TabIndex = 650;
@@ -4705,7 +4678,7 @@
             // panel330
             // 
             panel330.BorderStyle = BorderStyle.FixedSingle;
-            panel330.Location = new Point(534, 183);
+            panel330.Location = new Point(529, 176);
             panel330.Name = "panel330";
             panel330.Size = new Size(32, 23);
             panel330.TabIndex = 649;
@@ -4713,7 +4686,7 @@
             // panel331
             // 
             panel331.BorderStyle = BorderStyle.FixedSingle;
-            panel331.Location = new Point(516, 183);
+            panel331.Location = new Point(511, 176);
             panel331.Name = "panel331";
             panel331.Size = new Size(18, 23);
             panel331.TabIndex = 648;
@@ -4722,7 +4695,7 @@
             // 
             p14.BorderStyle = BorderStyle.FixedSingle;
             p14.Controls.Add(lblOdenenVesait);
-            p14.Location = new Point(448, 183);
+            p14.Location = new Point(443, 176);
             p14.Name = "p14";
             p14.Size = new Size(68, 23);
             p14.TabIndex = 647;
@@ -4734,14 +4707,14 @@
             lblOdenenVesait.Location = new Point(2, 5);
             lblOdenenVesait.Margin = new Padding(1, 0, 1, 0);
             lblOdenenVesait.Name = "lblOdenenVesait";
-            lblOdenenVesait.Size = new Size(10, 12);
+            lblOdenenVesait.Size = new Size(30, 12);
             lblOdenenVesait.TabIndex = 2;
-            lblOdenenVesait.Text = "0";
+            lblOdenenVesait.Text = "29022";
             // 
             // panel333
             // 
             panel333.BorderStyle = BorderStyle.FixedSingle;
-            panel333.Location = new Point(430, 183);
+            panel333.Location = new Point(425, 176);
             panel333.Name = "panel333";
             panel333.Size = new Size(18, 23);
             panel333.TabIndex = 646;
@@ -4750,7 +4723,7 @@
             // 
             p13.BorderStyle = BorderStyle.FixedSingle;
             p13.Controls.Add(lblTahakkukVesait);
-            p13.Location = new Point(362, 183);
+            p13.Location = new Point(357, 176);
             p13.Name = "p13";
             p13.Size = new Size(68, 23);
             p13.TabIndex = 645;
@@ -4769,7 +4742,7 @@
             // panel335
             // 
             panel335.BorderStyle = BorderStyle.FixedSingle;
-            panel335.Location = new Point(342, 183);
+            panel335.Location = new Point(337, 176);
             panel335.Name = "panel335";
             panel335.Size = new Size(20, 23);
             panel335.TabIndex = 644;
@@ -4777,7 +4750,7 @@
             // panel336
             // 
             panel336.BorderStyle = BorderStyle.FixedSingle;
-            panel336.Location = new Point(307, 183);
+            panel336.Location = new Point(302, 176);
             panel336.Name = "panel336";
             panel336.Size = new Size(35, 23);
             panel336.TabIndex = 643;
@@ -4785,7 +4758,7 @@
             // panel337
             // 
             panel337.BorderStyle = BorderStyle.FixedSingle;
-            panel337.Location = new Point(289, 183);
+            panel337.Location = new Point(284, 176);
             panel337.Name = "panel337";
             panel337.Size = new Size(18, 23);
             panel337.TabIndex = 642;
@@ -4794,7 +4767,7 @@
             // 
             p12.BorderStyle = BorderStyle.FixedSingle;
             p12.Controls.Add(lblMunzamVesait);
-            p12.Location = new Point(221, 183);
+            p12.Location = new Point(216, 176);
             p12.Name = "p12";
             p12.Size = new Size(68, 23);
             p12.TabIndex = 641;
@@ -4813,7 +4786,7 @@
             // panel339
             // 
             panel339.BorderStyle = BorderStyle.FixedSingle;
-            panel339.Location = new Point(203, 183);
+            panel339.Location = new Point(198, 176);
             panel339.Name = "panel339";
             panel339.Size = new Size(18, 23);
             panel339.TabIndex = 640;
@@ -4822,7 +4795,7 @@
             // 
             p11.BorderStyle = BorderStyle.FixedSingle;
             p11.Controls.Add(lblBKVesait);
-            p11.Location = new Point(135, 183);
+            p11.Location = new Point(130, 176);
             p11.Name = "p11";
             p11.Size = new Size(68, 23);
             p11.TabIndex = 639;
@@ -4834,14 +4807,14 @@
             lblBKVesait.Location = new Point(2, 5);
             lblBKVesait.Margin = new Padding(1, 0, 1, 0);
             lblBKVesait.Name = "lblBKVesait";
-            lblBKVesait.Size = new Size(10, 12);
+            lblBKVesait.Size = new Size(35, 12);
             lblBKVesait.TabIndex = 2;
-            lblBKVesait.Text = "0";
+            lblBKVesait.Text = "100000";
             // 
             // panel299
             // 
             panel299.BorderStyle = BorderStyle.FixedSingle;
-            panel299.Location = new Point(634, 137);
+            panel299.Location = new Point(629, 130);
             panel299.Name = "panel299";
             panel299.Size = new Size(18, 23);
             panel299.TabIndex = 638;
@@ -4853,7 +4826,7 @@
             panel327.Controls.Add(label358);
             panel327.Controls.Add(label357);
             panel327.Controls.Add(label165);
-            panel327.Location = new Point(52, 183);
+            panel327.Location = new Point(47, 176);
             panel327.Name = "panel327";
             panel327.Size = new Size(83, 23);
             panel327.TabIndex = 625;
@@ -4907,7 +4880,7 @@
             panel274.BorderStyle = BorderStyle.FixedSingle;
             panel274.Controls.Add(label65);
             panel274.Controls.Add(label66);
-            panel274.Location = new Point(52, 160);
+            panel274.Location = new Point(47, 153);
             panel274.Name = "panel274";
             panel274.Size = new Size(83, 23);
             panel274.TabIndex = 624;
@@ -4934,20 +4907,11 @@
             label66.TabIndex = 248;
             label66.Text = "Köye Ait Akar ve Emlak";
             // 
-            // p5
-            // 
-            p5.BorderStyle = BorderStyle.FixedSingle;
-            p5.Controls.Add(lblIptalYolKopru);
-            p5.Location = new Point(566, 137);
-            p5.Name = "p5";
-            p5.Size = new Size(68, 23);
-            p5.TabIndex = 637;
-            // 
             // lblIptalYolKopru
             // 
             lblIptalYolKopru.AutoSize = true;
             lblIptalYolKopru.Font = new Font("Segoe UI", 6.75F);
-            lblIptalYolKopru.Location = new Point(2, 5);
+            lblIptalYolKopru.Location = new Point(3, 5);
             lblIptalYolKopru.Margin = new Padding(1, 0, 1, 0);
             lblIptalYolKopru.Name = "lblIptalYolKopru";
             lblIptalYolKopru.Size = new Size(10, 12);
@@ -4957,7 +4921,7 @@
             // panel298
             // 
             panel298.BorderStyle = BorderStyle.FixedSingle;
-            panel298.Location = new Point(634, 160);
+            panel298.Location = new Point(629, 153);
             panel298.Name = "panel298";
             panel298.Size = new Size(18, 23);
             panel298.TabIndex = 623;
@@ -4966,7 +4930,7 @@
             // 
             p1.BorderStyle = BorderStyle.FixedSingle;
             p1.Controls.Add(lblBKYolKopru);
-            p1.Location = new Point(135, 137);
+            p1.Location = new Point(130, 130);
             p1.Name = "p1";
             p1.Size = new Size(68, 23);
             p1.TabIndex = 626;
@@ -4978,14 +4942,14 @@
             lblBKYolKopru.Location = new Point(2, 4);
             lblBKYolKopru.Margin = new Padding(1, 0, 1, 0);
             lblBKYolKopru.Name = "lblBKYolKopru";
-            lblBKYolKopru.Size = new Size(10, 12);
+            lblBKYolKopru.Size = new Size(35, 12);
             lblBKYolKopru.TabIndex = 2;
-            lblBKYolKopru.Text = "0";
+            lblBKYolKopru.Text = "100000";
             // 
             // panel303
             // 
             panel303.BorderStyle = BorderStyle.FixedSingle;
-            panel303.Location = new Point(534, 137);
+            panel303.Location = new Point(529, 130);
             panel303.Name = "panel303";
             panel303.Size = new Size(32, 23);
             panel303.TabIndex = 636;
@@ -4994,7 +4958,7 @@
             // 
             p10.BorderStyle = BorderStyle.FixedSingle;
             p10.Controls.Add(lblIptalKoyAkar);
-            p10.Location = new Point(566, 160);
+            p10.Location = new Point(561, 153);
             p10.Name = "p10";
             p10.Size = new Size(68, 23);
             p10.TabIndex = 622;
@@ -5013,7 +4977,7 @@
             // panel321
             // 
             panel321.BorderStyle = BorderStyle.FixedSingle;
-            panel321.Location = new Point(203, 137);
+            panel321.Location = new Point(198, 130);
             panel321.Name = "panel321";
             panel321.Size = new Size(18, 23);
             panel321.TabIndex = 627;
@@ -5021,7 +4985,7 @@
             // panel302
             // 
             panel302.BorderStyle = BorderStyle.FixedSingle;
-            panel302.Location = new Point(534, 160);
+            panel302.Location = new Point(529, 153);
             panel302.Name = "panel302";
             panel302.Size = new Size(32, 23);
             panel302.TabIndex = 621;
@@ -5029,7 +4993,7 @@
             // panel305
             // 
             panel305.BorderStyle = BorderStyle.FixedSingle;
-            panel305.Location = new Point(516, 137);
+            panel305.Location = new Point(511, 130);
             panel305.Name = "panel305";
             panel305.Size = new Size(18, 23);
             panel305.TabIndex = 635;
@@ -5037,7 +5001,7 @@
             // panel304
             // 
             panel304.BorderStyle = BorderStyle.FixedSingle;
-            panel304.Location = new Point(516, 160);
+            panel304.Location = new Point(511, 153);
             panel304.Name = "panel304";
             panel304.Size = new Size(18, 23);
             panel304.TabIndex = 620;
@@ -5046,7 +5010,7 @@
             // 
             p2.BorderStyle = BorderStyle.FixedSingle;
             p2.Controls.Add(lblMunzamYolKopru);
-            p2.Location = new Point(221, 137);
+            p2.Location = new Point(216, 130);
             p2.Name = "p2";
             p2.Size = new Size(68, 23);
             p2.TabIndex = 628;
@@ -5066,7 +5030,7 @@
             // 
             p9.BorderStyle = BorderStyle.FixedSingle;
             p9.Controls.Add(lblOdenenKoyAkar);
-            p9.Location = new Point(448, 160);
+            p9.Location = new Point(443, 153);
             p9.Name = "p9";
             p9.Size = new Size(68, 23);
             p9.TabIndex = 619;
@@ -5078,15 +5042,15 @@
             lblOdenenKoyAkar.Location = new Point(2, 5);
             lblOdenenKoyAkar.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKoyAkar.Name = "lblOdenenKoyAkar";
-            lblOdenenKoyAkar.Size = new Size(10, 12);
+            lblOdenenKoyAkar.Size = new Size(30, 12);
             lblOdenenKoyAkar.TabIndex = 2;
-            lblOdenenKoyAkar.Text = "0";
+            lblOdenenKoyAkar.Text = "29022";
             // 
             // p4
             // 
             p4.BorderStyle = BorderStyle.FixedSingle;
             p4.Controls.Add(lblOdenenYolKopru);
-            p4.Location = new Point(448, 137);
+            p4.Location = new Point(443, 130);
             p4.Name = "p4";
             p4.Size = new Size(68, 23);
             p4.TabIndex = 634;
@@ -5098,14 +5062,14 @@
             lblOdenenYolKopru.Location = new Point(2, 5);
             lblOdenenYolKopru.Margin = new Padding(1, 0, 1, 0);
             lblOdenenYolKopru.Name = "lblOdenenYolKopru";
-            lblOdenenYolKopru.Size = new Size(10, 12);
+            lblOdenenYolKopru.Size = new Size(30, 12);
             lblOdenenYolKopru.TabIndex = 2;
-            lblOdenenYolKopru.Text = "0";
+            lblOdenenYolKopru.Text = "29022";
             // 
             // panel308
             // 
             panel308.BorderStyle = BorderStyle.FixedSingle;
-            panel308.Location = new Point(430, 160);
+            panel308.Location = new Point(425, 153);
             panel308.Name = "panel308";
             panel308.Size = new Size(18, 23);
             panel308.TabIndex = 618;
@@ -5113,7 +5077,7 @@
             // panel317
             // 
             panel317.BorderStyle = BorderStyle.FixedSingle;
-            panel317.Location = new Point(289, 137);
+            panel317.Location = new Point(284, 130);
             panel317.Name = "panel317";
             panel317.Size = new Size(18, 23);
             panel317.TabIndex = 629;
@@ -5122,7 +5086,7 @@
             // 
             p8.BorderStyle = BorderStyle.FixedSingle;
             p8.Controls.Add(lblTahakkukKoyAkar);
-            p8.Location = new Point(362, 160);
+            p8.Location = new Point(357, 153);
             p8.Name = "p8";
             p8.Size = new Size(68, 23);
             p8.TabIndex = 617;
@@ -5141,7 +5105,7 @@
             // panel309
             // 
             panel309.BorderStyle = BorderStyle.FixedSingle;
-            panel309.Location = new Point(430, 137);
+            panel309.Location = new Point(425, 130);
             panel309.Name = "panel309";
             panel309.Size = new Size(18, 23);
             panel309.TabIndex = 633;
@@ -5149,7 +5113,7 @@
             // panel312
             // 
             panel312.BorderStyle = BorderStyle.FixedSingle;
-            panel312.Location = new Point(342, 160);
+            panel312.Location = new Point(337, 153);
             panel312.Name = "panel312";
             panel312.Size = new Size(20, 23);
             panel312.TabIndex = 616;
@@ -5157,7 +5121,7 @@
             // panel315
             // 
             panel315.BorderStyle = BorderStyle.FixedSingle;
-            panel315.Location = new Point(307, 137);
+            panel315.Location = new Point(302, 130);
             panel315.Name = "panel315";
             panel315.Size = new Size(35, 23);
             panel315.TabIndex = 630;
@@ -5165,7 +5129,7 @@
             // panel314
             // 
             panel314.BorderStyle = BorderStyle.FixedSingle;
-            panel314.Location = new Point(307, 160);
+            panel314.Location = new Point(302, 153);
             panel314.Name = "panel314";
             panel314.Size = new Size(35, 23);
             panel314.TabIndex = 615;
@@ -5174,7 +5138,7 @@
             // 
             p3.BorderStyle = BorderStyle.FixedSingle;
             p3.Controls.Add(lblTahakkukYolKopru);
-            p3.Location = new Point(362, 137);
+            p3.Location = new Point(357, 130);
             p3.Name = "p3";
             p3.Size = new Size(68, 23);
             p3.TabIndex = 632;
@@ -5193,7 +5157,7 @@
             // panel316
             // 
             panel316.BorderStyle = BorderStyle.FixedSingle;
-            panel316.Location = new Point(289, 160);
+            panel316.Location = new Point(284, 153);
             panel316.Name = "panel316";
             panel316.Size = new Size(18, 23);
             panel316.TabIndex = 614;
@@ -5201,7 +5165,7 @@
             // panel313
             // 
             panel313.BorderStyle = BorderStyle.FixedSingle;
-            panel313.Location = new Point(342, 137);
+            panel313.Location = new Point(337, 130);
             panel313.Name = "panel313";
             panel313.Size = new Size(20, 23);
             panel313.TabIndex = 631;
@@ -5210,7 +5174,7 @@
             // 
             p7.BorderStyle = BorderStyle.FixedSingle;
             p7.Controls.Add(lblMunzamKoyAkar);
-            p7.Location = new Point(221, 160);
+            p7.Location = new Point(216, 153);
             p7.Name = "p7";
             p7.Size = new Size(68, 23);
             p7.TabIndex = 613;
@@ -5229,7 +5193,7 @@
             // panel320
             // 
             panel320.BorderStyle = BorderStyle.FixedSingle;
-            panel320.Location = new Point(203, 160);
+            panel320.Location = new Point(198, 153);
             panel320.Name = "panel320";
             panel320.Size = new Size(18, 23);
             panel320.TabIndex = 612;
@@ -5238,7 +5202,7 @@
             // 
             p6.BorderStyle = BorderStyle.FixedSingle;
             p6.Controls.Add(lblBKKoyAkar);
-            p6.Location = new Point(135, 160);
+            p6.Location = new Point(130, 153);
             p6.Name = "p6";
             p6.Size = new Size(68, 23);
             p6.TabIndex = 611;
@@ -5250,16 +5214,16 @@
             lblBKKoyAkar.Location = new Point(2, 5);
             lblBKKoyAkar.Margin = new Padding(1, 0, 1, 0);
             lblBKKoyAkar.Name = "lblBKKoyAkar";
-            lblBKKoyAkar.Size = new Size(10, 12);
+            lblBKKoyAkar.Size = new Size(35, 12);
             lblBKKoyAkar.TabIndex = 2;
-            lblBKKoyAkar.Text = "0";
+            lblBKKoyAkar.Text = "100000";
             // 
             // panel324
             // 
             panel324.BorderStyle = BorderStyle.FixedSingle;
             panel324.Controls.Add(panel273);
             panel324.Controls.Add(label162);
-            panel324.Location = new Point(52, 137);
+            panel324.Location = new Point(47, 130);
             panel324.Name = "panel324";
             panel324.Size = new Size(83, 23);
             panel324.TabIndex = 610;
@@ -5315,7 +5279,7 @@
             panel325.Controls.Add(label54);
             panel325.Controls.Add(label164);
             panel325.Controls.Add(label166);
-            panel325.Location = new Point(31, 137);
+            panel325.Location = new Point(26, 130);
             panel325.Margin = new Padding(1, 3, 1, 3);
             panel325.Name = "panel325";
             panel325.Size = new Size(21, 135);
@@ -5375,7 +5339,7 @@
             // 
             panel326.BorderStyle = BorderStyle.FixedSingle;
             panel326.Controls.Add(label172);
-            panel326.Location = new Point(12, 137);
+            panel326.Location = new Point(7, 130);
             panel326.Margin = new Padding(1, 3, 1, 3);
             panel326.Name = "panel326";
             panel326.Size = new Size(21, 135);
@@ -5398,7 +5362,7 @@
             panel296.Controls.Add(label299);
             panel296.Controls.Add(label300);
             panel296.Controls.Add(label301);
-            panel296.Location = new Point(566, 52);
+            panel296.Location = new Point(561, 44);
             panel296.Name = "panel296";
             panel296.Size = new Size(68, 66);
             panel296.TabIndex = 607;
@@ -5451,7 +5415,7 @@
             // 
             panel297.BorderStyle = BorderStyle.FixedSingle;
             panel297.Controls.Add(label33);
-            panel297.Location = new Point(566, 30);
+            panel297.Location = new Point(561, 22);
             panel297.Name = "panel297";
             panel297.Size = new Size(86, 22);
             panel297.TabIndex = 606;
@@ -5473,7 +5437,7 @@
             panel293.Controls.Add(label304);
             panel293.Controls.Add(label302);
             panel293.Controls.Add(label303);
-            panel293.Location = new Point(534, 52);
+            panel293.Location = new Point(529, 44);
             panel293.Name = "panel293";
             panel293.Size = new Size(32, 66);
             panel293.TabIndex = 604;
@@ -5515,7 +5479,7 @@
             // 
             panel292.BorderStyle = BorderStyle.FixedSingle;
             panel292.Controls.Add(label154);
-            panel292.Location = new Point(534, 30);
+            panel292.Location = new Point(529, 22);
             panel292.Name = "panel292";
             panel292.Size = new Size(32, 22);
             panel292.TabIndex = 605;
@@ -5538,7 +5502,7 @@
             panel286.Controls.Add(label295);
             panel286.Controls.Add(label296);
             panel286.Controls.Add(label297);
-            panel286.Location = new Point(448, 52);
+            panel286.Location = new Point(443, 44);
             panel286.Name = "panel286";
             panel286.Size = new Size(68, 66);
             panel286.TabIndex = 603;
@@ -5591,7 +5555,7 @@
             // 
             panel287.BorderStyle = BorderStyle.FixedSingle;
             panel287.Controls.Add(label153);
-            panel287.Location = new Point(448, 30);
+            panel287.Location = new Point(443, 22);
             panel287.Name = "panel287";
             panel287.Size = new Size(86, 22);
             panel287.TabIndex = 602;
@@ -5614,7 +5578,7 @@
             panel290.Controls.Add(label291);
             panel290.Controls.Add(label292);
             panel290.Controls.Add(label293);
-            panel290.Location = new Point(362, 52);
+            panel290.Location = new Point(357, 44);
             panel290.Name = "panel290";
             panel290.Size = new Size(68, 66);
             panel290.TabIndex = 601;
@@ -5667,7 +5631,7 @@
             // 
             panel291.BorderStyle = BorderStyle.FixedSingle;
             panel291.Controls.Add(label152);
-            panel291.Location = new Point(362, 30);
+            panel291.Location = new Point(357, 22);
             panel291.Name = "panel291";
             panel291.Size = new Size(86, 22);
             panel291.TabIndex = 600;
@@ -5691,7 +5655,7 @@
             panel283.Controls.Add(label268);
             panel283.Controls.Add(label269);
             panel283.Controls.Add(label270);
-            panel283.Location = new Point(307, 52);
+            panel283.Location = new Point(302, 44);
             panel283.Name = "panel283";
             panel283.Size = new Size(30, 66);
             panel283.TabIndex = 599;
@@ -5756,7 +5720,7 @@
             // 
             panel284.BorderStyle = BorderStyle.FixedSingle;
             panel284.Controls.Add(label34);
-            panel284.Location = new Point(307, 30);
+            panel284.Location = new Point(302, 22);
             panel284.Name = "panel284";
             panel284.Size = new Size(55, 22);
             panel284.TabIndex = 598;
@@ -5777,7 +5741,7 @@
             panel278.BorderStyle = BorderStyle.FixedSingle;
             panel278.Controls.Add(label288);
             panel278.Controls.Add(label289);
-            panel278.Location = new Point(221, 52);
+            panel278.Location = new Point(216, 44);
             panel278.Name = "panel278";
             panel278.Size = new Size(68, 66);
             panel278.TabIndex = 597;
@@ -5808,7 +5772,7 @@
             // 
             panel279.BorderStyle = BorderStyle.FixedSingle;
             panel279.Controls.Add(label32);
-            panel279.Location = new Point(221, 30);
+            panel279.Location = new Point(216, 22);
             panel279.Name = "panel279";
             panel279.Size = new Size(86, 22);
             panel279.TabIndex = 596;
@@ -5832,7 +5796,7 @@
             panel187.Controls.Add(label259);
             panel187.Controls.Add(label260);
             panel187.Controls.Add(label261);
-            panel187.Location = new Point(203, 52);
+            panel187.Location = new Point(198, 44);
             panel187.Name = "panel187";
             panel187.Size = new Size(18, 66);
             panel187.TabIndex = 595;
@@ -5899,7 +5863,7 @@
             panel183.Controls.Add(label256);
             panel183.Controls.Add(label254);
             panel183.Controls.Add(label255);
-            panel183.Location = new Point(135, 52);
+            panel183.Location = new Point(130, 44);
             panel183.Name = "panel183";
             panel183.Size = new Size(68, 66);
             panel183.TabIndex = 594;
@@ -5952,7 +5916,7 @@
             // 
             panel6.BorderStyle = BorderStyle.FixedSingle;
             panel6.Controls.Add(label31);
-            panel6.Location = new Point(135, 30);
+            panel6.Location = new Point(130, 22);
             panel6.Name = "panel6";
             panel6.Size = new Size(86, 22);
             panel6.TabIndex = 593;
@@ -5972,7 +5936,7 @@
             // 
             panel275.BorderStyle = BorderStyle.FixedSingle;
             panel275.Controls.Add(label30);
-            panel275.Location = new Point(52, 30);
+            panel275.Location = new Point(47, 22);
             panel275.Name = "panel275";
             panel275.Size = new Size(83, 88);
             panel275.TabIndex = 592;
@@ -5996,7 +5960,7 @@
             panel4.Controls.Add(label27);
             panel4.Controls.Add(label28);
             panel4.Controls.Add(label29);
-            panel4.Location = new Point(31, 30);
+            panel4.Location = new Point(26, 22);
             panel4.Margin = new Padding(1, 3, 1, 3);
             panel4.Name = "panel4";
             panel4.Size = new Size(21, 88);
@@ -6060,7 +6024,7 @@
             panel5.Controls.Add(label37);
             panel5.Controls.Add(label38);
             panel5.Controls.Add(label39);
-            panel5.Location = new Point(12, 30);
+            panel5.Location = new Point(7, 22);
             panel5.Margin = new Padding(1, 3, 1, 3);
             panel5.Name = "panel5";
             panel5.Size = new Size(21, 88);
@@ -6119,7 +6083,7 @@
             // label40
             // 
             label40.AutoSize = true;
-            label40.Location = new Point(255, 9);
+            label40.Location = new Point(250, 3);
             label40.Margin = new Padding(1, 0, 1, 0);
             label40.Name = "label40";
             label40.Size = new Size(105, 15);
@@ -6131,7 +6095,7 @@
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(32, 703);
+            panel1.Location = new Point(27, 691);
             panel1.Name = "panel1";
             panel1.Size = new Size(103, 23);
             panel1.TabIndex = 946;
@@ -6161,7 +6125,7 @@
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Location = new Point(634, 703);
+            panel2.Location = new Point(629, 691);
             panel2.Name = "panel2";
             panel2.Size = new Size(18, 23);
             panel2.TabIndex = 945;
@@ -6170,7 +6134,7 @@
             // 
             p120.BorderStyle = BorderStyle.FixedSingle;
             p120.Controls.Add(lblIptalToplamTurluIsler);
-            p120.Location = new Point(566, 703);
+            p120.Location = new Point(561, 691);
             p120.Name = "p120";
             p120.Size = new Size(68, 23);
             p120.TabIndex = 944;
@@ -6189,7 +6153,7 @@
             // panel7
             // 
             panel7.BorderStyle = BorderStyle.FixedSingle;
-            panel7.Location = new Point(534, 703);
+            panel7.Location = new Point(529, 691);
             panel7.Name = "panel7";
             panel7.Size = new Size(32, 23);
             panel7.TabIndex = 943;
@@ -6197,7 +6161,7 @@
             // panel8
             // 
             panel8.BorderStyle = BorderStyle.FixedSingle;
-            panel8.Location = new Point(516, 703);
+            panel8.Location = new Point(511, 691);
             panel8.Name = "panel8";
             panel8.Size = new Size(18, 23);
             panel8.TabIndex = 942;
@@ -6206,7 +6170,7 @@
             // 
             p119.BorderStyle = BorderStyle.FixedSingle;
             p119.Controls.Add(lblOdenenToplamTurluİsler);
-            p119.Location = new Point(448, 703);
+            p119.Location = new Point(443, 691);
             p119.Name = "p119";
             p119.Size = new Size(68, 23);
             p119.TabIndex = 941;
@@ -6225,7 +6189,7 @@
             // panel10
             // 
             panel10.BorderStyle = BorderStyle.FixedSingle;
-            panel10.Location = new Point(430, 703);
+            panel10.Location = new Point(425, 691);
             panel10.Name = "panel10";
             panel10.Size = new Size(18, 23);
             panel10.TabIndex = 940;
@@ -6234,7 +6198,7 @@
             // 
             p118.BorderStyle = BorderStyle.FixedSingle;
             p118.Controls.Add(lblTahakkukToplamTurluİsler);
-            p118.Location = new Point(362, 703);
+            p118.Location = new Point(357, 691);
             p118.Name = "p118";
             p118.Size = new Size(68, 23);
             p118.TabIndex = 939;
@@ -6253,7 +6217,7 @@
             // panel12
             // 
             panel12.BorderStyle = BorderStyle.FixedSingle;
-            panel12.Location = new Point(342, 703);
+            panel12.Location = new Point(337, 691);
             panel12.Name = "panel12";
             panel12.Size = new Size(20, 23);
             panel12.TabIndex = 938;
@@ -6261,7 +6225,7 @@
             // panel13
             // 
             panel13.BorderStyle = BorderStyle.FixedSingle;
-            panel13.Location = new Point(307, 703);
+            panel13.Location = new Point(302, 691);
             panel13.Name = "panel13";
             panel13.Size = new Size(35, 23);
             panel13.TabIndex = 937;
@@ -6269,7 +6233,7 @@
             // panel14
             // 
             panel14.BorderStyle = BorderStyle.FixedSingle;
-            panel14.Location = new Point(289, 703);
+            panel14.Location = new Point(284, 691);
             panel14.Name = "panel14";
             panel14.Size = new Size(18, 23);
             panel14.TabIndex = 936;
@@ -6278,7 +6242,7 @@
             // 
             p117.BorderStyle = BorderStyle.FixedSingle;
             p117.Controls.Add(lblMunzamToplamTurluİsler);
-            p117.Location = new Point(221, 703);
+            p117.Location = new Point(216, 691);
             p117.Name = "p117";
             p117.Size = new Size(68, 23);
             p117.TabIndex = 935;
@@ -6297,7 +6261,7 @@
             // panel16
             // 
             panel16.BorderStyle = BorderStyle.FixedSingle;
-            panel16.Location = new Point(203, 703);
+            panel16.Location = new Point(198, 691);
             panel16.Name = "panel16";
             panel16.Size = new Size(18, 23);
             panel16.TabIndex = 934;
@@ -6305,27 +6269,27 @@
             // p116
             // 
             p116.BorderStyle = BorderStyle.FixedSingle;
-            p116.Controls.Add(lblBKToplamTurluIsler);
-            p116.Location = new Point(135, 703);
+            p116.Controls.Add(lblBKTurluIsler);
+            p116.Location = new Point(130, 691);
             p116.Name = "p116";
             p116.Size = new Size(68, 23);
             p116.TabIndex = 933;
             // 
-            // lblBKToplamTurluIsler
+            // lblBKTurluIsler
             // 
-            lblBKToplamTurluIsler.AutoSize = true;
-            lblBKToplamTurluIsler.Font = new Font("Segoe UI", 6.75F);
-            lblBKToplamTurluIsler.Location = new Point(3, 4);
-            lblBKToplamTurluIsler.Margin = new Padding(1, 0, 1, 0);
-            lblBKToplamTurluIsler.Name = "lblBKToplamTurluIsler";
-            lblBKToplamTurluIsler.Size = new Size(10, 12);
-            lblBKToplamTurluIsler.TabIndex = 3;
-            lblBKToplamTurluIsler.Text = "0";
+            lblBKTurluIsler.AutoSize = true;
+            lblBKTurluIsler.Font = new Font("Segoe UI", 6.75F);
+            lblBKTurluIsler.Location = new Point(3, 4);
+            lblBKTurluIsler.Margin = new Padding(1, 0, 1, 0);
+            lblBKTurluIsler.Name = "lblBKTurluIsler";
+            lblBKTurluIsler.Size = new Size(10, 12);
+            lblBKTurluIsler.TabIndex = 3;
+            lblBKTurluIsler.Text = "0";
             // 
             // panel19
             // 
             panel19.BorderStyle = BorderStyle.FixedSingle;
-            panel19.Location = new Point(634, 724);
+            panel19.Location = new Point(629, 712);
             panel19.Name = "panel19";
             panel19.Size = new Size(18, 23);
             panel19.TabIndex = 959;
@@ -6334,7 +6298,7 @@
             // 
             p130.BorderStyle = BorderStyle.FixedSingle;
             p130.Controls.Add(lblIptalToplamAsker);
-            p130.Location = new Point(566, 724);
+            p130.Location = new Point(561, 712);
             p130.Name = "p130";
             p130.Size = new Size(68, 23);
             p130.TabIndex = 958;
@@ -6353,7 +6317,7 @@
             // panel21
             // 
             panel21.BorderStyle = BorderStyle.FixedSingle;
-            panel21.Location = new Point(534, 724);
+            panel21.Location = new Point(529, 712);
             panel21.Name = "panel21";
             panel21.Size = new Size(32, 23);
             panel21.TabIndex = 957;
@@ -6361,7 +6325,7 @@
             // panel22
             // 
             panel22.BorderStyle = BorderStyle.FixedSingle;
-            panel22.Location = new Point(516, 724);
+            panel22.Location = new Point(511, 712);
             panel22.Name = "panel22";
             panel22.Size = new Size(18, 23);
             panel22.TabIndex = 956;
@@ -6370,7 +6334,7 @@
             // 
             p129.BorderStyle = BorderStyle.FixedSingle;
             p129.Controls.Add(lblOdenenToplamAsker);
-            p129.Location = new Point(448, 724);
+            p129.Location = new Point(443, 712);
             p129.Name = "p129";
             p129.Size = new Size(68, 23);
             p129.TabIndex = 955;
@@ -6389,7 +6353,7 @@
             // panel24
             // 
             panel24.BorderStyle = BorderStyle.FixedSingle;
-            panel24.Location = new Point(430, 724);
+            panel24.Location = new Point(425, 712);
             panel24.Name = "panel24";
             panel24.Size = new Size(18, 23);
             panel24.TabIndex = 954;
@@ -6398,7 +6362,7 @@
             // 
             p128.BorderStyle = BorderStyle.FixedSingle;
             p128.Controls.Add(lblTahakkukToplamAsker);
-            p128.Location = new Point(362, 724);
+            p128.Location = new Point(357, 712);
             p128.Name = "p128";
             p128.Size = new Size(68, 23);
             p128.TabIndex = 953;
@@ -6417,7 +6381,7 @@
             // panel26
             // 
             panel26.BorderStyle = BorderStyle.FixedSingle;
-            panel26.Location = new Point(342, 724);
+            panel26.Location = new Point(337, 712);
             panel26.Name = "panel26";
             panel26.Size = new Size(20, 23);
             panel26.TabIndex = 952;
@@ -6425,7 +6389,7 @@
             // panel27
             // 
             panel27.BorderStyle = BorderStyle.FixedSingle;
-            panel27.Location = new Point(307, 724);
+            panel27.Location = new Point(302, 712);
             panel27.Name = "panel27";
             panel27.Size = new Size(35, 23);
             panel27.TabIndex = 951;
@@ -6433,7 +6397,7 @@
             // panel28
             // 
             panel28.BorderStyle = BorderStyle.FixedSingle;
-            panel28.Location = new Point(289, 724);
+            panel28.Location = new Point(284, 712);
             panel28.Name = "panel28";
             panel28.Size = new Size(18, 23);
             panel28.TabIndex = 950;
@@ -6442,7 +6406,7 @@
             // 
             p127.BorderStyle = BorderStyle.FixedSingle;
             p127.Controls.Add(lblMunzamToplamAsker);
-            p127.Location = new Point(221, 724);
+            p127.Location = new Point(216, 712);
             p127.Name = "p127";
             p127.Size = new Size(68, 23);
             p127.TabIndex = 949;
@@ -6461,7 +6425,7 @@
             // panel30
             // 
             panel30.BorderStyle = BorderStyle.FixedSingle;
-            panel30.Location = new Point(203, 724);
+            panel30.Location = new Point(198, 712);
             panel30.Name = "panel30";
             panel30.Size = new Size(18, 23);
             panel30.TabIndex = 948;
@@ -6469,29 +6433,29 @@
             // p126
             // 
             p126.BorderStyle = BorderStyle.FixedSingle;
-            p126.Controls.Add(lblBKToplamAsker);
-            p126.Location = new Point(135, 724);
+            p126.Controls.Add(lblBKAsker);
+            p126.Location = new Point(130, 712);
             p126.Name = "p126";
             p126.Size = new Size(68, 23);
             p126.TabIndex = 947;
             // 
-            // lblBKToplamAsker
+            // lblBKAsker
             // 
-            lblBKToplamAsker.AutoSize = true;
-            lblBKToplamAsker.Font = new Font("Segoe UI", 6.75F);
-            lblBKToplamAsker.Location = new Point(3, 4);
-            lblBKToplamAsker.Margin = new Padding(1, 0, 1, 0);
-            lblBKToplamAsker.Name = "lblBKToplamAsker";
-            lblBKToplamAsker.Size = new Size(10, 12);
-            lblBKToplamAsker.TabIndex = 3;
-            lblBKToplamAsker.Text = "0";
+            lblBKAsker.AutoSize = true;
+            lblBKAsker.Font = new Font("Segoe UI", 6.75F);
+            lblBKAsker.Location = new Point(3, 4);
+            lblBKAsker.Margin = new Padding(1, 0, 1, 0);
+            lblBKAsker.Name = "lblBKAsker";
+            lblBKAsker.Size = new Size(10, 12);
+            lblBKAsker.TabIndex = 3;
+            lblBKAsker.Text = "0";
             // 
             // panel32
             // 
             panel32.BorderStyle = BorderStyle.FixedSingle;
             panel32.Controls.Add(label5);
             panel32.Controls.Add(label6);
-            panel32.Location = new Point(32, 745);
+            panel32.Location = new Point(27, 733);
             panel32.Name = "panel32";
             panel32.Size = new Size(103, 23);
             panel32.TabIndex = 974;
@@ -6521,7 +6485,7 @@
             // panel33
             // 
             panel33.BorderStyle = BorderStyle.FixedSingle;
-            panel33.Location = new Point(634, 745);
+            panel33.Location = new Point(629, 733);
             panel33.Name = "panel33";
             panel33.Size = new Size(18, 23);
             panel33.TabIndex = 973;
@@ -6530,7 +6494,7 @@
             // 
             p125.BorderStyle = BorderStyle.FixedSingle;
             p125.Controls.Add(lblIptalGenelToplami);
-            p125.Location = new Point(566, 745);
+            p125.Location = new Point(561, 733);
             p125.Name = "p125";
             p125.Size = new Size(68, 23);
             p125.TabIndex = 972;
@@ -6549,7 +6513,7 @@
             // panel35
             // 
             panel35.BorderStyle = BorderStyle.FixedSingle;
-            panel35.Location = new Point(534, 745);
+            panel35.Location = new Point(529, 733);
             panel35.Name = "panel35";
             panel35.Size = new Size(32, 23);
             panel35.TabIndex = 971;
@@ -6557,7 +6521,7 @@
             // panel36
             // 
             panel36.BorderStyle = BorderStyle.FixedSingle;
-            panel36.Location = new Point(516, 745);
+            panel36.Location = new Point(511, 733);
             panel36.Name = "panel36";
             panel36.Size = new Size(18, 23);
             panel36.TabIndex = 970;
@@ -6566,7 +6530,7 @@
             // 
             p124.BorderStyle = BorderStyle.FixedSingle;
             p124.Controls.Add(lblOdenenGenelToplami);
-            p124.Location = new Point(448, 745);
+            p124.Location = new Point(443, 733);
             p124.Name = "p124";
             p124.Size = new Size(68, 23);
             p124.TabIndex = 969;
@@ -6585,7 +6549,7 @@
             // panel38
             // 
             panel38.BorderStyle = BorderStyle.FixedSingle;
-            panel38.Location = new Point(430, 745);
+            panel38.Location = new Point(425, 733);
             panel38.Name = "panel38";
             panel38.Size = new Size(18, 23);
             panel38.TabIndex = 968;
@@ -6594,7 +6558,7 @@
             // 
             p123.BorderStyle = BorderStyle.FixedSingle;
             p123.Controls.Add(lblTahakkukGenelToplam);
-            p123.Location = new Point(362, 745);
+            p123.Location = new Point(357, 733);
             p123.Name = "p123";
             p123.Size = new Size(68, 23);
             p123.TabIndex = 967;
@@ -6613,7 +6577,7 @@
             // panel40
             // 
             panel40.BorderStyle = BorderStyle.FixedSingle;
-            panel40.Location = new Point(342, 745);
+            panel40.Location = new Point(337, 733);
             panel40.Name = "panel40";
             panel40.Size = new Size(20, 23);
             panel40.TabIndex = 966;
@@ -6621,7 +6585,7 @@
             // panel41
             // 
             panel41.BorderStyle = BorderStyle.FixedSingle;
-            panel41.Location = new Point(307, 745);
+            panel41.Location = new Point(302, 733);
             panel41.Name = "panel41";
             panel41.Size = new Size(35, 23);
             panel41.TabIndex = 965;
@@ -6629,7 +6593,7 @@
             // panel42
             // 
             panel42.BorderStyle = BorderStyle.FixedSingle;
-            panel42.Location = new Point(289, 745);
+            panel42.Location = new Point(284, 733);
             panel42.Name = "panel42";
             panel42.Size = new Size(18, 23);
             panel42.TabIndex = 964;
@@ -6638,7 +6602,7 @@
             // 
             p122.BorderStyle = BorderStyle.FixedSingle;
             p122.Controls.Add(lblMunzamGenelToplami);
-            p122.Location = new Point(221, 745);
+            p122.Location = new Point(216, 733);
             p122.Name = "p122";
             p122.Size = new Size(68, 23);
             p122.TabIndex = 963;
@@ -6657,7 +6621,7 @@
             // panel44
             // 
             panel44.BorderStyle = BorderStyle.FixedSingle;
-            panel44.Location = new Point(203, 745);
+            panel44.Location = new Point(198, 733);
             panel44.Name = "panel44";
             panel44.Size = new Size(18, 23);
             panel44.TabIndex = 962;
@@ -6666,7 +6630,7 @@
             // 
             p121.BorderStyle = BorderStyle.FixedSingle;
             p121.Controls.Add(lblButceGenelToplami);
-            p121.Location = new Point(135, 745);
+            p121.Location = new Point(130, 733);
             p121.Name = "p121";
             p121.Size = new Size(68, 23);
             p121.TabIndex = 961;
@@ -6699,7 +6663,7 @@
             panel18.Controls.Add(label3);
             panel18.Controls.Add(label7);
             panel18.Controls.Add(label4);
-            panel18.Location = new Point(32, 724);
+            panel18.Location = new Point(27, 712);
             panel18.Name = "panel18";
             panel18.Size = new Size(103, 23);
             panel18.TabIndex = 960;
@@ -6742,7 +6706,7 @@
             panel657.BorderStyle = BorderStyle.FixedSingle;
             panel657.Controls.Add(label12);
             panel657.Controls.Add(label207);
-            panel657.Location = new Point(32, 590);
+            panel657.Location = new Point(27, 578);
             panel657.Name = "panel657";
             panel657.Size = new Size(103, 23);
             panel657.TabIndex = 857;
@@ -6761,7 +6725,7 @@
             // panel46
             // 
             panel46.BorderStyle = BorderStyle.FixedSingle;
-            panel46.Location = new Point(634, 475);
+            panel46.Location = new Point(629, 468);
             panel46.Name = "panel46";
             panel46.Size = new Size(18, 23);
             panel46.TabIndex = 988;
@@ -6770,7 +6734,7 @@
             // 
             p75.BorderStyle = BorderStyle.FixedSingle;
             p75.Controls.Add(lblIptalTurluIslerToplami);
-            p75.Location = new Point(566, 475);
+            p75.Location = new Point(561, 468);
             p75.Name = "p75";
             p75.Size = new Size(68, 23);
             p75.TabIndex = 987;
@@ -6789,7 +6753,7 @@
             // panel48
             // 
             panel48.BorderStyle = BorderStyle.FixedSingle;
-            panel48.Location = new Point(534, 475);
+            panel48.Location = new Point(529, 468);
             panel48.Name = "panel48";
             panel48.Size = new Size(32, 23);
             panel48.TabIndex = 986;
@@ -6797,7 +6761,7 @@
             // panel49
             // 
             panel49.BorderStyle = BorderStyle.FixedSingle;
-            panel49.Location = new Point(516, 475);
+            panel49.Location = new Point(511, 468);
             panel49.Name = "panel49";
             panel49.Size = new Size(18, 23);
             panel49.TabIndex = 985;
@@ -6806,7 +6770,7 @@
             // 
             p74.BorderStyle = BorderStyle.FixedSingle;
             p74.Controls.Add(lblOdenenTurluIslerToplami);
-            p74.Location = new Point(448, 475);
+            p74.Location = new Point(443, 468);
             p74.Name = "p74";
             p74.Size = new Size(68, 23);
             p74.TabIndex = 984;
@@ -6825,7 +6789,7 @@
             // panel51
             // 
             panel51.BorderStyle = BorderStyle.FixedSingle;
-            panel51.Location = new Point(430, 475);
+            panel51.Location = new Point(425, 468);
             panel51.Name = "panel51";
             panel51.Size = new Size(18, 23);
             panel51.TabIndex = 983;
@@ -6834,7 +6798,7 @@
             // 
             p73.BorderStyle = BorderStyle.FixedSingle;
             p73.Controls.Add(lblTahakkukTurluIslerToplami);
-            p73.Location = new Point(362, 475);
+            p73.Location = new Point(357, 468);
             p73.Name = "p73";
             p73.Size = new Size(68, 23);
             p73.TabIndex = 982;
@@ -6853,7 +6817,7 @@
             // panel53
             // 
             panel53.BorderStyle = BorderStyle.FixedSingle;
-            panel53.Location = new Point(342, 475);
+            panel53.Location = new Point(337, 468);
             panel53.Name = "panel53";
             panel53.Size = new Size(20, 23);
             panel53.TabIndex = 981;
@@ -6861,7 +6825,7 @@
             // panel54
             // 
             panel54.BorderStyle = BorderStyle.FixedSingle;
-            panel54.Location = new Point(307, 475);
+            panel54.Location = new Point(302, 468);
             panel54.Name = "panel54";
             panel54.Size = new Size(35, 23);
             panel54.TabIndex = 980;
@@ -6869,7 +6833,7 @@
             // panel55
             // 
             panel55.BorderStyle = BorderStyle.FixedSingle;
-            panel55.Location = new Point(289, 475);
+            panel55.Location = new Point(284, 468);
             panel55.Name = "panel55";
             panel55.Size = new Size(18, 23);
             panel55.TabIndex = 979;
@@ -6878,7 +6842,7 @@
             // 
             p72.BorderStyle = BorderStyle.FixedSingle;
             p72.Controls.Add(lblMunzamTurluIslerToplami);
-            p72.Location = new Point(221, 475);
+            p72.Location = new Point(216, 468);
             p72.Name = "p72";
             p72.Size = new Size(68, 23);
             p72.TabIndex = 978;
@@ -6897,7 +6861,7 @@
             // panel57
             // 
             panel57.BorderStyle = BorderStyle.FixedSingle;
-            panel57.Location = new Point(203, 475);
+            panel57.Location = new Point(198, 468);
             panel57.Name = "panel57";
             panel57.Size = new Size(18, 23);
             panel57.TabIndex = 977;
@@ -6906,7 +6870,7 @@
             // 
             p71.BorderStyle = BorderStyle.FixedSingle;
             p71.Controls.Add(lblBKTurluIslerToplami);
-            p71.Location = new Point(135, 475);
+            p71.Location = new Point(130, 468);
             p71.Name = "p71";
             p71.Size = new Size(68, 23);
             p71.TabIndex = 976;
@@ -6927,7 +6891,7 @@
             panel59.BorderStyle = BorderStyle.FixedSingle;
             panel59.Controls.Add(label15);
             panel59.Controls.Add(label16);
-            panel59.Location = new Point(52, 475);
+            panel59.Location = new Point(47, 468);
             panel59.Name = "panel59";
             panel59.Size = new Size(83, 23);
             panel59.TabIndex = 975;
@@ -6957,7 +6921,7 @@
             // panel60
             // 
             panel60.BorderStyle = BorderStyle.FixedSingle;
-            panel60.Location = new Point(634, 205);
+            panel60.Location = new Point(629, 198);
             panel60.Name = "panel60";
             panel60.Size = new Size(18, 23);
             panel60.TabIndex = 665;
@@ -6966,7 +6930,7 @@
             // 
             p20.BorderStyle = BorderStyle.FixedSingle;
             p20.Controls.Add(lblIptalAydinlatma);
-            p20.Location = new Point(566, 205);
+            p20.Location = new Point(561, 198);
             p20.Name = "p20";
             p20.Size = new Size(68, 23);
             p20.TabIndex = 664;
@@ -6985,7 +6949,7 @@
             // panel62
             // 
             panel62.BorderStyle = BorderStyle.FixedSingle;
-            panel62.Location = new Point(534, 205);
+            panel62.Location = new Point(529, 198);
             panel62.Name = "panel62";
             panel62.Size = new Size(32, 23);
             panel62.TabIndex = 663;
@@ -6993,7 +6957,7 @@
             // panel63
             // 
             panel63.BorderStyle = BorderStyle.FixedSingle;
-            panel63.Location = new Point(516, 205);
+            panel63.Location = new Point(511, 198);
             panel63.Name = "panel63";
             panel63.Size = new Size(18, 23);
             panel63.TabIndex = 662;
@@ -7001,27 +6965,27 @@
             // p19
             // 
             p19.BorderStyle = BorderStyle.FixedSingle;
-            p19.Controls.Add(lblOdenenAydinlatla);
-            p19.Location = new Point(448, 205);
+            p19.Controls.Add(lblOdenenAydinlatma);
+            p19.Location = new Point(443, 198);
             p19.Name = "p19";
             p19.Size = new Size(68, 23);
             p19.TabIndex = 661;
             // 
-            // lblOdenenAydinlatla
+            // lblOdenenAydinlatma
             // 
-            lblOdenenAydinlatla.AutoSize = true;
-            lblOdenenAydinlatla.Font = new Font("Segoe UI", 6.75F);
-            lblOdenenAydinlatla.Location = new Point(2, 5);
-            lblOdenenAydinlatla.Margin = new Padding(1, 0, 1, 0);
-            lblOdenenAydinlatla.Name = "lblOdenenAydinlatla";
-            lblOdenenAydinlatla.Size = new Size(10, 12);
-            lblOdenenAydinlatla.TabIndex = 2;
-            lblOdenenAydinlatla.Text = "0";
+            lblOdenenAydinlatma.AutoSize = true;
+            lblOdenenAydinlatma.Font = new Font("Segoe UI", 6.75F);
+            lblOdenenAydinlatma.Location = new Point(2, 5);
+            lblOdenenAydinlatma.Margin = new Padding(1, 0, 1, 0);
+            lblOdenenAydinlatma.Name = "lblOdenenAydinlatma";
+            lblOdenenAydinlatma.Size = new Size(30, 12);
+            lblOdenenAydinlatma.TabIndex = 2;
+            lblOdenenAydinlatma.Text = "29022";
             // 
             // panel65
             // 
             panel65.BorderStyle = BorderStyle.FixedSingle;
-            panel65.Location = new Point(430, 205);
+            panel65.Location = new Point(425, 198);
             panel65.Name = "panel65";
             panel65.Size = new Size(18, 23);
             panel65.TabIndex = 660;
@@ -7030,7 +6994,7 @@
             // 
             p18.BorderStyle = BorderStyle.FixedSingle;
             p18.Controls.Add(lblTahakkukAydinlatma);
-            p18.Location = new Point(362, 205);
+            p18.Location = new Point(357, 198);
             p18.Name = "p18";
             p18.Size = new Size(68, 23);
             p18.TabIndex = 659;
@@ -7049,7 +7013,7 @@
             // panel67
             // 
             panel67.BorderStyle = BorderStyle.FixedSingle;
-            panel67.Location = new Point(342, 205);
+            panel67.Location = new Point(337, 198);
             panel67.Name = "panel67";
             panel67.Size = new Size(20, 23);
             panel67.TabIndex = 658;
@@ -7057,7 +7021,7 @@
             // panel68
             // 
             panel68.BorderStyle = BorderStyle.FixedSingle;
-            panel68.Location = new Point(307, 205);
+            panel68.Location = new Point(302, 198);
             panel68.Name = "panel68";
             panel68.Size = new Size(35, 23);
             panel68.TabIndex = 657;
@@ -7065,7 +7029,7 @@
             // panel69
             // 
             panel69.BorderStyle = BorderStyle.FixedSingle;
-            panel69.Location = new Point(289, 205);
+            panel69.Location = new Point(284, 198);
             panel69.Name = "panel69";
             panel69.Size = new Size(18, 23);
             panel69.TabIndex = 656;
@@ -7074,7 +7038,7 @@
             // 
             p17.BorderStyle = BorderStyle.FixedSingle;
             p17.Controls.Add(lblMunzamAydinlatma);
-            p17.Location = new Point(221, 205);
+            p17.Location = new Point(216, 198);
             p17.Name = "p17";
             p17.Size = new Size(68, 23);
             p17.TabIndex = 655;
@@ -7093,7 +7057,7 @@
             // panel71
             // 
             panel71.BorderStyle = BorderStyle.FixedSingle;
-            panel71.Location = new Point(203, 205);
+            panel71.Location = new Point(198, 198);
             panel71.Name = "panel71";
             panel71.Size = new Size(18, 23);
             panel71.TabIndex = 654;
@@ -7102,7 +7066,7 @@
             // 
             p16.BorderStyle = BorderStyle.FixedSingle;
             p16.Controls.Add(lblBKAydinlatma);
-            p16.Location = new Point(135, 205);
+            p16.Location = new Point(130, 198);
             p16.Name = "p16";
             p16.Size = new Size(68, 23);
             p16.TabIndex = 653;
@@ -7114,9 +7078,9 @@
             lblBKAydinlatma.Location = new Point(2, 5);
             lblBKAydinlatma.Margin = new Padding(1, 0, 1, 0);
             lblBKAydinlatma.Name = "lblBKAydinlatma";
-            lblBKAydinlatma.Size = new Size(10, 12);
+            lblBKAydinlatma.Size = new Size(35, 12);
             lblBKAydinlatma.TabIndex = 2;
-            lblBKAydinlatma.Text = "0";
+            lblBKAydinlatma.Text = "100000";
             // 
             // panel73
             // 
@@ -7125,7 +7089,7 @@
             panel73.Controls.Add(label44);
             panel73.Controls.Add(label208);
             panel73.Controls.Add(label45);
-            panel73.Location = new Point(52, 205);
+            panel73.Location = new Point(47, 198);
             panel73.Name = "panel73";
             panel73.Size = new Size(83, 23);
             panel73.TabIndex = 652;
@@ -7177,7 +7141,7 @@
             // panel74
             // 
             panel74.BorderStyle = BorderStyle.FixedSingle;
-            panel74.Location = new Point(634, 227);
+            panel74.Location = new Point(629, 220);
             panel74.Name = "panel74";
             panel74.Size = new Size(18, 23);
             panel74.TabIndex = 1002;
@@ -7186,7 +7150,7 @@
             // 
             p25.BorderStyle = BorderStyle.FixedSingle;
             p25.Controls.Add(lblIptalMezarlik);
-            p25.Location = new Point(566, 227);
+            p25.Location = new Point(561, 220);
             p25.Name = "p25";
             p25.Size = new Size(68, 23);
             p25.TabIndex = 1001;
@@ -7205,7 +7169,7 @@
             // panel76
             // 
             panel76.BorderStyle = BorderStyle.FixedSingle;
-            panel76.Location = new Point(534, 227);
+            panel76.Location = new Point(529, 220);
             panel76.Name = "panel76";
             panel76.Size = new Size(32, 23);
             panel76.TabIndex = 1000;
@@ -7213,7 +7177,7 @@
             // panel77
             // 
             panel77.BorderStyle = BorderStyle.FixedSingle;
-            panel77.Location = new Point(516, 227);
+            panel77.Location = new Point(511, 220);
             panel77.Name = "panel77";
             panel77.Size = new Size(18, 23);
             panel77.TabIndex = 999;
@@ -7222,7 +7186,7 @@
             // 
             p24.BorderStyle = BorderStyle.FixedSingle;
             p24.Controls.Add(lblOdenenMezarlik);
-            p24.Location = new Point(448, 227);
+            p24.Location = new Point(443, 220);
             p24.Name = "p24";
             p24.Size = new Size(68, 23);
             p24.TabIndex = 998;
@@ -7234,14 +7198,14 @@
             lblOdenenMezarlik.Location = new Point(2, 5);
             lblOdenenMezarlik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenMezarlik.Name = "lblOdenenMezarlik";
-            lblOdenenMezarlik.Size = new Size(10, 12);
+            lblOdenenMezarlik.Size = new Size(30, 12);
             lblOdenenMezarlik.TabIndex = 2;
-            lblOdenenMezarlik.Text = "0";
+            lblOdenenMezarlik.Text = "29022";
             // 
             // panel79
             // 
             panel79.BorderStyle = BorderStyle.FixedSingle;
-            panel79.Location = new Point(430, 227);
+            panel79.Location = new Point(425, 220);
             panel79.Name = "panel79";
             panel79.Size = new Size(18, 23);
             panel79.TabIndex = 997;
@@ -7250,7 +7214,7 @@
             // 
             p23.BorderStyle = BorderStyle.FixedSingle;
             p23.Controls.Add(lblTahakkukMezarlik);
-            p23.Location = new Point(362, 227);
+            p23.Location = new Point(357, 220);
             p23.Name = "p23";
             p23.Size = new Size(68, 23);
             p23.TabIndex = 996;
@@ -7269,7 +7233,7 @@
             // panel81
             // 
             panel81.BorderStyle = BorderStyle.FixedSingle;
-            panel81.Location = new Point(342, 227);
+            panel81.Location = new Point(337, 220);
             panel81.Name = "panel81";
             panel81.Size = new Size(20, 23);
             panel81.TabIndex = 995;
@@ -7277,7 +7241,7 @@
             // panel82
             // 
             panel82.BorderStyle = BorderStyle.FixedSingle;
-            panel82.Location = new Point(307, 227);
+            panel82.Location = new Point(302, 220);
             panel82.Name = "panel82";
             panel82.Size = new Size(35, 23);
             panel82.TabIndex = 994;
@@ -7285,7 +7249,7 @@
             // panel83
             // 
             panel83.BorderStyle = BorderStyle.FixedSingle;
-            panel83.Location = new Point(289, 227);
+            panel83.Location = new Point(284, 220);
             panel83.Name = "panel83";
             panel83.Size = new Size(18, 23);
             panel83.TabIndex = 993;
@@ -7294,7 +7258,7 @@
             // 
             p22.BorderStyle = BorderStyle.FixedSingle;
             p22.Controls.Add(lblMunzamMezarlik);
-            p22.Location = new Point(221, 227);
+            p22.Location = new Point(216, 220);
             p22.Name = "p22";
             p22.Size = new Size(68, 23);
             p22.TabIndex = 992;
@@ -7313,7 +7277,7 @@
             // panel85
             // 
             panel85.BorderStyle = BorderStyle.FixedSingle;
-            panel85.Location = new Point(203, 227);
+            panel85.Location = new Point(198, 220);
             panel85.Name = "panel85";
             panel85.Size = new Size(18, 23);
             panel85.TabIndex = 991;
@@ -7322,7 +7286,7 @@
             // 
             p21.BorderStyle = BorderStyle.FixedSingle;
             p21.Controls.Add(lblBKMezarlik);
-            p21.Location = new Point(135, 227);
+            p21.Location = new Point(130, 220);
             p21.Name = "p21";
             p21.Size = new Size(68, 23);
             p21.TabIndex = 990;
@@ -7334,16 +7298,16 @@
             lblBKMezarlik.Location = new Point(2, 5);
             lblBKMezarlik.Margin = new Padding(1, 0, 1, 0);
             lblBKMezarlik.Name = "lblBKMezarlik";
-            lblBKMezarlik.Size = new Size(10, 12);
+            lblBKMezarlik.Size = new Size(35, 12);
             lblBKMezarlik.TabIndex = 2;
-            lblBKMezarlik.Text = "0";
+            lblBKMezarlik.Text = "100000";
             // 
             // panel87
             // 
             panel87.BorderStyle = BorderStyle.FixedSingle;
             panel87.Controls.Add(label51);
             panel87.Controls.Add(label52);
-            panel87.Location = new Point(52, 227);
+            panel87.Location = new Point(47, 220);
             panel87.Name = "panel87";
             panel87.Size = new Size(83, 23);
             panel87.TabIndex = 989;
@@ -7373,7 +7337,7 @@
             // panel88
             // 
             panel88.BorderStyle = BorderStyle.FixedSingle;
-            panel88.Location = new Point(634, 249);
+            panel88.Location = new Point(629, 242);
             panel88.Name = "panel88";
             panel88.Size = new Size(18, 23);
             panel88.TabIndex = 1016;
@@ -7382,7 +7346,7 @@
             // 
             p30.BorderStyle = BorderStyle.FixedSingle;
             p30.Controls.Add(lblIptalBayindirlikToplami);
-            p30.Location = new Point(566, 249);
+            p30.Location = new Point(561, 242);
             p30.Name = "p30";
             p30.Size = new Size(68, 23);
             p30.TabIndex = 1015;
@@ -7401,7 +7365,7 @@
             // panel90
             // 
             panel90.BorderStyle = BorderStyle.FixedSingle;
-            panel90.Location = new Point(534, 249);
+            panel90.Location = new Point(529, 242);
             panel90.Name = "panel90";
             panel90.Size = new Size(32, 23);
             panel90.TabIndex = 1014;
@@ -7409,7 +7373,7 @@
             // panel91
             // 
             panel91.BorderStyle = BorderStyle.FixedSingle;
-            panel91.Location = new Point(516, 249);
+            panel91.Location = new Point(511, 242);
             panel91.Name = "panel91";
             panel91.Size = new Size(18, 23);
             panel91.TabIndex = 1013;
@@ -7418,7 +7382,7 @@
             // 
             p29.BorderStyle = BorderStyle.FixedSingle;
             p29.Controls.Add(lblOdenenBayindirlikToplami);
-            p29.Location = new Point(448, 249);
+            p29.Location = new Point(443, 242);
             p29.Name = "p29";
             p29.Size = new Size(68, 23);
             p29.TabIndex = 1012;
@@ -7437,7 +7401,7 @@
             // panel93
             // 
             panel93.BorderStyle = BorderStyle.FixedSingle;
-            panel93.Location = new Point(430, 249);
+            panel93.Location = new Point(425, 242);
             panel93.Name = "panel93";
             panel93.Size = new Size(18, 23);
             panel93.TabIndex = 1011;
@@ -7446,7 +7410,7 @@
             // 
             p28.BorderStyle = BorderStyle.FixedSingle;
             p28.Controls.Add(lblTahakkukBayindirlikToplami);
-            p28.Location = new Point(362, 249);
+            p28.Location = new Point(357, 242);
             p28.Name = "p28";
             p28.Size = new Size(68, 23);
             p28.TabIndex = 1010;
@@ -7465,7 +7429,7 @@
             // panel95
             // 
             panel95.BorderStyle = BorderStyle.FixedSingle;
-            panel95.Location = new Point(342, 249);
+            panel95.Location = new Point(337, 242);
             panel95.Name = "panel95";
             panel95.Size = new Size(20, 23);
             panel95.TabIndex = 1009;
@@ -7473,7 +7437,7 @@
             // panel96
             // 
             panel96.BorderStyle = BorderStyle.FixedSingle;
-            panel96.Location = new Point(307, 249);
+            panel96.Location = new Point(302, 242);
             panel96.Name = "panel96";
             panel96.Size = new Size(35, 23);
             panel96.TabIndex = 1008;
@@ -7481,7 +7445,7 @@
             // panel97
             // 
             panel97.BorderStyle = BorderStyle.FixedSingle;
-            panel97.Location = new Point(289, 249);
+            panel97.Location = new Point(284, 242);
             panel97.Name = "panel97";
             panel97.Size = new Size(18, 23);
             panel97.TabIndex = 1007;
@@ -7490,7 +7454,7 @@
             // 
             p27.BorderStyle = BorderStyle.FixedSingle;
             p27.Controls.Add(lblMunzamBayindirlikToplami);
-            p27.Location = new Point(221, 249);
+            p27.Location = new Point(216, 242);
             p27.Name = "p27";
             p27.Size = new Size(68, 23);
             p27.TabIndex = 1006;
@@ -7509,7 +7473,7 @@
             // panel99
             // 
             panel99.BorderStyle = BorderStyle.FixedSingle;
-            panel99.Location = new Point(203, 249);
+            panel99.Location = new Point(198, 242);
             panel99.Name = "panel99";
             panel99.Size = new Size(18, 23);
             panel99.TabIndex = 1005;
@@ -7518,7 +7482,7 @@
             // 
             p26.BorderStyle = BorderStyle.FixedSingle;
             p26.Controls.Add(lblBKBayindirlikToplami);
-            p26.Location = new Point(135, 249);
+            p26.Location = new Point(130, 242);
             p26.Name = "p26";
             p26.Size = new Size(68, 23);
             p26.TabIndex = 1004;
@@ -7539,7 +7503,7 @@
             panel101.BorderStyle = BorderStyle.FixedSingle;
             panel101.Controls.Add(label60);
             panel101.Controls.Add(label61);
-            panel101.Location = new Point(52, 249);
+            panel101.Location = new Point(47, 242);
             panel101.Name = "panel101";
             panel101.Size = new Size(83, 23);
             panel101.TabIndex = 1003;
@@ -7569,7 +7533,7 @@
             // label67
             // 
             label67.AutoSize = true;
-            label67.Location = new Point(815, 9);
+            label67.Location = new Point(811, 3);
             label67.Margin = new Padding(1, 0, 1, 0);
             label67.Name = "label67";
             label67.Size = new Size(163, 15);
@@ -7580,7 +7544,7 @@
             // 
             panel102.BorderStyle = BorderStyle.FixedSingle;
             panel102.Controls.Add(label68);
-            panel102.Location = new Point(658, 30);
+            panel102.Location = new Point(654, 30);
             panel102.Name = "panel102";
             panel102.Size = new Size(148, 88);
             panel102.TabIndex = 1018;
@@ -7601,7 +7565,7 @@
             panel103.BorderStyle = BorderStyle.FixedSingle;
             panel103.Controls.Add(label71);
             panel103.Controls.Add(label69);
-            panel103.Location = new Point(806, 30);
+            panel103.Location = new Point(802, 30);
             panel103.Name = "panel103";
             panel103.Size = new Size(94, 88);
             panel103.TabIndex = 1019;
@@ -7633,7 +7597,7 @@
             panel104.BorderStyle = BorderStyle.FixedSingle;
             panel104.Controls.Add(label72);
             panel104.Controls.Add(label70);
-            panel104.Location = new Point(900, 62);
+            panel104.Location = new Point(896, 62);
             panel104.Name = "panel104";
             panel104.Size = new Size(40, 56);
             panel104.TabIndex = 1020;
@@ -7665,7 +7629,7 @@
             panel105.BorderStyle = BorderStyle.FixedSingle;
             panel105.Controls.Add(label73);
             panel105.Controls.Add(label74);
-            panel105.Location = new Point(940, 62);
+            panel105.Location = new Point(936, 62);
             panel105.Name = "panel105";
             panel105.Size = new Size(40, 56);
             panel105.TabIndex = 1021;
@@ -7697,7 +7661,7 @@
             panel106.BorderStyle = BorderStyle.FixedSingle;
             panel106.Controls.Add(label75);
             panel106.Controls.Add(label76);
-            panel106.Location = new Point(980, 62);
+            panel106.Location = new Point(976, 62);
             panel106.Name = "panel106";
             panel106.Size = new Size(40, 56);
             panel106.TabIndex = 1022;
@@ -7729,7 +7693,7 @@
             panel107.BorderStyle = BorderStyle.FixedSingle;
             panel107.Controls.Add(label77);
             panel107.Controls.Add(label78);
-            panel107.Location = new Point(1020, 30);
+            panel107.Location = new Point(1016, 30);
             panel107.Name = "panel107";
             panel107.Size = new Size(83, 88);
             panel107.TabIndex = 1023;
@@ -7760,7 +7724,7 @@
             // 
             panel108.BorderStyle = BorderStyle.FixedSingle;
             panel108.Controls.Add(label80);
-            panel108.Location = new Point(900, 30);
+            panel108.Location = new Point(896, 30);
             panel108.Name = "panel108";
             panel108.Size = new Size(120, 34);
             panel108.TabIndex = 1024;
@@ -7781,7 +7745,7 @@
             panel109.BorderStyle = BorderStyle.FixedSingle;
             panel109.Controls.Add(label81);
             panel109.Controls.Add(label79);
-            panel109.Location = new Point(658, 118);
+            panel109.Location = new Point(654, 118);
             panel109.Name = "panel109";
             panel109.Size = new Size(148, 23);
             panel109.TabIndex = 1025;
@@ -7813,7 +7777,7 @@
             panel110.BorderStyle = BorderStyle.FixedSingle;
             panel110.Controls.Add(label82);
             panel110.Controls.Add(label83);
-            panel110.Location = new Point(658, 141);
+            panel110.Location = new Point(654, 141);
             panel110.Name = "panel110";
             panel110.Size = new Size(148, 23);
             panel110.TabIndex = 1026;
@@ -7845,7 +7809,7 @@
             panel111.BorderStyle = BorderStyle.FixedSingle;
             panel111.Controls.Add(label85);
             panel111.Controls.Add(label86);
-            panel111.Location = new Point(658, 187);
+            panel111.Location = new Point(654, 187);
             panel111.Name = "panel111";
             panel111.Size = new Size(148, 23);
             panel111.TabIndex = 1028;
@@ -7876,7 +7840,7 @@
             // 
             panel112.BorderStyle = BorderStyle.FixedSingle;
             panel112.Controls.Add(label84);
-            panel112.Location = new Point(658, 164);
+            panel112.Location = new Point(654, 164);
             panel112.Name = "panel112";
             panel112.Size = new Size(148, 23);
             panel112.TabIndex = 1027;
@@ -7896,7 +7860,7 @@
             // 
             panel113.BorderStyle = BorderStyle.FixedSingle;
             panel113.Controls.Add(label87);
-            panel113.Location = new Point(658, 210);
+            panel113.Location = new Point(654, 210);
             panel113.Name = "panel113";
             panel113.Size = new Size(148, 23);
             panel113.TabIndex = 1029;
@@ -7917,7 +7881,7 @@
             panel114.BorderStyle = BorderStyle.FixedSingle;
             panel114.Controls.Add(label89);
             panel114.Controls.Add(label88);
-            panel114.Location = new Point(978, 276);
+            panel114.Location = new Point(974, 276);
             panel114.Name = "panel114";
             panel114.Size = new Size(103, 25);
             panel114.TabIndex = 1033;
@@ -7948,7 +7912,7 @@
             // 
             panel115.BorderStyle = BorderStyle.FixedSingle;
             panel115.Controls.Add(label90);
-            panel115.Location = new Point(876, 276);
+            panel115.Location = new Point(872, 276);
             panel115.Name = "panel115";
             panel115.Size = new Size(102, 25);
             panel115.TabIndex = 1032;
@@ -7968,7 +7932,7 @@
             // 
             panel116.BorderStyle = BorderStyle.FixedSingle;
             panel116.Controls.Add(label91);
-            panel116.Location = new Point(774, 276);
+            panel116.Location = new Point(770, 276);
             panel116.Name = "panel116";
             panel116.Size = new Size(102, 25);
             panel116.TabIndex = 1031;
@@ -7988,7 +7952,7 @@
             // 
             panel117.BorderStyle = BorderStyle.FixedSingle;
             panel117.Controls.Add(label92);
-            panel117.Location = new Point(672, 276);
+            panel117.Location = new Point(668, 276);
             panel117.Name = "panel117";
             panel117.Size = new Size(102, 25);
             panel117.TabIndex = 1030;
@@ -8008,7 +7972,7 @@
             // 
             p131.BorderStyle = BorderStyle.FixedSingle;
             p131.Controls.Add(lblDevir);
-            p131.Location = new Point(806, 118);
+            p131.Location = new Point(802, 118);
             p131.Name = "p131";
             p131.Size = new Size(94, 23);
             p131.TabIndex = 1034;
@@ -8021,15 +7985,15 @@
             lblDevir.Location = new Point(2, 2);
             lblDevir.Margin = new Padding(1, 0, 1, 0);
             lblDevir.Name = "lblDevir";
-            lblDevir.Size = new Size(15, 17);
+            lblDevir.Size = new Size(22, 17);
             lblDevir.TabIndex = 3;
-            lblDevir.Text = "0";
+            lblDevir.Text = "10";
             // 
             // p132
             // 
             p132.BorderStyle = BorderStyle.FixedSingle;
             p132.Controls.Add(lblGelir);
-            p132.Location = new Point(806, 141);
+            p132.Location = new Point(802, 141);
             p132.Name = "p132";
             p132.Size = new Size(94, 23);
             p132.TabIndex = 1035;
@@ -8042,15 +8006,15 @@
             lblGelir.Location = new Point(3, 2);
             lblGelir.Margin = new Padding(1, 0, 1, 0);
             lblGelir.Name = "lblGelir";
-            lblGelir.Size = new Size(15, 17);
+            lblGelir.Size = new Size(22, 17);
             lblGelir.TabIndex = 4;
-            lblGelir.Text = "0";
+            lblGelir.Text = "20";
             // 
             // p134
             // 
             p134.BorderStyle = BorderStyle.FixedSingle;
             p134.Controls.Add(lblToplamGider);
-            p134.Location = new Point(806, 187);
+            p134.Location = new Point(802, 187);
             p134.Name = "p134";
             p134.Size = new Size(94, 23);
             p134.TabIndex = 1037;
@@ -8062,35 +8026,35 @@
             lblToplamGider.Location = new Point(3, 2);
             lblToplamGider.Margin = new Padding(1, 0, 1, 0);
             lblToplamGider.Name = "lblToplamGider";
-            lblToplamGider.Size = new Size(15, 17);
+            lblToplamGider.Size = new Size(22, 17);
             lblToplamGider.TabIndex = 4;
-            lblToplamGider.Text = "0";
+            lblToplamGider.Text = "15";
             // 
             // p133
             // 
             p133.BorderStyle = BorderStyle.FixedSingle;
-            p133.Controls.Add(lblToplamGelir);
-            p133.Location = new Point(806, 164);
+            p133.Controls.Add(lblYekun);
+            p133.Location = new Point(802, 164);
             p133.Name = "p133";
             p133.Size = new Size(94, 23);
             p133.TabIndex = 1036;
             // 
-            // lblToplamGelir
+            // lblYekun
             // 
-            lblToplamGelir.AutoSize = true;
-            lblToplamGelir.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblToplamGelir.Location = new Point(3, 2);
-            lblToplamGelir.Margin = new Padding(1, 0, 1, 0);
-            lblToplamGelir.Name = "lblToplamGelir";
-            lblToplamGelir.Size = new Size(15, 17);
-            lblToplamGelir.TabIndex = 4;
-            lblToplamGelir.Text = "0";
+            lblYekun.AutoSize = true;
+            lblYekun.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            lblYekun.Location = new Point(3, 2);
+            lblYekun.Margin = new Padding(1, 0, 1, 0);
+            lblYekun.Name = "lblYekun";
+            lblYekun.Size = new Size(15, 17);
+            lblYekun.TabIndex = 4;
+            lblYekun.Text = "0";
             // 
             // p135
             // 
             p135.BorderStyle = BorderStyle.FixedSingle;
             p135.Controls.Add(lblButceSonucu);
-            p135.Location = new Point(806, 210);
+            p135.Location = new Point(802, 210);
             p135.Name = "p135";
             p135.Size = new Size(94, 23);
             p135.TabIndex = 1038;
@@ -8109,7 +8073,7 @@
             // panel123
             // 
             panel123.BorderStyle = BorderStyle.FixedSingle;
-            panel123.Location = new Point(900, 118);
+            panel123.Location = new Point(896, 118);
             panel123.Name = "panel123";
             panel123.Size = new Size(40, 23);
             panel123.TabIndex = 1039;
@@ -8117,7 +8081,7 @@
             // panel124
             // 
             panel124.BorderStyle = BorderStyle.FixedSingle;
-            panel124.Location = new Point(940, 118);
+            panel124.Location = new Point(936, 118);
             panel124.Name = "panel124";
             panel124.Size = new Size(40, 23);
             panel124.TabIndex = 1040;
@@ -8125,7 +8089,7 @@
             // panel125
             // 
             panel125.BorderStyle = BorderStyle.FixedSingle;
-            panel125.Location = new Point(980, 118);
+            panel125.Location = new Point(976, 118);
             panel125.Name = "panel125";
             panel125.Size = new Size(40, 23);
             panel125.TabIndex = 1041;
@@ -8133,7 +8097,7 @@
             // panel126
             // 
             panel126.BorderStyle = BorderStyle.FixedSingle;
-            panel126.Location = new Point(1020, 118);
+            panel126.Location = new Point(1016, 118);
             panel126.Name = "panel126";
             panel126.Size = new Size(83, 23);
             panel126.TabIndex = 1042;
@@ -8141,7 +8105,7 @@
             // panel127
             // 
             panel127.BorderStyle = BorderStyle.FixedSingle;
-            panel127.Location = new Point(1020, 141);
+            panel127.Location = new Point(1016, 141);
             panel127.Name = "panel127";
             panel127.Size = new Size(83, 23);
             panel127.TabIndex = 1046;
@@ -8149,7 +8113,7 @@
             // panel128
             // 
             panel128.BorderStyle = BorderStyle.FixedSingle;
-            panel128.Location = new Point(980, 141);
+            panel128.Location = new Point(976, 141);
             panel128.Name = "panel128";
             panel128.Size = new Size(40, 23);
             panel128.TabIndex = 1045;
@@ -8157,7 +8121,7 @@
             // panel129
             // 
             panel129.BorderStyle = BorderStyle.FixedSingle;
-            panel129.Location = new Point(940, 141);
+            panel129.Location = new Point(936, 141);
             panel129.Name = "panel129";
             panel129.Size = new Size(40, 23);
             panel129.TabIndex = 1044;
@@ -8165,7 +8129,7 @@
             // panel130
             // 
             panel130.BorderStyle = BorderStyle.FixedSingle;
-            panel130.Location = new Point(900, 141);
+            panel130.Location = new Point(896, 141);
             panel130.Name = "panel130";
             panel130.Size = new Size(40, 23);
             panel130.TabIndex = 1043;
@@ -8173,7 +8137,7 @@
             // panel131
             // 
             panel131.BorderStyle = BorderStyle.FixedSingle;
-            panel131.Location = new Point(1020, 164);
+            panel131.Location = new Point(1016, 164);
             panel131.Name = "panel131";
             panel131.Size = new Size(83, 23);
             panel131.TabIndex = 1050;
@@ -8181,7 +8145,7 @@
             // panel132
             // 
             panel132.BorderStyle = BorderStyle.FixedSingle;
-            panel132.Location = new Point(980, 164);
+            panel132.Location = new Point(976, 164);
             panel132.Name = "panel132";
             panel132.Size = new Size(40, 23);
             panel132.TabIndex = 1049;
@@ -8189,7 +8153,7 @@
             // panel133
             // 
             panel133.BorderStyle = BorderStyle.FixedSingle;
-            panel133.Location = new Point(940, 164);
+            panel133.Location = new Point(936, 164);
             panel133.Name = "panel133";
             panel133.Size = new Size(40, 23);
             panel133.TabIndex = 1048;
@@ -8197,7 +8161,7 @@
             // panel134
             // 
             panel134.BorderStyle = BorderStyle.FixedSingle;
-            panel134.Location = new Point(900, 164);
+            panel134.Location = new Point(896, 164);
             panel134.Name = "panel134";
             panel134.Size = new Size(40, 23);
             panel134.TabIndex = 1047;
@@ -8205,7 +8169,7 @@
             // panel135
             // 
             panel135.BorderStyle = BorderStyle.FixedSingle;
-            panel135.Location = new Point(1020, 210);
+            panel135.Location = new Point(1016, 210);
             panel135.Name = "panel135";
             panel135.Size = new Size(83, 23);
             panel135.TabIndex = 1058;
@@ -8213,7 +8177,7 @@
             // panel136
             // 
             panel136.BorderStyle = BorderStyle.FixedSingle;
-            panel136.Location = new Point(980, 210);
+            panel136.Location = new Point(976, 210);
             panel136.Name = "panel136";
             panel136.Size = new Size(40, 23);
             panel136.TabIndex = 1057;
@@ -8221,7 +8185,7 @@
             // panel137
             // 
             panel137.BorderStyle = BorderStyle.FixedSingle;
-            panel137.Location = new Point(940, 210);
+            panel137.Location = new Point(936, 210);
             panel137.Name = "panel137";
             panel137.Size = new Size(40, 23);
             panel137.TabIndex = 1056;
@@ -8229,7 +8193,7 @@
             // panel138
             // 
             panel138.BorderStyle = BorderStyle.FixedSingle;
-            panel138.Location = new Point(900, 210);
+            panel138.Location = new Point(896, 210);
             panel138.Name = "panel138";
             panel138.Size = new Size(40, 23);
             panel138.TabIndex = 1055;
@@ -8237,7 +8201,7 @@
             // panel139
             // 
             panel139.BorderStyle = BorderStyle.FixedSingle;
-            panel139.Location = new Point(1020, 187);
+            panel139.Location = new Point(1016, 187);
             panel139.Name = "panel139";
             panel139.Size = new Size(83, 23);
             panel139.TabIndex = 1054;
@@ -8245,7 +8209,7 @@
             // panel140
             // 
             panel140.BorderStyle = BorderStyle.FixedSingle;
-            panel140.Location = new Point(980, 187);
+            panel140.Location = new Point(976, 187);
             panel140.Name = "panel140";
             panel140.Size = new Size(40, 23);
             panel140.TabIndex = 1053;
@@ -8253,7 +8217,7 @@
             // panel141
             // 
             panel141.BorderStyle = BorderStyle.FixedSingle;
-            panel141.Location = new Point(940, 187);
+            panel141.Location = new Point(936, 187);
             panel141.Name = "panel141";
             panel141.Size = new Size(40, 23);
             panel141.TabIndex = 1052;
@@ -8261,7 +8225,7 @@
             // panel142
             // 
             panel142.BorderStyle = BorderStyle.FixedSingle;
-            panel142.Location = new Point(900, 187);
+            panel142.Location = new Point(896, 187);
             panel142.Name = "panel142";
             panel142.Size = new Size(40, 23);
             panel142.TabIndex = 1051;
@@ -8270,7 +8234,7 @@
             // 
             label93.AutoSize = true;
             label93.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label93.Location = new Point(658, 236);
+            label93.Location = new Point(654, 236);
             label93.Margin = new Padding(1, 0, 1, 0);
             label93.Name = "label93";
             label93.Size = new Size(424, 13);
@@ -8280,7 +8244,7 @@
             // label94
             // 
             label94.AutoSize = true;
-            label94.Location = new Point(769, 257);
+            label94.Location = new Point(765, 257);
             label94.Margin = new Padding(1, 0, 1, 0);
             label94.Name = "label94";
             label94.Size = new Size(217, 15);
@@ -8290,7 +8254,7 @@
             // panel143
             // 
             panel143.BorderStyle = BorderStyle.FixedSingle;
-            panel143.Location = new Point(977, 301);
+            panel143.Location = new Point(973, 301);
             panel143.Name = "panel143";
             panel143.Size = new Size(104, 20);
             panel143.TabIndex = 1064;
@@ -8298,7 +8262,7 @@
             // panel144
             // 
             panel144.BorderStyle = BorderStyle.FixedSingle;
-            panel144.Location = new Point(876, 301);
+            panel144.Location = new Point(872, 301);
             panel144.Name = "panel144";
             panel144.Size = new Size(102, 20);
             panel144.TabIndex = 1063;
@@ -8306,7 +8270,7 @@
             // panel145
             // 
             panel145.BorderStyle = BorderStyle.FixedSingle;
-            panel145.Location = new Point(774, 301);
+            panel145.Location = new Point(770, 301);
             panel145.Name = "panel145";
             panel145.Size = new Size(102, 20);
             panel145.TabIndex = 1062;
@@ -8314,7 +8278,7 @@
             // panel146
             // 
             panel146.BorderStyle = BorderStyle.FixedSingle;
-            panel146.Location = new Point(672, 301);
+            panel146.Location = new Point(668, 301);
             panel146.Name = "panel146";
             panel146.Size = new Size(102, 20);
             panel146.TabIndex = 1061;
@@ -8322,7 +8286,7 @@
             // panel147
             // 
             panel147.BorderStyle = BorderStyle.FixedSingle;
-            panel147.Location = new Point(977, 321);
+            panel147.Location = new Point(973, 321);
             panel147.Name = "panel147";
             panel147.Size = new Size(104, 20);
             panel147.TabIndex = 1068;
@@ -8330,7 +8294,7 @@
             // panel148
             // 
             panel148.BorderStyle = BorderStyle.FixedSingle;
-            panel148.Location = new Point(876, 321);
+            panel148.Location = new Point(872, 321);
             panel148.Name = "panel148";
             panel148.Size = new Size(102, 20);
             panel148.TabIndex = 1067;
@@ -8338,7 +8302,7 @@
             // panel149
             // 
             panel149.BorderStyle = BorderStyle.FixedSingle;
-            panel149.Location = new Point(774, 321);
+            panel149.Location = new Point(770, 321);
             panel149.Name = "panel149";
             panel149.Size = new Size(102, 20);
             panel149.TabIndex = 1066;
@@ -8346,7 +8310,7 @@
             // panel150
             // 
             panel150.BorderStyle = BorderStyle.FixedSingle;
-            panel150.Location = new Point(672, 321);
+            panel150.Location = new Point(668, 321);
             panel150.Name = "panel150";
             panel150.Size = new Size(102, 20);
             panel150.TabIndex = 1065;
@@ -8354,7 +8318,7 @@
             // panel151
             // 
             panel151.BorderStyle = BorderStyle.FixedSingle;
-            panel151.Location = new Point(977, 360);
+            panel151.Location = new Point(973, 360);
             panel151.Name = "panel151";
             panel151.Size = new Size(104, 20);
             panel151.TabIndex = 1076;
@@ -8362,7 +8326,7 @@
             // panel152
             // 
             panel152.BorderStyle = BorderStyle.FixedSingle;
-            panel152.Location = new Point(876, 360);
+            panel152.Location = new Point(872, 360);
             panel152.Name = "panel152";
             panel152.Size = new Size(102, 20);
             panel152.TabIndex = 1075;
@@ -8370,7 +8334,7 @@
             // panel153
             // 
             panel153.BorderStyle = BorderStyle.FixedSingle;
-            panel153.Location = new Point(774, 360);
+            panel153.Location = new Point(770, 360);
             panel153.Name = "panel153";
             panel153.Size = new Size(102, 20);
             panel153.TabIndex = 1074;
@@ -8378,7 +8342,7 @@
             // panel154
             // 
             panel154.BorderStyle = BorderStyle.FixedSingle;
-            panel154.Location = new Point(672, 360);
+            panel154.Location = new Point(668, 360);
             panel154.Name = "panel154";
             panel154.Size = new Size(102, 20);
             panel154.TabIndex = 1073;
@@ -8386,7 +8350,7 @@
             // panel155
             // 
             panel155.BorderStyle = BorderStyle.FixedSingle;
-            panel155.Location = new Point(977, 340);
+            panel155.Location = new Point(973, 340);
             panel155.Name = "panel155";
             panel155.Size = new Size(104, 20);
             panel155.TabIndex = 1072;
@@ -8394,7 +8358,7 @@
             // panel156
             // 
             panel156.BorderStyle = BorderStyle.FixedSingle;
-            panel156.Location = new Point(876, 340);
+            panel156.Location = new Point(872, 340);
             panel156.Name = "panel156";
             panel156.Size = new Size(102, 20);
             panel156.TabIndex = 1071;
@@ -8402,7 +8366,7 @@
             // panel157
             // 
             panel157.BorderStyle = BorderStyle.FixedSingle;
-            panel157.Location = new Point(774, 340);
+            panel157.Location = new Point(770, 340);
             panel157.Name = "panel157";
             panel157.Size = new Size(102, 20);
             panel157.TabIndex = 1070;
@@ -8410,7 +8374,7 @@
             // panel158
             // 
             panel158.BorderStyle = BorderStyle.FixedSingle;
-            panel158.Location = new Point(672, 340);
+            panel158.Location = new Point(668, 340);
             panel158.Name = "panel158";
             panel158.Size = new Size(102, 20);
             panel158.TabIndex = 1069;
@@ -8812,7 +8776,7 @@
             // 
             pMuhtar.Controls.Add(lblMuhtar);
             pMuhtar.Controls.Add(lblMuhtarY);
-            pMuhtar.Location = new Point(676, 545);
+            pMuhtar.Location = new Point(672, 545);
             pMuhtar.Name = "pMuhtar";
             pMuhtar.Size = new Size(114, 33);
             pMuhtar.TabIndex = 1092;
@@ -8842,7 +8806,7 @@
             // 
             pMudur.Controls.Add(lblMudur);
             pMudur.Controls.Add(lblMudurY);
-            pMudur.Location = new Point(826, 545);
+            pMudur.Location = new Point(822, 545);
             pMudur.Name = "pMudur";
             pMudur.Size = new Size(114, 33);
             pMudur.TabIndex = 1093;
@@ -8872,7 +8836,7 @@
             // 
             pImam.Controls.Add(lblImam);
             pImam.Controls.Add(lblImamY);
-            pImam.Location = new Point(989, 545);
+            pImam.Location = new Point(985, 545);
             pImam.Name = "pImam";
             pImam.Size = new Size(114, 33);
             pImam.TabIndex = 1094;
@@ -8902,7 +8866,7 @@
             // 
             pAza1.Controls.Add(lblAza1);
             pAza1.Controls.Add(lblAza1Y);
-            pAza1.Location = new Point(676, 636);
+            pAza1.Location = new Point(672, 636);
             pAza1.Name = "pAza1";
             pAza1.Size = new Size(114, 33);
             pAza1.TabIndex = 1095;
@@ -8932,7 +8896,7 @@
             // 
             pAza2.Controls.Add(lblAza2);
             pAza2.Controls.Add(lblAza2Y);
-            pAza2.Location = new Point(826, 636);
+            pAza2.Location = new Point(822, 636);
             pAza2.Name = "pAza2";
             pAza2.Size = new Size(114, 33);
             pAza2.TabIndex = 1096;
@@ -8941,7 +8905,7 @@
             // 
             pAza3.Controls.Add(lblAza3);
             pAza3.Controls.Add(lblAza3Y);
-            pAza3.Location = new Point(989, 636);
+            pAza3.Location = new Point(985, 636);
             pAza3.Name = "pAza3";
             pAza3.Size = new Size(114, 33);
             pAza3.TabIndex = 1097;
@@ -8950,7 +8914,7 @@
             // 
             pAza4.Controls.Add(lblAza4);
             pAza4.Controls.Add(lblAza4Y);
-            pAza4.Location = new Point(676, 730);
+            pAza4.Location = new Point(672, 730);
             pAza4.Name = "pAza4";
             pAza4.Size = new Size(114, 33);
             pAza4.TabIndex = 1098;
@@ -8969,7 +8933,7 @@
             // 
             pKatip.Controls.Add(lblKatip);
             pKatip.Controls.Add(lblKatipY);
-            pKatip.Location = new Point(826, 731);
+            pKatip.Location = new Point(822, 731);
             pKatip.Name = "pKatip";
             pKatip.Size = new Size(114, 33);
             pKatip.TabIndex = 1099;
@@ -8978,7 +8942,7 @@
             // 
             p66.BorderStyle = BorderStyle.FixedSingle;
             p66.Controls.Add(lblBKKHGB);
-            p66.Location = new Point(135, 454);
+            p66.Location = new Point(130, 447);
             p66.Name = "p66";
             p66.Size = new Size(68, 23);
             p66.TabIndex = 755;
@@ -9057,6 +9021,15 @@
             p139.Name = "p139";
             p139.Size = new Size(63, 20);
             p139.TabIndex = 1102;
+            // 
+            // p5
+            // 
+            p5.BorderStyle = BorderStyle.FixedSingle;
+            p5.Controls.Add(lblIptalYolKopru);
+            p5.Location = new Point(561, 130);
+            p5.Name = "p5";
+            p5.Size = new Size(68, 23);
+            p5.TabIndex = 634;
             // 
             // FrmKesinHesap2Y
             // 
@@ -9499,7 +9472,6 @@
             this.Controls.Add(panel299);
             this.Controls.Add(panel327);
             this.Controls.Add(panel274);
-            this.Controls.Add(p5);
             this.Controls.Add(panel298);
             this.Controls.Add(p1);
             this.Controls.Add(panel303);
@@ -9510,6 +9482,7 @@
             this.Controls.Add(panel304);
             this.Controls.Add(p2);
             this.Controls.Add(p9);
+            this.Controls.Add(p5);
             this.Controls.Add(p4);
             this.Controls.Add(panel308);
             this.Controls.Add(panel317);
@@ -9644,8 +9617,6 @@
             p81.PerformLayout();
             panel569.ResumeLayout(false);
             panel569.PerformLayout();
-            panel570.ResumeLayout(false);
-            panel570.PerformLayout();
             panel571.ResumeLayout(false);
             panel571.PerformLayout();
             panel572.ResumeLayout(false);
@@ -9766,8 +9737,6 @@
             panel327.PerformLayout();
             panel274.ResumeLayout(false);
             panel274.PerformLayout();
-            p5.ResumeLayout(false);
-            p5.PerformLayout();
             p1.ResumeLayout(false);
             p1.PerformLayout();
             p10.ResumeLayout(false);
@@ -9992,6 +9961,8 @@
             p142.PerformLayout();
             p139.ResumeLayout(false);
             p139.PerformLayout();
+            p5.ResumeLayout(false);
+            p5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
@@ -10138,10 +10109,6 @@
         private Panel panel567;
         private Panel p81;
         private Panel panel569;
-        private Panel panel570;
-        private Label label222;
-        private Label label236;
-        private Label label190;
         private Label label191;
         private Panel panel571;
         private Label label197;
@@ -10507,7 +10474,7 @@
         private Panel panel62;
         private Panel panel63;
         private Panel p19;
-        private Label lblOdenenAydinlatla;
+        private Label lblOdenenAydinlatma;
         private Panel panel65;
         private Panel p18;
         private Label lblTahakkukAydinlatma;
@@ -10702,16 +10669,16 @@
         private Label lblMunzamUmulmadik;
         private Label lblBKUmulmadik;
         private Label lblMunzamMahkeme;
-        private Label lblBKMahkemeKesif;
+        private Label lblBKMahkeme;
         private Label lblBKVergi;
         private Label lblMunzamVergi;
         private Label lblTahakkukVergi;
-        private Label lblMunzamKoyBorcui;
+        private Label lblMunzamKoyBorcu;
         private Label lblBKKoyBorcu;
         private Label lblMunzamTurluIslerToplami;
         private Label lblBKTurluIslerToplami;
         private Label lblIptalSaglikToplami;
-        private Label lblBKSaglıkToplami;
+        private Label lblBKSaglik;
         private Label lblIptalToplamBayindirlik;
         private Label lblMunzamSaglikToplami;
         private Label lblOdenenToplamBayindirlik;
@@ -10719,14 +10686,14 @@
         private Label lblTahakkukToplamBayindirlik;
         private Label lblTahakkukSaglıkToplami;
         private Label lblMunzamToplamBayindirlik;
-        private Label lblBKToplamBayindirlik;
+        private Label lblBKBayindirlik;
         private Label lblIptalKulturToplami;
         private Label lblOdenenKulturToplami;
         private Label lblTahakkukKulturToplami;
         private Label lblMunzamKulturToplami;
-        private Label lblBKKulturToplami;
+        private Label lblBKKultur;
         private Label lblIptalIdariIslerToplami;
-        private Label lblBKIdariIslerToplami;
+        private Label lblBKIdariIsler;
         private Label lblIptalZiraatToplami;
         private Label lblMunzamIdariIslerToplami;
         private Label lblOdenenZiraatToplami;
@@ -10734,7 +10701,7 @@
         private Label lblTahakkukZiraatToplami;
         private Label lblTahakkukIdariIslerToplami;
         private Label lblMunzamZiraatToplami;
-        private Label lblBKZiraatToplami;
+        private Label lblBKZiraat;
         private Label lblOdenenKHGB;
         private Label lblTahakkukKHGB;
         private Label lblOdenenIlkogretim;
@@ -10754,12 +10721,12 @@
         private Label lblOdenenToplamTurluİsler;
         private Label lblTahakkukToplamTurluİsler;
         private Label lblMunzamToplamTurluİsler;
-        private Label lblBKToplamTurluIsler;
+        private Label lblBKTurluIsler;
         private Label lblIptalToplamAsker;
         private Label lblOdenenToplamAsker;
         private Label lblTahakkukToplamAsker;
         private Label lblMunzamToplamAsker;
-        private Label lblBKToplamAsker;
+        private Label lblBKAsker;
         private Label lblIptalGenelToplami;
         private Label lblOdenenGenelToplami;
         private Label lblTahakkukGenelToplam;
@@ -10770,7 +10737,7 @@
         private Label lblDevir;
         private Label lblGelir;
         private Label lblToplamGider;
-        private Label lblToplamGelir;
+        private Label lblYekun;
         private Label lblButceSonucu;
         private Label label357;
         private Label label358;
@@ -10785,12 +10752,12 @@
         private Label label365;
         private Label label366;
         private Label label367;
-        private Label lblIptalAsker;
+        private Label lblIptalAskerYardim;
         private Label lblBKAskerYardim;
         private Label lblIptalAskerToplami;
         private Label lblMunzamAskerYardim;
         private Label lblOdenenAskerToplami;
-        private Label lblOdenenAsker;
+        private Label lblOdenenAskerYardim;
         private Label lblTahakkukAskerToplami;
         private Label lblTahakkukAskerYardim;
         private Label lblMunzamAskerToplami;
@@ -10823,5 +10790,7 @@
         private Panel p139;
         private Label lblAza4;
         private Label lblButceGenelToplami;
+        private Label label14;
+        private Label label19;
     }
 }

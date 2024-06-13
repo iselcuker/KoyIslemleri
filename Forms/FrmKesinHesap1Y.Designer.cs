@@ -105,10 +105,6 @@
             panel48 = new Panel();
             panel31 = new Panel();
             panel32 = new Panel();
-            panel33 = new Panel();
-            panel34 = new Panel();
-            panel35 = new Panel();
-            panel36 = new Panel();
             panel37 = new Panel();
             panel38 = new Panel();
             panel39 = new Panel();
@@ -117,10 +113,6 @@
             panel42 = new Panel();
             panel49 = new Panel();
             panel50 = new Panel();
-            panel51 = new Panel();
-            panel52 = new Panel();
-            panel53 = new Panel();
-            panel54 = new Panel();
             panel13 = new Panel();
             panel14 = new Panel();
             panel15 = new Panel();
@@ -181,31 +173,31 @@
             label72 = new Label();
             panel84 = new Panel();
             panel85 = new Panel();
-            panel86 = new Panel();
-            panel87 = new Panel();
-            panel88 = new Panel();
+            p8 = new Panel();
+            p3 = new Panel();
+            p14 = new Panel();
             lblDevredenCeza = new Label();
-            panel89 = new Panel();
+            p10 = new Panel();
             lblDevredenResim = new Label();
-            panel90 = new Panel();
+            p5 = new Panel();
             lblDevredenHasilat = new Label();
-            panel94 = new Panel();
+            p13 = new Panel();
             lblTahsilCeza = new Label();
-            panel95 = new Panel();
+            p9 = new Panel();
             lblTahsilResim = new Label();
-            panel96 = new Panel();
+            p4 = new Panel();
             lblTahsilHasilat = new Label();
-            panel100 = new Panel();
+            p12 = new Panel();
             lblMunzamCeza = new Label();
-            panel101 = new Panel();
+            p7 = new Panel();
             lblMunzamResim = new Label();
-            panel102 = new Panel();
+            p2 = new Panel();
             lblMunzamHasilat = new Label();
-            panel106 = new Panel();
+            p11 = new Panel();
             lblBKCeza = new Label();
-            panel107 = new Panel();
+            p6 = new Panel();
             lblBKResim = new Label();
-            panel108 = new Panel();
+            p1 = new Panel();
             panel109 = new Panel();
             lblBKHasilat = new Label();
             panel110 = new Panel();
@@ -233,7 +225,6 @@
             panel122 = new Panel();
             label88 = new Label();
             panel123 = new Panel();
-            label89 = new Label();
             label57 = new Label();
             panel124 = new Panel();
             label90 = new Label();
@@ -250,68 +241,68 @@
             panel131 = new Panel();
             panel132 = new Panel();
             panel133 = new Panel();
-            panel134 = new Panel();
+            p26 = new Panel();
             lblDevredenIstikraz = new Label();
-            panel135 = new Panel();
+            p22 = new Panel();
             lblDevredenKoyVakif = new Label();
-            panel136 = new Panel();
+            p18 = new Panel();
             panel137 = new Panel();
             lblDevredenYardim = new Label();
             panel138 = new Panel();
             panel139 = new Panel();
-            panel140 = new Panel();
+            p25 = new Panel();
             lblTahsilIstikraz = new Label();
-            panel141 = new Panel();
+            p21 = new Panel();
             lblTahsilKoyVakif = new Label();
-            panel142 = new Panel();
+            p17 = new Panel();
             panel143 = new Panel();
             lblTahsilYardim = new Label();
             panel144 = new Panel();
             panel145 = new Panel();
-            panel146 = new Panel();
+            p24 = new Panel();
             label424 = new Label();
-            panel147 = new Panel();
+            p20 = new Panel();
             lblMunzamKoyVakif = new Label();
-            panel148 = new Panel();
+            p16 = new Panel();
             panel149 = new Panel();
             lblMunzamYardim = new Label();
             panel150 = new Panel();
             panel151 = new Panel();
-            panel152 = new Panel();
+            p23 = new Panel();
             lblBKIstikraz = new Label();
-            panel153 = new Panel();
+            p19 = new Panel();
             lblBKKoyVakif = new Label();
-            panel154 = new Panel();
+            p15 = new Panel();
             panel155 = new Panel();
             lblBKYardim = new Label();
             panel156 = new Panel();
             panel157 = new Panel();
             panel158 = new Panel();
-            panel159 = new Panel();
+            p30 = new Panel();
             lblDevredenTurluGelir = new Label();
-            panel160 = new Panel();
+            p29 = new Panel();
             lblTahsilTurluGelir = new Label();
-            panel161 = new Panel();
+            p28 = new Panel();
             lblMunzamTurluGelir = new Label();
-            panel162 = new Panel();
+            p27 = new Panel();
             lblBKTurluGelir = new Label();
             panel163 = new Panel();
-            panel164 = new Panel();
+            p38 = new Panel();
             lblDevredenToplami = new Label();
-            panel165 = new Panel();
+            p37 = new Panel();
             lblTahsilToplami = new Label();
-            panel166 = new Panel();
+            p36 = new Panel();
             lblMunzamToplami = new Label();
-            panel167 = new Panel();
+            p35 = new Panel();
             lblBKGelirToplami = new Label();
             panel168 = new Panel();
-            panel169 = new Panel();
+            p34 = new Panel();
             lblDevredenDevir = new Label();
-            panel170 = new Panel();
+            p33 = new Panel();
             lblTahsilDevir = new Label();
-            panel171 = new Panel();
+            p32 = new Panel();
             lblMunzamDevir = new Label();
-            panel172 = new Panel();
+            p31 = new Panel();
             lblBKDevir = new Label();
             panel173 = new Panel();
             panel174 = new Panel();
@@ -330,20 +321,24 @@
             panel181 = new Panel();
             label110 = new Label();
             panel182 = new Panel();
-            label111 = new Label();
             panel184 = new Panel();
             label114 = new Label();
             panel185 = new Panel();
-            label115 = new Label();
             panel186 = new Panel();
             panel188 = new Panel();
             panel189 = new Panel();
-            panel191 = new Panel();
-            panel192 = new Panel();
-            panel197 = new Panel();
-            panel198 = new Panel();
+            p45 = new Panel();
+            lblDevredenAskerToplami = new Label();
+            p42 = new Panel();
+            lblDevredenAsker = new Label();
+            p44 = new Panel();
+            lblTahsilAskerToplami = new Label();
+            p41 = new Panel();
+            lblTahsilAsker = new Label();
             panel203 = new Panel();
-            panel210 = new Panel();
+            lblMunzamAskerToplami = new Label();
+            p39 = new Panel();
+            lblBKAsker = new Label();
             label120 = new Label();
             panel214 = new Panel();
             label122 = new Label();
@@ -384,16 +379,16 @@
             panel208 = new Panel();
             panel249 = new Panel();
             panel250 = new Panel();
-            panel251 = new Panel();
+            p49 = new Panel();
             lblDevredenGenelToplami = new Label();
             panel252 = new Panel();
-            panel256 = new Panel();
+            p48 = new Panel();
             lblTahsilGenelToplam = new Label();
             panel257 = new Panel();
-            panel261 = new Panel();
+            p47 = new Panel();
             lblMunzamGenelToplam = new Label();
             panel262 = new Panel();
-            panel266 = new Panel();
+            p46 = new Panel();
             lblBKGenelToplam = new Label();
             panel267 = new Panel();
             panel271 = new Panel();
@@ -464,11 +459,9 @@
             label301 = new Label();
             panel297 = new Panel();
             label33 = new Label();
-            panel324 = new Panel();
             panel273 = new Panel();
             label181 = new Label();
             label151 = new Label();
-            label162 = new Label();
             panel325 = new Panel();
             label164 = new Label();
             label166 = new Label();
@@ -480,79 +473,79 @@
             panel327 = new Panel();
             label208 = new Label();
             label165 = new Label();
-            panel318 = new Panel();
+            p56 = new Panel();
             lblMunzamIdariMasraf = new Label();
             panel316 = new Panel();
             panel314 = new Panel();
             panel312 = new Panel();
-            panel310 = new Panel();
+            p57 = new Panel();
             lblTahakkukIdariMasraf = new Label();
             panel308 = new Panel();
-            panel306 = new Panel();
+            p58 = new Panel();
             lblOdenenIdariMasraf = new Label();
             panel304 = new Panel();
             panel302 = new Panel();
-            panel300 = new Panel();
+            p59 = new Panel();
             lblIptalIdariMasraf = new Label();
             panel298 = new Panel();
-            panel322 = new Panel();
+            p55 = new Panel();
             lblBKIdariMasraf = new Label();
             panel320 = new Panel();
             panel299 = new Panel();
-            panel301 = new Panel();
+            p54 = new Panel();
             lblIptalAylik = new Label();
             panel303 = new Panel();
             panel305 = new Panel();
-            panel307 = new Panel();
+            p53 = new Panel();
             lblOdenenAylik = new Label();
             panel309 = new Panel();
-            panel311 = new Panel();
+            p52 = new Panel();
             lblTahakkukAylik = new Label();
             panel313 = new Panel();
             panel315 = new Panel();
             panel317 = new Panel();
-            panel319 = new Panel();
+            p51 = new Panel();
             lblMunzamAylik = new Label();
             panel321 = new Panel();
-            panel323 = new Panel();
+            p50 = new Panel();
             lblBKAylik = new Label();
             panel328 = new Panel();
-            panel329 = new Panel();
+            p64 = new Panel();
             lblIptalIdariToplami = new Label();
             panel330 = new Panel();
             panel331 = new Panel();
-            panel332 = new Panel();
+            p63 = new Panel();
             lblOdenenIdariToplami = new Label();
             panel333 = new Panel();
-            panel334 = new Panel();
+            p62 = new Panel();
             lblTahakkukIdariToplami = new Label();
             panel335 = new Panel();
             panel336 = new Panel();
             panel337 = new Panel();
-            panel338 = new Panel();
+            p61 = new Panel();
             lblMunzamIdariToplami = new Label();
             panel339 = new Panel();
-            panel340 = new Panel();
+            p60 = new Panel();
             lblBKIdariToplami = new Label();
             label155 = new Label();
             label156 = new Label();
             panel341 = new Panel();
-            panel342 = new Panel();
+            p79 = new Panel();
             lblIptalDamizlik = new Label();
             panel343 = new Panel();
             panel344 = new Panel();
-            panel345 = new Panel();
+            p78 = new Panel();
             lblOdenenDamizlik = new Label();
             panel346 = new Panel();
-            panel347 = new Panel();
-            lblTahakkukDamizlit = new Label();
+            p77 = new Panel();
+            lblTahakkukDamizlik = new Label();
             panel348 = new Panel();
             panel349 = new Panel();
             panel350 = new Panel();
-            panel351 = new Panel();
+            p76 = new Panel();
             lblMunzamDamizlik = new Label();
             panel352 = new Panel();
-            panel353 = new Panel();
+            p75 = new Panel();
             lblBKDamizlik = new Label();
             panel354 = new Panel();
             panel355 = new Panel();
@@ -562,27 +555,27 @@
             label209 = new Label();
             label158 = new Label();
             label234 = new Label();
-            panel357 = new Panel();
+            p69 = new Panel();
             lblIptalSulama = new Label();
             panel358 = new Panel();
-            panel359 = new Panel();
+            p65 = new Panel();
             lblBKSulama = new Label();
             panel360 = new Panel();
-            panel361 = new Panel();
+            p74 = new Panel();
             lblIptalAgaclama = new Label();
             panel362 = new Panel();
             panel363 = new Panel();
             panel364 = new Panel();
             panel365 = new Panel();
-            panel366 = new Panel();
+            p66 = new Panel();
             lblMunzamSulama = new Label();
-            panel367 = new Panel();
+            p73 = new Panel();
             lblOdenenAgaclama = new Label();
-            panel368 = new Panel();
+            p68 = new Panel();
             lblOdenenSulama = new Label();
             panel369 = new Panel();
             panel370 = new Panel();
-            panel371 = new Panel();
+            p72 = new Panel();
             lblTahakkukAgaclama = new Label();
             panel372 = new Panel();
             panel373 = new Panel();
@@ -590,16 +583,14 @@
             panel375 = new Panel();
             panel377 = new Panel();
             panel378 = new Panel();
-            panel379 = new Panel();
+            p71 = new Panel();
             lblMunzamAgaclama = new Label();
             panel380 = new Panel();
-            panel381 = new Panel();
-            lblBKlblBKAgaclama = new Label();
-            panel382 = new Panel();
+            p70 = new Panel();
+            lblBKAgaclama = new Label();
             panel383 = new Panel();
             label159 = new Label();
             label215 = new Label();
-            label160 = new Label();
             panel384 = new Panel();
             label180 = new Label();
             label179 = new Label();
@@ -611,22 +602,22 @@
             panel385 = new Panel();
             label168 = new Label();
             panel386 = new Panel();
-            panel387 = new Panel();
+            p94 = new Panel();
             lblIptalPazarCarsi = new Label();
             panel388 = new Panel();
             panel389 = new Panel();
-            panel390 = new Panel();
+            p93 = new Panel();
             lblOdenenPazarCarsi = new Label();
             panel391 = new Panel();
-            panel392 = new Panel();
+            p92 = new Panel();
             lblTahakkukPazarCarsi = new Label();
             panel393 = new Panel();
             panel394 = new Panel();
             panel395 = new Panel();
-            panel396 = new Panel();
+            p91 = new Panel();
             lblMunzamPazarCarsi = new Label();
             panel397 = new Panel();
-            panel398 = new Panel();
+            p90 = new Panel();
             lblBKPazarCarsi = new Label();
             panel399 = new Panel();
             panel400 = new Panel();
@@ -635,64 +626,62 @@
             panel401 = new Panel();
             label175 = new Label();
             label217 = new Label();
-            panel402 = new Panel();
+            p84 = new Panel();
             lblIptalOrnekTarla = new Label();
             panel403 = new Panel();
-            panel404 = new Panel();
+            p80 = new Panel();
             lblBKOrnekTarla = new Label();
             panel405 = new Panel();
-            panel406 = new Panel();
+            p89 = new Panel();
             lblIptalZiraiHayvan = new Label();
             panel407 = new Panel();
             panel408 = new Panel();
             panel409 = new Panel();
             panel410 = new Panel();
-            panel411 = new Panel();
+            p81 = new Panel();
             lblMunzamOrnekTarla = new Label();
-            panel412 = new Panel();
+            p88 = new Panel();
             lblOdenenZiraiHayvan = new Label();
-            panel413 = new Panel();
+            p83 = new Panel();
             lblOdenenOrnekTarla = new Label();
             panel414 = new Panel();
             panel415 = new Panel();
-            panel416 = new Panel();
+            p87 = new Panel();
             lblTahakkukZiraiHayvan = new Label();
             panel417 = new Panel();
             panel418 = new Panel();
             panel419 = new Panel();
             panel420 = new Panel();
-            panel421 = new Panel();
+            p82 = new Panel();
             lblTahakkukOrnekTarla = new Label();
             panel422 = new Panel();
             panel423 = new Panel();
-            panel424 = new Panel();
+            p86 = new Panel();
             lblMunzamZiraiHayvan = new Label();
             panel425 = new Panel();
-            panel426 = new Panel();
-            lblBKZiraHayvan = new Label();
-            panel427 = new Panel();
+            p85 = new Panel();
+            lblBKZiraiHayvan = new Label();
             panel428 = new Panel();
             label169 = new Label();
             label170 = new Label();
             label171 = new Label();
-            label173 = new Label();
             panel429 = new Panel();
-            panel430 = new Panel();
+            p104 = new Panel();
             lblIptalZiraatToplami = new Label();
             panel431 = new Panel();
             panel432 = new Panel();
-            panel433 = new Panel();
+            p103 = new Panel();
             lblOdenenZiraatToplami = new Label();
             panel434 = new Panel();
-            panel435 = new Panel();
+            p102 = new Panel();
             lblTahakkukZiraatToplami = new Label();
             panel436 = new Panel();
             panel437 = new Panel();
             panel438 = new Panel();
-            panel439 = new Panel();
+            p101 = new Panel();
             lblMunzamZiraatToplami = new Label();
             panel440 = new Panel();
-            panel441 = new Panel();
+            p100 = new Panel();
             lblBKZiraatToplami = new Label();
             panel442 = new Panel();
             label235 = new Label();
@@ -701,40 +690,40 @@
             label220 = new Label();
             label221 = new Label();
             panel444 = new Panel();
-            panel445 = new Panel();
+            p99 = new Panel();
             lblIptalKucukEndustri = new Label();
             panel446 = new Panel();
             panel447 = new Panel();
-            panel448 = new Panel();
+            p98 = new Panel();
             lblOdenenKucukEndustri = new Label();
             panel449 = new Panel();
-            panel450 = new Panel();
+            p97 = new Panel();
             lblTahakkukKucukEndustri = new Label();
             panel451 = new Panel();
             panel452 = new Panel();
             panel453 = new Panel();
-            panel454 = new Panel();
+            p96 = new Panel();
             lblMunzamKucukEndustri = new Label();
             panel455 = new Panel();
-            panel456 = new Panel();
-            lblBKKücükEndustri = new Label();
+            p95 = new Panel();
+            lblBKKucukEndustri = new Label();
             panel485 = new Panel();
-            panel486 = new Panel();
+            p133 = new Panel();
             lblIptalKulturToplami = new Label();
             panel487 = new Panel();
             panel488 = new Panel();
             panel489 = new Panel();
             lblOdenenKulturToplami = new Label();
             panel490 = new Panel();
-            panel491 = new Panel();
+            p132 = new Panel();
             lblTahakkukKulturToplami = new Label();
             panel492 = new Panel();
             panel493 = new Panel();
             panel494 = new Panel();
-            panel495 = new Panel();
+            p131 = new Panel();
             lblMunzamKulturToplami = new Label();
             panel496 = new Panel();
-            panel497 = new Panel();
+            p130 = new Panel();
             lblBKKulturToplami = new Label();
             panel498 = new Panel();
             panel499 = new Panel();
@@ -742,110 +731,106 @@
             panel500 = new Panel();
             label188 = new Label();
             label189 = new Label();
-            panel501 = new Panel();
+            p124 = new Panel();
             lblIptalKurs = new Label();
             panel502 = new Panel();
-            panel503 = new Panel();
+            p120 = new Panel();
             lblBKKurs = new Label();
             panel504 = new Panel();
-            panel505 = new Panel();
+            p129 = new Panel();
             lblIptalOkulUygulama = new Label();
             panel506 = new Panel();
             panel507 = new Panel();
             panel508 = new Panel();
             panel509 = new Panel();
-            panel510 = new Panel();
+            p121 = new Panel();
             lblMunzamKurs = new Label();
-            panel511 = new Panel();
-            lblOdenenOkulUgulama = new Label();
-            panel512 = new Panel();
+            p128 = new Panel();
+            lblOdenenOkulUygulama = new Label();
+            p123 = new Panel();
             lblOdenenKurs = new Label();
             panel513 = new Panel();
             panel514 = new Panel();
-            panel515 = new Panel();
+            p127 = new Panel();
             lblTahakkukOkulUygulama = new Label();
             panel516 = new Panel();
             panel517 = new Panel();
             panel518 = new Panel();
             panel519 = new Panel();
-            panel520 = new Panel();
+            p122 = new Panel();
             lblTahakkukKurs = new Label();
             panel521 = new Panel();
             panel522 = new Panel();
-            panel523 = new Panel();
+            p126 = new Panel();
             lblMunzamOkulUygulama = new Label();
             panel524 = new Panel();
-            panel525 = new Panel();
+            p125 = new Panel();
             lblBKOkulUygulama = new Label();
-            panel526 = new Panel();
             panel527 = new Panel();
             label185 = new Label();
-            label186 = new Label();
             label187 = new Label();
             panel528 = new Panel();
-            panel529 = new Panel();
+            p119 = new Panel();
             lblIptalOkumaOdasi = new Label();
             panel530 = new Panel();
             panel531 = new Panel();
-            panel532 = new Panel();
+            p118 = new Panel();
             lblOdenenOkumaOdasi = new Label();
             panel533 = new Panel();
-            panel534 = new Panel();
+            p117 = new Panel();
             lblTahakkukOkumaOdasi = new Label();
             panel535 = new Panel();
             panel536 = new Panel();
             panel537 = new Panel();
-            panel538 = new Panel();
+            p116 = new Panel();
             lblMunzamOkumaOdasi = new Label();
             panel539 = new Panel();
-            panel540 = new Panel();
+            p115 = new Panel();
             lblBKOkumaOdasi = new Label();
             panel541 = new Panel();
             panel542 = new Panel();
             label184 = new Label();
             panel543 = new Panel();
             label183 = new Label();
-            panel544 = new Panel();
+            p109 = new Panel();
             lblIptalOgretmenevi = new Label();
             panel545 = new Panel();
-            panel546 = new Panel();
+            p105 = new Panel();
             lblBKOgretmenevi = new Label();
             panel547 = new Panel();
-            panel548 = new Panel();
+            p114 = new Panel();
             lblIptalOkulDaimi = new Label();
             panel549 = new Panel();
             panel550 = new Panel();
             panel551 = new Panel();
             panel552 = new Panel();
-            panel553 = new Panel();
-            lblMunzamOgretmenEvi = new Label();
-            panel554 = new Panel();
+            p106 = new Panel();
+            lblMunzamOgretmenevi = new Label();
+            p113 = new Panel();
             lblOdenenOkulDaimi = new Label();
-            panel555 = new Panel();
+            p108 = new Panel();
             lblOdenenOgretmenevi = new Label();
             panel556 = new Panel();
             panel557 = new Panel();
-            panel558 = new Panel();
+            p112 = new Panel();
             lblTahakkukOkulDaimi = new Label();
             panel559 = new Panel();
             panel560 = new Panel();
             panel561 = new Panel();
             panel562 = new Panel();
-            panel563 = new Panel();
+            p107 = new Panel();
             lblTahakkukOgretmenevi = new Label();
             panel564 = new Panel();
             panel565 = new Panel();
-            panel566 = new Panel();
+            p111 = new Panel();
             lblMunzamOkulDaimi = new Label();
             panel567 = new Panel();
-            panel568 = new Panel();
+            p110 = new Panel();
             lblBKOkulDaimi = new Label();
-            panel569 = new Panel();
             panel570 = new Panel();
             label222 = new Label();
             label236 = new Label();
             label190 = new Label();
-            label191 = new Label();
             panel571 = new Panel();
             label194 = new Label();
             label195 = new Label();
@@ -858,64 +843,62 @@
             panel588 = new Panel();
             label233 = new Label();
             label200 = new Label();
-            panel589 = new Panel();
-            lblIptalIctimaiYardim = new Label();
+            p153 = new Panel();
+            lblIptalIctimai = new Label();
             panel590 = new Panel();
-            panel591 = new Panel();
+            p149 = new Panel();
             lblBKIctimai = new Label();
             panel592 = new Panel();
-            panel593 = new Panel();
+            p158 = new Panel();
             lblIptalSaglikToplami = new Label();
             panel594 = new Panel();
             panel595 = new Panel();
             panel596 = new Panel();
             panel597 = new Panel();
-            panel598 = new Panel();
-            lblMunzamIctimaiYardim = new Label();
-            panel599 = new Panel();
+            p150 = new Panel();
+            lblMunzamIctimai = new Label();
+            p157 = new Panel();
             lblOdenenSaglik = new Label();
-            panel600 = new Panel();
-            lblOdenenIctimaYardim = new Label();
+            p152 = new Panel();
+            lblOdenenIctimai = new Label();
             panel601 = new Panel();
             panel602 = new Panel();
-            panel603 = new Panel();
+            p156 = new Panel();
             lblTahakkukSaglıkToplami = new Label();
             panel604 = new Panel();
             panel605 = new Panel();
             panel606 = new Panel();
             panel607 = new Panel();
-            panel608 = new Panel();
-            lblTahakkukIctimaiYardim = new Label();
+            p151 = new Panel();
+            lblTahakkukIctimai = new Label();
             panel609 = new Panel();
             panel610 = new Panel();
-            panel611 = new Panel();
+            p155 = new Panel();
             lblMunzamSaglikToplami = new Label();
             panel612 = new Panel();
-            panel613 = new Panel();
+            p154 = new Panel();
             lblSaglikToplami = new Label();
-            panel614 = new Panel();
             panel615 = new Panel();
             label232 = new Label();
             label201 = new Label();
-            label202 = new Label();
             label203 = new Label();
             panel616 = new Panel();
-            panel617 = new Panel();
+            p148 = new Panel();
             lblIptalSpor = new Label();
             panel618 = new Panel();
             panel619 = new Panel();
-            panel620 = new Panel();
+            p147 = new Panel();
             lblOdenenSpor = new Label();
             panel621 = new Panel();
-            panel622 = new Panel();
+            p146 = new Panel();
             lblTahakkukSpor = new Label();
             panel623 = new Panel();
             panel624 = new Panel();
             panel625 = new Panel();
-            panel626 = new Panel();
+            p145 = new Panel();
             lblMunzamSpor = new Label();
             panel627 = new Panel();
-            panel628 = new Panel();
+            p144 = new Panel();
             lblBKSpor = new Label();
             panel629 = new Panel();
             panel630 = new Panel();
@@ -925,46 +908,44 @@
             label182 = new Label();
             label193 = new Label();
             label205 = new Label();
-            panel632 = new Panel();
+            p138 = new Panel();
             lblIptalIcmeSulari = new Label();
             panel633 = new Panel();
-            panel634 = new Panel();
+            p134 = new Panel();
             lblBKIcmeSulari = new Label();
             panel635 = new Panel();
-            panel636 = new Panel();
+            p143 = new Panel();
             lblIptalTemizlik = new Label();
             panel637 = new Panel();
             panel638 = new Panel();
             panel639 = new Panel();
             panel640 = new Panel();
-            panel641 = new Panel();
+            p135 = new Panel();
             lblMunzamIcmeSulari = new Label();
-            panel642 = new Panel();
+            p142 = new Panel();
             lblOdenenTemizlik = new Label();
-            panel643 = new Panel();
+            p137 = new Panel();
             lblOdenenIcmeSulari = new Label();
             panel644 = new Panel();
             panel645 = new Panel();
-            panel646 = new Panel();
+            p141 = new Panel();
             lblTahakkukTemizlik = new Label();
             panel647 = new Panel();
             panel648 = new Panel();
             panel649 = new Panel();
             panel650 = new Panel();
-            panel651 = new Panel();
+            p136 = new Panel();
             lblTahakkukIcmeSulari = new Label();
             panel652 = new Panel();
             panel653 = new Panel();
-            panel654 = new Panel();
+            p140 = new Panel();
             lblMunzamTemizlik = new Label();
             panel655 = new Panel();
-            panel656 = new Panel();
+            p139 = new Panel();
             lblBKTemizlik = new Label();
-            panel657 = new Panel();
             panel658 = new Panel();
             label229 = new Label();
             label206 = new Label();
-            label207 = new Label();
             panel659 = new Panel();
             label210 = new Label();
             label211 = new Label();
@@ -1000,10 +981,133 @@
             label285 = new Label();
             label286 = new Label();
             label287 = new Label();
-            panel376 = new Panel();
+            p67 = new Panel();
             lblTahakkukSulama = new Label();
-            panel204 = new Panel();
-            panel209 = new Panel();
+            p40 = new Panel();
+            lblMunzamAsker = new Label();
+            p43 = new Panel();
+            lblBKAskerToplami = new Label();
+            label95 = new Label();
+            label96 = new Label();
+            label89 = new Label();
+            label97 = new Label();
+            label98 = new Label();
+            label115 = new Label();
+            label116 = new Label();
+            panel86 = new Panel();
+            panel87 = new Panel();
+            panel88 = new Panel();
+            panel89 = new Panel();
+            panel54 = new Panel();
+            panel53 = new Panel();
+            panel52 = new Panel();
+            panel51 = new Panel();
+            panel36 = new Panel();
+            panel35 = new Panel();
+            panel34 = new Panel();
+            panel33 = new Panel();
+            label111 = new Label();
+            label117 = new Label();
+            label118 = new Label();
+            panel90 = new Panel();
+            label119 = new Label();
+            label127 = new Label();
+            panel91 = new Panel();
+            panel92 = new Panel();
+            panel93 = new Panel();
+            panel94 = new Panel();
+            panel99 = new Panel();
+            panel100 = new Panel();
+            panel101 = new Panel();
+            panel102 = new Panel();
+            panel95 = new Panel();
+            panel96 = new Panel();
+            panel97 = new Panel();
+            panel98 = new Panel();
+            panel103 = new Panel();
+            panel104 = new Panel();
+            panel105 = new Panel();
+            panel106 = new Panel();
+            panel107 = new Panel();
+            panel108 = new Panel();
+            panel134 = new Panel();
+            panel135 = new Panel();
+            p164 = new Panel();
+            panel140 = new Panel();
+            panel141 = new Panel();
+            panel142 = new Panel();
+            p163 = new Panel();
+            panel147 = new Panel();
+            panel148 = new Panel();
+            panel152 = new Panel();
+            p162 = new Panel();
+            panel154 = new Panel();
+            panel159 = new Panel();
+            panel160 = new Panel();
+            p161 = new Panel();
+            panel162 = new Panel();
+            panel164 = new Panel();
+            panel165 = new Panel();
+            p160 = new Panel();
+            panel167 = new Panel();
+            panel169 = new Panel();
+            panel170 = new Panel();
+            p159 = new Panel();
+            panel172 = new Panel();
+            panel191 = new Panel();
+            panel192 = new Panel();
+            p167 = new Panel();
+            panel194 = new Panel();
+            panel195 = new Panel();
+            panel197 = new Panel();
+            p166 = new Panel();
+            panel199 = new Panel();
+            panel200 = new Panel();
+            panel201 = new Panel();
+            p165 = new Panel();
+            panel205 = new Panel();
+            panel206 = new Panel();
+            panel207 = new Panel();
+            p174 = new Panel();
+            panel210 = new Panel();
+            panel211 = new Panel();
+            panel212 = new Panel();
+            p173 = new Panel();
+            panel226 = new Panel();
+            panel227 = new Panel();
+            panel228 = new Panel();
+            p172 = new Panel();
+            panel233 = new Panel();
+            panel234 = new Panel();
+            panel238 = new Panel();
+            p169 = new Panel();
+            panel240 = new Panel();
+            panel244 = new Panel();
+            panel245 = new Panel();
+            p168 = new Panel();
+            panel251 = new Panel();
+            panel253 = new Panel();
+            panel254 = new Panel();
+            p171 = new Panel();
+            panel256 = new Panel();
+            panel258 = new Panel();
+            panel259 = new Panel();
+            p170 = new Panel();
+            panel261 = new Panel();
+            panel263 = new Panel();
+            panel264 = new Panel();
+            lblYekunHasilat = new Label();
+            lblYekunResim = new Label();
+            lblYekunCeza = new Label();
+            lblYekunYardim = new Label();
+            lblYekunKoyVakif = new Label();
+            lblYekunIstikraz = new Label();
+            lblYekunTurluGelir = new Label();
+            lblYekunDevir = new Label();
+            lblYekunToplami = new Label();
+            lblYekunAsker = new Label();
+            lblYekunAskerToplami = new Label();
+            lblYekunGenelToplam = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -1021,9 +1125,7 @@
             panel22.SuspendLayout();
             panel23.SuspendLayout();
             panel45.SuspendLayout();
-            panel33.SuspendLayout();
             panel39.SuspendLayout();
-            panel51.SuspendLayout();
             panel26.SuspendLayout();
             panel59.SuspendLayout();
             panel65.SuspendLayout();
@@ -1039,18 +1141,18 @@
             panel116.SuspendLayout();
             panel79.SuspendLayout();
             panel81.SuspendLayout();
-            panel88.SuspendLayout();
-            panel89.SuspendLayout();
-            panel90.SuspendLayout();
-            panel94.SuspendLayout();
-            panel95.SuspendLayout();
-            panel96.SuspendLayout();
-            panel100.SuspendLayout();
-            panel101.SuspendLayout();
-            panel102.SuspendLayout();
-            panel106.SuspendLayout();
-            panel107.SuspendLayout();
-            panel108.SuspendLayout();
+            p14.SuspendLayout();
+            p10.SuspendLayout();
+            p5.SuspendLayout();
+            p13.SuspendLayout();
+            p9.SuspendLayout();
+            p4.SuspendLayout();
+            p12.SuspendLayout();
+            p7.SuspendLayout();
+            p2.SuspendLayout();
+            p11.SuspendLayout();
+            p6.SuspendLayout();
+            p1.SuspendLayout();
             panel112.SuspendLayout();
             panel113.SuspendLayout();
             panel118.SuspendLayout();
@@ -1063,30 +1165,30 @@
             panel127.SuspendLayout();
             panel128.SuspendLayout();
             panel129.SuspendLayout();
-            panel134.SuspendLayout();
-            panel135.SuspendLayout();
-            panel136.SuspendLayout();
-            panel140.SuspendLayout();
-            panel141.SuspendLayout();
-            panel142.SuspendLayout();
-            panel146.SuspendLayout();
-            panel147.SuspendLayout();
-            panel148.SuspendLayout();
-            panel152.SuspendLayout();
-            panel153.SuspendLayout();
-            panel154.SuspendLayout();
-            panel159.SuspendLayout();
-            panel160.SuspendLayout();
-            panel161.SuspendLayout();
-            panel162.SuspendLayout();
-            panel164.SuspendLayout();
-            panel165.SuspendLayout();
-            panel166.SuspendLayout();
-            panel167.SuspendLayout();
-            panel169.SuspendLayout();
-            panel170.SuspendLayout();
-            panel171.SuspendLayout();
-            panel172.SuspendLayout();
+            p26.SuspendLayout();
+            p22.SuspendLayout();
+            p18.SuspendLayout();
+            p25.SuspendLayout();
+            p21.SuspendLayout();
+            p17.SuspendLayout();
+            p24.SuspendLayout();
+            p20.SuspendLayout();
+            p16.SuspendLayout();
+            p23.SuspendLayout();
+            p19.SuspendLayout();
+            p15.SuspendLayout();
+            p30.SuspendLayout();
+            p29.SuspendLayout();
+            p28.SuspendLayout();
+            p27.SuspendLayout();
+            p38.SuspendLayout();
+            p37.SuspendLayout();
+            p36.SuspendLayout();
+            p35.SuspendLayout();
+            p34.SuspendLayout();
+            p33.SuspendLayout();
+            p32.SuspendLayout();
+            p31.SuspendLayout();
             panel173.SuspendLayout();
             panel174.SuspendLayout();
             panel175.SuspendLayout();
@@ -1097,6 +1199,12 @@
             panel181.SuspendLayout();
             panel184.SuspendLayout();
             panel185.SuspendLayout();
+            p45.SuspendLayout();
+            p42.SuspendLayout();
+            p44.SuspendLayout();
+            p41.SuspendLayout();
+            panel203.SuspendLayout();
+            p39.SuspendLayout();
             panel214.SuspendLayout();
             panel215.SuspendLayout();
             panel216.SuspendLayout();
@@ -1106,10 +1214,10 @@
             panel248.SuspendLayout();
             panel196.SuspendLayout();
             panel202.SuspendLayout();
-            panel251.SuspendLayout();
-            panel256.SuspendLayout();
-            panel261.SuspendLayout();
-            panel266.SuspendLayout();
+            p49.SuspendLayout();
+            p48.SuspendLayout();
+            p47.SuspendLayout();
+            p46.SuspendLayout();
             panel271.SuspendLayout();
             panel272.SuspendLayout();
             panel275.SuspendLayout();
@@ -1128,149 +1236,142 @@
             panel293.SuspendLayout();
             panel296.SuspendLayout();
             panel297.SuspendLayout();
-            panel324.SuspendLayout();
             panel273.SuspendLayout();
             panel325.SuspendLayout();
             panel326.SuspendLayout();
             panel274.SuspendLayout();
             panel327.SuspendLayout();
-            panel318.SuspendLayout();
-            panel310.SuspendLayout();
-            panel306.SuspendLayout();
-            panel300.SuspendLayout();
-            panel322.SuspendLayout();
-            panel301.SuspendLayout();
-            panel307.SuspendLayout();
-            panel311.SuspendLayout();
-            panel319.SuspendLayout();
-            panel323.SuspendLayout();
-            panel329.SuspendLayout();
-            panel332.SuspendLayout();
-            panel334.SuspendLayout();
-            panel338.SuspendLayout();
-            panel340.SuspendLayout();
-            panel342.SuspendLayout();
-            panel345.SuspendLayout();
-            panel347.SuspendLayout();
-            panel351.SuspendLayout();
-            panel353.SuspendLayout();
+            p56.SuspendLayout();
+            p57.SuspendLayout();
+            p58.SuspendLayout();
+            p59.SuspendLayout();
+            p55.SuspendLayout();
+            p54.SuspendLayout();
+            p53.SuspendLayout();
+            p52.SuspendLayout();
+            p51.SuspendLayout();
+            p50.SuspendLayout();
+            p64.SuspendLayout();
+            p63.SuspendLayout();
+            p62.SuspendLayout();
+            p61.SuspendLayout();
+            p60.SuspendLayout();
+            p79.SuspendLayout();
+            p78.SuspendLayout();
+            p77.SuspendLayout();
+            p76.SuspendLayout();
+            p75.SuspendLayout();
             panel355.SuspendLayout();
             panel356.SuspendLayout();
-            panel357.SuspendLayout();
-            panel359.SuspendLayout();
-            panel361.SuspendLayout();
-            panel366.SuspendLayout();
-            panel367.SuspendLayout();
-            panel368.SuspendLayout();
-            panel371.SuspendLayout();
-            panel379.SuspendLayout();
-            panel381.SuspendLayout();
-            panel382.SuspendLayout();
+            p69.SuspendLayout();
+            p65.SuspendLayout();
+            p74.SuspendLayout();
+            p66.SuspendLayout();
+            p73.SuspendLayout();
+            p68.SuspendLayout();
+            p72.SuspendLayout();
+            p71.SuspendLayout();
+            p70.SuspendLayout();
             panel383.SuspendLayout();
             panel384.SuspendLayout();
             panel385.SuspendLayout();
-            panel387.SuspendLayout();
-            panel390.SuspendLayout();
-            panel392.SuspendLayout();
-            panel396.SuspendLayout();
-            panel398.SuspendLayout();
+            p94.SuspendLayout();
+            p93.SuspendLayout();
+            p92.SuspendLayout();
+            p91.SuspendLayout();
+            p90.SuspendLayout();
             panel400.SuspendLayout();
             panel401.SuspendLayout();
-            panel402.SuspendLayout();
-            panel404.SuspendLayout();
-            panel406.SuspendLayout();
-            panel411.SuspendLayout();
-            panel412.SuspendLayout();
-            panel413.SuspendLayout();
-            panel416.SuspendLayout();
-            panel421.SuspendLayout();
-            panel424.SuspendLayout();
-            panel426.SuspendLayout();
-            panel427.SuspendLayout();
+            p84.SuspendLayout();
+            p80.SuspendLayout();
+            p89.SuspendLayout();
+            p81.SuspendLayout();
+            p88.SuspendLayout();
+            p83.SuspendLayout();
+            p87.SuspendLayout();
+            p82.SuspendLayout();
+            p86.SuspendLayout();
+            p85.SuspendLayout();
             panel428.SuspendLayout();
-            panel430.SuspendLayout();
-            panel433.SuspendLayout();
-            panel435.SuspendLayout();
-            panel439.SuspendLayout();
-            panel441.SuspendLayout();
+            p104.SuspendLayout();
+            p103.SuspendLayout();
+            p102.SuspendLayout();
+            p101.SuspendLayout();
+            p100.SuspendLayout();
             panel442.SuspendLayout();
             panel443.SuspendLayout();
-            panel445.SuspendLayout();
-            panel448.SuspendLayout();
-            panel450.SuspendLayout();
-            panel454.SuspendLayout();
-            panel456.SuspendLayout();
-            panel486.SuspendLayout();
+            p99.SuspendLayout();
+            p98.SuspendLayout();
+            p97.SuspendLayout();
+            p96.SuspendLayout();
+            p95.SuspendLayout();
+            p133.SuspendLayout();
             panel489.SuspendLayout();
-            panel491.SuspendLayout();
-            panel495.SuspendLayout();
-            panel497.SuspendLayout();
+            p132.SuspendLayout();
+            p131.SuspendLayout();
+            p130.SuspendLayout();
             panel499.SuspendLayout();
             panel500.SuspendLayout();
-            panel501.SuspendLayout();
-            panel503.SuspendLayout();
-            panel505.SuspendLayout();
-            panel510.SuspendLayout();
-            panel511.SuspendLayout();
-            panel512.SuspendLayout();
-            panel515.SuspendLayout();
-            panel520.SuspendLayout();
-            panel523.SuspendLayout();
-            panel525.SuspendLayout();
-            panel526.SuspendLayout();
+            p124.SuspendLayout();
+            p120.SuspendLayout();
+            p129.SuspendLayout();
+            p121.SuspendLayout();
+            p128.SuspendLayout();
+            p123.SuspendLayout();
+            p127.SuspendLayout();
+            p122.SuspendLayout();
+            p126.SuspendLayout();
+            p125.SuspendLayout();
             panel527.SuspendLayout();
-            panel529.SuspendLayout();
-            panel532.SuspendLayout();
-            panel534.SuspendLayout();
-            panel538.SuspendLayout();
-            panel540.SuspendLayout();
+            p119.SuspendLayout();
+            p118.SuspendLayout();
+            p117.SuspendLayout();
+            p116.SuspendLayout();
+            p115.SuspendLayout();
             panel542.SuspendLayout();
             panel543.SuspendLayout();
-            panel544.SuspendLayout();
-            panel546.SuspendLayout();
-            panel548.SuspendLayout();
-            panel553.SuspendLayout();
-            panel554.SuspendLayout();
-            panel555.SuspendLayout();
-            panel558.SuspendLayout();
-            panel563.SuspendLayout();
-            panel566.SuspendLayout();
-            panel568.SuspendLayout();
-            panel569.SuspendLayout();
+            p109.SuspendLayout();
+            p105.SuspendLayout();
+            p114.SuspendLayout();
+            p106.SuspendLayout();
+            p113.SuspendLayout();
+            p108.SuspendLayout();
+            p112.SuspendLayout();
+            p107.SuspendLayout();
+            p111.SuspendLayout();
+            p110.SuspendLayout();
             panel570.SuspendLayout();
             panel571.SuspendLayout();
             panel572.SuspendLayout();
             panel588.SuspendLayout();
-            panel589.SuspendLayout();
-            panel591.SuspendLayout();
-            panel593.SuspendLayout();
-            panel598.SuspendLayout();
-            panel599.SuspendLayout();
-            panel600.SuspendLayout();
-            panel603.SuspendLayout();
-            panel608.SuspendLayout();
-            panel611.SuspendLayout();
-            panel613.SuspendLayout();
-            panel614.SuspendLayout();
+            p153.SuspendLayout();
+            p149.SuspendLayout();
+            p158.SuspendLayout();
+            p150.SuspendLayout();
+            p157.SuspendLayout();
+            p152.SuspendLayout();
+            p156.SuspendLayout();
+            p151.SuspendLayout();
+            p155.SuspendLayout();
+            p154.SuspendLayout();
             panel615.SuspendLayout();
-            panel617.SuspendLayout();
-            panel620.SuspendLayout();
-            panel622.SuspendLayout();
-            panel626.SuspendLayout();
-            panel628.SuspendLayout();
+            p148.SuspendLayout();
+            p147.SuspendLayout();
+            p146.SuspendLayout();
+            p145.SuspendLayout();
+            p144.SuspendLayout();
             panel630.SuspendLayout();
             panel631.SuspendLayout();
-            panel632.SuspendLayout();
-            panel634.SuspendLayout();
-            panel636.SuspendLayout();
-            panel641.SuspendLayout();
-            panel642.SuspendLayout();
-            panel643.SuspendLayout();
-            panel646.SuspendLayout();
-            panel651.SuspendLayout();
-            panel654.SuspendLayout();
-            panel656.SuspendLayout();
-            panel657.SuspendLayout();
+            p138.SuspendLayout();
+            p134.SuspendLayout();
+            p143.SuspendLayout();
+            p135.SuspendLayout();
+            p142.SuspendLayout();
+            p137.SuspendLayout();
+            p141.SuspendLayout();
+            p136.SuspendLayout();
+            p140.SuspendLayout();
+            p139.SuspendLayout();
             panel658.SuspendLayout();
             panel659.SuspendLayout();
             panel660.SuspendLayout();
@@ -1279,7 +1380,34 @@
             panel277.SuspendLayout();
             panel280.SuspendLayout();
             panel281.SuspendLayout();
-            panel376.SuspendLayout();
+            p67.SuspendLayout();
+            p40.SuspendLayout();
+            p43.SuspendLayout();
+            panel86.SuspendLayout();
+            panel51.SuspendLayout();
+            panel33.SuspendLayout();
+            panel90.SuspendLayout();
+            panel91.SuspendLayout();
+            panel99.SuspendLayout();
+            panel95.SuspendLayout();
+            panel103.SuspendLayout();
+            panel107.SuspendLayout();
+            p164.SuspendLayout();
+            p163.SuspendLayout();
+            p162.SuspendLayout();
+            p161.SuspendLayout();
+            p160.SuspendLayout();
+            p159.SuspendLayout();
+            p167.SuspendLayout();
+            p166.SuspendLayout();
+            p165.SuspendLayout();
+            p174.SuspendLayout();
+            p173.SuspendLayout();
+            p172.SuspendLayout();
+            p169.SuspendLayout();
+            p168.SuspendLayout();
+            p171.SuspendLayout();
+            p170.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -1310,10 +1438,10 @@
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(3, 44);
+            panel1.Location = new Point(5, 36);
             panel1.Margin = new Padding(1, 3, 1, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(21, 63);
+            panel1.Size = new Size(17, 63);
             panel1.TabIndex = 3;
             // 
             // label4
@@ -1349,7 +1477,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(8, 6);
+            label6.Location = new Point(5, 3);
             label6.Margin = new Padding(1, 0, 1, 0);
             label6.Name = "label6";
             label6.Size = new Size(13, 15);
@@ -1359,7 +1487,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(8, 23);
+            label7.Location = new Point(5, 20);
             label7.Margin = new Padding(1, 0, 1, 0);
             label7.Name = "label7";
             label7.Size = new Size(28, 15);
@@ -1369,7 +1497,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(347, 7);
+            label8.Location = new Point(344, 3);
             label8.Margin = new Padding(1, 0, 1, 0);
             label8.Name = "label8";
             label8.Size = new Size(35, 15);
@@ -1379,7 +1507,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(347, 24);
+            label9.Location = new Point(344, 20);
             label9.Margin = new Padding(1, 0, 1, 0);
             label9.Name = "label9";
             label9.Size = new Size(29, 15);
@@ -1389,7 +1517,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(378, 24);
+            label10.Location = new Point(375, 20);
             label10.Margin = new Padding(1, 0, 1, 0);
             label10.Name = "label10";
             label10.Size = new Size(10, 15);
@@ -1399,7 +1527,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(378, 7);
+            label11.Location = new Point(375, 4);
             label11.Margin = new Padding(1, 0, 1, 0);
             label11.Name = "label11";
             label11.Size = new Size(10, 15);
@@ -1409,7 +1537,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(30, 23);
+            label12.Location = new Point(27, 20);
             label12.Margin = new Padding(1, 0, 1, 0);
             label12.Name = "label12";
             label12.Size = new Size(10, 15);
@@ -1419,7 +1547,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(30, 6);
+            label13.Location = new Point(27, 3);
             label13.Margin = new Padding(1, 0, 1, 0);
             label13.Name = "label13";
             label13.Size = new Size(10, 15);
@@ -1429,7 +1557,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(182, 23);
+            label14.Location = new Point(167, 12);
             label14.Margin = new Padding(1, 0, 1, 0);
             label14.Name = "label14";
             label14.Size = new Size(83, 15);
@@ -1444,10 +1572,10 @@
             panel3.Controls.Add(label22);
             panel3.Controls.Add(label23);
             panel3.Controls.Add(label24);
-            panel3.Location = new Point(20, 44);
+            panel3.Location = new Point(22, 36);
             panel3.Margin = new Padding(1, 3, 1, 3);
             panel3.Name = "panel3";
-            panel3.Size = new Size(21, 63);
+            panel3.Size = new Size(17, 63);
             panel3.TabIndex = 5;
             // 
             // label20
@@ -1508,10 +1636,10 @@
             panel4.Controls.Add(label27);
             panel4.Controls.Add(label28);
             panel4.Controls.Add(label29);
-            panel4.Location = new Point(493, 28);
+            panel4.Location = new Point(506, 28);
             panel4.Margin = new Padding(1, 3, 1, 3);
             panel4.Name = "panel4";
-            panel4.Size = new Size(21, 88);
+            panel4.Size = new Size(17, 88);
             panel4.TabIndex = 7;
             // 
             // label25
@@ -1572,10 +1700,10 @@
             panel5.Controls.Add(label37);
             panel5.Controls.Add(label38);
             panel5.Controls.Add(label39);
-            panel5.Location = new Point(474, 28);
+            panel5.Location = new Point(489, 28);
             panel5.Margin = new Padding(1, 3, 1, 3);
             panel5.Name = "panel5";
-            panel5.Size = new Size(21, 88);
+            panel5.Size = new Size(17, 88);
             panel5.TabIndex = 6;
             // 
             // label35
@@ -1631,7 +1759,7 @@
             // label40
             // 
             label40.AutoSize = true;
-            label40.Location = new Point(717, 7);
+            label40.Location = new Point(702, 7);
             label40.Margin = new Padding(1, 0, 1, 0);
             label40.Name = "label40";
             label40.Size = new Size(86, 15);
@@ -1641,7 +1769,7 @@
             // label41
             // 
             label41.AutoSize = true;
-            label41.Location = new Point(386, 24);
+            label41.Location = new Point(383, 20);
             label41.Margin = new Padding(1, 0, 1, 0);
             label41.Name = "label41";
             label41.Size = new Size(58, 15);
@@ -1652,16 +1780,16 @@
             // 
             panel7.BorderStyle = BorderStyle.FixedSingle;
             panel7.Controls.Add(label43);
-            panel7.Location = new Point(40, 44);
+            panel7.Location = new Point(39, 36);
             panel7.Margin = new Padding(1, 3, 1, 3);
             panel7.Name = "panel7";
-            panel7.Size = new Size(117, 63);
+            panel7.Size = new Size(88, 63);
             panel7.TabIndex = 6;
             // 
             // label43
             // 
             label43.AutoSize = true;
-            label43.Location = new Point(24, 23);
+            label43.Location = new Point(7, 23);
             label43.Margin = new Padding(1, 0, 1, 0);
             label43.Name = "label43";
             label43.Size = new Size(70, 15);
@@ -1671,18 +1799,19 @@
             // panel8
             // 
             panel8.BorderStyle = BorderStyle.FixedSingle;
+            panel8.Controls.Add(label111);
             panel8.Controls.Add(label46);
             panel8.Controls.Add(label42);
-            panel8.Location = new Point(157, 44);
+            panel8.Location = new Point(127, 36);
             panel8.Margin = new Padding(1, 3, 1, 3);
             panel8.Name = "panel8";
-            panel8.Size = new Size(66, 63);
+            panel8.Size = new Size(64, 63);
             panel8.TabIndex = 6;
             // 
             // label46
             // 
             label46.AutoSize = true;
-            label46.Location = new Point(28, 40);
+            label46.Location = new Point(22, 40);
             label46.Margin = new Padding(1, 0, 1, 0);
             label46.Name = "label46";
             label46.Size = new Size(18, 15);
@@ -1692,28 +1821,29 @@
             // label42
             // 
             label42.AutoSize = true;
-            label42.Location = new Point(-2, 17);
+            label42.Location = new Point(12, 4);
             label42.Margin = new Padding(1, 0, 1, 0);
             label42.Name = "label42";
-            label42.Size = new Size(70, 15);
+            label42.Size = new Size(41, 15);
             label42.TabIndex = 1;
-            label42.Text = "Bütçeye Konan";
+            label42.Text = "Bütçeye";
             // 
             // panel9
             // 
             panel9.BorderStyle = BorderStyle.FixedSingle;
+            panel9.Controls.Add(label117);
             panel9.Controls.Add(label47);
             panel9.Controls.Add(label44);
-            panel9.Location = new Point(223, 44);
+            panel9.Location = new Point(191, 36);
             panel9.Margin = new Padding(1, 3, 1, 3);
             panel9.Name = "panel9";
-            panel9.Size = new Size(66, 63);
+            panel9.Size = new Size(64, 63);
             panel9.TabIndex = 6;
             // 
             // label47
             // 
             label47.AutoSize = true;
-            label47.Location = new Point(24, 40);
+            label47.Location = new Point(23, 40);
             label47.Margin = new Padding(1, 0, 1, 0);
             label47.Name = "label47";
             label47.Size = new Size(18, 15);
@@ -1723,22 +1853,22 @@
             // label44
             // 
             label44.AutoSize = true;
-            label44.Location = new Point(-2, 17);
+            label44.Location = new Point(18, 4);
             label44.Margin = new Padding(1, 0, 1, 0);
             label44.Name = "label44";
-            label44.Size = new Size(70, 15);
+            label44.Size = new Size(31, 15);
             label44.TabIndex = 1;
-            label44.Text = "Bu Yıl Munzam";
+            label44.Text = "Bu Yıl";
             // 
             // panel10
             // 
             panel10.BorderStyle = BorderStyle.FixedSingle;
             panel10.Controls.Add(label49);
             panel10.Controls.Add(label45);
-            panel10.Location = new Point(289, 44);
+            panel10.Location = new Point(319, 36);
             panel10.Margin = new Padding(1, 3, 1, 3);
             panel10.Name = "panel10";
-            panel10.Size = new Size(36, 63);
+            panel10.Size = new Size(33, 63);
             panel10.TabIndex = 6;
             // 
             // label49
@@ -1766,7 +1896,7 @@
             // label50
             // 
             label50.AutoSize = true;
-            label50.Location = new Point(215, 110);
+            label50.Location = new Point(212, 102);
             label50.Margin = new Padding(1, 0, 1, 0);
             label50.Name = "label50";
             label50.Size = new Size(50, 15);
@@ -1776,18 +1906,19 @@
             // panel11
             // 
             panel11.BorderStyle = BorderStyle.FixedSingle;
+            panel11.Controls.Add(label118);
             panel11.Controls.Add(label48);
             panel11.Controls.Add(label51);
-            panel11.Location = new Point(325, 44);
+            panel11.Location = new Point(352, 36);
             panel11.Margin = new Padding(1, 3, 1, 3);
             panel11.Name = "panel11";
-            panel11.Size = new Size(66, 63);
+            panel11.Size = new Size(64, 63);
             panel11.TabIndex = 6;
             // 
             // label48
             // 
             label48.AutoSize = true;
-            label48.Location = new Point(28, 40);
+            label48.Location = new Point(24, 40);
             label48.Margin = new Padding(1, 0, 1, 0);
             label48.Name = "label48";
             label48.Size = new Size(18, 15);
@@ -1797,22 +1928,22 @@
             // label51
             // 
             label51.AutoSize = true;
-            label51.Location = new Point(-1, 17);
+            label51.Location = new Point(15, 4);
             label51.Margin = new Padding(1, 0, 1, 0);
             label51.Name = "label51";
-            label51.Size = new Size(64, 15);
+            label51.Size = new Size(32, 15);
             label51.TabIndex = 1;
-            label51.Text = "Tahsil Olunan";
+            label51.Text = "Tahsil";
             // 
             // panel12
             // 
             panel12.BorderStyle = BorderStyle.FixedSingle;
             panel12.Controls.Add(label52);
             panel12.Controls.Add(label53);
-            panel12.Location = new Point(391, 44);
+            panel12.Location = new Point(416, 36);
             panel12.Margin = new Padding(1, 3, 1, 3);
             panel12.Name = "panel12";
-            panel12.Size = new Size(66, 63);
+            panel12.Size = new Size(64, 63);
             panel12.TabIndex = 6;
             // 
             // label52
@@ -1839,19 +1970,20 @@
             // 
             panel18.BorderStyle = BorderStyle.FixedSingle;
             panel18.Controls.Add(label64);
-            panel18.Location = new Point(43, 127);
+            panel18.Location = new Point(39, 119);
             panel18.Margin = new Padding(1, 3, 1, 3);
             panel18.Name = "panel18";
-            panel18.Size = new Size(38, 69);
+            panel18.Size = new Size(29, 69);
             panel18.TabIndex = 14;
             // 
             // label64
             // 
             label64.AutoSize = true;
-            label64.Location = new Point(2, 27);
+            label64.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label64.Location = new Point(0, 27);
             label64.Margin = new Padding(1, 0, 1, 0);
             label64.Name = "label64";
-            label64.Size = new Size(33, 15);
+            label64.Size = new Size(25, 13);
             label64.TabIndex = 1;
             label64.Text = "Salma";
             // 
@@ -1859,10 +1991,10 @@
             // 
             panel19.BorderStyle = BorderStyle.FixedSingle;
             panel19.Controls.Add(label69);
-            panel19.Location = new Point(23, 127);
+            panel19.Location = new Point(22, 119);
             panel19.Margin = new Padding(1, 3, 1, 3);
             panel19.Name = "panel19";
-            panel19.Size = new Size(20, 69);
+            panel19.Size = new Size(17, 69);
             panel19.TabIndex = 8;
             // 
             // label69
@@ -1879,10 +2011,10 @@
             // 
             panel20.BorderStyle = BorderStyle.FixedSingle;
             panel20.Controls.Add(label74);
-            panel20.Location = new Point(3, 127);
+            panel20.Location = new Point(5, 119);
             panel20.Margin = new Padding(1, 3, 1, 3);
             panel20.Name = "panel20";
-            panel20.Size = new Size(20, 69);
+            panel20.Size = new Size(17, 69);
             panel20.TabIndex = 7;
             // 
             // label74
@@ -1902,10 +2034,10 @@
             panel2.Controls.Add(label15);
             panel2.Controls.Add(panel29);
             panel2.Controls.Add(panel28);
-            panel2.Location = new Point(81, 127);
+            panel2.Location = new Point(68, 119);
             panel2.Margin = new Padding(1, 3, 1, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(79, 23);
+            panel2.Size = new Size(59, 23);
             panel2.TabIndex = 15;
             // 
             // panel27
@@ -1920,10 +2052,11 @@
             // label15
             // 
             label15.AutoSize = true;
+            label15.Font = new Font("Arial Narrow", 6F);
             label15.Location = new Point(2, 5);
             label15.Margin = new Padding(1, 0, 1, 0);
             label15.Name = "label15";
-            label15.Size = new Size(26, 15);
+            label15.Size = new Size(21, 13);
             label15.TabIndex = 1;
             label15.Text = "Para";
             // 
@@ -1949,19 +2082,20 @@
             // 
             panel22.BorderStyle = BorderStyle.FixedSingle;
             panel22.Controls.Add(label17);
-            panel22.Location = new Point(81, 150);
+            panel22.Location = new Point(68, 142);
             panel22.Margin = new Padding(1, 3, 1, 3);
             panel22.Name = "panel22";
-            panel22.Size = new Size(79, 23);
+            panel22.Size = new Size(59, 23);
             panel22.TabIndex = 15;
             // 
             // label17
             // 
             label17.AutoSize = true;
+            label17.Font = new Font("Arial Narrow", 6F);
             label17.Location = new Point(1, 4);
             label17.Margin = new Padding(1, 0, 1, 0);
             label17.Name = "label17";
-            label17.Size = new Size(37, 15);
+            label17.Size = new Size(28, 13);
             label17.TabIndex = 1;
             label17.Text = "Mahsül";
             // 
@@ -1970,48 +2104,50 @@
             panel23.BorderStyle = BorderStyle.FixedSingle;
             panel23.Controls.Add(label18);
             panel23.Controls.Add(label19);
-            panel23.Location = new Point(81, 173);
+            panel23.Location = new Point(68, 165);
             panel23.Margin = new Padding(1, 3, 1, 3);
             panel23.Name = "panel23";
-            panel23.Size = new Size(79, 23);
+            panel23.Size = new Size(59, 23);
             panel23.TabIndex = 15;
             // 
             // label18
             // 
             label18.AutoSize = true;
+            label18.Font = new Font("Arial Narrow", 6F);
             label18.Location = new Point(1, -3);
             label18.Margin = new Padding(1, 0, 1, 0);
             label18.Name = "label18";
-            label18.Size = new Size(55, 15);
+            label18.Size = new Size(39, 13);
             label18.TabIndex = 1;
             label18.Text = "Birinci Fasıl";
             // 
             // label19
             // 
             label19.AutoSize = true;
+            label19.Font = new Font("Arial Narrow", 6F);
             label19.Location = new Point(2, 10);
             label19.Margin = new Padding(1, 0, 1, 0);
             label19.Name = "label19";
-            label19.Size = new Size(38, 15);
+            label19.Size = new Size(30, 13);
             label19.TabIndex = 17;
             label19.Text = "Yekünü";
             // 
             // panel43
             // 
             panel43.BorderStyle = BorderStyle.FixedSingle;
-            panel43.Location = new Point(160, 173);
+            panel43.Location = new Point(127, 165);
             panel43.Margin = new Padding(1, 3, 1, 3);
             panel43.Name = "panel43";
-            panel43.Size = new Size(66, 23);
+            panel43.Size = new Size(64, 23);
             panel43.TabIndex = 18;
             // 
             // panel44
             // 
             panel44.BorderStyle = BorderStyle.FixedSingle;
-            panel44.Location = new Point(160, 150);
+            panel44.Location = new Point(127, 142);
             panel44.Margin = new Padding(1, 3, 1, 3);
             panel44.Name = "panel44";
-            panel44.Size = new Size(66, 23);
+            panel44.Size = new Size(64, 23);
             panel44.TabIndex = 19;
             // 
             // panel45
@@ -2020,10 +2156,10 @@
             panel45.Controls.Add(panel46);
             panel45.Controls.Add(panel47);
             panel45.Controls.Add(panel48);
-            panel45.Location = new Point(160, 127);
+            panel45.Location = new Point(127, 119);
             panel45.Margin = new Padding(1, 3, 1, 3);
             panel45.Name = "panel45";
-            panel45.Size = new Size(66, 23);
+            panel45.Size = new Size(64, 23);
             panel45.TabIndex = 20;
             // 
             // panel46
@@ -2056,76 +2192,37 @@
             // panel31
             // 
             panel31.BorderStyle = BorderStyle.FixedSingle;
-            panel31.Location = new Point(226, 173);
+            panel31.Location = new Point(191, 165);
             panel31.Margin = new Padding(1, 3, 1, 3);
             panel31.Name = "panel31";
-            panel31.Size = new Size(66, 23);
+            panel31.Size = new Size(64, 23);
             panel31.TabIndex = 25;
             // 
             // panel32
             // 
             panel32.BorderStyle = BorderStyle.FixedSingle;
-            panel32.Location = new Point(226, 150);
+            panel32.Location = new Point(191, 142);
             panel32.Margin = new Padding(1, 3, 1, 3);
             panel32.Name = "panel32";
-            panel32.Size = new Size(66, 23);
+            panel32.Size = new Size(64, 23);
             panel32.TabIndex = 26;
-            // 
-            // panel33
-            // 
-            panel33.BorderStyle = BorderStyle.FixedSingle;
-            panel33.Controls.Add(panel34);
-            panel33.Controls.Add(panel35);
-            panel33.Controls.Add(panel36);
-            panel33.Location = new Point(226, 127);
-            panel33.Margin = new Padding(1, 3, 1, 3);
-            panel33.Name = "panel33";
-            panel33.Size = new Size(66, 23);
-            panel33.TabIndex = 27;
-            // 
-            // panel34
-            // 
-            panel34.BorderStyle = BorderStyle.FixedSingle;
-            panel34.Location = new Point(76, 49);
-            panel34.Margin = new Padding(1, 3, 1, 3);
-            panel34.Name = "panel34";
-            panel34.Size = new Size(79, 26);
-            panel34.TabIndex = 22;
-            // 
-            // panel35
-            // 
-            panel35.BorderStyle = BorderStyle.FixedSingle;
-            panel35.Location = new Point(76, 1);
-            panel35.Margin = new Padding(1, 3, 1, 3);
-            panel35.Name = "panel35";
-            panel35.Size = new Size(79, 25);
-            panel35.TabIndex = 24;
-            // 
-            // panel36
-            // 
-            panel36.BorderStyle = BorderStyle.FixedSingle;
-            panel36.Location = new Point(76, 25);
-            panel36.Margin = new Padding(1, 3, 1, 3);
-            panel36.Name = "panel36";
-            panel36.Size = new Size(79, 25);
-            panel36.TabIndex = 23;
             // 
             // panel37
             // 
             panel37.BorderStyle = BorderStyle.FixedSingle;
-            panel37.Location = new Point(394, 173);
+            panel37.Location = new Point(416, 165);
             panel37.Margin = new Padding(1, 3, 1, 3);
             panel37.Name = "panel37";
-            panel37.Size = new Size(66, 23);
+            panel37.Size = new Size(64, 23);
             panel37.TabIndex = 31;
             // 
             // panel38
             // 
             panel38.BorderStyle = BorderStyle.FixedSingle;
-            panel38.Location = new Point(394, 150);
+            panel38.Location = new Point(416, 142);
             panel38.Margin = new Padding(1, 3, 1, 3);
             panel38.Name = "panel38";
-            panel38.Size = new Size(66, 23);
+            panel38.Size = new Size(64, 23);
             panel38.TabIndex = 32;
             // 
             // panel39
@@ -2134,10 +2231,10 @@
             panel39.Controls.Add(panel40);
             panel39.Controls.Add(panel41);
             panel39.Controls.Add(panel42);
-            panel39.Location = new Point(394, 127);
+            panel39.Location = new Point(416, 119);
             panel39.Margin = new Padding(1, 3, 1, 3);
             panel39.Name = "panel39";
-            panel39.Size = new Size(66, 23);
+            panel39.Size = new Size(64, 23);
             panel39.TabIndex = 33;
             // 
             // panel40
@@ -2170,130 +2267,91 @@
             // panel49
             // 
             panel49.BorderStyle = BorderStyle.FixedSingle;
-            panel49.Location = new Point(328, 173);
+            panel49.Location = new Point(352, 165);
             panel49.Margin = new Padding(1, 3, 1, 3);
             panel49.Name = "panel49";
-            panel49.Size = new Size(66, 23);
+            panel49.Size = new Size(64, 23);
             panel49.TabIndex = 28;
             // 
             // panel50
             // 
             panel50.BorderStyle = BorderStyle.FixedSingle;
-            panel50.Location = new Point(328, 150);
+            panel50.Location = new Point(352, 142);
             panel50.Margin = new Padding(1, 3, 1, 3);
             panel50.Name = "panel50";
-            panel50.Size = new Size(66, 23);
+            panel50.Size = new Size(64, 23);
             panel50.TabIndex = 29;
-            // 
-            // panel51
-            // 
-            panel51.BorderStyle = BorderStyle.FixedSingle;
-            panel51.Controls.Add(panel52);
-            panel51.Controls.Add(panel53);
-            panel51.Controls.Add(panel54);
-            panel51.Location = new Point(328, 127);
-            panel51.Margin = new Padding(1, 3, 1, 3);
-            panel51.Name = "panel51";
-            panel51.Size = new Size(66, 23);
-            panel51.TabIndex = 30;
-            // 
-            // panel52
-            // 
-            panel52.BorderStyle = BorderStyle.FixedSingle;
-            panel52.Location = new Point(76, 49);
-            panel52.Margin = new Padding(1, 3, 1, 3);
-            panel52.Name = "panel52";
-            panel52.Size = new Size(79, 26);
-            panel52.TabIndex = 22;
-            // 
-            // panel53
-            // 
-            panel53.BorderStyle = BorderStyle.FixedSingle;
-            panel53.Location = new Point(76, 1);
-            panel53.Margin = new Padding(1, 3, 1, 3);
-            panel53.Name = "panel53";
-            panel53.Size = new Size(79, 25);
-            panel53.TabIndex = 24;
-            // 
-            // panel54
-            // 
-            panel54.BorderStyle = BorderStyle.FixedSingle;
-            panel54.Location = new Point(76, 25);
-            panel54.Margin = new Padding(1, 3, 1, 3);
-            panel54.Name = "panel54";
-            panel54.Size = new Size(79, 25);
-            panel54.TabIndex = 23;
             // 
             // panel13
             // 
             panel13.BorderStyle = BorderStyle.FixedSingle;
-            panel13.Location = new Point(292, 173);
+            panel13.Location = new Point(319, 165);
             panel13.Margin = new Padding(1, 3, 1, 3);
             panel13.Name = "panel13";
-            panel13.Size = new Size(36, 23);
+            panel13.Size = new Size(33, 23);
             panel13.TabIndex = 34;
             // 
             // panel14
             // 
             panel14.BorderStyle = BorderStyle.FixedSingle;
-            panel14.Location = new Point(292, 150);
+            panel14.Location = new Point(319, 142);
             panel14.Margin = new Padding(1, 3, 1, 3);
             panel14.Name = "panel14";
-            panel14.Size = new Size(36, 23);
+            panel14.Size = new Size(33, 23);
             panel14.TabIndex = 35;
             // 
             // panel15
             // 
             panel15.BorderStyle = BorderStyle.FixedSingle;
-            panel15.Location = new Point(292, 127);
+            panel15.Location = new Point(319, 119);
             panel15.Margin = new Padding(1, 3, 1, 3);
             panel15.Name = "panel15";
-            panel15.Size = new Size(36, 23);
+            panel15.Size = new Size(33, 23);
             panel15.TabIndex = 36;
             // 
             // panel16
             // 
             panel16.BorderStyle = BorderStyle.FixedSingle;
-            panel16.Location = new Point(292, 262);
+            panel16.Location = new Point(319, 254);
             panel16.Margin = new Padding(1, 3, 1, 3);
             panel16.Name = "panel16";
-            panel16.Size = new Size(36, 23);
+            panel16.Size = new Size(33, 23);
             panel16.TabIndex = 56;
             // 
             // panel17
             // 
             panel17.BorderStyle = BorderStyle.FixedSingle;
-            panel17.Location = new Point(292, 239);
+            panel17.Location = new Point(319, 231);
             panel17.Margin = new Padding(1, 3, 1, 3);
             panel17.Name = "panel17";
-            panel17.Size = new Size(36, 23);
+            panel17.Size = new Size(33, 23);
             panel17.TabIndex = 57;
             // 
             // panel21
             // 
             panel21.BorderStyle = BorderStyle.FixedSingle;
-            panel21.Location = new Point(292, 216);
+            panel21.Location = new Point(319, 208);
             panel21.Margin = new Padding(1, 3, 1, 3);
             panel21.Name = "panel21";
-            panel21.Size = new Size(36, 23);
+            panel21.Size = new Size(33, 23);
             panel21.TabIndex = 58;
             // 
             // panel24
             // 
             panel24.BorderStyle = BorderStyle.FixedSingle;
-            panel24.Location = new Point(394, 262);
+            panel24.Location = new Point(416, 254);
             panel24.Margin = new Padding(1, 3, 1, 3);
             panel24.Name = "panel24";
-            panel24.Size = new Size(66, 23);
+            panel24.Size = new Size(64, 23);
             panel24.TabIndex = 53;
             // 
             // panel25
             // 
             panel25.BorderStyle = BorderStyle.FixedSingle;
-            panel25.Location = new Point(394, 239);
+            panel25.Location = new Point(416, 231);
             panel25.Margin = new Padding(1, 3, 1, 3);
             panel25.Name = "panel25";
-            panel25.Size = new Size(66, 23);
+            panel25.Size = new Size(64, 23);
             panel25.TabIndex = 54;
             // 
             // panel26
@@ -2302,10 +2360,10 @@
             panel26.Controls.Add(panel30);
             panel26.Controls.Add(panel55);
             panel26.Controls.Add(panel56);
-            panel26.Location = new Point(394, 216);
+            panel26.Location = new Point(416, 208);
             panel26.Margin = new Padding(1, 3, 1, 3);
             panel26.Name = "panel26";
-            panel26.Size = new Size(66, 23);
+            panel26.Size = new Size(64, 23);
             panel26.TabIndex = 55;
             // 
             // panel30
@@ -2338,19 +2396,19 @@
             // panel57
             // 
             panel57.BorderStyle = BorderStyle.FixedSingle;
-            panel57.Location = new Point(328, 262);
+            panel57.Location = new Point(352, 254);
             panel57.Margin = new Padding(1, 3, 1, 3);
             panel57.Name = "panel57";
-            panel57.Size = new Size(66, 23);
+            panel57.Size = new Size(64, 23);
             panel57.TabIndex = 50;
             // 
             // panel58
             // 
             panel58.BorderStyle = BorderStyle.FixedSingle;
-            panel58.Location = new Point(328, 239);
+            panel58.Location = new Point(352, 231);
             panel58.Margin = new Padding(1, 3, 1, 3);
             panel58.Name = "panel58";
-            panel58.Size = new Size(66, 23);
+            panel58.Size = new Size(64, 23);
             panel58.TabIndex = 51;
             // 
             // panel59
@@ -2359,10 +2417,10 @@
             panel59.Controls.Add(panel60);
             panel59.Controls.Add(panel61);
             panel59.Controls.Add(panel62);
-            panel59.Location = new Point(328, 216);
+            panel59.Location = new Point(352, 208);
             panel59.Margin = new Padding(1, 3, 1, 3);
             panel59.Name = "panel59";
-            panel59.Size = new Size(66, 23);
+            panel59.Size = new Size(64, 23);
             panel59.TabIndex = 52;
             // 
             // panel60
@@ -2395,19 +2453,19 @@
             // panel63
             // 
             panel63.BorderStyle = BorderStyle.FixedSingle;
-            panel63.Location = new Point(229, 262);
+            panel63.Location = new Point(191, 254);
             panel63.Margin = new Padding(1, 3, 1, 3);
             panel63.Name = "panel63";
-            panel63.Size = new Size(66, 23);
+            panel63.Size = new Size(64, 23);
             panel63.TabIndex = 47;
             // 
             // panel64
             // 
             panel64.BorderStyle = BorderStyle.FixedSingle;
-            panel64.Location = new Point(229, 239);
+            panel64.Location = new Point(191, 231);
             panel64.Margin = new Padding(1, 3, 1, 3);
             panel64.Name = "panel64";
-            panel64.Size = new Size(66, 23);
+            panel64.Size = new Size(64, 23);
             panel64.TabIndex = 48;
             // 
             // panel65
@@ -2416,10 +2474,10 @@
             panel65.Controls.Add(panel66);
             panel65.Controls.Add(panel67);
             panel65.Controls.Add(panel68);
-            panel65.Location = new Point(229, 216);
+            panel65.Location = new Point(191, 208);
             panel65.Margin = new Padding(1, 3, 1, 3);
             panel65.Name = "panel65";
-            panel65.Size = new Size(66, 23);
+            panel65.Size = new Size(64, 23);
             panel65.TabIndex = 49;
             // 
             // panel66
@@ -2452,19 +2510,19 @@
             // panel69
             // 
             panel69.BorderStyle = BorderStyle.FixedSingle;
-            panel69.Location = new Point(163, 262);
+            panel69.Location = new Point(127, 254);
             panel69.Margin = new Padding(1, 3, 1, 3);
             panel69.Name = "panel69";
-            panel69.Size = new Size(66, 23);
+            panel69.Size = new Size(64, 23);
             panel69.TabIndex = 44;
             // 
             // panel71
             // 
             panel71.BorderStyle = BorderStyle.FixedSingle;
-            panel71.Location = new Point(163, 239);
+            panel71.Location = new Point(127, 231);
             panel71.Margin = new Padding(1, 3, 1, 3);
             panel71.Name = "panel71";
-            panel71.Size = new Size(66, 23);
+            panel71.Size = new Size(64, 23);
             panel71.TabIndex = 45;
             // 
             // panel72
@@ -2473,10 +2531,10 @@
             panel72.Controls.Add(panel73);
             panel72.Controls.Add(panel74);
             panel72.Controls.Add(panel75);
-            panel72.Location = new Point(163, 216);
+            panel72.Location = new Point(127, 208);
             panel72.Margin = new Padding(1, 3, 1, 3);
             panel72.Name = "panel72";
-            panel72.Size = new Size(66, 23);
+            panel72.Size = new Size(64, 23);
             panel72.TabIndex = 46;
             // 
             // panel73
@@ -2509,7 +2567,7 @@
             // label66
             // 
             label66.AutoSize = true;
-            label66.Location = new Point(218, 199);
+            label66.Location = new Point(213, 191);
             label66.Margin = new Padding(1, 0, 1, 0);
             label66.Name = "label66";
             label66.Size = new Size(48, 15);
@@ -2521,10 +2579,10 @@
             panel82.BorderStyle = BorderStyle.FixedSingle;
             panel82.Controls.Add(label67);
             panel82.Controls.Add(label68);
-            panel82.Location = new Point(26, 216);
+            panel82.Location = new Point(22, 208);
             panel82.Margin = new Padding(1, 3, 1, 3);
             panel82.Name = "panel82";
-            panel82.Size = new Size(20, 69);
+            panel82.Size = new Size(17, 69);
             panel82.TabIndex = 39;
             // 
             // label67
@@ -2551,10 +2609,10 @@
             // 
             panel83.BorderStyle = BorderStyle.FixedSingle;
             panel83.Controls.Add(label70);
-            panel83.Location = new Point(6, 216);
+            panel83.Location = new Point(5, 208);
             panel83.Margin = new Padding(1, 3, 1, 3);
             panel83.Name = "panel83";
-            panel83.Size = new Size(20, 69);
+            panel83.Size = new Size(17, 69);
             panel83.TabIndex = 38;
             // 
             // label70
@@ -2571,19 +2629,20 @@
             // 
             panel70.BorderStyle = BorderStyle.FixedSingle;
             panel70.Controls.Add(label60);
-            panel70.Location = new Point(46, 262);
+            panel70.Location = new Point(39, 254);
             panel70.Margin = new Padding(1, 3, 1, 3);
             panel70.Name = "panel70";
-            panel70.Size = new Size(117, 23);
+            panel70.Size = new Size(88, 23);
             panel70.TabIndex = 59;
             // 
             // label60
             // 
             label60.AutoSize = true;
+            label60.Font = new Font("Arial Narrow", 6F);
             label60.Location = new Point(-2, 4);
             label60.Margin = new Padding(1, 0, 1, 0);
             label60.Name = "label60";
-            label60.Size = new Size(85, 15);
+            label60.Size = new Size(62, 13);
             label60.TabIndex = 1;
             label60.Text = "İkinci Fasıl Yekünü";
             // 
@@ -2591,19 +2650,20 @@
             // 
             panel76.BorderStyle = BorderStyle.FixedSingle;
             panel76.Controls.Add(label63);
-            panel76.Location = new Point(46, 239);
+            panel76.Location = new Point(39, 231);
             panel76.Margin = new Padding(1, 3, 1, 3);
             panel76.Name = "panel76";
-            panel76.Size = new Size(117, 23);
+            panel76.Size = new Size(88, 23);
             panel76.TabIndex = 60;
             // 
             // label63
             // 
             label63.AutoSize = true;
+            label63.Font = new Font("Arial Narrow", 6F);
             label63.Location = new Point(-2, 4);
             label63.Margin = new Padding(1, 0, 1, 0);
             label63.Name = "label63";
-            label63.Size = new Size(113, 15);
+            label63.Size = new Size(83, 13);
             label63.TabIndex = 1;
             label63.Text = "İmece Bedelini Ödeyenler";
             // 
@@ -2612,19 +2672,20 @@
             panel77.BorderStyle = BorderStyle.FixedSingle;
             panel77.Controls.Add(label65);
             panel77.Controls.Add(panel80);
-            panel77.Location = new Point(46, 216);
+            panel77.Location = new Point(39, 208);
             panel77.Margin = new Padding(1, 3, 1, 3);
             panel77.Name = "panel77";
-            panel77.Size = new Size(117, 23);
+            panel77.Size = new Size(88, 23);
             panel77.TabIndex = 61;
             // 
             // label65
             // 
             label65.AutoSize = true;
+            label65.Font = new Font("Arial Narrow", 6F);
             label65.Location = new Point(-2, 4);
             label65.Margin = new Padding(1, 0, 1, 0);
             label65.Name = "label65";
-            label65.Size = new Size(113, 15);
+            label65.Size = new Size(87, 13);
             label65.TabIndex = 1;
             label65.Text = "Bedenen Çalışanlar Tutarı";
             // 
@@ -2640,14 +2701,15 @@
             // panel78
             // 
             panel78.BorderStyle = BorderStyle.FixedSingle;
+            panel78.Controls.Add(label89);
             panel78.Controls.Add(panel114);
             panel78.Controls.Add(panel115);
             panel78.Controls.Add(panel116);
             panel78.Controls.Add(label61);
-            panel78.Location = new Point(45, 351);
+            panel78.Location = new Point(39, 343);
             panel78.Margin = new Padding(1, 3, 1, 3);
             panel78.Name = "panel78";
-            panel78.Size = new Size(117, 23);
+            panel78.Size = new Size(88, 23);
             panel78.TabIndex = 80;
             // 
             // panel114
@@ -2723,10 +2785,11 @@
             // label61
             // 
             label61.AutoSize = true;
+            label61.Font = new Font("Arial Narrow", 6F);
             label61.Location = new Point(-2, 4);
             label61.Margin = new Padding(1, 0, 1, 0);
             label61.Name = "label61";
-            label61.Size = new Size(58, 15);
+            label61.Size = new Size(44, 13);
             label61.TabIndex = 1;
             label61.Text = "Para Cezası";
             // 
@@ -2735,17 +2798,17 @@
             panel79.BorderStyle = BorderStyle.FixedSingle;
             panel79.Controls.Add(label55);
             panel79.Controls.Add(label71);
-            panel79.Location = new Point(45, 328);
+            panel79.Location = new Point(39, 320);
             panel79.Margin = new Padding(1, 3, 1, 3);
             panel79.Name = "panel79";
-            panel79.Size = new Size(117, 23);
+            panel79.Size = new Size(88, 23);
             panel79.TabIndex = 81;
             // 
             // label55
             // 
             label55.AutoSize = true;
             label55.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            label55.Location = new Point(65, 3);
+            label55.Location = new Point(41, 3);
             label55.Margin = new Padding(1, 0, 1, 0);
             label55.Name = "label55";
             label55.Size = new Size(46, 14);
@@ -2755,10 +2818,11 @@
             // label71
             // 
             label71.AutoSize = true;
+            label71.Font = new Font("Arial Narrow", 6F);
             label71.Location = new Point(-2, 4);
             label71.Margin = new Padding(1, 0, 1, 0);
             label71.Name = "label71";
-            label71.Size = new Size(59, 15);
+            label71.Size = new Size(43, 13);
             label71.TabIndex = 1;
             label71.Text = "Resim, Harç";
             // 
@@ -2768,17 +2832,17 @@
             panel81.Controls.Add(label54);
             panel81.Controls.Add(label72);
             panel81.Controls.Add(panel84);
-            panel81.Location = new Point(45, 305);
+            panel81.Location = new Point(39, 297);
             panel81.Margin = new Padding(1, 3, 1, 3);
             panel81.Name = "panel81";
-            panel81.Size = new Size(117, 23);
+            panel81.Size = new Size(88, 23);
             panel81.TabIndex = 82;
             // 
             // label54
             // 
             label54.AutoSize = true;
             label54.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            label54.Location = new Point(65, 3);
+            label54.Location = new Point(40, 3);
             label54.Margin = new Padding(1, 0, 1, 0);
             label54.Name = "label54";
             label54.Size = new Size(46, 14);
@@ -2788,10 +2852,11 @@
             // label72
             // 
             label72.AutoSize = true;
+            label72.Font = new Font("Arial Narrow", 6F);
             label72.Location = new Point(-2, 4);
             label72.Margin = new Padding(1, 0, 1, 0);
             label72.Name = "label72";
-            label72.Size = new Size(34, 15);
+            label72.Size = new Size(28, 13);
             label72.TabIndex = 1;
             label72.Text = "Hasılat";
             // 
@@ -2807,262 +2872,273 @@
             // panel85
             // 
             panel85.BorderStyle = BorderStyle.FixedSingle;
-            panel85.Location = new Point(294, 351);
+            panel85.Location = new Point(319, 343);
             panel85.Margin = new Padding(1, 3, 1, 3);
             panel85.Name = "panel85";
-            panel85.Size = new Size(36, 23);
+            panel85.Size = new Size(33, 23);
             panel85.TabIndex = 77;
             // 
-            // panel86
+            // p8
             // 
-            panel86.BorderStyle = BorderStyle.FixedSingle;
-            panel86.Location = new Point(294, 328);
-            panel86.Margin = new Padding(1, 3, 1, 3);
-            panel86.Name = "panel86";
-            panel86.Size = new Size(36, 23);
-            panel86.TabIndex = 78;
+            p8.BorderStyle = BorderStyle.FixedSingle;
+            p8.Location = new Point(319, 320);
+            p8.Margin = new Padding(1, 3, 1, 3);
+            p8.Name = "p8";
+            p8.Size = new Size(33, 23);
+            p8.TabIndex = 78;
             // 
-            // panel87
+            // p3
             // 
-            panel87.BorderStyle = BorderStyle.FixedSingle;
-            panel87.Location = new Point(294, 305);
-            panel87.Margin = new Padding(1, 3, 1, 3);
-            panel87.Name = "panel87";
-            panel87.Size = new Size(36, 23);
-            panel87.TabIndex = 79;
+            p3.BorderStyle = BorderStyle.FixedSingle;
+            p3.Location = new Point(319, 297);
+            p3.Margin = new Padding(1, 3, 1, 3);
+            p3.Name = "p3";
+            p3.Size = new Size(33, 23);
+            p3.TabIndex = 79;
             // 
-            // panel88
+            // p14
             // 
-            panel88.BorderStyle = BorderStyle.FixedSingle;
-            panel88.Controls.Add(lblDevredenCeza);
-            panel88.Location = new Point(396, 351);
-            panel88.Margin = new Padding(1, 3, 1, 3);
-            panel88.Name = "panel88";
-            panel88.Size = new Size(66, 23);
-            panel88.TabIndex = 74;
+            p14.BorderStyle = BorderStyle.FixedSingle;
+            p14.Controls.Add(lblDevredenCeza);
+            p14.Location = new Point(416, 343);
+            p14.Margin = new Padding(1, 3, 1, 3);
+            p14.Name = "p14";
+            p14.Size = new Size(64, 23);
+            p14.TabIndex = 74;
             // 
             // lblDevredenCeza
             // 
             lblDevredenCeza.AutoSize = true;
+            lblDevredenCeza.Font = new Font("Arial Narrow", 8.25F);
             lblDevredenCeza.Location = new Point(-1, 3);
             lblDevredenCeza.Margin = new Padding(1, 0, 1, 0);
             lblDevredenCeza.Name = "lblDevredenCeza";
-            lblDevredenCeza.Size = new Size(66, 15);
+            lblDevredenCeza.Size = new Size(12, 15);
             lblDevredenCeza.TabIndex = 2;
-            lblDevredenCeza.Text = "99.999.999,99";
+            lblDevredenCeza.Text = "0";
             // 
-            // panel89
+            // p10
             // 
-            panel89.BorderStyle = BorderStyle.FixedSingle;
-            panel89.Controls.Add(lblDevredenResim);
-            panel89.Location = new Point(396, 328);
-            panel89.Margin = new Padding(1, 3, 1, 3);
-            panel89.Name = "panel89";
-            panel89.Size = new Size(66, 23);
-            panel89.TabIndex = 75;
+            p10.BorderStyle = BorderStyle.FixedSingle;
+            p10.Controls.Add(lblDevredenResim);
+            p10.Location = new Point(416, 320);
+            p10.Margin = new Padding(1, 3, 1, 3);
+            p10.Name = "p10";
+            p10.Size = new Size(64, 23);
+            p10.TabIndex = 75;
             // 
             // lblDevredenResim
             // 
             lblDevredenResim.AutoSize = true;
+            lblDevredenResim.Font = new Font("Arial Narrow", 8.25F);
             lblDevredenResim.Location = new Point(-1, 3);
             lblDevredenResim.Margin = new Padding(1, 0, 1, 0);
             lblDevredenResim.Name = "lblDevredenResim";
-            lblDevredenResim.Size = new Size(66, 15);
+            lblDevredenResim.Size = new Size(12, 15);
             lblDevredenResim.TabIndex = 2;
-            lblDevredenResim.Text = "99.999.999,99";
+            lblDevredenResim.Text = "0";
             // 
-            // panel90
+            // p5
             // 
-            panel90.BorderStyle = BorderStyle.FixedSingle;
-            panel90.Controls.Add(lblDevredenHasilat);
-            panel90.Location = new Point(396, 305);
-            panel90.Margin = new Padding(1, 3, 1, 3);
-            panel90.Name = "panel90";
-            panel90.Size = new Size(66, 23);
-            panel90.TabIndex = 76;
+            p5.BorderStyle = BorderStyle.FixedSingle;
+            p5.Controls.Add(lblDevredenHasilat);
+            p5.Location = new Point(416, 297);
+            p5.Margin = new Padding(1, 3, 1, 3);
+            p5.Name = "p5";
+            p5.Size = new Size(64, 23);
+            p5.TabIndex = 76;
             // 
             // lblDevredenHasilat
             // 
             lblDevredenHasilat.AutoSize = true;
+            lblDevredenHasilat.Font = new Font("Arial Narrow", 8.25F);
             lblDevredenHasilat.Location = new Point(-1, 3);
             lblDevredenHasilat.Margin = new Padding(1, 0, 1, 0);
             lblDevredenHasilat.Name = "lblDevredenHasilat";
-            lblDevredenHasilat.Size = new Size(66, 15);
+            lblDevredenHasilat.Size = new Size(12, 15);
             lblDevredenHasilat.TabIndex = 2;
-            lblDevredenHasilat.Text = "99.999.999,99";
+            lblDevredenHasilat.Text = "0";
             // 
-            // panel94
+            // p13
             // 
-            panel94.BorderStyle = BorderStyle.FixedSingle;
-            panel94.Controls.Add(lblTahsilCeza);
-            panel94.Location = new Point(330, 351);
-            panel94.Margin = new Padding(1, 3, 1, 3);
-            panel94.Name = "panel94";
-            panel94.Size = new Size(66, 23);
-            panel94.TabIndex = 71;
+            p13.BorderStyle = BorderStyle.FixedSingle;
+            p13.Controls.Add(lblTahsilCeza);
+            p13.Location = new Point(352, 343);
+            p13.Margin = new Padding(1, 3, 1, 3);
+            p13.Name = "p13";
+            p13.Size = new Size(64, 23);
+            p13.TabIndex = 71;
             // 
             // lblTahsilCeza
             // 
             lblTahsilCeza.AutoSize = true;
+            lblTahsilCeza.Font = new Font("Arial Narrow", 8.25F);
             lblTahsilCeza.Location = new Point(-1, 3);
             lblTahsilCeza.Margin = new Padding(1, 0, 1, 0);
             lblTahsilCeza.Name = "lblTahsilCeza";
-            lblTahsilCeza.Size = new Size(66, 15);
+            lblTahsilCeza.Size = new Size(12, 15);
             lblTahsilCeza.TabIndex = 2;
-            lblTahsilCeza.Text = "99.999.999,99";
+            lblTahsilCeza.Text = "0";
             // 
-            // panel95
+            // p9
             // 
-            panel95.BorderStyle = BorderStyle.FixedSingle;
-            panel95.Controls.Add(lblTahsilResim);
-            panel95.Location = new Point(330, 328);
-            panel95.Margin = new Padding(1, 3, 1, 3);
-            panel95.Name = "panel95";
-            panel95.Size = new Size(66, 23);
-            panel95.TabIndex = 72;
+            p9.BorderStyle = BorderStyle.FixedSingle;
+            p9.Controls.Add(lblTahsilResim);
+            p9.Location = new Point(352, 320);
+            p9.Margin = new Padding(1, 3, 1, 3);
+            p9.Name = "p9";
+            p9.Size = new Size(64, 23);
+            p9.TabIndex = 72;
             // 
             // lblTahsilResim
             // 
             lblTahsilResim.AutoSize = true;
+            lblTahsilResim.Font = new Font("Arial Narrow", 8.25F);
             lblTahsilResim.Location = new Point(-1, 3);
             lblTahsilResim.Margin = new Padding(1, 0, 1, 0);
             lblTahsilResim.Name = "lblTahsilResim";
-            lblTahsilResim.Size = new Size(66, 15);
+            lblTahsilResim.Size = new Size(12, 15);
             lblTahsilResim.TabIndex = 2;
-            lblTahsilResim.Text = "99.999.999,99";
+            lblTahsilResim.Text = "0";
             // 
-            // panel96
+            // p4
             // 
-            panel96.BorderStyle = BorderStyle.FixedSingle;
-            panel96.Controls.Add(lblTahsilHasilat);
-            panel96.Location = new Point(330, 305);
-            panel96.Margin = new Padding(1, 3, 1, 3);
-            panel96.Name = "panel96";
-            panel96.Size = new Size(66, 23);
-            panel96.TabIndex = 73;
+            p4.BorderStyle = BorderStyle.FixedSingle;
+            p4.Controls.Add(lblTahsilHasilat);
+            p4.Location = new Point(352, 297);
+            p4.Margin = new Padding(1, 3, 1, 3);
+            p4.Name = "p4";
+            p4.Size = new Size(64, 23);
+            p4.TabIndex = 73;
             // 
             // lblTahsilHasilat
             // 
             lblTahsilHasilat.AutoSize = true;
+            lblTahsilHasilat.Font = new Font("Arial Narrow", 8.25F);
             lblTahsilHasilat.Location = new Point(-1, 3);
             lblTahsilHasilat.Margin = new Padding(1, 0, 1, 0);
             lblTahsilHasilat.Name = "lblTahsilHasilat";
-            lblTahsilHasilat.Size = new Size(66, 15);
+            lblTahsilHasilat.Size = new Size(12, 15);
             lblTahsilHasilat.TabIndex = 2;
-            lblTahsilHasilat.Text = "99.999.999,99";
+            lblTahsilHasilat.Text = "0";
             // 
-            // panel100
+            // p12
             // 
-            panel100.BorderStyle = BorderStyle.FixedSingle;
-            panel100.Controls.Add(lblMunzamCeza);
-            panel100.Location = new Point(228, 351);
-            panel100.Margin = new Padding(1, 3, 1, 3);
-            panel100.Name = "panel100";
-            panel100.Size = new Size(66, 23);
-            panel100.TabIndex = 68;
+            p12.BorderStyle = BorderStyle.FixedSingle;
+            p12.Controls.Add(lblMunzamCeza);
+            p12.Location = new Point(191, 343);
+            p12.Margin = new Padding(1, 3, 1, 3);
+            p12.Name = "p12";
+            p12.Size = new Size(64, 23);
+            p12.TabIndex = 68;
             // 
             // lblMunzamCeza
             // 
             lblMunzamCeza.AutoSize = true;
+            lblMunzamCeza.Font = new Font("Arial Narrow", 8.25F);
             lblMunzamCeza.Location = new Point(-1, 3);
             lblMunzamCeza.Margin = new Padding(1, 0, 1, 0);
             lblMunzamCeza.Name = "lblMunzamCeza";
-            lblMunzamCeza.Size = new Size(66, 15);
+            lblMunzamCeza.Size = new Size(12, 15);
             lblMunzamCeza.TabIndex = 2;
-            lblMunzamCeza.Text = "99.999.999,99";
+            lblMunzamCeza.Text = "0";
             // 
-            // panel101
+            // p7
             // 
-            panel101.BorderStyle = BorderStyle.FixedSingle;
-            panel101.Controls.Add(lblMunzamResim);
-            panel101.Location = new Point(228, 328);
-            panel101.Margin = new Padding(1, 3, 1, 3);
-            panel101.Name = "panel101";
-            panel101.Size = new Size(66, 23);
-            panel101.TabIndex = 69;
+            p7.BorderStyle = BorderStyle.FixedSingle;
+            p7.Controls.Add(lblMunzamResim);
+            p7.Location = new Point(191, 320);
+            p7.Margin = new Padding(1, 3, 1, 3);
+            p7.Name = "p7";
+            p7.Size = new Size(64, 23);
+            p7.TabIndex = 69;
             // 
             // lblMunzamResim
             // 
             lblMunzamResim.AutoSize = true;
+            lblMunzamResim.Font = new Font("Arial Narrow", 8.25F);
             lblMunzamResim.Location = new Point(-1, 3);
             lblMunzamResim.Margin = new Padding(1, 0, 1, 0);
             lblMunzamResim.Name = "lblMunzamResim";
-            lblMunzamResim.Size = new Size(66, 15);
+            lblMunzamResim.Size = new Size(12, 15);
             lblMunzamResim.TabIndex = 2;
-            lblMunzamResim.Text = "99.999.999,99";
+            lblMunzamResim.Text = "0";
             // 
-            // panel102
+            // p2
             // 
-            panel102.BorderStyle = BorderStyle.FixedSingle;
-            panel102.Controls.Add(lblMunzamHasilat);
-            panel102.Location = new Point(228, 305);
-            panel102.Margin = new Padding(1, 3, 1, 3);
-            panel102.Name = "panel102";
-            panel102.Size = new Size(66, 23);
-            panel102.TabIndex = 70;
+            p2.BorderStyle = BorderStyle.FixedSingle;
+            p2.Controls.Add(lblMunzamHasilat);
+            p2.Location = new Point(191, 297);
+            p2.Margin = new Padding(1, 3, 1, 3);
+            p2.Name = "p2";
+            p2.Size = new Size(64, 23);
+            p2.TabIndex = 70;
             // 
             // lblMunzamHasilat
             // 
             lblMunzamHasilat.AutoSize = true;
-            lblMunzamHasilat.Location = new Point(-1, 3);
+            lblMunzamHasilat.Font = new Font("Arial Narrow", 8.25F);
+            lblMunzamHasilat.Location = new Point(-2, 4);
             lblMunzamHasilat.Margin = new Padding(1, 0, 1, 0);
             lblMunzamHasilat.Name = "lblMunzamHasilat";
             lblMunzamHasilat.Size = new Size(66, 15);
             lblMunzamHasilat.TabIndex = 2;
             lblMunzamHasilat.Text = "99.999.999,99";
             // 
-            // panel106
+            // p11
             // 
-            panel106.BorderStyle = BorderStyle.FixedSingle;
-            panel106.Controls.Add(lblBKCeza);
-            panel106.Location = new Point(162, 351);
-            panel106.Margin = new Padding(1, 3, 1, 3);
-            panel106.Name = "panel106";
-            panel106.Size = new Size(66, 23);
-            panel106.TabIndex = 65;
+            p11.BorderStyle = BorderStyle.FixedSingle;
+            p11.Controls.Add(lblBKCeza);
+            p11.Location = new Point(127, 343);
+            p11.Margin = new Padding(1, 3, 1, 3);
+            p11.Name = "p11";
+            p11.Size = new Size(64, 23);
+            p11.TabIndex = 65;
             // 
             // lblBKCeza
             // 
             lblBKCeza.AutoSize = true;
+            lblBKCeza.Font = new Font("Arial Narrow", 8.25F);
             lblBKCeza.Location = new Point(-1, 3);
             lblBKCeza.Margin = new Padding(1, 0, 1, 0);
             lblBKCeza.Name = "lblBKCeza";
-            lblBKCeza.Size = new Size(66, 15);
+            lblBKCeza.Size = new Size(12, 15);
             lblBKCeza.TabIndex = 2;
-            lblBKCeza.Text = "99.999.999,99";
+            lblBKCeza.Text = "0";
             // 
-            // panel107
+            // p6
             // 
-            panel107.BorderStyle = BorderStyle.FixedSingle;
-            panel107.Controls.Add(lblBKResim);
-            panel107.Location = new Point(162, 328);
-            panel107.Margin = new Padding(1, 3, 1, 3);
-            panel107.Name = "panel107";
-            panel107.Size = new Size(66, 23);
-            panel107.TabIndex = 66;
+            p6.BorderStyle = BorderStyle.FixedSingle;
+            p6.Controls.Add(lblBKResim);
+            p6.Location = new Point(127, 320);
+            p6.Margin = new Padding(1, 3, 1, 3);
+            p6.Name = "p6";
+            p6.Size = new Size(64, 23);
+            p6.TabIndex = 66;
             // 
             // lblBKResim
             // 
             lblBKResim.AutoSize = true;
+            lblBKResim.Font = new Font("Arial Narrow", 8.25F);
             lblBKResim.Location = new Point(-1, 3);
             lblBKResim.Margin = new Padding(1, 0, 1, 0);
             lblBKResim.Name = "lblBKResim";
-            lblBKResim.Size = new Size(66, 15);
+            lblBKResim.Size = new Size(12, 15);
             lblBKResim.TabIndex = 2;
-            lblBKResim.Text = "99.999.999,99";
+            lblBKResim.Text = "0";
             // 
-            // panel108
+            // p1
             // 
-            panel108.BorderStyle = BorderStyle.FixedSingle;
-            panel108.Controls.Add(panel109);
-            panel108.Controls.Add(lblBKHasilat);
-            panel108.Controls.Add(panel110);
-            panel108.Controls.Add(panel111);
-            panel108.Location = new Point(162, 305);
-            panel108.Margin = new Padding(1, 3, 1, 3);
-            panel108.Name = "panel108";
-            panel108.Size = new Size(66, 23);
-            panel108.TabIndex = 67;
+            p1.BorderStyle = BorderStyle.FixedSingle;
+            p1.Controls.Add(panel109);
+            p1.Controls.Add(lblBKHasilat);
+            p1.Controls.Add(panel110);
+            p1.Controls.Add(panel111);
+            p1.Location = new Point(127, 297);
+            p1.Margin = new Padding(1, 3, 1, 3);
+            p1.Name = "p1";
+            p1.Size = new Size(64, 23);
+            p1.TabIndex = 67;
             // 
             // panel109
             // 
@@ -3076,12 +3152,13 @@
             // lblBKHasilat
             // 
             lblBKHasilat.AutoSize = true;
+            lblBKHasilat.Font = new Font("Arial Narrow", 8.25F);
             lblBKHasilat.Location = new Point(-1, 3);
             lblBKHasilat.Margin = new Padding(1, 0, 1, 0);
             lblBKHasilat.Name = "lblBKHasilat";
-            lblBKHasilat.Size = new Size(66, 15);
+            lblBKHasilat.Size = new Size(12, 15);
             lblBKHasilat.TabIndex = 1;
-            lblBKHasilat.Text = "99.999.999,99";
+            lblBKHasilat.Text = "0";
             // 
             // panel110
             // 
@@ -3104,7 +3181,7 @@
             // label78
             // 
             label78.AutoSize = true;
-            label78.Location = new Point(165, 288);
+            label78.Location = new Point(164, 280);
             label78.Margin = new Padding(1, 0, 1, 0);
             label78.Name = "label78";
             label78.Size = new Size(162, 15);
@@ -3122,10 +3199,10 @@
             panel112.Controls.Add(label100);
             panel112.Controls.Add(label79);
             panel112.Controls.Add(label80);
-            panel112.Location = new Point(25, 305);
+            panel112.Location = new Point(22, 297);
             panel112.Margin = new Padding(1, 3, 1, 3);
             panel112.Name = "panel112";
-            panel112.Size = new Size(20, 207);
+            panel112.Size = new Size(17, 207);
             panel112.TabIndex = 64;
             // 
             // label112
@@ -3213,10 +3290,10 @@
             // 
             panel113.BorderStyle = BorderStyle.FixedSingle;
             panel113.Controls.Add(label81);
-            panel113.Location = new Point(5, 305);
+            panel113.Location = new Point(5, 297);
             panel113.Margin = new Padding(1, 3, 1, 3);
             panel113.Name = "panel113";
-            panel113.Size = new Size(20, 207);
+            panel113.Size = new Size(17, 207);
             panel113.TabIndex = 63;
             // 
             // label81
@@ -3237,17 +3314,17 @@
             panel118.Controls.Add(panel120);
             panel118.Controls.Add(panel121);
             panel118.Controls.Add(label88);
-            panel118.Location = new Point(45, 420);
+            panel118.Location = new Point(39, 412);
             panel118.Margin = new Padding(1, 3, 1, 3);
             panel118.Name = "panel118";
-            panel118.Size = new Size(117, 23);
+            panel118.Size = new Size(88, 23);
             panel118.TabIndex = 83;
             // 
             // label56
             // 
             label56.AutoSize = true;
             label56.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            label56.Location = new Point(65, 3);
+            label56.Location = new Point(40, 3);
             label56.Margin = new Padding(1, 0, 1, 0);
             label56.Name = "label56";
             label56.Size = new Size(46, 14);
@@ -3327,40 +3404,31 @@
             // label88
             // 
             label88.AutoSize = true;
+            label88.Font = new Font("Arial Narrow", 6F);
             label88.Location = new Point(-2, 4);
             label88.Margin = new Padding(1, 0, 1, 0);
             label88.Name = "label88";
-            label88.Size = new Size(46, 15);
+            label88.Size = new Size(34, 13);
             label88.TabIndex = 1;
             label88.Text = "İstikrazlar";
             // 
             // panel123
             // 
             panel123.BorderStyle = BorderStyle.FixedSingle;
-            panel123.Controls.Add(label89);
+            panel123.Controls.Add(label95);
+            panel123.Controls.Add(label96);
             panel123.Controls.Add(label57);
-            panel123.Location = new Point(45, 397);
+            panel123.Location = new Point(39, 389);
             panel123.Margin = new Padding(1, 3, 1, 3);
             panel123.Name = "panel123";
-            panel123.Size = new Size(117, 23);
+            panel123.Size = new Size(88, 23);
             panel123.TabIndex = 84;
-            // 
-            // label89
-            // 
-            label89.AutoSize = true;
-            label89.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label89.Location = new Point(-1, 4);
-            label89.Margin = new Padding(1, 0, 1, 0);
-            label89.Name = "label89";
-            label89.Size = new Size(72, 13);
-            label89.TabIndex = 1;
-            label89.Text = "Köy Vakıf ve Avarız";
             // 
             // label57
             // 
             label57.AutoSize = true;
             label57.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            label57.Location = new Point(67, 3);
+            label57.Location = new Point(40, 4);
             label57.Margin = new Padding(1, 0, 1, 0);
             label57.Name = "label57";
             label57.Size = new Size(46, 14);
@@ -3372,19 +3440,20 @@
             panel124.BorderStyle = BorderStyle.FixedSingle;
             panel124.Controls.Add(label90);
             panel124.Controls.Add(panel125);
-            panel124.Location = new Point(45, 374);
+            panel124.Location = new Point(39, 366);
             panel124.Margin = new Padding(1, 3, 1, 3);
             panel124.Name = "panel124";
-            panel124.Size = new Size(117, 23);
+            panel124.Size = new Size(88, 23);
             panel124.TabIndex = 85;
             // 
             // label90
             // 
             label90.AutoSize = true;
+            label90.Font = new Font("Arial Narrow", 6F);
             label90.Location = new Point(-2, 4);
             label90.Margin = new Padding(1, 0, 1, 0);
             label90.Name = "label90";
-            label90.Size = new Size(91, 15);
+            label90.Size = new Size(67, 13);
             label90.TabIndex = 1;
             label90.Text = "Yardımlar, Hediyeler";
             // 
@@ -3404,10 +3473,10 @@
             panel126.Controls.Add(panel128);
             panel126.Controls.Add(panel129);
             panel126.Controls.Add(label94);
-            panel126.Location = new Point(45, 443);
+            panel126.Location = new Point(39, 435);
             panel126.Margin = new Padding(1, 3, 1, 3);
             panel126.Name = "panel126";
-            panel126.Size = new Size(117, 23);
+            panel126.Size = new Size(88, 23);
             panel126.TabIndex = 83;
             // 
             // panel127
@@ -3483,92 +3552,95 @@
             // label94
             // 
             label94.AutoSize = true;
+            label94.Font = new Font("Arial Narrow", 6F);
             label94.Location = new Point(-2, 4);
             label94.Margin = new Padding(1, 0, 1, 0);
             label94.Name = "label94";
-            label94.Size = new Size(60, 15);
+            label94.Size = new Size(44, 13);
             label94.TabIndex = 1;
             label94.Text = "Türlü Gelirler";
             // 
             // panel131
             // 
             panel131.BorderStyle = BorderStyle.FixedSingle;
-            panel131.Location = new Point(294, 420);
+            panel131.Location = new Point(319, 412);
             panel131.Margin = new Padding(1, 3, 1, 3);
             panel131.Name = "panel131";
-            panel131.Size = new Size(36, 23);
+            panel131.Size = new Size(33, 23);
             panel131.TabIndex = 98;
             // 
             // panel132
             // 
             panel132.BorderStyle = BorderStyle.FixedSingle;
-            panel132.Location = new Point(294, 397);
+            panel132.Location = new Point(319, 389);
             panel132.Margin = new Padding(1, 3, 1, 3);
             panel132.Name = "panel132";
-            panel132.Size = new Size(36, 23);
+            panel132.Size = new Size(33, 23);
             panel132.TabIndex = 99;
             // 
             // panel133
             // 
             panel133.BorderStyle = BorderStyle.FixedSingle;
-            panel133.Location = new Point(294, 374);
+            panel133.Location = new Point(319, 366);
             panel133.Margin = new Padding(1, 3, 1, 3);
             panel133.Name = "panel133";
-            panel133.Size = new Size(36, 23);
+            panel133.Size = new Size(33, 23);
             panel133.TabIndex = 100;
             // 
-            // panel134
+            // p26
             // 
-            panel134.BorderStyle = BorderStyle.FixedSingle;
-            panel134.Controls.Add(lblDevredenIstikraz);
-            panel134.Location = new Point(396, 420);
-            panel134.Margin = new Padding(1, 3, 1, 3);
-            panel134.Name = "panel134";
-            panel134.Size = new Size(66, 23);
-            panel134.TabIndex = 95;
+            p26.BorderStyle = BorderStyle.FixedSingle;
+            p26.Controls.Add(lblDevredenIstikraz);
+            p26.Location = new Point(416, 412);
+            p26.Margin = new Padding(1, 3, 1, 3);
+            p26.Name = "p26";
+            p26.Size = new Size(64, 23);
+            p26.TabIndex = 95;
             // 
             // lblDevredenIstikraz
             // 
             lblDevredenIstikraz.AutoSize = true;
+            lblDevredenIstikraz.Font = new Font("Arial Narrow", 8.25F);
             lblDevredenIstikraz.Location = new Point(-1, 3);
             lblDevredenIstikraz.Margin = new Padding(1, 0, 1, 0);
             lblDevredenIstikraz.Name = "lblDevredenIstikraz";
-            lblDevredenIstikraz.Size = new Size(66, 15);
+            lblDevredenIstikraz.Size = new Size(12, 15);
             lblDevredenIstikraz.TabIndex = 2;
-            lblDevredenIstikraz.Text = "99.999.999,99";
+            lblDevredenIstikraz.Text = "0";
             // 
-            // panel135
+            // p22
             // 
-            panel135.BorderStyle = BorderStyle.FixedSingle;
-            panel135.Controls.Add(lblDevredenKoyVakif);
-            panel135.Location = new Point(396, 397);
-            panel135.Margin = new Padding(1, 3, 1, 3);
-            panel135.Name = "panel135";
-            panel135.Size = new Size(66, 23);
-            panel135.TabIndex = 96;
+            p22.BorderStyle = BorderStyle.FixedSingle;
+            p22.Controls.Add(lblDevredenKoyVakif);
+            p22.Location = new Point(416, 389);
+            p22.Margin = new Padding(1, 3, 1, 3);
+            p22.Name = "p22";
+            p22.Size = new Size(64, 23);
+            p22.TabIndex = 96;
             // 
             // lblDevredenKoyVakif
             // 
             lblDevredenKoyVakif.AutoSize = true;
+            lblDevredenKoyVakif.Font = new Font("Arial Narrow", 8.25F);
             lblDevredenKoyVakif.Location = new Point(-1, 3);
             lblDevredenKoyVakif.Margin = new Padding(1, 0, 1, 0);
             lblDevredenKoyVakif.Name = "lblDevredenKoyVakif";
-            lblDevredenKoyVakif.Size = new Size(66, 15);
+            lblDevredenKoyVakif.Size = new Size(12, 15);
             lblDevredenKoyVakif.TabIndex = 2;
-            lblDevredenKoyVakif.Text = "99.999.999,99";
+            lblDevredenKoyVakif.Text = "0";
             // 
-            // panel136
+            // p18
             // 
-            panel136.BorderStyle = BorderStyle.FixedSingle;
-            panel136.Controls.Add(panel137);
-            panel136.Controls.Add(lblDevredenYardim);
-            panel136.Controls.Add(panel138);
-            panel136.Controls.Add(panel139);
-            panel136.Location = new Point(396, 374);
-            panel136.Margin = new Padding(1, 3, 1, 3);
-            panel136.Name = "panel136";
-            panel136.Size = new Size(66, 23);
-            panel136.TabIndex = 97;
+            p18.BorderStyle = BorderStyle.FixedSingle;
+            p18.Controls.Add(panel137);
+            p18.Controls.Add(lblDevredenYardim);
+            p18.Controls.Add(panel138);
+            p18.Controls.Add(panel139);
+            p18.Location = new Point(416, 366);
+            p18.Margin = new Padding(1, 3, 1, 3);
+            p18.Name = "p18";
+            p18.Size = new Size(64, 23);
+            p18.TabIndex = 97;
             // 
             // panel137
             // 
@@ -3582,12 +3654,13 @@
             // lblDevredenYardim
             // 
             lblDevredenYardim.AutoSize = true;
+            lblDevredenYardim.Font = new Font("Arial Narrow", 8.25F);
             lblDevredenYardim.Location = new Point(0, 3);
             lblDevredenYardim.Margin = new Padding(1, 0, 1, 0);
             lblDevredenYardim.Name = "lblDevredenYardim";
-            lblDevredenYardim.Size = new Size(66, 15);
+            lblDevredenYardim.Size = new Size(12, 15);
             lblDevredenYardim.TabIndex = 1;
-            lblDevredenYardim.Text = "99.999.999,99";
+            lblDevredenYardim.Text = "0";
             // 
             // panel138
             // 
@@ -3607,58 +3680,60 @@
             panel139.Size = new Size(79, 25);
             panel139.TabIndex = 23;
             // 
-            // panel140
+            // p25
             // 
-            panel140.BorderStyle = BorderStyle.FixedSingle;
-            panel140.Controls.Add(lblTahsilIstikraz);
-            panel140.Location = new Point(330, 420);
-            panel140.Margin = new Padding(1, 3, 1, 3);
-            panel140.Name = "panel140";
-            panel140.Size = new Size(66, 23);
-            panel140.TabIndex = 92;
+            p25.BorderStyle = BorderStyle.FixedSingle;
+            p25.Controls.Add(lblTahsilIstikraz);
+            p25.Location = new Point(352, 412);
+            p25.Margin = new Padding(1, 3, 1, 3);
+            p25.Name = "p25";
+            p25.Size = new Size(64, 23);
+            p25.TabIndex = 92;
             // 
             // lblTahsilIstikraz
             // 
             lblTahsilIstikraz.AutoSize = true;
+            lblTahsilIstikraz.Font = new Font("Arial Narrow", 8.25F);
             lblTahsilIstikraz.Location = new Point(-1, 3);
             lblTahsilIstikraz.Margin = new Padding(1, 0, 1, 0);
             lblTahsilIstikraz.Name = "lblTahsilIstikraz";
-            lblTahsilIstikraz.Size = new Size(66, 15);
+            lblTahsilIstikraz.Size = new Size(12, 15);
             lblTahsilIstikraz.TabIndex = 2;
-            lblTahsilIstikraz.Text = "99.999.999,99";
+            lblTahsilIstikraz.Text = "0";
             // 
-            // panel141
+            // p21
             // 
-            panel141.BorderStyle = BorderStyle.FixedSingle;
-            panel141.Controls.Add(lblTahsilKoyVakif);
-            panel141.Location = new Point(330, 397);
-            panel141.Margin = new Padding(1, 3, 1, 3);
-            panel141.Name = "panel141";
-            panel141.Size = new Size(66, 23);
-            panel141.TabIndex = 93;
+            p21.BorderStyle = BorderStyle.FixedSingle;
+            p21.Controls.Add(lblTahsilKoyVakif);
+            p21.Location = new Point(352, 389);
+            p21.Margin = new Padding(1, 3, 1, 3);
+            p21.Name = "p21";
+            p21.Size = new Size(64, 23);
+            p21.TabIndex = 93;
             // 
             // lblTahsilKoyVakif
             // 
             lblTahsilKoyVakif.AutoSize = true;
+            lblTahsilKoyVakif.Font = new Font("Arial Narrow", 8.25F);
             lblTahsilKoyVakif.Location = new Point(-1, 3);
             lblTahsilKoyVakif.Margin = new Padding(1, 0, 1, 0);
             lblTahsilKoyVakif.Name = "lblTahsilKoyVakif";
-            lblTahsilKoyVakif.Size = new Size(66, 15);
+            lblTahsilKoyVakif.Size = new Size(12, 15);
             lblTahsilKoyVakif.TabIndex = 2;
-            lblTahsilKoyVakif.Text = "99.999.999,99";
+            lblTahsilKoyVakif.Text = "0";
             // 
-            // panel142
+            // p17
             // 
-            panel142.BorderStyle = BorderStyle.FixedSingle;
-            panel142.Controls.Add(panel143);
-            panel142.Controls.Add(lblTahsilYardim);
-            panel142.Controls.Add(panel144);
-            panel142.Controls.Add(panel145);
-            panel142.Location = new Point(330, 374);
-            panel142.Margin = new Padding(1, 3, 1, 3);
-            panel142.Name = "panel142";
-            panel142.Size = new Size(66, 23);
-            panel142.TabIndex = 94;
+            p17.BorderStyle = BorderStyle.FixedSingle;
+            p17.Controls.Add(panel143);
+            p17.Controls.Add(lblTahsilYardim);
+            p17.Controls.Add(panel144);
+            p17.Controls.Add(panel145);
+            p17.Location = new Point(352, 366);
+            p17.Margin = new Padding(1, 3, 1, 3);
+            p17.Name = "p17";
+            p17.Size = new Size(64, 23);
+            p17.TabIndex = 94;
             // 
             // panel143
             // 
@@ -3672,12 +3747,13 @@
             // lblTahsilYardim
             // 
             lblTahsilYardim.AutoSize = true;
+            lblTahsilYardim.Font = new Font("Arial Narrow", 8.25F);
             lblTahsilYardim.Location = new Point(-1, 3);
             lblTahsilYardim.Margin = new Padding(1, 0, 1, 0);
             lblTahsilYardim.Name = "lblTahsilYardim";
-            lblTahsilYardim.Size = new Size(66, 15);
+            lblTahsilYardim.Size = new Size(12, 15);
             lblTahsilYardim.TabIndex = 1;
-            lblTahsilYardim.Text = "99.999.999,99";
+            lblTahsilYardim.Text = "0";
             // 
             // panel144
             // 
@@ -3697,58 +3773,60 @@
             panel145.Size = new Size(79, 25);
             panel145.TabIndex = 23;
             // 
-            // panel146
+            // p24
             // 
-            panel146.BorderStyle = BorderStyle.FixedSingle;
-            panel146.Controls.Add(label424);
-            panel146.Location = new Point(228, 420);
-            panel146.Margin = new Padding(1, 3, 1, 3);
-            panel146.Name = "panel146";
-            panel146.Size = new Size(66, 23);
-            panel146.TabIndex = 89;
+            p24.BorderStyle = BorderStyle.FixedSingle;
+            p24.Controls.Add(label424);
+            p24.Location = new Point(191, 412);
+            p24.Margin = new Padding(1, 3, 1, 3);
+            p24.Name = "p24";
+            p24.Size = new Size(64, 23);
+            p24.TabIndex = 89;
             // 
             // label424
             // 
             label424.AutoSize = true;
+            label424.Font = new Font("Arial Narrow", 8.25F);
             label424.Location = new Point(-1, 3);
             label424.Margin = new Padding(1, 0, 1, 0);
             label424.Name = "label424";
-            label424.Size = new Size(66, 15);
+            label424.Size = new Size(12, 15);
             label424.TabIndex = 2;
-            label424.Text = "99.999.999,99";
+            label424.Text = "0";
             // 
-            // panel147
+            // p20
             // 
-            panel147.BorderStyle = BorderStyle.FixedSingle;
-            panel147.Controls.Add(lblMunzamKoyVakif);
-            panel147.Location = new Point(228, 397);
-            panel147.Margin = new Padding(1, 3, 1, 3);
-            panel147.Name = "panel147";
-            panel147.Size = new Size(66, 23);
-            panel147.TabIndex = 90;
+            p20.BorderStyle = BorderStyle.FixedSingle;
+            p20.Controls.Add(lblMunzamKoyVakif);
+            p20.Location = new Point(191, 389);
+            p20.Margin = new Padding(1, 3, 1, 3);
+            p20.Name = "p20";
+            p20.Size = new Size(64, 23);
+            p20.TabIndex = 90;
             // 
             // lblMunzamKoyVakif
             // 
             lblMunzamKoyVakif.AutoSize = true;
+            lblMunzamKoyVakif.Font = new Font("Arial Narrow", 8.25F);
             lblMunzamKoyVakif.Location = new Point(-1, 3);
             lblMunzamKoyVakif.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKoyVakif.Name = "lblMunzamKoyVakif";
-            lblMunzamKoyVakif.Size = new Size(66, 15);
+            lblMunzamKoyVakif.Size = new Size(12, 15);
             lblMunzamKoyVakif.TabIndex = 2;
-            lblMunzamKoyVakif.Text = "99.999.999,99";
+            lblMunzamKoyVakif.Text = "0";
             // 
-            // panel148
+            // p16
             // 
-            panel148.BorderStyle = BorderStyle.FixedSingle;
-            panel148.Controls.Add(panel149);
-            panel148.Controls.Add(lblMunzamYardim);
-            panel148.Controls.Add(panel150);
-            panel148.Controls.Add(panel151);
-            panel148.Location = new Point(228, 374);
-            panel148.Margin = new Padding(1, 3, 1, 3);
-            panel148.Name = "panel148";
-            panel148.Size = new Size(66, 23);
-            panel148.TabIndex = 91;
+            p16.BorderStyle = BorderStyle.FixedSingle;
+            p16.Controls.Add(panel149);
+            p16.Controls.Add(lblMunzamYardim);
+            p16.Controls.Add(panel150);
+            p16.Controls.Add(panel151);
+            p16.Location = new Point(191, 366);
+            p16.Margin = new Padding(1, 3, 1, 3);
+            p16.Name = "p16";
+            p16.Size = new Size(64, 23);
+            p16.TabIndex = 91;
             // 
             // panel149
             // 
@@ -3762,12 +3840,13 @@
             // lblMunzamYardim
             // 
             lblMunzamYardim.AutoSize = true;
+            lblMunzamYardim.Font = new Font("Arial Narrow", 8.25F);
             lblMunzamYardim.Location = new Point(0, 3);
             lblMunzamYardim.Margin = new Padding(1, 0, 1, 0);
             lblMunzamYardim.Name = "lblMunzamYardim";
-            lblMunzamYardim.Size = new Size(66, 15);
+            lblMunzamYardim.Size = new Size(12, 15);
             lblMunzamYardim.TabIndex = 1;
-            lblMunzamYardim.Text = "99.999.999,99";
+            lblMunzamYardim.Text = "0";
             // 
             // panel150
             // 
@@ -3787,58 +3866,60 @@
             panel151.Size = new Size(79, 25);
             panel151.TabIndex = 23;
             // 
-            // panel152
+            // p23
             // 
-            panel152.BorderStyle = BorderStyle.FixedSingle;
-            panel152.Controls.Add(lblBKIstikraz);
-            panel152.Location = new Point(162, 420);
-            panel152.Margin = new Padding(1, 3, 1, 3);
-            panel152.Name = "panel152";
-            panel152.Size = new Size(66, 23);
-            panel152.TabIndex = 86;
+            p23.BorderStyle = BorderStyle.FixedSingle;
+            p23.Controls.Add(lblBKIstikraz);
+            p23.Location = new Point(127, 412);
+            p23.Margin = new Padding(1, 3, 1, 3);
+            p23.Name = "p23";
+            p23.Size = new Size(64, 23);
+            p23.TabIndex = 86;
             // 
             // lblBKIstikraz
             // 
             lblBKIstikraz.AutoSize = true;
+            lblBKIstikraz.Font = new Font("Arial Narrow", 8.25F);
             lblBKIstikraz.Location = new Point(-1, 3);
             lblBKIstikraz.Margin = new Padding(1, 0, 1, 0);
             lblBKIstikraz.Name = "lblBKIstikraz";
-            lblBKIstikraz.Size = new Size(66, 15);
+            lblBKIstikraz.Size = new Size(12, 15);
             lblBKIstikraz.TabIndex = 2;
-            lblBKIstikraz.Text = "99.999.999,99";
+            lblBKIstikraz.Text = "0";
             // 
-            // panel153
+            // p19
             // 
-            panel153.BorderStyle = BorderStyle.FixedSingle;
-            panel153.Controls.Add(lblBKKoyVakif);
-            panel153.Location = new Point(162, 397);
-            panel153.Margin = new Padding(1, 3, 1, 3);
-            panel153.Name = "panel153";
-            panel153.Size = new Size(66, 23);
-            panel153.TabIndex = 87;
+            p19.BorderStyle = BorderStyle.FixedSingle;
+            p19.Controls.Add(lblBKKoyVakif);
+            p19.Location = new Point(127, 389);
+            p19.Margin = new Padding(1, 3, 1, 3);
+            p19.Name = "p19";
+            p19.Size = new Size(64, 23);
+            p19.TabIndex = 87;
             // 
             // lblBKKoyVakif
             // 
             lblBKKoyVakif.AutoSize = true;
+            lblBKKoyVakif.Font = new Font("Arial Narrow", 8.25F);
             lblBKKoyVakif.Location = new Point(-1, 3);
             lblBKKoyVakif.Margin = new Padding(1, 0, 1, 0);
             lblBKKoyVakif.Name = "lblBKKoyVakif";
-            lblBKKoyVakif.Size = new Size(66, 15);
+            lblBKKoyVakif.Size = new Size(12, 15);
             lblBKKoyVakif.TabIndex = 2;
-            lblBKKoyVakif.Text = "99.999.999,99";
+            lblBKKoyVakif.Text = "0";
             // 
-            // panel154
+            // p15
             // 
-            panel154.BorderStyle = BorderStyle.FixedSingle;
-            panel154.Controls.Add(panel155);
-            panel154.Controls.Add(lblBKYardim);
-            panel154.Controls.Add(panel156);
-            panel154.Controls.Add(panel157);
-            panel154.Location = new Point(162, 374);
-            panel154.Margin = new Padding(1, 3, 1, 3);
-            panel154.Name = "panel154";
-            panel154.Size = new Size(66, 23);
-            panel154.TabIndex = 88;
+            p15.BorderStyle = BorderStyle.FixedSingle;
+            p15.Controls.Add(panel155);
+            p15.Controls.Add(lblBKYardim);
+            p15.Controls.Add(panel156);
+            p15.Controls.Add(panel157);
+            p15.Location = new Point(127, 366);
+            p15.Margin = new Padding(1, 3, 1, 3);
+            p15.Name = "p15";
+            p15.Size = new Size(64, 23);
+            p15.TabIndex = 88;
             // 
             // panel155
             // 
@@ -3852,12 +3933,13 @@
             // lblBKYardim
             // 
             lblBKYardim.AutoSize = true;
+            lblBKYardim.Font = new Font("Arial Narrow", 8.25F);
             lblBKYardim.Location = new Point(-1, 3);
             lblBKYardim.Margin = new Padding(1, 0, 1, 0);
             lblBKYardim.Name = "lblBKYardim";
-            lblBKYardim.Size = new Size(66, 15);
+            lblBKYardim.Size = new Size(12, 15);
             lblBKYardim.TabIndex = 1;
-            lblBKYardim.Text = "99.999.999,99";
+            lblBKYardim.Text = "0";
             // 
             // panel156
             // 
@@ -3880,269 +3962,281 @@
             // panel158
             // 
             panel158.BorderStyle = BorderStyle.FixedSingle;
-            panel158.Location = new Point(294, 443);
+            panel158.Location = new Point(319, 435);
             panel158.Margin = new Padding(1, 3, 1, 3);
             panel158.Name = "panel158";
-            panel158.Size = new Size(36, 23);
+            panel158.Size = new Size(33, 23);
             panel158.TabIndex = 105;
             // 
-            // panel159
+            // p30
             // 
-            panel159.BorderStyle = BorderStyle.FixedSingle;
-            panel159.Controls.Add(lblDevredenTurluGelir);
-            panel159.Location = new Point(396, 443);
-            panel159.Margin = new Padding(1, 3, 1, 3);
-            panel159.Name = "panel159";
-            panel159.Size = new Size(66, 23);
-            panel159.TabIndex = 104;
+            p30.BorderStyle = BorderStyle.FixedSingle;
+            p30.Controls.Add(lblDevredenTurluGelir);
+            p30.Location = new Point(416, 435);
+            p30.Margin = new Padding(1, 3, 1, 3);
+            p30.Name = "p30";
+            p30.Size = new Size(64, 23);
+            p30.TabIndex = 104;
             // 
             // lblDevredenTurluGelir
             // 
             lblDevredenTurluGelir.AutoSize = true;
+            lblDevredenTurluGelir.Font = new Font("Arial Narrow", 8.25F);
             lblDevredenTurluGelir.Location = new Point(-1, 3);
             lblDevredenTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblDevredenTurluGelir.Name = "lblDevredenTurluGelir";
-            lblDevredenTurluGelir.Size = new Size(66, 15);
+            lblDevredenTurluGelir.Size = new Size(12, 15);
             lblDevredenTurluGelir.TabIndex = 2;
-            lblDevredenTurluGelir.Text = "99.999.999,99";
+            lblDevredenTurluGelir.Text = "0";
             // 
-            // panel160
+            // p29
             // 
-            panel160.BorderStyle = BorderStyle.FixedSingle;
-            panel160.Controls.Add(lblTahsilTurluGelir);
-            panel160.Location = new Point(330, 443);
-            panel160.Margin = new Padding(1, 3, 1, 3);
-            panel160.Name = "panel160";
-            panel160.Size = new Size(66, 23);
-            panel160.TabIndex = 103;
+            p29.BorderStyle = BorderStyle.FixedSingle;
+            p29.Controls.Add(lblTahsilTurluGelir);
+            p29.Location = new Point(352, 435);
+            p29.Margin = new Padding(1, 3, 1, 3);
+            p29.Name = "p29";
+            p29.Size = new Size(64, 23);
+            p29.TabIndex = 103;
             // 
             // lblTahsilTurluGelir
             // 
             lblTahsilTurluGelir.AutoSize = true;
+            lblTahsilTurluGelir.Font = new Font("Arial Narrow", 8.25F);
             lblTahsilTurluGelir.Location = new Point(-1, 3);
             lblTahsilTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblTahsilTurluGelir.Name = "lblTahsilTurluGelir";
-            lblTahsilTurluGelir.Size = new Size(66, 15);
+            lblTahsilTurluGelir.Size = new Size(12, 15);
             lblTahsilTurluGelir.TabIndex = 2;
-            lblTahsilTurluGelir.Text = "99.999.999,99";
+            lblTahsilTurluGelir.Text = "0";
             // 
-            // panel161
+            // p28
             // 
-            panel161.BorderStyle = BorderStyle.FixedSingle;
-            panel161.Controls.Add(lblMunzamTurluGelir);
-            panel161.Location = new Point(228, 443);
-            panel161.Margin = new Padding(1, 3, 1, 3);
-            panel161.Name = "panel161";
-            panel161.Size = new Size(66, 23);
-            panel161.TabIndex = 102;
+            p28.BorderStyle = BorderStyle.FixedSingle;
+            p28.Controls.Add(lblMunzamTurluGelir);
+            p28.Location = new Point(191, 435);
+            p28.Margin = new Padding(1, 3, 1, 3);
+            p28.Name = "p28";
+            p28.Size = new Size(64, 23);
+            p28.TabIndex = 102;
             // 
             // lblMunzamTurluGelir
             // 
             lblMunzamTurluGelir.AutoSize = true;
+            lblMunzamTurluGelir.Font = new Font("Arial Narrow", 8.25F);
             lblMunzamTurluGelir.Location = new Point(-1, 3);
             lblMunzamTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblMunzamTurluGelir.Name = "lblMunzamTurluGelir";
-            lblMunzamTurluGelir.Size = new Size(66, 15);
+            lblMunzamTurluGelir.Size = new Size(12, 15);
             lblMunzamTurluGelir.TabIndex = 2;
-            lblMunzamTurluGelir.Text = "99.999.999,99";
+            lblMunzamTurluGelir.Text = "0";
             // 
-            // panel162
+            // p27
             // 
-            panel162.BorderStyle = BorderStyle.FixedSingle;
-            panel162.Controls.Add(lblBKTurluGelir);
-            panel162.Location = new Point(162, 443);
-            panel162.Margin = new Padding(1, 3, 1, 3);
-            panel162.Name = "panel162";
-            panel162.Size = new Size(66, 23);
-            panel162.TabIndex = 101;
+            p27.BorderStyle = BorderStyle.FixedSingle;
+            p27.Controls.Add(lblBKTurluGelir);
+            p27.Location = new Point(127, 435);
+            p27.Margin = new Padding(1, 3, 1, 3);
+            p27.Name = "p27";
+            p27.Size = new Size(64, 23);
+            p27.TabIndex = 101;
             // 
             // lblBKTurluGelir
             // 
             lblBKTurluGelir.AutoSize = true;
+            lblBKTurluGelir.Font = new Font("Arial Narrow", 8.25F);
             lblBKTurluGelir.Location = new Point(-1, 3);
             lblBKTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblBKTurluGelir.Name = "lblBKTurluGelir";
-            lblBKTurluGelir.Size = new Size(66, 15);
+            lblBKTurluGelir.Size = new Size(12, 15);
             lblBKTurluGelir.TabIndex = 2;
-            lblBKTurluGelir.Text = "99.999.999,99";
+            lblBKTurluGelir.Text = "0";
             // 
             // panel163
             // 
             panel163.BorderStyle = BorderStyle.FixedSingle;
-            panel163.Location = new Point(294, 489);
+            panel163.Location = new Point(319, 481);
             panel163.Margin = new Padding(1, 3, 1, 3);
             panel163.Name = "panel163";
-            panel163.Size = new Size(36, 23);
+            panel163.Size = new Size(33, 23);
             panel163.TabIndex = 117;
             // 
-            // panel164
+            // p38
             // 
-            panel164.BorderStyle = BorderStyle.FixedSingle;
-            panel164.Controls.Add(lblDevredenToplami);
-            panel164.Location = new Point(396, 489);
-            panel164.Margin = new Padding(1, 3, 1, 3);
-            panel164.Name = "panel164";
-            panel164.Size = new Size(66, 23);
-            panel164.TabIndex = 116;
+            p38.BorderStyle = BorderStyle.FixedSingle;
+            p38.Controls.Add(lblDevredenToplami);
+            p38.Location = new Point(416, 481);
+            p38.Margin = new Padding(1, 3, 1, 3);
+            p38.Name = "p38";
+            p38.Size = new Size(64, 23);
+            p38.TabIndex = 116;
             // 
             // lblDevredenToplami
             // 
             lblDevredenToplami.AutoSize = true;
+            lblDevredenToplami.Font = new Font("Arial Narrow", 8.25F);
             lblDevredenToplami.Location = new Point(-1, 3);
             lblDevredenToplami.Margin = new Padding(1, 0, 1, 0);
             lblDevredenToplami.Name = "lblDevredenToplami";
-            lblDevredenToplami.Size = new Size(66, 15);
+            lblDevredenToplami.Size = new Size(12, 15);
             lblDevredenToplami.TabIndex = 2;
-            lblDevredenToplami.Text = "99.999.999,99";
+            lblDevredenToplami.Text = "0";
             // 
-            // panel165
+            // p37
             // 
-            panel165.BorderStyle = BorderStyle.FixedSingle;
-            panel165.Controls.Add(lblTahsilToplami);
-            panel165.Location = new Point(330, 489);
-            panel165.Margin = new Padding(1, 3, 1, 3);
-            panel165.Name = "panel165";
-            panel165.Size = new Size(66, 23);
-            panel165.TabIndex = 115;
+            p37.BorderStyle = BorderStyle.FixedSingle;
+            p37.Controls.Add(lblTahsilToplami);
+            p37.Location = new Point(352, 481);
+            p37.Margin = new Padding(1, 3, 1, 3);
+            p37.Name = "p37";
+            p37.Size = new Size(64, 23);
+            p37.TabIndex = 115;
             // 
             // lblTahsilToplami
             // 
             lblTahsilToplami.AutoSize = true;
+            lblTahsilToplami.Font = new Font("Arial Narrow", 8.25F);
             lblTahsilToplami.Location = new Point(-1, 3);
             lblTahsilToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahsilToplami.Name = "lblTahsilToplami";
-            lblTahsilToplami.Size = new Size(66, 15);
+            lblTahsilToplami.Size = new Size(12, 15);
             lblTahsilToplami.TabIndex = 2;
-            lblTahsilToplami.Text = "99.999.999,99";
+            lblTahsilToplami.Text = "0";
             // 
-            // panel166
+            // p36
             // 
-            panel166.BorderStyle = BorderStyle.FixedSingle;
-            panel166.Controls.Add(lblMunzamToplami);
-            panel166.Location = new Point(228, 489);
-            panel166.Margin = new Padding(1, 3, 1, 3);
-            panel166.Name = "panel166";
-            panel166.Size = new Size(66, 23);
-            panel166.TabIndex = 114;
+            p36.BorderStyle = BorderStyle.FixedSingle;
+            p36.Controls.Add(lblMunzamToplami);
+            p36.Location = new Point(191, 481);
+            p36.Margin = new Padding(1, 3, 1, 3);
+            p36.Name = "p36";
+            p36.Size = new Size(64, 23);
+            p36.TabIndex = 114;
             // 
             // lblMunzamToplami
             // 
             lblMunzamToplami.AutoSize = true;
+            lblMunzamToplami.Font = new Font("Arial Narrow", 8.25F);
             lblMunzamToplami.Location = new Point(-1, 3);
             lblMunzamToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamToplami.Name = "lblMunzamToplami";
-            lblMunzamToplami.Size = new Size(66, 15);
+            lblMunzamToplami.Size = new Size(12, 15);
             lblMunzamToplami.TabIndex = 2;
-            lblMunzamToplami.Text = "99.999.999,99";
+            lblMunzamToplami.Text = "0";
             // 
-            // panel167
+            // p35
             // 
-            panel167.BorderStyle = BorderStyle.FixedSingle;
-            panel167.Controls.Add(lblBKGelirToplami);
-            panel167.Location = new Point(162, 489);
-            panel167.Margin = new Padding(1, 3, 1, 3);
-            panel167.Name = "panel167";
-            panel167.Size = new Size(66, 23);
-            panel167.TabIndex = 113;
+            p35.BorderStyle = BorderStyle.FixedSingle;
+            p35.Controls.Add(lblBKGelirToplami);
+            p35.Location = new Point(127, 481);
+            p35.Margin = new Padding(1, 3, 1, 3);
+            p35.Name = "p35";
+            p35.Size = new Size(64, 23);
+            p35.TabIndex = 113;
             // 
             // lblBKGelirToplami
             // 
             lblBKGelirToplami.AutoSize = true;
+            lblBKGelirToplami.Font = new Font("Arial Narrow", 8.25F);
             lblBKGelirToplami.Location = new Point(-1, 3);
             lblBKGelirToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKGelirToplami.Name = "lblBKGelirToplami";
-            lblBKGelirToplami.Size = new Size(66, 15);
+            lblBKGelirToplami.Size = new Size(12, 15);
             lblBKGelirToplami.TabIndex = 2;
-            lblBKGelirToplami.Text = "99.999.999,99";
+            lblBKGelirToplami.Text = "0";
             // 
             // panel168
             // 
             panel168.BorderStyle = BorderStyle.FixedSingle;
-            panel168.Location = new Point(294, 466);
+            panel168.Location = new Point(319, 458);
             panel168.Margin = new Padding(1, 3, 1, 3);
             panel168.Name = "panel168";
-            panel168.Size = new Size(36, 23);
+            panel168.Size = new Size(33, 23);
             panel168.TabIndex = 112;
             // 
-            // panel169
+            // p34
             // 
-            panel169.BorderStyle = BorderStyle.FixedSingle;
-            panel169.Controls.Add(lblDevredenDevir);
-            panel169.Location = new Point(396, 466);
-            panel169.Margin = new Padding(1, 3, 1, 3);
-            panel169.Name = "panel169";
-            panel169.Size = new Size(66, 23);
-            panel169.TabIndex = 111;
+            p34.BorderStyle = BorderStyle.FixedSingle;
+            p34.Controls.Add(lblDevredenDevir);
+            p34.Location = new Point(416, 458);
+            p34.Margin = new Padding(1, 3, 1, 3);
+            p34.Name = "p34";
+            p34.Size = new Size(64, 23);
+            p34.TabIndex = 111;
             // 
             // lblDevredenDevir
             // 
             lblDevredenDevir.AutoSize = true;
+            lblDevredenDevir.Font = new Font("Arial Narrow", 8.25F);
             lblDevredenDevir.Location = new Point(-1, 3);
             lblDevredenDevir.Margin = new Padding(1, 0, 1, 0);
             lblDevredenDevir.Name = "lblDevredenDevir";
-            lblDevredenDevir.Size = new Size(66, 15);
+            lblDevredenDevir.Size = new Size(12, 15);
             lblDevredenDevir.TabIndex = 2;
-            lblDevredenDevir.Text = "99.999.999,99";
+            lblDevredenDevir.Text = "0";
             // 
-            // panel170
+            // p33
             // 
-            panel170.BorderStyle = BorderStyle.FixedSingle;
-            panel170.Controls.Add(lblTahsilDevir);
-            panel170.Location = new Point(330, 466);
-            panel170.Margin = new Padding(1, 3, 1, 3);
-            panel170.Name = "panel170";
-            panel170.Size = new Size(66, 23);
-            panel170.TabIndex = 110;
+            p33.BorderStyle = BorderStyle.FixedSingle;
+            p33.Controls.Add(lblTahsilDevir);
+            p33.Location = new Point(352, 458);
+            p33.Margin = new Padding(1, 3, 1, 3);
+            p33.Name = "p33";
+            p33.Size = new Size(64, 23);
+            p33.TabIndex = 110;
             // 
             // lblTahsilDevir
             // 
             lblTahsilDevir.AutoSize = true;
+            lblTahsilDevir.Font = new Font("Arial Narrow", 8.25F);
             lblTahsilDevir.Location = new Point(-1, 3);
             lblTahsilDevir.Margin = new Padding(1, 0, 1, 0);
             lblTahsilDevir.Name = "lblTahsilDevir";
-            lblTahsilDevir.Size = new Size(66, 15);
+            lblTahsilDevir.Size = new Size(12, 15);
             lblTahsilDevir.TabIndex = 2;
-            lblTahsilDevir.Text = "99.999.999,99";
+            lblTahsilDevir.Text = "0";
             // 
-            // panel171
+            // p32
             // 
-            panel171.BorderStyle = BorderStyle.FixedSingle;
-            panel171.Controls.Add(lblMunzamDevir);
-            panel171.Location = new Point(228, 466);
-            panel171.Margin = new Padding(1, 3, 1, 3);
-            panel171.Name = "panel171";
-            panel171.Size = new Size(66, 23);
-            panel171.TabIndex = 109;
+            p32.BorderStyle = BorderStyle.FixedSingle;
+            p32.Controls.Add(lblMunzamDevir);
+            p32.Location = new Point(191, 458);
+            p32.Margin = new Padding(1, 3, 1, 3);
+            p32.Name = "p32";
+            p32.Size = new Size(64, 23);
+            p32.TabIndex = 109;
             // 
             // lblMunzamDevir
             // 
             lblMunzamDevir.AutoSize = true;
+            lblMunzamDevir.Font = new Font("Arial Narrow", 8.25F);
             lblMunzamDevir.Location = new Point(-1, 3);
             lblMunzamDevir.Margin = new Padding(1, 0, 1, 0);
             lblMunzamDevir.Name = "lblMunzamDevir";
-            lblMunzamDevir.Size = new Size(66, 15);
+            lblMunzamDevir.Size = new Size(12, 15);
             lblMunzamDevir.TabIndex = 2;
-            lblMunzamDevir.Text = "99.999.999,99";
+            lblMunzamDevir.Text = "0";
             // 
-            // panel172
+            // p31
             // 
-            panel172.BorderStyle = BorderStyle.FixedSingle;
-            panel172.Controls.Add(lblBKDevir);
-            panel172.Location = new Point(162, 466);
-            panel172.Margin = new Padding(1, 3, 1, 3);
-            panel172.Name = "panel172";
-            panel172.Size = new Size(66, 23);
-            panel172.TabIndex = 108;
+            p31.BorderStyle = BorderStyle.FixedSingle;
+            p31.Controls.Add(lblBKDevir);
+            p31.Location = new Point(127, 458);
+            p31.Margin = new Padding(1, 3, 1, 3);
+            p31.Name = "p31";
+            p31.Size = new Size(64, 23);
+            p31.TabIndex = 108;
             // 
             // lblBKDevir
             // 
             lblBKDevir.AutoSize = true;
+            lblBKDevir.Font = new Font("Arial Narrow", 8.25F);
             lblBKDevir.Location = new Point(-1, 3);
             lblBKDevir.Margin = new Padding(1, 0, 1, 0);
             lblBKDevir.Name = "lblBKDevir";
-            lblBKDevir.Size = new Size(66, 15);
+            lblBKDevir.Size = new Size(12, 15);
             lblBKDevir.TabIndex = 2;
-            lblBKDevir.Text = "99.999.999,99";
+            lblBKDevir.Text = "0";
             // 
             // panel173
             // 
@@ -4151,10 +4245,10 @@
             panel173.Controls.Add(panel175);
             panel173.Controls.Add(panel176);
             panel173.Controls.Add(label107);
-            panel173.Location = new Point(45, 489);
+            panel173.Location = new Point(39, 481);
             panel173.Margin = new Padding(1, 3, 1, 3);
             panel173.Name = "panel173";
-            panel173.Size = new Size(117, 23);
+            panel173.Size = new Size(88, 23);
             panel173.TabIndex = 106;
             // 
             // panel174
@@ -4230,24 +4324,26 @@
             // label107
             // 
             label107.AutoSize = true;
+            label107.Font = new Font("Arial Narrow", 6F);
             label107.Location = new Point(-2, 4);
             label107.Margin = new Padding(1, 0, 1, 0);
             label107.Name = "label107";
-            label107.Size = new Size(96, 15);
+            label107.Size = new Size(71, 13);
             label107.TabIndex = 1;
             label107.Text = "Üçüncü Fasıl Yekünü";
             // 
             // panel178
             // 
             panel178.BorderStyle = BorderStyle.FixedSingle;
+            panel178.Controls.Add(label115);
+            panel178.Controls.Add(label116);
             panel178.Controls.Add(panel179);
             panel178.Controls.Add(panel180);
             panel178.Controls.Add(panel181);
-            panel178.Controls.Add(label111);
-            panel178.Location = new Point(45, 466);
+            panel178.Location = new Point(39, 458);
             panel178.Margin = new Padding(1, 3, 1, 3);
             panel178.Name = "panel178";
-            panel178.Size = new Size(117, 23);
+            panel178.Size = new Size(88, 23);
             panel178.TabIndex = 107;
             // 
             // panel179
@@ -4320,57 +4416,38 @@
             panel182.Size = new Size(79, 25);
             panel182.TabIndex = 23;
             // 
-            // label111
-            // 
-            label111.AutoSize = true;
-            label111.Location = new Point(-2, 4);
-            label111.Margin = new Padding(1, 0, 1, 0);
-            label111.Name = "label111";
-            label111.Size = new Size(119, 15);
-            label111.TabIndex = 1;
-            label111.Text = "Geçen Seneden Müdevver";
-            // 
             // panel184
             // 
             panel184.BorderStyle = BorderStyle.FixedSingle;
             panel184.Controls.Add(label114);
-            panel184.Location = new Point(46, 555);
+            panel184.Location = new Point(39, 547);
             panel184.Margin = new Padding(1, 3, 1, 3);
             panel184.Name = "panel184";
-            panel184.Size = new Size(117, 23);
+            panel184.Size = new Size(88, 23);
             panel184.TabIndex = 137;
             // 
             // label114
             // 
             label114.AutoSize = true;
+            label114.Font = new Font("Arial Narrow", 6F);
             label114.Location = new Point(-2, 4);
             label114.Margin = new Padding(1, 0, 1, 0);
             label114.Name = "label114";
-            label114.Size = new Size(103, 15);
+            label114.Size = new Size(78, 13);
             label114.TabIndex = 1;
             label114.Text = "Dördüncü Fasıl Yekünü";
             // 
             // panel185
             // 
             panel185.BorderStyle = BorderStyle.FixedSingle;
-            panel185.Controls.Add(label115);
+            panel185.Controls.Add(label97);
+            panel185.Controls.Add(label98);
             panel185.Controls.Add(panel186);
-            panel185.Location = new Point(46, 532);
+            panel185.Location = new Point(39, 524);
             panel185.Margin = new Padding(1, 3, 1, 3);
             panel185.Name = "panel185";
-            panel185.Size = new Size(117, 23);
+            panel185.Size = new Size(88, 23);
             panel185.TabIndex = 138;
-            // 
-            // label115
-            // 
-            label115.AutoSize = true;
-            label115.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label115.Location = new Point(-2, 4);
-            label115.Margin = new Padding(1, 0, 1, 0);
-            label115.Name = "label115";
-            label115.Size = new Size(110, 13);
-            label115.TabIndex = 1;
-            label115.Text = "Muhtaç Asker Ailelerine Yardım";
             // 
             // panel186
             // 
@@ -4384,79 +4461,151 @@
             // panel188
             // 
             panel188.BorderStyle = BorderStyle.FixedSingle;
-            panel188.Location = new Point(295, 555);
+            panel188.Location = new Point(319, 547);
             panel188.Margin = new Padding(1, 3, 1, 3);
             panel188.Name = "panel188";
-            panel188.Size = new Size(36, 23);
+            panel188.Size = new Size(33, 23);
             panel188.TabIndex = 134;
             // 
             // panel189
             // 
             panel189.BorderStyle = BorderStyle.FixedSingle;
-            panel189.Location = new Point(295, 532);
+            panel189.Location = new Point(319, 524);
             panel189.Margin = new Padding(1, 3, 1, 3);
             panel189.Name = "panel189";
-            panel189.Size = new Size(36, 23);
+            panel189.Size = new Size(33, 23);
             panel189.TabIndex = 135;
             // 
-            // panel191
+            // p45
             // 
-            panel191.BorderStyle = BorderStyle.FixedSingle;
-            panel191.Location = new Point(397, 555);
-            panel191.Margin = new Padding(1, 3, 1, 3);
-            panel191.Name = "panel191";
-            panel191.Size = new Size(66, 23);
-            panel191.TabIndex = 131;
+            p45.BorderStyle = BorderStyle.FixedSingle;
+            p45.Controls.Add(lblDevredenAskerToplami);
+            p45.Location = new Point(416, 547);
+            p45.Margin = new Padding(1, 3, 1, 3);
+            p45.Name = "p45";
+            p45.Size = new Size(64, 23);
+            p45.TabIndex = 131;
             // 
-            // panel192
+            // lblDevredenAskerToplami
             // 
-            panel192.BorderStyle = BorderStyle.FixedSingle;
-            panel192.Location = new Point(397, 532);
-            panel192.Margin = new Padding(1, 3, 1, 3);
-            panel192.Name = "panel192";
-            panel192.Size = new Size(66, 23);
-            panel192.TabIndex = 132;
+            lblDevredenAskerToplami.AutoSize = true;
+            lblDevredenAskerToplami.Font = new Font("Arial Narrow", 8.25F);
+            lblDevredenAskerToplami.Location = new Point(-1, 3);
+            lblDevredenAskerToplami.Margin = new Padding(1, 0, 1, 0);
+            lblDevredenAskerToplami.Name = "lblDevredenAskerToplami";
+            lblDevredenAskerToplami.Size = new Size(12, 15);
+            lblDevredenAskerToplami.TabIndex = 3;
+            lblDevredenAskerToplami.Text = "0";
             // 
-            // panel197
+            // p42
             // 
-            panel197.BorderStyle = BorderStyle.FixedSingle;
-            panel197.Location = new Point(331, 555);
-            panel197.Margin = new Padding(1, 3, 1, 3);
-            panel197.Name = "panel197";
-            panel197.Size = new Size(66, 23);
-            panel197.TabIndex = 128;
+            p42.BorderStyle = BorderStyle.FixedSingle;
+            p42.Controls.Add(lblDevredenAsker);
+            p42.Location = new Point(416, 524);
+            p42.Margin = new Padding(1, 3, 1, 3);
+            p42.Name = "p42";
+            p42.Size = new Size(64, 23);
+            p42.TabIndex = 132;
             // 
-            // panel198
+            // lblDevredenAsker
             // 
-            panel198.BorderStyle = BorderStyle.FixedSingle;
-            panel198.Location = new Point(331, 532);
-            panel198.Margin = new Padding(1, 3, 1, 3);
-            panel198.Name = "panel198";
-            panel198.Size = new Size(66, 23);
-            panel198.TabIndex = 129;
+            lblDevredenAsker.AutoSize = true;
+            lblDevredenAsker.Font = new Font("Arial Narrow", 8.25F);
+            lblDevredenAsker.Location = new Point(-1, 3);
+            lblDevredenAsker.Margin = new Padding(1, 0, 1, 0);
+            lblDevredenAsker.Name = "lblDevredenAsker";
+            lblDevredenAsker.Size = new Size(12, 15);
+            lblDevredenAsker.TabIndex = 3;
+            lblDevredenAsker.Text = "0";
+            // 
+            // p44
+            // 
+            p44.BorderStyle = BorderStyle.FixedSingle;
+            p44.Controls.Add(lblTahsilAskerToplami);
+            p44.Location = new Point(352, 547);
+            p44.Margin = new Padding(1, 3, 1, 3);
+            p44.Name = "p44";
+            p44.Size = new Size(64, 23);
+            p44.TabIndex = 128;
+            // 
+            // lblTahsilAskerToplami
+            // 
+            lblTahsilAskerToplami.AutoSize = true;
+            lblTahsilAskerToplami.Font = new Font("Arial Narrow", 8.25F);
+            lblTahsilAskerToplami.Location = new Point(-1, 3);
+            lblTahsilAskerToplami.Margin = new Padding(1, 0, 1, 0);
+            lblTahsilAskerToplami.Name = "lblTahsilAskerToplami";
+            lblTahsilAskerToplami.Size = new Size(12, 15);
+            lblTahsilAskerToplami.TabIndex = 3;
+            lblTahsilAskerToplami.Text = "0";
+            // 
+            // p41
+            // 
+            p41.BorderStyle = BorderStyle.FixedSingle;
+            p41.Controls.Add(lblTahsilAsker);
+            p41.Location = new Point(352, 524);
+            p41.Margin = new Padding(1, 3, 1, 3);
+            p41.Name = "p41";
+            p41.Size = new Size(64, 23);
+            p41.TabIndex = 129;
+            // 
+            // lblTahsilAsker
+            // 
+            lblTahsilAsker.AutoSize = true;
+            lblTahsilAsker.Font = new Font("Arial Narrow", 8.25F);
+            lblTahsilAsker.Location = new Point(-1, 3);
+            lblTahsilAsker.Margin = new Padding(1, 0, 1, 0);
+            lblTahsilAsker.Name = "lblTahsilAsker";
+            lblTahsilAsker.Size = new Size(12, 15);
+            lblTahsilAsker.TabIndex = 3;
+            lblTahsilAsker.Text = "0";
             // 
             // panel203
             // 
             panel203.BorderStyle = BorderStyle.FixedSingle;
-            panel203.Location = new Point(229, 555);
+            panel203.Controls.Add(lblMunzamAskerToplami);
+            panel203.Location = new Point(191, 547);
             panel203.Margin = new Padding(1, 3, 1, 3);
             panel203.Name = "panel203";
-            panel203.Size = new Size(66, 23);
+            panel203.Size = new Size(64, 23);
             panel203.TabIndex = 125;
             // 
-            // panel210
+            // lblMunzamAskerToplami
             // 
-            panel210.BorderStyle = BorderStyle.FixedSingle;
-            panel210.Location = new Point(163, 532);
-            panel210.Margin = new Padding(1, 3, 1, 3);
-            panel210.Name = "panel210";
-            panel210.Size = new Size(66, 23);
-            panel210.TabIndex = 123;
+            lblMunzamAskerToplami.AutoSize = true;
+            lblMunzamAskerToplami.Font = new Font("Arial Narrow", 8.25F);
+            lblMunzamAskerToplami.Location = new Point(-1, 3);
+            lblMunzamAskerToplami.Margin = new Padding(1, 0, 1, 0);
+            lblMunzamAskerToplami.Name = "lblMunzamAskerToplami";
+            lblMunzamAskerToplami.Size = new Size(12, 15);
+            lblMunzamAskerToplami.TabIndex = 3;
+            lblMunzamAskerToplami.Text = "0";
+            // 
+            // p39
+            // 
+            p39.BorderStyle = BorderStyle.FixedSingle;
+            p39.Controls.Add(lblBKAsker);
+            p39.Location = new Point(127, 524);
+            p39.Margin = new Padding(1, 3, 1, 3);
+            p39.Name = "p39";
+            p39.Size = new Size(64, 23);
+            p39.TabIndex = 123;
+            // 
+            // lblBKAsker
+            // 
+            lblBKAsker.AutoSize = true;
+            lblBKAsker.Font = new Font("Arial Narrow", 8.25F);
+            lblBKAsker.Location = new Point(-1, 3);
+            lblBKAsker.Margin = new Padding(1, 0, 1, 0);
+            lblBKAsker.Name = "lblBKAsker";
+            lblBKAsker.Size = new Size(12, 15);
+            lblBKAsker.TabIndex = 3;
+            lblBKAsker.Text = "0";
             // 
             // label120
             // 
             label120.AutoSize = true;
-            label120.Location = new Point(116, 515);
+            label120.Location = new Point(116, 507);
             label120.Margin = new Padding(1, 0, 1, 0);
             label120.Name = "label120";
             label120.Size = new Size(261, 15);
@@ -4467,10 +4616,10 @@
             // 
             panel214.BorderStyle = BorderStyle.FixedSingle;
             panel214.Controls.Add(label122);
-            panel214.Location = new Point(23, 532);
+            panel214.Location = new Point(22, 524);
             panel214.Margin = new Padding(1, 3, 1, 3);
             panel214.Name = "panel214";
-            panel214.Size = new Size(23, 46);
+            panel214.Size = new Size(17, 46);
             panel214.TabIndex = 120;
             // 
             // label122
@@ -4487,10 +4636,10 @@
             // 
             panel215.BorderStyle = BorderStyle.FixedSingle;
             panel215.Controls.Add(label123);
-            panel215.Location = new Point(3, 532);
+            panel215.Location = new Point(5, 524);
             panel215.Margin = new Padding(1, 3, 1, 3);
             panel215.Name = "panel215";
-            panel215.Size = new Size(23, 46);
+            panel215.Size = new Size(17, 46);
             panel215.TabIndex = 119;
             // 
             // label123
@@ -4507,19 +4656,20 @@
             // 
             panel216.BorderStyle = BorderStyle.FixedSingle;
             panel216.Controls.Add(label124);
-            panel216.Location = new Point(46, 644);
+            panel216.Location = new Point(39, 636);
             panel216.Margin = new Padding(1, 3, 1, 3);
             panel216.Name = "panel216";
-            panel216.Size = new Size(117, 23);
+            panel216.Size = new Size(88, 23);
             panel216.TabIndex = 157;
             // 
             // label124
             // 
             label124.AutoSize = true;
+            label124.Font = new Font("Arial Narrow", 6F);
             label124.Location = new Point(-2, 3);
             label124.Margin = new Padding(1, 0, 1, 0);
             label124.Name = "label124";
-            label124.Size = new Size(94, 15);
+            label124.Size = new Size(68, 13);
             label124.TabIndex = 1;
             label124.Text = "Beşinci Fasıl Yekünü";
             // 
@@ -4527,19 +4677,20 @@
             // 
             panel217.BorderStyle = BorderStyle.FixedSingle;
             panel217.Controls.Add(label125);
-            panel217.Location = new Point(46, 621);
+            panel217.Location = new Point(39, 613);
             panel217.Margin = new Padding(1, 3, 1, 3);
             panel217.Name = "panel217";
-            panel217.Size = new Size(117, 23);
+            panel217.Size = new Size(88, 23);
             panel217.TabIndex = 158;
             // 
             // label125
             // 
             label125.AutoSize = true;
+            label125.Font = new Font("Arial Narrow", 6F);
             label125.Location = new Point(-2, 3);
             label125.Margin = new Padding(1, 0, 1, 0);
             label125.Name = "label125";
-            label125.Size = new Size(105, 15);
+            label125.Size = new Size(77, 13);
             label125.TabIndex = 1;
             label125.Text = "Mahsul Bakayası Tutarı";
             // 
@@ -4548,19 +4699,20 @@
             panel218.BorderStyle = BorderStyle.FixedSingle;
             panel218.Controls.Add(label126);
             panel218.Controls.Add(panel219);
-            panel218.Location = new Point(46, 598);
+            panel218.Location = new Point(39, 590);
             panel218.Margin = new Padding(1, 3, 1, 3);
             panel218.Name = "panel218";
-            panel218.Size = new Size(117, 23);
+            panel218.Size = new Size(88, 23);
             panel218.TabIndex = 159;
             // 
             // label126
             // 
             label126.AutoSize = true;
+            label126.Font = new Font("Arial Narrow", 6F);
             label126.Location = new Point(-2, 4);
             label126.Margin = new Padding(1, 0, 1, 0);
             label126.Name = "label126";
-            label126.Size = new Size(68, 15);
+            label126.Size = new Size(50, 13);
             label126.TabIndex = 1;
             label126.Text = "Para Bakayası";
             // 
@@ -4576,142 +4728,142 @@
             // panel220
             // 
             panel220.BorderStyle = BorderStyle.FixedSingle;
-            panel220.Location = new Point(295, 644);
+            panel220.Location = new Point(319, 636);
             panel220.Margin = new Padding(1, 3, 1, 3);
             panel220.Name = "panel220";
-            panel220.Size = new Size(36, 23);
+            panel220.Size = new Size(33, 23);
             panel220.TabIndex = 154;
             // 
             // panel221
             // 
             panel221.BorderStyle = BorderStyle.FixedSingle;
-            panel221.Location = new Point(295, 621);
+            panel221.Location = new Point(319, 613);
             panel221.Margin = new Padding(1, 3, 1, 3);
             panel221.Name = "panel221";
-            panel221.Size = new Size(36, 23);
+            panel221.Size = new Size(33, 23);
             panel221.TabIndex = 155;
             // 
             // panel222
             // 
             panel222.BorderStyle = BorderStyle.FixedSingle;
-            panel222.Location = new Point(295, 598);
+            panel222.Location = new Point(319, 590);
             panel222.Margin = new Padding(1, 3, 1, 3);
             panel222.Name = "panel222";
-            panel222.Size = new Size(36, 23);
+            panel222.Size = new Size(33, 23);
             panel222.TabIndex = 156;
             // 
             // panel223
             // 
             panel223.BorderStyle = BorderStyle.FixedSingle;
-            panel223.Location = new Point(397, 644);
+            panel223.Location = new Point(416, 636);
             panel223.Margin = new Padding(1, 3, 1, 3);
             panel223.Name = "panel223";
-            panel223.Size = new Size(66, 23);
+            panel223.Size = new Size(64, 23);
             panel223.TabIndex = 151;
             // 
             // panel224
             // 
             panel224.BorderStyle = BorderStyle.FixedSingle;
-            panel224.Location = new Point(397, 621);
+            panel224.Location = new Point(416, 613);
             panel224.Margin = new Padding(1, 3, 1, 3);
             panel224.Name = "panel224";
-            panel224.Size = new Size(66, 23);
+            panel224.Size = new Size(64, 23);
             panel224.TabIndex = 152;
             // 
             // panel225
             // 
             panel225.BorderStyle = BorderStyle.FixedSingle;
-            panel225.Location = new Point(397, 598);
+            panel225.Location = new Point(416, 590);
             panel225.Margin = new Padding(1, 3, 1, 3);
             panel225.Name = "panel225";
-            panel225.Size = new Size(66, 23);
+            panel225.Size = new Size(64, 23);
             panel225.TabIndex = 153;
             // 
             // panel229
             // 
             panel229.BorderStyle = BorderStyle.FixedSingle;
-            panel229.Location = new Point(331, 644);
+            panel229.Location = new Point(352, 636);
             panel229.Margin = new Padding(1, 3, 1, 3);
             panel229.Name = "panel229";
-            panel229.Size = new Size(66, 23);
+            panel229.Size = new Size(64, 23);
             panel229.TabIndex = 148;
             // 
             // panel230
             // 
             panel230.BorderStyle = BorderStyle.FixedSingle;
-            panel230.Location = new Point(331, 621);
+            panel230.Location = new Point(352, 613);
             panel230.Margin = new Padding(1, 3, 1, 3);
             panel230.Name = "panel230";
-            panel230.Size = new Size(66, 23);
+            panel230.Size = new Size(64, 23);
             panel230.TabIndex = 149;
             // 
             // panel231
             // 
             panel231.BorderStyle = BorderStyle.FixedSingle;
-            panel231.Location = new Point(331, 598);
+            panel231.Location = new Point(352, 590);
             panel231.Margin = new Padding(1, 3, 1, 3);
             panel231.Name = "panel231";
-            panel231.Size = new Size(66, 23);
+            panel231.Size = new Size(64, 23);
             panel231.TabIndex = 150;
             // 
             // panel235
             // 
             panel235.BorderStyle = BorderStyle.FixedSingle;
-            panel235.Location = new Point(229, 644);
+            panel235.Location = new Point(191, 636);
             panel235.Margin = new Padding(1, 3, 1, 3);
             panel235.Name = "panel235";
-            panel235.Size = new Size(66, 23);
+            panel235.Size = new Size(64, 23);
             panel235.TabIndex = 145;
             // 
             // panel236
             // 
             panel236.BorderStyle = BorderStyle.FixedSingle;
-            panel236.Location = new Point(229, 621);
+            panel236.Location = new Point(191, 613);
             panel236.Margin = new Padding(1, 3, 1, 3);
             panel236.Name = "panel236";
-            panel236.Size = new Size(66, 23);
+            panel236.Size = new Size(64, 23);
             panel236.TabIndex = 146;
             // 
             // panel237
             // 
             panel237.BorderStyle = BorderStyle.FixedSingle;
-            panel237.Location = new Point(229, 598);
+            panel237.Location = new Point(191, 590);
             panel237.Margin = new Padding(1, 3, 1, 3);
             panel237.Name = "panel237";
-            panel237.Size = new Size(66, 23);
+            panel237.Size = new Size(64, 23);
             panel237.TabIndex = 147;
             // 
             // panel241
             // 
             panel241.BorderStyle = BorderStyle.FixedSingle;
-            panel241.Location = new Point(163, 644);
+            panel241.Location = new Point(127, 636);
             panel241.Margin = new Padding(1, 3, 1, 3);
             panel241.Name = "panel241";
-            panel241.Size = new Size(66, 23);
+            panel241.Size = new Size(64, 23);
             panel241.TabIndex = 142;
             // 
             // panel242
             // 
             panel242.BorderStyle = BorderStyle.FixedSingle;
-            panel242.Location = new Point(163, 621);
+            panel242.Location = new Point(127, 613);
             panel242.Margin = new Padding(1, 3, 1, 3);
             panel242.Name = "panel242";
-            panel242.Size = new Size(66, 23);
+            panel242.Size = new Size(64, 23);
             panel242.TabIndex = 143;
             // 
             // panel243
             // 
             panel243.BorderStyle = BorderStyle.FixedSingle;
-            panel243.Location = new Point(163, 598);
+            panel243.Location = new Point(127, 590);
             panel243.Margin = new Padding(1, 3, 1, 3);
             panel243.Name = "panel243";
-            panel243.Size = new Size(66, 23);
+            panel243.Size = new Size(64, 23);
             panel243.TabIndex = 144;
             // 
             // label131
             // 
             label131.AutoSize = true;
-            label131.Location = new Point(218, 581);
+            label131.Location = new Point(213, 573);
             label131.Margin = new Padding(1, 0, 1, 0);
             label131.Name = "label131";
             label131.Size = new Size(58, 15);
@@ -4723,10 +4875,10 @@
             panel247.BorderStyle = BorderStyle.FixedSingle;
             panel247.Controls.Add(label132);
             panel247.Controls.Add(label133);
-            panel247.Location = new Point(26, 598);
+            panel247.Location = new Point(22, 590);
             panel247.Margin = new Padding(1, 3, 1, 3);
             panel247.Name = "panel247";
-            panel247.Size = new Size(20, 69);
+            panel247.Size = new Size(17, 69);
             panel247.TabIndex = 141;
             // 
             // label132
@@ -4753,10 +4905,10 @@
             // 
             panel248.BorderStyle = BorderStyle.FixedSingle;
             panel248.Controls.Add(label134);
-            panel248.Location = new Point(6, 598);
+            panel248.Location = new Point(5, 590);
             panel248.Margin = new Padding(1, 3, 1, 3);
             panel248.Name = "panel248";
-            panel248.Size = new Size(20, 69);
+            panel248.Size = new Size(17, 69);
             panel248.TabIndex = 140;
             // 
             // label134
@@ -4773,19 +4925,20 @@
             // 
             panel196.BorderStyle = BorderStyle.FixedSingle;
             panel196.Controls.Add(label113);
-            panel196.Location = new Point(49, 710);
+            panel196.Location = new Point(39, 691);
             panel196.Margin = new Padding(1, 3, 1, 3);
             panel196.Name = "panel196";
-            panel196.Size = new Size(117, 23);
+            panel196.Size = new Size(88, 23);
             panel196.TabIndex = 214;
             // 
             // label113
             // 
             label113.AutoSize = true;
+            label113.Font = new Font("Arial Narrow", 6F);
             label113.Location = new Point(-2, 3);
             label113.Margin = new Padding(1, 0, 1, 0);
             label113.Name = "label113";
-            label113.Size = new Size(66, 15);
+            label113.Size = new Size(48, 13);
             label113.TabIndex = 1;
             label113.Text = "Umumi Yekün";
             // 
@@ -4794,20 +4947,20 @@
             panel202.BorderStyle = BorderStyle.FixedSingle;
             panel202.Controls.Add(label135);
             panel202.Controls.Add(panel208);
-            panel202.Location = new Point(49, 687);
+            panel202.Location = new Point(39, 668);
             panel202.Margin = new Padding(1, 3, 1, 3);
             panel202.Name = "panel202";
-            panel202.Size = new Size(117, 23);
+            panel202.Size = new Size(88, 23);
             panel202.TabIndex = 215;
             // 
             // label135
             // 
             label135.AutoSize = true;
-            label135.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label135.Font = new Font("Arial Narrow", 6F);
             label135.Location = new Point(-2, 4);
             label135.Margin = new Padding(1, 0, 1, 0);
             label135.Name = "label135";
-            label135.Size = new Size(74, 13);
+            label135.Size = new Size(66, 13);
             label135.TabIndex = 1;
             label135.Text = "Altıncı Fasıl Yekünü";
             // 
@@ -4823,135 +4976,139 @@
             // panel249
             // 
             panel249.BorderStyle = BorderStyle.FixedSingle;
-            panel249.Location = new Point(298, 710);
+            panel249.Location = new Point(319, 691);
             panel249.Margin = new Padding(1, 3, 1, 3);
             panel249.Name = "panel249";
-            panel249.Size = new Size(36, 23);
+            panel249.Size = new Size(33, 23);
             panel249.TabIndex = 212;
             // 
             // panel250
             // 
             panel250.BorderStyle = BorderStyle.FixedSingle;
-            panel250.Location = new Point(298, 687);
+            panel250.Location = new Point(319, 668);
             panel250.Margin = new Padding(1, 3, 1, 3);
             panel250.Name = "panel250";
-            panel250.Size = new Size(36, 23);
+            panel250.Size = new Size(33, 23);
             panel250.TabIndex = 213;
             // 
-            // panel251
+            // p49
             // 
-            panel251.BorderStyle = BorderStyle.FixedSingle;
-            panel251.Controls.Add(lblDevredenGenelToplami);
-            panel251.Location = new Point(400, 710);
-            panel251.Margin = new Padding(1, 3, 1, 3);
-            panel251.Name = "panel251";
-            panel251.Size = new Size(66, 23);
-            panel251.TabIndex = 210;
+            p49.BorderStyle = BorderStyle.FixedSingle;
+            p49.Controls.Add(lblDevredenGenelToplami);
+            p49.Location = new Point(416, 691);
+            p49.Margin = new Padding(1, 3, 1, 3);
+            p49.Name = "p49";
+            p49.Size = new Size(64, 23);
+            p49.TabIndex = 210;
             // 
             // lblDevredenGenelToplami
             // 
             lblDevredenGenelToplami.AutoSize = true;
+            lblDevredenGenelToplami.Font = new Font("Arial Narrow", 8.25F);
             lblDevredenGenelToplami.Location = new Point(-1, 3);
             lblDevredenGenelToplami.Margin = new Padding(1, 0, 1, 0);
             lblDevredenGenelToplami.Name = "lblDevredenGenelToplami";
-            lblDevredenGenelToplami.Size = new Size(66, 15);
+            lblDevredenGenelToplami.Size = new Size(12, 15);
             lblDevredenGenelToplami.TabIndex = 2;
-            lblDevredenGenelToplami.Text = "99.999.999,99";
+            lblDevredenGenelToplami.Text = "0";
             // 
             // panel252
             // 
             panel252.BorderStyle = BorderStyle.FixedSingle;
-            panel252.Location = new Point(400, 687);
+            panel252.Location = new Point(416, 668);
             panel252.Margin = new Padding(1, 3, 1, 3);
             panel252.Name = "panel252";
-            panel252.Size = new Size(66, 23);
+            panel252.Size = new Size(64, 23);
             panel252.TabIndex = 211;
             // 
-            // panel256
+            // p48
             // 
-            panel256.BorderStyle = BorderStyle.FixedSingle;
-            panel256.Controls.Add(lblTahsilGenelToplam);
-            panel256.Location = new Point(334, 710);
-            panel256.Margin = new Padding(1, 3, 1, 3);
-            panel256.Name = "panel256";
-            panel256.Size = new Size(66, 23);
-            panel256.TabIndex = 208;
+            p48.BorderStyle = BorderStyle.FixedSingle;
+            p48.Controls.Add(lblTahsilGenelToplam);
+            p48.Location = new Point(352, 691);
+            p48.Margin = new Padding(1, 3, 1, 3);
+            p48.Name = "p48";
+            p48.Size = new Size(64, 23);
+            p48.TabIndex = 208;
             // 
             // lblTahsilGenelToplam
             // 
             lblTahsilGenelToplam.AutoSize = true;
+            lblTahsilGenelToplam.Font = new Font("Arial Narrow", 8.25F);
             lblTahsilGenelToplam.Location = new Point(-1, 3);
             lblTahsilGenelToplam.Margin = new Padding(1, 0, 1, 0);
             lblTahsilGenelToplam.Name = "lblTahsilGenelToplam";
-            lblTahsilGenelToplam.Size = new Size(66, 15);
+            lblTahsilGenelToplam.Size = new Size(12, 15);
             lblTahsilGenelToplam.TabIndex = 2;
-            lblTahsilGenelToplam.Text = "99.999.999,99";
+            lblTahsilGenelToplam.Text = "0";
             // 
             // panel257
             // 
             panel257.BorderStyle = BorderStyle.FixedSingle;
-            panel257.Location = new Point(334, 687);
+            panel257.Location = new Point(352, 668);
             panel257.Margin = new Padding(1, 3, 1, 3);
             panel257.Name = "panel257";
-            panel257.Size = new Size(66, 23);
+            panel257.Size = new Size(64, 23);
             panel257.TabIndex = 209;
             // 
-            // panel261
+            // p47
             // 
-            panel261.BorderStyle = BorderStyle.FixedSingle;
-            panel261.Controls.Add(lblMunzamGenelToplam);
-            panel261.Location = new Point(232, 710);
-            panel261.Margin = new Padding(1, 3, 1, 3);
-            panel261.Name = "panel261";
-            panel261.Size = new Size(66, 23);
-            panel261.TabIndex = 206;
+            p47.BorderStyle = BorderStyle.FixedSingle;
+            p47.Controls.Add(lblMunzamGenelToplam);
+            p47.Location = new Point(191, 691);
+            p47.Margin = new Padding(1, 3, 1, 3);
+            p47.Name = "p47";
+            p47.Size = new Size(64, 23);
+            p47.TabIndex = 206;
             // 
             // lblMunzamGenelToplam
             // 
             lblMunzamGenelToplam.AutoSize = true;
+            lblMunzamGenelToplam.Font = new Font("Arial Narrow", 8.25F);
             lblMunzamGenelToplam.Location = new Point(-1, 3);
             lblMunzamGenelToplam.Margin = new Padding(1, 0, 1, 0);
             lblMunzamGenelToplam.Name = "lblMunzamGenelToplam";
-            lblMunzamGenelToplam.Size = new Size(66, 15);
+            lblMunzamGenelToplam.Size = new Size(12, 15);
             lblMunzamGenelToplam.TabIndex = 2;
-            lblMunzamGenelToplam.Text = "99.999.999,99";
+            lblMunzamGenelToplam.Text = "0";
             // 
             // panel262
             // 
             panel262.BorderStyle = BorderStyle.FixedSingle;
-            panel262.Location = new Point(232, 687);
+            panel262.Location = new Point(191, 668);
             panel262.Margin = new Padding(1, 3, 1, 3);
             panel262.Name = "panel262";
-            panel262.Size = new Size(66, 23);
+            panel262.Size = new Size(64, 23);
             panel262.TabIndex = 207;
             // 
-            // panel266
+            // p46
             // 
-            panel266.BorderStyle = BorderStyle.FixedSingle;
-            panel266.Controls.Add(lblBKGenelToplam);
-            panel266.Location = new Point(166, 710);
-            panel266.Margin = new Padding(1, 3, 1, 3);
-            panel266.Name = "panel266";
-            panel266.Size = new Size(66, 23);
-            panel266.TabIndex = 204;
+            p46.BorderStyle = BorderStyle.FixedSingle;
+            p46.Controls.Add(lblBKGenelToplam);
+            p46.Location = new Point(127, 691);
+            p46.Margin = new Padding(1, 3, 1, 3);
+            p46.Name = "p46";
+            p46.Size = new Size(64, 23);
+            p46.TabIndex = 204;
             // 
             // lblBKGenelToplam
             // 
             lblBKGenelToplam.AutoSize = true;
+            lblBKGenelToplam.Font = new Font("Arial Narrow", 8.25F);
             lblBKGenelToplam.Location = new Point(-1, 3);
             lblBKGenelToplam.Margin = new Padding(1, 0, 1, 0);
             lblBKGenelToplam.Name = "lblBKGenelToplam";
-            lblBKGenelToplam.Size = new Size(66, 15);
+            lblBKGenelToplam.Size = new Size(12, 15);
             lblBKGenelToplam.TabIndex = 2;
-            lblBKGenelToplam.Text = "99.999.999,99";
+            lblBKGenelToplam.Text = "0";
             // 
             // panel267
             // 
             panel267.BorderStyle = BorderStyle.FixedSingle;
-            panel267.Location = new Point(166, 687);
+            panel267.Location = new Point(127, 668);
             panel267.Margin = new Padding(1, 3, 1, 3);
             panel267.Name = "panel267";
-            panel267.Size = new Size(66, 23);
+            panel267.Size = new Size(64, 23);
             panel267.TabIndex = 205;
             // 
             // panel271
@@ -4959,10 +5116,10 @@
             panel271.BorderStyle = BorderStyle.FixedSingle;
             panel271.Controls.Add(label141);
             panel271.Controls.Add(label142);
-            panel271.Location = new Point(26, 687);
+            panel271.Location = new Point(22, 668);
             panel271.Margin = new Padding(1, 3, 1, 3);
             panel271.Name = "panel271";
-            panel271.Size = new Size(23, 46);
+            panel271.Size = new Size(17, 46);
             panel271.TabIndex = 203;
             // 
             // label141
@@ -4989,10 +5146,10 @@
             // 
             panel272.BorderStyle = BorderStyle.FixedSingle;
             panel272.Controls.Add(label143);
-            panel272.Location = new Point(6, 687);
+            panel272.Location = new Point(5, 668);
             panel272.Margin = new Padding(1, 3, 1, 3);
             panel272.Name = "panel272";
-            panel272.Size = new Size(23, 46);
+            panel272.Size = new Size(17, 46);
             panel272.TabIndex = 202;
             // 
             // label143
@@ -5009,7 +5166,7 @@
             // 
             label121.AutoSize = true;
             label121.Font = new Font("Arial Narrow", 8.25F, FontStyle.Underline, GraphicsUnit.Point, (byte)162);
-            label121.Location = new Point(41, 733);
+            label121.Location = new Point(38, 714);
             label121.Margin = new Padding(1, 0, 1, 0);
             label121.Name = "label121";
             label121.Size = new Size(18, 15);
@@ -5020,7 +5177,7 @@
             // 
             label144.AutoSize = true;
             label144.Font = new Font("Arial Narrow", 8.25F, FontStyle.Underline, GraphicsUnit.Point, (byte)162);
-            label144.Location = new Point(357, 733);
+            label144.Location = new Point(357, 714);
             label144.Margin = new Padding(1, 0, 1, 0);
             label144.Name = "label144";
             label144.Size = new Size(18, 15);
@@ -5031,7 +5188,7 @@
             // 
             label145.AutoSize = true;
             label145.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label145.Location = new Point(6, 748);
+            label145.Location = new Point(3, 729);
             label145.Margin = new Padding(1, 0, 1, 0);
             label145.Name = "label145";
             label145.Size = new Size(91, 13);
@@ -5042,7 +5199,7 @@
             // 
             label146.AutoSize = true;
             label146.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label146.Location = new Point(17, 761);
+            label146.Location = new Point(14, 742);
             label146.Margin = new Padding(1, 0, 1, 0);
             label146.Name = "label146";
             label146.Size = new Size(66, 13);
@@ -5053,7 +5210,7 @@
             // 
             label147.AutoSize = true;
             label147.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label147.Location = new Point(17, 774);
+            label147.Location = new Point(14, 755);
             label147.Margin = new Padding(1, 0, 1, 0);
             label147.Name = "label147";
             label147.Size = new Size(88, 13);
@@ -5064,7 +5221,7 @@
             // 
             label148.AutoSize = true;
             label148.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label148.Location = new Point(323, 774);
+            label148.Location = new Point(323, 755);
             label148.Margin = new Padding(1, 0, 1, 0);
             label148.Name = "label148";
             label148.Size = new Size(60, 13);
@@ -5075,7 +5232,7 @@
             // 
             label149.AutoSize = true;
             label149.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label149.Location = new Point(323, 761);
+            label149.Location = new Point(323, 742);
             label149.Margin = new Padding(1, 0, 1, 0);
             label149.Name = "label149";
             label149.Size = new Size(120, 13);
@@ -5086,7 +5243,7 @@
             // 
             label150.AutoSize = true;
             label150.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label150.Location = new Point(312, 748);
+            label150.Location = new Point(312, 729);
             label150.Margin = new Padding(1, 0, 1, 0);
             label150.Name = "label150";
             label150.Size = new Size(106, 13);
@@ -5097,7 +5254,7 @@
             // 
             panel275.BorderStyle = BorderStyle.FixedSingle;
             panel275.Controls.Add(label30);
-            panel275.Location = new Point(514, 28);
+            panel275.Location = new Point(523, 28);
             panel275.Name = "panel275";
             panel275.Size = new Size(83, 88);
             panel275.TabIndex = 221;
@@ -5117,9 +5274,9 @@
             // 
             panel6.BorderStyle = BorderStyle.FixedSingle;
             panel6.Controls.Add(label31);
-            panel6.Location = new Point(597, 28);
+            panel6.Location = new Point(606, 28);
             panel6.Name = "panel6";
-            panel6.Size = new Size(86, 22);
+            panel6.Size = new Size(81, 22);
             panel6.TabIndex = 222;
             // 
             // label31
@@ -5140,9 +5297,9 @@
             panel183.Controls.Add(label256);
             panel183.Controls.Add(label254);
             panel183.Controls.Add(label255);
-            panel183.Location = new Point(597, 50);
+            panel183.Location = new Point(606, 50);
             panel183.Name = "panel183";
-            panel183.Size = new Size(68, 66);
+            panel183.Size = new Size(64, 66);
             panel183.TabIndex = 223;
             // 
             // label257
@@ -5197,9 +5354,9 @@
             panel187.Controls.Add(label259);
             panel187.Controls.Add(label260);
             panel187.Controls.Add(label261);
-            panel187.Location = new Point(665, 50);
+            panel187.Location = new Point(670, 50);
             panel187.Name = "panel187";
-            panel187.Size = new Size(18, 66);
+            panel187.Size = new Size(17, 66);
             panel187.TabIndex = 224;
             // 
             // label262
@@ -5262,9 +5419,9 @@
             panel278.BorderStyle = BorderStyle.FixedSingle;
             panel278.Controls.Add(label288);
             panel278.Controls.Add(label289);
-            panel278.Location = new Point(683, 50);
+            panel278.Location = new Point(687, 50);
             panel278.Name = "panel278";
-            panel278.Size = new Size(68, 66);
+            panel278.Size = new Size(64, 66);
             panel278.TabIndex = 226;
             // 
             // label288
@@ -5293,9 +5450,9 @@
             // 
             panel279.BorderStyle = BorderStyle.FixedSingle;
             panel279.Controls.Add(label32);
-            panel279.Location = new Point(683, 28);
+            panel279.Location = new Point(687, 28);
             panel279.Name = "panel279";
-            panel279.Size = new Size(86, 22);
+            panel279.Size = new Size(81, 22);
             panel279.TabIndex = 225;
             // 
             // label32
@@ -5317,9 +5474,9 @@
             panel283.Controls.Add(label268);
             panel283.Controls.Add(label269);
             panel283.Controls.Add(label270);
-            panel283.Location = new Point(769, 50);
+            panel283.Location = new Point(768, 50);
             panel283.Name = "panel283";
-            panel283.Size = new Size(30, 66);
+            panel283.Size = new Size(29, 66);
             panel283.TabIndex = 230;
             // 
             // label272
@@ -5382,7 +5539,7 @@
             // 
             panel284.BorderStyle = BorderStyle.FixedSingle;
             panel284.Controls.Add(label34);
-            panel284.Location = new Point(769, 28);
+            panel284.Location = new Point(768, 28);
             panel284.Name = "panel284";
             panel284.Size = new Size(55, 22);
             panel284.TabIndex = 229;
@@ -5405,9 +5562,9 @@
             panel286.Controls.Add(label295);
             panel286.Controls.Add(label296);
             panel286.Controls.Add(label297);
-            panel286.Location = new Point(910, 50);
+            panel286.Location = new Point(904, 50);
             panel286.Name = "panel286";
-            panel286.Size = new Size(68, 66);
+            panel286.Size = new Size(64, 66);
             panel286.TabIndex = 236;
             // 
             // label294
@@ -5458,9 +5615,9 @@
             // 
             panel287.BorderStyle = BorderStyle.FixedSingle;
             panel287.Controls.Add(label153);
-            panel287.Location = new Point(910, 28);
+            panel287.Location = new Point(904, 28);
             panel287.Name = "panel287";
-            panel287.Size = new Size(86, 22);
+            panel287.Size = new Size(81, 22);
             panel287.TabIndex = 235;
             // 
             // label153
@@ -5481,9 +5638,9 @@
             panel290.Controls.Add(label291);
             panel290.Controls.Add(label292);
             panel290.Controls.Add(label293);
-            panel290.Location = new Point(824, 50);
+            panel290.Location = new Point(823, 50);
             panel290.Name = "panel290";
-            panel290.Size = new Size(68, 66);
+            panel290.Size = new Size(64, 66);
             panel290.TabIndex = 233;
             // 
             // label290
@@ -5534,16 +5691,16 @@
             // 
             panel291.BorderStyle = BorderStyle.FixedSingle;
             panel291.Controls.Add(label152);
-            panel291.Location = new Point(824, 28);
+            panel291.Location = new Point(823, 28);
             panel291.Name = "panel291";
-            panel291.Size = new Size(86, 22);
+            panel291.Size = new Size(81, 22);
             panel291.TabIndex = 232;
             // 
             // label152
             // 
             label152.AutoSize = true;
             label152.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label152.Location = new Point(11, 3);
+            label152.Location = new Point(12, 3);
             label152.Margin = new Padding(1, 0, 1, 0);
             label152.Name = "label152";
             label152.Size = new Size(59, 13);
@@ -5554,7 +5711,7 @@
             // 
             panel292.BorderStyle = BorderStyle.FixedSingle;
             panel292.Controls.Add(label154);
-            panel292.Location = new Point(996, 28);
+            panel292.Location = new Point(985, 28);
             panel292.Name = "panel292";
             panel292.Size = new Size(32, 22);
             panel292.TabIndex = 238;
@@ -5576,7 +5733,7 @@
             panel293.Controls.Add(label304);
             panel293.Controls.Add(label302);
             panel293.Controls.Add(label303);
-            panel293.Location = new Point(996, 50);
+            panel293.Location = new Point(985, 50);
             panel293.Name = "panel293";
             panel293.Size = new Size(32, 66);
             panel293.TabIndex = 237;
@@ -5621,9 +5778,9 @@
             panel296.Controls.Add(label299);
             panel296.Controls.Add(label300);
             panel296.Controls.Add(label301);
-            panel296.Location = new Point(1028, 50);
+            panel296.Location = new Point(1017, 50);
             panel296.Name = "panel296";
-            panel296.Size = new Size(68, 66);
+            panel296.Size = new Size(64, 66);
             panel296.TabIndex = 240;
             // 
             // label298
@@ -5674,9 +5831,9 @@
             // 
             panel297.BorderStyle = BorderStyle.FixedSingle;
             panel297.Controls.Add(label33);
-            panel297.Location = new Point(1028, 28);
+            panel297.Location = new Point(1017, 28);
             panel297.Name = "panel297";
-            panel297.Size = new Size(86, 22);
+            panel297.Size = new Size(81, 22);
             panel297.TabIndex = 239;
             // 
             // label33
@@ -5690,22 +5847,12 @@
             label33.TabIndex = 243;
             label33.Text = "İptal Edilen";
             // 
-            // panel324
-            // 
-            panel324.BorderStyle = BorderStyle.FixedSingle;
-            panel324.Controls.Add(panel273);
-            panel324.Controls.Add(label162);
-            panel324.Location = new Point(514, 135);
-            panel324.Name = "panel324";
-            panel324.Size = new Size(83, 23);
-            panel324.TabIndex = 244;
-            // 
             // panel273
             // 
             panel273.BorderStyle = BorderStyle.FixedSingle;
             panel273.Controls.Add(label181);
             panel273.Controls.Add(label151);
-            panel273.Location = new Point(-2, -1);
+            panel273.Location = new Point(523, 135);
             panel273.Name = "panel273";
             panel273.Size = new Size(83, 23);
             panel273.TabIndex = 245;
@@ -5732,26 +5879,15 @@
             label151.TabIndex = 242;
             label151.Text = "GİDERİN CİNSİ";
             // 
-            // label162
-            // 
-            label162.AutoSize = true;
-            label162.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label162.Location = new Point(9, 37);
-            label162.Margin = new Padding(1, 0, 1, 0);
-            label162.Name = "label162";
-            label162.Size = new Size(58, 13);
-            label162.TabIndex = 242;
-            label162.Text = "GİDERİN CİNSİ";
-            // 
             // panel325
             // 
             panel325.BorderStyle = BorderStyle.FixedSingle;
             panel325.Controls.Add(label164);
             panel325.Controls.Add(label166);
-            panel325.Location = new Point(493, 135);
+            panel325.Location = new Point(506, 135);
             panel325.Margin = new Padding(1, 3, 1, 3);
             panel325.Name = "panel325";
-            panel325.Size = new Size(21, 69);
+            panel325.Size = new Size(17, 69);
             panel325.TabIndex = 243;
             // 
             // label164
@@ -5778,10 +5914,10 @@
             // 
             panel326.BorderStyle = BorderStyle.FixedSingle;
             panel326.Controls.Add(label172);
-            panel326.Location = new Point(474, 135);
+            panel326.Location = new Point(489, 135);
             panel326.Margin = new Padding(1, 3, 1, 3);
             panel326.Name = "panel326";
-            panel326.Size = new Size(21, 69);
+            panel326.Size = new Size(17, 69);
             panel326.TabIndex = 242;
             // 
             // label172
@@ -5799,7 +5935,7 @@
             panel274.BorderStyle = BorderStyle.FixedSingle;
             panel274.Controls.Add(label192);
             panel274.Controls.Add(label163);
-            panel274.Location = new Point(514, 158);
+            panel274.Location = new Point(523, 158);
             panel274.Name = "panel274";
             panel274.Size = new Size(83, 23);
             panel274.TabIndex = 265;
@@ -5831,7 +5967,7 @@
             panel327.BorderStyle = BorderStyle.FixedSingle;
             panel327.Controls.Add(label208);
             panel327.Controls.Add(label165);
-            panel327.Location = new Point(514, 181);
+            panel327.Location = new Point(523, 181);
             panel327.Name = "panel327";
             panel327.Size = new Size(83, 23);
             panel327.TabIndex = 266;
@@ -5858,14 +5994,14 @@
             label165.TabIndex = 242;
             label165.Text = "GİDERİN CİNSİ";
             // 
-            // panel318
+            // p56
             // 
-            panel318.BorderStyle = BorderStyle.FixedSingle;
-            panel318.Controls.Add(lblMunzamIdariMasraf);
-            panel318.Location = new Point(683, 158);
-            panel318.Name = "panel318";
-            panel318.Size = new Size(68, 23);
-            panel318.TabIndex = 249;
+            p56.BorderStyle = BorderStyle.FixedSingle;
+            p56.Controls.Add(lblMunzamIdariMasraf);
+            p56.Location = new Point(687, 158);
+            p56.Name = "p56";
+            p56.Size = new Size(64, 23);
+            p56.TabIndex = 249;
             // 
             // lblMunzamIdariMasraf
             // 
@@ -5873,42 +6009,42 @@
             lblMunzamIdariMasraf.Location = new Point(-1, 3);
             lblMunzamIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIdariMasraf.Name = "lblMunzamIdariMasraf";
-            lblMunzamIdariMasraf.Size = new Size(66, 15);
+            lblMunzamIdariMasraf.Size = new Size(12, 15);
             lblMunzamIdariMasraf.TabIndex = 2;
-            lblMunzamIdariMasraf.Text = "99.999.999,99";
+            lblMunzamIdariMasraf.Text = "0";
             // 
             // panel316
             // 
             panel316.BorderStyle = BorderStyle.FixedSingle;
             panel316.Location = new Point(751, 158);
             panel316.Name = "panel316";
-            panel316.Size = new Size(18, 23);
+            panel316.Size = new Size(17, 23);
             panel316.TabIndex = 250;
             // 
             // panel314
             // 
             panel314.BorderStyle = BorderStyle.FixedSingle;
-            panel314.Location = new Point(769, 158);
+            panel314.Location = new Point(768, 158);
             panel314.Name = "panel314";
-            panel314.Size = new Size(35, 23);
+            panel314.Size = new Size(29, 23);
             panel314.TabIndex = 252;
             // 
             // panel312
             // 
             panel312.BorderStyle = BorderStyle.FixedSingle;
-            panel312.Location = new Point(804, 158);
+            panel312.Location = new Point(797, 158);
             panel312.Name = "panel312";
-            panel312.Size = new Size(20, 23);
+            panel312.Size = new Size(26, 23);
             panel312.TabIndex = 253;
             // 
-            // panel310
+            // p57
             // 
-            panel310.BorderStyle = BorderStyle.FixedSingle;
-            panel310.Controls.Add(lblTahakkukIdariMasraf);
-            panel310.Location = new Point(824, 158);
-            panel310.Name = "panel310";
-            panel310.Size = new Size(68, 23);
-            panel310.TabIndex = 255;
+            p57.BorderStyle = BorderStyle.FixedSingle;
+            p57.Controls.Add(lblTahakkukIdariMasraf);
+            p57.Location = new Point(823, 158);
+            p57.Name = "p57";
+            p57.Size = new Size(64, 23);
+            p57.TabIndex = 255;
             // 
             // lblTahakkukIdariMasraf
             // 
@@ -5916,26 +6052,26 @@
             lblTahakkukIdariMasraf.Location = new Point(-1, 3);
             lblTahakkukIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIdariMasraf.Name = "lblTahakkukIdariMasraf";
-            lblTahakkukIdariMasraf.Size = new Size(66, 15);
+            lblTahakkukIdariMasraf.Size = new Size(12, 15);
             lblTahakkukIdariMasraf.TabIndex = 2;
-            lblTahakkukIdariMasraf.Text = "99.999.999,99";
+            lblTahakkukIdariMasraf.Text = "0";
             // 
             // panel308
             // 
             panel308.BorderStyle = BorderStyle.FixedSingle;
-            panel308.Location = new Point(892, 158);
+            panel308.Location = new Point(887, 158);
             panel308.Name = "panel308";
-            panel308.Size = new Size(18, 23);
+            panel308.Size = new Size(17, 23);
             panel308.TabIndex = 256;
             // 
-            // panel306
+            // p58
             // 
-            panel306.BorderStyle = BorderStyle.FixedSingle;
-            panel306.Controls.Add(lblOdenenIdariMasraf);
-            panel306.Location = new Point(910, 158);
-            panel306.Name = "panel306";
-            panel306.Size = new Size(68, 23);
-            panel306.TabIndex = 258;
+            p58.BorderStyle = BorderStyle.FixedSingle;
+            p58.Controls.Add(lblOdenenIdariMasraf);
+            p58.Location = new Point(904, 158);
+            p58.Name = "p58";
+            p58.Size = new Size(64, 23);
+            p58.TabIndex = 258;
             // 
             // lblOdenenIdariMasraf
             // 
@@ -5943,34 +6079,34 @@
             lblOdenenIdariMasraf.Location = new Point(-1, 3);
             lblOdenenIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIdariMasraf.Name = "lblOdenenIdariMasraf";
-            lblOdenenIdariMasraf.Size = new Size(66, 15);
+            lblOdenenIdariMasraf.Size = new Size(32, 15);
             lblOdenenIdariMasraf.TabIndex = 2;
-            lblOdenenIdariMasraf.Text = "99.999.999,99";
+            lblOdenenIdariMasraf.Text = "29022";
             // 
             // panel304
             // 
             panel304.BorderStyle = BorderStyle.FixedSingle;
-            panel304.Location = new Point(978, 158);
+            panel304.Location = new Point(968, 158);
             panel304.Name = "panel304";
-            panel304.Size = new Size(18, 23);
+            panel304.Size = new Size(17, 23);
             panel304.TabIndex = 259;
             // 
             // panel302
             // 
             panel302.BorderStyle = BorderStyle.FixedSingle;
-            panel302.Location = new Point(996, 158);
+            panel302.Location = new Point(985, 158);
             panel302.Name = "panel302";
             panel302.Size = new Size(32, 23);
             panel302.TabIndex = 260;
             // 
-            // panel300
+            // p59
             // 
-            panel300.BorderStyle = BorderStyle.FixedSingle;
-            panel300.Controls.Add(lblIptalIdariMasraf);
-            panel300.Location = new Point(1028, 158);
-            panel300.Name = "panel300";
-            panel300.Size = new Size(68, 23);
-            panel300.TabIndex = 263;
+            p59.BorderStyle = BorderStyle.FixedSingle;
+            p59.Controls.Add(lblIptalIdariMasraf);
+            p59.Location = new Point(1017, 158);
+            p59.Name = "p59";
+            p59.Size = new Size(64, 23);
+            p59.TabIndex = 263;
             // 
             // lblIptalIdariMasraf
             // 
@@ -5978,26 +6114,26 @@
             lblIptalIdariMasraf.Location = new Point(-1, 3);
             lblIptalIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblIptalIdariMasraf.Name = "lblIptalIdariMasraf";
-            lblIptalIdariMasraf.Size = new Size(66, 15);
+            lblIptalIdariMasraf.Size = new Size(12, 15);
             lblIptalIdariMasraf.TabIndex = 2;
-            lblIptalIdariMasraf.Text = "99.999.999,99";
+            lblIptalIdariMasraf.Text = "0";
             // 
             // panel298
             // 
             panel298.BorderStyle = BorderStyle.FixedSingle;
-            panel298.Location = new Point(1096, 158);
+            panel298.Location = new Point(1081, 158);
             panel298.Name = "panel298";
-            panel298.Size = new Size(18, 23);
+            panel298.Size = new Size(17, 23);
             panel298.TabIndex = 264;
             // 
-            // panel322
+            // p55
             // 
-            panel322.BorderStyle = BorderStyle.FixedSingle;
-            panel322.Controls.Add(lblBKIdariMasraf);
-            panel322.Location = new Point(597, 158);
-            panel322.Name = "panel322";
-            panel322.Size = new Size(68, 23);
-            panel322.TabIndex = 246;
+            p55.BorderStyle = BorderStyle.FixedSingle;
+            p55.Controls.Add(lblBKIdariMasraf);
+            p55.Location = new Point(606, 158);
+            p55.Name = "p55";
+            p55.Size = new Size(64, 23);
+            p55.TabIndex = 246;
             // 
             // lblBKIdariMasraf
             // 
@@ -6005,34 +6141,34 @@
             lblBKIdariMasraf.Location = new Point(-1, 3);
             lblBKIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblBKIdariMasraf.Name = "lblBKIdariMasraf";
-            lblBKIdariMasraf.Size = new Size(66, 15);
+            lblBKIdariMasraf.Size = new Size(37, 15);
             lblBKIdariMasraf.TabIndex = 2;
-            lblBKIdariMasraf.Text = "99.999.999,99";
+            lblBKIdariMasraf.Text = "100000";
             // 
             // panel320
             // 
             panel320.BorderStyle = BorderStyle.FixedSingle;
-            panel320.Location = new Point(665, 158);
+            panel320.Location = new Point(670, 158);
             panel320.Name = "panel320";
-            panel320.Size = new Size(18, 23);
+            panel320.Size = new Size(17, 23);
             panel320.TabIndex = 247;
             // 
             // panel299
             // 
             panel299.BorderStyle = BorderStyle.FixedSingle;
-            panel299.Location = new Point(1096, 135);
+            panel299.Location = new Point(1081, 135);
             panel299.Name = "panel299";
-            panel299.Size = new Size(18, 23);
+            panel299.Size = new Size(17, 23);
             panel299.TabIndex = 279;
             // 
-            // panel301
+            // p54
             // 
-            panel301.BorderStyle = BorderStyle.FixedSingle;
-            panel301.Controls.Add(lblIptalAylik);
-            panel301.Location = new Point(1028, 135);
-            panel301.Name = "panel301";
-            panel301.Size = new Size(68, 23);
-            panel301.TabIndex = 278;
+            p54.BorderStyle = BorderStyle.FixedSingle;
+            p54.Controls.Add(lblIptalAylik);
+            p54.Location = new Point(1017, 135);
+            p54.Name = "p54";
+            p54.Size = new Size(64, 23);
+            p54.TabIndex = 278;
             // 
             // lblIptalAylik
             // 
@@ -6040,14 +6176,14 @@
             lblIptalAylik.Location = new Point(-1, 3);
             lblIptalAylik.Margin = new Padding(1, 0, 1, 0);
             lblIptalAylik.Name = "lblIptalAylik";
-            lblIptalAylik.Size = new Size(66, 15);
+            lblIptalAylik.Size = new Size(12, 15);
             lblIptalAylik.TabIndex = 2;
-            lblIptalAylik.Text = "99.999.999,99";
+            lblIptalAylik.Text = "0";
             // 
             // panel303
             // 
             panel303.BorderStyle = BorderStyle.FixedSingle;
-            panel303.Location = new Point(996, 135);
+            panel303.Location = new Point(985, 135);
             panel303.Name = "panel303";
             panel303.Size = new Size(32, 23);
             panel303.TabIndex = 277;
@@ -6055,19 +6191,19 @@
             // panel305
             // 
             panel305.BorderStyle = BorderStyle.FixedSingle;
-            panel305.Location = new Point(978, 135);
+            panel305.Location = new Point(968, 135);
             panel305.Name = "panel305";
-            panel305.Size = new Size(18, 23);
+            panel305.Size = new Size(17, 23);
             panel305.TabIndex = 276;
             // 
-            // panel307
+            // p53
             // 
-            panel307.BorderStyle = BorderStyle.FixedSingle;
-            panel307.Controls.Add(lblOdenenAylik);
-            panel307.Location = new Point(910, 135);
-            panel307.Name = "panel307";
-            panel307.Size = new Size(68, 23);
-            panel307.TabIndex = 275;
+            p53.BorderStyle = BorderStyle.FixedSingle;
+            p53.Controls.Add(lblOdenenAylik);
+            p53.Location = new Point(904, 135);
+            p53.Name = "p53";
+            p53.Size = new Size(64, 23);
+            p53.TabIndex = 275;
             // 
             // lblOdenenAylik
             // 
@@ -6075,26 +6211,26 @@
             lblOdenenAylik.Location = new Point(-1, 3);
             lblOdenenAylik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenAylik.Name = "lblOdenenAylik";
-            lblOdenenAylik.Size = new Size(66, 15);
+            lblOdenenAylik.Size = new Size(32, 15);
             lblOdenenAylik.TabIndex = 2;
-            lblOdenenAylik.Text = "99.999.999,99";
+            lblOdenenAylik.Text = "29022";
             // 
             // panel309
             // 
             panel309.BorderStyle = BorderStyle.FixedSingle;
-            panel309.Location = new Point(892, 135);
+            panel309.Location = new Point(887, 135);
             panel309.Name = "panel309";
-            panel309.Size = new Size(18, 23);
+            panel309.Size = new Size(17, 23);
             panel309.TabIndex = 274;
             // 
-            // panel311
+            // p52
             // 
-            panel311.BorderStyle = BorderStyle.FixedSingle;
-            panel311.Controls.Add(lblTahakkukAylik);
-            panel311.Location = new Point(824, 135);
-            panel311.Name = "panel311";
-            panel311.Size = new Size(68, 23);
-            panel311.TabIndex = 273;
+            p52.BorderStyle = BorderStyle.FixedSingle;
+            p52.Controls.Add(lblTahakkukAylik);
+            p52.Location = new Point(823, 135);
+            p52.Name = "p52";
+            p52.Size = new Size(64, 23);
+            p52.TabIndex = 273;
             // 
             // lblTahakkukAylik
             // 
@@ -6102,24 +6238,24 @@
             lblTahakkukAylik.Location = new Point(-1, 3);
             lblTahakkukAylik.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukAylik.Name = "lblTahakkukAylik";
-            lblTahakkukAylik.Size = new Size(66, 15);
+            lblTahakkukAylik.Size = new Size(12, 15);
             lblTahakkukAylik.TabIndex = 2;
-            lblTahakkukAylik.Text = "99.999.999,99";
+            lblTahakkukAylik.Text = "0";
             // 
             // panel313
             // 
             panel313.BorderStyle = BorderStyle.FixedSingle;
-            panel313.Location = new Point(804, 135);
+            panel313.Location = new Point(797, 135);
             panel313.Name = "panel313";
-            panel313.Size = new Size(20, 23);
+            panel313.Size = new Size(26, 23);
             panel313.TabIndex = 272;
             // 
             // panel315
             // 
             panel315.BorderStyle = BorderStyle.FixedSingle;
-            panel315.Location = new Point(769, 135);
+            panel315.Location = new Point(768, 135);
             panel315.Name = "panel315";
-            panel315.Size = new Size(35, 23);
+            panel315.Size = new Size(29, 23);
             panel315.TabIndex = 271;
             // 
             // panel317
@@ -6127,17 +6263,17 @@
             panel317.BorderStyle = BorderStyle.FixedSingle;
             panel317.Location = new Point(751, 135);
             panel317.Name = "panel317";
-            panel317.Size = new Size(18, 23);
+            panel317.Size = new Size(17, 23);
             panel317.TabIndex = 270;
             // 
-            // panel319
+            // p51
             // 
-            panel319.BorderStyle = BorderStyle.FixedSingle;
-            panel319.Controls.Add(lblMunzamAylik);
-            panel319.Location = new Point(683, 135);
-            panel319.Name = "panel319";
-            panel319.Size = new Size(68, 23);
-            panel319.TabIndex = 269;
+            p51.BorderStyle = BorderStyle.FixedSingle;
+            p51.Controls.Add(lblMunzamAylik);
+            p51.Location = new Point(687, 135);
+            p51.Name = "p51";
+            p51.Size = new Size(64, 23);
+            p51.TabIndex = 269;
             // 
             // lblMunzamAylik
             // 
@@ -6145,26 +6281,26 @@
             lblMunzamAylik.Location = new Point(-1, 3);
             lblMunzamAylik.Margin = new Padding(1, 0, 1, 0);
             lblMunzamAylik.Name = "lblMunzamAylik";
-            lblMunzamAylik.Size = new Size(66, 15);
+            lblMunzamAylik.Size = new Size(12, 15);
             lblMunzamAylik.TabIndex = 2;
-            lblMunzamAylik.Text = "99.999.999,99";
+            lblMunzamAylik.Text = "0";
             // 
             // panel321
             // 
             panel321.BorderStyle = BorderStyle.FixedSingle;
-            panel321.Location = new Point(665, 135);
+            panel321.Location = new Point(670, 135);
             panel321.Name = "panel321";
-            panel321.Size = new Size(18, 23);
+            panel321.Size = new Size(17, 23);
             panel321.TabIndex = 268;
             // 
-            // panel323
+            // p50
             // 
-            panel323.BorderStyle = BorderStyle.FixedSingle;
-            panel323.Controls.Add(lblBKAylik);
-            panel323.Location = new Point(597, 135);
-            panel323.Name = "panel323";
-            panel323.Size = new Size(68, 23);
-            panel323.TabIndex = 267;
+            p50.BorderStyle = BorderStyle.FixedSingle;
+            p50.Controls.Add(lblBKAylik);
+            p50.Location = new Point(606, 135);
+            p50.Name = "p50";
+            p50.Size = new Size(64, 23);
+            p50.TabIndex = 267;
             // 
             // lblBKAylik
             // 
@@ -6172,26 +6308,26 @@
             lblBKAylik.Location = new Point(-1, 3);
             lblBKAylik.Margin = new Padding(1, 0, 1, 0);
             lblBKAylik.Name = "lblBKAylik";
-            lblBKAylik.Size = new Size(66, 15);
+            lblBKAylik.Size = new Size(37, 15);
             lblBKAylik.TabIndex = 2;
-            lblBKAylik.Text = "99.999.999,99";
+            lblBKAylik.Text = "100000";
             // 
             // panel328
             // 
             panel328.BorderStyle = BorderStyle.FixedSingle;
-            panel328.Location = new Point(1096, 181);
+            panel328.Location = new Point(1081, 181);
             panel328.Name = "panel328";
-            panel328.Size = new Size(18, 23);
+            panel328.Size = new Size(17, 23);
             panel328.TabIndex = 292;
             // 
-            // panel329
+            // p64
             // 
-            panel329.BorderStyle = BorderStyle.FixedSingle;
-            panel329.Controls.Add(lblIptalIdariToplami);
-            panel329.Location = new Point(1028, 181);
-            panel329.Name = "panel329";
-            panel329.Size = new Size(68, 23);
-            panel329.TabIndex = 291;
+            p64.BorderStyle = BorderStyle.FixedSingle;
+            p64.Controls.Add(lblIptalIdariToplami);
+            p64.Location = new Point(1017, 181);
+            p64.Name = "p64";
+            p64.Size = new Size(64, 23);
+            p64.TabIndex = 291;
             // 
             // lblIptalIdariToplami
             // 
@@ -6199,14 +6335,14 @@
             lblIptalIdariToplami.Location = new Point(-1, 3);
             lblIptalIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalIdariToplami.Name = "lblIptalIdariToplami";
-            lblIptalIdariToplami.Size = new Size(66, 15);
+            lblIptalIdariToplami.Size = new Size(12, 15);
             lblIptalIdariToplami.TabIndex = 2;
-            lblIptalIdariToplami.Text = "99.999.999,99";
+            lblIptalIdariToplami.Text = "0";
             // 
             // panel330
             // 
             panel330.BorderStyle = BorderStyle.FixedSingle;
-            panel330.Location = new Point(996, 181);
+            panel330.Location = new Point(985, 181);
             panel330.Name = "panel330";
             panel330.Size = new Size(32, 23);
             panel330.TabIndex = 290;
@@ -6214,19 +6350,19 @@
             // panel331
             // 
             panel331.BorderStyle = BorderStyle.FixedSingle;
-            panel331.Location = new Point(978, 181);
+            panel331.Location = new Point(968, 181);
             panel331.Name = "panel331";
-            panel331.Size = new Size(18, 23);
+            panel331.Size = new Size(17, 23);
             panel331.TabIndex = 289;
             // 
-            // panel332
+            // p63
             // 
-            panel332.BorderStyle = BorderStyle.FixedSingle;
-            panel332.Controls.Add(lblOdenenIdariToplami);
-            panel332.Location = new Point(910, 181);
-            panel332.Name = "panel332";
-            panel332.Size = new Size(68, 23);
-            panel332.TabIndex = 288;
+            p63.BorderStyle = BorderStyle.FixedSingle;
+            p63.Controls.Add(lblOdenenIdariToplami);
+            p63.Location = new Point(904, 181);
+            p63.Name = "p63";
+            p63.Size = new Size(64, 23);
+            p63.TabIndex = 288;
             // 
             // lblOdenenIdariToplami
             // 
@@ -6234,26 +6370,26 @@
             lblOdenenIdariToplami.Location = new Point(-1, 3);
             lblOdenenIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIdariToplami.Name = "lblOdenenIdariToplami";
-            lblOdenenIdariToplami.Size = new Size(66, 15);
+            lblOdenenIdariToplami.Size = new Size(12, 15);
             lblOdenenIdariToplami.TabIndex = 2;
-            lblOdenenIdariToplami.Text = "99.999.999,99";
+            lblOdenenIdariToplami.Text = "0";
             // 
             // panel333
             // 
             panel333.BorderStyle = BorderStyle.FixedSingle;
-            panel333.Location = new Point(892, 181);
+            panel333.Location = new Point(887, 181);
             panel333.Name = "panel333";
-            panel333.Size = new Size(18, 23);
+            panel333.Size = new Size(17, 23);
             panel333.TabIndex = 287;
             // 
-            // panel334
+            // p62
             // 
-            panel334.BorderStyle = BorderStyle.FixedSingle;
-            panel334.Controls.Add(lblTahakkukIdariToplami);
-            panel334.Location = new Point(824, 181);
-            panel334.Name = "panel334";
-            panel334.Size = new Size(68, 23);
-            panel334.TabIndex = 286;
+            p62.BorderStyle = BorderStyle.FixedSingle;
+            p62.Controls.Add(lblTahakkukIdariToplami);
+            p62.Location = new Point(823, 181);
+            p62.Name = "p62";
+            p62.Size = new Size(64, 23);
+            p62.TabIndex = 286;
             // 
             // lblTahakkukIdariToplami
             // 
@@ -6261,24 +6397,24 @@
             lblTahakkukIdariToplami.Location = new Point(-1, 3);
             lblTahakkukIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIdariToplami.Name = "lblTahakkukIdariToplami";
-            lblTahakkukIdariToplami.Size = new Size(66, 15);
+            lblTahakkukIdariToplami.Size = new Size(12, 15);
             lblTahakkukIdariToplami.TabIndex = 2;
-            lblTahakkukIdariToplami.Text = "99.999.999,99";
+            lblTahakkukIdariToplami.Text = "0";
             // 
             // panel335
             // 
             panel335.BorderStyle = BorderStyle.FixedSingle;
-            panel335.Location = new Point(804, 181);
+            panel335.Location = new Point(797, 181);
             panel335.Name = "panel335";
-            panel335.Size = new Size(20, 23);
+            panel335.Size = new Size(26, 23);
             panel335.TabIndex = 285;
             // 
             // panel336
             // 
             panel336.BorderStyle = BorderStyle.FixedSingle;
-            panel336.Location = new Point(769, 181);
+            panel336.Location = new Point(768, 181);
             panel336.Name = "panel336";
-            panel336.Size = new Size(35, 23);
+            panel336.Size = new Size(29, 23);
             panel336.TabIndex = 284;
             // 
             // panel337
@@ -6286,17 +6422,17 @@
             panel337.BorderStyle = BorderStyle.FixedSingle;
             panel337.Location = new Point(751, 181);
             panel337.Name = "panel337";
-            panel337.Size = new Size(18, 23);
+            panel337.Size = new Size(17, 23);
             panel337.TabIndex = 283;
             // 
-            // panel338
+            // p61
             // 
-            panel338.BorderStyle = BorderStyle.FixedSingle;
-            panel338.Controls.Add(lblMunzamIdariToplami);
-            panel338.Location = new Point(683, 181);
-            panel338.Name = "panel338";
-            panel338.Size = new Size(68, 23);
-            panel338.TabIndex = 282;
+            p61.BorderStyle = BorderStyle.FixedSingle;
+            p61.Controls.Add(lblMunzamIdariToplami);
+            p61.Location = new Point(687, 181);
+            p61.Name = "p61";
+            p61.Size = new Size(64, 23);
+            p61.TabIndex = 282;
             // 
             // lblMunzamIdariToplami
             // 
@@ -6304,26 +6440,26 @@
             lblMunzamIdariToplami.Location = new Point(-1, 3);
             lblMunzamIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIdariToplami.Name = "lblMunzamIdariToplami";
-            lblMunzamIdariToplami.Size = new Size(66, 15);
+            lblMunzamIdariToplami.Size = new Size(12, 15);
             lblMunzamIdariToplami.TabIndex = 2;
-            lblMunzamIdariToplami.Text = "99.999.999,99";
+            lblMunzamIdariToplami.Text = "0";
             // 
             // panel339
             // 
             panel339.BorderStyle = BorderStyle.FixedSingle;
-            panel339.Location = new Point(665, 181);
+            panel339.Location = new Point(670, 181);
             panel339.Name = "panel339";
-            panel339.Size = new Size(18, 23);
+            panel339.Size = new Size(17, 23);
             panel339.TabIndex = 281;
             // 
-            // panel340
+            // p60
             // 
-            panel340.BorderStyle = BorderStyle.FixedSingle;
-            panel340.Controls.Add(lblBKIdariToplami);
-            panel340.Location = new Point(597, 181);
-            panel340.Name = "panel340";
-            panel340.Size = new Size(68, 23);
-            panel340.TabIndex = 280;
+            p60.BorderStyle = BorderStyle.FixedSingle;
+            p60.Controls.Add(lblBKIdariToplami);
+            p60.Location = new Point(606, 181);
+            p60.Name = "p60";
+            p60.Size = new Size(64, 23);
+            p60.TabIndex = 280;
             // 
             // lblBKIdariToplami
             // 
@@ -6331,14 +6467,14 @@
             lblBKIdariToplami.Location = new Point(-1, 3);
             lblBKIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKIdariToplami.Name = "lblBKIdariToplami";
-            lblBKIdariToplami.Size = new Size(66, 15);
+            lblBKIdariToplami.Size = new Size(12, 15);
             lblBKIdariToplami.TabIndex = 2;
-            lblBKIdariToplami.Text = "99.999.999,99";
+            lblBKIdariToplami.Text = "0";
             // 
             // label155
             // 
             label155.AutoSize = true;
-            label155.Location = new Point(759, 118);
+            label155.Location = new Point(744, 118);
             label155.Margin = new Padding(1, 0, 1, 0);
             label155.Name = "label155";
             label155.Size = new Size(98, 15);
@@ -6348,7 +6484,7 @@
             // label156
             // 
             label156.AutoSize = true;
-            label156.Location = new Point(711, 206);
+            label156.Location = new Point(696, 206);
             label156.Margin = new Padding(1, 0, 1, 0);
             label156.Name = "label156";
             label156.Size = new Size(201, 15);
@@ -6358,19 +6494,19 @@
             // panel341
             // 
             panel341.BorderStyle = BorderStyle.FixedSingle;
-            panel341.Location = new Point(1096, 270);
+            panel341.Location = new Point(1081, 270);
             panel341.Name = "panel341";
-            panel341.Size = new Size(18, 23);
+            panel341.Size = new Size(17, 23);
             panel341.TabIndex = 337;
             // 
-            // panel342
+            // p79
             // 
-            panel342.BorderStyle = BorderStyle.FixedSingle;
-            panel342.Controls.Add(lblIptalDamizlik);
-            panel342.Location = new Point(1028, 270);
-            panel342.Name = "panel342";
-            panel342.Size = new Size(68, 23);
-            panel342.TabIndex = 336;
+            p79.BorderStyle = BorderStyle.FixedSingle;
+            p79.Controls.Add(lblIptalDamizlik);
+            p79.Location = new Point(1017, 270);
+            p79.Name = "p79";
+            p79.Size = new Size(64, 23);
+            p79.TabIndex = 336;
             // 
             // lblIptalDamizlik
             // 
@@ -6378,14 +6514,15 @@
             lblIptalDamizlik.Location = new Point(-1, 3);
             lblIptalDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblIptalDamizlik.Name = "lblIptalDamizlik";
-            lblIptalDamizlik.Size = new Size(66, 15);
+            lblIptalDamizlik.Size = new Size(12, 15);
             lblIptalDamizlik.TabIndex = 2;
-            lblIptalDamizlik.Text = "99.999.999,99";
+            lblIptalDamizlik.Text = "0";
+            lblIptalDamizlik.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel343
             // 
             panel343.BorderStyle = BorderStyle.FixedSingle;
-            panel343.Location = new Point(996, 270);
+            panel343.Location = new Point(985, 270);
             panel343.Name = "panel343";
             panel343.Size = new Size(32, 23);
             panel343.TabIndex = 335;
@@ -6393,19 +6530,19 @@
             // panel344
             // 
             panel344.BorderStyle = BorderStyle.FixedSingle;
-            panel344.Location = new Point(978, 270);
+            panel344.Location = new Point(968, 270);
             panel344.Name = "panel344";
-            panel344.Size = new Size(18, 23);
+            panel344.Size = new Size(17, 23);
             panel344.TabIndex = 334;
             // 
-            // panel345
+            // p78
             // 
-            panel345.BorderStyle = BorderStyle.FixedSingle;
-            panel345.Controls.Add(lblOdenenDamizlik);
-            panel345.Location = new Point(910, 270);
-            panel345.Name = "panel345";
-            panel345.Size = new Size(68, 23);
-            panel345.TabIndex = 333;
+            p78.BorderStyle = BorderStyle.FixedSingle;
+            p78.Controls.Add(lblOdenenDamizlik);
+            p78.Location = new Point(904, 270);
+            p78.Name = "p78";
+            p78.Size = new Size(64, 23);
+            p78.TabIndex = 333;
             // 
             // lblOdenenDamizlik
             // 
@@ -6413,51 +6550,51 @@
             lblOdenenDamizlik.Location = new Point(0, 3);
             lblOdenenDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenDamizlik.Name = "lblOdenenDamizlik";
-            lblOdenenDamizlik.Size = new Size(66, 15);
+            lblOdenenDamizlik.Size = new Size(32, 15);
             lblOdenenDamizlik.TabIndex = 3;
-            lblOdenenDamizlik.Text = "99.999.999,99";
+            lblOdenenDamizlik.Text = "29022";
             // 
             // panel346
             // 
             panel346.BorderStyle = BorderStyle.FixedSingle;
-            panel346.Location = new Point(892, 270);
+            panel346.Location = new Point(887, 270);
             panel346.Name = "panel346";
-            panel346.Size = new Size(18, 23);
+            panel346.Size = new Size(17, 23);
             panel346.TabIndex = 332;
             // 
-            // panel347
+            // p77
             // 
-            panel347.BorderStyle = BorderStyle.FixedSingle;
-            panel347.Controls.Add(lblTahakkukDamizlit);
-            panel347.Location = new Point(824, 270);
-            panel347.Name = "panel347";
-            panel347.Size = new Size(68, 23);
-            panel347.TabIndex = 331;
+            p77.BorderStyle = BorderStyle.FixedSingle;
+            p77.Controls.Add(lblTahakkukDamizlik);
+            p77.Location = new Point(823, 270);
+            p77.Name = "p77";
+            p77.Size = new Size(64, 23);
+            p77.TabIndex = 331;
             // 
-            // lblTahakkukDamizlit
+            // lblTahakkukDamizlik
             // 
-            lblTahakkukDamizlit.AutoSize = true;
-            lblTahakkukDamizlit.Location = new Point(0, 3);
-            lblTahakkukDamizlit.Margin = new Padding(1, 0, 1, 0);
-            lblTahakkukDamizlit.Name = "lblTahakkukDamizlit";
-            lblTahakkukDamizlit.Size = new Size(66, 15);
-            lblTahakkukDamizlit.TabIndex = 3;
-            lblTahakkukDamizlit.Text = "99.999.999,99";
+            lblTahakkukDamizlik.AutoSize = true;
+            lblTahakkukDamizlik.Location = new Point(0, 3);
+            lblTahakkukDamizlik.Margin = new Padding(1, 0, 1, 0);
+            lblTahakkukDamizlik.Name = "lblTahakkukDamizlik";
+            lblTahakkukDamizlik.Size = new Size(12, 15);
+            lblTahakkukDamizlik.TabIndex = 3;
+            lblTahakkukDamizlik.Text = "0";
             // 
             // panel348
             // 
             panel348.BorderStyle = BorderStyle.FixedSingle;
-            panel348.Location = new Point(804, 270);
+            panel348.Location = new Point(797, 270);
             panel348.Name = "panel348";
-            panel348.Size = new Size(20, 23);
+            panel348.Size = new Size(26, 23);
             panel348.TabIndex = 330;
             // 
             // panel349
             // 
             panel349.BorderStyle = BorderStyle.FixedSingle;
-            panel349.Location = new Point(769, 270);
+            panel349.Location = new Point(768, 270);
             panel349.Name = "panel349";
-            panel349.Size = new Size(35, 23);
+            panel349.Size = new Size(29, 23);
             panel349.TabIndex = 329;
             // 
             // panel350
@@ -6465,17 +6602,17 @@
             panel350.BorderStyle = BorderStyle.FixedSingle;
             panel350.Location = new Point(751, 270);
             panel350.Name = "panel350";
-            panel350.Size = new Size(18, 23);
+            panel350.Size = new Size(17, 23);
             panel350.TabIndex = 328;
             // 
-            // panel351
+            // p76
             // 
-            panel351.BorderStyle = BorderStyle.FixedSingle;
-            panel351.Controls.Add(lblMunzamDamizlik);
-            panel351.Location = new Point(683, 270);
-            panel351.Name = "panel351";
-            panel351.Size = new Size(68, 23);
-            panel351.TabIndex = 327;
+            p76.BorderStyle = BorderStyle.FixedSingle;
+            p76.Controls.Add(lblMunzamDamizlik);
+            p76.Location = new Point(687, 270);
+            p76.Name = "p76";
+            p76.Size = new Size(64, 23);
+            p76.TabIndex = 327;
             // 
             // lblMunzamDamizlik
             // 
@@ -6483,26 +6620,26 @@
             lblMunzamDamizlik.Location = new Point(0, 3);
             lblMunzamDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblMunzamDamizlik.Name = "lblMunzamDamizlik";
-            lblMunzamDamizlik.Size = new Size(66, 15);
+            lblMunzamDamizlik.Size = new Size(12, 15);
             lblMunzamDamizlik.TabIndex = 3;
-            lblMunzamDamizlik.Text = "99.999.999,99";
+            lblMunzamDamizlik.Text = "0";
             // 
             // panel352
             // 
             panel352.BorderStyle = BorderStyle.FixedSingle;
-            panel352.Location = new Point(665, 270);
+            panel352.Location = new Point(670, 270);
             panel352.Name = "panel352";
-            panel352.Size = new Size(18, 23);
+            panel352.Size = new Size(17, 23);
             panel352.TabIndex = 326;
             // 
-            // panel353
+            // p75
             // 
-            panel353.BorderStyle = BorderStyle.FixedSingle;
-            panel353.Controls.Add(lblBKDamizlik);
-            panel353.Location = new Point(597, 270);
-            panel353.Name = "panel353";
-            panel353.Size = new Size(68, 23);
-            panel353.TabIndex = 325;
+            p75.BorderStyle = BorderStyle.FixedSingle;
+            p75.Controls.Add(lblBKDamizlik);
+            p75.Location = new Point(606, 270);
+            p75.Name = "p75";
+            p75.Size = new Size(64, 23);
+            p75.TabIndex = 325;
             // 
             // lblBKDamizlik
             // 
@@ -6510,16 +6647,16 @@
             lblBKDamizlik.Location = new Point(0, 3);
             lblBKDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblBKDamizlik.Name = "lblBKDamizlik";
-            lblBKDamizlik.Size = new Size(66, 15);
+            lblBKDamizlik.Size = new Size(37, 15);
             lblBKDamizlik.TabIndex = 3;
-            lblBKDamizlik.Text = "99.999.999,99";
+            lblBKDamizlik.Text = "100000";
             // 
             // panel354
             // 
             panel354.BorderStyle = BorderStyle.FixedSingle;
-            panel354.Location = new Point(1096, 224);
+            panel354.Location = new Point(1081, 224);
             panel354.Name = "panel354";
-            panel354.Size = new Size(18, 23);
+            panel354.Size = new Size(17, 23);
             panel354.TabIndex = 324;
             // 
             // panel355
@@ -6527,7 +6664,7 @@
             panel355.BorderStyle = BorderStyle.FixedSingle;
             panel355.Controls.Add(label216);
             panel355.Controls.Add(label157);
-            panel355.Location = new Point(514, 270);
+            panel355.Location = new Point(523, 270);
             panel355.Name = "panel355";
             panel355.Size = new Size(83, 23);
             panel355.TabIndex = 311;
@@ -6560,7 +6697,7 @@
             panel356.Controls.Add(label209);
             panel356.Controls.Add(label158);
             panel356.Controls.Add(label234);
-            panel356.Location = new Point(514, 247);
+            panel356.Location = new Point(523, 247);
             panel356.Name = "panel356";
             panel356.Size = new Size(83, 23);
             panel356.TabIndex = 310;
@@ -6598,14 +6735,14 @@
             label234.TabIndex = 246;
             label234.Text = "Ağaçlama, Aşılama ve";
             // 
-            // panel357
+            // p69
             // 
-            panel357.BorderStyle = BorderStyle.FixedSingle;
-            panel357.Controls.Add(lblIptalSulama);
-            panel357.Location = new Point(1028, 224);
-            panel357.Name = "panel357";
-            panel357.Size = new Size(68, 23);
-            panel357.TabIndex = 323;
+            p69.BorderStyle = BorderStyle.FixedSingle;
+            p69.Controls.Add(lblIptalSulama);
+            p69.Location = new Point(1017, 224);
+            p69.Name = "p69";
+            p69.Size = new Size(64, 23);
+            p69.TabIndex = 323;
             // 
             // lblIptalSulama
             // 
@@ -6613,26 +6750,26 @@
             lblIptalSulama.Location = new Point(-1, 3);
             lblIptalSulama.Margin = new Padding(1, 0, 1, 0);
             lblIptalSulama.Name = "lblIptalSulama";
-            lblIptalSulama.Size = new Size(66, 15);
+            lblIptalSulama.Size = new Size(12, 15);
             lblIptalSulama.TabIndex = 2;
-            lblIptalSulama.Text = "99.999.999,99";
+            lblIptalSulama.Text = "0";
             // 
             // panel358
             // 
             panel358.BorderStyle = BorderStyle.FixedSingle;
-            panel358.Location = new Point(1096, 247);
+            panel358.Location = new Point(1081, 247);
             panel358.Name = "panel358";
-            panel358.Size = new Size(18, 23);
+            panel358.Size = new Size(17, 23);
             panel358.TabIndex = 309;
             // 
-            // panel359
+            // p65
             // 
-            panel359.BorderStyle = BorderStyle.FixedSingle;
-            panel359.Controls.Add(lblBKSulama);
-            panel359.Location = new Point(597, 224);
-            panel359.Name = "panel359";
-            panel359.Size = new Size(68, 23);
-            panel359.TabIndex = 312;
+            p65.BorderStyle = BorderStyle.FixedSingle;
+            p65.Controls.Add(lblBKSulama);
+            p65.Location = new Point(606, 224);
+            p65.Name = "p65";
+            p65.Size = new Size(64, 23);
+            p65.TabIndex = 312;
             // 
             // lblBKSulama
             // 
@@ -6640,26 +6777,27 @@
             lblBKSulama.Location = new Point(0, 3);
             lblBKSulama.Margin = new Padding(1, 0, 1, 0);
             lblBKSulama.Name = "lblBKSulama";
-            lblBKSulama.Size = new Size(66, 15);
+            lblBKSulama.Size = new Size(37, 15);
             lblBKSulama.TabIndex = 3;
-            lblBKSulama.Text = "99.999.999,99";
+            lblBKSulama.Text = "100000";
+            lblBKSulama.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel360
             // 
             panel360.BorderStyle = BorderStyle.FixedSingle;
-            panel360.Location = new Point(996, 224);
+            panel360.Location = new Point(985, 224);
             panel360.Name = "panel360";
             panel360.Size = new Size(32, 23);
             panel360.TabIndex = 322;
             // 
-            // panel361
+            // p74
             // 
-            panel361.BorderStyle = BorderStyle.FixedSingle;
-            panel361.Controls.Add(lblIptalAgaclama);
-            panel361.Location = new Point(1028, 247);
-            panel361.Name = "panel361";
-            panel361.Size = new Size(68, 23);
-            panel361.TabIndex = 308;
+            p74.BorderStyle = BorderStyle.FixedSingle;
+            p74.Controls.Add(lblIptalAgaclama);
+            p74.Location = new Point(1017, 247);
+            p74.Name = "p74";
+            p74.Size = new Size(64, 23);
+            p74.TabIndex = 308;
             // 
             // lblIptalAgaclama
             // 
@@ -6667,22 +6805,22 @@
             lblIptalAgaclama.Location = new Point(-1, 3);
             lblIptalAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblIptalAgaclama.Name = "lblIptalAgaclama";
-            lblIptalAgaclama.Size = new Size(66, 15);
+            lblIptalAgaclama.Size = new Size(12, 15);
             lblIptalAgaclama.TabIndex = 2;
-            lblIptalAgaclama.Text = "99.999.999,99";
+            lblIptalAgaclama.Text = "0";
             // 
             // panel362
             // 
             panel362.BorderStyle = BorderStyle.FixedSingle;
-            panel362.Location = new Point(665, 224);
+            panel362.Location = new Point(670, 224);
             panel362.Name = "panel362";
-            panel362.Size = new Size(18, 23);
+            panel362.Size = new Size(17, 23);
             panel362.TabIndex = 313;
             // 
             // panel363
             // 
             panel363.BorderStyle = BorderStyle.FixedSingle;
-            panel363.Location = new Point(996, 247);
+            panel363.Location = new Point(985, 247);
             panel363.Name = "panel363";
             panel363.Size = new Size(32, 23);
             panel363.TabIndex = 307;
@@ -6690,27 +6828,27 @@
             // panel364
             // 
             panel364.BorderStyle = BorderStyle.FixedSingle;
-            panel364.Location = new Point(978, 224);
+            panel364.Location = new Point(968, 224);
             panel364.Name = "panel364";
-            panel364.Size = new Size(18, 23);
+            panel364.Size = new Size(17, 23);
             panel364.TabIndex = 321;
             // 
             // panel365
             // 
             panel365.BorderStyle = BorderStyle.FixedSingle;
-            panel365.Location = new Point(978, 247);
+            panel365.Location = new Point(968, 247);
             panel365.Name = "panel365";
-            panel365.Size = new Size(18, 23);
+            panel365.Size = new Size(17, 23);
             panel365.TabIndex = 306;
             // 
-            // panel366
+            // p66
             // 
-            panel366.BorderStyle = BorderStyle.FixedSingle;
-            panel366.Controls.Add(lblMunzamSulama);
-            panel366.Location = new Point(683, 224);
-            panel366.Name = "panel366";
-            panel366.Size = new Size(68, 23);
-            panel366.TabIndex = 314;
+            p66.BorderStyle = BorderStyle.FixedSingle;
+            p66.Controls.Add(lblMunzamSulama);
+            p66.Location = new Point(687, 224);
+            p66.Name = "p66";
+            p66.Size = new Size(64, 23);
+            p66.TabIndex = 314;
             // 
             // lblMunzamSulama
             // 
@@ -6718,18 +6856,18 @@
             lblMunzamSulama.Location = new Point(0, 3);
             lblMunzamSulama.Margin = new Padding(1, 0, 1, 0);
             lblMunzamSulama.Name = "lblMunzamSulama";
-            lblMunzamSulama.Size = new Size(66, 15);
+            lblMunzamSulama.Size = new Size(12, 15);
             lblMunzamSulama.TabIndex = 3;
-            lblMunzamSulama.Text = "99.999.999,99";
+            lblMunzamSulama.Text = "0";
             // 
-            // panel367
+            // p73
             // 
-            panel367.BorderStyle = BorderStyle.FixedSingle;
-            panel367.Controls.Add(lblOdenenAgaclama);
-            panel367.Location = new Point(910, 247);
-            panel367.Name = "panel367";
-            panel367.Size = new Size(68, 23);
-            panel367.TabIndex = 305;
+            p73.BorderStyle = BorderStyle.FixedSingle;
+            p73.Controls.Add(lblOdenenAgaclama);
+            p73.Location = new Point(904, 247);
+            p73.Name = "p73";
+            p73.Size = new Size(64, 23);
+            p73.TabIndex = 305;
             // 
             // lblOdenenAgaclama
             // 
@@ -6737,18 +6875,18 @@
             lblOdenenAgaclama.Location = new Point(0, 3);
             lblOdenenAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblOdenenAgaclama.Name = "lblOdenenAgaclama";
-            lblOdenenAgaclama.Size = new Size(66, 15);
+            lblOdenenAgaclama.Size = new Size(32, 15);
             lblOdenenAgaclama.TabIndex = 3;
-            lblOdenenAgaclama.Text = "99.999.999,99";
+            lblOdenenAgaclama.Text = "29022";
             // 
-            // panel368
+            // p68
             // 
-            panel368.BorderStyle = BorderStyle.FixedSingle;
-            panel368.Controls.Add(lblOdenenSulama);
-            panel368.Location = new Point(910, 224);
-            panel368.Name = "panel368";
-            panel368.Size = new Size(68, 23);
-            panel368.TabIndex = 320;
+            p68.BorderStyle = BorderStyle.FixedSingle;
+            p68.Controls.Add(lblOdenenSulama);
+            p68.Location = new Point(904, 224);
+            p68.Name = "p68";
+            p68.Size = new Size(64, 23);
+            p68.TabIndex = 320;
             // 
             // lblOdenenSulama
             // 
@@ -6756,16 +6894,17 @@
             lblOdenenSulama.Location = new Point(0, 3);
             lblOdenenSulama.Margin = new Padding(1, 0, 1, 0);
             lblOdenenSulama.Name = "lblOdenenSulama";
-            lblOdenenSulama.Size = new Size(66, 15);
+            lblOdenenSulama.Size = new Size(32, 15);
             lblOdenenSulama.TabIndex = 3;
-            lblOdenenSulama.Text = "99.999.999,99";
+            lblOdenenSulama.Text = "29022";
+            lblOdenenSulama.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel369
             // 
             panel369.BorderStyle = BorderStyle.FixedSingle;
-            panel369.Location = new Point(892, 247);
+            panel369.Location = new Point(887, 247);
             panel369.Name = "panel369";
-            panel369.Size = new Size(18, 23);
+            panel369.Size = new Size(17, 23);
             panel369.TabIndex = 304;
             // 
             // panel370
@@ -6773,17 +6912,17 @@
             panel370.BorderStyle = BorderStyle.FixedSingle;
             panel370.Location = new Point(751, 224);
             panel370.Name = "panel370";
-            panel370.Size = new Size(18, 23);
+            panel370.Size = new Size(17, 23);
             panel370.TabIndex = 315;
             // 
-            // panel371
+            // p72
             // 
-            panel371.BorderStyle = BorderStyle.FixedSingle;
-            panel371.Controls.Add(lblTahakkukAgaclama);
-            panel371.Location = new Point(824, 247);
-            panel371.Name = "panel371";
-            panel371.Size = new Size(68, 23);
-            panel371.TabIndex = 303;
+            p72.BorderStyle = BorderStyle.FixedSingle;
+            p72.Controls.Add(lblTahakkukAgaclama);
+            p72.Location = new Point(823, 247);
+            p72.Name = "p72";
+            p72.Size = new Size(64, 23);
+            p72.TabIndex = 303;
             // 
             // lblTahakkukAgaclama
             // 
@@ -6791,40 +6930,40 @@
             lblTahakkukAgaclama.Location = new Point(0, 3);
             lblTahakkukAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukAgaclama.Name = "lblTahakkukAgaclama";
-            lblTahakkukAgaclama.Size = new Size(66, 15);
+            lblTahakkukAgaclama.Size = new Size(12, 15);
             lblTahakkukAgaclama.TabIndex = 3;
-            lblTahakkukAgaclama.Text = "99.999.999,99";
+            lblTahakkukAgaclama.Text = "0";
             // 
             // panel372
             // 
             panel372.BorderStyle = BorderStyle.FixedSingle;
-            panel372.Location = new Point(892, 224);
+            panel372.Location = new Point(887, 224);
             panel372.Name = "panel372";
-            panel372.Size = new Size(18, 23);
+            panel372.Size = new Size(17, 23);
             panel372.TabIndex = 319;
             // 
             // panel373
             // 
             panel373.BorderStyle = BorderStyle.FixedSingle;
-            panel373.Location = new Point(804, 247);
+            panel373.Location = new Point(797, 247);
             panel373.Name = "panel373";
-            panel373.Size = new Size(20, 23);
+            panel373.Size = new Size(26, 23);
             panel373.TabIndex = 302;
             // 
             // panel374
             // 
             panel374.BorderStyle = BorderStyle.FixedSingle;
-            panel374.Location = new Point(769, 224);
+            panel374.Location = new Point(768, 224);
             panel374.Name = "panel374";
-            panel374.Size = new Size(35, 23);
+            panel374.Size = new Size(29, 23);
             panel374.TabIndex = 316;
             // 
             // panel375
             // 
             panel375.BorderStyle = BorderStyle.FixedSingle;
-            panel375.Location = new Point(769, 247);
+            panel375.Location = new Point(768, 247);
             panel375.Name = "panel375";
-            panel375.Size = new Size(35, 23);
+            panel375.Size = new Size(29, 23);
             panel375.TabIndex = 301;
             // 
             // panel377
@@ -6832,25 +6971,25 @@
             panel377.BorderStyle = BorderStyle.FixedSingle;
             panel377.Location = new Point(751, 247);
             panel377.Name = "panel377";
-            panel377.Size = new Size(18, 23);
+            panel377.Size = new Size(17, 23);
             panel377.TabIndex = 300;
             // 
             // panel378
             // 
             panel378.BorderStyle = BorderStyle.FixedSingle;
-            panel378.Location = new Point(804, 224);
+            panel378.Location = new Point(797, 224);
             panel378.Name = "panel378";
-            panel378.Size = new Size(20, 23);
+            panel378.Size = new Size(26, 23);
             panel378.TabIndex = 317;
             // 
-            // panel379
+            // p71
             // 
-            panel379.BorderStyle = BorderStyle.FixedSingle;
-            panel379.Controls.Add(lblMunzamAgaclama);
-            panel379.Location = new Point(683, 247);
-            panel379.Name = "panel379";
-            panel379.Size = new Size(68, 23);
-            panel379.TabIndex = 299;
+            p71.BorderStyle = BorderStyle.FixedSingle;
+            p71.Controls.Add(lblMunzamAgaclama);
+            p71.Location = new Point(687, 247);
+            p71.Name = "p71";
+            p71.Size = new Size(64, 23);
+            p71.TabIndex = 299;
             // 
             // lblMunzamAgaclama
             // 
@@ -6858,53 +6997,43 @@
             lblMunzamAgaclama.Location = new Point(0, 3);
             lblMunzamAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblMunzamAgaclama.Name = "lblMunzamAgaclama";
-            lblMunzamAgaclama.Size = new Size(66, 15);
+            lblMunzamAgaclama.Size = new Size(12, 15);
             lblMunzamAgaclama.TabIndex = 3;
-            lblMunzamAgaclama.Text = "99.999.999,99";
+            lblMunzamAgaclama.Text = "0";
             // 
             // panel380
             // 
             panel380.BorderStyle = BorderStyle.FixedSingle;
-            panel380.Location = new Point(665, 247);
+            panel380.Location = new Point(670, 247);
             panel380.Name = "panel380";
-            panel380.Size = new Size(18, 23);
+            panel380.Size = new Size(17, 23);
             panel380.TabIndex = 298;
             // 
-            // panel381
+            // p70
             // 
-            panel381.BorderStyle = BorderStyle.FixedSingle;
-            panel381.Controls.Add(lblBKlblBKAgaclama);
-            panel381.Location = new Point(597, 247);
-            panel381.Name = "panel381";
-            panel381.Size = new Size(68, 23);
-            panel381.TabIndex = 297;
+            p70.BorderStyle = BorderStyle.FixedSingle;
+            p70.Controls.Add(lblBKAgaclama);
+            p70.Location = new Point(606, 247);
+            p70.Name = "p70";
+            p70.Size = new Size(64, 23);
+            p70.TabIndex = 297;
             // 
-            // lblBKlblBKAgaclama
+            // lblBKAgaclama
             // 
-            lblBKlblBKAgaclama.AutoSize = true;
-            lblBKlblBKAgaclama.Location = new Point(0, 3);
-            lblBKlblBKAgaclama.Margin = new Padding(1, 0, 1, 0);
-            lblBKlblBKAgaclama.Name = "lblBKlblBKAgaclama";
-            lblBKlblBKAgaclama.Size = new Size(66, 15);
-            lblBKlblBKAgaclama.TabIndex = 3;
-            lblBKlblBKAgaclama.Text = "99.999.999,99";
-            // 
-            // panel382
-            // 
-            panel382.BorderStyle = BorderStyle.FixedSingle;
-            panel382.Controls.Add(panel383);
-            panel382.Controls.Add(label160);
-            panel382.Location = new Point(514, 224);
-            panel382.Name = "panel382";
-            panel382.Size = new Size(83, 23);
-            panel382.TabIndex = 296;
+            lblBKAgaclama.AutoSize = true;
+            lblBKAgaclama.Location = new Point(0, 3);
+            lblBKAgaclama.Margin = new Padding(1, 0, 1, 0);
+            lblBKAgaclama.Name = "lblBKAgaclama";
+            lblBKAgaclama.Size = new Size(37, 15);
+            lblBKAgaclama.TabIndex = 3;
+            lblBKAgaclama.Text = "100000";
             // 
             // panel383
             // 
             panel383.BorderStyle = BorderStyle.FixedSingle;
             panel383.Controls.Add(label159);
             panel383.Controls.Add(label215);
-            panel383.Location = new Point(-2, -1);
+            panel383.Location = new Point(523, 224);
             panel383.Name = "panel383";
             panel383.Size = new Size(83, 23);
             panel383.TabIndex = 245;
@@ -6931,17 +7060,6 @@
             label215.TabIndex = 244;
             label215.Text = "Sulama Harklar Açma ve";
             // 
-            // label160
-            // 
-            label160.AutoSize = true;
-            label160.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label160.Location = new Point(9, 37);
-            label160.Margin = new Padding(1, 0, 1, 0);
-            label160.Name = "label160";
-            label160.Size = new Size(58, 13);
-            label160.TabIndex = 242;
-            label160.Text = "GİDERİN CİNSİ";
-            // 
             // panel384
             // 
             panel384.BorderStyle = BorderStyle.FixedSingle;
@@ -6952,10 +7070,10 @@
             panel384.Controls.Add(label176);
             panel384.Controls.Add(label161);
             panel384.Controls.Add(label167);
-            panel384.Location = new Point(493, 224);
+            panel384.Location = new Point(506, 224);
             panel384.Margin = new Padding(1, 3, 1, 3);
             panel384.Name = "panel384";
-            panel384.Size = new Size(21, 184);
+            panel384.Size = new Size(17, 184);
             panel384.TabIndex = 295;
             // 
             // label180
@@ -7032,10 +7150,10 @@
             // 
             panel385.BorderStyle = BorderStyle.FixedSingle;
             panel385.Controls.Add(label168);
-            panel385.Location = new Point(474, 224);
+            panel385.Location = new Point(489, 224);
             panel385.Margin = new Padding(1, 3, 1, 3);
             panel385.Name = "panel385";
-            panel385.Size = new Size(21, 184);
+            panel385.Size = new Size(17, 184);
             panel385.TabIndex = 294;
             // 
             // label168
@@ -7051,19 +7169,19 @@
             // panel386
             // 
             panel386.BorderStyle = BorderStyle.FixedSingle;
-            panel386.Location = new Point(1096, 339);
+            panel386.Location = new Point(1081, 339);
             panel386.Name = "panel386";
-            panel386.Size = new Size(18, 23);
+            panel386.Size = new Size(17, 23);
             panel386.TabIndex = 380;
             // 
-            // panel387
+            // p94
             // 
-            panel387.BorderStyle = BorderStyle.FixedSingle;
-            panel387.Controls.Add(lblIptalPazarCarsi);
-            panel387.Location = new Point(1028, 339);
-            panel387.Name = "panel387";
-            panel387.Size = new Size(68, 23);
-            panel387.TabIndex = 379;
+            p94.BorderStyle = BorderStyle.FixedSingle;
+            p94.Controls.Add(lblIptalPazarCarsi);
+            p94.Location = new Point(1017, 339);
+            p94.Name = "p94";
+            p94.Size = new Size(64, 23);
+            p94.TabIndex = 379;
             // 
             // lblIptalPazarCarsi
             // 
@@ -7071,14 +7189,14 @@
             lblIptalPazarCarsi.Location = new Point(-1, 3);
             lblIptalPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblIptalPazarCarsi.Name = "lblIptalPazarCarsi";
-            lblIptalPazarCarsi.Size = new Size(66, 15);
+            lblIptalPazarCarsi.Size = new Size(12, 15);
             lblIptalPazarCarsi.TabIndex = 2;
-            lblIptalPazarCarsi.Text = "99.999.999,99";
+            lblIptalPazarCarsi.Text = "0";
             // 
             // panel388
             // 
             panel388.BorderStyle = BorderStyle.FixedSingle;
-            panel388.Location = new Point(996, 339);
+            panel388.Location = new Point(985, 339);
             panel388.Name = "panel388";
             panel388.Size = new Size(32, 23);
             panel388.TabIndex = 378;
@@ -7086,19 +7204,19 @@
             // panel389
             // 
             panel389.BorderStyle = BorderStyle.FixedSingle;
-            panel389.Location = new Point(978, 339);
+            panel389.Location = new Point(968, 339);
             panel389.Name = "panel389";
-            panel389.Size = new Size(18, 23);
+            panel389.Size = new Size(17, 23);
             panel389.TabIndex = 377;
             // 
-            // panel390
+            // p93
             // 
-            panel390.BorderStyle = BorderStyle.FixedSingle;
-            panel390.Controls.Add(lblOdenenPazarCarsi);
-            panel390.Location = new Point(910, 339);
-            panel390.Name = "panel390";
-            panel390.Size = new Size(68, 23);
-            panel390.TabIndex = 376;
+            p93.BorderStyle = BorderStyle.FixedSingle;
+            p93.Controls.Add(lblOdenenPazarCarsi);
+            p93.Location = new Point(904, 339);
+            p93.Name = "p93";
+            p93.Size = new Size(64, 23);
+            p93.TabIndex = 376;
             // 
             // lblOdenenPazarCarsi
             // 
@@ -7106,26 +7224,26 @@
             lblOdenenPazarCarsi.Location = new Point(0, 3);
             lblOdenenPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenPazarCarsi.Name = "lblOdenenPazarCarsi";
-            lblOdenenPazarCarsi.Size = new Size(66, 15);
+            lblOdenenPazarCarsi.Size = new Size(32, 15);
             lblOdenenPazarCarsi.TabIndex = 3;
-            lblOdenenPazarCarsi.Text = "99.999.999,99";
+            lblOdenenPazarCarsi.Text = "29022";
             // 
             // panel391
             // 
             panel391.BorderStyle = BorderStyle.FixedSingle;
-            panel391.Location = new Point(892, 339);
+            panel391.Location = new Point(887, 339);
             panel391.Name = "panel391";
-            panel391.Size = new Size(18, 23);
+            panel391.Size = new Size(17, 23);
             panel391.TabIndex = 375;
             // 
-            // panel392
+            // p92
             // 
-            panel392.BorderStyle = BorderStyle.FixedSingle;
-            panel392.Controls.Add(lblTahakkukPazarCarsi);
-            panel392.Location = new Point(824, 339);
-            panel392.Name = "panel392";
-            panel392.Size = new Size(68, 23);
-            panel392.TabIndex = 374;
+            p92.BorderStyle = BorderStyle.FixedSingle;
+            p92.Controls.Add(lblTahakkukPazarCarsi);
+            p92.Location = new Point(823, 339);
+            p92.Name = "p92";
+            p92.Size = new Size(64, 23);
+            p92.TabIndex = 374;
             // 
             // lblTahakkukPazarCarsi
             // 
@@ -7133,24 +7251,24 @@
             lblTahakkukPazarCarsi.Location = new Point(0, 3);
             lblTahakkukPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukPazarCarsi.Name = "lblTahakkukPazarCarsi";
-            lblTahakkukPazarCarsi.Size = new Size(66, 15);
+            lblTahakkukPazarCarsi.Size = new Size(12, 15);
             lblTahakkukPazarCarsi.TabIndex = 3;
-            lblTahakkukPazarCarsi.Text = "99.999.999,99";
+            lblTahakkukPazarCarsi.Text = "0";
             // 
             // panel393
             // 
             panel393.BorderStyle = BorderStyle.FixedSingle;
-            panel393.Location = new Point(804, 339);
+            panel393.Location = new Point(797, 339);
             panel393.Name = "panel393";
-            panel393.Size = new Size(20, 23);
+            panel393.Size = new Size(26, 23);
             panel393.TabIndex = 373;
             // 
             // panel394
             // 
             panel394.BorderStyle = BorderStyle.FixedSingle;
-            panel394.Location = new Point(769, 339);
+            panel394.Location = new Point(768, 339);
             panel394.Name = "panel394";
-            panel394.Size = new Size(35, 23);
+            panel394.Size = new Size(29, 23);
             panel394.TabIndex = 372;
             // 
             // panel395
@@ -7158,17 +7276,17 @@
             panel395.BorderStyle = BorderStyle.FixedSingle;
             panel395.Location = new Point(751, 339);
             panel395.Name = "panel395";
-            panel395.Size = new Size(18, 23);
+            panel395.Size = new Size(17, 23);
             panel395.TabIndex = 371;
             // 
-            // panel396
+            // p91
             // 
-            panel396.BorderStyle = BorderStyle.FixedSingle;
-            panel396.Controls.Add(lblMunzamPazarCarsi);
-            panel396.Location = new Point(683, 339);
-            panel396.Name = "panel396";
-            panel396.Size = new Size(68, 23);
-            panel396.TabIndex = 370;
+            p91.BorderStyle = BorderStyle.FixedSingle;
+            p91.Controls.Add(lblMunzamPazarCarsi);
+            p91.Location = new Point(687, 339);
+            p91.Name = "p91";
+            p91.Size = new Size(64, 23);
+            p91.TabIndex = 370;
             // 
             // lblMunzamPazarCarsi
             // 
@@ -7176,26 +7294,26 @@
             lblMunzamPazarCarsi.Location = new Point(0, 3);
             lblMunzamPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamPazarCarsi.Name = "lblMunzamPazarCarsi";
-            lblMunzamPazarCarsi.Size = new Size(66, 15);
+            lblMunzamPazarCarsi.Size = new Size(12, 15);
             lblMunzamPazarCarsi.TabIndex = 3;
-            lblMunzamPazarCarsi.Text = "99.999.999,99";
+            lblMunzamPazarCarsi.Text = "0";
             // 
             // panel397
             // 
             panel397.BorderStyle = BorderStyle.FixedSingle;
-            panel397.Location = new Point(665, 339);
+            panel397.Location = new Point(670, 339);
             panel397.Name = "panel397";
-            panel397.Size = new Size(18, 23);
+            panel397.Size = new Size(17, 23);
             panel397.TabIndex = 369;
             // 
-            // panel398
+            // p90
             // 
-            panel398.BorderStyle = BorderStyle.FixedSingle;
-            panel398.Controls.Add(lblBKPazarCarsi);
-            panel398.Location = new Point(597, 339);
-            panel398.Name = "panel398";
-            panel398.Size = new Size(68, 23);
-            panel398.TabIndex = 368;
+            p90.BorderStyle = BorderStyle.FixedSingle;
+            p90.Controls.Add(lblBKPazarCarsi);
+            p90.Location = new Point(606, 339);
+            p90.Name = "p90";
+            p90.Size = new Size(64, 23);
+            p90.TabIndex = 368;
             // 
             // lblBKPazarCarsi
             // 
@@ -7203,16 +7321,16 @@
             lblBKPazarCarsi.Location = new Point(0, 3);
             lblBKPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblBKPazarCarsi.Name = "lblBKPazarCarsi";
-            lblBKPazarCarsi.Size = new Size(66, 15);
+            lblBKPazarCarsi.Size = new Size(37, 15);
             lblBKPazarCarsi.TabIndex = 3;
-            lblBKPazarCarsi.Text = "99.999.999,99";
+            lblBKPazarCarsi.Text = "100000";
             // 
             // panel399
             // 
             panel399.BorderStyle = BorderStyle.FixedSingle;
-            panel399.Location = new Point(1096, 293);
+            panel399.Location = new Point(1081, 293);
             panel399.Name = "panel399";
-            panel399.Size = new Size(18, 23);
+            panel399.Size = new Size(17, 23);
             panel399.TabIndex = 367;
             // 
             // panel400
@@ -7220,7 +7338,7 @@
             panel400.BorderStyle = BorderStyle.FixedSingle;
             panel400.Controls.Add(label218);
             panel400.Controls.Add(label219);
-            panel400.Location = new Point(514, 339);
+            panel400.Location = new Point(523, 339);
             panel400.Name = "panel400";
             panel400.Size = new Size(83, 23);
             panel400.TabIndex = 354;
@@ -7252,7 +7370,7 @@
             panel401.BorderStyle = BorderStyle.FixedSingle;
             panel401.Controls.Add(label175);
             panel401.Controls.Add(label217);
-            panel401.Location = new Point(514, 316);
+            panel401.Location = new Point(523, 316);
             panel401.Name = "panel401";
             panel401.Size = new Size(83, 23);
             panel401.TabIndex = 353;
@@ -7279,14 +7397,14 @@
             label217.TabIndex = 248;
             label217.Text = "Zirai Hayvanlar ve Nebat";
             // 
-            // panel402
+            // p84
             // 
-            panel402.BorderStyle = BorderStyle.FixedSingle;
-            panel402.Controls.Add(lblIptalOrnekTarla);
-            panel402.Location = new Point(1028, 293);
-            panel402.Name = "panel402";
-            panel402.Size = new Size(68, 23);
-            panel402.TabIndex = 366;
+            p84.BorderStyle = BorderStyle.FixedSingle;
+            p84.Controls.Add(lblIptalOrnekTarla);
+            p84.Location = new Point(1017, 293);
+            p84.Name = "p84";
+            p84.Size = new Size(64, 23);
+            p84.TabIndex = 366;
             // 
             // lblIptalOrnekTarla
             // 
@@ -7294,26 +7412,26 @@
             lblIptalOrnekTarla.Location = new Point(-1, 3);
             lblIptalOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblIptalOrnekTarla.Name = "lblIptalOrnekTarla";
-            lblIptalOrnekTarla.Size = new Size(66, 15);
+            lblIptalOrnekTarla.Size = new Size(12, 15);
             lblIptalOrnekTarla.TabIndex = 2;
-            lblIptalOrnekTarla.Text = "99.999.999,99";
+            lblIptalOrnekTarla.Text = "0";
             // 
             // panel403
             // 
             panel403.BorderStyle = BorderStyle.FixedSingle;
-            panel403.Location = new Point(1096, 316);
+            panel403.Location = new Point(1081, 316);
             panel403.Name = "panel403";
-            panel403.Size = new Size(18, 23);
+            panel403.Size = new Size(17, 23);
             panel403.TabIndex = 352;
             // 
-            // panel404
+            // p80
             // 
-            panel404.BorderStyle = BorderStyle.FixedSingle;
-            panel404.Controls.Add(lblBKOrnekTarla);
-            panel404.Location = new Point(597, 293);
-            panel404.Name = "panel404";
-            panel404.Size = new Size(68, 23);
-            panel404.TabIndex = 355;
+            p80.BorderStyle = BorderStyle.FixedSingle;
+            p80.Controls.Add(lblBKOrnekTarla);
+            p80.Location = new Point(606, 293);
+            p80.Name = "p80";
+            p80.Size = new Size(64, 23);
+            p80.TabIndex = 355;
             // 
             // lblBKOrnekTarla
             // 
@@ -7321,26 +7439,26 @@
             lblBKOrnekTarla.Location = new Point(0, 3);
             lblBKOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblBKOrnekTarla.Name = "lblBKOrnekTarla";
-            lblBKOrnekTarla.Size = new Size(66, 15);
+            lblBKOrnekTarla.Size = new Size(37, 15);
             lblBKOrnekTarla.TabIndex = 3;
-            lblBKOrnekTarla.Text = "99.999.999,99";
+            lblBKOrnekTarla.Text = "100000";
             // 
             // panel405
             // 
             panel405.BorderStyle = BorderStyle.FixedSingle;
-            panel405.Location = new Point(996, 293);
+            panel405.Location = new Point(985, 293);
             panel405.Name = "panel405";
             panel405.Size = new Size(32, 23);
             panel405.TabIndex = 365;
             // 
-            // panel406
+            // p89
             // 
-            panel406.BorderStyle = BorderStyle.FixedSingle;
-            panel406.Controls.Add(lblIptalZiraiHayvan);
-            panel406.Location = new Point(1028, 316);
-            panel406.Name = "panel406";
-            panel406.Size = new Size(68, 23);
-            panel406.TabIndex = 351;
+            p89.BorderStyle = BorderStyle.FixedSingle;
+            p89.Controls.Add(lblIptalZiraiHayvan);
+            p89.Location = new Point(1017, 316);
+            p89.Name = "p89";
+            p89.Size = new Size(64, 23);
+            p89.TabIndex = 351;
             // 
             // lblIptalZiraiHayvan
             // 
@@ -7348,22 +7466,22 @@
             lblIptalZiraiHayvan.Location = new Point(-1, 3);
             lblIptalZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblIptalZiraiHayvan.Name = "lblIptalZiraiHayvan";
-            lblIptalZiraiHayvan.Size = new Size(66, 15);
+            lblIptalZiraiHayvan.Size = new Size(12, 15);
             lblIptalZiraiHayvan.TabIndex = 2;
-            lblIptalZiraiHayvan.Text = "99.999.999,99";
+            lblIptalZiraiHayvan.Text = "0";
             // 
             // panel407
             // 
             panel407.BorderStyle = BorderStyle.FixedSingle;
-            panel407.Location = new Point(665, 293);
+            panel407.Location = new Point(670, 293);
             panel407.Name = "panel407";
-            panel407.Size = new Size(18, 23);
+            panel407.Size = new Size(17, 23);
             panel407.TabIndex = 356;
             // 
             // panel408
             // 
             panel408.BorderStyle = BorderStyle.FixedSingle;
-            panel408.Location = new Point(996, 316);
+            panel408.Location = new Point(985, 316);
             panel408.Name = "panel408";
             panel408.Size = new Size(32, 23);
             panel408.TabIndex = 350;
@@ -7371,27 +7489,27 @@
             // panel409
             // 
             panel409.BorderStyle = BorderStyle.FixedSingle;
-            panel409.Location = new Point(978, 293);
+            panel409.Location = new Point(968, 293);
             panel409.Name = "panel409";
-            panel409.Size = new Size(18, 23);
+            panel409.Size = new Size(17, 23);
             panel409.TabIndex = 364;
             // 
             // panel410
             // 
             panel410.BorderStyle = BorderStyle.FixedSingle;
-            panel410.Location = new Point(978, 316);
+            panel410.Location = new Point(968, 316);
             panel410.Name = "panel410";
-            panel410.Size = new Size(18, 23);
+            panel410.Size = new Size(17, 23);
             panel410.TabIndex = 349;
             // 
-            // panel411
+            // p81
             // 
-            panel411.BorderStyle = BorderStyle.FixedSingle;
-            panel411.Controls.Add(lblMunzamOrnekTarla);
-            panel411.Location = new Point(683, 293);
-            panel411.Name = "panel411";
-            panel411.Size = new Size(68, 23);
-            panel411.TabIndex = 357;
+            p81.BorderStyle = BorderStyle.FixedSingle;
+            p81.Controls.Add(lblMunzamOrnekTarla);
+            p81.Location = new Point(687, 293);
+            p81.Name = "p81";
+            p81.Size = new Size(64, 23);
+            p81.TabIndex = 357;
             // 
             // lblMunzamOrnekTarla
             // 
@@ -7399,18 +7517,18 @@
             lblMunzamOrnekTarla.Location = new Point(0, 3);
             lblMunzamOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOrnekTarla.Name = "lblMunzamOrnekTarla";
-            lblMunzamOrnekTarla.Size = new Size(66, 15);
+            lblMunzamOrnekTarla.Size = new Size(12, 15);
             lblMunzamOrnekTarla.TabIndex = 3;
-            lblMunzamOrnekTarla.Text = "99.999.999,99";
+            lblMunzamOrnekTarla.Text = "0";
             // 
-            // panel412
+            // p88
             // 
-            panel412.BorderStyle = BorderStyle.FixedSingle;
-            panel412.Controls.Add(lblOdenenZiraiHayvan);
-            panel412.Location = new Point(910, 316);
-            panel412.Name = "panel412";
-            panel412.Size = new Size(68, 23);
-            panel412.TabIndex = 348;
+            p88.BorderStyle = BorderStyle.FixedSingle;
+            p88.Controls.Add(lblOdenenZiraiHayvan);
+            p88.Location = new Point(904, 316);
+            p88.Name = "p88";
+            p88.Size = new Size(64, 23);
+            p88.TabIndex = 348;
             // 
             // lblOdenenZiraiHayvan
             // 
@@ -7418,18 +7536,18 @@
             lblOdenenZiraiHayvan.Location = new Point(0, 3);
             lblOdenenZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblOdenenZiraiHayvan.Name = "lblOdenenZiraiHayvan";
-            lblOdenenZiraiHayvan.Size = new Size(66, 15);
+            lblOdenenZiraiHayvan.Size = new Size(32, 15);
             lblOdenenZiraiHayvan.TabIndex = 3;
-            lblOdenenZiraiHayvan.Text = "99.999.999,99";
+            lblOdenenZiraiHayvan.Text = "29022";
             // 
-            // panel413
+            // p83
             // 
-            panel413.BorderStyle = BorderStyle.FixedSingle;
-            panel413.Controls.Add(lblOdenenOrnekTarla);
-            panel413.Location = new Point(910, 293);
-            panel413.Name = "panel413";
-            panel413.Size = new Size(68, 23);
-            panel413.TabIndex = 363;
+            p83.BorderStyle = BorderStyle.FixedSingle;
+            p83.Controls.Add(lblOdenenOrnekTarla);
+            p83.Location = new Point(904, 293);
+            p83.Name = "p83";
+            p83.Size = new Size(64, 23);
+            p83.TabIndex = 363;
             // 
             // lblOdenenOrnekTarla
             // 
@@ -7437,16 +7555,16 @@
             lblOdenenOrnekTarla.Location = new Point(0, 3);
             lblOdenenOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOrnekTarla.Name = "lblOdenenOrnekTarla";
-            lblOdenenOrnekTarla.Size = new Size(66, 15);
+            lblOdenenOrnekTarla.Size = new Size(32, 15);
             lblOdenenOrnekTarla.TabIndex = 3;
-            lblOdenenOrnekTarla.Text = "99.999.999,99";
+            lblOdenenOrnekTarla.Text = "29022";
             // 
             // panel414
             // 
             panel414.BorderStyle = BorderStyle.FixedSingle;
-            panel414.Location = new Point(892, 316);
+            panel414.Location = new Point(887, 316);
             panel414.Name = "panel414";
-            panel414.Size = new Size(18, 23);
+            panel414.Size = new Size(17, 23);
             panel414.TabIndex = 347;
             // 
             // panel415
@@ -7454,17 +7572,17 @@
             panel415.BorderStyle = BorderStyle.FixedSingle;
             panel415.Location = new Point(751, 293);
             panel415.Name = "panel415";
-            panel415.Size = new Size(18, 23);
+            panel415.Size = new Size(17, 23);
             panel415.TabIndex = 358;
             // 
-            // panel416
+            // p87
             // 
-            panel416.BorderStyle = BorderStyle.FixedSingle;
-            panel416.Controls.Add(lblTahakkukZiraiHayvan);
-            panel416.Location = new Point(824, 316);
-            panel416.Name = "panel416";
-            panel416.Size = new Size(68, 23);
-            panel416.TabIndex = 346;
+            p87.BorderStyle = BorderStyle.FixedSingle;
+            p87.Controls.Add(lblTahakkukZiraiHayvan);
+            p87.Location = new Point(823, 316);
+            p87.Name = "p87";
+            p87.Size = new Size(64, 23);
+            p87.TabIndex = 346;
             // 
             // lblTahakkukZiraiHayvan
             // 
@@ -7472,50 +7590,50 @@
             lblTahakkukZiraiHayvan.Location = new Point(0, 3);
             lblTahakkukZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukZiraiHayvan.Name = "lblTahakkukZiraiHayvan";
-            lblTahakkukZiraiHayvan.Size = new Size(66, 15);
+            lblTahakkukZiraiHayvan.Size = new Size(12, 15);
             lblTahakkukZiraiHayvan.TabIndex = 3;
-            lblTahakkukZiraiHayvan.Text = "99.999.999,99";
+            lblTahakkukZiraiHayvan.Text = "0";
             // 
             // panel417
             // 
             panel417.BorderStyle = BorderStyle.FixedSingle;
-            panel417.Location = new Point(892, 293);
+            panel417.Location = new Point(887, 293);
             panel417.Name = "panel417";
-            panel417.Size = new Size(18, 23);
+            panel417.Size = new Size(17, 23);
             panel417.TabIndex = 362;
             // 
             // panel418
             // 
             panel418.BorderStyle = BorderStyle.FixedSingle;
-            panel418.Location = new Point(804, 316);
+            panel418.Location = new Point(797, 316);
             panel418.Name = "panel418";
-            panel418.Size = new Size(20, 23);
+            panel418.Size = new Size(26, 23);
             panel418.TabIndex = 345;
             // 
             // panel419
             // 
             panel419.BorderStyle = BorderStyle.FixedSingle;
-            panel419.Location = new Point(769, 293);
+            panel419.Location = new Point(768, 293);
             panel419.Name = "panel419";
-            panel419.Size = new Size(35, 23);
+            panel419.Size = new Size(29, 23);
             panel419.TabIndex = 359;
             // 
             // panel420
             // 
             panel420.BorderStyle = BorderStyle.FixedSingle;
-            panel420.Location = new Point(769, 316);
+            panel420.Location = new Point(768, 316);
             panel420.Name = "panel420";
-            panel420.Size = new Size(35, 23);
+            panel420.Size = new Size(29, 23);
             panel420.TabIndex = 344;
             // 
-            // panel421
+            // p82
             // 
-            panel421.BorderStyle = BorderStyle.FixedSingle;
-            panel421.Controls.Add(lblTahakkukOrnekTarla);
-            panel421.Location = new Point(824, 293);
-            panel421.Name = "panel421";
-            panel421.Size = new Size(68, 23);
-            panel421.TabIndex = 361;
+            p82.BorderStyle = BorderStyle.FixedSingle;
+            p82.Controls.Add(lblTahakkukOrnekTarla);
+            p82.Location = new Point(823, 293);
+            p82.Name = "p82";
+            p82.Size = new Size(64, 23);
+            p82.TabIndex = 361;
             // 
             // lblTahakkukOrnekTarla
             // 
@@ -7523,34 +7641,34 @@
             lblTahakkukOrnekTarla.Location = new Point(0, 3);
             lblTahakkukOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOrnekTarla.Name = "lblTahakkukOrnekTarla";
-            lblTahakkukOrnekTarla.Size = new Size(66, 15);
+            lblTahakkukOrnekTarla.Size = new Size(12, 15);
             lblTahakkukOrnekTarla.TabIndex = 3;
-            lblTahakkukOrnekTarla.Text = "99.999.999,99";
+            lblTahakkukOrnekTarla.Text = "0";
             // 
             // panel422
             // 
             panel422.BorderStyle = BorderStyle.FixedSingle;
             panel422.Location = new Point(751, 316);
             panel422.Name = "panel422";
-            panel422.Size = new Size(18, 23);
+            panel422.Size = new Size(17, 23);
             panel422.TabIndex = 343;
             // 
             // panel423
             // 
             panel423.BorderStyle = BorderStyle.FixedSingle;
-            panel423.Location = new Point(804, 293);
+            panel423.Location = new Point(797, 293);
             panel423.Name = "panel423";
-            panel423.Size = new Size(20, 23);
+            panel423.Size = new Size(26, 23);
             panel423.TabIndex = 360;
             // 
-            // panel424
+            // p86
             // 
-            panel424.BorderStyle = BorderStyle.FixedSingle;
-            panel424.Controls.Add(lblMunzamZiraiHayvan);
-            panel424.Location = new Point(683, 316);
-            panel424.Name = "panel424";
-            panel424.Size = new Size(68, 23);
-            panel424.TabIndex = 342;
+            p86.BorderStyle = BorderStyle.FixedSingle;
+            p86.Controls.Add(lblMunzamZiraiHayvan);
+            p86.Location = new Point(687, 316);
+            p86.Name = "p86";
+            p86.Size = new Size(64, 23);
+            p86.TabIndex = 342;
             // 
             // lblMunzamZiraiHayvan
             // 
@@ -7558,46 +7676,36 @@
             lblMunzamZiraiHayvan.Location = new Point(0, 3);
             lblMunzamZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblMunzamZiraiHayvan.Name = "lblMunzamZiraiHayvan";
-            lblMunzamZiraiHayvan.Size = new Size(66, 15);
+            lblMunzamZiraiHayvan.Size = new Size(12, 15);
             lblMunzamZiraiHayvan.TabIndex = 3;
-            lblMunzamZiraiHayvan.Text = "99.999.999,99";
+            lblMunzamZiraiHayvan.Text = "0";
             // 
             // panel425
             // 
             panel425.BorderStyle = BorderStyle.FixedSingle;
-            panel425.Location = new Point(665, 316);
+            panel425.Location = new Point(670, 316);
             panel425.Name = "panel425";
-            panel425.Size = new Size(18, 23);
+            panel425.Size = new Size(17, 23);
             panel425.TabIndex = 341;
             // 
-            // panel426
+            // p85
             // 
-            panel426.BorderStyle = BorderStyle.FixedSingle;
-            panel426.Controls.Add(lblBKZiraHayvan);
-            panel426.Location = new Point(597, 316);
-            panel426.Name = "panel426";
-            panel426.Size = new Size(68, 23);
-            panel426.TabIndex = 340;
+            p85.BorderStyle = BorderStyle.FixedSingle;
+            p85.Controls.Add(lblBKZiraiHayvan);
+            p85.Location = new Point(606, 316);
+            p85.Name = "p85";
+            p85.Size = new Size(64, 23);
+            p85.TabIndex = 340;
             // 
-            // lblBKZiraHayvan
+            // lblBKZiraiHayvan
             // 
-            lblBKZiraHayvan.AutoSize = true;
-            lblBKZiraHayvan.Location = new Point(0, 3);
-            lblBKZiraHayvan.Margin = new Padding(1, 0, 1, 0);
-            lblBKZiraHayvan.Name = "lblBKZiraHayvan";
-            lblBKZiraHayvan.Size = new Size(66, 15);
-            lblBKZiraHayvan.TabIndex = 3;
-            lblBKZiraHayvan.Text = "99.999.999,99";
-            // 
-            // panel427
-            // 
-            panel427.BorderStyle = BorderStyle.FixedSingle;
-            panel427.Controls.Add(panel428);
-            panel427.Controls.Add(label173);
-            panel427.Location = new Point(514, 293);
-            panel427.Name = "panel427";
-            panel427.Size = new Size(83, 23);
-            panel427.TabIndex = 339;
+            lblBKZiraiHayvan.AutoSize = true;
+            lblBKZiraiHayvan.Location = new Point(0, 3);
+            lblBKZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
+            lblBKZiraiHayvan.Name = "lblBKZiraiHayvan";
+            lblBKZiraiHayvan.Size = new Size(37, 15);
+            lblBKZiraiHayvan.TabIndex = 3;
+            lblBKZiraiHayvan.Text = "100000";
             // 
             // panel428
             // 
@@ -7605,7 +7713,7 @@
             panel428.Controls.Add(label169);
             panel428.Controls.Add(label170);
             panel428.Controls.Add(label171);
-            panel428.Location = new Point(-2, -1);
+            panel428.Location = new Point(523, 293);
             panel428.Name = "panel428";
             panel428.Size = new Size(83, 23);
             panel428.TabIndex = 245;
@@ -7643,33 +7751,22 @@
             label171.TabIndex = 242;
             label171.Text = "GİDERİN CİNSİ";
             // 
-            // label173
-            // 
-            label173.AutoSize = true;
-            label173.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label173.Location = new Point(9, 37);
-            label173.Margin = new Padding(1, 0, 1, 0);
-            label173.Name = "label173";
-            label173.Size = new Size(58, 13);
-            label173.TabIndex = 242;
-            label173.Text = "GİDERİN CİNSİ";
-            // 
             // panel429
             // 
             panel429.BorderStyle = BorderStyle.FixedSingle;
-            panel429.Location = new Point(1096, 385);
+            panel429.Location = new Point(1081, 385);
             panel429.Name = "panel429";
-            panel429.Size = new Size(18, 23);
+            panel429.Size = new Size(17, 23);
             panel429.TabIndex = 408;
             // 
-            // panel430
+            // p104
             // 
-            panel430.BorderStyle = BorderStyle.FixedSingle;
-            panel430.Controls.Add(lblIptalZiraatToplami);
-            panel430.Location = new Point(1028, 385);
-            panel430.Name = "panel430";
-            panel430.Size = new Size(68, 23);
-            panel430.TabIndex = 407;
+            p104.BorderStyle = BorderStyle.FixedSingle;
+            p104.Controls.Add(lblIptalZiraatToplami);
+            p104.Location = new Point(1017, 385);
+            p104.Name = "p104";
+            p104.Size = new Size(64, 23);
+            p104.TabIndex = 407;
             // 
             // lblIptalZiraatToplami
             // 
@@ -7677,14 +7774,14 @@
             lblIptalZiraatToplami.Location = new Point(-1, 3);
             lblIptalZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalZiraatToplami.Name = "lblIptalZiraatToplami";
-            lblIptalZiraatToplami.Size = new Size(66, 15);
+            lblIptalZiraatToplami.Size = new Size(12, 15);
             lblIptalZiraatToplami.TabIndex = 2;
-            lblIptalZiraatToplami.Text = "99.999.999,99";
+            lblIptalZiraatToplami.Text = "0";
             // 
             // panel431
             // 
             panel431.BorderStyle = BorderStyle.FixedSingle;
-            panel431.Location = new Point(996, 385);
+            panel431.Location = new Point(985, 385);
             panel431.Name = "panel431";
             panel431.Size = new Size(32, 23);
             panel431.TabIndex = 406;
@@ -7692,19 +7789,19 @@
             // panel432
             // 
             panel432.BorderStyle = BorderStyle.FixedSingle;
-            panel432.Location = new Point(978, 385);
+            panel432.Location = new Point(968, 385);
             panel432.Name = "panel432";
-            panel432.Size = new Size(18, 23);
+            panel432.Size = new Size(17, 23);
             panel432.TabIndex = 405;
             // 
-            // panel433
+            // p103
             // 
-            panel433.BorderStyle = BorderStyle.FixedSingle;
-            panel433.Controls.Add(lblOdenenZiraatToplami);
-            panel433.Location = new Point(910, 385);
-            panel433.Name = "panel433";
-            panel433.Size = new Size(68, 23);
-            panel433.TabIndex = 404;
+            p103.BorderStyle = BorderStyle.FixedSingle;
+            p103.Controls.Add(lblOdenenZiraatToplami);
+            p103.Location = new Point(904, 385);
+            p103.Name = "p103";
+            p103.Size = new Size(64, 23);
+            p103.TabIndex = 404;
             // 
             // lblOdenenZiraatToplami
             // 
@@ -7712,26 +7809,26 @@
             lblOdenenZiraatToplami.Location = new Point(0, 3);
             lblOdenenZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenZiraatToplami.Name = "lblOdenenZiraatToplami";
-            lblOdenenZiraatToplami.Size = new Size(66, 15);
+            lblOdenenZiraatToplami.Size = new Size(12, 15);
             lblOdenenZiraatToplami.TabIndex = 3;
-            lblOdenenZiraatToplami.Text = "99.999.999,99";
+            lblOdenenZiraatToplami.Text = "0";
             // 
             // panel434
             // 
             panel434.BorderStyle = BorderStyle.FixedSingle;
-            panel434.Location = new Point(892, 385);
+            panel434.Location = new Point(887, 385);
             panel434.Name = "panel434";
-            panel434.Size = new Size(18, 23);
+            panel434.Size = new Size(17, 23);
             panel434.TabIndex = 403;
             // 
-            // panel435
+            // p102
             // 
-            panel435.BorderStyle = BorderStyle.FixedSingle;
-            panel435.Controls.Add(lblTahakkukZiraatToplami);
-            panel435.Location = new Point(824, 385);
-            panel435.Name = "panel435";
-            panel435.Size = new Size(68, 23);
-            panel435.TabIndex = 402;
+            p102.BorderStyle = BorderStyle.FixedSingle;
+            p102.Controls.Add(lblTahakkukZiraatToplami);
+            p102.Location = new Point(823, 385);
+            p102.Name = "p102";
+            p102.Size = new Size(64, 23);
+            p102.TabIndex = 402;
             // 
             // lblTahakkukZiraatToplami
             // 
@@ -7739,24 +7836,24 @@
             lblTahakkukZiraatToplami.Location = new Point(0, 3);
             lblTahakkukZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukZiraatToplami.Name = "lblTahakkukZiraatToplami";
-            lblTahakkukZiraatToplami.Size = new Size(66, 15);
+            lblTahakkukZiraatToplami.Size = new Size(12, 15);
             lblTahakkukZiraatToplami.TabIndex = 3;
-            lblTahakkukZiraatToplami.Text = "99.999.999,99";
+            lblTahakkukZiraatToplami.Text = "0";
             // 
             // panel436
             // 
             panel436.BorderStyle = BorderStyle.FixedSingle;
-            panel436.Location = new Point(804, 385);
+            panel436.Location = new Point(797, 385);
             panel436.Name = "panel436";
-            panel436.Size = new Size(20, 23);
+            panel436.Size = new Size(26, 23);
             panel436.TabIndex = 401;
             // 
             // panel437
             // 
             panel437.BorderStyle = BorderStyle.FixedSingle;
-            panel437.Location = new Point(769, 385);
+            panel437.Location = new Point(768, 385);
             panel437.Name = "panel437";
-            panel437.Size = new Size(35, 23);
+            panel437.Size = new Size(29, 23);
             panel437.TabIndex = 400;
             // 
             // panel438
@@ -7764,17 +7861,17 @@
             panel438.BorderStyle = BorderStyle.FixedSingle;
             panel438.Location = new Point(751, 385);
             panel438.Name = "panel438";
-            panel438.Size = new Size(18, 23);
+            panel438.Size = new Size(17, 23);
             panel438.TabIndex = 399;
             // 
-            // panel439
+            // p101
             // 
-            panel439.BorderStyle = BorderStyle.FixedSingle;
-            panel439.Controls.Add(lblMunzamZiraatToplami);
-            panel439.Location = new Point(683, 385);
-            panel439.Name = "panel439";
-            panel439.Size = new Size(68, 23);
-            panel439.TabIndex = 398;
+            p101.BorderStyle = BorderStyle.FixedSingle;
+            p101.Controls.Add(lblMunzamZiraatToplami);
+            p101.Location = new Point(687, 385);
+            p101.Name = "p101";
+            p101.Size = new Size(64, 23);
+            p101.TabIndex = 398;
             // 
             // lblMunzamZiraatToplami
             // 
@@ -7782,26 +7879,26 @@
             lblMunzamZiraatToplami.Location = new Point(0, 3);
             lblMunzamZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamZiraatToplami.Name = "lblMunzamZiraatToplami";
-            lblMunzamZiraatToplami.Size = new Size(66, 15);
+            lblMunzamZiraatToplami.Size = new Size(12, 15);
             lblMunzamZiraatToplami.TabIndex = 3;
-            lblMunzamZiraatToplami.Text = "99.999.999,99";
+            lblMunzamZiraatToplami.Text = "0";
             // 
             // panel440
             // 
             panel440.BorderStyle = BorderStyle.FixedSingle;
-            panel440.Location = new Point(665, 385);
+            panel440.Location = new Point(670, 385);
             panel440.Name = "panel440";
-            panel440.Size = new Size(18, 23);
+            panel440.Size = new Size(17, 23);
             panel440.TabIndex = 397;
             // 
-            // panel441
+            // p100
             // 
-            panel441.BorderStyle = BorderStyle.FixedSingle;
-            panel441.Controls.Add(lblBKZiraatToplami);
-            panel441.Location = new Point(597, 385);
-            panel441.Name = "panel441";
-            panel441.Size = new Size(68, 23);
-            panel441.TabIndex = 396;
+            p100.BorderStyle = BorderStyle.FixedSingle;
+            p100.Controls.Add(lblBKZiraatToplami);
+            p100.Location = new Point(606, 385);
+            p100.Name = "p100";
+            p100.Size = new Size(64, 23);
+            p100.TabIndex = 396;
             // 
             // lblBKZiraatToplami
             // 
@@ -7809,16 +7906,16 @@
             lblBKZiraatToplami.Location = new Point(0, 3);
             lblBKZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKZiraatToplami.Name = "lblBKZiraatToplami";
-            lblBKZiraatToplami.Size = new Size(66, 15);
+            lblBKZiraatToplami.Size = new Size(12, 15);
             lblBKZiraatToplami.TabIndex = 3;
-            lblBKZiraatToplami.Text = "99.999.999,99";
+            lblBKZiraatToplami.Text = "0";
             // 
             // panel442
             // 
             panel442.BorderStyle = BorderStyle.FixedSingle;
             panel442.Controls.Add(label235);
             panel442.Controls.Add(label174);
-            panel442.Location = new Point(514, 385);
+            panel442.Location = new Point(523, 385);
             panel442.Name = "panel442";
             panel442.Size = new Size(83, 23);
             panel442.TabIndex = 395;
@@ -7850,7 +7947,7 @@
             panel443.BorderStyle = BorderStyle.FixedSingle;
             panel443.Controls.Add(label220);
             panel443.Controls.Add(label221);
-            panel443.Location = new Point(514, 362);
+            panel443.Location = new Point(523, 362);
             panel443.Name = "panel443";
             panel443.Size = new Size(83, 23);
             panel443.TabIndex = 394;
@@ -7880,19 +7977,19 @@
             // panel444
             // 
             panel444.BorderStyle = BorderStyle.FixedSingle;
-            panel444.Location = new Point(1096, 362);
+            panel444.Location = new Point(1081, 362);
             panel444.Name = "panel444";
-            panel444.Size = new Size(18, 23);
+            panel444.Size = new Size(17, 23);
             panel444.TabIndex = 393;
             // 
-            // panel445
+            // p99
             // 
-            panel445.BorderStyle = BorderStyle.FixedSingle;
-            panel445.Controls.Add(lblIptalKucukEndustri);
-            panel445.Location = new Point(1028, 362);
-            panel445.Name = "panel445";
-            panel445.Size = new Size(68, 23);
-            panel445.TabIndex = 392;
+            p99.BorderStyle = BorderStyle.FixedSingle;
+            p99.Controls.Add(lblIptalKucukEndustri);
+            p99.Location = new Point(1017, 362);
+            p99.Name = "p99";
+            p99.Size = new Size(64, 23);
+            p99.TabIndex = 392;
             // 
             // lblIptalKucukEndustri
             // 
@@ -7900,14 +7997,14 @@
             lblIptalKucukEndustri.Location = new Point(-1, 3);
             lblIptalKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblIptalKucukEndustri.Name = "lblIptalKucukEndustri";
-            lblIptalKucukEndustri.Size = new Size(66, 15);
+            lblIptalKucukEndustri.Size = new Size(12, 15);
             lblIptalKucukEndustri.TabIndex = 2;
-            lblIptalKucukEndustri.Text = "99.999.999,99";
+            lblIptalKucukEndustri.Text = "0";
             // 
             // panel446
             // 
             panel446.BorderStyle = BorderStyle.FixedSingle;
-            panel446.Location = new Point(996, 362);
+            panel446.Location = new Point(985, 362);
             panel446.Name = "panel446";
             panel446.Size = new Size(32, 23);
             panel446.TabIndex = 391;
@@ -7915,19 +8012,19 @@
             // panel447
             // 
             panel447.BorderStyle = BorderStyle.FixedSingle;
-            panel447.Location = new Point(978, 362);
+            panel447.Location = new Point(968, 362);
             panel447.Name = "panel447";
-            panel447.Size = new Size(18, 23);
+            panel447.Size = new Size(17, 23);
             panel447.TabIndex = 390;
             // 
-            // panel448
+            // p98
             // 
-            panel448.BorderStyle = BorderStyle.FixedSingle;
-            panel448.Controls.Add(lblOdenenKucukEndustri);
-            panel448.Location = new Point(910, 362);
-            panel448.Name = "panel448";
-            panel448.Size = new Size(68, 23);
-            panel448.TabIndex = 389;
+            p98.BorderStyle = BorderStyle.FixedSingle;
+            p98.Controls.Add(lblOdenenKucukEndustri);
+            p98.Location = new Point(904, 362);
+            p98.Name = "p98";
+            p98.Size = new Size(64, 23);
+            p98.TabIndex = 389;
             // 
             // lblOdenenKucukEndustri
             // 
@@ -7935,26 +8032,26 @@
             lblOdenenKucukEndustri.Location = new Point(0, 3);
             lblOdenenKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKucukEndustri.Name = "lblOdenenKucukEndustri";
-            lblOdenenKucukEndustri.Size = new Size(66, 15);
+            lblOdenenKucukEndustri.Size = new Size(32, 15);
             lblOdenenKucukEndustri.TabIndex = 3;
-            lblOdenenKucukEndustri.Text = "99.999.999,99";
+            lblOdenenKucukEndustri.Text = "29022";
             // 
             // panel449
             // 
             panel449.BorderStyle = BorderStyle.FixedSingle;
-            panel449.Location = new Point(892, 362);
+            panel449.Location = new Point(887, 362);
             panel449.Name = "panel449";
-            panel449.Size = new Size(18, 23);
+            panel449.Size = new Size(17, 23);
             panel449.TabIndex = 388;
             // 
-            // panel450
+            // p97
             // 
-            panel450.BorderStyle = BorderStyle.FixedSingle;
-            panel450.Controls.Add(lblTahakkukKucukEndustri);
-            panel450.Location = new Point(824, 362);
-            panel450.Name = "panel450";
-            panel450.Size = new Size(68, 23);
-            panel450.TabIndex = 387;
+            p97.BorderStyle = BorderStyle.FixedSingle;
+            p97.Controls.Add(lblTahakkukKucukEndustri);
+            p97.Location = new Point(823, 362);
+            p97.Name = "p97";
+            p97.Size = new Size(64, 23);
+            p97.TabIndex = 387;
             // 
             // lblTahakkukKucukEndustri
             // 
@@ -7962,24 +8059,24 @@
             lblTahakkukKucukEndustri.Location = new Point(0, 3);
             lblTahakkukKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukKucukEndustri.Name = "lblTahakkukKucukEndustri";
-            lblTahakkukKucukEndustri.Size = new Size(66, 15);
+            lblTahakkukKucukEndustri.Size = new Size(12, 15);
             lblTahakkukKucukEndustri.TabIndex = 3;
-            lblTahakkukKucukEndustri.Text = "99.999.999,99";
+            lblTahakkukKucukEndustri.Text = "0";
             // 
             // panel451
             // 
             panel451.BorderStyle = BorderStyle.FixedSingle;
-            panel451.Location = new Point(804, 362);
+            panel451.Location = new Point(797, 362);
             panel451.Name = "panel451";
-            panel451.Size = new Size(20, 23);
+            panel451.Size = new Size(26, 23);
             panel451.TabIndex = 386;
             // 
             // panel452
             // 
             panel452.BorderStyle = BorderStyle.FixedSingle;
-            panel452.Location = new Point(769, 362);
+            panel452.Location = new Point(768, 362);
             panel452.Name = "panel452";
-            panel452.Size = new Size(35, 23);
+            panel452.Size = new Size(29, 23);
             panel452.TabIndex = 385;
             // 
             // panel453
@@ -7987,17 +8084,17 @@
             panel453.BorderStyle = BorderStyle.FixedSingle;
             panel453.Location = new Point(751, 362);
             panel453.Name = "panel453";
-            panel453.Size = new Size(18, 23);
+            panel453.Size = new Size(17, 23);
             panel453.TabIndex = 384;
             // 
-            // panel454
+            // p96
             // 
-            panel454.BorderStyle = BorderStyle.FixedSingle;
-            panel454.Controls.Add(lblMunzamKucukEndustri);
-            panel454.Location = new Point(683, 362);
-            panel454.Name = "panel454";
-            panel454.Size = new Size(68, 23);
-            panel454.TabIndex = 383;
+            p96.BorderStyle = BorderStyle.FixedSingle;
+            p96.Controls.Add(lblMunzamKucukEndustri);
+            p96.Location = new Point(687, 362);
+            p96.Name = "p96";
+            p96.Size = new Size(64, 23);
+            p96.TabIndex = 383;
             // 
             // lblMunzamKucukEndustri
             // 
@@ -8005,53 +8102,53 @@
             lblMunzamKucukEndustri.Location = new Point(0, 3);
             lblMunzamKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKucukEndustri.Name = "lblMunzamKucukEndustri";
-            lblMunzamKucukEndustri.Size = new Size(66, 15);
+            lblMunzamKucukEndustri.Size = new Size(12, 15);
             lblMunzamKucukEndustri.TabIndex = 3;
-            lblMunzamKucukEndustri.Text = "99.999.999,99";
+            lblMunzamKucukEndustri.Text = "0";
             // 
             // panel455
             // 
             panel455.BorderStyle = BorderStyle.FixedSingle;
-            panel455.Location = new Point(665, 362);
+            panel455.Location = new Point(670, 362);
             panel455.Name = "panel455";
-            panel455.Size = new Size(18, 23);
+            panel455.Size = new Size(17, 23);
             panel455.TabIndex = 382;
             // 
-            // panel456
+            // p95
             // 
-            panel456.BorderStyle = BorderStyle.FixedSingle;
-            panel456.Controls.Add(lblBKKücükEndustri);
-            panel456.Location = new Point(597, 362);
-            panel456.Name = "panel456";
-            panel456.Size = new Size(68, 23);
-            panel456.TabIndex = 381;
+            p95.BorderStyle = BorderStyle.FixedSingle;
+            p95.Controls.Add(lblBKKucukEndustri);
+            p95.Location = new Point(606, 362);
+            p95.Name = "p95";
+            p95.Size = new Size(64, 23);
+            p95.TabIndex = 381;
             // 
-            // lblBKKücükEndustri
+            // lblBKKucukEndustri
             // 
-            lblBKKücükEndustri.AutoSize = true;
-            lblBKKücükEndustri.Location = new Point(0, 3);
-            lblBKKücükEndustri.Margin = new Padding(1, 0, 1, 0);
-            lblBKKücükEndustri.Name = "lblBKKücükEndustri";
-            lblBKKücükEndustri.Size = new Size(66, 15);
-            lblBKKücükEndustri.TabIndex = 3;
-            lblBKKücükEndustri.Text = "99.999.999,99";
+            lblBKKucukEndustri.AutoSize = true;
+            lblBKKucukEndustri.Location = new Point(0, 3);
+            lblBKKucukEndustri.Margin = new Padding(1, 0, 1, 0);
+            lblBKKucukEndustri.Name = "lblBKKucukEndustri";
+            lblBKKucukEndustri.Size = new Size(37, 15);
+            lblBKKucukEndustri.TabIndex = 3;
+            lblBKKucukEndustri.Text = "100000";
             // 
             // panel485
             // 
             panel485.BorderStyle = BorderStyle.FixedSingle;
-            panel485.Location = new Point(1096, 543);
+            panel485.Location = new Point(1081, 543);
             panel485.Name = "panel485";
-            panel485.Size = new Size(18, 23);
+            panel485.Size = new Size(17, 23);
             panel485.TabIndex = 495;
             // 
-            // panel486
+            // p133
             // 
-            panel486.BorderStyle = BorderStyle.FixedSingle;
-            panel486.Controls.Add(lblIptalKulturToplami);
-            panel486.Location = new Point(1028, 543);
-            panel486.Name = "panel486";
-            panel486.Size = new Size(68, 23);
-            panel486.TabIndex = 494;
+            p133.BorderStyle = BorderStyle.FixedSingle;
+            p133.Controls.Add(lblIptalKulturToplami);
+            p133.Location = new Point(1017, 543);
+            p133.Name = "p133";
+            p133.Size = new Size(64, 23);
+            p133.TabIndex = 494;
             // 
             // lblIptalKulturToplami
             // 
@@ -8059,14 +8156,14 @@
             lblIptalKulturToplami.Location = new Point(0, 3);
             lblIptalKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalKulturToplami.Name = "lblIptalKulturToplami";
-            lblIptalKulturToplami.Size = new Size(66, 15);
+            lblIptalKulturToplami.Size = new Size(12, 15);
             lblIptalKulturToplami.TabIndex = 3;
-            lblIptalKulturToplami.Text = "99.999.999,99";
+            lblIptalKulturToplami.Text = "0";
             // 
             // panel487
             // 
             panel487.BorderStyle = BorderStyle.FixedSingle;
-            panel487.Location = new Point(996, 543);
+            panel487.Location = new Point(985, 543);
             panel487.Name = "panel487";
             panel487.Size = new Size(32, 23);
             panel487.TabIndex = 493;
@@ -8074,18 +8171,18 @@
             // panel488
             // 
             panel488.BorderStyle = BorderStyle.FixedSingle;
-            panel488.Location = new Point(978, 543);
+            panel488.Location = new Point(968, 543);
             panel488.Name = "panel488";
-            panel488.Size = new Size(18, 23);
+            panel488.Size = new Size(17, 23);
             panel488.TabIndex = 492;
             // 
             // panel489
             // 
             panel489.BorderStyle = BorderStyle.FixedSingle;
             panel489.Controls.Add(lblOdenenKulturToplami);
-            panel489.Location = new Point(910, 543);
+            panel489.Location = new Point(904, 543);
             panel489.Name = "panel489";
-            panel489.Size = new Size(68, 23);
+            panel489.Size = new Size(64, 23);
             panel489.TabIndex = 491;
             // 
             // lblOdenenKulturToplami
@@ -8094,26 +8191,26 @@
             lblOdenenKulturToplami.Location = new Point(0, 3);
             lblOdenenKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKulturToplami.Name = "lblOdenenKulturToplami";
-            lblOdenenKulturToplami.Size = new Size(66, 15);
+            lblOdenenKulturToplami.Size = new Size(12, 15);
             lblOdenenKulturToplami.TabIndex = 3;
-            lblOdenenKulturToplami.Text = "99.999.999,99";
+            lblOdenenKulturToplami.Text = "0";
             // 
             // panel490
             // 
             panel490.BorderStyle = BorderStyle.FixedSingle;
-            panel490.Location = new Point(892, 543);
+            panel490.Location = new Point(887, 543);
             panel490.Name = "panel490";
-            panel490.Size = new Size(18, 23);
+            panel490.Size = new Size(17, 23);
             panel490.TabIndex = 490;
             // 
-            // panel491
+            // p132
             // 
-            panel491.BorderStyle = BorderStyle.FixedSingle;
-            panel491.Controls.Add(lblTahakkukKulturToplami);
-            panel491.Location = new Point(824, 543);
-            panel491.Name = "panel491";
-            panel491.Size = new Size(68, 23);
-            panel491.TabIndex = 489;
+            p132.BorderStyle = BorderStyle.FixedSingle;
+            p132.Controls.Add(lblTahakkukKulturToplami);
+            p132.Location = new Point(823, 543);
+            p132.Name = "p132";
+            p132.Size = new Size(64, 23);
+            p132.TabIndex = 489;
             // 
             // lblTahakkukKulturToplami
             // 
@@ -8121,24 +8218,24 @@
             lblTahakkukKulturToplami.Location = new Point(0, 3);
             lblTahakkukKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukKulturToplami.Name = "lblTahakkukKulturToplami";
-            lblTahakkukKulturToplami.Size = new Size(66, 15);
+            lblTahakkukKulturToplami.Size = new Size(12, 15);
             lblTahakkukKulturToplami.TabIndex = 3;
-            lblTahakkukKulturToplami.Text = "99.999.999,99";
+            lblTahakkukKulturToplami.Text = "0";
             // 
             // panel492
             // 
             panel492.BorderStyle = BorderStyle.FixedSingle;
-            panel492.Location = new Point(804, 543);
+            panel492.Location = new Point(797, 543);
             panel492.Name = "panel492";
-            panel492.Size = new Size(20, 23);
+            panel492.Size = new Size(26, 23);
             panel492.TabIndex = 488;
             // 
             // panel493
             // 
             panel493.BorderStyle = BorderStyle.FixedSingle;
-            panel493.Location = new Point(769, 543);
+            panel493.Location = new Point(768, 543);
             panel493.Name = "panel493";
-            panel493.Size = new Size(35, 23);
+            panel493.Size = new Size(29, 23);
             panel493.TabIndex = 487;
             // 
             // panel494
@@ -8146,17 +8243,17 @@
             panel494.BorderStyle = BorderStyle.FixedSingle;
             panel494.Location = new Point(751, 543);
             panel494.Name = "panel494";
-            panel494.Size = new Size(18, 23);
+            panel494.Size = new Size(17, 23);
             panel494.TabIndex = 486;
             // 
-            // panel495
+            // p131
             // 
-            panel495.BorderStyle = BorderStyle.FixedSingle;
-            panel495.Controls.Add(lblMunzamKulturToplami);
-            panel495.Location = new Point(683, 543);
-            panel495.Name = "panel495";
-            panel495.Size = new Size(68, 23);
-            panel495.TabIndex = 485;
+            p131.BorderStyle = BorderStyle.FixedSingle;
+            p131.Controls.Add(lblMunzamKulturToplami);
+            p131.Location = new Point(687, 543);
+            p131.Name = "p131";
+            p131.Size = new Size(64, 23);
+            p131.TabIndex = 485;
             // 
             // lblMunzamKulturToplami
             // 
@@ -8164,26 +8261,26 @@
             lblMunzamKulturToplami.Location = new Point(0, 3);
             lblMunzamKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKulturToplami.Name = "lblMunzamKulturToplami";
-            lblMunzamKulturToplami.Size = new Size(66, 15);
+            lblMunzamKulturToplami.Size = new Size(12, 15);
             lblMunzamKulturToplami.TabIndex = 3;
-            lblMunzamKulturToplami.Text = "99.999.999,99";
+            lblMunzamKulturToplami.Text = "0";
             // 
             // panel496
             // 
             panel496.BorderStyle = BorderStyle.FixedSingle;
-            panel496.Location = new Point(665, 543);
+            panel496.Location = new Point(670, 543);
             panel496.Name = "panel496";
-            panel496.Size = new Size(18, 23);
+            panel496.Size = new Size(17, 23);
             panel496.TabIndex = 484;
             // 
-            // panel497
+            // p130
             // 
-            panel497.BorderStyle = BorderStyle.FixedSingle;
-            panel497.Controls.Add(lblBKKulturToplami);
-            panel497.Location = new Point(597, 543);
-            panel497.Name = "panel497";
-            panel497.Size = new Size(68, 23);
-            panel497.TabIndex = 483;
+            p130.BorderStyle = BorderStyle.FixedSingle;
+            p130.Controls.Add(lblBKKulturToplami);
+            p130.Location = new Point(606, 543);
+            p130.Name = "p130";
+            p130.Size = new Size(64, 23);
+            p130.TabIndex = 483;
             // 
             // lblBKKulturToplami
             // 
@@ -8191,23 +8288,24 @@
             lblBKKulturToplami.Location = new Point(0, 3);
             lblBKKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKKulturToplami.Name = "lblBKKulturToplami";
-            lblBKKulturToplami.Size = new Size(66, 15);
+            lblBKKulturToplami.Size = new Size(12, 15);
             lblBKKulturToplami.TabIndex = 3;
-            lblBKKulturToplami.Text = "99.999.999,99";
+            lblBKKulturToplami.Text = "0";
+            lblBKKulturToplami.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel498
             // 
             panel498.BorderStyle = BorderStyle.FixedSingle;
-            panel498.Location = new Point(1096, 497);
+            panel498.Location = new Point(1081, 497);
             panel498.Name = "panel498";
-            panel498.Size = new Size(18, 23);
+            panel498.Size = new Size(17, 23);
             panel498.TabIndex = 482;
             // 
             // panel499
             // 
             panel499.BorderStyle = BorderStyle.FixedSingle;
             panel499.Controls.Add(label223);
-            panel499.Location = new Point(514, 543);
+            panel499.Location = new Point(523, 543);
             panel499.Name = "panel499";
             panel499.Size = new Size(83, 23);
             panel499.TabIndex = 469;
@@ -8228,7 +8326,7 @@
             panel500.BorderStyle = BorderStyle.FixedSingle;
             panel500.Controls.Add(label188);
             panel500.Controls.Add(label189);
-            panel500.Location = new Point(514, 520);
+            panel500.Location = new Point(523, 520);
             panel500.Name = "panel500";
             panel500.Size = new Size(83, 23);
             panel500.TabIndex = 468;
@@ -8255,14 +8353,14 @@
             label189.TabIndex = 252;
             label189.Text = "Okul Uygulama Bahçesi";
             // 
-            // panel501
+            // p124
             // 
-            panel501.BorderStyle = BorderStyle.FixedSingle;
-            panel501.Controls.Add(lblIptalKurs);
-            panel501.Location = new Point(1028, 497);
-            panel501.Name = "panel501";
-            panel501.Size = new Size(68, 23);
-            panel501.TabIndex = 481;
+            p124.BorderStyle = BorderStyle.FixedSingle;
+            p124.Controls.Add(lblIptalKurs);
+            p124.Location = new Point(1017, 497);
+            p124.Name = "p124";
+            p124.Size = new Size(64, 23);
+            p124.TabIndex = 481;
             // 
             // lblIptalKurs
             // 
@@ -8270,26 +8368,26 @@
             lblIptalKurs.Location = new Point(0, 3);
             lblIptalKurs.Margin = new Padding(1, 0, 1, 0);
             lblIptalKurs.Name = "lblIptalKurs";
-            lblIptalKurs.Size = new Size(66, 15);
+            lblIptalKurs.Size = new Size(12, 15);
             lblIptalKurs.TabIndex = 3;
-            lblIptalKurs.Text = "99.999.999,99";
+            lblIptalKurs.Text = "0";
             // 
             // panel502
             // 
             panel502.BorderStyle = BorderStyle.FixedSingle;
-            panel502.Location = new Point(1096, 520);
+            panel502.Location = new Point(1081, 520);
             panel502.Name = "panel502";
-            panel502.Size = new Size(18, 23);
+            panel502.Size = new Size(17, 23);
             panel502.TabIndex = 467;
             // 
-            // panel503
+            // p120
             // 
-            panel503.BorderStyle = BorderStyle.FixedSingle;
-            panel503.Controls.Add(lblBKKurs);
-            panel503.Location = new Point(597, 497);
-            panel503.Name = "panel503";
-            panel503.Size = new Size(68, 23);
-            panel503.TabIndex = 470;
+            p120.BorderStyle = BorderStyle.FixedSingle;
+            p120.Controls.Add(lblBKKurs);
+            p120.Location = new Point(606, 497);
+            p120.Name = "p120";
+            p120.Size = new Size(64, 23);
+            p120.TabIndex = 470;
             // 
             // lblBKKurs
             // 
@@ -8297,26 +8395,27 @@
             lblBKKurs.Location = new Point(0, 3);
             lblBKKurs.Margin = new Padding(1, 0, 1, 0);
             lblBKKurs.Name = "lblBKKurs";
-            lblBKKurs.Size = new Size(66, 15);
+            lblBKKurs.Size = new Size(37, 15);
             lblBKKurs.TabIndex = 3;
-            lblBKKurs.Text = "99.999.999,99";
+            lblBKKurs.Text = "100000";
+            lblBKKurs.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel504
             // 
             panel504.BorderStyle = BorderStyle.FixedSingle;
-            panel504.Location = new Point(996, 497);
+            panel504.Location = new Point(985, 497);
             panel504.Name = "panel504";
             panel504.Size = new Size(32, 23);
             panel504.TabIndex = 480;
             // 
-            // panel505
+            // p129
             // 
-            panel505.BorderStyle = BorderStyle.FixedSingle;
-            panel505.Controls.Add(lblIptalOkulUygulama);
-            panel505.Location = new Point(1028, 520);
-            panel505.Name = "panel505";
-            panel505.Size = new Size(68, 23);
-            panel505.TabIndex = 466;
+            p129.BorderStyle = BorderStyle.FixedSingle;
+            p129.Controls.Add(lblIptalOkulUygulama);
+            p129.Location = new Point(1017, 520);
+            p129.Name = "p129";
+            p129.Size = new Size(64, 23);
+            p129.TabIndex = 466;
             // 
             // lblIptalOkulUygulama
             // 
@@ -8324,22 +8423,22 @@
             lblIptalOkulUygulama.Location = new Point(0, 3);
             lblIptalOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblIptalOkulUygulama.Name = "lblIptalOkulUygulama";
-            lblIptalOkulUygulama.Size = new Size(66, 15);
+            lblIptalOkulUygulama.Size = new Size(12, 15);
             lblIptalOkulUygulama.TabIndex = 3;
-            lblIptalOkulUygulama.Text = "99.999.999,99";
+            lblIptalOkulUygulama.Text = "0";
             // 
             // panel506
             // 
             panel506.BorderStyle = BorderStyle.FixedSingle;
-            panel506.Location = new Point(665, 497);
+            panel506.Location = new Point(670, 497);
             panel506.Name = "panel506";
-            panel506.Size = new Size(18, 23);
+            panel506.Size = new Size(17, 23);
             panel506.TabIndex = 471;
             // 
             // panel507
             // 
             panel507.BorderStyle = BorderStyle.FixedSingle;
-            panel507.Location = new Point(996, 520);
+            panel507.Location = new Point(985, 520);
             panel507.Name = "panel507";
             panel507.Size = new Size(32, 23);
             panel507.TabIndex = 465;
@@ -8347,27 +8446,27 @@
             // panel508
             // 
             panel508.BorderStyle = BorderStyle.FixedSingle;
-            panel508.Location = new Point(978, 497);
+            panel508.Location = new Point(968, 497);
             panel508.Name = "panel508";
-            panel508.Size = new Size(18, 23);
+            panel508.Size = new Size(17, 23);
             panel508.TabIndex = 479;
             // 
             // panel509
             // 
             panel509.BorderStyle = BorderStyle.FixedSingle;
-            panel509.Location = new Point(978, 520);
+            panel509.Location = new Point(968, 520);
             panel509.Name = "panel509";
-            panel509.Size = new Size(18, 23);
+            panel509.Size = new Size(17, 23);
             panel509.TabIndex = 464;
             // 
-            // panel510
+            // p121
             // 
-            panel510.BorderStyle = BorderStyle.FixedSingle;
-            panel510.Controls.Add(lblMunzamKurs);
-            panel510.Location = new Point(683, 497);
-            panel510.Name = "panel510";
-            panel510.Size = new Size(68, 23);
-            panel510.TabIndex = 472;
+            p121.BorderStyle = BorderStyle.FixedSingle;
+            p121.Controls.Add(lblMunzamKurs);
+            p121.Location = new Point(687, 497);
+            p121.Name = "p121";
+            p121.Size = new Size(64, 23);
+            p121.TabIndex = 472;
             // 
             // lblMunzamKurs
             // 
@@ -8375,37 +8474,37 @@
             lblMunzamKurs.Location = new Point(0, 3);
             lblMunzamKurs.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKurs.Name = "lblMunzamKurs";
-            lblMunzamKurs.Size = new Size(66, 15);
+            lblMunzamKurs.Size = new Size(12, 15);
             lblMunzamKurs.TabIndex = 3;
-            lblMunzamKurs.Text = "99.999.999,99";
+            lblMunzamKurs.Text = "0";
             // 
-            // panel511
+            // p128
             // 
-            panel511.BorderStyle = BorderStyle.FixedSingle;
-            panel511.Controls.Add(lblOdenenOkulUgulama);
-            panel511.Location = new Point(910, 520);
-            panel511.Name = "panel511";
-            panel511.Size = new Size(68, 23);
-            panel511.TabIndex = 463;
+            p128.BorderStyle = BorderStyle.FixedSingle;
+            p128.Controls.Add(lblOdenenOkulUygulama);
+            p128.Location = new Point(904, 520);
+            p128.Name = "p128";
+            p128.Size = new Size(64, 23);
+            p128.TabIndex = 463;
             // 
-            // lblOdenenOkulUgulama
+            // lblOdenenOkulUygulama
             // 
-            lblOdenenOkulUgulama.AutoSize = true;
-            lblOdenenOkulUgulama.Location = new Point(0, 3);
-            lblOdenenOkulUgulama.Margin = new Padding(1, 0, 1, 0);
-            lblOdenenOkulUgulama.Name = "lblOdenenOkulUgulama";
-            lblOdenenOkulUgulama.Size = new Size(66, 15);
-            lblOdenenOkulUgulama.TabIndex = 3;
-            lblOdenenOkulUgulama.Text = "99.999.999,99";
+            lblOdenenOkulUygulama.AutoSize = true;
+            lblOdenenOkulUygulama.Location = new Point(0, 3);
+            lblOdenenOkulUygulama.Margin = new Padding(1, 0, 1, 0);
+            lblOdenenOkulUygulama.Name = "lblOdenenOkulUygulama";
+            lblOdenenOkulUygulama.Size = new Size(32, 15);
+            lblOdenenOkulUygulama.TabIndex = 3;
+            lblOdenenOkulUygulama.Text = "29022";
             // 
-            // panel512
+            // p123
             // 
-            panel512.BorderStyle = BorderStyle.FixedSingle;
-            panel512.Controls.Add(lblOdenenKurs);
-            panel512.Location = new Point(910, 497);
-            panel512.Name = "panel512";
-            panel512.Size = new Size(68, 23);
-            panel512.TabIndex = 478;
+            p123.BorderStyle = BorderStyle.FixedSingle;
+            p123.Controls.Add(lblOdenenKurs);
+            p123.Location = new Point(904, 497);
+            p123.Name = "p123";
+            p123.Size = new Size(64, 23);
+            p123.TabIndex = 478;
             // 
             // lblOdenenKurs
             // 
@@ -8413,16 +8512,16 @@
             lblOdenenKurs.Location = new Point(0, 3);
             lblOdenenKurs.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKurs.Name = "lblOdenenKurs";
-            lblOdenenKurs.Size = new Size(66, 15);
+            lblOdenenKurs.Size = new Size(32, 15);
             lblOdenenKurs.TabIndex = 3;
-            lblOdenenKurs.Text = "99.999.999,99";
+            lblOdenenKurs.Text = "29022";
             // 
             // panel513
             // 
             panel513.BorderStyle = BorderStyle.FixedSingle;
-            panel513.Location = new Point(892, 520);
+            panel513.Location = new Point(887, 520);
             panel513.Name = "panel513";
-            panel513.Size = new Size(18, 23);
+            panel513.Size = new Size(17, 23);
             panel513.TabIndex = 462;
             // 
             // panel514
@@ -8430,17 +8529,17 @@
             panel514.BorderStyle = BorderStyle.FixedSingle;
             panel514.Location = new Point(751, 497);
             panel514.Name = "panel514";
-            panel514.Size = new Size(18, 23);
+            panel514.Size = new Size(17, 23);
             panel514.TabIndex = 473;
             // 
-            // panel515
+            // p127
             // 
-            panel515.BorderStyle = BorderStyle.FixedSingle;
-            panel515.Controls.Add(lblTahakkukOkulUygulama);
-            panel515.Location = new Point(824, 520);
-            panel515.Name = "panel515";
-            panel515.Size = new Size(68, 23);
-            panel515.TabIndex = 461;
+            p127.BorderStyle = BorderStyle.FixedSingle;
+            p127.Controls.Add(lblTahakkukOkulUygulama);
+            p127.Location = new Point(823, 520);
+            p127.Name = "p127";
+            p127.Size = new Size(64, 23);
+            p127.TabIndex = 461;
             // 
             // lblTahakkukOkulUygulama
             // 
@@ -8448,50 +8547,50 @@
             lblTahakkukOkulUygulama.Location = new Point(0, 3);
             lblTahakkukOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOkulUygulama.Name = "lblTahakkukOkulUygulama";
-            lblTahakkukOkulUygulama.Size = new Size(66, 15);
+            lblTahakkukOkulUygulama.Size = new Size(12, 15);
             lblTahakkukOkulUygulama.TabIndex = 3;
-            lblTahakkukOkulUygulama.Text = "99.999.999,99";
+            lblTahakkukOkulUygulama.Text = "0";
             // 
             // panel516
             // 
             panel516.BorderStyle = BorderStyle.FixedSingle;
-            panel516.Location = new Point(892, 497);
+            panel516.Location = new Point(887, 497);
             panel516.Name = "panel516";
-            panel516.Size = new Size(18, 23);
+            panel516.Size = new Size(17, 23);
             panel516.TabIndex = 477;
             // 
             // panel517
             // 
             panel517.BorderStyle = BorderStyle.FixedSingle;
-            panel517.Location = new Point(804, 520);
+            panel517.Location = new Point(797, 520);
             panel517.Name = "panel517";
-            panel517.Size = new Size(20, 23);
+            panel517.Size = new Size(26, 23);
             panel517.TabIndex = 460;
             // 
             // panel518
             // 
             panel518.BorderStyle = BorderStyle.FixedSingle;
-            panel518.Location = new Point(769, 497);
+            panel518.Location = new Point(768, 497);
             panel518.Name = "panel518";
-            panel518.Size = new Size(35, 23);
+            panel518.Size = new Size(29, 23);
             panel518.TabIndex = 474;
             // 
             // panel519
             // 
             panel519.BorderStyle = BorderStyle.FixedSingle;
-            panel519.Location = new Point(769, 520);
+            panel519.Location = new Point(768, 520);
             panel519.Name = "panel519";
-            panel519.Size = new Size(35, 23);
+            panel519.Size = new Size(29, 23);
             panel519.TabIndex = 459;
             // 
-            // panel520
+            // p122
             // 
-            panel520.BorderStyle = BorderStyle.FixedSingle;
-            panel520.Controls.Add(lblTahakkukKurs);
-            panel520.Location = new Point(824, 497);
-            panel520.Name = "panel520";
-            panel520.Size = new Size(68, 23);
-            panel520.TabIndex = 476;
+            p122.BorderStyle = BorderStyle.FixedSingle;
+            p122.Controls.Add(lblTahakkukKurs);
+            p122.Location = new Point(823, 497);
+            p122.Name = "p122";
+            p122.Size = new Size(64, 23);
+            p122.TabIndex = 476;
             // 
             // lblTahakkukKurs
             // 
@@ -8499,34 +8598,34 @@
             lblTahakkukKurs.Location = new Point(0, 3);
             lblTahakkukKurs.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukKurs.Name = "lblTahakkukKurs";
-            lblTahakkukKurs.Size = new Size(66, 15);
+            lblTahakkukKurs.Size = new Size(12, 15);
             lblTahakkukKurs.TabIndex = 3;
-            lblTahakkukKurs.Text = "99.999.999,99";
+            lblTahakkukKurs.Text = "0";
             // 
             // panel521
             // 
             panel521.BorderStyle = BorderStyle.FixedSingle;
             panel521.Location = new Point(751, 520);
             panel521.Name = "panel521";
-            panel521.Size = new Size(18, 23);
+            panel521.Size = new Size(17, 23);
             panel521.TabIndex = 458;
             // 
             // panel522
             // 
             panel522.BorderStyle = BorderStyle.FixedSingle;
-            panel522.Location = new Point(804, 497);
+            panel522.Location = new Point(797, 497);
             panel522.Name = "panel522";
-            panel522.Size = new Size(20, 23);
+            panel522.Size = new Size(26, 23);
             panel522.TabIndex = 475;
             // 
-            // panel523
+            // p126
             // 
-            panel523.BorderStyle = BorderStyle.FixedSingle;
-            panel523.Controls.Add(lblMunzamOkulUygulama);
-            panel523.Location = new Point(683, 520);
-            panel523.Name = "panel523";
-            panel523.Size = new Size(68, 23);
-            panel523.TabIndex = 457;
+            p126.BorderStyle = BorderStyle.FixedSingle;
+            p126.Controls.Add(lblMunzamOkulUygulama);
+            p126.Location = new Point(687, 520);
+            p126.Name = "p126";
+            p126.Size = new Size(64, 23);
+            p126.TabIndex = 457;
             // 
             // lblMunzamOkulUygulama
             // 
@@ -8534,26 +8633,26 @@
             lblMunzamOkulUygulama.Location = new Point(0, 3);
             lblMunzamOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOkulUygulama.Name = "lblMunzamOkulUygulama";
-            lblMunzamOkulUygulama.Size = new Size(66, 15);
+            lblMunzamOkulUygulama.Size = new Size(12, 15);
             lblMunzamOkulUygulama.TabIndex = 3;
-            lblMunzamOkulUygulama.Text = "99.999.999,99";
+            lblMunzamOkulUygulama.Text = "0";
             // 
             // panel524
             // 
             panel524.BorderStyle = BorderStyle.FixedSingle;
-            panel524.Location = new Point(665, 520);
+            panel524.Location = new Point(670, 520);
             panel524.Name = "panel524";
-            panel524.Size = new Size(18, 23);
+            panel524.Size = new Size(17, 23);
             panel524.TabIndex = 456;
             // 
-            // panel525
+            // p125
             // 
-            panel525.BorderStyle = BorderStyle.FixedSingle;
-            panel525.Controls.Add(lblBKOkulUygulama);
-            panel525.Location = new Point(597, 520);
-            panel525.Name = "panel525";
-            panel525.Size = new Size(68, 23);
-            panel525.TabIndex = 455;
+            p125.BorderStyle = BorderStyle.FixedSingle;
+            p125.Controls.Add(lblBKOkulUygulama);
+            p125.Location = new Point(606, 520);
+            p125.Name = "p125";
+            p125.Size = new Size(64, 23);
+            p125.TabIndex = 455;
             // 
             // lblBKOkulUygulama
             // 
@@ -8561,25 +8660,16 @@
             lblBKOkulUygulama.Location = new Point(0, 3);
             lblBKOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblBKOkulUygulama.Name = "lblBKOkulUygulama";
-            lblBKOkulUygulama.Size = new Size(66, 15);
+            lblBKOkulUygulama.Size = new Size(37, 15);
             lblBKOkulUygulama.TabIndex = 3;
-            lblBKOkulUygulama.Text = "99.999.999,99";
-            // 
-            // panel526
-            // 
-            panel526.BorderStyle = BorderStyle.FixedSingle;
-            panel526.Controls.Add(panel527);
-            panel526.Controls.Add(label186);
-            panel526.Location = new Point(514, 497);
-            panel526.Name = "panel526";
-            panel526.Size = new Size(83, 23);
-            panel526.TabIndex = 454;
+            lblBKOkulUygulama.Text = "100000";
+            lblBKOkulUygulama.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel527
             // 
             panel527.BorderStyle = BorderStyle.FixedSingle;
             panel527.Controls.Add(label185);
-            panel527.Location = new Point(-2, -1);
+            panel527.Location = new Point(523, 497);
             panel527.Name = "panel527";
             panel527.Size = new Size(83, 23);
             panel527.TabIndex = 245;
@@ -8595,21 +8685,10 @@
             label185.TabIndex = 252;
             label185.Text = "Kurs Masrafları";
             // 
-            // label186
-            // 
-            label186.AutoSize = true;
-            label186.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label186.Location = new Point(9, 37);
-            label186.Margin = new Padding(1, 0, 1, 0);
-            label186.Name = "label186";
-            label186.Size = new Size(58, 13);
-            label186.TabIndex = 242;
-            label186.Text = "GİDERİN CİNSİ";
-            // 
             // label187
             // 
             label187.AutoSize = true;
-            label187.Location = new Point(746, 410);
+            label187.Location = new Point(731, 410);
             label187.Margin = new Padding(1, 0, 1, 0);
             label187.Name = "label187";
             label187.Size = new Size(112, 15);
@@ -8619,19 +8698,19 @@
             // panel528
             // 
             panel528.BorderStyle = BorderStyle.FixedSingle;
-            panel528.Location = new Point(1096, 474);
+            panel528.Location = new Point(1081, 474);
             panel528.Name = "panel528";
-            panel528.Size = new Size(18, 23);
+            panel528.Size = new Size(17, 23);
             panel528.TabIndex = 452;
             // 
-            // panel529
+            // p119
             // 
-            panel529.BorderStyle = BorderStyle.FixedSingle;
-            panel529.Controls.Add(lblIptalOkumaOdasi);
-            panel529.Location = new Point(1028, 474);
-            panel529.Name = "panel529";
-            panel529.Size = new Size(68, 23);
-            panel529.TabIndex = 451;
+            p119.BorderStyle = BorderStyle.FixedSingle;
+            p119.Controls.Add(lblIptalOkumaOdasi);
+            p119.Location = new Point(1017, 474);
+            p119.Name = "p119";
+            p119.Size = new Size(64, 23);
+            p119.TabIndex = 451;
             // 
             // lblIptalOkumaOdasi
             // 
@@ -8639,14 +8718,14 @@
             lblIptalOkumaOdasi.Location = new Point(0, 3);
             lblIptalOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblIptalOkumaOdasi.Name = "lblIptalOkumaOdasi";
-            lblIptalOkumaOdasi.Size = new Size(66, 15);
+            lblIptalOkumaOdasi.Size = new Size(12, 15);
             lblIptalOkumaOdasi.TabIndex = 3;
-            lblIptalOkumaOdasi.Text = "99.999.999,99";
+            lblIptalOkumaOdasi.Text = "0";
             // 
             // panel530
             // 
             panel530.BorderStyle = BorderStyle.FixedSingle;
-            panel530.Location = new Point(996, 474);
+            panel530.Location = new Point(985, 474);
             panel530.Name = "panel530";
             panel530.Size = new Size(32, 23);
             panel530.TabIndex = 450;
@@ -8654,19 +8733,19 @@
             // panel531
             // 
             panel531.BorderStyle = BorderStyle.FixedSingle;
-            panel531.Location = new Point(978, 474);
+            panel531.Location = new Point(968, 474);
             panel531.Name = "panel531";
-            panel531.Size = new Size(18, 23);
+            panel531.Size = new Size(17, 23);
             panel531.TabIndex = 449;
             // 
-            // panel532
+            // p118
             // 
-            panel532.BorderStyle = BorderStyle.FixedSingle;
-            panel532.Controls.Add(lblOdenenOkumaOdasi);
-            panel532.Location = new Point(910, 474);
-            panel532.Name = "panel532";
-            panel532.Size = new Size(68, 23);
-            panel532.TabIndex = 448;
+            p118.BorderStyle = BorderStyle.FixedSingle;
+            p118.Controls.Add(lblOdenenOkumaOdasi);
+            p118.Location = new Point(904, 474);
+            p118.Name = "p118";
+            p118.Size = new Size(64, 23);
+            p118.TabIndex = 448;
             // 
             // lblOdenenOkumaOdasi
             // 
@@ -8674,26 +8753,26 @@
             lblOdenenOkumaOdasi.Location = new Point(0, 3);
             lblOdenenOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOkumaOdasi.Name = "lblOdenenOkumaOdasi";
-            lblOdenenOkumaOdasi.Size = new Size(66, 15);
+            lblOdenenOkumaOdasi.Size = new Size(32, 15);
             lblOdenenOkumaOdasi.TabIndex = 3;
-            lblOdenenOkumaOdasi.Text = "99.999.999,99";
+            lblOdenenOkumaOdasi.Text = "29022";
             // 
             // panel533
             // 
             panel533.BorderStyle = BorderStyle.FixedSingle;
-            panel533.Location = new Point(892, 474);
+            panel533.Location = new Point(887, 474);
             panel533.Name = "panel533";
-            panel533.Size = new Size(18, 23);
+            panel533.Size = new Size(17, 23);
             panel533.TabIndex = 447;
             // 
-            // panel534
+            // p117
             // 
-            panel534.BorderStyle = BorderStyle.FixedSingle;
-            panel534.Controls.Add(lblTahakkukOkumaOdasi);
-            panel534.Location = new Point(824, 474);
-            panel534.Name = "panel534";
-            panel534.Size = new Size(68, 23);
-            panel534.TabIndex = 446;
+            p117.BorderStyle = BorderStyle.FixedSingle;
+            p117.Controls.Add(lblTahakkukOkumaOdasi);
+            p117.Location = new Point(823, 474);
+            p117.Name = "p117";
+            p117.Size = new Size(64, 23);
+            p117.TabIndex = 446;
             // 
             // lblTahakkukOkumaOdasi
             // 
@@ -8701,24 +8780,24 @@
             lblTahakkukOkumaOdasi.Location = new Point(0, 3);
             lblTahakkukOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOkumaOdasi.Name = "lblTahakkukOkumaOdasi";
-            lblTahakkukOkumaOdasi.Size = new Size(66, 15);
+            lblTahakkukOkumaOdasi.Size = new Size(12, 15);
             lblTahakkukOkumaOdasi.TabIndex = 3;
-            lblTahakkukOkumaOdasi.Text = "99.999.999,99";
+            lblTahakkukOkumaOdasi.Text = "0";
             // 
             // panel535
             // 
             panel535.BorderStyle = BorderStyle.FixedSingle;
-            panel535.Location = new Point(804, 474);
+            panel535.Location = new Point(797, 474);
             panel535.Name = "panel535";
-            panel535.Size = new Size(20, 23);
+            panel535.Size = new Size(26, 23);
             panel535.TabIndex = 445;
             // 
             // panel536
             // 
             panel536.BorderStyle = BorderStyle.FixedSingle;
-            panel536.Location = new Point(769, 474);
+            panel536.Location = new Point(768, 474);
             panel536.Name = "panel536";
-            panel536.Size = new Size(35, 23);
+            panel536.Size = new Size(29, 23);
             panel536.TabIndex = 444;
             // 
             // panel537
@@ -8726,17 +8805,17 @@
             panel537.BorderStyle = BorderStyle.FixedSingle;
             panel537.Location = new Point(751, 474);
             panel537.Name = "panel537";
-            panel537.Size = new Size(18, 23);
+            panel537.Size = new Size(17, 23);
             panel537.TabIndex = 443;
             // 
-            // panel538
+            // p116
             // 
-            panel538.BorderStyle = BorderStyle.FixedSingle;
-            panel538.Controls.Add(lblMunzamOkumaOdasi);
-            panel538.Location = new Point(683, 474);
-            panel538.Name = "panel538";
-            panel538.Size = new Size(68, 23);
-            panel538.TabIndex = 442;
+            p116.BorderStyle = BorderStyle.FixedSingle;
+            p116.Controls.Add(lblMunzamOkumaOdasi);
+            p116.Location = new Point(687, 474);
+            p116.Name = "p116";
+            p116.Size = new Size(64, 23);
+            p116.TabIndex = 442;
             // 
             // lblMunzamOkumaOdasi
             // 
@@ -8744,26 +8823,26 @@
             lblMunzamOkumaOdasi.Location = new Point(0, 3);
             lblMunzamOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOkumaOdasi.Name = "lblMunzamOkumaOdasi";
-            lblMunzamOkumaOdasi.Size = new Size(66, 15);
+            lblMunzamOkumaOdasi.Size = new Size(12, 15);
             lblMunzamOkumaOdasi.TabIndex = 3;
-            lblMunzamOkumaOdasi.Text = "99.999.999,99";
+            lblMunzamOkumaOdasi.Text = "0";
             // 
             // panel539
             // 
             panel539.BorderStyle = BorderStyle.FixedSingle;
-            panel539.Location = new Point(665, 474);
+            panel539.Location = new Point(670, 474);
             panel539.Name = "panel539";
-            panel539.Size = new Size(18, 23);
+            panel539.Size = new Size(17, 23);
             panel539.TabIndex = 441;
             // 
-            // panel540
+            // p115
             // 
-            panel540.BorderStyle = BorderStyle.FixedSingle;
-            panel540.Controls.Add(lblBKOkumaOdasi);
-            panel540.Location = new Point(597, 474);
-            panel540.Name = "panel540";
-            panel540.Size = new Size(68, 23);
-            panel540.TabIndex = 440;
+            p115.BorderStyle = BorderStyle.FixedSingle;
+            p115.Controls.Add(lblBKOkumaOdasi);
+            p115.Location = new Point(606, 474);
+            p115.Name = "p115";
+            p115.Size = new Size(64, 23);
+            p115.TabIndex = 440;
             // 
             // lblBKOkumaOdasi
             // 
@@ -8771,23 +8850,24 @@
             lblBKOkumaOdasi.Location = new Point(0, 3);
             lblBKOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblBKOkumaOdasi.Name = "lblBKOkumaOdasi";
-            lblBKOkumaOdasi.Size = new Size(66, 15);
+            lblBKOkumaOdasi.Size = new Size(37, 15);
             lblBKOkumaOdasi.TabIndex = 3;
-            lblBKOkumaOdasi.Text = "99.999.999,99";
+            lblBKOkumaOdasi.Text = "100000";
+            lblBKOkumaOdasi.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel541
             // 
             panel541.BorderStyle = BorderStyle.FixedSingle;
-            panel541.Location = new Point(1096, 428);
+            panel541.Location = new Point(1081, 428);
             panel541.Name = "panel541";
-            panel541.Size = new Size(18, 23);
+            panel541.Size = new Size(17, 23);
             panel541.TabIndex = 439;
             // 
             // panel542
             // 
             panel542.BorderStyle = BorderStyle.FixedSingle;
             panel542.Controls.Add(label184);
-            panel542.Location = new Point(514, 474);
+            panel542.Location = new Point(523, 474);
             panel542.Name = "panel542";
             panel542.Size = new Size(83, 23);
             panel542.TabIndex = 426;
@@ -8807,7 +8887,7 @@
             // 
             panel543.BorderStyle = BorderStyle.FixedSingle;
             panel543.Controls.Add(label183);
-            panel543.Location = new Point(514, 451);
+            panel543.Location = new Point(523, 451);
             panel543.Name = "panel543";
             panel543.Size = new Size(83, 23);
             panel543.TabIndex = 425;
@@ -8823,14 +8903,14 @@
             label183.TabIndex = 251;
             label183.Text = "Okul Daimi Masrafları";
             // 
-            // panel544
+            // p109
             // 
-            panel544.BorderStyle = BorderStyle.FixedSingle;
-            panel544.Controls.Add(lblIptalOgretmenevi);
-            panel544.Location = new Point(1028, 428);
-            panel544.Name = "panel544";
-            panel544.Size = new Size(68, 23);
-            panel544.TabIndex = 438;
+            p109.BorderStyle = BorderStyle.FixedSingle;
+            p109.Controls.Add(lblIptalOgretmenevi);
+            p109.Location = new Point(1017, 428);
+            p109.Name = "p109";
+            p109.Size = new Size(64, 23);
+            p109.TabIndex = 438;
             // 
             // lblIptalOgretmenevi
             // 
@@ -8838,26 +8918,26 @@
             lblIptalOgretmenevi.Location = new Point(0, 3);
             lblIptalOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblIptalOgretmenevi.Name = "lblIptalOgretmenevi";
-            lblIptalOgretmenevi.Size = new Size(66, 15);
+            lblIptalOgretmenevi.Size = new Size(12, 15);
             lblIptalOgretmenevi.TabIndex = 3;
-            lblIptalOgretmenevi.Text = "99.999.999,99";
+            lblIptalOgretmenevi.Text = "0";
             // 
             // panel545
             // 
             panel545.BorderStyle = BorderStyle.FixedSingle;
-            panel545.Location = new Point(1096, 451);
+            panel545.Location = new Point(1081, 451);
             panel545.Name = "panel545";
-            panel545.Size = new Size(18, 23);
+            panel545.Size = new Size(17, 23);
             panel545.TabIndex = 424;
             // 
-            // panel546
+            // p105
             // 
-            panel546.BorderStyle = BorderStyle.FixedSingle;
-            panel546.Controls.Add(lblBKOgretmenevi);
-            panel546.Location = new Point(597, 428);
-            panel546.Name = "panel546";
-            panel546.Size = new Size(68, 23);
-            panel546.TabIndex = 427;
+            p105.BorderStyle = BorderStyle.FixedSingle;
+            p105.Controls.Add(lblBKOgretmenevi);
+            p105.Location = new Point(606, 428);
+            p105.Name = "p105";
+            p105.Size = new Size(64, 23);
+            p105.TabIndex = 427;
             // 
             // lblBKOgretmenevi
             // 
@@ -8865,26 +8945,27 @@
             lblBKOgretmenevi.Location = new Point(0, 3);
             lblBKOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblBKOgretmenevi.Name = "lblBKOgretmenevi";
-            lblBKOgretmenevi.Size = new Size(66, 15);
+            lblBKOgretmenevi.Size = new Size(37, 15);
             lblBKOgretmenevi.TabIndex = 3;
-            lblBKOgretmenevi.Text = "99.999.999,99";
+            lblBKOgretmenevi.Text = "100000";
+            lblBKOgretmenevi.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel547
             // 
             panel547.BorderStyle = BorderStyle.FixedSingle;
-            panel547.Location = new Point(996, 428);
+            panel547.Location = new Point(985, 428);
             panel547.Name = "panel547";
             panel547.Size = new Size(32, 23);
             panel547.TabIndex = 437;
             // 
-            // panel548
+            // p114
             // 
-            panel548.BorderStyle = BorderStyle.FixedSingle;
-            panel548.Controls.Add(lblIptalOkulDaimi);
-            panel548.Location = new Point(1028, 451);
-            panel548.Name = "panel548";
-            panel548.Size = new Size(68, 23);
-            panel548.TabIndex = 423;
+            p114.BorderStyle = BorderStyle.FixedSingle;
+            p114.Controls.Add(lblIptalOkulDaimi);
+            p114.Location = new Point(1017, 451);
+            p114.Name = "p114";
+            p114.Size = new Size(64, 23);
+            p114.TabIndex = 423;
             // 
             // lblIptalOkulDaimi
             // 
@@ -8892,22 +8973,22 @@
             lblIptalOkulDaimi.Location = new Point(0, 3);
             lblIptalOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblIptalOkulDaimi.Name = "lblIptalOkulDaimi";
-            lblIptalOkulDaimi.Size = new Size(66, 15);
+            lblIptalOkulDaimi.Size = new Size(12, 15);
             lblIptalOkulDaimi.TabIndex = 3;
-            lblIptalOkulDaimi.Text = "99.999.999,99";
+            lblIptalOkulDaimi.Text = "0";
             // 
             // panel549
             // 
             panel549.BorderStyle = BorderStyle.FixedSingle;
-            panel549.Location = new Point(665, 428);
+            panel549.Location = new Point(670, 428);
             panel549.Name = "panel549";
-            panel549.Size = new Size(18, 23);
+            panel549.Size = new Size(17, 23);
             panel549.TabIndex = 428;
             // 
             // panel550
             // 
             panel550.BorderStyle = BorderStyle.FixedSingle;
-            panel550.Location = new Point(996, 451);
+            panel550.Location = new Point(985, 451);
             panel550.Name = "panel550";
             panel550.Size = new Size(32, 23);
             panel550.TabIndex = 422;
@@ -8915,46 +8996,46 @@
             // panel551
             // 
             panel551.BorderStyle = BorderStyle.FixedSingle;
-            panel551.Location = new Point(978, 428);
+            panel551.Location = new Point(968, 428);
             panel551.Name = "panel551";
-            panel551.Size = new Size(18, 23);
+            panel551.Size = new Size(17, 23);
             panel551.TabIndex = 436;
             // 
             // panel552
             // 
             panel552.BorderStyle = BorderStyle.FixedSingle;
-            panel552.Location = new Point(978, 451);
+            panel552.Location = new Point(968, 451);
             panel552.Name = "panel552";
-            panel552.Size = new Size(18, 23);
+            panel552.Size = new Size(17, 23);
             panel552.TabIndex = 421;
             // 
-            // panel553
+            // p106
             // 
-            panel553.BorderStyle = BorderStyle.FixedSingle;
-            panel553.Controls.Add(lblMunzamOgretmenEvi);
-            panel553.Location = new Point(683, 428);
-            panel553.Name = "panel553";
-            panel553.Size = new Size(68, 23);
-            panel553.TabIndex = 429;
+            p106.BorderStyle = BorderStyle.FixedSingle;
+            p106.Controls.Add(lblMunzamOgretmenevi);
+            p106.Location = new Point(687, 428);
+            p106.Name = "p106";
+            p106.Size = new Size(64, 23);
+            p106.TabIndex = 429;
             // 
-            // lblMunzamOgretmenEvi
+            // lblMunzamOgretmenevi
             // 
-            lblMunzamOgretmenEvi.AutoSize = true;
-            lblMunzamOgretmenEvi.Location = new Point(0, 3);
-            lblMunzamOgretmenEvi.Margin = new Padding(1, 0, 1, 0);
-            lblMunzamOgretmenEvi.Name = "lblMunzamOgretmenEvi";
-            lblMunzamOgretmenEvi.Size = new Size(66, 15);
-            lblMunzamOgretmenEvi.TabIndex = 3;
-            lblMunzamOgretmenEvi.Text = "99.999.999,99";
+            lblMunzamOgretmenevi.AutoSize = true;
+            lblMunzamOgretmenevi.Location = new Point(0, 3);
+            lblMunzamOgretmenevi.Margin = new Padding(1, 0, 1, 0);
+            lblMunzamOgretmenevi.Name = "lblMunzamOgretmenevi";
+            lblMunzamOgretmenevi.Size = new Size(12, 15);
+            lblMunzamOgretmenevi.TabIndex = 3;
+            lblMunzamOgretmenevi.Text = "0";
             // 
-            // panel554
+            // p113
             // 
-            panel554.BorderStyle = BorderStyle.FixedSingle;
-            panel554.Controls.Add(lblOdenenOkulDaimi);
-            panel554.Location = new Point(910, 451);
-            panel554.Name = "panel554";
-            panel554.Size = new Size(68, 23);
-            panel554.TabIndex = 420;
+            p113.BorderStyle = BorderStyle.FixedSingle;
+            p113.Controls.Add(lblOdenenOkulDaimi);
+            p113.Location = new Point(904, 451);
+            p113.Name = "p113";
+            p113.Size = new Size(64, 23);
+            p113.TabIndex = 420;
             // 
             // lblOdenenOkulDaimi
             // 
@@ -8962,18 +9043,18 @@
             lblOdenenOkulDaimi.Location = new Point(0, 3);
             lblOdenenOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOkulDaimi.Name = "lblOdenenOkulDaimi";
-            lblOdenenOkulDaimi.Size = new Size(66, 15);
+            lblOdenenOkulDaimi.Size = new Size(32, 15);
             lblOdenenOkulDaimi.TabIndex = 3;
-            lblOdenenOkulDaimi.Text = "99.999.999,99";
+            lblOdenenOkulDaimi.Text = "29022";
             // 
-            // panel555
+            // p108
             // 
-            panel555.BorderStyle = BorderStyle.FixedSingle;
-            panel555.Controls.Add(lblOdenenOgretmenevi);
-            panel555.Location = new Point(910, 428);
-            panel555.Name = "panel555";
-            panel555.Size = new Size(68, 23);
-            panel555.TabIndex = 435;
+            p108.BorderStyle = BorderStyle.FixedSingle;
+            p108.Controls.Add(lblOdenenOgretmenevi);
+            p108.Location = new Point(904, 428);
+            p108.Name = "p108";
+            p108.Size = new Size(64, 23);
+            p108.TabIndex = 435;
             // 
             // lblOdenenOgretmenevi
             // 
@@ -8981,16 +9062,16 @@
             lblOdenenOgretmenevi.Location = new Point(0, 3);
             lblOdenenOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOgretmenevi.Name = "lblOdenenOgretmenevi";
-            lblOdenenOgretmenevi.Size = new Size(66, 15);
+            lblOdenenOgretmenevi.Size = new Size(32, 15);
             lblOdenenOgretmenevi.TabIndex = 3;
-            lblOdenenOgretmenevi.Text = "99.999.999,99";
+            lblOdenenOgretmenevi.Text = "29022";
             // 
             // panel556
             // 
             panel556.BorderStyle = BorderStyle.FixedSingle;
-            panel556.Location = new Point(892, 451);
+            panel556.Location = new Point(887, 451);
             panel556.Name = "panel556";
-            panel556.Size = new Size(18, 23);
+            panel556.Size = new Size(17, 23);
             panel556.TabIndex = 419;
             // 
             // panel557
@@ -8998,17 +9079,17 @@
             panel557.BorderStyle = BorderStyle.FixedSingle;
             panel557.Location = new Point(751, 428);
             panel557.Name = "panel557";
-            panel557.Size = new Size(18, 23);
+            panel557.Size = new Size(17, 23);
             panel557.TabIndex = 430;
             // 
-            // panel558
+            // p112
             // 
-            panel558.BorderStyle = BorderStyle.FixedSingle;
-            panel558.Controls.Add(lblTahakkukOkulDaimi);
-            panel558.Location = new Point(824, 451);
-            panel558.Name = "panel558";
-            panel558.Size = new Size(68, 23);
-            panel558.TabIndex = 418;
+            p112.BorderStyle = BorderStyle.FixedSingle;
+            p112.Controls.Add(lblTahakkukOkulDaimi);
+            p112.Location = new Point(823, 451);
+            p112.Name = "p112";
+            p112.Size = new Size(64, 23);
+            p112.TabIndex = 418;
             // 
             // lblTahakkukOkulDaimi
             // 
@@ -9016,50 +9097,50 @@
             lblTahakkukOkulDaimi.Location = new Point(0, 3);
             lblTahakkukOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOkulDaimi.Name = "lblTahakkukOkulDaimi";
-            lblTahakkukOkulDaimi.Size = new Size(66, 15);
+            lblTahakkukOkulDaimi.Size = new Size(12, 15);
             lblTahakkukOkulDaimi.TabIndex = 3;
-            lblTahakkukOkulDaimi.Text = "99.999.999,99";
+            lblTahakkukOkulDaimi.Text = "0";
             // 
             // panel559
             // 
             panel559.BorderStyle = BorderStyle.FixedSingle;
-            panel559.Location = new Point(892, 428);
+            panel559.Location = new Point(887, 428);
             panel559.Name = "panel559";
-            panel559.Size = new Size(18, 23);
+            panel559.Size = new Size(17, 23);
             panel559.TabIndex = 434;
             // 
             // panel560
             // 
             panel560.BorderStyle = BorderStyle.FixedSingle;
-            panel560.Location = new Point(804, 451);
+            panel560.Location = new Point(797, 451);
             panel560.Name = "panel560";
-            panel560.Size = new Size(20, 23);
+            panel560.Size = new Size(26, 23);
             panel560.TabIndex = 417;
             // 
             // panel561
             // 
             panel561.BorderStyle = BorderStyle.FixedSingle;
-            panel561.Location = new Point(769, 428);
+            panel561.Location = new Point(768, 428);
             panel561.Name = "panel561";
-            panel561.Size = new Size(35, 23);
+            panel561.Size = new Size(29, 23);
             panel561.TabIndex = 431;
             // 
             // panel562
             // 
             panel562.BorderStyle = BorderStyle.FixedSingle;
-            panel562.Location = new Point(769, 451);
+            panel562.Location = new Point(768, 451);
             panel562.Name = "panel562";
-            panel562.Size = new Size(35, 23);
+            panel562.Size = new Size(29, 23);
             panel562.TabIndex = 416;
             // 
-            // panel563
+            // p107
             // 
-            panel563.BorderStyle = BorderStyle.FixedSingle;
-            panel563.Controls.Add(lblTahakkukOgretmenevi);
-            panel563.Location = new Point(824, 428);
-            panel563.Name = "panel563";
-            panel563.Size = new Size(68, 23);
-            panel563.TabIndex = 433;
+            p107.BorderStyle = BorderStyle.FixedSingle;
+            p107.Controls.Add(lblTahakkukOgretmenevi);
+            p107.Location = new Point(823, 428);
+            p107.Name = "p107";
+            p107.Size = new Size(64, 23);
+            p107.TabIndex = 433;
             // 
             // lblTahakkukOgretmenevi
             // 
@@ -9067,34 +9148,34 @@
             lblTahakkukOgretmenevi.Location = new Point(0, 3);
             lblTahakkukOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOgretmenevi.Name = "lblTahakkukOgretmenevi";
-            lblTahakkukOgretmenevi.Size = new Size(66, 15);
+            lblTahakkukOgretmenevi.Size = new Size(12, 15);
             lblTahakkukOgretmenevi.TabIndex = 3;
-            lblTahakkukOgretmenevi.Text = "99.999.999,99";
+            lblTahakkukOgretmenevi.Text = "0";
             // 
             // panel564
             // 
             panel564.BorderStyle = BorderStyle.FixedSingle;
             panel564.Location = new Point(751, 451);
             panel564.Name = "panel564";
-            panel564.Size = new Size(18, 23);
+            panel564.Size = new Size(17, 23);
             panel564.TabIndex = 415;
             // 
             // panel565
             // 
             panel565.BorderStyle = BorderStyle.FixedSingle;
-            panel565.Location = new Point(804, 428);
+            panel565.Location = new Point(797, 428);
             panel565.Name = "panel565";
-            panel565.Size = new Size(20, 23);
+            panel565.Size = new Size(26, 23);
             panel565.TabIndex = 432;
             // 
-            // panel566
+            // p111
             // 
-            panel566.BorderStyle = BorderStyle.FixedSingle;
-            panel566.Controls.Add(lblMunzamOkulDaimi);
-            panel566.Location = new Point(683, 451);
-            panel566.Name = "panel566";
-            panel566.Size = new Size(68, 23);
-            panel566.TabIndex = 414;
+            p111.BorderStyle = BorderStyle.FixedSingle;
+            p111.Controls.Add(lblMunzamOkulDaimi);
+            p111.Location = new Point(687, 451);
+            p111.Name = "p111";
+            p111.Size = new Size(64, 23);
+            p111.TabIndex = 414;
             // 
             // lblMunzamOkulDaimi
             // 
@@ -9102,26 +9183,26 @@
             lblMunzamOkulDaimi.Location = new Point(0, 3);
             lblMunzamOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOkulDaimi.Name = "lblMunzamOkulDaimi";
-            lblMunzamOkulDaimi.Size = new Size(66, 15);
+            lblMunzamOkulDaimi.Size = new Size(12, 15);
             lblMunzamOkulDaimi.TabIndex = 3;
-            lblMunzamOkulDaimi.Text = "99.999.999,99";
+            lblMunzamOkulDaimi.Text = "0";
             // 
             // panel567
             // 
             panel567.BorderStyle = BorderStyle.FixedSingle;
-            panel567.Location = new Point(665, 451);
+            panel567.Location = new Point(670, 451);
             panel567.Name = "panel567";
-            panel567.Size = new Size(18, 23);
+            panel567.Size = new Size(17, 23);
             panel567.TabIndex = 413;
             // 
-            // panel568
+            // p110
             // 
-            panel568.BorderStyle = BorderStyle.FixedSingle;
-            panel568.Controls.Add(lblBKOkulDaimi);
-            panel568.Location = new Point(597, 451);
-            panel568.Name = "panel568";
-            panel568.Size = new Size(68, 23);
-            panel568.TabIndex = 412;
+            p110.BorderStyle = BorderStyle.FixedSingle;
+            p110.Controls.Add(lblBKOkulDaimi);
+            p110.Location = new Point(606, 451);
+            p110.Name = "p110";
+            p110.Size = new Size(64, 23);
+            p110.TabIndex = 412;
             // 
             // lblBKOkulDaimi
             // 
@@ -9129,19 +9210,10 @@
             lblBKOkulDaimi.Location = new Point(0, 3);
             lblBKOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblBKOkulDaimi.Name = "lblBKOkulDaimi";
-            lblBKOkulDaimi.Size = new Size(66, 15);
+            lblBKOkulDaimi.Size = new Size(37, 15);
             lblBKOkulDaimi.TabIndex = 3;
-            lblBKOkulDaimi.Text = "99.999.999,99";
-            // 
-            // panel569
-            // 
-            panel569.BorderStyle = BorderStyle.FixedSingle;
-            panel569.Controls.Add(panel570);
-            panel569.Controls.Add(label191);
-            panel569.Location = new Point(514, 428);
-            panel569.Name = "panel569";
-            panel569.Size = new Size(83, 23);
-            panel569.TabIndex = 411;
+            lblBKOkulDaimi.Text = "100000";
+            lblBKOkulDaimi.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel570
             // 
@@ -9149,7 +9221,7 @@
             panel570.Controls.Add(label222);
             panel570.Controls.Add(label236);
             panel570.Controls.Add(label190);
-            panel570.Location = new Point(-2, -1);
+            panel570.Location = new Point(523, 428);
             panel570.Name = "panel570";
             panel570.Size = new Size(83, 23);
             panel570.TabIndex = 245;
@@ -9187,17 +9259,6 @@
             label190.TabIndex = 242;
             label190.Text = "GİDERİN CİNSİ";
             // 
-            // label191
-            // 
-            label191.AutoSize = true;
-            label191.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label191.Location = new Point(9, 37);
-            label191.Margin = new Padding(1, 0, 1, 0);
-            label191.Name = "label191";
-            label191.Size = new Size(58, 13);
-            label191.TabIndex = 242;
-            label191.Text = "GİDERİN CİNSİ";
-            // 
             // panel571
             // 
             panel571.BorderStyle = BorderStyle.FixedSingle;
@@ -9206,10 +9267,10 @@
             panel571.Controls.Add(label196);
             panel571.Controls.Add(label197);
             panel571.Controls.Add(label198);
-            panel571.Location = new Point(493, 428);
+            panel571.Location = new Point(506, 428);
             panel571.Margin = new Padding(1, 3, 1, 3);
             panel571.Name = "panel571";
-            panel571.Size = new Size(21, 138);
+            panel571.Size = new Size(17, 138);
             panel571.TabIndex = 410;
             // 
             // label194
@@ -9266,10 +9327,10 @@
             // 
             panel572.BorderStyle = BorderStyle.FixedSingle;
             panel572.Controls.Add(label199);
-            panel572.Location = new Point(474, 428);
+            panel572.Location = new Point(489, 428);
             panel572.Margin = new Padding(1, 3, 1, 3);
             panel572.Name = "panel572";
-            panel572.Size = new Size(21, 138);
+            panel572.Size = new Size(17, 138);
             panel572.TabIndex = 409;
             // 
             // label199
@@ -9285,9 +9346,9 @@
             // panel586
             // 
             panel586.BorderStyle = BorderStyle.FixedSingle;
-            panel586.Location = new Point(1097, 657);
+            panel586.Location = new Point(1081, 657);
             panel586.Name = "panel586";
-            panel586.Size = new Size(18, 23);
+            panel586.Size = new Size(17, 23);
             panel586.TabIndex = 583;
             // 
             // panel588
@@ -9295,7 +9356,7 @@
             panel588.BorderStyle = BorderStyle.FixedSingle;
             panel588.Controls.Add(label233);
             panel588.Controls.Add(label200);
-            panel588.Location = new Point(515, 680);
+            panel588.Location = new Point(523, 680);
             panel588.Name = "panel588";
             panel588.Size = new Size(83, 23);
             panel588.TabIndex = 569;
@@ -9322,41 +9383,41 @@
             label200.TabIndex = 242;
             label200.Text = "GİDERİN CİNSİ";
             // 
-            // panel589
+            // p153
             // 
-            panel589.BorderStyle = BorderStyle.FixedSingle;
-            panel589.Controls.Add(lblIptalIctimaiYardim);
-            panel589.Location = new Point(1029, 657);
-            panel589.Name = "panel589";
-            panel589.Size = new Size(68, 23);
-            panel589.TabIndex = 582;
+            p153.BorderStyle = BorderStyle.FixedSingle;
+            p153.Controls.Add(lblIptalIctimai);
+            p153.Location = new Point(1017, 657);
+            p153.Name = "p153";
+            p153.Size = new Size(64, 23);
+            p153.TabIndex = 582;
             // 
-            // lblIptalIctimaiYardim
+            // lblIptalIctimai
             // 
-            lblIptalIctimaiYardim.AutoSize = true;
-            lblIptalIctimaiYardim.Location = new Point(0, 3);
-            lblIptalIctimaiYardim.Margin = new Padding(1, 0, 1, 0);
-            lblIptalIctimaiYardim.Name = "lblIptalIctimaiYardim";
-            lblIptalIctimaiYardim.Size = new Size(66, 15);
-            lblIptalIctimaiYardim.TabIndex = 3;
-            lblIptalIctimaiYardim.Text = "99.999.999,99";
+            lblIptalIctimai.AutoSize = true;
+            lblIptalIctimai.Location = new Point(0, 3);
+            lblIptalIctimai.Margin = new Padding(1, 0, 1, 0);
+            lblIptalIctimai.Name = "lblIptalIctimai";
+            lblIptalIctimai.Size = new Size(12, 15);
+            lblIptalIctimai.TabIndex = 3;
+            lblIptalIctimai.Text = "0";
             // 
             // panel590
             // 
             panel590.BorderStyle = BorderStyle.FixedSingle;
-            panel590.Location = new Point(1097, 680);
+            panel590.Location = new Point(1081, 680);
             panel590.Name = "panel590";
-            panel590.Size = new Size(18, 23);
+            panel590.Size = new Size(17, 23);
             panel590.TabIndex = 568;
             // 
-            // panel591
+            // p149
             // 
-            panel591.BorderStyle = BorderStyle.FixedSingle;
-            panel591.Controls.Add(lblBKIctimai);
-            panel591.Location = new Point(598, 657);
-            panel591.Name = "panel591";
-            panel591.Size = new Size(68, 23);
-            panel591.TabIndex = 571;
+            p149.BorderStyle = BorderStyle.FixedSingle;
+            p149.Controls.Add(lblBKIctimai);
+            p149.Location = new Point(606, 657);
+            p149.Name = "p149";
+            p149.Size = new Size(64, 23);
+            p149.TabIndex = 571;
             // 
             // lblBKIctimai
             // 
@@ -9364,26 +9425,26 @@
             lblBKIctimai.Location = new Point(0, 3);
             lblBKIctimai.Margin = new Padding(1, 0, 1, 0);
             lblBKIctimai.Name = "lblBKIctimai";
-            lblBKIctimai.Size = new Size(66, 15);
+            lblBKIctimai.Size = new Size(37, 15);
             lblBKIctimai.TabIndex = 3;
-            lblBKIctimai.Text = "99.999.999,99";
+            lblBKIctimai.Text = "100000";
             // 
             // panel592
             // 
             panel592.BorderStyle = BorderStyle.FixedSingle;
-            panel592.Location = new Point(997, 657);
+            panel592.Location = new Point(985, 657);
             panel592.Name = "panel592";
             panel592.Size = new Size(32, 23);
             panel592.TabIndex = 581;
             // 
-            // panel593
+            // p158
             // 
-            panel593.BorderStyle = BorderStyle.FixedSingle;
-            panel593.Controls.Add(lblIptalSaglikToplami);
-            panel593.Location = new Point(1029, 680);
-            panel593.Name = "panel593";
-            panel593.Size = new Size(68, 23);
-            panel593.TabIndex = 567;
+            p158.BorderStyle = BorderStyle.FixedSingle;
+            p158.Controls.Add(lblIptalSaglikToplami);
+            p158.Location = new Point(1017, 680);
+            p158.Name = "p158";
+            p158.Size = new Size(64, 23);
+            p158.TabIndex = 567;
             // 
             // lblIptalSaglikToplami
             // 
@@ -9391,22 +9452,22 @@
             lblIptalSaglikToplami.Location = new Point(0, 3);
             lblIptalSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalSaglikToplami.Name = "lblIptalSaglikToplami";
-            lblIptalSaglikToplami.Size = new Size(66, 15);
+            lblIptalSaglikToplami.Size = new Size(12, 15);
             lblIptalSaglikToplami.TabIndex = 3;
-            lblIptalSaglikToplami.Text = "99.999.999,99";
+            lblIptalSaglikToplami.Text = "0";
             // 
             // panel594
             // 
             panel594.BorderStyle = BorderStyle.FixedSingle;
-            panel594.Location = new Point(666, 657);
+            panel594.Location = new Point(670, 657);
             panel594.Name = "panel594";
-            panel594.Size = new Size(18, 23);
+            panel594.Size = new Size(17, 23);
             panel594.TabIndex = 572;
             // 
             // panel595
             // 
             panel595.BorderStyle = BorderStyle.FixedSingle;
-            panel595.Location = new Point(997, 680);
+            panel595.Location = new Point(985, 680);
             panel595.Name = "panel595";
             panel595.Size = new Size(32, 23);
             panel595.TabIndex = 566;
@@ -9414,46 +9475,46 @@
             // panel596
             // 
             panel596.BorderStyle = BorderStyle.FixedSingle;
-            panel596.Location = new Point(979, 657);
+            panel596.Location = new Point(968, 657);
             panel596.Name = "panel596";
-            panel596.Size = new Size(18, 23);
+            panel596.Size = new Size(17, 23);
             panel596.TabIndex = 580;
             // 
             // panel597
             // 
             panel597.BorderStyle = BorderStyle.FixedSingle;
-            panel597.Location = new Point(979, 680);
+            panel597.Location = new Point(968, 680);
             panel597.Name = "panel597";
-            panel597.Size = new Size(18, 23);
+            panel597.Size = new Size(17, 23);
             panel597.TabIndex = 565;
             // 
-            // panel598
+            // p150
             // 
-            panel598.BorderStyle = BorderStyle.FixedSingle;
-            panel598.Controls.Add(lblMunzamIctimaiYardim);
-            panel598.Location = new Point(684, 657);
-            panel598.Name = "panel598";
-            panel598.Size = new Size(68, 23);
-            panel598.TabIndex = 573;
+            p150.BorderStyle = BorderStyle.FixedSingle;
+            p150.Controls.Add(lblMunzamIctimai);
+            p150.Location = new Point(687, 657);
+            p150.Name = "p150";
+            p150.Size = new Size(64, 23);
+            p150.TabIndex = 573;
             // 
-            // lblMunzamIctimaiYardim
+            // lblMunzamIctimai
             // 
-            lblMunzamIctimaiYardim.AutoSize = true;
-            lblMunzamIctimaiYardim.Location = new Point(0, 3);
-            lblMunzamIctimaiYardim.Margin = new Padding(1, 0, 1, 0);
-            lblMunzamIctimaiYardim.Name = "lblMunzamIctimaiYardim";
-            lblMunzamIctimaiYardim.Size = new Size(66, 15);
-            lblMunzamIctimaiYardim.TabIndex = 3;
-            lblMunzamIctimaiYardim.Text = "99.999.999,99";
+            lblMunzamIctimai.AutoSize = true;
+            lblMunzamIctimai.Location = new Point(0, 3);
+            lblMunzamIctimai.Margin = new Padding(1, 0, 1, 0);
+            lblMunzamIctimai.Name = "lblMunzamIctimai";
+            lblMunzamIctimai.Size = new Size(12, 15);
+            lblMunzamIctimai.TabIndex = 3;
+            lblMunzamIctimai.Text = "0";
             // 
-            // panel599
+            // p157
             // 
-            panel599.BorderStyle = BorderStyle.FixedSingle;
-            panel599.Controls.Add(lblOdenenSaglik);
-            panel599.Location = new Point(911, 680);
-            panel599.Name = "panel599";
-            panel599.Size = new Size(68, 23);
-            panel599.TabIndex = 564;
+            p157.BorderStyle = BorderStyle.FixedSingle;
+            p157.Controls.Add(lblOdenenSaglik);
+            p157.Location = new Point(904, 680);
+            p157.Name = "p157";
+            p157.Size = new Size(64, 23);
+            p157.TabIndex = 564;
             // 
             // lblOdenenSaglik
             // 
@@ -9461,53 +9522,53 @@
             lblOdenenSaglik.Location = new Point(0, 3);
             lblOdenenSaglik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenSaglik.Name = "lblOdenenSaglik";
-            lblOdenenSaglik.Size = new Size(66, 15);
+            lblOdenenSaglik.Size = new Size(12, 15);
             lblOdenenSaglik.TabIndex = 3;
-            lblOdenenSaglik.Text = "99.999.999,99";
+            lblOdenenSaglik.Text = "0";
             // 
-            // panel600
+            // p152
             // 
-            panel600.BorderStyle = BorderStyle.FixedSingle;
-            panel600.Controls.Add(lblOdenenIctimaYardim);
-            panel600.Location = new Point(911, 657);
-            panel600.Name = "panel600";
-            panel600.Size = new Size(68, 23);
-            panel600.TabIndex = 579;
+            p152.BorderStyle = BorderStyle.FixedSingle;
+            p152.Controls.Add(lblOdenenIctimai);
+            p152.Location = new Point(904, 657);
+            p152.Name = "p152";
+            p152.Size = new Size(64, 23);
+            p152.TabIndex = 579;
             // 
-            // lblOdenenIctimaYardim
+            // lblOdenenIctimai
             // 
-            lblOdenenIctimaYardim.AutoSize = true;
-            lblOdenenIctimaYardim.Location = new Point(0, 3);
-            lblOdenenIctimaYardim.Margin = new Padding(1, 0, 1, 0);
-            lblOdenenIctimaYardim.Name = "lblOdenenIctimaYardim";
-            lblOdenenIctimaYardim.Size = new Size(66, 15);
-            lblOdenenIctimaYardim.TabIndex = 3;
-            lblOdenenIctimaYardim.Text = "99.999.999,99";
+            lblOdenenIctimai.AutoSize = true;
+            lblOdenenIctimai.Location = new Point(0, 3);
+            lblOdenenIctimai.Margin = new Padding(1, 0, 1, 0);
+            lblOdenenIctimai.Name = "lblOdenenIctimai";
+            lblOdenenIctimai.Size = new Size(32, 15);
+            lblOdenenIctimai.TabIndex = 3;
+            lblOdenenIctimai.Text = "29022";
             // 
             // panel601
             // 
             panel601.BorderStyle = BorderStyle.FixedSingle;
-            panel601.Location = new Point(893, 680);
+            panel601.Location = new Point(887, 680);
             panel601.Name = "panel601";
-            panel601.Size = new Size(18, 23);
+            panel601.Size = new Size(17, 23);
             panel601.TabIndex = 563;
             // 
             // panel602
             // 
             panel602.BorderStyle = BorderStyle.FixedSingle;
-            panel602.Location = new Point(752, 657);
+            panel602.Location = new Point(751, 657);
             panel602.Name = "panel602";
-            panel602.Size = new Size(18, 23);
+            panel602.Size = new Size(17, 23);
             panel602.TabIndex = 574;
             // 
-            // panel603
+            // p156
             // 
-            panel603.BorderStyle = BorderStyle.FixedSingle;
-            panel603.Controls.Add(lblTahakkukSaglıkToplami);
-            panel603.Location = new Point(825, 680);
-            panel603.Name = "panel603";
-            panel603.Size = new Size(68, 23);
-            panel603.TabIndex = 562;
+            p156.BorderStyle = BorderStyle.FixedSingle;
+            p156.Controls.Add(lblTahakkukSaglıkToplami);
+            p156.Location = new Point(823, 680);
+            p156.Name = "p156";
+            p156.Size = new Size(64, 23);
+            p156.TabIndex = 562;
             // 
             // lblTahakkukSaglıkToplami
             // 
@@ -9515,85 +9576,85 @@
             lblTahakkukSaglıkToplami.Location = new Point(0, 3);
             lblTahakkukSaglıkToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukSaglıkToplami.Name = "lblTahakkukSaglıkToplami";
-            lblTahakkukSaglıkToplami.Size = new Size(66, 15);
+            lblTahakkukSaglıkToplami.Size = new Size(12, 15);
             lblTahakkukSaglıkToplami.TabIndex = 3;
-            lblTahakkukSaglıkToplami.Text = "99.999.999,99";
+            lblTahakkukSaglıkToplami.Text = "0";
             // 
             // panel604
             // 
             panel604.BorderStyle = BorderStyle.FixedSingle;
-            panel604.Location = new Point(893, 657);
+            panel604.Location = new Point(887, 657);
             panel604.Name = "panel604";
-            panel604.Size = new Size(18, 23);
+            panel604.Size = new Size(17, 23);
             panel604.TabIndex = 578;
             // 
             // panel605
             // 
             panel605.BorderStyle = BorderStyle.FixedSingle;
-            panel605.Location = new Point(805, 680);
+            panel605.Location = new Point(797, 680);
             panel605.Name = "panel605";
-            panel605.Size = new Size(20, 23);
+            panel605.Size = new Size(26, 23);
             panel605.TabIndex = 561;
             // 
             // panel606
             // 
             panel606.BorderStyle = BorderStyle.FixedSingle;
-            panel606.Location = new Point(770, 657);
+            panel606.Location = new Point(768, 657);
             panel606.Name = "panel606";
-            panel606.Size = new Size(35, 23);
+            panel606.Size = new Size(29, 23);
             panel606.TabIndex = 575;
             // 
             // panel607
             // 
             panel607.BorderStyle = BorderStyle.FixedSingle;
-            panel607.Location = new Point(770, 680);
+            panel607.Location = new Point(768, 680);
             panel607.Name = "panel607";
-            panel607.Size = new Size(35, 23);
+            panel607.Size = new Size(29, 23);
             panel607.TabIndex = 560;
             // 
-            // panel608
+            // p151
             // 
-            panel608.BorderStyle = BorderStyle.FixedSingle;
-            panel608.Controls.Add(lblTahakkukIctimaiYardim);
-            panel608.Location = new Point(825, 657);
-            panel608.Name = "panel608";
-            panel608.Size = new Size(68, 23);
-            panel608.TabIndex = 577;
+            p151.BorderStyle = BorderStyle.FixedSingle;
+            p151.Controls.Add(lblTahakkukIctimai);
+            p151.Location = new Point(823, 657);
+            p151.Name = "p151";
+            p151.Size = new Size(64, 23);
+            p151.TabIndex = 577;
             // 
-            // lblTahakkukIctimaiYardim
+            // lblTahakkukIctimai
             // 
-            lblTahakkukIctimaiYardim.AutoSize = true;
-            lblTahakkukIctimaiYardim.Location = new Point(0, 3);
-            lblTahakkukIctimaiYardim.Margin = new Padding(1, 0, 1, 0);
-            lblTahakkukIctimaiYardim.Name = "lblTahakkukIctimaiYardim";
-            lblTahakkukIctimaiYardim.Size = new Size(66, 15);
-            lblTahakkukIctimaiYardim.TabIndex = 3;
-            lblTahakkukIctimaiYardim.Text = "99.999.999,99";
+            lblTahakkukIctimai.AutoSize = true;
+            lblTahakkukIctimai.Location = new Point(0, 3);
+            lblTahakkukIctimai.Margin = new Padding(1, 0, 1, 0);
+            lblTahakkukIctimai.Name = "lblTahakkukIctimai";
+            lblTahakkukIctimai.Size = new Size(12, 15);
+            lblTahakkukIctimai.TabIndex = 3;
+            lblTahakkukIctimai.Text = "0";
             // 
             // panel609
             // 
             panel609.BorderStyle = BorderStyle.FixedSingle;
-            panel609.Location = new Point(752, 680);
+            panel609.Location = new Point(751, 680);
             panel609.Name = "panel609";
-            panel609.Size = new Size(18, 23);
+            panel609.Size = new Size(17, 23);
             panel609.TabIndex = 559;
             // 
             // panel610
             // 
             panel610.BorderStyle = BorderStyle.FixedSingle;
-            panel610.Location = new Point(805, 657);
+            panel610.Location = new Point(797, 657);
             panel610.Name = "panel610";
-            panel610.Size = new Size(20, 23);
+            panel610.Size = new Size(26, 23);
             panel610.TabIndex = 576;
             // 
-            // panel611
+            // p155
             // 
-            panel611.BorderStyle = BorderStyle.FixedSingle;
-            panel611.Controls.Add(lblMunzamSaglikToplami);
-            panel611.Location = new Point(684, 680);
-            panel611.Name = "panel611";
-            panel611.Size = new Size(68, 23);
-            panel611.TabIndex = 558;
+            p155.BorderStyle = BorderStyle.FixedSingle;
+            p155.Controls.Add(lblMunzamSaglikToplami);
+            p155.Location = new Point(687, 680);
+            p155.Name = "p155";
+            p155.Size = new Size(64, 23);
+            p155.TabIndex = 558;
             // 
             // lblMunzamSaglikToplami
             // 
@@ -9601,53 +9662,43 @@
             lblMunzamSaglikToplami.Location = new Point(0, 3);
             lblMunzamSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamSaglikToplami.Name = "lblMunzamSaglikToplami";
-            lblMunzamSaglikToplami.Size = new Size(66, 15);
+            lblMunzamSaglikToplami.Size = new Size(12, 15);
             lblMunzamSaglikToplami.TabIndex = 3;
-            lblMunzamSaglikToplami.Text = "99.999.999,99";
+            lblMunzamSaglikToplami.Text = "0";
             // 
             // panel612
             // 
             panel612.BorderStyle = BorderStyle.FixedSingle;
-            panel612.Location = new Point(666, 680);
+            panel612.Location = new Point(670, 680);
             panel612.Name = "panel612";
-            panel612.Size = new Size(18, 23);
+            panel612.Size = new Size(17, 23);
             panel612.TabIndex = 557;
             // 
-            // panel613
+            // p154
             // 
-            panel613.BorderStyle = BorderStyle.FixedSingle;
-            panel613.Controls.Add(lblSaglikToplami);
-            panel613.Location = new Point(598, 680);
-            panel613.Name = "panel613";
-            panel613.Size = new Size(68, 23);
-            panel613.TabIndex = 556;
+            p154.BorderStyle = BorderStyle.FixedSingle;
+            p154.Controls.Add(lblSaglikToplami);
+            p154.Location = new Point(606, 680);
+            p154.Name = "p154";
+            p154.Size = new Size(64, 23);
+            p154.TabIndex = 556;
             // 
             // lblSaglikToplami
             // 
             lblSaglikToplami.AutoSize = true;
-            lblSaglikToplami.Location = new Point(0, 3);
+            lblSaglikToplami.Location = new Point(-1, 3);
             lblSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblSaglikToplami.Name = "lblSaglikToplami";
-            lblSaglikToplami.Size = new Size(66, 15);
+            lblSaglikToplami.Size = new Size(58, 15);
             lblSaglikToplami.TabIndex = 3;
-            lblSaglikToplami.Text = "99.999.999,99";
-            // 
-            // panel614
-            // 
-            panel614.BorderStyle = BorderStyle.FixedSingle;
-            panel614.Controls.Add(panel615);
-            panel614.Controls.Add(label202);
-            panel614.Location = new Point(515, 657);
-            panel614.Name = "panel614";
-            panel614.Size = new Size(83, 23);
-            panel614.TabIndex = 555;
+            lblSaglikToplami.Text = "100.000.000";
             // 
             // panel615
             // 
             panel615.BorderStyle = BorderStyle.FixedSingle;
             panel615.Controls.Add(label232);
             panel615.Controls.Add(label201);
-            panel615.Location = new Point(-2, -1);
+            panel615.Location = new Point(523, 657);
             panel615.Name = "panel615";
             panel615.Size = new Size(83, 23);
             panel615.TabIndex = 245;
@@ -9674,21 +9725,10 @@
             label201.TabIndex = 242;
             label201.Text = "GİDERİN CİNSİ";
             // 
-            // label202
-            // 
-            label202.AutoSize = true;
-            label202.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label202.Location = new Point(9, 37);
-            label202.Margin = new Padding(1, 0, 1, 0);
-            label202.Name = "label202";
-            label202.Size = new Size(58, 13);
-            label202.TabIndex = 242;
-            label202.Text = "GİDERİN CİNSİ";
-            // 
             // label203
             // 
             label203.AutoSize = true;
-            label203.Location = new Point(712, 570);
+            label203.Location = new Point(697, 570);
             label203.Margin = new Padding(1, 0, 1, 0);
             label203.Name = "label203";
             label203.Size = new Size(249, 15);
@@ -9698,19 +9738,19 @@
             // panel616
             // 
             panel616.BorderStyle = BorderStyle.FixedSingle;
-            panel616.Location = new Point(1097, 634);
+            panel616.Location = new Point(1081, 634);
             panel616.Name = "panel616";
-            panel616.Size = new Size(18, 23);
+            panel616.Size = new Size(17, 23);
             panel616.TabIndex = 553;
             // 
-            // panel617
+            // p148
             // 
-            panel617.BorderStyle = BorderStyle.FixedSingle;
-            panel617.Controls.Add(lblIptalSpor);
-            panel617.Location = new Point(1029, 634);
-            panel617.Name = "panel617";
-            panel617.Size = new Size(68, 23);
-            panel617.TabIndex = 552;
+            p148.BorderStyle = BorderStyle.FixedSingle;
+            p148.Controls.Add(lblIptalSpor);
+            p148.Location = new Point(1017, 634);
+            p148.Name = "p148";
+            p148.Size = new Size(64, 23);
+            p148.TabIndex = 552;
             // 
             // lblIptalSpor
             // 
@@ -9718,14 +9758,14 @@
             lblIptalSpor.Location = new Point(0, 3);
             lblIptalSpor.Margin = new Padding(1, 0, 1, 0);
             lblIptalSpor.Name = "lblIptalSpor";
-            lblIptalSpor.Size = new Size(66, 15);
+            lblIptalSpor.Size = new Size(12, 15);
             lblIptalSpor.TabIndex = 3;
-            lblIptalSpor.Text = "99.999.999,99";
+            lblIptalSpor.Text = "0";
             // 
             // panel618
             // 
             panel618.BorderStyle = BorderStyle.FixedSingle;
-            panel618.Location = new Point(997, 634);
+            panel618.Location = new Point(985, 634);
             panel618.Name = "panel618";
             panel618.Size = new Size(32, 23);
             panel618.TabIndex = 551;
@@ -9733,19 +9773,19 @@
             // panel619
             // 
             panel619.BorderStyle = BorderStyle.FixedSingle;
-            panel619.Location = new Point(979, 634);
+            panel619.Location = new Point(968, 634);
             panel619.Name = "panel619";
-            panel619.Size = new Size(18, 23);
+            panel619.Size = new Size(17, 23);
             panel619.TabIndex = 550;
             // 
-            // panel620
+            // p147
             // 
-            panel620.BorderStyle = BorderStyle.FixedSingle;
-            panel620.Controls.Add(lblOdenenSpor);
-            panel620.Location = new Point(911, 634);
-            panel620.Name = "panel620";
-            panel620.Size = new Size(68, 23);
-            panel620.TabIndex = 549;
+            p147.BorderStyle = BorderStyle.FixedSingle;
+            p147.Controls.Add(lblOdenenSpor);
+            p147.Location = new Point(904, 634);
+            p147.Name = "p147";
+            p147.Size = new Size(64, 23);
+            p147.TabIndex = 549;
             // 
             // lblOdenenSpor
             // 
@@ -9753,26 +9793,26 @@
             lblOdenenSpor.Location = new Point(0, 3);
             lblOdenenSpor.Margin = new Padding(1, 0, 1, 0);
             lblOdenenSpor.Name = "lblOdenenSpor";
-            lblOdenenSpor.Size = new Size(66, 15);
+            lblOdenenSpor.Size = new Size(32, 15);
             lblOdenenSpor.TabIndex = 3;
-            lblOdenenSpor.Text = "99.999.999,99";
+            lblOdenenSpor.Text = "29022";
             // 
             // panel621
             // 
             panel621.BorderStyle = BorderStyle.FixedSingle;
-            panel621.Location = new Point(893, 634);
+            panel621.Location = new Point(887, 634);
             panel621.Name = "panel621";
-            panel621.Size = new Size(18, 23);
+            panel621.Size = new Size(17, 23);
             panel621.TabIndex = 548;
             // 
-            // panel622
+            // p146
             // 
-            panel622.BorderStyle = BorderStyle.FixedSingle;
-            panel622.Controls.Add(lblTahakkukSpor);
-            panel622.Location = new Point(825, 634);
-            panel622.Name = "panel622";
-            panel622.Size = new Size(68, 23);
-            panel622.TabIndex = 547;
+            p146.BorderStyle = BorderStyle.FixedSingle;
+            p146.Controls.Add(lblTahakkukSpor);
+            p146.Location = new Point(823, 634);
+            p146.Name = "p146";
+            p146.Size = new Size(64, 23);
+            p146.TabIndex = 547;
             // 
             // lblTahakkukSpor
             // 
@@ -9780,42 +9820,42 @@
             lblTahakkukSpor.Location = new Point(0, 3);
             lblTahakkukSpor.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukSpor.Name = "lblTahakkukSpor";
-            lblTahakkukSpor.Size = new Size(66, 15);
+            lblTahakkukSpor.Size = new Size(12, 15);
             lblTahakkukSpor.TabIndex = 3;
-            lblTahakkukSpor.Text = "99.999.999,99";
+            lblTahakkukSpor.Text = "0";
             // 
             // panel623
             // 
             panel623.BorderStyle = BorderStyle.FixedSingle;
-            panel623.Location = new Point(805, 634);
+            panel623.Location = new Point(797, 634);
             panel623.Name = "panel623";
-            panel623.Size = new Size(20, 23);
+            panel623.Size = new Size(26, 23);
             panel623.TabIndex = 546;
             // 
             // panel624
             // 
             panel624.BorderStyle = BorderStyle.FixedSingle;
-            panel624.Location = new Point(770, 634);
+            panel624.Location = new Point(768, 634);
             panel624.Name = "panel624";
-            panel624.Size = new Size(35, 23);
+            panel624.Size = new Size(29, 23);
             panel624.TabIndex = 545;
             // 
             // panel625
             // 
             panel625.BorderStyle = BorderStyle.FixedSingle;
-            panel625.Location = new Point(752, 634);
+            panel625.Location = new Point(751, 634);
             panel625.Name = "panel625";
-            panel625.Size = new Size(18, 23);
+            panel625.Size = new Size(17, 23);
             panel625.TabIndex = 544;
             // 
-            // panel626
+            // p145
             // 
-            panel626.BorderStyle = BorderStyle.FixedSingle;
-            panel626.Controls.Add(lblMunzamSpor);
-            panel626.Location = new Point(684, 634);
-            panel626.Name = "panel626";
-            panel626.Size = new Size(68, 23);
-            panel626.TabIndex = 543;
+            p145.BorderStyle = BorderStyle.FixedSingle;
+            p145.Controls.Add(lblMunzamSpor);
+            p145.Location = new Point(687, 634);
+            p145.Name = "p145";
+            p145.Size = new Size(64, 23);
+            p145.TabIndex = 543;
             // 
             // lblMunzamSpor
             // 
@@ -9823,26 +9863,26 @@
             lblMunzamSpor.Location = new Point(0, 3);
             lblMunzamSpor.Margin = new Padding(1, 0, 1, 0);
             lblMunzamSpor.Name = "lblMunzamSpor";
-            lblMunzamSpor.Size = new Size(66, 15);
+            lblMunzamSpor.Size = new Size(12, 15);
             lblMunzamSpor.TabIndex = 3;
-            lblMunzamSpor.Text = "99.999.999,99";
+            lblMunzamSpor.Text = "0";
             // 
             // panel627
             // 
             panel627.BorderStyle = BorderStyle.FixedSingle;
-            panel627.Location = new Point(666, 634);
+            panel627.Location = new Point(670, 634);
             panel627.Name = "panel627";
-            panel627.Size = new Size(18, 23);
+            panel627.Size = new Size(17, 23);
             panel627.TabIndex = 542;
             // 
-            // panel628
+            // p144
             // 
-            panel628.BorderStyle = BorderStyle.FixedSingle;
-            panel628.Controls.Add(lblBKSpor);
-            panel628.Location = new Point(598, 634);
-            panel628.Name = "panel628";
-            panel628.Size = new Size(68, 23);
-            panel628.TabIndex = 541;
+            p144.BorderStyle = BorderStyle.FixedSingle;
+            p144.Controls.Add(lblBKSpor);
+            p144.Location = new Point(606, 634);
+            p144.Name = "p144";
+            p144.Size = new Size(64, 23);
+            p144.TabIndex = 541;
             // 
             // lblBKSpor
             // 
@@ -9850,16 +9890,16 @@
             lblBKSpor.Location = new Point(0, 3);
             lblBKSpor.Margin = new Padding(1, 0, 1, 0);
             lblBKSpor.Name = "lblBKSpor";
-            lblBKSpor.Size = new Size(66, 15);
+            lblBKSpor.Size = new Size(37, 15);
             lblBKSpor.TabIndex = 3;
-            lblBKSpor.Text = "99.999.999,99";
+            lblBKSpor.Text = "100000";
             // 
             // panel629
             // 
             panel629.BorderStyle = BorderStyle.FixedSingle;
-            panel629.Location = new Point(1097, 588);
+            panel629.Location = new Point(1081, 588);
             panel629.Name = "panel629";
-            panel629.Size = new Size(18, 23);
+            panel629.Size = new Size(17, 23);
             panel629.TabIndex = 540;
             // 
             // panel630
@@ -9867,7 +9907,7 @@
             panel630.BorderStyle = BorderStyle.FixedSingle;
             panel630.Controls.Add(label231);
             panel630.Controls.Add(label204);
-            panel630.Location = new Point(515, 634);
+            panel630.Location = new Point(523, 634);
             panel630.Name = "panel630";
             panel630.Size = new Size(83, 23);
             panel630.TabIndex = 527;
@@ -9900,7 +9940,7 @@
             panel631.Controls.Add(label182);
             panel631.Controls.Add(label193);
             panel631.Controls.Add(label205);
-            panel631.Location = new Point(515, 611);
+            panel631.Location = new Point(523, 611);
             panel631.Name = "panel631";
             panel631.Size = new Size(83, 23);
             panel631.TabIndex = 526;
@@ -9938,14 +9978,14 @@
             label205.TabIndex = 242;
             label205.Text = "GİDERİN CİNSİ";
             // 
-            // panel632
+            // p138
             // 
-            panel632.BorderStyle = BorderStyle.FixedSingle;
-            panel632.Controls.Add(lblIptalIcmeSulari);
-            panel632.Location = new Point(1029, 588);
-            panel632.Name = "panel632";
-            panel632.Size = new Size(68, 23);
-            panel632.TabIndex = 539;
+            p138.BorderStyle = BorderStyle.FixedSingle;
+            p138.Controls.Add(lblIptalIcmeSulari);
+            p138.Location = new Point(1017, 588);
+            p138.Name = "p138";
+            p138.Size = new Size(64, 23);
+            p138.TabIndex = 539;
             // 
             // lblIptalIcmeSulari
             // 
@@ -9953,26 +9993,26 @@
             lblIptalIcmeSulari.Location = new Point(0, 3);
             lblIptalIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblIptalIcmeSulari.Name = "lblIptalIcmeSulari";
-            lblIptalIcmeSulari.Size = new Size(66, 15);
+            lblIptalIcmeSulari.Size = new Size(12, 15);
             lblIptalIcmeSulari.TabIndex = 3;
-            lblIptalIcmeSulari.Text = "99.999.999,99";
+            lblIptalIcmeSulari.Text = "0";
             // 
             // panel633
             // 
             panel633.BorderStyle = BorderStyle.FixedSingle;
-            panel633.Location = new Point(1097, 611);
+            panel633.Location = new Point(1081, 611);
             panel633.Name = "panel633";
-            panel633.Size = new Size(18, 23);
+            panel633.Size = new Size(17, 23);
             panel633.TabIndex = 525;
             // 
-            // panel634
+            // p134
             // 
-            panel634.BorderStyle = BorderStyle.FixedSingle;
-            panel634.Controls.Add(lblBKIcmeSulari);
-            panel634.Location = new Point(598, 588);
-            panel634.Name = "panel634";
-            panel634.Size = new Size(68, 23);
-            panel634.TabIndex = 528;
+            p134.BorderStyle = BorderStyle.FixedSingle;
+            p134.Controls.Add(lblBKIcmeSulari);
+            p134.Location = new Point(606, 588);
+            p134.Name = "p134";
+            p134.Size = new Size(64, 23);
+            p134.TabIndex = 528;
             // 
             // lblBKIcmeSulari
             // 
@@ -9980,26 +10020,26 @@
             lblBKIcmeSulari.Location = new Point(0, 3);
             lblBKIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblBKIcmeSulari.Name = "lblBKIcmeSulari";
-            lblBKIcmeSulari.Size = new Size(66, 15);
+            lblBKIcmeSulari.Size = new Size(37, 15);
             lblBKIcmeSulari.TabIndex = 3;
-            lblBKIcmeSulari.Text = "99.999.999,99";
+            lblBKIcmeSulari.Text = "100000";
             // 
             // panel635
             // 
             panel635.BorderStyle = BorderStyle.FixedSingle;
-            panel635.Location = new Point(997, 588);
+            panel635.Location = new Point(985, 588);
             panel635.Name = "panel635";
             panel635.Size = new Size(32, 23);
             panel635.TabIndex = 538;
             // 
-            // panel636
+            // p143
             // 
-            panel636.BorderStyle = BorderStyle.FixedSingle;
-            panel636.Controls.Add(lblIptalTemizlik);
-            panel636.Location = new Point(1029, 611);
-            panel636.Name = "panel636";
-            panel636.Size = new Size(68, 23);
-            panel636.TabIndex = 524;
+            p143.BorderStyle = BorderStyle.FixedSingle;
+            p143.Controls.Add(lblIptalTemizlik);
+            p143.Location = new Point(1017, 611);
+            p143.Name = "p143";
+            p143.Size = new Size(64, 23);
+            p143.TabIndex = 524;
             // 
             // lblIptalTemizlik
             // 
@@ -10007,22 +10047,22 @@
             lblIptalTemizlik.Location = new Point(0, 3);
             lblIptalTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblIptalTemizlik.Name = "lblIptalTemizlik";
-            lblIptalTemizlik.Size = new Size(66, 15);
+            lblIptalTemizlik.Size = new Size(12, 15);
             lblIptalTemizlik.TabIndex = 3;
-            lblIptalTemizlik.Text = "99.999.999,99";
+            lblIptalTemizlik.Text = "0";
             // 
             // panel637
             // 
             panel637.BorderStyle = BorderStyle.FixedSingle;
-            panel637.Location = new Point(666, 588);
+            panel637.Location = new Point(670, 588);
             panel637.Name = "panel637";
-            panel637.Size = new Size(18, 23);
+            panel637.Size = new Size(17, 23);
             panel637.TabIndex = 529;
             // 
             // panel638
             // 
             panel638.BorderStyle = BorderStyle.FixedSingle;
-            panel638.Location = new Point(997, 611);
+            panel638.Location = new Point(985, 611);
             panel638.Name = "panel638";
             panel638.Size = new Size(32, 23);
             panel638.TabIndex = 523;
@@ -10030,27 +10070,27 @@
             // panel639
             // 
             panel639.BorderStyle = BorderStyle.FixedSingle;
-            panel639.Location = new Point(979, 588);
+            panel639.Location = new Point(968, 588);
             panel639.Name = "panel639";
-            panel639.Size = new Size(18, 23);
+            panel639.Size = new Size(17, 23);
             panel639.TabIndex = 537;
             // 
             // panel640
             // 
             panel640.BorderStyle = BorderStyle.FixedSingle;
-            panel640.Location = new Point(979, 611);
+            panel640.Location = new Point(968, 611);
             panel640.Name = "panel640";
-            panel640.Size = new Size(18, 23);
+            panel640.Size = new Size(17, 23);
             panel640.TabIndex = 522;
             // 
-            // panel641
+            // p135
             // 
-            panel641.BorderStyle = BorderStyle.FixedSingle;
-            panel641.Controls.Add(lblMunzamIcmeSulari);
-            panel641.Location = new Point(684, 588);
-            panel641.Name = "panel641";
-            panel641.Size = new Size(68, 23);
-            panel641.TabIndex = 530;
+            p135.BorderStyle = BorderStyle.FixedSingle;
+            p135.Controls.Add(lblMunzamIcmeSulari);
+            p135.Location = new Point(687, 588);
+            p135.Name = "p135";
+            p135.Size = new Size(64, 23);
+            p135.TabIndex = 530;
             // 
             // lblMunzamIcmeSulari
             // 
@@ -10058,18 +10098,18 @@
             lblMunzamIcmeSulari.Location = new Point(0, 3);
             lblMunzamIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIcmeSulari.Name = "lblMunzamIcmeSulari";
-            lblMunzamIcmeSulari.Size = new Size(66, 15);
+            lblMunzamIcmeSulari.Size = new Size(12, 15);
             lblMunzamIcmeSulari.TabIndex = 3;
-            lblMunzamIcmeSulari.Text = "99.999.999,99";
+            lblMunzamIcmeSulari.Text = "0";
             // 
-            // panel642
+            // p142
             // 
-            panel642.BorderStyle = BorderStyle.FixedSingle;
-            panel642.Controls.Add(lblOdenenTemizlik);
-            panel642.Location = new Point(911, 611);
-            panel642.Name = "panel642";
-            panel642.Size = new Size(68, 23);
-            panel642.TabIndex = 521;
+            p142.BorderStyle = BorderStyle.FixedSingle;
+            p142.Controls.Add(lblOdenenTemizlik);
+            p142.Location = new Point(904, 611);
+            p142.Name = "p142";
+            p142.Size = new Size(64, 23);
+            p142.TabIndex = 521;
             // 
             // lblOdenenTemizlik
             // 
@@ -10077,18 +10117,18 @@
             lblOdenenTemizlik.Location = new Point(0, 3);
             lblOdenenTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenTemizlik.Name = "lblOdenenTemizlik";
-            lblOdenenTemizlik.Size = new Size(66, 15);
+            lblOdenenTemizlik.Size = new Size(32, 15);
             lblOdenenTemizlik.TabIndex = 3;
-            lblOdenenTemizlik.Text = "99.999.999,99";
+            lblOdenenTemizlik.Text = "29022";
             // 
-            // panel643
+            // p137
             // 
-            panel643.BorderStyle = BorderStyle.FixedSingle;
-            panel643.Controls.Add(lblOdenenIcmeSulari);
-            panel643.Location = new Point(911, 588);
-            panel643.Name = "panel643";
-            panel643.Size = new Size(68, 23);
-            panel643.TabIndex = 536;
+            p137.BorderStyle = BorderStyle.FixedSingle;
+            p137.Controls.Add(lblOdenenIcmeSulari);
+            p137.Location = new Point(904, 588);
+            p137.Name = "p137";
+            p137.Size = new Size(64, 23);
+            p137.TabIndex = 536;
             // 
             // lblOdenenIcmeSulari
             // 
@@ -10096,34 +10136,34 @@
             lblOdenenIcmeSulari.Location = new Point(0, 3);
             lblOdenenIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIcmeSulari.Name = "lblOdenenIcmeSulari";
-            lblOdenenIcmeSulari.Size = new Size(66, 15);
+            lblOdenenIcmeSulari.Size = new Size(32, 15);
             lblOdenenIcmeSulari.TabIndex = 3;
-            lblOdenenIcmeSulari.Text = "99.999.999,99";
+            lblOdenenIcmeSulari.Text = "29022";
             // 
             // panel644
             // 
             panel644.BorderStyle = BorderStyle.FixedSingle;
-            panel644.Location = new Point(893, 611);
+            panel644.Location = new Point(887, 611);
             panel644.Name = "panel644";
-            panel644.Size = new Size(18, 23);
+            panel644.Size = new Size(17, 23);
             panel644.TabIndex = 520;
             // 
             // panel645
             // 
             panel645.BorderStyle = BorderStyle.FixedSingle;
-            panel645.Location = new Point(752, 588);
+            panel645.Location = new Point(751, 588);
             panel645.Name = "panel645";
-            panel645.Size = new Size(18, 23);
+            panel645.Size = new Size(17, 23);
             panel645.TabIndex = 531;
             // 
-            // panel646
+            // p141
             // 
-            panel646.BorderStyle = BorderStyle.FixedSingle;
-            panel646.Controls.Add(lblTahakkukTemizlik);
-            panel646.Location = new Point(825, 611);
-            panel646.Name = "panel646";
-            panel646.Size = new Size(68, 23);
-            panel646.TabIndex = 519;
+            p141.BorderStyle = BorderStyle.FixedSingle;
+            p141.Controls.Add(lblTahakkukTemizlik);
+            p141.Location = new Point(823, 611);
+            p141.Name = "p141";
+            p141.Size = new Size(64, 23);
+            p141.TabIndex = 519;
             // 
             // lblTahakkukTemizlik
             // 
@@ -10131,50 +10171,50 @@
             lblTahakkukTemizlik.Location = new Point(0, 3);
             lblTahakkukTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukTemizlik.Name = "lblTahakkukTemizlik";
-            lblTahakkukTemizlik.Size = new Size(66, 15);
+            lblTahakkukTemizlik.Size = new Size(12, 15);
             lblTahakkukTemizlik.TabIndex = 3;
-            lblTahakkukTemizlik.Text = "99.999.999,99";
+            lblTahakkukTemizlik.Text = "0";
             // 
             // panel647
             // 
             panel647.BorderStyle = BorderStyle.FixedSingle;
-            panel647.Location = new Point(893, 588);
+            panel647.Location = new Point(887, 588);
             panel647.Name = "panel647";
-            panel647.Size = new Size(18, 23);
+            panel647.Size = new Size(17, 23);
             panel647.TabIndex = 535;
             // 
             // panel648
             // 
             panel648.BorderStyle = BorderStyle.FixedSingle;
-            panel648.Location = new Point(805, 611);
+            panel648.Location = new Point(797, 611);
             panel648.Name = "panel648";
-            panel648.Size = new Size(20, 23);
+            panel648.Size = new Size(26, 23);
             panel648.TabIndex = 518;
             // 
             // panel649
             // 
             panel649.BorderStyle = BorderStyle.FixedSingle;
-            panel649.Location = new Point(770, 588);
+            panel649.Location = new Point(768, 588);
             panel649.Name = "panel649";
-            panel649.Size = new Size(35, 23);
+            panel649.Size = new Size(29, 23);
             panel649.TabIndex = 532;
             // 
             // panel650
             // 
             panel650.BorderStyle = BorderStyle.FixedSingle;
-            panel650.Location = new Point(770, 611);
+            panel650.Location = new Point(768, 611);
             panel650.Name = "panel650";
-            panel650.Size = new Size(35, 23);
+            panel650.Size = new Size(29, 23);
             panel650.TabIndex = 517;
             // 
-            // panel651
+            // p136
             // 
-            panel651.BorderStyle = BorderStyle.FixedSingle;
-            panel651.Controls.Add(lblTahakkukIcmeSulari);
-            panel651.Location = new Point(825, 588);
-            panel651.Name = "panel651";
-            panel651.Size = new Size(68, 23);
-            panel651.TabIndex = 534;
+            p136.BorderStyle = BorderStyle.FixedSingle;
+            p136.Controls.Add(lblTahakkukIcmeSulari);
+            p136.Location = new Point(823, 588);
+            p136.Name = "p136";
+            p136.Size = new Size(64, 23);
+            p136.TabIndex = 534;
             // 
             // lblTahakkukIcmeSulari
             // 
@@ -10182,34 +10222,34 @@
             lblTahakkukIcmeSulari.Location = new Point(0, 3);
             lblTahakkukIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIcmeSulari.Name = "lblTahakkukIcmeSulari";
-            lblTahakkukIcmeSulari.Size = new Size(66, 15);
+            lblTahakkukIcmeSulari.Size = new Size(12, 15);
             lblTahakkukIcmeSulari.TabIndex = 3;
-            lblTahakkukIcmeSulari.Text = "99.999.999,99";
+            lblTahakkukIcmeSulari.Text = "0";
             // 
             // panel652
             // 
             panel652.BorderStyle = BorderStyle.FixedSingle;
-            panel652.Location = new Point(752, 611);
+            panel652.Location = new Point(751, 611);
             panel652.Name = "panel652";
-            panel652.Size = new Size(18, 23);
+            panel652.Size = new Size(17, 23);
             panel652.TabIndex = 516;
             // 
             // panel653
             // 
             panel653.BorderStyle = BorderStyle.FixedSingle;
-            panel653.Location = new Point(805, 588);
+            panel653.Location = new Point(797, 588);
             panel653.Name = "panel653";
-            panel653.Size = new Size(20, 23);
+            panel653.Size = new Size(26, 23);
             panel653.TabIndex = 533;
             // 
-            // panel654
+            // p140
             // 
-            panel654.BorderStyle = BorderStyle.FixedSingle;
-            panel654.Controls.Add(lblMunzamTemizlik);
-            panel654.Location = new Point(684, 611);
-            panel654.Name = "panel654";
-            panel654.Size = new Size(68, 23);
-            panel654.TabIndex = 515;
+            p140.BorderStyle = BorderStyle.FixedSingle;
+            p140.Controls.Add(lblMunzamTemizlik);
+            p140.Location = new Point(687, 611);
+            p140.Name = "p140";
+            p140.Size = new Size(64, 23);
+            p140.TabIndex = 515;
             // 
             // lblMunzamTemizlik
             // 
@@ -10217,26 +10257,26 @@
             lblMunzamTemizlik.Location = new Point(0, 3);
             lblMunzamTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblMunzamTemizlik.Name = "lblMunzamTemizlik";
-            lblMunzamTemizlik.Size = new Size(66, 15);
+            lblMunzamTemizlik.Size = new Size(12, 15);
             lblMunzamTemizlik.TabIndex = 3;
-            lblMunzamTemizlik.Text = "99.999.999,99";
+            lblMunzamTemizlik.Text = "0";
             // 
             // panel655
             // 
             panel655.BorderStyle = BorderStyle.FixedSingle;
-            panel655.Location = new Point(666, 611);
+            panel655.Location = new Point(670, 611);
             panel655.Name = "panel655";
-            panel655.Size = new Size(18, 23);
+            panel655.Size = new Size(17, 23);
             panel655.TabIndex = 514;
             // 
-            // panel656
+            // p139
             // 
-            panel656.BorderStyle = BorderStyle.FixedSingle;
-            panel656.Controls.Add(lblBKTemizlik);
-            panel656.Location = new Point(598, 611);
-            panel656.Name = "panel656";
-            panel656.Size = new Size(68, 23);
-            panel656.TabIndex = 513;
+            p139.BorderStyle = BorderStyle.FixedSingle;
+            p139.Controls.Add(lblBKTemizlik);
+            p139.Location = new Point(606, 611);
+            p139.Name = "p139";
+            p139.Size = new Size(64, 23);
+            p139.TabIndex = 513;
             // 
             // lblBKTemizlik
             // 
@@ -10244,26 +10284,16 @@
             lblBKTemizlik.Location = new Point(0, 3);
             lblBKTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblBKTemizlik.Name = "lblBKTemizlik";
-            lblBKTemizlik.Size = new Size(66, 15);
+            lblBKTemizlik.Size = new Size(37, 15);
             lblBKTemizlik.TabIndex = 3;
-            lblBKTemizlik.Text = "99.999.999,99";
-            // 
-            // panel657
-            // 
-            panel657.BorderStyle = BorderStyle.FixedSingle;
-            panel657.Controls.Add(panel658);
-            panel657.Controls.Add(label207);
-            panel657.Location = new Point(515, 588);
-            panel657.Name = "panel657";
-            panel657.Size = new Size(83, 23);
-            panel657.TabIndex = 512;
+            lblBKTemizlik.Text = "100000";
             // 
             // panel658
             // 
             panel658.BorderStyle = BorderStyle.FixedSingle;
             panel658.Controls.Add(label229);
             panel658.Controls.Add(label206);
-            panel658.Location = new Point(-2, -1);
+            panel658.Location = new Point(523, 588);
             panel658.Name = "panel658";
             panel658.Size = new Size(83, 23);
             panel658.TabIndex = 245;
@@ -10290,17 +10320,6 @@
             label206.TabIndex = 242;
             label206.Text = "GİDERİN CİNSİ";
             // 
-            // label207
-            // 
-            label207.AutoSize = true;
-            label207.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label207.Location = new Point(9, 37);
-            label207.Margin = new Padding(1, 0, 1, 0);
-            label207.Name = "label207";
-            label207.Size = new Size(58, 13);
-            label207.TabIndex = 242;
-            label207.Text = "GİDERİN CİNSİ";
-            // 
             // panel659
             // 
             panel659.BorderStyle = BorderStyle.FixedSingle;
@@ -10308,10 +10327,10 @@
             panel659.Controls.Add(label211);
             panel659.Controls.Add(label212);
             panel659.Controls.Add(label213);
-            panel659.Location = new Point(494, 588);
+            panel659.Location = new Point(506, 588);
             panel659.Margin = new Padding(1, 3, 1, 3);
             panel659.Name = "panel659";
-            panel659.Size = new Size(21, 115);
+            panel659.Size = new Size(17, 115);
             panel659.TabIndex = 511;
             // 
             // label210
@@ -10358,10 +10377,10 @@
             // 
             panel660.BorderStyle = BorderStyle.FixedSingle;
             panel660.Controls.Add(label214);
-            panel660.Location = new Point(475, 588);
+            panel660.Location = new Point(489, 588);
             panel660.Margin = new Padding(1, 3, 1, 3);
             panel660.Name = "panel660";
-            panel660.Size = new Size(21, 115);
+            panel660.Size = new Size(17, 115);
             panel660.TabIndex = 510;
             // 
             // label214
@@ -10384,7 +10403,7 @@
             panel190.Controls.Add(label267);
             panel190.Location = new Point(751, 50);
             panel190.Name = "panel190";
-            panel190.Size = new Size(18, 66);
+            panel190.Size = new Size(17, 66);
             panel190.TabIndex = 584;
             // 
             // label263
@@ -10448,7 +10467,7 @@
             panel276.Controls.Add(label307);
             panel276.Controls.Add(label306);
             panel276.Controls.Add(label305);
-            panel276.Location = new Point(798, 50);
+            panel276.Location = new Point(797, 50);
             panel276.Name = "panel276";
             panel276.Size = new Size(26, 66);
             panel276.TabIndex = 585;
@@ -10495,9 +10514,9 @@
             panel277.Controls.Add(label275);
             panel277.Controls.Add(label276);
             panel277.Controls.Add(label277);
-            panel277.Location = new Point(892, 50);
+            panel277.Location = new Point(887, 50);
             panel277.Name = "panel277";
-            panel277.Size = new Size(18, 66);
+            panel277.Size = new Size(17, 66);
             panel277.TabIndex = 586;
             // 
             // label273
@@ -10563,9 +10582,9 @@
             panel280.Controls.Add(label280);
             panel280.Controls.Add(label281);
             panel280.Controls.Add(label282);
-            panel280.Location = new Point(978, 50);
+            panel280.Location = new Point(968, 50);
             panel280.Name = "panel280";
-            panel280.Size = new Size(18, 66);
+            panel280.Size = new Size(17, 66);
             panel280.TabIndex = 587;
             // 
             // label278
@@ -10631,9 +10650,9 @@
             panel281.Controls.Add(label285);
             panel281.Controls.Add(label286);
             panel281.Controls.Add(label287);
-            panel281.Location = new Point(1096, 50);
+            panel281.Location = new Point(1081, 50);
             panel281.Name = "panel281";
-            panel281.Size = new Size(18, 66);
+            panel281.Size = new Size(17, 66);
             panel281.TabIndex = 588;
             // 
             // label283
@@ -10691,14 +10710,14 @@
             label287.TabIndex = 254;
             label287.Text = "c";
             // 
-            // panel376
+            // p67
             // 
-            panel376.BorderStyle = BorderStyle.FixedSingle;
-            panel376.Controls.Add(lblTahakkukSulama);
-            panel376.Location = new Point(824, 224);
-            panel376.Name = "panel376";
-            panel376.Size = new Size(68, 23);
-            panel376.TabIndex = 318;
+            p67.BorderStyle = BorderStyle.FixedSingle;
+            p67.Controls.Add(lblTahakkukSulama);
+            p67.Location = new Point(823, 224);
+            p67.Name = "p67";
+            p67.Size = new Size(64, 23);
+            p67.TabIndex = 318;
             // 
             // lblTahakkukSulama
             // 
@@ -10706,33 +10725,1305 @@
             lblTahakkukSulama.Location = new Point(0, 3);
             lblTahakkukSulama.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukSulama.Name = "lblTahakkukSulama";
-            lblTahakkukSulama.Size = new Size(66, 15);
+            lblTahakkukSulama.Size = new Size(12, 15);
             lblTahakkukSulama.TabIndex = 3;
-            lblTahakkukSulama.Text = "99.999.999,99";
+            lblTahakkukSulama.Text = "0";
             // 
-            // panel204
+            // p40
             // 
-            panel204.BorderStyle = BorderStyle.FixedSingle;
-            panel204.Location = new Point(229, 532);
-            panel204.Margin = new Padding(1, 3, 1, 3);
-            panel204.Name = "panel204";
-            panel204.Size = new Size(66, 23);
-            panel204.TabIndex = 126;
+            p40.BorderStyle = BorderStyle.FixedSingle;
+            p40.Controls.Add(lblMunzamAsker);
+            p40.Location = new Point(191, 524);
+            p40.Margin = new Padding(1, 3, 1, 3);
+            p40.Name = "p40";
+            p40.Size = new Size(64, 23);
+            p40.TabIndex = 126;
             // 
-            // panel209
+            // lblMunzamAsker
             // 
-            panel209.BorderStyle = BorderStyle.FixedSingle;
-            panel209.Location = new Point(163, 555);
-            panel209.Margin = new Padding(1, 3, 1, 3);
-            panel209.Name = "panel209";
-            panel209.Size = new Size(66, 23);
-            panel209.TabIndex = 122;
+            lblMunzamAsker.AutoSize = true;
+            lblMunzamAsker.Font = new Font("Arial Narrow", 8.25F);
+            lblMunzamAsker.Location = new Point(-1, 3);
+            lblMunzamAsker.Margin = new Padding(1, 0, 1, 0);
+            lblMunzamAsker.Name = "lblMunzamAsker";
+            lblMunzamAsker.Size = new Size(12, 15);
+            lblMunzamAsker.TabIndex = 3;
+            lblMunzamAsker.Text = "0";
+            // 
+            // p43
+            // 
+            p43.BorderStyle = BorderStyle.FixedSingle;
+            p43.Controls.Add(lblBKAskerToplami);
+            p43.Location = new Point(127, 547);
+            p43.Margin = new Padding(1, 3, 1, 3);
+            p43.Name = "p43";
+            p43.Size = new Size(64, 23);
+            p43.TabIndex = 122;
+            // 
+            // lblBKAskerToplami
+            // 
+            lblBKAskerToplami.AutoSize = true;
+            lblBKAskerToplami.Font = new Font("Arial Narrow", 8.25F);
+            lblBKAskerToplami.Location = new Point(-1, 3);
+            lblBKAskerToplami.Margin = new Padding(1, 0, 1, 0);
+            lblBKAskerToplami.Name = "lblBKAskerToplami";
+            lblBKAskerToplami.Size = new Size(12, 15);
+            lblBKAskerToplami.TabIndex = 3;
+            lblBKAskerToplami.Text = "0";
+            // 
+            // label95
+            // 
+            label95.AutoSize = true;
+            label95.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label95.Location = new Point(-2, 9);
+            label95.Margin = new Padding(1, 0, 1, 0);
+            label95.Name = "label95";
+            label95.Size = new Size(34, 13);
+            label95.TabIndex = 255;
+            label95.Text = "ve Avarız";
+            // 
+            // label96
+            // 
+            label96.AutoSize = true;
+            label96.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label96.Location = new Point(-2, -1);
+            label96.Margin = new Padding(1, 0, 1, 0);
+            label96.Name = "label96";
+            label96.Size = new Size(35, 13);
+            label96.TabIndex = 256;
+            label96.Text = "Koy Vakıf";
+            // 
+            // label89
+            // 
+            label89.AutoSize = true;
+            label89.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
+            label89.Location = new Point(34, 3);
+            label89.Margin = new Padding(1, 0, 1, 0);
+            label89.Name = "label89";
+            label89.Size = new Size(46, 14);
+            label89.TabIndex = 86;
+            label89.Text = "(ARAÇ)";
+            // 
+            // label97
+            // 
+            label97.AutoSize = true;
+            label97.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label97.Location = new Point(-2, 9);
+            label97.Margin = new Padding(1, 0, 1, 0);
+            label97.Name = "label97";
+            label97.Size = new Size(56, 13);
+            label97.TabIndex = 255;
+            label97.Text = "Ailelerine Yardım";
+            // 
+            // label98
+            // 
+            label98.AutoSize = true;
+            label98.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label98.Location = new Point(-2, -1);
+            label98.Margin = new Padding(1, 0, 1, 0);
+            label98.Name = "label98";
+            label98.Size = new Size(47, 13);
+            label98.TabIndex = 256;
+            label98.Text = "Muhtaç Asker";
+            // 
+            // label115
+            // 
+            label115.AutoSize = true;
+            label115.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label115.Location = new Point(-2, 9);
+            label115.Margin = new Padding(1, 0, 1, 0);
+            label115.Name = "label115";
+            label115.Size = new Size(36, 13);
+            label115.TabIndex = 257;
+            label115.Text = "Müdevver";
+            // 
+            // label116
+            // 
+            label116.AutoSize = true;
+            label116.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label116.Location = new Point(-2, -1);
+            label116.Margin = new Padding(1, 0, 1, 0);
+            label116.Name = "label116";
+            label116.Size = new Size(57, 13);
+            label116.TabIndex = 258;
+            label116.Text = "Geçen Seneden";
+            // 
+            // panel86
+            // 
+            panel86.BorderStyle = BorderStyle.FixedSingle;
+            panel86.Controls.Add(panel87);
+            panel86.Controls.Add(panel88);
+            panel86.Controls.Add(panel89);
+            panel86.Location = new Point(255, 119);
+            panel86.Margin = new Padding(1, 3, 1, 3);
+            panel86.Name = "panel86";
+            panel86.Size = new Size(64, 23);
+            panel86.TabIndex = 589;
+            // 
+            // panel87
+            // 
+            panel87.BorderStyle = BorderStyle.FixedSingle;
+            panel87.Location = new Point(76, 49);
+            panel87.Margin = new Padding(1, 3, 1, 3);
+            panel87.Name = "panel87";
+            panel87.Size = new Size(79, 26);
+            panel87.TabIndex = 22;
+            // 
+            // panel88
+            // 
+            panel88.BorderStyle = BorderStyle.FixedSingle;
+            panel88.Location = new Point(76, 1);
+            panel88.Margin = new Padding(1, 3, 1, 3);
+            panel88.Name = "panel88";
+            panel88.Size = new Size(79, 25);
+            panel88.TabIndex = 24;
+            // 
+            // panel89
+            // 
+            panel89.BorderStyle = BorderStyle.FixedSingle;
+            panel89.Location = new Point(76, 25);
+            panel89.Margin = new Padding(1, 3, 1, 3);
+            panel89.Name = "panel89";
+            panel89.Size = new Size(79, 25);
+            panel89.TabIndex = 23;
+            // 
+            // panel54
+            // 
+            panel54.BorderStyle = BorderStyle.FixedSingle;
+            panel54.Location = new Point(76, 25);
+            panel54.Margin = new Padding(1, 3, 1, 3);
+            panel54.Name = "panel54";
+            panel54.Size = new Size(79, 25);
+            panel54.TabIndex = 23;
+            // 
+            // panel53
+            // 
+            panel53.BorderStyle = BorderStyle.FixedSingle;
+            panel53.Location = new Point(76, 1);
+            panel53.Margin = new Padding(1, 3, 1, 3);
+            panel53.Name = "panel53";
+            panel53.Size = new Size(79, 25);
+            panel53.TabIndex = 24;
+            // 
+            // panel52
+            // 
+            panel52.BorderStyle = BorderStyle.FixedSingle;
+            panel52.Location = new Point(76, 49);
+            panel52.Margin = new Padding(1, 3, 1, 3);
+            panel52.Name = "panel52";
+            panel52.Size = new Size(79, 26);
+            panel52.TabIndex = 22;
+            // 
+            // panel51
+            // 
+            panel51.BorderStyle = BorderStyle.FixedSingle;
+            panel51.Controls.Add(panel52);
+            panel51.Controls.Add(panel53);
+            panel51.Controls.Add(panel54);
+            panel51.Location = new Point(352, 119);
+            panel51.Margin = new Padding(1, 3, 1, 3);
+            panel51.Name = "panel51";
+            panel51.Size = new Size(64, 23);
+            panel51.TabIndex = 30;
+            // 
+            // panel36
+            // 
+            panel36.BorderStyle = BorderStyle.FixedSingle;
+            panel36.Location = new Point(76, 25);
+            panel36.Margin = new Padding(1, 3, 1, 3);
+            panel36.Name = "panel36";
+            panel36.Size = new Size(79, 25);
+            panel36.TabIndex = 23;
+            // 
+            // panel35
+            // 
+            panel35.BorderStyle = BorderStyle.FixedSingle;
+            panel35.Location = new Point(76, 1);
+            panel35.Margin = new Padding(1, 3, 1, 3);
+            panel35.Name = "panel35";
+            panel35.Size = new Size(79, 25);
+            panel35.TabIndex = 24;
+            // 
+            // panel34
+            // 
+            panel34.BorderStyle = BorderStyle.FixedSingle;
+            panel34.Location = new Point(76, 49);
+            panel34.Margin = new Padding(1, 3, 1, 3);
+            panel34.Name = "panel34";
+            panel34.Size = new Size(79, 26);
+            panel34.TabIndex = 22;
+            // 
+            // panel33
+            // 
+            panel33.BorderStyle = BorderStyle.FixedSingle;
+            panel33.Controls.Add(panel34);
+            panel33.Controls.Add(panel35);
+            panel33.Controls.Add(panel36);
+            panel33.Location = new Point(191, 119);
+            panel33.Margin = new Padding(1, 3, 1, 3);
+            panel33.Name = "panel33";
+            panel33.Size = new Size(64, 23);
+            panel33.TabIndex = 27;
+            // 
+            // label111
+            // 
+            label111.AutoSize = true;
+            label111.Location = new Point(14, 23);
+            label111.Margin = new Padding(1, 0, 1, 0);
+            label111.Name = "label111";
+            label111.Size = new Size(33, 15);
+            label111.TabIndex = 2;
+            label111.Text = "Konan";
+            // 
+            // label117
+            // 
+            label117.AutoSize = true;
+            label117.Location = new Point(11, 23);
+            label117.Margin = new Padding(1, 0, 1, 0);
+            label117.Name = "label117";
+            label117.Size = new Size(43, 15);
+            label117.TabIndex = 2;
+            label117.Text = "Munzam";
+            // 
+            // label118
+            // 
+            label118.AutoSize = true;
+            label118.Location = new Point(14, 23);
+            label118.Margin = new Padding(1, 0, 1, 0);
+            label118.Name = "label118";
+            label118.Size = new Size(36, 15);
+            label118.TabIndex = 2;
+            label118.Text = "Olunan";
+            // 
+            // panel90
+            // 
+            panel90.BorderStyle = BorderStyle.FixedSingle;
+            panel90.Controls.Add(label119);
+            panel90.Controls.Add(label127);
+            panel90.Location = new Point(255, 36);
+            panel90.Margin = new Padding(1, 3, 1, 3);
+            panel90.Name = "panel90";
+            panel90.Size = new Size(64, 63);
+            panel90.TabIndex = 590;
+            // 
+            // label119
+            // 
+            label119.AutoSize = true;
+            label119.Location = new Point(14, 17);
+            label119.Margin = new Padding(1, 0, 1, 0);
+            label119.Name = "label119";
+            label119.Size = new Size(33, 15);
+            label119.TabIndex = 2;
+            label119.Text = "Yekün";
+            // 
+            // label127
+            // 
+            label127.AutoSize = true;
+            label127.Location = new Point(22, 40);
+            label127.Margin = new Padding(1, 0, 1, 0);
+            label127.Name = "label127";
+            label127.Size = new Size(18, 15);
+            label127.TabIndex = 1;
+            label127.Text = "TL";
+            // 
+            // panel91
+            // 
+            panel91.BorderStyle = BorderStyle.FixedSingle;
+            panel91.Controls.Add(panel92);
+            panel91.Controls.Add(panel93);
+            panel91.Controls.Add(panel94);
+            panel91.Location = new Point(255, 142);
+            panel91.Margin = new Padding(1, 3, 1, 3);
+            panel91.Name = "panel91";
+            panel91.Size = new Size(64, 23);
+            panel91.TabIndex = 591;
+            // 
+            // panel92
+            // 
+            panel92.BorderStyle = BorderStyle.FixedSingle;
+            panel92.Location = new Point(76, 49);
+            panel92.Margin = new Padding(1, 3, 1, 3);
+            panel92.Name = "panel92";
+            panel92.Size = new Size(79, 26);
+            panel92.TabIndex = 22;
+            // 
+            // panel93
+            // 
+            panel93.BorderStyle = BorderStyle.FixedSingle;
+            panel93.Location = new Point(76, 1);
+            panel93.Margin = new Padding(1, 3, 1, 3);
+            panel93.Name = "panel93";
+            panel93.Size = new Size(79, 25);
+            panel93.TabIndex = 24;
+            // 
+            // panel94
+            // 
+            panel94.BorderStyle = BorderStyle.FixedSingle;
+            panel94.Location = new Point(76, 25);
+            panel94.Margin = new Padding(1, 3, 1, 3);
+            panel94.Name = "panel94";
+            panel94.Size = new Size(79, 25);
+            panel94.TabIndex = 23;
+            // 
+            // panel99
+            // 
+            panel99.BorderStyle = BorderStyle.FixedSingle;
+            panel99.Controls.Add(panel100);
+            panel99.Controls.Add(panel101);
+            panel99.Controls.Add(panel102);
+            panel99.Location = new Point(255, 165);
+            panel99.Margin = new Padding(1, 3, 1, 3);
+            panel99.Name = "panel99";
+            panel99.Size = new Size(64, 23);
+            panel99.TabIndex = 592;
+            // 
+            // panel100
+            // 
+            panel100.BorderStyle = BorderStyle.FixedSingle;
+            panel100.Location = new Point(76, 49);
+            panel100.Margin = new Padding(1, 3, 1, 3);
+            panel100.Name = "panel100";
+            panel100.Size = new Size(79, 26);
+            panel100.TabIndex = 22;
+            // 
+            // panel101
+            // 
+            panel101.BorderStyle = BorderStyle.FixedSingle;
+            panel101.Location = new Point(76, 1);
+            panel101.Margin = new Padding(1, 3, 1, 3);
+            panel101.Name = "panel101";
+            panel101.Size = new Size(79, 25);
+            panel101.TabIndex = 24;
+            // 
+            // panel102
+            // 
+            panel102.BorderStyle = BorderStyle.FixedSingle;
+            panel102.Location = new Point(76, 25);
+            panel102.Margin = new Padding(1, 3, 1, 3);
+            panel102.Name = "panel102";
+            panel102.Size = new Size(79, 25);
+            panel102.TabIndex = 23;
+            // 
+            // panel95
+            // 
+            panel95.BorderStyle = BorderStyle.FixedSingle;
+            panel95.Controls.Add(panel96);
+            panel95.Controls.Add(panel97);
+            panel95.Controls.Add(panel98);
+            panel95.Location = new Point(255, 254);
+            panel95.Margin = new Padding(1, 3, 1, 3);
+            panel95.Name = "panel95";
+            panel95.Size = new Size(64, 23);
+            panel95.TabIndex = 595;
+            // 
+            // panel96
+            // 
+            panel96.BorderStyle = BorderStyle.FixedSingle;
+            panel96.Location = new Point(76, 49);
+            panel96.Margin = new Padding(1, 3, 1, 3);
+            panel96.Name = "panel96";
+            panel96.Size = new Size(79, 26);
+            panel96.TabIndex = 22;
+            // 
+            // panel97
+            // 
+            panel97.BorderStyle = BorderStyle.FixedSingle;
+            panel97.Location = new Point(76, 1);
+            panel97.Margin = new Padding(1, 3, 1, 3);
+            panel97.Name = "panel97";
+            panel97.Size = new Size(79, 25);
+            panel97.TabIndex = 24;
+            // 
+            // panel98
+            // 
+            panel98.BorderStyle = BorderStyle.FixedSingle;
+            panel98.Location = new Point(76, 25);
+            panel98.Margin = new Padding(1, 3, 1, 3);
+            panel98.Name = "panel98";
+            panel98.Size = new Size(79, 25);
+            panel98.TabIndex = 23;
+            // 
+            // panel103
+            // 
+            panel103.BorderStyle = BorderStyle.FixedSingle;
+            panel103.Controls.Add(panel104);
+            panel103.Controls.Add(panel105);
+            panel103.Controls.Add(panel106);
+            panel103.Location = new Point(255, 231);
+            panel103.Margin = new Padding(1, 3, 1, 3);
+            panel103.Name = "panel103";
+            panel103.Size = new Size(64, 23);
+            panel103.TabIndex = 594;
+            // 
+            // panel104
+            // 
+            panel104.BorderStyle = BorderStyle.FixedSingle;
+            panel104.Location = new Point(76, 49);
+            panel104.Margin = new Padding(1, 3, 1, 3);
+            panel104.Name = "panel104";
+            panel104.Size = new Size(79, 26);
+            panel104.TabIndex = 22;
+            // 
+            // panel105
+            // 
+            panel105.BorderStyle = BorderStyle.FixedSingle;
+            panel105.Location = new Point(76, 1);
+            panel105.Margin = new Padding(1, 3, 1, 3);
+            panel105.Name = "panel105";
+            panel105.Size = new Size(79, 25);
+            panel105.TabIndex = 24;
+            // 
+            // panel106
+            // 
+            panel106.BorderStyle = BorderStyle.FixedSingle;
+            panel106.Location = new Point(76, 25);
+            panel106.Margin = new Padding(1, 3, 1, 3);
+            panel106.Name = "panel106";
+            panel106.Size = new Size(79, 25);
+            panel106.TabIndex = 23;
+            // 
+            // panel107
+            // 
+            panel107.BorderStyle = BorderStyle.FixedSingle;
+            panel107.Controls.Add(panel108);
+            panel107.Controls.Add(panel134);
+            panel107.Controls.Add(panel135);
+            panel107.Location = new Point(255, 208);
+            panel107.Margin = new Padding(1, 3, 1, 3);
+            panel107.Name = "panel107";
+            panel107.Size = new Size(64, 23);
+            panel107.TabIndex = 593;
+            // 
+            // panel108
+            // 
+            panel108.BorderStyle = BorderStyle.FixedSingle;
+            panel108.Location = new Point(76, 49);
+            panel108.Margin = new Padding(1, 3, 1, 3);
+            panel108.Name = "panel108";
+            panel108.Size = new Size(79, 26);
+            panel108.TabIndex = 22;
+            // 
+            // panel134
+            // 
+            panel134.BorderStyle = BorderStyle.FixedSingle;
+            panel134.Location = new Point(76, 1);
+            panel134.Margin = new Padding(1, 3, 1, 3);
+            panel134.Name = "panel134";
+            panel134.Size = new Size(79, 25);
+            panel134.TabIndex = 24;
+            // 
+            // panel135
+            // 
+            panel135.BorderStyle = BorderStyle.FixedSingle;
+            panel135.Location = new Point(76, 25);
+            panel135.Margin = new Padding(1, 3, 1, 3);
+            panel135.Name = "panel135";
+            panel135.Size = new Size(79, 25);
+            panel135.TabIndex = 23;
+            // 
+            // p164
+            // 
+            p164.BorderStyle = BorderStyle.FixedSingle;
+            p164.Controls.Add(lblYekunIstikraz);
+            p164.Controls.Add(panel140);
+            p164.Controls.Add(panel141);
+            p164.Controls.Add(panel142);
+            p164.Location = new Point(255, 412);
+            p164.Margin = new Padding(1, 3, 1, 3);
+            p164.Name = "p164";
+            p164.Size = new Size(64, 23);
+            p164.TabIndex = 601;
+            // 
+            // panel140
+            // 
+            panel140.BorderStyle = BorderStyle.FixedSingle;
+            panel140.Location = new Point(76, 49);
+            panel140.Margin = new Padding(1, 3, 1, 3);
+            panel140.Name = "panel140";
+            panel140.Size = new Size(79, 26);
+            panel140.TabIndex = 22;
+            // 
+            // panel141
+            // 
+            panel141.BorderStyle = BorderStyle.FixedSingle;
+            panel141.Location = new Point(76, 1);
+            panel141.Margin = new Padding(1, 3, 1, 3);
+            panel141.Name = "panel141";
+            panel141.Size = new Size(79, 25);
+            panel141.TabIndex = 24;
+            // 
+            // panel142
+            // 
+            panel142.BorderStyle = BorderStyle.FixedSingle;
+            panel142.Location = new Point(76, 25);
+            panel142.Margin = new Padding(1, 3, 1, 3);
+            panel142.Name = "panel142";
+            panel142.Size = new Size(79, 25);
+            panel142.TabIndex = 23;
+            // 
+            // p163
+            // 
+            p163.BorderStyle = BorderStyle.FixedSingle;
+            p163.Controls.Add(lblYekunKoyVakif);
+            p163.Controls.Add(panel147);
+            p163.Controls.Add(panel148);
+            p163.Controls.Add(panel152);
+            p163.Location = new Point(255, 389);
+            p163.Margin = new Padding(1, 3, 1, 3);
+            p163.Name = "p163";
+            p163.Size = new Size(64, 23);
+            p163.TabIndex = 600;
+            // 
+            // panel147
+            // 
+            panel147.BorderStyle = BorderStyle.FixedSingle;
+            panel147.Location = new Point(76, 49);
+            panel147.Margin = new Padding(1, 3, 1, 3);
+            panel147.Name = "panel147";
+            panel147.Size = new Size(79, 26);
+            panel147.TabIndex = 22;
+            // 
+            // panel148
+            // 
+            panel148.BorderStyle = BorderStyle.FixedSingle;
+            panel148.Location = new Point(76, 1);
+            panel148.Margin = new Padding(1, 3, 1, 3);
+            panel148.Name = "panel148";
+            panel148.Size = new Size(79, 25);
+            panel148.TabIndex = 24;
+            // 
+            // panel152
+            // 
+            panel152.BorderStyle = BorderStyle.FixedSingle;
+            panel152.Location = new Point(76, 25);
+            panel152.Margin = new Padding(1, 3, 1, 3);
+            panel152.Name = "panel152";
+            panel152.Size = new Size(79, 25);
+            panel152.TabIndex = 23;
+            // 
+            // p162
+            // 
+            p162.BorderStyle = BorderStyle.FixedSingle;
+            p162.Controls.Add(lblYekunYardim);
+            p162.Controls.Add(panel154);
+            p162.Controls.Add(panel159);
+            p162.Controls.Add(panel160);
+            p162.Location = new Point(255, 366);
+            p162.Margin = new Padding(1, 3, 1, 3);
+            p162.Name = "p162";
+            p162.Size = new Size(64, 23);
+            p162.TabIndex = 599;
+            // 
+            // panel154
+            // 
+            panel154.BorderStyle = BorderStyle.FixedSingle;
+            panel154.Location = new Point(76, 49);
+            panel154.Margin = new Padding(1, 3, 1, 3);
+            panel154.Name = "panel154";
+            panel154.Size = new Size(79, 26);
+            panel154.TabIndex = 22;
+            // 
+            // panel159
+            // 
+            panel159.BorderStyle = BorderStyle.FixedSingle;
+            panel159.Location = new Point(76, 1);
+            panel159.Margin = new Padding(1, 3, 1, 3);
+            panel159.Name = "panel159";
+            panel159.Size = new Size(79, 25);
+            panel159.TabIndex = 24;
+            // 
+            // panel160
+            // 
+            panel160.BorderStyle = BorderStyle.FixedSingle;
+            panel160.Location = new Point(76, 25);
+            panel160.Margin = new Padding(1, 3, 1, 3);
+            panel160.Name = "panel160";
+            panel160.Size = new Size(79, 25);
+            panel160.TabIndex = 23;
+            // 
+            // p161
+            // 
+            p161.BorderStyle = BorderStyle.FixedSingle;
+            p161.Controls.Add(lblYekunCeza);
+            p161.Controls.Add(panel162);
+            p161.Controls.Add(panel164);
+            p161.Controls.Add(panel165);
+            p161.Location = new Point(255, 343);
+            p161.Margin = new Padding(1, 3, 1, 3);
+            p161.Name = "p161";
+            p161.Size = new Size(64, 23);
+            p161.TabIndex = 598;
+            // 
+            // panel162
+            // 
+            panel162.BorderStyle = BorderStyle.FixedSingle;
+            panel162.Location = new Point(76, 49);
+            panel162.Margin = new Padding(1, 3, 1, 3);
+            panel162.Name = "panel162";
+            panel162.Size = new Size(79, 26);
+            panel162.TabIndex = 22;
+            // 
+            // panel164
+            // 
+            panel164.BorderStyle = BorderStyle.FixedSingle;
+            panel164.Location = new Point(76, 1);
+            panel164.Margin = new Padding(1, 3, 1, 3);
+            panel164.Name = "panel164";
+            panel164.Size = new Size(79, 25);
+            panel164.TabIndex = 24;
+            // 
+            // panel165
+            // 
+            panel165.BorderStyle = BorderStyle.FixedSingle;
+            panel165.Location = new Point(76, 25);
+            panel165.Margin = new Padding(1, 3, 1, 3);
+            panel165.Name = "panel165";
+            panel165.Size = new Size(79, 25);
+            panel165.TabIndex = 23;
+            // 
+            // p160
+            // 
+            p160.BorderStyle = BorderStyle.FixedSingle;
+            p160.Controls.Add(lblYekunResim);
+            p160.Controls.Add(panel167);
+            p160.Controls.Add(panel169);
+            p160.Controls.Add(panel170);
+            p160.Location = new Point(255, 320);
+            p160.Margin = new Padding(1, 3, 1, 3);
+            p160.Name = "p160";
+            p160.Size = new Size(64, 23);
+            p160.TabIndex = 597;
+            // 
+            // panel167
+            // 
+            panel167.BorderStyle = BorderStyle.FixedSingle;
+            panel167.Location = new Point(76, 49);
+            panel167.Margin = new Padding(1, 3, 1, 3);
+            panel167.Name = "panel167";
+            panel167.Size = new Size(79, 26);
+            panel167.TabIndex = 22;
+            // 
+            // panel169
+            // 
+            panel169.BorderStyle = BorderStyle.FixedSingle;
+            panel169.Location = new Point(76, 1);
+            panel169.Margin = new Padding(1, 3, 1, 3);
+            panel169.Name = "panel169";
+            panel169.Size = new Size(79, 25);
+            panel169.TabIndex = 24;
+            // 
+            // panel170
+            // 
+            panel170.BorderStyle = BorderStyle.FixedSingle;
+            panel170.Location = new Point(76, 25);
+            panel170.Margin = new Padding(1, 3, 1, 3);
+            panel170.Name = "panel170";
+            panel170.Size = new Size(79, 25);
+            panel170.TabIndex = 23;
+            // 
+            // p159
+            // 
+            p159.BorderStyle = BorderStyle.FixedSingle;
+            p159.Controls.Add(lblYekunHasilat);
+            p159.Controls.Add(panel172);
+            p159.Controls.Add(panel191);
+            p159.Controls.Add(panel192);
+            p159.Location = new Point(255, 297);
+            p159.Margin = new Padding(1, 3, 1, 3);
+            p159.Name = "p159";
+            p159.Size = new Size(64, 23);
+            p159.TabIndex = 596;
+            // 
+            // panel172
+            // 
+            panel172.BorderStyle = BorderStyle.FixedSingle;
+            panel172.Location = new Point(76, 49);
+            panel172.Margin = new Padding(1, 3, 1, 3);
+            panel172.Name = "panel172";
+            panel172.Size = new Size(79, 26);
+            panel172.TabIndex = 22;
+            // 
+            // panel191
+            // 
+            panel191.BorderStyle = BorderStyle.FixedSingle;
+            panel191.Location = new Point(76, 1);
+            panel191.Margin = new Padding(1, 3, 1, 3);
+            panel191.Name = "panel191";
+            panel191.Size = new Size(79, 25);
+            panel191.TabIndex = 24;
+            // 
+            // panel192
+            // 
+            panel192.BorderStyle = BorderStyle.FixedSingle;
+            panel192.Location = new Point(76, 25);
+            panel192.Margin = new Padding(1, 3, 1, 3);
+            panel192.Name = "panel192";
+            panel192.Size = new Size(79, 25);
+            panel192.TabIndex = 23;
+            // 
+            // p167
+            // 
+            p167.BorderStyle = BorderStyle.FixedSingle;
+            p167.Controls.Add(lblYekunToplami);
+            p167.Controls.Add(panel194);
+            p167.Controls.Add(panel195);
+            p167.Controls.Add(panel197);
+            p167.Location = new Point(255, 481);
+            p167.Margin = new Padding(1, 3, 1, 3);
+            p167.Name = "p167";
+            p167.Size = new Size(64, 23);
+            p167.TabIndex = 604;
+            // 
+            // panel194
+            // 
+            panel194.BorderStyle = BorderStyle.FixedSingle;
+            panel194.Location = new Point(76, 49);
+            panel194.Margin = new Padding(1, 3, 1, 3);
+            panel194.Name = "panel194";
+            panel194.Size = new Size(79, 26);
+            panel194.TabIndex = 22;
+            // 
+            // panel195
+            // 
+            panel195.BorderStyle = BorderStyle.FixedSingle;
+            panel195.Location = new Point(76, 1);
+            panel195.Margin = new Padding(1, 3, 1, 3);
+            panel195.Name = "panel195";
+            panel195.Size = new Size(79, 25);
+            panel195.TabIndex = 24;
+            // 
+            // panel197
+            // 
+            panel197.BorderStyle = BorderStyle.FixedSingle;
+            panel197.Location = new Point(76, 25);
+            panel197.Margin = new Padding(1, 3, 1, 3);
+            panel197.Name = "panel197";
+            panel197.Size = new Size(79, 25);
+            panel197.TabIndex = 23;
+            // 
+            // p166
+            // 
+            p166.BorderStyle = BorderStyle.FixedSingle;
+            p166.Controls.Add(lblYekunDevir);
+            p166.Controls.Add(panel199);
+            p166.Controls.Add(panel200);
+            p166.Controls.Add(panel201);
+            p166.Location = new Point(255, 458);
+            p166.Margin = new Padding(1, 3, 1, 3);
+            p166.Name = "p166";
+            p166.Size = new Size(64, 23);
+            p166.TabIndex = 603;
+            // 
+            // panel199
+            // 
+            panel199.BorderStyle = BorderStyle.FixedSingle;
+            panel199.Location = new Point(76, 49);
+            panel199.Margin = new Padding(1, 3, 1, 3);
+            panel199.Name = "panel199";
+            panel199.Size = new Size(79, 26);
+            panel199.TabIndex = 22;
+            // 
+            // panel200
+            // 
+            panel200.BorderStyle = BorderStyle.FixedSingle;
+            panel200.Location = new Point(76, 1);
+            panel200.Margin = new Padding(1, 3, 1, 3);
+            panel200.Name = "panel200";
+            panel200.Size = new Size(79, 25);
+            panel200.TabIndex = 24;
+            // 
+            // panel201
+            // 
+            panel201.BorderStyle = BorderStyle.FixedSingle;
+            panel201.Location = new Point(76, 25);
+            panel201.Margin = new Padding(1, 3, 1, 3);
+            panel201.Name = "panel201";
+            panel201.Size = new Size(79, 25);
+            panel201.TabIndex = 23;
+            // 
+            // p165
+            // 
+            p165.BorderStyle = BorderStyle.FixedSingle;
+            p165.Controls.Add(lblYekunTurluGelir);
+            p165.Controls.Add(panel205);
+            p165.Controls.Add(panel206);
+            p165.Controls.Add(panel207);
+            p165.Location = new Point(255, 435);
+            p165.Margin = new Padding(1, 3, 1, 3);
+            p165.Name = "p165";
+            p165.Size = new Size(64, 23);
+            p165.TabIndex = 602;
+            // 
+            // panel205
+            // 
+            panel205.BorderStyle = BorderStyle.FixedSingle;
+            panel205.Location = new Point(76, 49);
+            panel205.Margin = new Padding(1, 3, 1, 3);
+            panel205.Name = "panel205";
+            panel205.Size = new Size(79, 26);
+            panel205.TabIndex = 22;
+            // 
+            // panel206
+            // 
+            panel206.BorderStyle = BorderStyle.FixedSingle;
+            panel206.Location = new Point(76, 1);
+            panel206.Margin = new Padding(1, 3, 1, 3);
+            panel206.Name = "panel206";
+            panel206.Size = new Size(79, 25);
+            panel206.TabIndex = 24;
+            // 
+            // panel207
+            // 
+            panel207.BorderStyle = BorderStyle.FixedSingle;
+            panel207.Location = new Point(76, 25);
+            panel207.Margin = new Padding(1, 3, 1, 3);
+            panel207.Name = "panel207";
+            panel207.Size = new Size(79, 25);
+            panel207.TabIndex = 23;
+            // 
+            // p174
+            // 
+            p174.BorderStyle = BorderStyle.FixedSingle;
+            p174.Controls.Add(panel210);
+            p174.Controls.Add(panel211);
+            p174.Controls.Add(panel212);
+            p174.Location = new Point(255, 636);
+            p174.Margin = new Padding(1, 3, 1, 3);
+            p174.Name = "p174";
+            p174.Size = new Size(64, 23);
+            p174.TabIndex = 609;
+            // 
+            // panel210
+            // 
+            panel210.BorderStyle = BorderStyle.FixedSingle;
+            panel210.Location = new Point(76, 49);
+            panel210.Margin = new Padding(1, 3, 1, 3);
+            panel210.Name = "panel210";
+            panel210.Size = new Size(79, 26);
+            panel210.TabIndex = 22;
+            // 
+            // panel211
+            // 
+            panel211.BorderStyle = BorderStyle.FixedSingle;
+            panel211.Location = new Point(76, 1);
+            panel211.Margin = new Padding(1, 3, 1, 3);
+            panel211.Name = "panel211";
+            panel211.Size = new Size(79, 25);
+            panel211.TabIndex = 24;
+            // 
+            // panel212
+            // 
+            panel212.BorderStyle = BorderStyle.FixedSingle;
+            panel212.Location = new Point(76, 25);
+            panel212.Margin = new Padding(1, 3, 1, 3);
+            panel212.Name = "panel212";
+            panel212.Size = new Size(79, 25);
+            panel212.TabIndex = 23;
+            // 
+            // p173
+            // 
+            p173.BorderStyle = BorderStyle.FixedSingle;
+            p173.Controls.Add(panel226);
+            p173.Controls.Add(panel227);
+            p173.Controls.Add(panel228);
+            p173.Location = new Point(255, 613);
+            p173.Margin = new Padding(1, 3, 1, 3);
+            p173.Name = "p173";
+            p173.Size = new Size(64, 23);
+            p173.TabIndex = 608;
+            // 
+            // panel226
+            // 
+            panel226.BorderStyle = BorderStyle.FixedSingle;
+            panel226.Location = new Point(76, 49);
+            panel226.Margin = new Padding(1, 3, 1, 3);
+            panel226.Name = "panel226";
+            panel226.Size = new Size(79, 26);
+            panel226.TabIndex = 22;
+            // 
+            // panel227
+            // 
+            panel227.BorderStyle = BorderStyle.FixedSingle;
+            panel227.Location = new Point(76, 1);
+            panel227.Margin = new Padding(1, 3, 1, 3);
+            panel227.Name = "panel227";
+            panel227.Size = new Size(79, 25);
+            panel227.TabIndex = 24;
+            // 
+            // panel228
+            // 
+            panel228.BorderStyle = BorderStyle.FixedSingle;
+            panel228.Location = new Point(76, 25);
+            panel228.Margin = new Padding(1, 3, 1, 3);
+            panel228.Name = "panel228";
+            panel228.Size = new Size(79, 25);
+            panel228.TabIndex = 23;
+            // 
+            // p172
+            // 
+            p172.BorderStyle = BorderStyle.FixedSingle;
+            p172.Controls.Add(panel233);
+            p172.Controls.Add(panel234);
+            p172.Controls.Add(panel238);
+            p172.Location = new Point(255, 590);
+            p172.Margin = new Padding(1, 3, 1, 3);
+            p172.Name = "p172";
+            p172.Size = new Size(64, 23);
+            p172.TabIndex = 607;
+            // 
+            // panel233
+            // 
+            panel233.BorderStyle = BorderStyle.FixedSingle;
+            panel233.Location = new Point(76, 49);
+            panel233.Margin = new Padding(1, 3, 1, 3);
+            panel233.Name = "panel233";
+            panel233.Size = new Size(79, 26);
+            panel233.TabIndex = 22;
+            // 
+            // panel234
+            // 
+            panel234.BorderStyle = BorderStyle.FixedSingle;
+            panel234.Location = new Point(76, 1);
+            panel234.Margin = new Padding(1, 3, 1, 3);
+            panel234.Name = "panel234";
+            panel234.Size = new Size(79, 25);
+            panel234.TabIndex = 24;
+            // 
+            // panel238
+            // 
+            panel238.BorderStyle = BorderStyle.FixedSingle;
+            panel238.Location = new Point(76, 25);
+            panel238.Margin = new Padding(1, 3, 1, 3);
+            panel238.Name = "panel238";
+            panel238.Size = new Size(79, 25);
+            panel238.TabIndex = 23;
+            // 
+            // p169
+            // 
+            p169.BorderStyle = BorderStyle.FixedSingle;
+            p169.Controls.Add(lblYekunAskerToplami);
+            p169.Controls.Add(panel240);
+            p169.Controls.Add(panel244);
+            p169.Controls.Add(panel245);
+            p169.Location = new Point(255, 547);
+            p169.Margin = new Padding(1, 3, 1, 3);
+            p169.Name = "p169";
+            p169.Size = new Size(64, 23);
+            p169.TabIndex = 606;
+            // 
+            // panel240
+            // 
+            panel240.BorderStyle = BorderStyle.FixedSingle;
+            panel240.Location = new Point(76, 49);
+            panel240.Margin = new Padding(1, 3, 1, 3);
+            panel240.Name = "panel240";
+            panel240.Size = new Size(79, 26);
+            panel240.TabIndex = 22;
+            // 
+            // panel244
+            // 
+            panel244.BorderStyle = BorderStyle.FixedSingle;
+            panel244.Location = new Point(76, 1);
+            panel244.Margin = new Padding(1, 3, 1, 3);
+            panel244.Name = "panel244";
+            panel244.Size = new Size(79, 25);
+            panel244.TabIndex = 24;
+            // 
+            // panel245
+            // 
+            panel245.BorderStyle = BorderStyle.FixedSingle;
+            panel245.Location = new Point(76, 25);
+            panel245.Margin = new Padding(1, 3, 1, 3);
+            panel245.Name = "panel245";
+            panel245.Size = new Size(79, 25);
+            panel245.TabIndex = 23;
+            // 
+            // p168
+            // 
+            p168.BorderStyle = BorderStyle.FixedSingle;
+            p168.Controls.Add(lblYekunAsker);
+            p168.Controls.Add(panel251);
+            p168.Controls.Add(panel253);
+            p168.Controls.Add(panel254);
+            p168.Location = new Point(255, 524);
+            p168.Margin = new Padding(1, 3, 1, 3);
+            p168.Name = "p168";
+            p168.Size = new Size(64, 23);
+            p168.TabIndex = 605;
+            // 
+            // panel251
+            // 
+            panel251.BorderStyle = BorderStyle.FixedSingle;
+            panel251.Location = new Point(76, 49);
+            panel251.Margin = new Padding(1, 3, 1, 3);
+            panel251.Name = "panel251";
+            panel251.Size = new Size(79, 26);
+            panel251.TabIndex = 22;
+            // 
+            // panel253
+            // 
+            panel253.BorderStyle = BorderStyle.FixedSingle;
+            panel253.Location = new Point(76, 1);
+            panel253.Margin = new Padding(1, 3, 1, 3);
+            panel253.Name = "panel253";
+            panel253.Size = new Size(79, 25);
+            panel253.TabIndex = 24;
+            // 
+            // panel254
+            // 
+            panel254.BorderStyle = BorderStyle.FixedSingle;
+            panel254.Location = new Point(76, 25);
+            panel254.Margin = new Padding(1, 3, 1, 3);
+            panel254.Name = "panel254";
+            panel254.Size = new Size(79, 25);
+            panel254.TabIndex = 23;
+            // 
+            // p171
+            // 
+            p171.BorderStyle = BorderStyle.FixedSingle;
+            p171.Controls.Add(lblYekunGenelToplam);
+            p171.Controls.Add(panel256);
+            p171.Controls.Add(panel258);
+            p171.Controls.Add(panel259);
+            p171.Location = new Point(255, 691);
+            p171.Margin = new Padding(1, 3, 1, 3);
+            p171.Name = "p171";
+            p171.Size = new Size(64, 23);
+            p171.TabIndex = 609;
+            // 
+            // panel256
+            // 
+            panel256.BorderStyle = BorderStyle.FixedSingle;
+            panel256.Location = new Point(76, 49);
+            panel256.Margin = new Padding(1, 3, 1, 3);
+            panel256.Name = "panel256";
+            panel256.Size = new Size(79, 26);
+            panel256.TabIndex = 22;
+            // 
+            // panel258
+            // 
+            panel258.BorderStyle = BorderStyle.FixedSingle;
+            panel258.Location = new Point(76, 1);
+            panel258.Margin = new Padding(1, 3, 1, 3);
+            panel258.Name = "panel258";
+            panel258.Size = new Size(79, 25);
+            panel258.TabIndex = 24;
+            // 
+            // panel259
+            // 
+            panel259.BorderStyle = BorderStyle.FixedSingle;
+            panel259.Location = new Point(76, 25);
+            panel259.Margin = new Padding(1, 3, 1, 3);
+            panel259.Name = "panel259";
+            panel259.Size = new Size(79, 25);
+            panel259.TabIndex = 23;
+            // 
+            // p170
+            // 
+            p170.BorderStyle = BorderStyle.FixedSingle;
+            p170.Controls.Add(panel261);
+            p170.Controls.Add(panel263);
+            p170.Controls.Add(panel264);
+            p170.Location = new Point(255, 668);
+            p170.Margin = new Padding(1, 3, 1, 3);
+            p170.Name = "p170";
+            p170.Size = new Size(64, 23);
+            p170.TabIndex = 609;
+            // 
+            // panel261
+            // 
+            panel261.BorderStyle = BorderStyle.FixedSingle;
+            panel261.Location = new Point(76, 49);
+            panel261.Margin = new Padding(1, 3, 1, 3);
+            panel261.Name = "panel261";
+            panel261.Size = new Size(79, 26);
+            panel261.TabIndex = 22;
+            // 
+            // panel263
+            // 
+            panel263.BorderStyle = BorderStyle.FixedSingle;
+            panel263.Location = new Point(76, 1);
+            panel263.Margin = new Padding(1, 3, 1, 3);
+            panel263.Name = "panel263";
+            panel263.Size = new Size(79, 25);
+            panel263.TabIndex = 24;
+            // 
+            // panel264
+            // 
+            panel264.BorderStyle = BorderStyle.FixedSingle;
+            panel264.Location = new Point(76, 25);
+            panel264.Margin = new Padding(1, 3, 1, 3);
+            panel264.Name = "panel264";
+            panel264.Size = new Size(79, 25);
+            panel264.TabIndex = 23;
+            // 
+            // lblYekunHasilat
+            // 
+            lblYekunHasilat.AutoSize = true;
+            lblYekunHasilat.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunHasilat.Location = new Point(-2, 3);
+            lblYekunHasilat.Margin = new Padding(1, 0, 1, 0);
+            lblYekunHasilat.Name = "lblYekunHasilat";
+            lblYekunHasilat.Size = new Size(66, 15);
+            lblYekunHasilat.TabIndex = 25;
+            lblYekunHasilat.Text = "99.999.999,99";
+            // 
+            // lblYekunResim
+            // 
+            lblYekunResim.AutoSize = true;
+            lblYekunResim.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunResim.Location = new Point(-2, 3);
+            lblYekunResim.Margin = new Padding(1, 0, 1, 0);
+            lblYekunResim.Name = "lblYekunResim";
+            lblYekunResim.Size = new Size(66, 15);
+            lblYekunResim.TabIndex = 25;
+            lblYekunResim.Text = "99.999.999,99";
+            // 
+            // lblYekunCeza
+            // 
+            lblYekunCeza.AutoSize = true;
+            lblYekunCeza.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunCeza.Location = new Point(-2, 3);
+            lblYekunCeza.Margin = new Padding(1, 0, 1, 0);
+            lblYekunCeza.Name = "lblYekunCeza";
+            lblYekunCeza.Size = new Size(66, 15);
+            lblYekunCeza.TabIndex = 25;
+            lblYekunCeza.Text = "99.999.999,99";
+            // 
+            // lblYekunYardim
+            // 
+            lblYekunYardim.AutoSize = true;
+            lblYekunYardim.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunYardim.Location = new Point(-2, 3);
+            lblYekunYardim.Margin = new Padding(1, 0, 1, 0);
+            lblYekunYardim.Name = "lblYekunYardim";
+            lblYekunYardim.Size = new Size(66, 15);
+            lblYekunYardim.TabIndex = 25;
+            lblYekunYardim.Text = "99.999.999,99";
+            // 
+            // lblYekunKoyVakif
+            // 
+            lblYekunKoyVakif.AutoSize = true;
+            lblYekunKoyVakif.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunKoyVakif.Location = new Point(-2, 3);
+            lblYekunKoyVakif.Margin = new Padding(1, 0, 1, 0);
+            lblYekunKoyVakif.Name = "lblYekunKoyVakif";
+            lblYekunKoyVakif.Size = new Size(66, 15);
+            lblYekunKoyVakif.TabIndex = 25;
+            lblYekunKoyVakif.Text = "99.999.999,99";
+            // 
+            // lblYekunIstikraz
+            // 
+            lblYekunIstikraz.AutoSize = true;
+            lblYekunIstikraz.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunIstikraz.Location = new Point(-2, 3);
+            lblYekunIstikraz.Margin = new Padding(1, 0, 1, 0);
+            lblYekunIstikraz.Name = "lblYekunIstikraz";
+            lblYekunIstikraz.Size = new Size(66, 15);
+            lblYekunIstikraz.TabIndex = 25;
+            lblYekunIstikraz.Text = "99.999.999,99";
+            // 
+            // lblYekunTurluGelir
+            // 
+            lblYekunTurluGelir.AutoSize = true;
+            lblYekunTurluGelir.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunTurluGelir.Location = new Point(-2, 3);
+            lblYekunTurluGelir.Margin = new Padding(1, 0, 1, 0);
+            lblYekunTurluGelir.Name = "lblYekunTurluGelir";
+            lblYekunTurluGelir.Size = new Size(66, 15);
+            lblYekunTurluGelir.TabIndex = 25;
+            lblYekunTurluGelir.Text = "99.999.999,99";
+            // 
+            // lblYekunDevir
+            // 
+            lblYekunDevir.AutoSize = true;
+            lblYekunDevir.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunDevir.Location = new Point(-2, 3);
+            lblYekunDevir.Margin = new Padding(1, 0, 1, 0);
+            lblYekunDevir.Name = "lblYekunDevir";
+            lblYekunDevir.Size = new Size(66, 15);
+            lblYekunDevir.TabIndex = 25;
+            lblYekunDevir.Text = "99.999.999,99";
+            // 
+            // lblYekunToplami
+            // 
+            lblYekunToplami.AutoSize = true;
+            lblYekunToplami.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunToplami.Location = new Point(-2, 3);
+            lblYekunToplami.Margin = new Padding(1, 0, 1, 0);
+            lblYekunToplami.Name = "lblYekunToplami";
+            lblYekunToplami.Size = new Size(66, 15);
+            lblYekunToplami.TabIndex = 25;
+            lblYekunToplami.Text = "99.999.999,99";
+            // 
+            // lblYekunAsker
+            // 
+            lblYekunAsker.AutoSize = true;
+            lblYekunAsker.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunAsker.Location = new Point(-2, 3);
+            lblYekunAsker.Margin = new Padding(1, 0, 1, 0);
+            lblYekunAsker.Name = "lblYekunAsker";
+            lblYekunAsker.Size = new Size(66, 15);
+            lblYekunAsker.TabIndex = 25;
+            lblYekunAsker.Text = "99.999.999,99";
+            // 
+            // lblYekunAskerToplami
+            // 
+            lblYekunAskerToplami.AutoSize = true;
+            lblYekunAskerToplami.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunAskerToplami.Location = new Point(-2, 3);
+            lblYekunAskerToplami.Margin = new Padding(1, 0, 1, 0);
+            lblYekunAskerToplami.Name = "lblYekunAskerToplami";
+            lblYekunAskerToplami.Size = new Size(66, 15);
+            lblYekunAskerToplami.TabIndex = 25;
+            lblYekunAskerToplami.Text = "99.999.999,99";
+            // 
+            // lblYekunGenelToplam
+            // 
+            lblYekunGenelToplam.AutoSize = true;
+            lblYekunGenelToplam.Font = new Font("Arial Narrow", 8.25F);
+            lblYekunGenelToplam.Location = new Point(-2, 3);
+            lblYekunGenelToplam.Margin = new Padding(1, 0, 1, 0);
+            lblYekunGenelToplam.Name = "lblYekunGenelToplam";
+            lblYekunGenelToplam.Size = new Size(66, 15);
+            lblYekunGenelToplam.TabIndex = 25;
+            lblYekunGenelToplam.Text = "99.999.999,99";
             // 
             // FrmKesinHesap1Y
             // 
             this.AutoScaleDimensions = new SizeF(5F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new Size(1118, 793);
+            this.Controls.Add(p170);
+            this.Controls.Add(p171);
+            this.Controls.Add(p174);
+            this.Controls.Add(p173);
+            this.Controls.Add(p172);
+            this.Controls.Add(p169);
+            this.Controls.Add(p168);
+            this.Controls.Add(p167);
+            this.Controls.Add(p166);
+            this.Controls.Add(p165);
+            this.Controls.Add(p164);
+            this.Controls.Add(p163);
+            this.Controls.Add(p162);
+            this.Controls.Add(p161);
+            this.Controls.Add(p160);
+            this.Controls.Add(p159);
+            this.Controls.Add(panel95);
+            this.Controls.Add(panel103);
+            this.Controls.Add(panel107);
+            this.Controls.Add(panel99);
+            this.Controls.Add(panel91);
+            this.Controls.Add(panel90);
+            this.Controls.Add(panel86);
+            this.Controls.Add(panel615);
+            this.Controls.Add(panel658);
+            this.Controls.Add(panel527);
+            this.Controls.Add(panel570);
+            this.Controls.Add(panel428);
+            this.Controls.Add(panel383);
+            this.Controls.Add(panel273);
             this.Controls.Add(panel281);
             this.Controls.Add(panel280);
             this.Controls.Add(panel277);
@@ -10740,322 +12031,315 @@
             this.Controls.Add(panel190);
             this.Controls.Add(panel586);
             this.Controls.Add(panel588);
-            this.Controls.Add(panel589);
+            this.Controls.Add(p153);
             this.Controls.Add(panel590);
-            this.Controls.Add(panel591);
+            this.Controls.Add(p149);
             this.Controls.Add(panel592);
-            this.Controls.Add(panel593);
+            this.Controls.Add(p158);
             this.Controls.Add(panel594);
             this.Controls.Add(panel595);
             this.Controls.Add(panel596);
             this.Controls.Add(panel597);
-            this.Controls.Add(panel598);
-            this.Controls.Add(panel599);
-            this.Controls.Add(panel600);
+            this.Controls.Add(p150);
+            this.Controls.Add(p157);
+            this.Controls.Add(p152);
             this.Controls.Add(panel601);
             this.Controls.Add(panel602);
-            this.Controls.Add(panel603);
+            this.Controls.Add(p156);
             this.Controls.Add(panel604);
             this.Controls.Add(panel605);
             this.Controls.Add(panel606);
             this.Controls.Add(panel607);
-            this.Controls.Add(panel608);
+            this.Controls.Add(p151);
             this.Controls.Add(panel609);
             this.Controls.Add(panel610);
-            this.Controls.Add(panel611);
+            this.Controls.Add(p155);
             this.Controls.Add(panel612);
-            this.Controls.Add(panel613);
-            this.Controls.Add(panel614);
+            this.Controls.Add(p154);
             this.Controls.Add(label203);
             this.Controls.Add(panel616);
-            this.Controls.Add(panel617);
+            this.Controls.Add(p148);
             this.Controls.Add(panel618);
             this.Controls.Add(panel619);
-            this.Controls.Add(panel620);
+            this.Controls.Add(p147);
             this.Controls.Add(panel621);
-            this.Controls.Add(panel622);
+            this.Controls.Add(p146);
             this.Controls.Add(panel623);
             this.Controls.Add(panel624);
             this.Controls.Add(panel625);
-            this.Controls.Add(panel626);
+            this.Controls.Add(p145);
             this.Controls.Add(panel627);
-            this.Controls.Add(panel628);
+            this.Controls.Add(p144);
             this.Controls.Add(panel629);
             this.Controls.Add(panel630);
             this.Controls.Add(panel631);
-            this.Controls.Add(panel632);
+            this.Controls.Add(p138);
             this.Controls.Add(panel633);
-            this.Controls.Add(panel634);
+            this.Controls.Add(p134);
             this.Controls.Add(panel635);
-            this.Controls.Add(panel636);
+            this.Controls.Add(p143);
             this.Controls.Add(panel637);
             this.Controls.Add(panel638);
             this.Controls.Add(panel639);
             this.Controls.Add(panel640);
-            this.Controls.Add(panel641);
-            this.Controls.Add(panel642);
-            this.Controls.Add(panel643);
+            this.Controls.Add(p135);
+            this.Controls.Add(p142);
+            this.Controls.Add(p137);
             this.Controls.Add(panel644);
             this.Controls.Add(panel645);
-            this.Controls.Add(panel646);
+            this.Controls.Add(p141);
             this.Controls.Add(panel647);
             this.Controls.Add(panel648);
             this.Controls.Add(panel649);
             this.Controls.Add(panel650);
-            this.Controls.Add(panel651);
+            this.Controls.Add(p136);
             this.Controls.Add(panel652);
             this.Controls.Add(panel653);
-            this.Controls.Add(panel654);
+            this.Controls.Add(p140);
             this.Controls.Add(panel655);
-            this.Controls.Add(panel656);
-            this.Controls.Add(panel657);
+            this.Controls.Add(p139);
             this.Controls.Add(panel659);
             this.Controls.Add(panel660);
             this.Controls.Add(panel485);
-            this.Controls.Add(panel486);
+            this.Controls.Add(p133);
             this.Controls.Add(panel487);
             this.Controls.Add(panel488);
             this.Controls.Add(panel489);
             this.Controls.Add(panel490);
-            this.Controls.Add(panel491);
+            this.Controls.Add(p132);
             this.Controls.Add(panel492);
             this.Controls.Add(panel493);
             this.Controls.Add(panel494);
-            this.Controls.Add(panel495);
+            this.Controls.Add(p131);
             this.Controls.Add(panel496);
-            this.Controls.Add(panel497);
+            this.Controls.Add(p130);
             this.Controls.Add(panel498);
             this.Controls.Add(panel499);
             this.Controls.Add(panel500);
-            this.Controls.Add(panel501);
+            this.Controls.Add(p124);
             this.Controls.Add(panel502);
-            this.Controls.Add(panel503);
+            this.Controls.Add(p120);
             this.Controls.Add(panel504);
-            this.Controls.Add(panel505);
+            this.Controls.Add(p129);
             this.Controls.Add(panel506);
             this.Controls.Add(panel507);
             this.Controls.Add(panel508);
             this.Controls.Add(panel509);
-            this.Controls.Add(panel510);
-            this.Controls.Add(panel511);
-            this.Controls.Add(panel512);
+            this.Controls.Add(p121);
+            this.Controls.Add(p128);
+            this.Controls.Add(p123);
             this.Controls.Add(panel513);
             this.Controls.Add(panel514);
-            this.Controls.Add(panel515);
+            this.Controls.Add(p127);
             this.Controls.Add(panel516);
             this.Controls.Add(panel517);
             this.Controls.Add(panel518);
             this.Controls.Add(panel519);
-            this.Controls.Add(panel520);
+            this.Controls.Add(p122);
             this.Controls.Add(panel521);
             this.Controls.Add(panel522);
-            this.Controls.Add(panel523);
+            this.Controls.Add(p126);
             this.Controls.Add(panel524);
-            this.Controls.Add(panel525);
-            this.Controls.Add(panel526);
+            this.Controls.Add(p125);
             this.Controls.Add(label187);
             this.Controls.Add(panel528);
-            this.Controls.Add(panel529);
+            this.Controls.Add(p119);
             this.Controls.Add(panel530);
             this.Controls.Add(panel531);
-            this.Controls.Add(panel532);
+            this.Controls.Add(p118);
             this.Controls.Add(panel533);
-            this.Controls.Add(panel534);
+            this.Controls.Add(p117);
             this.Controls.Add(panel535);
             this.Controls.Add(panel536);
             this.Controls.Add(panel537);
-            this.Controls.Add(panel538);
+            this.Controls.Add(p116);
             this.Controls.Add(panel539);
-            this.Controls.Add(panel540);
+            this.Controls.Add(p115);
             this.Controls.Add(panel541);
             this.Controls.Add(panel542);
             this.Controls.Add(panel543);
-            this.Controls.Add(panel544);
+            this.Controls.Add(p109);
             this.Controls.Add(panel545);
-            this.Controls.Add(panel546);
+            this.Controls.Add(p105);
             this.Controls.Add(panel547);
-            this.Controls.Add(panel548);
+            this.Controls.Add(p114);
             this.Controls.Add(panel549);
             this.Controls.Add(panel550);
             this.Controls.Add(panel551);
             this.Controls.Add(panel552);
-            this.Controls.Add(panel553);
-            this.Controls.Add(panel554);
-            this.Controls.Add(panel555);
+            this.Controls.Add(p106);
+            this.Controls.Add(p113);
+            this.Controls.Add(p108);
             this.Controls.Add(panel556);
             this.Controls.Add(panel557);
-            this.Controls.Add(panel558);
+            this.Controls.Add(p112);
             this.Controls.Add(panel559);
             this.Controls.Add(panel560);
             this.Controls.Add(panel561);
             this.Controls.Add(panel562);
-            this.Controls.Add(panel563);
+            this.Controls.Add(p107);
             this.Controls.Add(panel564);
             this.Controls.Add(panel565);
-            this.Controls.Add(panel566);
+            this.Controls.Add(p111);
             this.Controls.Add(panel567);
-            this.Controls.Add(panel568);
-            this.Controls.Add(panel569);
+            this.Controls.Add(p110);
             this.Controls.Add(panel571);
             this.Controls.Add(panel572);
             this.Controls.Add(panel429);
-            this.Controls.Add(panel430);
+            this.Controls.Add(p104);
             this.Controls.Add(panel431);
             this.Controls.Add(panel432);
-            this.Controls.Add(panel433);
+            this.Controls.Add(p103);
             this.Controls.Add(panel434);
-            this.Controls.Add(panel435);
+            this.Controls.Add(p102);
             this.Controls.Add(panel436);
             this.Controls.Add(panel437);
             this.Controls.Add(panel438);
-            this.Controls.Add(panel439);
+            this.Controls.Add(p101);
             this.Controls.Add(panel440);
-            this.Controls.Add(panel441);
+            this.Controls.Add(p100);
             this.Controls.Add(panel442);
             this.Controls.Add(panel443);
             this.Controls.Add(panel444);
-            this.Controls.Add(panel445);
+            this.Controls.Add(p99);
             this.Controls.Add(panel446);
             this.Controls.Add(panel447);
-            this.Controls.Add(panel448);
+            this.Controls.Add(p98);
             this.Controls.Add(panel449);
-            this.Controls.Add(panel450);
+            this.Controls.Add(p97);
             this.Controls.Add(panel451);
             this.Controls.Add(panel452);
             this.Controls.Add(panel453);
-            this.Controls.Add(panel454);
+            this.Controls.Add(p96);
             this.Controls.Add(panel455);
-            this.Controls.Add(panel456);
+            this.Controls.Add(p95);
             this.Controls.Add(panel386);
-            this.Controls.Add(panel387);
+            this.Controls.Add(p94);
             this.Controls.Add(panel388);
             this.Controls.Add(panel389);
-            this.Controls.Add(panel390);
+            this.Controls.Add(p93);
             this.Controls.Add(panel391);
-            this.Controls.Add(panel392);
+            this.Controls.Add(p92);
             this.Controls.Add(panel393);
             this.Controls.Add(panel394);
             this.Controls.Add(panel395);
-            this.Controls.Add(panel396);
+            this.Controls.Add(p91);
             this.Controls.Add(panel397);
-            this.Controls.Add(panel398);
+            this.Controls.Add(p90);
             this.Controls.Add(panel399);
             this.Controls.Add(panel400);
             this.Controls.Add(panel401);
-            this.Controls.Add(panel402);
+            this.Controls.Add(p84);
             this.Controls.Add(panel403);
-            this.Controls.Add(panel404);
+            this.Controls.Add(p80);
             this.Controls.Add(panel405);
-            this.Controls.Add(panel406);
+            this.Controls.Add(p89);
             this.Controls.Add(panel407);
             this.Controls.Add(panel408);
             this.Controls.Add(panel409);
             this.Controls.Add(panel410);
-            this.Controls.Add(panel411);
-            this.Controls.Add(panel412);
-            this.Controls.Add(panel413);
+            this.Controls.Add(p81);
+            this.Controls.Add(p88);
+            this.Controls.Add(p83);
             this.Controls.Add(panel414);
             this.Controls.Add(panel415);
-            this.Controls.Add(panel416);
+            this.Controls.Add(p87);
             this.Controls.Add(panel417);
             this.Controls.Add(panel418);
             this.Controls.Add(panel419);
             this.Controls.Add(panel420);
-            this.Controls.Add(panel421);
+            this.Controls.Add(p82);
             this.Controls.Add(panel422);
             this.Controls.Add(panel423);
-            this.Controls.Add(panel424);
+            this.Controls.Add(p86);
             this.Controls.Add(panel425);
-            this.Controls.Add(panel426);
-            this.Controls.Add(panel427);
+            this.Controls.Add(p85);
             this.Controls.Add(label156);
             this.Controls.Add(panel341);
-            this.Controls.Add(panel342);
+            this.Controls.Add(p79);
             this.Controls.Add(panel343);
             this.Controls.Add(panel344);
-            this.Controls.Add(panel345);
+            this.Controls.Add(p78);
             this.Controls.Add(panel346);
-            this.Controls.Add(panel347);
+            this.Controls.Add(p77);
             this.Controls.Add(panel348);
             this.Controls.Add(panel349);
             this.Controls.Add(panel350);
-            this.Controls.Add(panel351);
+            this.Controls.Add(p76);
             this.Controls.Add(panel352);
-            this.Controls.Add(panel353);
+            this.Controls.Add(p75);
             this.Controls.Add(panel354);
             this.Controls.Add(panel355);
             this.Controls.Add(panel356);
-            this.Controls.Add(panel357);
+            this.Controls.Add(p69);
             this.Controls.Add(panel358);
-            this.Controls.Add(panel359);
+            this.Controls.Add(p65);
             this.Controls.Add(panel360);
-            this.Controls.Add(panel361);
+            this.Controls.Add(p74);
             this.Controls.Add(panel362);
             this.Controls.Add(panel363);
             this.Controls.Add(panel364);
             this.Controls.Add(panel365);
-            this.Controls.Add(panel366);
-            this.Controls.Add(panel367);
-            this.Controls.Add(panel368);
+            this.Controls.Add(p66);
+            this.Controls.Add(p73);
+            this.Controls.Add(p68);
             this.Controls.Add(panel369);
             this.Controls.Add(panel370);
-            this.Controls.Add(panel371);
+            this.Controls.Add(p72);
             this.Controls.Add(panel372);
             this.Controls.Add(panel373);
             this.Controls.Add(panel374);
             this.Controls.Add(panel375);
-            this.Controls.Add(panel376);
+            this.Controls.Add(p67);
             this.Controls.Add(panel377);
             this.Controls.Add(panel378);
-            this.Controls.Add(panel379);
+            this.Controls.Add(p71);
             this.Controls.Add(panel380);
-            this.Controls.Add(panel381);
-            this.Controls.Add(panel382);
+            this.Controls.Add(p70);
             this.Controls.Add(panel384);
             this.Controls.Add(panel385);
             this.Controls.Add(label155);
             this.Controls.Add(panel328);
-            this.Controls.Add(panel329);
+            this.Controls.Add(p64);
             this.Controls.Add(panel330);
             this.Controls.Add(panel331);
-            this.Controls.Add(panel332);
+            this.Controls.Add(p63);
             this.Controls.Add(panel333);
-            this.Controls.Add(panel334);
+            this.Controls.Add(p62);
             this.Controls.Add(panel335);
             this.Controls.Add(panel336);
             this.Controls.Add(panel337);
-            this.Controls.Add(panel338);
+            this.Controls.Add(p61);
             this.Controls.Add(panel339);
-            this.Controls.Add(panel340);
+            this.Controls.Add(p60);
             this.Controls.Add(panel299);
             this.Controls.Add(panel327);
             this.Controls.Add(panel274);
-            this.Controls.Add(panel301);
+            this.Controls.Add(p54);
             this.Controls.Add(panel298);
-            this.Controls.Add(panel323);
+            this.Controls.Add(p50);
             this.Controls.Add(panel303);
-            this.Controls.Add(panel300);
+            this.Controls.Add(p59);
             this.Controls.Add(panel321);
             this.Controls.Add(panel302);
             this.Controls.Add(panel305);
             this.Controls.Add(panel304);
-            this.Controls.Add(panel319);
-            this.Controls.Add(panel306);
-            this.Controls.Add(panel307);
+            this.Controls.Add(p51);
+            this.Controls.Add(p58);
+            this.Controls.Add(p53);
             this.Controls.Add(panel308);
             this.Controls.Add(panel317);
-            this.Controls.Add(panel310);
+            this.Controls.Add(p57);
             this.Controls.Add(panel309);
             this.Controls.Add(panel312);
             this.Controls.Add(panel315);
             this.Controls.Add(panel314);
-            this.Controls.Add(panel311);
+            this.Controls.Add(p52);
             this.Controls.Add(panel316);
             this.Controls.Add(panel313);
-            this.Controls.Add(panel318);
+            this.Controls.Add(p56);
             this.Controls.Add(panel320);
-            this.Controls.Add(panel322);
-            this.Controls.Add(panel324);
+            this.Controls.Add(p55);
             this.Controls.Add(panel325);
             this.Controls.Add(panel326);
             this.Controls.Add(panel296);
@@ -11080,19 +12364,17 @@
             this.Controls.Add(label147);
             this.Controls.Add(label146);
             this.Controls.Add(label145);
-            this.Controls.Add(label144);
-            this.Controls.Add(label121);
             this.Controls.Add(panel196);
             this.Controls.Add(panel202);
             this.Controls.Add(panel249);
             this.Controls.Add(panel250);
-            this.Controls.Add(panel251);
+            this.Controls.Add(p49);
             this.Controls.Add(panel252);
-            this.Controls.Add(panel256);
+            this.Controls.Add(p48);
             this.Controls.Add(panel257);
-            this.Controls.Add(panel261);
+            this.Controls.Add(p47);
             this.Controls.Add(panel262);
-            this.Controls.Add(panel266);
+            this.Controls.Add(p46);
             this.Controls.Add(panel267);
             this.Controls.Add(panel271);
             this.Controls.Add(panel272);
@@ -11121,49 +12403,49 @@
             this.Controls.Add(panel185);
             this.Controls.Add(panel188);
             this.Controls.Add(panel189);
-            this.Controls.Add(panel191);
-            this.Controls.Add(panel192);
-            this.Controls.Add(panel197);
-            this.Controls.Add(panel198);
+            this.Controls.Add(p45);
+            this.Controls.Add(p42);
+            this.Controls.Add(p44);
+            this.Controls.Add(p41);
             this.Controls.Add(panel203);
-            this.Controls.Add(panel204);
-            this.Controls.Add(panel209);
-            this.Controls.Add(panel210);
+            this.Controls.Add(p40);
+            this.Controls.Add(p43);
+            this.Controls.Add(p39);
             this.Controls.Add(label120);
             this.Controls.Add(panel214);
             this.Controls.Add(panel215);
             this.Controls.Add(panel163);
-            this.Controls.Add(panel164);
-            this.Controls.Add(panel165);
-            this.Controls.Add(panel166);
-            this.Controls.Add(panel167);
+            this.Controls.Add(p38);
+            this.Controls.Add(p37);
+            this.Controls.Add(p36);
+            this.Controls.Add(p35);
             this.Controls.Add(panel168);
-            this.Controls.Add(panel169);
-            this.Controls.Add(panel170);
-            this.Controls.Add(panel171);
-            this.Controls.Add(panel172);
+            this.Controls.Add(p34);
+            this.Controls.Add(p33);
+            this.Controls.Add(p32);
+            this.Controls.Add(p31);
             this.Controls.Add(panel173);
             this.Controls.Add(panel178);
             this.Controls.Add(panel158);
-            this.Controls.Add(panel159);
-            this.Controls.Add(panel160);
-            this.Controls.Add(panel161);
-            this.Controls.Add(panel162);
+            this.Controls.Add(p30);
+            this.Controls.Add(p29);
+            this.Controls.Add(p28);
+            this.Controls.Add(p27);
             this.Controls.Add(panel131);
             this.Controls.Add(panel132);
             this.Controls.Add(panel133);
-            this.Controls.Add(panel134);
-            this.Controls.Add(panel135);
-            this.Controls.Add(panel136);
-            this.Controls.Add(panel140);
-            this.Controls.Add(panel141);
-            this.Controls.Add(panel142);
-            this.Controls.Add(panel146);
-            this.Controls.Add(panel147);
-            this.Controls.Add(panel148);
-            this.Controls.Add(panel152);
-            this.Controls.Add(panel153);
-            this.Controls.Add(panel154);
+            this.Controls.Add(p26);
+            this.Controls.Add(p22);
+            this.Controls.Add(p18);
+            this.Controls.Add(p25);
+            this.Controls.Add(p21);
+            this.Controls.Add(p17);
+            this.Controls.Add(p24);
+            this.Controls.Add(p20);
+            this.Controls.Add(p16);
+            this.Controls.Add(p23);
+            this.Controls.Add(p19);
+            this.Controls.Add(p15);
             this.Controls.Add(panel126);
             this.Controls.Add(panel118);
             this.Controls.Add(panel123);
@@ -11172,20 +12454,20 @@
             this.Controls.Add(panel79);
             this.Controls.Add(panel81);
             this.Controls.Add(panel85);
-            this.Controls.Add(panel86);
-            this.Controls.Add(panel87);
-            this.Controls.Add(panel88);
-            this.Controls.Add(panel89);
-            this.Controls.Add(panel90);
-            this.Controls.Add(panel94);
-            this.Controls.Add(panel95);
-            this.Controls.Add(panel96);
-            this.Controls.Add(panel100);
-            this.Controls.Add(panel101);
-            this.Controls.Add(panel102);
-            this.Controls.Add(panel106);
-            this.Controls.Add(panel107);
-            this.Controls.Add(panel108);
+            this.Controls.Add(p8);
+            this.Controls.Add(p3);
+            this.Controls.Add(p14);
+            this.Controls.Add(p10);
+            this.Controls.Add(p5);
+            this.Controls.Add(p13);
+            this.Controls.Add(p9);
+            this.Controls.Add(p4);
+            this.Controls.Add(p12);
+            this.Controls.Add(p7);
+            this.Controls.Add(p2);
+            this.Controls.Add(p11);
+            this.Controls.Add(p6);
+            this.Controls.Add(p1);
             this.Controls.Add(label78);
             this.Controls.Add(panel112);
             this.Controls.Add(panel113);
@@ -11253,12 +12535,15 @@
             this.Controls.Add(label14);
             this.Controls.Add(label6);
             this.Controls.Add(panel1);
+            this.Controls.Add(label144);
+            this.Controls.Add(label121);
             this.Font = new Font("Arial Narrow", 8.25F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
             this.FormBorderStyle = FormBorderStyle.None;
             this.Margin = new Padding(1, 3, 1, 3);
             this.Name = "FrmKesinHesap1Y";
             this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "FrmKesinHesap1Y";
+            this.Load += (this.FrmKesinHesap1Y_Load);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel3.ResumeLayout(false);
@@ -11292,9 +12577,7 @@
             panel23.ResumeLayout(false);
             panel23.PerformLayout();
             panel45.ResumeLayout(false);
-            panel33.ResumeLayout(false);
             panel39.ResumeLayout(false);
-            panel51.ResumeLayout(false);
             panel26.ResumeLayout(false);
             panel59.ResumeLayout(false);
             panel65.ResumeLayout(false);
@@ -11321,30 +12604,30 @@
             panel79.PerformLayout();
             panel81.ResumeLayout(false);
             panel81.PerformLayout();
-            panel88.ResumeLayout(false);
-            panel88.PerformLayout();
-            panel89.ResumeLayout(false);
-            panel89.PerformLayout();
-            panel90.ResumeLayout(false);
-            panel90.PerformLayout();
-            panel94.ResumeLayout(false);
-            panel94.PerformLayout();
-            panel95.ResumeLayout(false);
-            panel95.PerformLayout();
-            panel96.ResumeLayout(false);
-            panel96.PerformLayout();
-            panel100.ResumeLayout(false);
-            panel100.PerformLayout();
-            panel101.ResumeLayout(false);
-            panel101.PerformLayout();
-            panel102.ResumeLayout(false);
-            panel102.PerformLayout();
-            panel106.ResumeLayout(false);
-            panel106.PerformLayout();
-            panel107.ResumeLayout(false);
-            panel107.PerformLayout();
-            panel108.ResumeLayout(false);
-            panel108.PerformLayout();
+            p14.ResumeLayout(false);
+            p14.PerformLayout();
+            p10.ResumeLayout(false);
+            p10.PerformLayout();
+            p5.ResumeLayout(false);
+            p5.PerformLayout();
+            p13.ResumeLayout(false);
+            p13.PerformLayout();
+            p9.ResumeLayout(false);
+            p9.PerformLayout();
+            p4.ResumeLayout(false);
+            p4.PerformLayout();
+            p12.ResumeLayout(false);
+            p12.PerformLayout();
+            p7.ResumeLayout(false);
+            p7.PerformLayout();
+            p2.ResumeLayout(false);
+            p2.PerformLayout();
+            p11.ResumeLayout(false);
+            p11.PerformLayout();
+            p6.ResumeLayout(false);
+            p6.PerformLayout();
+            p1.ResumeLayout(false);
+            p1.PerformLayout();
             panel112.ResumeLayout(false);
             panel112.PerformLayout();
             panel113.ResumeLayout(false);
@@ -11369,54 +12652,54 @@
             panel128.PerformLayout();
             panel129.ResumeLayout(false);
             panel129.PerformLayout();
-            panel134.ResumeLayout(false);
-            panel134.PerformLayout();
-            panel135.ResumeLayout(false);
-            panel135.PerformLayout();
-            panel136.ResumeLayout(false);
-            panel136.PerformLayout();
-            panel140.ResumeLayout(false);
-            panel140.PerformLayout();
-            panel141.ResumeLayout(false);
-            panel141.PerformLayout();
-            panel142.ResumeLayout(false);
-            panel142.PerformLayout();
-            panel146.ResumeLayout(false);
-            panel146.PerformLayout();
-            panel147.ResumeLayout(false);
-            panel147.PerformLayout();
-            panel148.ResumeLayout(false);
-            panel148.PerformLayout();
-            panel152.ResumeLayout(false);
-            panel152.PerformLayout();
-            panel153.ResumeLayout(false);
-            panel153.PerformLayout();
-            panel154.ResumeLayout(false);
-            panel154.PerformLayout();
-            panel159.ResumeLayout(false);
-            panel159.PerformLayout();
-            panel160.ResumeLayout(false);
-            panel160.PerformLayout();
-            panel161.ResumeLayout(false);
-            panel161.PerformLayout();
-            panel162.ResumeLayout(false);
-            panel162.PerformLayout();
-            panel164.ResumeLayout(false);
-            panel164.PerformLayout();
-            panel165.ResumeLayout(false);
-            panel165.PerformLayout();
-            panel166.ResumeLayout(false);
-            panel166.PerformLayout();
-            panel167.ResumeLayout(false);
-            panel167.PerformLayout();
-            panel169.ResumeLayout(false);
-            panel169.PerformLayout();
-            panel170.ResumeLayout(false);
-            panel170.PerformLayout();
-            panel171.ResumeLayout(false);
-            panel171.PerformLayout();
-            panel172.ResumeLayout(false);
-            panel172.PerformLayout();
+            p26.ResumeLayout(false);
+            p26.PerformLayout();
+            p22.ResumeLayout(false);
+            p22.PerformLayout();
+            p18.ResumeLayout(false);
+            p18.PerformLayout();
+            p25.ResumeLayout(false);
+            p25.PerformLayout();
+            p21.ResumeLayout(false);
+            p21.PerformLayout();
+            p17.ResumeLayout(false);
+            p17.PerformLayout();
+            p24.ResumeLayout(false);
+            p24.PerformLayout();
+            p20.ResumeLayout(false);
+            p20.PerformLayout();
+            p16.ResumeLayout(false);
+            p16.PerformLayout();
+            p23.ResumeLayout(false);
+            p23.PerformLayout();
+            p19.ResumeLayout(false);
+            p19.PerformLayout();
+            p15.ResumeLayout(false);
+            p15.PerformLayout();
+            p30.ResumeLayout(false);
+            p30.PerformLayout();
+            p29.ResumeLayout(false);
+            p29.PerformLayout();
+            p28.ResumeLayout(false);
+            p28.PerformLayout();
+            p27.ResumeLayout(false);
+            p27.PerformLayout();
+            p38.ResumeLayout(false);
+            p38.PerformLayout();
+            p37.ResumeLayout(false);
+            p37.PerformLayout();
+            p36.ResumeLayout(false);
+            p36.PerformLayout();
+            p35.ResumeLayout(false);
+            p35.PerformLayout();
+            p34.ResumeLayout(false);
+            p34.PerformLayout();
+            p33.ResumeLayout(false);
+            p33.PerformLayout();
+            p32.ResumeLayout(false);
+            p32.PerformLayout();
+            p31.ResumeLayout(false);
+            p31.PerformLayout();
             panel173.ResumeLayout(false);
             panel173.PerformLayout();
             panel174.ResumeLayout(false);
@@ -11437,6 +12720,18 @@
             panel184.PerformLayout();
             panel185.ResumeLayout(false);
             panel185.PerformLayout();
+            p45.ResumeLayout(false);
+            p45.PerformLayout();
+            p42.ResumeLayout(false);
+            p42.PerformLayout();
+            p44.ResumeLayout(false);
+            p44.PerformLayout();
+            p41.ResumeLayout(false);
+            p41.PerformLayout();
+            panel203.ResumeLayout(false);
+            panel203.PerformLayout();
+            p39.ResumeLayout(false);
+            p39.PerformLayout();
             panel214.ResumeLayout(false);
             panel214.PerformLayout();
             panel215.ResumeLayout(false);
@@ -11455,14 +12750,14 @@
             panel196.PerformLayout();
             panel202.ResumeLayout(false);
             panel202.PerformLayout();
-            panel251.ResumeLayout(false);
-            panel251.PerformLayout();
-            panel256.ResumeLayout(false);
-            panel256.PerformLayout();
-            panel261.ResumeLayout(false);
-            panel261.PerformLayout();
-            panel266.ResumeLayout(false);
-            panel266.PerformLayout();
+            p49.ResumeLayout(false);
+            p49.PerformLayout();
+            p48.ResumeLayout(false);
+            p48.PerformLayout();
+            p47.ResumeLayout(false);
+            p47.PerformLayout();
+            p46.ResumeLayout(false);
+            p46.PerformLayout();
             panel271.ResumeLayout(false);
             panel271.PerformLayout();
             panel272.ResumeLayout(false);
@@ -11499,8 +12794,6 @@
             panel296.PerformLayout();
             panel297.ResumeLayout(false);
             panel297.PerformLayout();
-            panel324.ResumeLayout(false);
-            panel324.PerformLayout();
             panel273.ResumeLayout(false);
             panel273.PerformLayout();
             panel325.ResumeLayout(false);
@@ -11511,212 +12804,204 @@
             panel274.PerformLayout();
             panel327.ResumeLayout(false);
             panel327.PerformLayout();
-            panel318.ResumeLayout(false);
-            panel318.PerformLayout();
-            panel310.ResumeLayout(false);
-            panel310.PerformLayout();
-            panel306.ResumeLayout(false);
-            panel306.PerformLayout();
-            panel300.ResumeLayout(false);
-            panel300.PerformLayout();
-            panel322.ResumeLayout(false);
-            panel322.PerformLayout();
-            panel301.ResumeLayout(false);
-            panel301.PerformLayout();
-            panel307.ResumeLayout(false);
-            panel307.PerformLayout();
-            panel311.ResumeLayout(false);
-            panel311.PerformLayout();
-            panel319.ResumeLayout(false);
-            panel319.PerformLayout();
-            panel323.ResumeLayout(false);
-            panel323.PerformLayout();
-            panel329.ResumeLayout(false);
-            panel329.PerformLayout();
-            panel332.ResumeLayout(false);
-            panel332.PerformLayout();
-            panel334.ResumeLayout(false);
-            panel334.PerformLayout();
-            panel338.ResumeLayout(false);
-            panel338.PerformLayout();
-            panel340.ResumeLayout(false);
-            panel340.PerformLayout();
-            panel342.ResumeLayout(false);
-            panel342.PerformLayout();
-            panel345.ResumeLayout(false);
-            panel345.PerformLayout();
-            panel347.ResumeLayout(false);
-            panel347.PerformLayout();
-            panel351.ResumeLayout(false);
-            panel351.PerformLayout();
-            panel353.ResumeLayout(false);
-            panel353.PerformLayout();
+            p56.ResumeLayout(false);
+            p56.PerformLayout();
+            p57.ResumeLayout(false);
+            p57.PerformLayout();
+            p58.ResumeLayout(false);
+            p58.PerformLayout();
+            p59.ResumeLayout(false);
+            p59.PerformLayout();
+            p55.ResumeLayout(false);
+            p55.PerformLayout();
+            p54.ResumeLayout(false);
+            p54.PerformLayout();
+            p53.ResumeLayout(false);
+            p53.PerformLayout();
+            p52.ResumeLayout(false);
+            p52.PerformLayout();
+            p51.ResumeLayout(false);
+            p51.PerformLayout();
+            p50.ResumeLayout(false);
+            p50.PerformLayout();
+            p64.ResumeLayout(false);
+            p64.PerformLayout();
+            p63.ResumeLayout(false);
+            p63.PerformLayout();
+            p62.ResumeLayout(false);
+            p62.PerformLayout();
+            p61.ResumeLayout(false);
+            p61.PerformLayout();
+            p60.ResumeLayout(false);
+            p60.PerformLayout();
+            p79.ResumeLayout(false);
+            p79.PerformLayout();
+            p78.ResumeLayout(false);
+            p78.PerformLayout();
+            p77.ResumeLayout(false);
+            p77.PerformLayout();
+            p76.ResumeLayout(false);
+            p76.PerformLayout();
+            p75.ResumeLayout(false);
+            p75.PerformLayout();
             panel355.ResumeLayout(false);
             panel355.PerformLayout();
             panel356.ResumeLayout(false);
             panel356.PerformLayout();
-            panel357.ResumeLayout(false);
-            panel357.PerformLayout();
-            panel359.ResumeLayout(false);
-            panel359.PerformLayout();
-            panel361.ResumeLayout(false);
-            panel361.PerformLayout();
-            panel366.ResumeLayout(false);
-            panel366.PerformLayout();
-            panel367.ResumeLayout(false);
-            panel367.PerformLayout();
-            panel368.ResumeLayout(false);
-            panel368.PerformLayout();
-            panel371.ResumeLayout(false);
-            panel371.PerformLayout();
-            panel379.ResumeLayout(false);
-            panel379.PerformLayout();
-            panel381.ResumeLayout(false);
-            panel381.PerformLayout();
-            panel382.ResumeLayout(false);
-            panel382.PerformLayout();
+            p69.ResumeLayout(false);
+            p69.PerformLayout();
+            p65.ResumeLayout(false);
+            p65.PerformLayout();
+            p74.ResumeLayout(false);
+            p74.PerformLayout();
+            p66.ResumeLayout(false);
+            p66.PerformLayout();
+            p73.ResumeLayout(false);
+            p73.PerformLayout();
+            p68.ResumeLayout(false);
+            p68.PerformLayout();
+            p72.ResumeLayout(false);
+            p72.PerformLayout();
+            p71.ResumeLayout(false);
+            p71.PerformLayout();
+            p70.ResumeLayout(false);
+            p70.PerformLayout();
             panel383.ResumeLayout(false);
             panel383.PerformLayout();
             panel384.ResumeLayout(false);
             panel384.PerformLayout();
             panel385.ResumeLayout(false);
             panel385.PerformLayout();
-            panel387.ResumeLayout(false);
-            panel387.PerformLayout();
-            panel390.ResumeLayout(false);
-            panel390.PerformLayout();
-            panel392.ResumeLayout(false);
-            panel392.PerformLayout();
-            panel396.ResumeLayout(false);
-            panel396.PerformLayout();
-            panel398.ResumeLayout(false);
-            panel398.PerformLayout();
+            p94.ResumeLayout(false);
+            p94.PerformLayout();
+            p93.ResumeLayout(false);
+            p93.PerformLayout();
+            p92.ResumeLayout(false);
+            p92.PerformLayout();
+            p91.ResumeLayout(false);
+            p91.PerformLayout();
+            p90.ResumeLayout(false);
+            p90.PerformLayout();
             panel400.ResumeLayout(false);
             panel400.PerformLayout();
             panel401.ResumeLayout(false);
             panel401.PerformLayout();
-            panel402.ResumeLayout(false);
-            panel402.PerformLayout();
-            panel404.ResumeLayout(false);
-            panel404.PerformLayout();
-            panel406.ResumeLayout(false);
-            panel406.PerformLayout();
-            panel411.ResumeLayout(false);
-            panel411.PerformLayout();
-            panel412.ResumeLayout(false);
-            panel412.PerformLayout();
-            panel413.ResumeLayout(false);
-            panel413.PerformLayout();
-            panel416.ResumeLayout(false);
-            panel416.PerformLayout();
-            panel421.ResumeLayout(false);
-            panel421.PerformLayout();
-            panel424.ResumeLayout(false);
-            panel424.PerformLayout();
-            panel426.ResumeLayout(false);
-            panel426.PerformLayout();
-            panel427.ResumeLayout(false);
-            panel427.PerformLayout();
+            p84.ResumeLayout(false);
+            p84.PerformLayout();
+            p80.ResumeLayout(false);
+            p80.PerformLayout();
+            p89.ResumeLayout(false);
+            p89.PerformLayout();
+            p81.ResumeLayout(false);
+            p81.PerformLayout();
+            p88.ResumeLayout(false);
+            p88.PerformLayout();
+            p83.ResumeLayout(false);
+            p83.PerformLayout();
+            p87.ResumeLayout(false);
+            p87.PerformLayout();
+            p82.ResumeLayout(false);
+            p82.PerformLayout();
+            p86.ResumeLayout(false);
+            p86.PerformLayout();
+            p85.ResumeLayout(false);
+            p85.PerformLayout();
             panel428.ResumeLayout(false);
             panel428.PerformLayout();
-            panel430.ResumeLayout(false);
-            panel430.PerformLayout();
-            panel433.ResumeLayout(false);
-            panel433.PerformLayout();
-            panel435.ResumeLayout(false);
-            panel435.PerformLayout();
-            panel439.ResumeLayout(false);
-            panel439.PerformLayout();
-            panel441.ResumeLayout(false);
-            panel441.PerformLayout();
+            p104.ResumeLayout(false);
+            p104.PerformLayout();
+            p103.ResumeLayout(false);
+            p103.PerformLayout();
+            p102.ResumeLayout(false);
+            p102.PerformLayout();
+            p101.ResumeLayout(false);
+            p101.PerformLayout();
+            p100.ResumeLayout(false);
+            p100.PerformLayout();
             panel442.ResumeLayout(false);
             panel442.PerformLayout();
             panel443.ResumeLayout(false);
             panel443.PerformLayout();
-            panel445.ResumeLayout(false);
-            panel445.PerformLayout();
-            panel448.ResumeLayout(false);
-            panel448.PerformLayout();
-            panel450.ResumeLayout(false);
-            panel450.PerformLayout();
-            panel454.ResumeLayout(false);
-            panel454.PerformLayout();
-            panel456.ResumeLayout(false);
-            panel456.PerformLayout();
-            panel486.ResumeLayout(false);
-            panel486.PerformLayout();
+            p99.ResumeLayout(false);
+            p99.PerformLayout();
+            p98.ResumeLayout(false);
+            p98.PerformLayout();
+            p97.ResumeLayout(false);
+            p97.PerformLayout();
+            p96.ResumeLayout(false);
+            p96.PerformLayout();
+            p95.ResumeLayout(false);
+            p95.PerformLayout();
+            p133.ResumeLayout(false);
+            p133.PerformLayout();
             panel489.ResumeLayout(false);
             panel489.PerformLayout();
-            panel491.ResumeLayout(false);
-            panel491.PerformLayout();
-            panel495.ResumeLayout(false);
-            panel495.PerformLayout();
-            panel497.ResumeLayout(false);
-            panel497.PerformLayout();
+            p132.ResumeLayout(false);
+            p132.PerformLayout();
+            p131.ResumeLayout(false);
+            p131.PerformLayout();
+            p130.ResumeLayout(false);
+            p130.PerformLayout();
             panel499.ResumeLayout(false);
             panel499.PerformLayout();
             panel500.ResumeLayout(false);
             panel500.PerformLayout();
-            panel501.ResumeLayout(false);
-            panel501.PerformLayout();
-            panel503.ResumeLayout(false);
-            panel503.PerformLayout();
-            panel505.ResumeLayout(false);
-            panel505.PerformLayout();
-            panel510.ResumeLayout(false);
-            panel510.PerformLayout();
-            panel511.ResumeLayout(false);
-            panel511.PerformLayout();
-            panel512.ResumeLayout(false);
-            panel512.PerformLayout();
-            panel515.ResumeLayout(false);
-            panel515.PerformLayout();
-            panel520.ResumeLayout(false);
-            panel520.PerformLayout();
-            panel523.ResumeLayout(false);
-            panel523.PerformLayout();
-            panel525.ResumeLayout(false);
-            panel525.PerformLayout();
-            panel526.ResumeLayout(false);
-            panel526.PerformLayout();
+            p124.ResumeLayout(false);
+            p124.PerformLayout();
+            p120.ResumeLayout(false);
+            p120.PerformLayout();
+            p129.ResumeLayout(false);
+            p129.PerformLayout();
+            p121.ResumeLayout(false);
+            p121.PerformLayout();
+            p128.ResumeLayout(false);
+            p128.PerformLayout();
+            p123.ResumeLayout(false);
+            p123.PerformLayout();
+            p127.ResumeLayout(false);
+            p127.PerformLayout();
+            p122.ResumeLayout(false);
+            p122.PerformLayout();
+            p126.ResumeLayout(false);
+            p126.PerformLayout();
+            p125.ResumeLayout(false);
+            p125.PerformLayout();
             panel527.ResumeLayout(false);
             panel527.PerformLayout();
-            panel529.ResumeLayout(false);
-            panel529.PerformLayout();
-            panel532.ResumeLayout(false);
-            panel532.PerformLayout();
-            panel534.ResumeLayout(false);
-            panel534.PerformLayout();
-            panel538.ResumeLayout(false);
-            panel538.PerformLayout();
-            panel540.ResumeLayout(false);
-            panel540.PerformLayout();
+            p119.ResumeLayout(false);
+            p119.PerformLayout();
+            p118.ResumeLayout(false);
+            p118.PerformLayout();
+            p117.ResumeLayout(false);
+            p117.PerformLayout();
+            p116.ResumeLayout(false);
+            p116.PerformLayout();
+            p115.ResumeLayout(false);
+            p115.PerformLayout();
             panel542.ResumeLayout(false);
             panel542.PerformLayout();
             panel543.ResumeLayout(false);
             panel543.PerformLayout();
-            panel544.ResumeLayout(false);
-            panel544.PerformLayout();
-            panel546.ResumeLayout(false);
-            panel546.PerformLayout();
-            panel548.ResumeLayout(false);
-            panel548.PerformLayout();
-            panel553.ResumeLayout(false);
-            panel553.PerformLayout();
-            panel554.ResumeLayout(false);
-            panel554.PerformLayout();
-            panel555.ResumeLayout(false);
-            panel555.PerformLayout();
-            panel558.ResumeLayout(false);
-            panel558.PerformLayout();
-            panel563.ResumeLayout(false);
-            panel563.PerformLayout();
-            panel566.ResumeLayout(false);
-            panel566.PerformLayout();
-            panel568.ResumeLayout(false);
-            panel568.PerformLayout();
-            panel569.ResumeLayout(false);
-            panel569.PerformLayout();
+            p109.ResumeLayout(false);
+            p109.PerformLayout();
+            p105.ResumeLayout(false);
+            p105.PerformLayout();
+            p114.ResumeLayout(false);
+            p114.PerformLayout();
+            p106.ResumeLayout(false);
+            p106.PerformLayout();
+            p113.ResumeLayout(false);
+            p113.PerformLayout();
+            p108.ResumeLayout(false);
+            p108.PerformLayout();
+            p112.ResumeLayout(false);
+            p112.PerformLayout();
+            p107.ResumeLayout(false);
+            p107.PerformLayout();
+            p111.ResumeLayout(false);
+            p111.PerformLayout();
+            p110.ResumeLayout(false);
+            p110.PerformLayout();
             panel570.ResumeLayout(false);
             panel570.PerformLayout();
             panel571.ResumeLayout(false);
@@ -11725,66 +13010,62 @@
             panel572.PerformLayout();
             panel588.ResumeLayout(false);
             panel588.PerformLayout();
-            panel589.ResumeLayout(false);
-            panel589.PerformLayout();
-            panel591.ResumeLayout(false);
-            panel591.PerformLayout();
-            panel593.ResumeLayout(false);
-            panel593.PerformLayout();
-            panel598.ResumeLayout(false);
-            panel598.PerformLayout();
-            panel599.ResumeLayout(false);
-            panel599.PerformLayout();
-            panel600.ResumeLayout(false);
-            panel600.PerformLayout();
-            panel603.ResumeLayout(false);
-            panel603.PerformLayout();
-            panel608.ResumeLayout(false);
-            panel608.PerformLayout();
-            panel611.ResumeLayout(false);
-            panel611.PerformLayout();
-            panel613.ResumeLayout(false);
-            panel613.PerformLayout();
-            panel614.ResumeLayout(false);
-            panel614.PerformLayout();
+            p153.ResumeLayout(false);
+            p153.PerformLayout();
+            p149.ResumeLayout(false);
+            p149.PerformLayout();
+            p158.ResumeLayout(false);
+            p158.PerformLayout();
+            p150.ResumeLayout(false);
+            p150.PerformLayout();
+            p157.ResumeLayout(false);
+            p157.PerformLayout();
+            p152.ResumeLayout(false);
+            p152.PerformLayout();
+            p156.ResumeLayout(false);
+            p156.PerformLayout();
+            p151.ResumeLayout(false);
+            p151.PerformLayout();
+            p155.ResumeLayout(false);
+            p155.PerformLayout();
+            p154.ResumeLayout(false);
+            p154.PerformLayout();
             panel615.ResumeLayout(false);
             panel615.PerformLayout();
-            panel617.ResumeLayout(false);
-            panel617.PerformLayout();
-            panel620.ResumeLayout(false);
-            panel620.PerformLayout();
-            panel622.ResumeLayout(false);
-            panel622.PerformLayout();
-            panel626.ResumeLayout(false);
-            panel626.PerformLayout();
-            panel628.ResumeLayout(false);
-            panel628.PerformLayout();
+            p148.ResumeLayout(false);
+            p148.PerformLayout();
+            p147.ResumeLayout(false);
+            p147.PerformLayout();
+            p146.ResumeLayout(false);
+            p146.PerformLayout();
+            p145.ResumeLayout(false);
+            p145.PerformLayout();
+            p144.ResumeLayout(false);
+            p144.PerformLayout();
             panel630.ResumeLayout(false);
             panel630.PerformLayout();
             panel631.ResumeLayout(false);
             panel631.PerformLayout();
-            panel632.ResumeLayout(false);
-            panel632.PerformLayout();
-            panel634.ResumeLayout(false);
-            panel634.PerformLayout();
-            panel636.ResumeLayout(false);
-            panel636.PerformLayout();
-            panel641.ResumeLayout(false);
-            panel641.PerformLayout();
-            panel642.ResumeLayout(false);
-            panel642.PerformLayout();
-            panel643.ResumeLayout(false);
-            panel643.PerformLayout();
-            panel646.ResumeLayout(false);
-            panel646.PerformLayout();
-            panel651.ResumeLayout(false);
-            panel651.PerformLayout();
-            panel654.ResumeLayout(false);
-            panel654.PerformLayout();
-            panel656.ResumeLayout(false);
-            panel656.PerformLayout();
-            panel657.ResumeLayout(false);
-            panel657.PerformLayout();
+            p138.ResumeLayout(false);
+            p138.PerformLayout();
+            p134.ResumeLayout(false);
+            p134.PerformLayout();
+            p143.ResumeLayout(false);
+            p143.PerformLayout();
+            p135.ResumeLayout(false);
+            p135.PerformLayout();
+            p142.ResumeLayout(false);
+            p142.PerformLayout();
+            p137.ResumeLayout(false);
+            p137.PerformLayout();
+            p141.ResumeLayout(false);
+            p141.PerformLayout();
+            p136.ResumeLayout(false);
+            p136.PerformLayout();
+            p140.ResumeLayout(false);
+            p140.PerformLayout();
+            p139.ResumeLayout(false);
+            p139.PerformLayout();
             panel658.ResumeLayout(false);
             panel658.PerformLayout();
             panel659.ResumeLayout(false);
@@ -11801,8 +13082,50 @@
             panel280.PerformLayout();
             panel281.ResumeLayout(false);
             panel281.PerformLayout();
-            panel376.ResumeLayout(false);
-            panel376.PerformLayout();
+            p67.ResumeLayout(false);
+            p67.PerformLayout();
+            p40.ResumeLayout(false);
+            p40.PerformLayout();
+            p43.ResumeLayout(false);
+            p43.PerformLayout();
+            panel86.ResumeLayout(false);
+            panel51.ResumeLayout(false);
+            panel33.ResumeLayout(false);
+            panel90.ResumeLayout(false);
+            panel90.PerformLayout();
+            panel91.ResumeLayout(false);
+            panel99.ResumeLayout(false);
+            panel95.ResumeLayout(false);
+            panel103.ResumeLayout(false);
+            panel107.ResumeLayout(false);
+            p164.ResumeLayout(false);
+            p164.PerformLayout();
+            p163.ResumeLayout(false);
+            p163.PerformLayout();
+            p162.ResumeLayout(false);
+            p162.PerformLayout();
+            p161.ResumeLayout(false);
+            p161.PerformLayout();
+            p160.ResumeLayout(false);
+            p160.PerformLayout();
+            p159.ResumeLayout(false);
+            p159.PerformLayout();
+            p167.ResumeLayout(false);
+            p167.PerformLayout();
+            p166.ResumeLayout(false);
+            p166.PerformLayout();
+            p165.ResumeLayout(false);
+            p165.PerformLayout();
+            p174.ResumeLayout(false);
+            p173.ResumeLayout(false);
+            p172.ResumeLayout(false);
+            p169.ResumeLayout(false);
+            p169.PerformLayout();
+            p168.ResumeLayout(false);
+            p168.PerformLayout();
+            p171.ResumeLayout(false);
+            p171.PerformLayout();
+            p170.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
@@ -11885,10 +13208,6 @@
         private Panel panel48;
         private Panel panel31;
         private Panel panel32;
-        private Panel panel33;
-        private Panel panel34;
-        private Panel panel35;
-        private Panel panel36;
         private Panel panel37;
         private Panel panel38;
         private Panel panel39;
@@ -11897,10 +13216,6 @@
         private Panel panel42;
         private Panel panel49;
         private Panel panel50;
-        private Panel panel51;
-        private Panel panel52;
-        private Panel panel53;
-        private Panel panel54;
         private Panel panel13;
         private Panel panel14;
         private Panel panel15;
@@ -11952,20 +13267,20 @@
         private Label label72;
         private Panel panel84;
         private Panel panel85;
-        private Panel panel86;
-        private Panel panel87;
-        private Panel panel88;
-        private Panel panel89;
-        private Panel panel90;
-        private Panel panel94;
-        private Panel panel95;
-        private Panel panel96;
-        private Panel panel100;
-        private Panel panel101;
-        private Panel panel102;
-        private Panel panel106;
-        private Panel panel107;
-        private Panel panel108;
+        private Panel p8;
+        private Panel p3;
+        private Panel p14;
+        private Panel p10;
+        private Panel p5;
+        private Panel p13;
+        private Panel p9;
+        private Panel p4;
+        private Panel p12;
+        private Panel p7;
+        private Panel p2;
+        private Panel p11;
+        private Panel p6;
+        private Panel p1;
         private Panel panel109;
         private Label lblBKHasilat;
         private Panel panel110;
@@ -11993,7 +13308,6 @@
         private Panel panel122;
         private Label label88;
         private Panel panel123;
-        private Label label89;
         private Panel panel124;
         private Label label90;
         private Panel panel125;
@@ -12009,39 +13323,39 @@
         private Panel panel131;
         private Panel panel132;
         private Panel panel133;
-        private Panel panel134;
-        private Panel panel135;
-        private Panel panel136;
+        private Panel p26;
+        private Panel p22;
+        private Panel p18;
         private Panel panel137;
         private Label lblDevredenYardim;
         private Panel panel138;
         private Panel panel139;
-        private Panel panel140;
-        private Panel panel141;
-        private Panel panel142;
+        private Panel p25;
+        private Panel p21;
+        private Panel p17;
         private Panel panel143;
         private Label lblTahsilYardim;
         private Panel panel144;
         private Panel panel145;
-        private Panel panel146;
-        private Panel panel147;
-        private Panel panel148;
+        private Panel p24;
+        private Panel p20;
+        private Panel p16;
         private Panel panel149;
         private Label lblMunzamYardim;
         private Panel panel150;
         private Panel panel151;
-        private Panel panel152;
-        private Panel panel153;
-        private Panel panel154;
+        private Panel p23;
+        private Panel p19;
+        private Panel p15;
         private Panel panel155;
         private Label lblBKYardim;
         private Panel panel156;
         private Panel panel157;
         private Panel panel158;
-        private Panel panel159;
-        private Panel panel160;
-        private Panel panel161;
-        private Panel panel162;
+        private Panel p30;
+        private Panel p29;
+        private Panel p28;
+        private Panel p27;
         private Label label101;
         private Label label102;
         private Label label99;
@@ -12049,15 +13363,15 @@
         private Label label103;
         private Label label112;
         private Panel panel163;
-        private Panel panel164;
-        private Panel panel165;
-        private Panel panel166;
-        private Panel panel167;
+        private Panel p38;
+        private Panel p37;
+        private Panel p36;
+        private Panel p35;
         private Panel panel168;
-        private Panel panel169;
-        private Panel panel170;
-        private Panel panel171;
-        private Panel panel172;
+        private Panel p34;
+        private Panel p33;
+        private Panel p32;
+        private Panel p31;
         private Panel panel173;
         private Panel panel174;
         private Label label104;
@@ -12075,20 +13389,18 @@
         private Panel panel181;
         private Label label110;
         private Panel panel182;
-        private Label label111;
         private Panel panel184;
         private Label label114;
         private Panel panel185;
-        private Label label115;
         private Panel panel186;
         private Panel panel188;
         private Panel panel189;
-        private Panel panel191;
-        private Panel panel192;
-        private Panel panel197;
-        private Panel panel198;
+        private Panel p45;
+        private Panel p42;
+        private Panel p44;
+        private Panel p41;
         private Panel panel203;
-        private Panel panel210;
+        private Panel p39;
         private Label label120;
         private Panel panel214;
         private Label label122;
@@ -12129,13 +13441,13 @@
         private Panel panel208;
         private Panel panel249;
         private Panel panel250;
-        private Panel panel251;
+        private Panel p49;
         private Panel panel252;
-        private Panel panel256;
+        private Panel p48;
         private Panel panel257;
-        private Panel panel261;
+        private Panel p47;
         private Panel panel262;
-        private Panel panel266;
+        private Panel p46;
         private Panel panel267;
         private Panel panel271;
         private Label label141;
@@ -12174,8 +13486,6 @@
         private Label label152;
         private Label label153;
         private Label label154;
-        private Panel panel324;
-        private Label label162;
         private Panel panel325;
         private Label label164;
         private Label label166;
@@ -12187,266 +13497,258 @@
         private Label label163;
         private Panel panel327;
         private Label label165;
-        private Panel panel318;
+        private Panel p56;
         private Panel panel316;
         private Panel panel314;
         private Panel panel312;
-        private Panel panel310;
+        private Panel p57;
         private Panel panel308;
-        private Panel panel306;
+        private Panel p58;
         private Panel panel304;
         private Panel panel302;
-        private Panel panel300;
+        private Panel p59;
         private Panel panel298;
-        private Panel panel322;
+        private Panel p55;
         private Panel panel320;
         private Panel panel299;
-        private Panel panel301;
-        private Panel panel323;
+        private Panel p54;
+        private Panel p50;
         private Panel panel303;
         private Panel panel321;
         private Panel panel305;
-        private Panel panel319;
-        private Panel panel307;
+        private Panel p51;
+        private Panel p53;
         private Panel panel317;
         private Panel panel309;
         private Panel panel315;
-        private Panel panel311;
+        private Panel p52;
         private Panel panel313;
         private Panel panel328;
-        private Panel panel329;
+        private Panel p64;
         private Panel panel330;
         private Panel panel331;
-        private Panel panel332;
+        private Panel p63;
         private Panel panel333;
-        private Panel panel334;
+        private Panel p62;
         private Panel panel335;
         private Panel panel336;
         private Panel panel337;
-        private Panel panel338;
+        private Panel p61;
         private Panel panel339;
-        private Panel panel340;
+        private Panel p60;
         private Label label155;
         private Label label156;
         private Panel panel341;
-        private Panel panel342;
+        private Panel p79;
         private Panel panel343;
         private Panel panel344;
-        private Panel panel345;
+        private Panel p78;
         private Panel panel346;
-        private Panel panel347;
+        private Panel p77;
         private Panel panel348;
         private Panel panel349;
         private Panel panel350;
-        private Panel panel351;
+        private Panel p76;
         private Panel panel352;
-        private Panel panel353;
+        private Panel p75;
         private Panel panel354;
         private Panel panel355;
         private Label label157;
         private Panel panel356;
         private Label label158;
-        private Panel panel357;
+        private Panel p69;
         private Panel panel358;
-        private Panel panel359;
+        private Panel p65;
         private Panel panel360;
-        private Panel panel361;
+        private Panel p74;
         private Panel panel362;
         private Panel panel363;
         private Panel panel364;
         private Panel panel365;
-        private Panel panel366;
-        private Panel panel367;
-        private Panel panel368;
+        private Panel p66;
+        private Panel p73;
+        private Panel p68;
         private Panel panel369;
         private Panel panel370;
-        private Panel panel371;
+        private Panel p72;
         private Panel panel372;
         private Panel panel373;
         private Panel panel374;
         private Panel panel375;
         private Panel panel377;
         private Panel panel378;
-        private Panel panel379;
+        private Panel p71;
         private Panel panel380;
-        private Panel panel381;
-        private Panel panel382;
+        private Panel p70;
         private Panel panel383;
-        private Label label160;
         private Panel panel384;
         private Label label161;
         private Label label167;
         private Panel panel385;
         private Label label168;
         private Panel panel386;
-        private Panel panel387;
+        private Panel p94;
         private Panel panel388;
         private Panel panel389;
-        private Panel panel390;
+        private Panel p93;
         private Panel panel391;
-        private Panel panel392;
+        private Panel p92;
         private Panel panel393;
         private Panel panel394;
         private Panel panel395;
-        private Panel panel396;
+        private Panel p91;
         private Panel panel397;
-        private Panel panel398;
+        private Panel p90;
         private Panel panel399;
         private Panel panel400;
         private Panel panel401;
-        private Panel panel402;
+        private Panel p84;
         private Panel panel403;
-        private Panel panel404;
+        private Panel p80;
         private Panel panel405;
-        private Panel panel406;
+        private Panel p89;
         private Panel panel407;
         private Panel panel408;
         private Panel panel409;
         private Panel panel410;
-        private Panel panel411;
-        private Panel panel412;
-        private Panel panel413;
+        private Panel p81;
+        private Panel p88;
+        private Panel p83;
         private Panel panel414;
         private Panel panel415;
-        private Panel panel416;
+        private Panel p87;
         private Panel panel417;
         private Panel panel418;
         private Panel panel419;
         private Panel panel420;
-        private Panel panel421;
+        private Panel p82;
         private Panel panel422;
         private Panel panel423;
-        private Panel panel424;
+        private Panel p86;
         private Panel panel425;
-        private Panel panel426;
-        private Panel panel427;
+        private Panel p85;
         private Panel panel428;
         private Label label171;
-        private Label label173;
         private Panel panel429;
-        private Panel panel430;
+        private Panel p104;
         private Panel panel431;
         private Panel panel432;
-        private Panel panel433;
+        private Panel p103;
         private Panel panel434;
-        private Panel panel435;
+        private Panel p102;
         private Panel panel436;
         private Panel panel437;
         private Panel panel438;
-        private Panel panel439;
+        private Panel p101;
         private Panel panel440;
-        private Panel panel441;
+        private Panel p100;
         private Panel panel442;
         private Label label174;
         private Panel panel443;
         private Panel panel444;
-        private Panel panel445;
+        private Panel p99;
         private Panel panel446;
         private Panel panel447;
-        private Panel panel448;
+        private Panel p98;
         private Panel panel449;
-        private Panel panel450;
+        private Panel p97;
         private Panel panel451;
         private Panel panel452;
         private Panel panel453;
-        private Panel panel454;
+        private Panel p96;
         private Panel panel455;
-        private Panel panel456;
+        private Panel p95;
         private Label label180;
         private Label label179;
         private Label label178;
         private Label label177;
         private Label label176;
         private Panel panel485;
-        private Panel panel486;
+        private Panel p133;
         private Panel panel487;
         private Panel panel488;
         private Panel panel489;
         private Panel panel490;
-        private Panel panel491;
+        private Panel p132;
         private Panel panel492;
         private Panel panel493;
         private Panel panel494;
-        private Panel panel495;
+        private Panel p131;
         private Panel panel496;
-        private Panel panel497;
+        private Panel p130;
         private Panel panel498;
         private Panel panel499;
         private Panel panel500;
-        private Panel panel501;
+        private Panel p124;
         private Panel panel502;
-        private Panel panel503;
+        private Panel p120;
         private Panel panel504;
-        private Panel panel505;
+        private Panel p129;
         private Panel panel506;
         private Panel panel507;
         private Panel panel508;
         private Panel panel509;
-        private Panel panel510;
-        private Panel panel511;
-        private Panel panel512;
+        private Panel p121;
+        private Panel p128;
+        private Panel p123;
         private Panel panel513;
         private Panel panel514;
-        private Panel panel515;
+        private Panel p127;
         private Panel panel516;
         private Panel panel517;
         private Panel panel518;
         private Panel panel519;
-        private Panel panel520;
+        private Panel p122;
         private Panel panel521;
         private Panel panel522;
-        private Panel panel523;
+        private Panel p126;
         private Panel panel524;
-        private Panel panel525;
-        private Panel panel526;
+        private Panel p125;
         private Panel panel527;
-        private Label label186;
         private Label label187;
         private Panel panel528;
-        private Panel panel529;
+        private Panel p119;
         private Panel panel530;
         private Panel panel531;
-        private Panel panel532;
+        private Panel p118;
         private Panel panel533;
-        private Panel panel534;
+        private Panel p117;
         private Panel panel535;
         private Panel panel536;
         private Panel panel537;
-        private Panel panel538;
+        private Panel p116;
         private Panel panel539;
-        private Panel panel540;
+        private Panel p115;
         private Panel panel541;
         private Panel panel542;
         private Panel panel543;
-        private Panel panel544;
+        private Panel p109;
         private Panel panel545;
-        private Panel panel546;
+        private Panel p105;
         private Panel panel547;
-        private Panel panel548;
+        private Panel p114;
         private Panel panel549;
         private Panel panel550;
         private Panel panel551;
         private Panel panel552;
-        private Panel panel553;
-        private Panel panel554;
-        private Panel panel555;
+        private Panel p106;
+        private Panel p113;
+        private Panel p108;
         private Panel panel556;
         private Panel panel557;
-        private Panel panel558;
+        private Panel p112;
         private Panel panel559;
         private Panel panel560;
         private Panel panel561;
         private Panel panel562;
-        private Panel panel563;
+        private Panel p107;
         private Panel panel564;
         private Panel panel565;
-        private Panel panel566;
+        private Panel p111;
         private Panel panel567;
-        private Panel panel568;
-        private Panel panel569;
+        private Panel p110;
         private Panel panel570;
         private Label label190;
-        private Label label191;
         private Panel panel571;
         private Label label194;
         private Label label195;
@@ -12458,83 +13760,79 @@
         private Panel panel586;
         private Panel panel588;
         private Label label200;
-        private Panel panel589;
+        private Panel p153;
         private Panel panel590;
-        private Panel panel591;
+        private Panel p149;
         private Panel panel592;
-        private Panel panel593;
+        private Panel p158;
         private Panel panel594;
         private Panel panel595;
         private Panel panel596;
         private Panel panel597;
-        private Panel panel598;
-        private Panel panel599;
-        private Panel panel600;
+        private Panel p150;
+        private Panel p157;
+        private Panel p152;
         private Panel panel601;
         private Panel panel602;
-        private Panel panel603;
+        private Panel p156;
         private Panel panel604;
         private Panel panel605;
         private Panel panel606;
         private Panel panel607;
-        private Panel panel608;
+        private Panel p151;
         private Panel panel609;
         private Panel panel610;
-        private Panel panel611;
+        private Panel p155;
         private Panel panel612;
-        private Panel panel613;
-        private Panel panel614;
+        private Panel p154;
         private Panel panel615;
         private Label label201;
-        private Label label202;
         private Label label203;
         private Panel panel616;
-        private Panel panel617;
+        private Panel p148;
         private Panel panel618;
         private Panel panel619;
-        private Panel panel620;
+        private Panel p147;
         private Panel panel621;
-        private Panel panel622;
+        private Panel p146;
         private Panel panel623;
         private Panel panel624;
         private Panel panel625;
-        private Panel panel626;
+        private Panel p145;
         private Panel panel627;
-        private Panel panel628;
+        private Panel p144;
         private Panel panel629;
         private Panel panel630;
         private Label label204;
         private Panel panel631;
         private Label label205;
-        private Panel panel632;
+        private Panel p138;
         private Panel panel633;
-        private Panel panel634;
+        private Panel p134;
         private Panel panel635;
-        private Panel panel636;
+        private Panel p143;
         private Panel panel637;
         private Panel panel638;
         private Panel panel639;
         private Panel panel640;
-        private Panel panel641;
-        private Panel panel642;
-        private Panel panel643;
+        private Panel p135;
+        private Panel p142;
+        private Panel p137;
         private Panel panel644;
         private Panel panel645;
-        private Panel panel646;
+        private Panel p141;
         private Panel panel647;
         private Panel panel648;
         private Panel panel649;
         private Panel panel650;
-        private Panel panel651;
+        private Panel p136;
         private Panel panel652;
         private Panel panel653;
-        private Panel panel654;
+        private Panel p140;
         private Panel panel655;
-        private Panel panel656;
-        private Panel panel657;
+        private Panel p139;
         private Panel panel658;
         private Label label206;
-        private Label label207;
         private Panel panel659;
         private Label label210;
         private Label label211;
@@ -12653,9 +13951,9 @@
         private Label label307;
         private Label label306;
         private Label label305;
-        private Panel panel376;
+        private Panel p67;
         private Label lblOdenenDamizlik;
-        private Label lblTahakkukDamizlit;
+        private Label lblTahakkukDamizlik;
         private Label lblMunzamDamizlik;
         private Label lblBKDamizlik;
         private Label lblBKSulama;
@@ -12664,7 +13962,7 @@
         private Label lblOdenenSulama;
         private Label lblTahakkukAgaclama;
         private Label lblMunzamAgaclama;
-        private Label lblBKlblBKAgaclama;
+        private Label lblBKAgaclama;
         private Label lblOdenenPazarCarsi;
         private Label lblTahakkukPazarCarsi;
         private Label lblMunzamPazarCarsi;
@@ -12676,7 +13974,7 @@
         private Label lblTahakkukZiraiHayvan;
         private Label lblTahakkukOrnekTarla;
         private Label lblMunzamZiraiHayvan;
-        private Label lblBKZiraHayvan;
+        private Label lblBKZiraiHayvan;
         private Label lblOdenenZiraatToplami;
         private Label lblTahakkukZiraatToplami;
         private Label lblMunzamZiraatToplami;
@@ -12684,14 +13982,14 @@
         private Label lblOdenenKucukEndustri;
         private Label lblTahakkukKucukEndustri;
         private Label lblMunzamKucukEndustri;
-        private Label lblBKKücükEndustri;
+        private Label lblBKKucukEndustri;
         private Label lblOdenenKulturToplami;
         private Label lblTahakkukKulturToplami;
         private Label lblMunzamKulturToplami;
         private Label lblBKKulturToplami;
         private Label lblBKKurs;
         private Label lblMunzamKurs;
-        private Label lblOdenenOkulUgulama;
+        private Label lblOdenenOkulUygulama;
         private Label lblOdenenKurs;
         private Label lblTahakkukOkulUygulama;
         private Label lblTahakkukKurs;
@@ -12701,7 +13999,7 @@
         private Label lblTahakkukOkumaOdasi;
         private Label lblMunzamOkumaOdasi;
         private Label lblBKOkumaOdasi;
-        private Label lblMunzamOgretmenEvi;
+        private Label lblMunzamOgretmenevi;
         private Label lblOdenenOkulDaimi;
         private Label lblOdenenOgretmenevi;
         private Label lblTahakkukOkulDaimi;
@@ -12709,9 +14007,9 @@
         private Label lblMunzamOkulDaimi;
         private Label lblBKOkulDaimi;
         private Label lblBKIctimai;
-        private Label lblMunzamIctimaiYardim;
+        private Label lblMunzamIctimai;
         private Label lblTahakkukSaglıkToplami;
-        private Label lblTahakkukIctimaiYardim;
+        private Label lblTahakkukIctimai;
         private Label lblMunzamSaglikToplami;
         private Label lblSaglikToplami;
         private Label lblTahakkukSpor;
@@ -12730,10 +14028,10 @@
         private Label lblIptalOkumaOdasi;
         private Label lblIptalOgretmenevi;
         private Label lblIptalOkulDaimi;
-        private Label lblIptalIctimaiYardim;
+        private Label lblIptalIctimai;
         private Label lblIptalSaglikToplami;
         private Label lblOdenenSaglik;
-        private Label lblOdenenIctimaYardim;
+        private Label lblOdenenIctimai;
         private Label lblIptalSpor;
         private Label lblOdenenSpor;
         private Label lblIptalIcmeSulari;
@@ -12774,8 +14072,8 @@
         private Label label56;
         private Label label57;
         private Label lblBKGenelToplam;
-        private Panel panel204;
-        private Panel panel209;
+        private Panel p40;
+        private Panel p43;
         private Label lblDevredenHasilat;
         private Label lblTahsilResim;
         private Label lblTahsilHasilat;
@@ -12784,5 +14082,134 @@
         private Label lblMunzamAylik;
         private Label lblBKAylik;
         private Label lblBKOgretmenevi;
+        private Label lblDevredenAskerToplami;
+        private Label lblDevredenAsker;
+        private Label lblTahsilAskerToplami;
+        private Label lblTahsilAsker;
+        private Label lblMunzamAskerToplami;
+        private Label lblBKAsker;
+        private Label lblMunzamAsker;
+        private Label lblBKAskerToplami;
+        private Label label95;
+        private Label label96;
+        private Label label89;
+        private Label label97;
+        private Label label98;
+        private Label label115;
+        private Label label116;
+        private Panel panel86;
+        private Panel panel87;
+        private Panel panel88;
+        private Panel panel89;
+        private Label label111;
+        private Panel panel54;
+        private Panel panel53;
+        private Panel panel52;
+        private Panel panel51;
+        private Panel panel36;
+        private Panel panel35;
+        private Panel panel34;
+        private Panel panel33;
+        private Label label117;
+        private Label label118;
+        private Panel panel90;
+        private Label label119;
+        private Label label127;
+        private Panel panel91;
+        private Panel panel92;
+        private Panel panel93;
+        private Panel panel94;
+        private Panel panel99;
+        private Panel panel100;
+        private Panel panel101;
+        private Panel panel102;
+        private Panel panel95;
+        private Panel panel96;
+        private Panel panel97;
+        private Panel panel98;
+        private Panel panel103;
+        private Panel panel104;
+        private Panel panel105;
+        private Panel panel106;
+        private Panel panel107;
+        private Panel panel108;
+        private Panel panel134;
+        private Panel panel135;
+        private Panel p164;
+        private Panel panel140;
+        private Panel panel141;
+        private Panel panel142;
+        private Panel p163;
+        private Panel panel147;
+        private Panel panel148;
+        private Panel panel152;
+        private Panel p162;
+        private Panel panel154;
+        private Panel panel159;
+        private Panel panel160;
+        private Panel p161;
+        private Panel panel162;
+        private Panel panel164;
+        private Panel panel165;
+        private Panel p160;
+        private Panel panel167;
+        private Panel panel169;
+        private Panel panel170;
+        private Panel p159;
+        private Panel panel172;
+        private Panel panel191;
+        private Panel panel192;
+        private Panel p167;
+        private Panel panel194;
+        private Panel panel195;
+        private Panel panel197;
+        private Panel p166;
+        private Panel panel199;
+        private Panel panel200;
+        private Panel panel201;
+        private Panel p165;
+        private Panel panel205;
+        private Panel panel206;
+        private Panel panel207;
+        private Panel p174;
+        private Panel panel210;
+        private Panel panel211;
+        private Panel panel212;
+        private Panel p173;
+        private Panel panel226;
+        private Panel panel227;
+        private Panel panel228;
+        private Panel p172;
+        private Panel panel233;
+        private Panel panel234;
+        private Panel panel238;
+        private Panel p169;
+        private Panel panel240;
+        private Panel panel244;
+        private Panel panel245;
+        private Panel p168;
+        private Panel panel251;
+        private Panel panel253;
+        private Panel panel254;
+        private Panel p171;
+        private Panel panel256;
+        private Panel panel258;
+        private Panel panel259;
+        private Panel p170;
+        private Panel panel261;
+        private Panel panel263;
+        private Panel panel264;
+        private Label lblYekunKoyVakif;
+        private Label lblYekunYardim;
+        private Label lblYekunCeza;
+        private Label lblYekunResim;
+        private Label lblYekunHasilat;
+        private Label lblYekunIstikraz;
+        private Label lblYekunToplami;
+        private Label lblYekunDevir;
+        private Label lblYekunTurluGelir;
+        private Label lblYekunAskerToplami;
+        private Label lblYekunAsker;
+        private Label lblYekunGenelToplam;
     }
 }

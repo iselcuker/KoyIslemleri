@@ -47,21 +47,6 @@ namespace Forms
             frm.Show();
         }
 
-        private void btnKesinHesap1_Click(object sender, EventArgs e)
-        {
-            // load_form(new FrmKesinHesap1());
-        }
-
-        private void btnKesinHesap2_Click(object sender, EventArgs e)
-        {
-            load_form(new FrmKesinHesap2());
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            load_form(new FrmKesinHesap2Y());
-        }
-
         private void btnYazdir_Click(object sender, EventArgs e)
         {
             // pnlKesinHesaplar panelinin ekran görüntüsünü yakala
@@ -91,6 +76,16 @@ namespace Forms
         {
             // Yakalanan ekran görüntüsünü yazdır
             e.Graphics.DrawImage(memoryImage, 0, 0);
+        }
+
+        private void btnKesinHesap1_Click_1(object sender, EventArgs e)
+        {
+            load_form(new FrmKesinHesap1Y());
+        }
+
+        private void btnKesinHesap2_Click_1(object sender, EventArgs e)
+        {
+            load_form(new FrmKesinHesap2Y());
         }
     }
 }
