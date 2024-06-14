@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business.Concrete;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -431,6 +432,218 @@ namespace Forms
             lblIptalIctimai.Text = iptalIctimai.ToString();
         }
 
+        public void HasilatHesap()
+        {
+            decimal munzamHasilat;
+            decimal yekunHasilat;
+            decimal devredenHasilat;
+
+            if (Convert.ToDecimal(lblTahsilHasilat.Text) < Convert.ToDecimal(lblBKHasilat.Text))
+            {
+                lblMunzamHasilat.Text = 0.ToString();
+            }
+            else
+            {
+                munzamHasilat = Convert.ToDecimal(lblTahsilHasilat.Text) - Convert.ToDecimal(lblBKHasilat.Text);
+                lblMunzamHasilat.Text = munzamHasilat.ToString();
+            }
+
+            yekunHasilat = Convert.ToDecimal(lblBKHasilat.Text) + Convert.ToDecimal(lblMunzamHasilat.Text);
+            lblYekunHasilat.Text = yekunHasilat.ToString();
+
+            devredenHasilat = Convert.ToDecimal(lblYekunHasilat.Text) - Convert.ToDecimal(lblTahsilHasilat.Text);
+            lblDevredenHasilat.Text = devredenHasilat.ToString();
+
+            if (lblMunzamHasilat.Text == "0")
+            {
+                lblMunzamHasilat.Visible = false;
+            }
+        }
+
+        public void ResimHesap()
+        {
+            decimal munzamResim;
+            decimal yekunResim;
+            decimal devredenResim;
+
+            if (Convert.ToDecimal(lblTahsilResim.Text) < Convert.ToDecimal(lblBKResim.Text))
+            {
+                lblMunzamResim.Text = 0.ToString();
+            }
+            else
+            {
+                munzamResim = Convert.ToDecimal(lblTahsilResim.Text) - Convert.ToDecimal(lblBKResim.Text);
+                lblMunzamResim.Text = munzamResim.ToString();
+            }
+
+            yekunResim = Convert.ToDecimal(lblBKResim.Text) + Convert.ToDecimal(lblMunzamResim.Text);
+            lblYekunResim.Text = yekunResim.ToString();
+
+            devredenResim = Convert.ToDecimal(lblYekunResim.Text) - Convert.ToDecimal(lblTahsilResim.Text);
+            lblDevredenResim.Text = devredenResim.ToString();
+        }
+
+        public void CezaHesap()
+        {
+            decimal munzamCeza;
+            decimal yekunCeza;
+            decimal devredenCeza;
+
+            if (Convert.ToDecimal(lblTahsilCeza.Text) < Convert.ToDecimal(lblBKCeza.Text))
+            {
+                lblMunzamCeza.Text = 0.ToString();
+            }
+            else
+            {
+                munzamCeza = Convert.ToDecimal(lblTahsilCeza.Text) - Convert.ToDecimal(lblBKCeza.Text);
+                lblMunzamCeza.Text = munzamCeza.ToString();
+            }
+
+            yekunCeza = Convert.ToDecimal(lblBKCeza.Text) + Convert.ToDecimal(lblMunzamCeza.Text);
+            lblYekunCeza.Text = yekunCeza.ToString();
+
+            devredenCeza = Convert.ToDecimal(lblYekunCeza.Text) - Convert.ToDecimal(lblTahsilCeza.Text);
+            lblDevredenCeza.Text = devredenCeza.ToString();
+        }
+
+        public void YardimHesap()
+        {
+            decimal munzamYardim;
+            decimal yekunYardim;
+            decimal devredenYardim;
+
+            if (Convert.ToDecimal(lblTahsilYardim.Text) < Convert.ToDecimal(lblBKYardim.Text))
+            {
+                lblMunzamYardim.Text = 0.ToString();
+            }
+            else
+            {
+                munzamYardim = Convert.ToDecimal(lblTahsilYardim.Text) - Convert.ToDecimal(lblBKYardim.Text);
+                lblMunzamYardim.Text = munzamYardim.ToString();
+            }
+
+            yekunYardim = Convert.ToDecimal(lblBKYardim.Text) + Convert.ToDecimal(lblMunzamYardim.Text);
+            lblYekunYardim.Text = yekunYardim.ToString();
+
+            devredenYardim = Convert.ToDecimal(lblYekunYardim.Text) - Convert.ToDecimal(lblTahsilYardim.Text);
+            lblDevredenYardim.Text = devredenYardim.ToString();
+        }
+
+        public void KoyVakifHesap()
+        {
+            decimal munzamKoyVakif;
+            decimal yekunKoyVakif;
+            decimal devredenKoyVakif;
+
+            if (Convert.ToDecimal(lblTahsilKoyVakif.Text) < Convert.ToDecimal(lblBKKoyVakif.Text))
+            {
+                lblMunzamKoyVakif.Text = 0.ToString();
+            }
+            else
+            {
+                munzamKoyVakif = Convert.ToDecimal(lblTahsilKoyVakif.Text) - Convert.ToDecimal(lblBKKoyVakif.Text);
+                lblMunzamKoyVakif.Text = munzamKoyVakif.ToString();
+            }
+
+            yekunKoyVakif = Convert.ToDecimal(lblBKKoyVakif.Text) + Convert.ToDecimal(lblMunzamKoyVakif.Text);
+            lblYekunKoyVakif.Text = yekunKoyVakif.ToString();
+
+            devredenKoyVakif = Convert.ToDecimal(lblYekunKoyVakif.Text) - Convert.ToDecimal(lblTahsilKoyVakif.Text);
+            lblDevredenKoyVakif.Text = devredenKoyVakif.ToString();
+        }
+
+        public void IstikrazHesap()
+        {
+            decimal munzamIstikraz;
+            decimal yekunIstikraz;
+            decimal devredenIstikraz;
+
+            if (Convert.ToDecimal(lblTahsilIstikraz.Text) < Convert.ToDecimal(lblBKIstikraz.Text))
+            {
+                lblMunzamIstikraz.Text = 0.ToString();
+            }
+            else
+            {
+                munzamIstikraz = Convert.ToDecimal(lblTahsilIstikraz.Text) - Convert.ToDecimal(lblBKIstikraz.Text);
+                lblMunzamIstikraz.Text = munzamIstikraz.ToString();
+            }
+
+            yekunIstikraz = Convert.ToDecimal(lblBKIstikraz.Text) + Convert.ToDecimal(lblMunzamIstikraz.Text);
+            lblYekunIstikraz.Text = yekunIstikraz.ToString();
+
+            devredenIstikraz = Convert.ToDecimal(lblYekunIstikraz.Text) - Convert.ToDecimal(lblTahsilIstikraz.Text);
+            lblDevredenIstikraz.Text = devredenIstikraz.ToString();
+        }
+
+        public void TurluGelirHesap()
+        {
+            decimal munzamTurluGelir;
+            decimal yekunTurluGelir;
+            decimal devredenTurluGelir;
+
+            if (Convert.ToDecimal(lblTahsilTurluGelir.Text) < Convert.ToDecimal(lblBKTurluGelir.Text))
+            {
+                lblMunzamTurluGelir.Text = 0.ToString();
+            }
+            else
+            {
+                munzamTurluGelir = Convert.ToDecimal(lblTahsilTurluGelir.Text) - Convert.ToDecimal(lblBKTurluGelir.Text);
+                lblMunzamTurluGelir.Text = munzamTurluGelir.ToString();
+            }
+
+            yekunTurluGelir = Convert.ToDecimal(lblBKTurluGelir.Text) + Convert.ToDecimal(lblMunzamTurluGelir.Text);
+            lblYekunTurluGelir.Text = yekunTurluGelir.ToString();
+
+            devredenTurluGelir = Convert.ToDecimal(lblYekunTurluGelir.Text) - Convert.ToDecimal(lblTahsilTurluGelir.Text);
+            lblDevredenTurluGelir.Text = devredenTurluGelir.ToString();
+        }
+
+        public void DevirHesap()
+        {
+            decimal munzamDevir;
+            decimal yekunDevir;
+            decimal devredenDevir;
+
+            if (Convert.ToDecimal(lblTahsilDevir.Text) < Convert.ToDecimal(lblBKDevir.Text))
+            {
+                lblMunzamDevir.Text = 0.ToString();
+            }
+            else
+            {
+                munzamDevir = Convert.ToDecimal(lblTahsilDevir.Text) - Convert.ToDecimal(lblBKDevir.Text);
+                lblMunzamDevir.Text = munzamDevir.ToString();
+            }
+
+            yekunDevir = Convert.ToDecimal(lblBKDevir.Text) + Convert.ToDecimal(lblMunzamDevir.Text);
+            lblYekunDevir.Text = yekunDevir.ToString();
+
+            devredenDevir = Convert.ToDecimal(lblYekunDevir.Text) - Convert.ToDecimal(lblTahsilDevir.Text);
+            lblDevredenDevir.Text = devredenDevir.ToString();
+        }
+
+        public void AskerHesap()
+        {
+            decimal munzamAsker;
+            decimal yekunAsker;
+            decimal devredenAsker;
+
+            if (Convert.ToDecimal(lblTahsilAsker.Text) < Convert.ToDecimal(lblBKAsker.Text))
+            {
+                lblMunzamAsker.Text = 0.ToString();
+            }
+            else
+            {
+                munzamAsker = Convert.ToDecimal(lblTahsilAsker.Text) - Convert.ToDecimal(lblBKAsker.Text);
+                lblMunzamAsker.Text = munzamAsker.ToString();
+            }
+
+            yekunAsker = Convert.ToDecimal(lblBKAsker.Text) + Convert.ToDecimal(lblMunzamAsker.Text);
+            lblYekunAsker.Text = yekunAsker.ToString();
+
+            devredenAsker = Convert.ToDecimal(lblYekunAsker.Text) - Convert.ToDecimal(lblTahsilAsker.Text);
+            lblDevredenAsker.Text = devredenAsker.ToString();
+        }
+
         private void FrmKesinHesap1Y_Load(object sender, EventArgs e)
         {
             {
@@ -453,29 +666,147 @@ namespace Forms
                 IctimaiHesap();
                 KursHesap();
 
-                //public void Hesap()
-                //{
-                //    decimal munzam;
-                //    decimal tahakkukEden;
-                //    decimal iptal;
+                HasilatHesap();
+                ResimHesap();
+                CezaHesap();
+                YardimHesap();
+                KoyVakifHesap();
+                IstikrazHesap();
+                TurluGelirHesap();
+                DevirHesap();
+                AskerHesap();
 
-                //    if (Convert.ToDecimal(lblOdenen.Text) < Convert.ToDecimal(lblBK.Text))
-                //    {
-                //        lblMunzam.Text = 0.ToString();
-                //    }
-                //    else
-                //    {
-                //        munzam = Convert.ToDecimal(lblOdenen.Text) - Convert.ToDecimal(lblBK.Text);
-                //        lblMunzam.Text = munzam.ToString();
-                //    }
-
-                //    tahakkukEden = Convert.ToDecimal(lblBK.Text) + Convert.ToDecimal(lblMunzam.Text);
-                //    lblTahakkuk.Text = tahakkukEden.ToString();
-
-                //    iptal = Convert.ToDecimal(lblTahakkuk.Text) - Convert.ToDecimal(lblOdenen.Text);
-                //    lblIptal.Text = iptal.ToString();
-                //}
+                Toplamlar();
             }
+        }
+
+        public void Toplamlar()
+        {
+            decimal ResimHarcBKToplam = Convert.ToDecimal(lblBKHasilat.Text) + Convert.ToDecimal(lblBKResim.Text) + Convert.ToDecimal(lblBKCeza.Text) +
+                                        Convert.ToDecimal(lblBKCeza.Text) + Convert.ToDecimal(lblBKYardim.Text) + Convert.ToDecimal(lblBKKoyVakif.Text) +
+                                        Convert.ToDecimal(lblBKIstikraz.Text) + Convert.ToDecimal(lblBKTurluGelir.Text) + Convert.ToDecimal(lblBKDevir.Text);
+            lblBKResimHarcToplami.Text = ResimHarcBKToplam.ToString();
+
+            decimal MunzamToplam = Convert.ToDecimal(lblMunzamHasilat.Text) + Convert.ToDecimal(lblMunzamResim.Text) + Convert.ToDecimal(lblMunzamCeza.Text) +
+                                        Convert.ToDecimal(lblMunzamCeza.Text) + Convert.ToDecimal(lblMunzamYardim.Text) + Convert.ToDecimal(lblMunzamKoyVakif.Text) +
+                                        Convert.ToDecimal(lblMunzamIstikraz.Text) + Convert.ToDecimal(lblMunzamTurluGelir.Text) + Convert.ToDecimal(lblMunzamDevir.Text);
+            lblMunzamToplami.Text = MunzamToplam.ToString();
+
+            decimal YekunToplam = Convert.ToDecimal(lblYekunHasilat.Text) + Convert.ToDecimal(lblYekunResim.Text) + Convert.ToDecimal(lblYekunCeza.Text) +
+                                    Convert.ToDecimal(lblYekunCeza.Text) + Convert.ToDecimal(lblYekunYardim.Text) + Convert.ToDecimal(lblYekunKoyVakif.Text) +
+                                    Convert.ToDecimal(lblYekunIstikraz.Text) + Convert.ToDecimal(lblYekunTurluGelir.Text) + Convert.ToDecimal(lblYekunDevir.Text);
+            lblYekunToplami.Text = YekunToplam.ToString();
+
+            decimal TahsilToplam = Convert.ToDecimal(lblTahsilHasilat.Text) + Convert.ToDecimal(lblTahsilResim.Text) + Convert.ToDecimal(lblTahsilCeza.Text) +
+                                    Convert.ToDecimal(lblTahsilCeza.Text) + Convert.ToDecimal(lblTahsilYardim.Text) + Convert.ToDecimal(lblTahsilKoyVakif.Text) +
+                                    Convert.ToDecimal(lblTahsilIstikraz.Text) + Convert.ToDecimal(lblTahsilTurluGelir.Text) + Convert.ToDecimal(lblTahsilDevir.Text);
+            lblTahsilToplami.Text = TahsilToplam.ToString();
+
+            decimal DevredenToplam = Convert.ToDecimal(lblDevredenHasilat.Text) + Convert.ToDecimal(lblDevredenResim.Text) + Convert.ToDecimal(lblDevredenCeza.Text) +
+                                    Convert.ToDecimal(lblDevredenCeza.Text) + Convert.ToDecimal(lblDevredenYardim.Text) + Convert.ToDecimal(lblDevredenKoyVakif.Text) +
+                                    Convert.ToDecimal(lblDevredenIstikraz.Text) + Convert.ToDecimal(lblDevredenTurluGelir.Text) + Convert.ToDecimal(lblDevredenDevir.Text);
+            lblDevredenToplami.Text = DevredenToplam.ToString();
+
+            lblBKAskerToplami.Text = lblBKAsker.Text;
+            lblMunzamAskerToplami.Text = lblMunzamAsker.Text;
+            lblYekunAskerToplami.Text = lblYekunAsker.Text;
+            lblTahsilAskerToplami.Text = lblTahsilAsker.Text;
+            lblDevredenAskerToplami.Text = lblDevredenAsker.Text;
+
+            decimal ResimHarcGenelToplami = Convert.ToDecimal(lblBKResimHarcToplami.Text) + Convert.ToDecimal(lblBKAskerToplami.Text);
+            lblBKResimHarcGenelToplam.Text = ResimHarcGenelToplami.ToString();
+
+            decimal MunzamGenelToplami = Convert.ToDecimal(lblMunzamToplami.Text) + Convert.ToDecimal(lblMunzamAskerToplami.Text);
+            lblMunzamGenelToplam.Text = MunzamGenelToplami.ToString();
+
+            decimal YekunGenelToplami = Convert.ToDecimal(lblYekunToplami.Text) + Convert.ToDecimal(lblYekunAskerToplami.Text);
+            lblYekunGenelToplam.Text = YekunGenelToplami.ToString();
+
+            decimal TahsilGenelToplami = Convert.ToDecimal(lblTahsilToplami.Text) + Convert.ToDecimal(lblTahsilAskerToplami.Text);
+            lblTahsilGenelToplam.Text = TahsilGenelToplami.ToString();
+
+            decimal DevredenGenelToplami = Convert.ToDecimal(lblDevredenToplami.Text) + Convert.ToDecimal(lblDevredenAskerToplami.Text);
+            lblDevredenGenelToplami.Text = DevredenGenelToplami.ToString();
+
+            decimal BKIdariToplami = Convert.ToDecimal(lblBKAylik.Text) + Convert.ToDecimal(lblBKIdariMasraf.Text);
+            lblBKIdariToplami.Text = BKIdariToplami.ToString();
+
+            decimal MunzamIdariToplami = Convert.ToDecimal(lblMunzamAylik.Text) + Convert.ToDecimal(lblMunzamIdariMasraf.Text);
+            lblMunzamIdariToplami.Text = MunzamIdariToplami.ToString();
+
+            decimal TahakkukIdariToplami = Convert.ToDecimal(lblTahakkukAylik.Text) + Convert.ToDecimal(lblTahakkukIdariMasraf.Text);
+            lblTahakkukIdariToplami.Text = TahakkukIdariToplami.ToString();
+
+            decimal OdenenIdariToplami = Convert.ToDecimal(lblOdenenAylik.Text) + Convert.ToDecimal(lblOdenenIdariMasraf.Text);
+            lblOdenenIdariToplami.Text = OdenenIdariToplami.ToString();
+
+            decimal IptalIdariToplami = Convert.ToDecimal(lblIptalAylik.Text) + Convert.ToDecimal(lblIptalIdariMasraf.Text);
+            lblIptalIdariToplami.Text = IptalIdariToplami.ToString();
+
+            decimal BKZiraatToplami = Convert.ToDecimal(lblBKSulama.Text) + Convert.ToDecimal(lblBKAgaclama.Text) + Convert.ToDecimal(lblBKDamizlik.Text) +
+                                      Convert.ToDecimal(lblBKOrnekTarla.Text) + Convert.ToDecimal(lblBKZiraiHayvan.Text) + Convert.ToDecimal(lblBKPazarCarsi.Text) +
+                                      Convert.ToDecimal(lblBKKucukEndustri.Text);
+            lblBKZiraatToplami.Text = BKZiraatToplami.ToString();
+
+            decimal MunzamZiraatToplami = Convert.ToDecimal(lblMunzamSulama.Text) + Convert.ToDecimal(lblMunzamAgaclama.Text) + Convert.ToDecimal(lblMunzamDamizlik.Text) +
+                                      Convert.ToDecimal(lblMunzamOrnekTarla.Text) + Convert.ToDecimal(lblMunzamZiraiHayvan.Text) + Convert.ToDecimal(lblMunzamPazarCarsi.Text) +
+                                      Convert.ToDecimal(lblMunzamKucukEndustri.Text);
+            lblMunzamZiraatToplami.Text = MunzamZiraatToplami.ToString();
+
+            decimal TahakkukZiraatToplami = Convert.ToDecimal(lblTahakkukSulama.Text) + Convert.ToDecimal(lblTahakkukAgaclama.Text) + Convert.ToDecimal(lblTahakkukDamizlik.Text) +
+                                      Convert.ToDecimal(lblTahakkukOrnekTarla.Text) + Convert.ToDecimal(lblTahakkukZiraiHayvan.Text) + Convert.ToDecimal(lblTahakkukPazarCarsi.Text) +
+                                      Convert.ToDecimal(lblTahakkukKucukEndustri.Text);
+            lblTahakkukZiraatToplami.Text = TahakkukZiraatToplami.ToString();
+
+            decimal OdenenZiraatToplami = Convert.ToDecimal(lblOdenenSulama.Text) + Convert.ToDecimal(lblOdenenAgaclama.Text) + Convert.ToDecimal(lblOdenenDamizlik.Text) +
+                                      Convert.ToDecimal(lblOdenenOrnekTarla.Text) + Convert.ToDecimal(lblOdenenZiraiHayvan.Text) + Convert.ToDecimal(lblOdenenPazarCarsi.Text) +
+                                      Convert.ToDecimal(lblOdenenKucukEndustri.Text);
+            lblOdenenZiraatToplami.Text = OdenenZiraatToplami.ToString();
+
+            decimal IptalZiraatToplami = Convert.ToDecimal(lblIptalSulama.Text) + Convert.ToDecimal(lblIptalAgaclama.Text) + Convert.ToDecimal(lblIptalDamizlik.Text) +
+                                      Convert.ToDecimal(lblIptalOrnekTarla.Text) + Convert.ToDecimal(lblIptalZiraiHayvan.Text) + Convert.ToDecimal(lblIptalPazarCarsi.Text) +
+                                      Convert.ToDecimal(lblIptalKucukEndustri.Text);
+            lblIptalZiraatToplami.Text = IptalZiraatToplami.ToString();
+
+            decimal BKKulturToplami = Convert.ToDecimal(lblBKOgretmenevi.Text) + Convert.ToDecimal(lblBKOkulDaimi.Text) + +Convert.ToDecimal(lblOdenenOkumaOdasi.Text) +
+                                      Convert.ToDecimal(lblBKKurs.Text) + Convert.ToDecimal(lblBKOkulUygulama.Text);
+            lblBKKulturToplami.Text = BKKulturToplami.ToString();
+
+            decimal MunzamKulturToplami = Convert.ToDecimal(lblMunzamOgretmenevi.Text) + Convert.ToDecimal(lblMunzamOkulDaimi.Text) + +Convert.ToDecimal(lblOdenenOkumaOdasi.Text) +
+                                          Convert.ToDecimal(lblMunzamKurs.Text) + Convert.ToDecimal(lblMunzamOkulUygulama.Text);
+            lblMunzamKulturToplami.Text = MunzamKulturToplami.ToString();
+
+            decimal TahakkukKulturToplami = Convert.ToDecimal(lblTahakkukOgretmenevi.Text) + Convert.ToDecimal(lblTahakkukOkulDaimi.Text) + +Convert.ToDecimal(lblOdenenOkumaOdasi.Text) +
+                                            Convert.ToDecimal(lblTahakkukKurs.Text) + Convert.ToDecimal(lblTahakkukOkulUygulama.Text);
+            lblTahakkukKulturToplami.Text = TahakkukKulturToplami.ToString();
+
+            decimal OdenenKulturToplami = Convert.ToDecimal(lblOdenenOgretmenevi.Text) + Convert.ToDecimal(lblOdenenOkulDaimi.Text) + Convert.ToDecimal(lblOdenenOkumaOdasi.Text) +
+                                            Convert.ToDecimal(lblOdenenKurs.Text) + Convert.ToDecimal(lblOdenenOkulUygulama.Text);
+            lblOdenenKulturToplami.Text = OdenenKulturToplami.ToString();
+
+            decimal IptalKulturToplami = Convert.ToDecimal(lblIptalOgretmenevi.Text) + Convert.ToDecimal(lblIptalOkulDaimi.Text) + +Convert.ToDecimal(lblOdenenOkumaOdasi.Text) +
+                                         Convert.ToDecimal(lblIptalKurs.Text) + Convert.ToDecimal(lblIptalOkulUygulama.Text);
+            lblIptalKulturToplami.Text = IptalKulturToplami.ToString();
+
+            decimal BKSaglikToplami = Convert.ToDecimal(lblBKIcmeSulari.Text) + Convert.ToDecimal(lblBKTemizlik.Text) + Convert.ToDecimal(lblBKSpor.Text) +
+                                      Convert.ToDecimal(lblBKIctimai.Text);
+            lblBKSaglikToplami.Text = BKSaglikToplami.ToString();
+
+            decimal MunzamSaglikToplami = Convert.ToDecimal(lblMunzamIcmeSulari.Text) + Convert.ToDecimal(lblMunzamTemizlik.Text) + Convert.ToDecimal(lblMunzamSpor.Text) +
+                                      Convert.ToDecimal(lblMunzamIctimai.Text);
+            lblMunzamSaglikToplami.Text = MunzamSaglikToplami.ToString();
+
+            decimal TahakkukSaglikToplami = Convert.ToDecimal(lblTahakkukIcmeSulari.Text) + Convert.ToDecimal(lblTahakkukTemizlik.Text) + Convert.ToDecimal(lblTahakkukSpor.Text) +
+                                      Convert.ToDecimal(lblTahakkukIctimai.Text);
+            lblTahakkukSaglikToplami.Text = TahakkukSaglikToplami.ToString();
+
+            decimal OdenenSaglikToplami = Convert.ToDecimal(lblOdenenIcmeSulari.Text) + Convert.ToDecimal(lblOdenenTemizlik.Text) + Convert.ToDecimal(lblOdenenSpor.Text) +
+                                      Convert.ToDecimal(lblOdenenIctimai.Text);
+            lblOdenenSaglikToplami.Text = OdenenSaglikToplami.ToString();
+
+            decimal IptalSaglikToplami = Convert.ToDecimal(lblIptalIcmeSulari.Text) + Convert.ToDecimal(lblIptalTemizlik.Text) + Convert.ToDecimal(lblIptalSpor.Text) +
+                          Convert.ToDecimal(lblIptalIctimai.Text);
+            lblIptalSaglikToplami.Text = IptalSaglikToplami.ToString();
         }
     }
 }
