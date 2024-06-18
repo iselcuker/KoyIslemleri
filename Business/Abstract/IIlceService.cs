@@ -10,7 +10,8 @@ namespace Business.Abstract
     public interface IIlceService
     {
         List<Ilce> GetAll();
-        Ilce GetById(int ilceId);
+        Ilce GetById(byte ilceId);
+       
         void Add(Ilce ilce);
         void Delete(Ilce ilce);
         void Update(Ilce ilce);

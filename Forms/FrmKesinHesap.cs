@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +20,42 @@ namespace Forms
         private PrintPreviewDialog printPreviewDialog;
         private Bitmap memoryImage;
 
-        public FrmKesinHesap()
+        TahminiButceGelirManager tahminiButceGelirManager;
+        TahminiButceGiderManager tahminiButceGiderManager;
+        GelirManager gelirManager;
+        GiderManager giderManager;
+        DegisiklikManager degisiklikManager;
+        IlceManager ilceManager;
+        KoyManager koyManager;
+        DonemManager donemManager;
+        //AnaSayfada comboboxlardan yapılan seçimlerin index lerini getirmek için
+        byte _seciliIlceIndex;
+        int _seciliKoyIndex;
+        byte _seciliDonemIndex;
+
+        public FrmKesinHesap(int seciliKoyIndex, byte seciliDonemIndex,byte seciliIlceIndex)
         {
             InitializeComponent();
+
+            TahminiButceGelirManager _tahminiButceGelirManager = new TahminiButceGelirManager(new EfTahminiButceGelirDal());
+            tahminiButceGelirManager = _tahminiButceGelirManager;
+
+            TahminiButceGiderManager _tahminiButceGiderManager = new TahminiButceGiderManager(new EfTahminiButceGiderDal());
+            tahminiButceGiderManager = _tahminiButceGiderManager;
+
+            DegisiklikManager _degisiklikManager = new DegisiklikManager(new EfDegisiklikDal());
+            degisiklikManager = _degisiklikManager;
+
+            _seciliKoyIndex = seciliKoyIndex;
+            _seciliDonemIndex = seciliDonemIndex;
+
+            IlceManager _ilceManager = new IlceManager(new EfIlceDal());
+
+            KoyManager _koyManager = new KoyManager(new EfKoyDal());
+            koyManager = _koyManager;
+
+            DonemManager _donemManager = new DonemManager(new EfDonemDal());
+            donemManager = _donemManager;
 
             // Baskı işlemini gerçekleştirmek için bir PrintDocument nesnesi oluşturulur
             printDocument = new PrintDocument();
@@ -80,12 +116,31 @@ namespace Forms
 
         private void btnKesinHesap1_Click_1(object sender, EventArgs e)
         {
-            load_form(new FrmKesinHesap1Y());
+            // FrmAnaSayfa formunu bul ve seçili köy ve dönem indexlerini al
+            FrmAnaSayfa frmAnaSayfa = Application.OpenForms["FrmAnaSayfa"] as FrmAnaSayfa;
+
+            if (frmAnaSayfa != null)
+            {
+                // FrmAnaSayfa formundaki ComboBox'lardan seçili köy ve dönem indexlerini al
+                Ilce secilenIlce = frmAnaSayfa.cmbIlce?.SelectedItem as Ilce;
+                byte seciliIlceIndex = secilenIlce?.Id ?? _seciliIlceIndex;
+
+                Koy secilenKoy = frmAnaSayfa.CmbKoy.SelectedItem as Koy;
+                int seciliKoyIndex = secilenKoy?.Id ?? _seciliKoyIndex;
+
+                Donem secilenDonem = frmAnaSayfa.CmbDonem.SelectedItem as Donem;
+                byte seciliDonemIndex = secilenDonem != null ? Convert.ToByte(secilenDonem.Id) : _seciliDonemIndex;
+
+                // FrmTahminiGelir formunu oluştur ve load_form metoduyla yükle
+                FrmKesinHesap1 frmKesinHesap1Y = new FrmKesinHesap1(seciliKoyIndex, seciliDonemIndex,seciliIlceIndex);
+                load_form(frmKesinHesap1Y);
+            }
+            //load_form(new FrmKesinHesap1Y(seciliKoyIndex,seciliDonemIndex));
         }
 
         private void btnKesinHesap2_Click_1(object sender, EventArgs e)
         {
-            load_form(new FrmKesinHesap2Y());
+            load_form(new FrmKesinHesap2());
         }
     }
 }

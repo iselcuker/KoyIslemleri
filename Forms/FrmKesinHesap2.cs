@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class FrmKesinHesap2Y : Form
+    public partial class FrmKesinHesap2 : Form
     {
         decimal BKYolKopru;
         decimal BKKoyAkar;
@@ -55,7 +55,7 @@ namespace Forms
         decimal OdenenKulturToplami;
         decimal OdenenSaglıkToplami;
 
-        public FrmKesinHesap2Y()
+        public FrmKesinHesap2()
         {
             InitializeComponent();
             this.BackColor = Color.White; // Formun arka plan rengini beyaz yap

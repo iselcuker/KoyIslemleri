@@ -1,6 +1,6 @@
 ﻿namespace Forms
 {
-    partial class FrmKesinHesap1Y
+    partial class FrmKesinHesap1
     {
         /// <summary>
         /// Required designer variable.
@@ -62,7 +62,7 @@
             label38 = new Label();
             label39 = new Label();
             label40 = new Label();
-            label41 = new Label();
+            lblKoyAdi = new Label();
             panel7 = new Panel();
             label43 = new Label();
             panel8 = new Panel();
@@ -160,7 +160,7 @@
             label65 = new Label();
             panel80 = new Panel();
             panel78 = new Panel();
-            label89 = new Label();
+            lblCezaDegisiklik = new Label();
             panel114 = new Panel();
             label82 = new Label();
             panel115 = new Panel();
@@ -170,10 +170,10 @@
             panel117 = new Panel();
             label61 = new Label();
             panel79 = new Panel();
-            label55 = new Label();
+            lblResimDegisiklik = new Label();
             label71 = new Label();
             panel81 = new Panel();
-            label54 = new Label();
+            lblHasilatDegisiklik = new Label();
             label72 = new Label();
             panel84 = new Panel();
             panel85 = new Panel();
@@ -219,7 +219,7 @@
             panel113 = new Panel();
             label81 = new Label();
             panel118 = new Panel();
-            label56 = new Label();
+            lblIstikrazDegisiklik = new Label();
             panel119 = new Panel();
             label85 = new Label();
             panel120 = new Panel();
@@ -231,7 +231,7 @@
             panel123 = new Panel();
             label95 = new Label();
             label96 = new Label();
-            label57 = new Label();
+            lblKoyVakifDegisiklik = new Label();
             panel124 = new Panel();
             label90 = new Label();
             panel125 = new Panel();
@@ -1109,7 +1109,7 @@
             panel263 = new Panel();
             panel264 = new Panel();
             label16 = new Label();
-            label58 = new Label();
+            lblceAdi = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -1418,7 +1418,7 @@
             label1.Location = new Point(3, -1);
             label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(13, 15);
+            label1.Size = new Size(15, 17);
             label1.TabIndex = 1;
             label1.Text = "F";
             // 
@@ -1428,7 +1428,7 @@
             label2.Location = new Point(3, 11);
             label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
-            label2.Size = new Size(12, 15);
+            label2.Size = new Size(14, 17);
             label2.TabIndex = 2;
             label2.Text = "a";
             // 
@@ -1452,7 +1452,7 @@
             label4.Location = new Point(3, 36);
             label4.Margin = new Padding(1, 0, 1, 0);
             label4.Name = "label4";
-            label4.Size = new Size(9, 15);
+            label4.Size = new Size(10, 17);
             label4.TabIndex = 2;
             label4.Text = "ı";
             // 
@@ -1462,7 +1462,7 @@
             label5.Location = new Point(3, 47);
             label5.Margin = new Padding(1, 0, 1, 0);
             label5.Name = "label5";
-            label5.Size = new Size(9, 15);
+            label5.Size = new Size(10, 17);
             label5.TabIndex = 2;
             label5.Text = "l";
             // 
@@ -1472,7 +1472,7 @@
             label3.Location = new Point(3, 23);
             label3.Margin = new Padding(1, 0, 1, 0);
             label3.Name = "label3";
-            label3.Size = new Size(12, 15);
+            label3.Size = new Size(14, 17);
             label3.TabIndex = 2;
             label3.Text = "s";
             // 
@@ -1482,7 +1482,7 @@
             label6.Location = new Point(5, 3);
             label6.Margin = new Padding(1, 0, 1, 0);
             label6.Name = "label6";
-            label6.Size = new Size(13, 15);
+            label6.Size = new Size(15, 17);
             label6.TabIndex = 4;
             label6.Text = "İli";
             // 
@@ -1492,7 +1492,7 @@
             label7.Location = new Point(5, 20);
             label7.Margin = new Padding(1, 0, 1, 0);
             label7.Name = "label7";
-            label7.Size = new Size(28, 15);
+            label7.Size = new Size(33, 17);
             label7.TabIndex = 4;
             label7.Text = "İlçesi";
             // 
@@ -1502,7 +1502,7 @@
             label8.Location = new Point(344, 3);
             label8.Margin = new Padding(1, 0, 1, 0);
             label8.Name = "label8";
-            label8.Size = new Size(35, 15);
+            label8.Size = new Size(42, 17);
             label8.TabIndex = 4;
             label8.Text = "Bucağı";
             // 
@@ -1512,7 +1512,7 @@
             label9.Location = new Point(344, 20);
             label9.Margin = new Padding(1, 0, 1, 0);
             label9.Name = "label9";
-            label9.Size = new Size(29, 15);
+            label9.Size = new Size(34, 17);
             label9.TabIndex = 4;
             label9.Text = "Köyü";
             // 
@@ -1522,7 +1522,7 @@
             label10.Location = new Point(375, 20);
             label10.Margin = new Padding(1, 0, 1, 0);
             label10.Name = "label10";
-            label10.Size = new Size(10, 15);
+            label10.Size = new Size(11, 17);
             label10.TabIndex = 4;
             label10.Text = ":";
             // 
@@ -1532,7 +1532,7 @@
             label11.Location = new Point(375, 4);
             label11.Margin = new Padding(1, 0, 1, 0);
             label11.Name = "label11";
-            label11.Size = new Size(10, 15);
+            label11.Size = new Size(11, 17);
             label11.TabIndex = 4;
             label11.Text = ":";
             // 
@@ -1542,7 +1542,7 @@
             label12.Location = new Point(27, 20);
             label12.Margin = new Padding(1, 0, 1, 0);
             label12.Name = "label12";
-            label12.Size = new Size(10, 15);
+            label12.Size = new Size(11, 17);
             label12.TabIndex = 4;
             label12.Text = ":";
             // 
@@ -1552,7 +1552,7 @@
             label13.Location = new Point(27, 3);
             label13.Margin = new Padding(1, 0, 1, 0);
             label13.Name = "label13";
-            label13.Size = new Size(10, 15);
+            label13.Size = new Size(11, 17);
             label13.TabIndex = 4;
             label13.Text = ":";
             // 
@@ -1562,7 +1562,7 @@
             label14.Location = new Point(167, 12);
             label14.Margin = new Padding(1, 0, 1, 0);
             label14.Name = "label14";
-            label14.Size = new Size(83, 15);
+            label14.Size = new Size(99, 17);
             label14.TabIndex = 4;
             label14.Text = "Gelir Kesin Hesabı";
             // 
@@ -1586,7 +1586,7 @@
             label20.Location = new Point(1, 36);
             label20.Margin = new Padding(1, 0, 1, 0);
             label20.Name = "label20";
-            label20.Size = new Size(12, 15);
+            label20.Size = new Size(14, 17);
             label20.TabIndex = 2;
             label20.Text = "d";
             // 
@@ -1596,7 +1596,7 @@
             label21.Location = new Point(1, -1);
             label21.Margin = new Padding(1, 0, 1, 0);
             label21.Name = "label21";
-            label21.Size = new Size(15, 15);
+            label21.Size = new Size(19, 17);
             label21.TabIndex = 1;
             label21.Text = "M";
             // 
@@ -1606,7 +1606,7 @@
             label22.Location = new Point(1, 47);
             label22.Margin = new Padding(1, 0, 1, 0);
             label22.Name = "label22";
-            label22.Size = new Size(12, 15);
+            label22.Size = new Size(14, 17);
             label22.TabIndex = 2;
             label22.Text = "e";
             // 
@@ -1616,7 +1616,7 @@
             label23.Location = new Point(1, 11);
             label23.Margin = new Padding(1, 0, 1, 0);
             label23.Name = "label23";
-            label23.Size = new Size(12, 15);
+            label23.Size = new Size(14, 17);
             label23.TabIndex = 2;
             label23.Text = "a";
             // 
@@ -1626,7 +1626,7 @@
             label24.Location = new Point(1, 23);
             label24.Margin = new Padding(1, 0, 1, 0);
             label24.Name = "label24";
-            label24.Size = new Size(12, 15);
+            label24.Size = new Size(14, 17);
             label24.TabIndex = 2;
             label24.Text = "d";
             // 
@@ -1650,7 +1650,7 @@
             label25.Location = new Point(2, 47);
             label25.Margin = new Padding(1, 0, 1, 0);
             label25.Name = "label25";
-            label25.Size = new Size(12, 15);
+            label25.Size = new Size(14, 17);
             label25.TabIndex = 2;
             label25.Text = "d";
             // 
@@ -1660,7 +1660,7 @@
             label26.Location = new Point(2, 10);
             label26.Margin = new Padding(1, 0, 1, 0);
             label26.Name = "label26";
-            label26.Size = new Size(15, 15);
+            label26.Size = new Size(19, 17);
             label26.TabIndex = 1;
             label26.Text = "M";
             // 
@@ -1670,7 +1670,7 @@
             label27.Location = new Point(2, 58);
             label27.Margin = new Padding(1, 0, 1, 0);
             label27.Name = "label27";
-            label27.Size = new Size(12, 15);
+            label27.Size = new Size(14, 17);
             label27.TabIndex = 2;
             label27.Text = "e";
             // 
@@ -1680,7 +1680,7 @@
             label28.Location = new Point(2, 22);
             label28.Margin = new Padding(1, 0, 1, 0);
             label28.Name = "label28";
-            label28.Size = new Size(12, 15);
+            label28.Size = new Size(14, 17);
             label28.TabIndex = 2;
             label28.Text = "a";
             // 
@@ -1690,7 +1690,7 @@
             label29.Location = new Point(2, 34);
             label29.Margin = new Padding(1, 0, 1, 0);
             label29.Name = "label29";
-            label29.Size = new Size(12, 15);
+            label29.Size = new Size(14, 17);
             label29.TabIndex = 2;
             label29.Text = "d";
             // 
@@ -1714,7 +1714,7 @@
             label35.Location = new Point(3, 48);
             label35.Margin = new Padding(1, 0, 1, 0);
             label35.Name = "label35";
-            label35.Size = new Size(9, 15);
+            label35.Size = new Size(10, 17);
             label35.TabIndex = 2;
             label35.Text = "ı";
             // 
@@ -1724,7 +1724,7 @@
             label36.Location = new Point(3, 11);
             label36.Margin = new Padding(1, 0, 1, 0);
             label36.Name = "label36";
-            label36.Size = new Size(13, 15);
+            label36.Size = new Size(15, 17);
             label36.TabIndex = 1;
             label36.Text = "F";
             // 
@@ -1734,7 +1734,7 @@
             label37.Location = new Point(3, 59);
             label37.Margin = new Padding(1, 0, 1, 0);
             label37.Name = "label37";
-            label37.Size = new Size(9, 15);
+            label37.Size = new Size(10, 17);
             label37.TabIndex = 2;
             label37.Text = "l";
             // 
@@ -1744,7 +1744,7 @@
             label38.Location = new Point(3, 23);
             label38.Margin = new Padding(1, 0, 1, 0);
             label38.Name = "label38";
-            label38.Size = new Size(12, 15);
+            label38.Size = new Size(14, 17);
             label38.TabIndex = 2;
             label38.Text = "a";
             // 
@@ -1754,7 +1754,7 @@
             label39.Location = new Point(3, 35);
             label39.Margin = new Padding(1, 0, 1, 0);
             label39.Name = "label39";
-            label39.Size = new Size(12, 15);
+            label39.Size = new Size(14, 17);
             label39.TabIndex = 2;
             label39.Text = "s";
             // 
@@ -1764,19 +1764,19 @@
             label40.Location = new Point(702, 7);
             label40.Margin = new Padding(1, 0, 1, 0);
             label40.Name = "label40";
-            label40.Size = new Size(86, 15);
+            label40.Size = new Size(103, 17);
             label40.TabIndex = 4;
             label40.Text = "Gider Kesin Hesabı";
             // 
-            // label41
+            // lblKoyAdi
             // 
-            label41.AutoSize = true;
-            label41.Location = new Point(383, 20);
-            label41.Margin = new Padding(1, 0, 1, 0);
-            label41.Name = "label41";
-            label41.Size = new Size(17, 15);
-            label41.TabIndex = 4;
-            label41.Text = "00";
+            lblKoyAdi.AutoSize = true;
+            lblKoyAdi.Location = new Point(383, 20);
+            lblKoyAdi.Margin = new Padding(1, 0, 1, 0);
+            lblKoyAdi.Name = "lblKoyAdi";
+            lblKoyAdi.Size = new Size(20, 17);
+            lblKoyAdi.TabIndex = 4;
+            lblKoyAdi.Text = "00";
             // 
             // panel7
             // 
@@ -1794,7 +1794,7 @@
             label43.Location = new Point(7, 23);
             label43.Margin = new Padding(1, 0, 1, 0);
             label43.Name = "label43";
-            label43.Size = new Size(70, 15);
+            label43.Size = new Size(86, 17);
             label43.TabIndex = 1;
             label43.Text = "GELİRİN CİNSİ";
             // 
@@ -1816,7 +1816,7 @@
             label111.Location = new Point(14, 23);
             label111.Margin = new Padding(1, 0, 1, 0);
             label111.Name = "label111";
-            label111.Size = new Size(33, 15);
+            label111.Size = new Size(40, 17);
             label111.TabIndex = 2;
             label111.Text = "Konan";
             // 
@@ -1826,7 +1826,7 @@
             label46.Location = new Point(22, 40);
             label46.Margin = new Padding(1, 0, 1, 0);
             label46.Name = "label46";
-            label46.Size = new Size(18, 15);
+            label46.Size = new Size(21, 17);
             label46.TabIndex = 1;
             label46.Text = "TL";
             // 
@@ -1836,7 +1836,7 @@
             label42.Location = new Point(12, 4);
             label42.Margin = new Padding(1, 0, 1, 0);
             label42.Name = "label42";
-            label42.Size = new Size(41, 15);
+            label42.Size = new Size(48, 17);
             label42.TabIndex = 1;
             label42.Text = "Bütçeye";
             // 
@@ -1858,7 +1858,7 @@
             label117.Location = new Point(11, 23);
             label117.Margin = new Padding(1, 0, 1, 0);
             label117.Name = "label117";
-            label117.Size = new Size(43, 15);
+            label117.Size = new Size(53, 17);
             label117.TabIndex = 2;
             label117.Text = "Munzam";
             // 
@@ -1868,7 +1868,7 @@
             label47.Location = new Point(23, 40);
             label47.Margin = new Padding(1, 0, 1, 0);
             label47.Name = "label47";
-            label47.Size = new Size(18, 15);
+            label47.Size = new Size(21, 17);
             label47.TabIndex = 1;
             label47.Text = "TL";
             // 
@@ -1878,7 +1878,7 @@
             label44.Location = new Point(18, 4);
             label44.Margin = new Padding(1, 0, 1, 0);
             label44.Name = "label44";
-            label44.Size = new Size(31, 15);
+            label44.Size = new Size(37, 17);
             label44.TabIndex = 1;
             label44.Text = "Bu Yıl";
             // 
@@ -1900,7 +1900,7 @@
             label49.Location = new Point(1, 40);
             label49.Margin = new Padding(1, 0, 1, 0);
             label49.Name = "label49";
-            label49.Size = new Size(33, 13);
+            label49.Size = new Size(39, 14);
             label49.TabIndex = 1;
             label49.Text = "Eden TL";
             // 
@@ -1911,7 +1911,7 @@
             label45.Location = new Point(-2, 17);
             label45.Margin = new Padding(1, 0, 1, 0);
             label45.Name = "label45";
-            label45.Size = new Size(36, 13);
+            label45.Size = new Size(44, 14);
             label45.TabIndex = 1;
             label45.Text = "Tahakkuk";
             // 
@@ -1921,7 +1921,7 @@
             label50.Location = new Point(212, 102);
             label50.Margin = new Padding(1, 0, 1, 0);
             label50.Name = "label50";
-            label50.Size = new Size(50, 15);
+            label50.Size = new Size(61, 17);
             label50.TabIndex = 1;
             label50.Text = "S A L M A";
             // 
@@ -1943,7 +1943,7 @@
             label118.Location = new Point(14, 23);
             label118.Margin = new Padding(1, 0, 1, 0);
             label118.Name = "label118";
-            label118.Size = new Size(36, 15);
+            label118.Size = new Size(43, 17);
             label118.TabIndex = 2;
             label118.Text = "Olunan";
             // 
@@ -1953,7 +1953,7 @@
             label48.Location = new Point(24, 40);
             label48.Margin = new Padding(1, 0, 1, 0);
             label48.Name = "label48";
-            label48.Size = new Size(18, 15);
+            label48.Size = new Size(21, 17);
             label48.TabIndex = 1;
             label48.Text = "TL";
             // 
@@ -1963,7 +1963,7 @@
             label51.Location = new Point(15, 4);
             label51.Margin = new Padding(1, 0, 1, 0);
             label51.Name = "label51";
-            label51.Size = new Size(32, 15);
+            label51.Size = new Size(37, 17);
             label51.TabIndex = 1;
             label51.Text = "Tahsil";
             // 
@@ -1984,7 +1984,7 @@
             label52.Location = new Point(24, 40);
             label52.Margin = new Padding(1, 0, 1, 0);
             label52.Name = "label52";
-            label52.Size = new Size(18, 15);
+            label52.Size = new Size(21, 17);
             label52.TabIndex = 1;
             label52.Text = "TL";
             // 
@@ -1994,7 +1994,7 @@
             label53.Location = new Point(6, 17);
             label53.Margin = new Padding(1, 0, 1, 0);
             label53.Name = "label53";
-            label53.Size = new Size(47, 15);
+            label53.Size = new Size(56, 17);
             label53.TabIndex = 1;
             label53.Text = "Devreden";
             // 
@@ -2015,7 +2015,7 @@
             label64.Location = new Point(0, 27);
             label64.Margin = new Padding(1, 0, 1, 0);
             label64.Name = "label64";
-            label64.Size = new Size(25, 13);
+            label64.Size = new Size(30, 14);
             label64.TabIndex = 1;
             label64.Text = "Salma";
             // 
@@ -2035,7 +2035,7 @@
             label69.Location = new Point(3, 27);
             label69.Margin = new Padding(1, 0, 1, 0);
             label69.Name = "label69";
-            label69.Size = new Size(12, 15);
+            label69.Size = new Size(14, 17);
             label69.TabIndex = 2;
             label69.Text = "1";
             // 
@@ -2055,7 +2055,7 @@
             label74.Location = new Point(3, 27);
             label74.Margin = new Padding(1, 0, 1, 0);
             label74.Name = "label74";
-            label74.Size = new Size(12, 15);
+            label74.Size = new Size(14, 17);
             label74.TabIndex = 2;
             label74.Text = "1";
             // 
@@ -2088,7 +2088,7 @@
             label15.Location = new Point(2, 5);
             label15.Margin = new Padding(1, 0, 1, 0);
             label15.Name = "label15";
-            label15.Size = new Size(21, 13);
+            label15.Size = new Size(25, 14);
             label15.TabIndex = 1;
             label15.Text = "Para";
             // 
@@ -2127,7 +2127,7 @@
             label17.Location = new Point(1, 4);
             label17.Margin = new Padding(1, 0, 1, 0);
             label17.Name = "label17";
-            label17.Size = new Size(28, 13);
+            label17.Size = new Size(34, 14);
             label17.TabIndex = 1;
             label17.Text = "Mahsül";
             // 
@@ -2149,7 +2149,7 @@
             label18.Location = new Point(1, -3);
             label18.Margin = new Padding(1, 0, 1, 0);
             label18.Name = "label18";
-            label18.Size = new Size(39, 13);
+            label18.Size = new Size(50, 14);
             label18.TabIndex = 1;
             label18.Text = "Birinci Fasıl";
             // 
@@ -2160,7 +2160,7 @@
             label19.Location = new Point(2, 10);
             label19.Margin = new Padding(1, 0, 1, 0);
             label19.Name = "label19";
-            label19.Size = new Size(30, 13);
+            label19.Size = new Size(36, 14);
             label19.TabIndex = 17;
             label19.Text = "Yekünü";
             // 
@@ -2602,7 +2602,7 @@
             label66.Location = new Point(213, 191);
             label66.Margin = new Padding(1, 0, 1, 0);
             label66.Name = "label66";
-            label66.Size = new Size(48, 15);
+            label66.Size = new Size(58, 17);
             label66.TabIndex = 37;
             label66.Text = "İ M E C E";
             // 
@@ -2623,7 +2623,7 @@
             label67.Location = new Point(2, 28);
             label67.Margin = new Padding(1, 0, 1, 0);
             label67.Name = "label67";
-            label67.Size = new Size(12, 15);
+            label67.Size = new Size(14, 17);
             label67.TabIndex = 3;
             label67.Text = "2";
             // 
@@ -2633,7 +2633,7 @@
             label68.Location = new Point(2, 5);
             label68.Margin = new Padding(1, 0, 1, 0);
             label68.Name = "label68";
-            label68.Size = new Size(12, 15);
+            label68.Size = new Size(14, 17);
             label68.TabIndex = 2;
             label68.Text = "1";
             // 
@@ -2653,7 +2653,7 @@
             label70.Location = new Point(3, 27);
             label70.Margin = new Padding(1, 0, 1, 0);
             label70.Name = "label70";
-            label70.Size = new Size(12, 15);
+            label70.Size = new Size(14, 17);
             label70.TabIndex = 2;
             label70.Text = "2";
             // 
@@ -2674,7 +2674,7 @@
             label60.Location = new Point(-2, 4);
             label60.Margin = new Padding(1, 0, 1, 0);
             label60.Name = "label60";
-            label60.Size = new Size(62, 13);
+            label60.Size = new Size(77, 14);
             label60.TabIndex = 1;
             label60.Text = "İkinci Fasıl Yekünü";
             // 
@@ -2695,7 +2695,7 @@
             label63.Location = new Point(-2, 4);
             label63.Margin = new Padding(1, 0, 1, 0);
             label63.Name = "label63";
-            label63.Size = new Size(83, 13);
+            label63.Size = new Size(104, 14);
             label63.TabIndex = 1;
             label63.Text = "İmece Bedelini Ödeyenler";
             // 
@@ -2717,7 +2717,7 @@
             label65.Location = new Point(-2, 4);
             label65.Margin = new Padding(1, 0, 1, 0);
             label65.Name = "label65";
-            label65.Size = new Size(87, 13);
+            label65.Size = new Size(107, 14);
             label65.TabIndex = 1;
             label65.Text = "Bedenen Çalışanlar Tutarı";
             // 
@@ -2733,7 +2733,7 @@
             // panel78
             // 
             panel78.BorderStyle = BorderStyle.FixedSingle;
-            panel78.Controls.Add(label89);
+            panel78.Controls.Add(lblCezaDegisiklik);
             panel78.Controls.Add(panel114);
             panel78.Controls.Add(panel115);
             panel78.Controls.Add(panel116);
@@ -2744,16 +2744,16 @@
             panel78.Size = new Size(88, 23);
             panel78.TabIndex = 80;
             // 
-            // label89
+            // lblCezaDegisiklik
             // 
-            label89.AutoSize = true;
-            label89.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            label89.Location = new Point(34, 3);
-            label89.Margin = new Padding(1, 0, 1, 0);
-            label89.Name = "label89";
-            label89.Size = new Size(46, 14);
-            label89.TabIndex = 86;
-            label89.Text = "(ARAÇ)";
+            lblCezaDegisiklik.AutoSize = true;
+            lblCezaDegisiklik.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
+            lblCezaDegisiklik.Location = new Point(34, 3);
+            lblCezaDegisiklik.Margin = new Padding(1, 0, 1, 0);
+            lblCezaDegisiklik.Name = "lblCezaDegisiklik";
+            lblCezaDegisiklik.Size = new Size(55, 16);
+            lblCezaDegisiklik.TabIndex = 86;
+            lblCezaDegisiklik.Text = "(ARAÇ)";
             // 
             // panel114
             // 
@@ -2771,7 +2771,7 @@
             label82.Location = new Point(1, 4);
             label82.Margin = new Padding(1, 0, 1, 0);
             label82.Name = "label82";
-            label82.Size = new Size(85, 15);
+            label82.Size = new Size(100, 17);
             label82.TabIndex = 1;
             label82.Text = "İkinci Fasıl Yekünü";
             // 
@@ -2791,7 +2791,7 @@
             label83.Location = new Point(1, 4);
             label83.Margin = new Padding(1, 0, 1, 0);
             label83.Name = "label83";
-            label83.Size = new Size(113, 15);
+            label83.Size = new Size(134, 17);
             label83.TabIndex = 1;
             label83.Text = "İmece Bedelini Ödeyenler";
             // 
@@ -2812,7 +2812,7 @@
             label84.Location = new Point(2, 4);
             label84.Margin = new Padding(1, 0, 1, 0);
             label84.Name = "label84";
-            label84.Size = new Size(113, 15);
+            label84.Size = new Size(133, 17);
             label84.TabIndex = 1;
             label84.Text = "Bedenen Çalışanlar Tutarı";
             // 
@@ -2832,14 +2832,14 @@
             label61.Location = new Point(-2, 4);
             label61.Margin = new Padding(1, 0, 1, 0);
             label61.Name = "label61";
-            label61.Size = new Size(44, 13);
+            label61.Size = new Size(53, 14);
             label61.TabIndex = 1;
             label61.Text = "Para Cezası";
             // 
             // panel79
             // 
             panel79.BorderStyle = BorderStyle.FixedSingle;
-            panel79.Controls.Add(label55);
+            panel79.Controls.Add(lblResimDegisiklik);
             panel79.Controls.Add(label71);
             panel79.Location = new Point(39, 320);
             panel79.Margin = new Padding(1, 3, 1, 3);
@@ -2847,16 +2847,16 @@
             panel79.Size = new Size(88, 23);
             panel79.TabIndex = 81;
             // 
-            // label55
+            // lblResimDegisiklik
             // 
-            label55.AutoSize = true;
-            label55.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            label55.Location = new Point(41, 3);
-            label55.Margin = new Padding(1, 0, 1, 0);
-            label55.Name = "label55";
-            label55.Size = new Size(46, 14);
-            label55.TabIndex = 25;
-            label55.Text = "(ARAÇ)";
+            lblResimDegisiklik.AutoSize = true;
+            lblResimDegisiklik.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
+            lblResimDegisiklik.Location = new Point(41, 3);
+            lblResimDegisiklik.Margin = new Padding(1, 0, 1, 0);
+            lblResimDegisiklik.Name = "lblResimDegisiklik";
+            lblResimDegisiklik.Size = new Size(55, 16);
+            lblResimDegisiklik.TabIndex = 25;
+            lblResimDegisiklik.Text = "(ARAÇ)";
             // 
             // label71
             // 
@@ -2865,14 +2865,14 @@
             label71.Location = new Point(-2, 4);
             label71.Margin = new Padding(1, 0, 1, 0);
             label71.Name = "label71";
-            label71.Size = new Size(43, 13);
+            label71.Size = new Size(52, 14);
             label71.TabIndex = 1;
             label71.Text = "Resim, Harç";
             // 
             // panel81
             // 
             panel81.BorderStyle = BorderStyle.FixedSingle;
-            panel81.Controls.Add(label54);
+            panel81.Controls.Add(lblHasilatDegisiklik);
             panel81.Controls.Add(label72);
             panel81.Controls.Add(panel84);
             panel81.Location = new Point(39, 297);
@@ -2881,16 +2881,16 @@
             panel81.Size = new Size(88, 23);
             panel81.TabIndex = 82;
             // 
-            // label54
+            // lblHasilatDegisiklik
             // 
-            label54.AutoSize = true;
-            label54.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            label54.Location = new Point(40, 3);
-            label54.Margin = new Padding(1, 0, 1, 0);
-            label54.Name = "label54";
-            label54.Size = new Size(46, 14);
-            label54.TabIndex = 24;
-            label54.Text = "(ARAÇ)";
+            lblHasilatDegisiklik.AutoSize = true;
+            lblHasilatDegisiklik.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
+            lblHasilatDegisiklik.Location = new Point(40, 3);
+            lblHasilatDegisiklik.Margin = new Padding(1, 0, 1, 0);
+            lblHasilatDegisiklik.Name = "lblHasilatDegisiklik";
+            lblHasilatDegisiklik.Size = new Size(55, 16);
+            lblHasilatDegisiklik.TabIndex = 24;
+            lblHasilatDegisiklik.Text = "(ARAÇ)";
             // 
             // label72
             // 
@@ -2899,7 +2899,7 @@
             label72.Location = new Point(-2, 4);
             label72.Margin = new Padding(1, 0, 1, 0);
             label72.Name = "label72";
-            label72.Size = new Size(28, 13);
+            label72.Size = new Size(33, 14);
             label72.TabIndex = 1;
             label72.Text = "Hasılat";
             // 
@@ -2956,7 +2956,7 @@
             lblDevredenCeza.Location = new Point(1, 3);
             lblDevredenCeza.Margin = new Padding(1, 0, 1, 0);
             lblDevredenCeza.Name = "lblDevredenCeza";
-            lblDevredenCeza.Size = new Size(12, 15);
+            lblDevredenCeza.Size = new Size(14, 17);
             lblDevredenCeza.TabIndex = 2;
             lblDevredenCeza.Text = "0";
             lblDevredenCeza.TextAlign = ContentAlignment.MiddleRight;
@@ -2978,7 +2978,7 @@
             lblDevredenResim.Location = new Point(1, 3);
             lblDevredenResim.Margin = new Padding(1, 0, 1, 0);
             lblDevredenResim.Name = "lblDevredenResim";
-            lblDevredenResim.Size = new Size(12, 15);
+            lblDevredenResim.Size = new Size(14, 17);
             lblDevredenResim.TabIndex = 2;
             lblDevredenResim.Text = "0";
             lblDevredenResim.TextAlign = ContentAlignment.MiddleRight;
@@ -3000,7 +3000,7 @@
             lblDevredenHasilat.Location = new Point(1, 3);
             lblDevredenHasilat.Margin = new Padding(1, 0, 1, 0);
             lblDevredenHasilat.Name = "lblDevredenHasilat";
-            lblDevredenHasilat.Size = new Size(10, 15);
+            lblDevredenHasilat.Size = new Size(11, 17);
             lblDevredenHasilat.TabIndex = 2;
             lblDevredenHasilat.Text = " ";
             lblDevredenHasilat.TextAlign = ContentAlignment.MiddleRight;
@@ -3022,7 +3022,7 @@
             lblTahsilCeza.Location = new Point(2, 3);
             lblTahsilCeza.Margin = new Padding(1, 0, 1, 0);
             lblTahsilCeza.Name = "lblTahsilCeza";
-            lblTahsilCeza.Size = new Size(12, 15);
+            lblTahsilCeza.Size = new Size(14, 17);
             lblTahsilCeza.TabIndex = 2;
             lblTahsilCeza.Text = "0";
             lblTahsilCeza.TextAlign = ContentAlignment.MiddleRight;
@@ -3044,7 +3044,7 @@
             lblTahsilResim.Location = new Point(2, 3);
             lblTahsilResim.Margin = new Padding(1, 0, 1, 0);
             lblTahsilResim.Name = "lblTahsilResim";
-            lblTahsilResim.Size = new Size(12, 15);
+            lblTahsilResim.Size = new Size(14, 17);
             lblTahsilResim.TabIndex = 2;
             lblTahsilResim.Text = "0";
             lblTahsilResim.TextAlign = ContentAlignment.MiddleRight;
@@ -3066,7 +3066,7 @@
             lblTahsilHasilat.Location = new Point(2, 3);
             lblTahsilHasilat.Margin = new Padding(1, 0, 1, 0);
             lblTahsilHasilat.Name = "lblTahsilHasilat";
-            lblTahsilHasilat.Size = new Size(37, 15);
+            lblTahsilHasilat.Size = new Size(44, 17);
             lblTahsilHasilat.TabIndex = 2;
             lblTahsilHasilat.Text = "272680";
             lblTahsilHasilat.TextAlign = ContentAlignment.MiddleRight;
@@ -3088,7 +3088,7 @@
             lblMunzamCeza.Location = new Point(1, 3);
             lblMunzamCeza.Margin = new Padding(1, 0, 1, 0);
             lblMunzamCeza.Name = "lblMunzamCeza";
-            lblMunzamCeza.Size = new Size(12, 15);
+            lblMunzamCeza.Size = new Size(14, 17);
             lblMunzamCeza.TabIndex = 2;
             lblMunzamCeza.Text = "0";
             // 
@@ -3109,7 +3109,7 @@
             lblMunzamResim.Location = new Point(1, 3);
             lblMunzamResim.Margin = new Padding(1, 0, 1, 0);
             lblMunzamResim.Name = "lblMunzamResim";
-            lblMunzamResim.Size = new Size(12, 15);
+            lblMunzamResim.Size = new Size(14, 17);
             lblMunzamResim.TabIndex = 2;
             lblMunzamResim.Text = "0";
             // 
@@ -3130,7 +3130,7 @@
             lblMunzamHasilat.Location = new Point(1, 3);
             lblMunzamHasilat.Margin = new Padding(1, 0, 1, 0);
             lblMunzamHasilat.Name = "lblMunzamHasilat";
-            lblMunzamHasilat.Size = new Size(0, 15);
+            lblMunzamHasilat.Size = new Size(0, 17);
             lblMunzamHasilat.TabIndex = 2;
             lblMunzamHasilat.TextAlign = ContentAlignment.MiddleRight;
             // 
@@ -3151,7 +3151,7 @@
             lblBKCeza.Location = new Point(1, 3);
             lblBKCeza.Margin = new Padding(1, 0, 1, 0);
             lblBKCeza.Name = "lblBKCeza";
-            lblBKCeza.Size = new Size(12, 15);
+            lblBKCeza.Size = new Size(14, 17);
             lblBKCeza.TabIndex = 2;
             lblBKCeza.Text = "0";
             lblBKCeza.TextAlign = ContentAlignment.MiddleRight;
@@ -3173,7 +3173,7 @@
             lblBKResim.Location = new Point(1, 3);
             lblBKResim.Margin = new Padding(1, 0, 1, 0);
             lblBKResim.Name = "lblBKResim";
-            lblBKResim.Size = new Size(37, 15);
+            lblBKResim.Size = new Size(44, 17);
             lblBKResim.TabIndex = 2;
             lblBKResim.Text = "300000";
             lblBKResim.TextAlign = ContentAlignment.MiddleRight;
@@ -3207,7 +3207,7 @@
             lblBKHasilat.Location = new Point(1, 3);
             lblBKHasilat.Margin = new Padding(1, 0, 1, 0);
             lblBKHasilat.Name = "lblBKHasilat";
-            lblBKHasilat.Size = new Size(37, 15);
+            lblBKHasilat.Size = new Size(44, 17);
             lblBKHasilat.TabIndex = 1;
             lblBKHasilat.Text = "400000";
             lblBKHasilat.TextAlign = ContentAlignment.MiddleRight;
@@ -3236,7 +3236,7 @@
             label78.Location = new Point(164, 280);
             label78.Margin = new Padding(1, 0, 1, 0);
             label78.Name = "label78";
-            label78.Size = new Size(162, 15);
+            label78.Size = new Size(189, 17);
             label78.TabIndex = 62;
             label78.Text = "R E S İ M,   H A R Ç,   H A S I L A T";
             // 
@@ -3263,7 +3263,7 @@
             label112.Location = new Point(2, 172);
             label112.Margin = new Padding(1, 0, 1, 0);
             label112.Name = "label112";
-            label112.Size = new Size(12, 15);
+            label112.Size = new Size(14, 17);
             label112.TabIndex = 9;
             label112.Text = "8";
             // 
@@ -3273,7 +3273,7 @@
             label103.Location = new Point(2, 147);
             label103.Margin = new Padding(1, 0, 1, 0);
             label103.Name = "label103";
-            label103.Size = new Size(12, 15);
+            label103.Size = new Size(14, 17);
             label103.TabIndex = 8;
             label103.Text = "7";
             // 
@@ -3283,7 +3283,7 @@
             label101.Location = new Point(2, 124);
             label101.Margin = new Padding(1, 0, 1, 0);
             label101.Name = "label101";
-            label101.Size = new Size(12, 15);
+            label101.Size = new Size(14, 17);
             label101.TabIndex = 7;
             label101.Text = "6";
             // 
@@ -3293,7 +3293,7 @@
             label102.Location = new Point(2, 101);
             label102.Margin = new Padding(1, 0, 1, 0);
             label102.Name = "label102";
-            label102.Size = new Size(12, 15);
+            label102.Size = new Size(14, 17);
             label102.TabIndex = 6;
             label102.Text = "5";
             // 
@@ -3303,7 +3303,7 @@
             label99.Location = new Point(2, 74);
             label99.Margin = new Padding(1, 0, 1, 0);
             label99.Name = "label99";
-            label99.Size = new Size(12, 15);
+            label99.Size = new Size(14, 17);
             label99.TabIndex = 5;
             label99.Text = "4";
             // 
@@ -3313,7 +3313,7 @@
             label100.Location = new Point(2, 51);
             label100.Margin = new Padding(1, 0, 1, 0);
             label100.Name = "label100";
-            label100.Size = new Size(12, 15);
+            label100.Size = new Size(14, 17);
             label100.TabIndex = 4;
             label100.Text = "3";
             label100.TextAlign = ContentAlignment.MiddleCenter;
@@ -3324,7 +3324,7 @@
             label79.Location = new Point(2, 28);
             label79.Margin = new Padding(1, 0, 1, 0);
             label79.Name = "label79";
-            label79.Size = new Size(12, 15);
+            label79.Size = new Size(14, 17);
             label79.TabIndex = 3;
             label79.Text = "2";
             // 
@@ -3334,7 +3334,7 @@
             label80.Location = new Point(2, 5);
             label80.Margin = new Padding(1, 0, 1, 0);
             label80.Name = "label80";
-            label80.Size = new Size(12, 15);
+            label80.Size = new Size(14, 17);
             label80.TabIndex = 2;
             label80.Text = "1";
             // 
@@ -3354,14 +3354,14 @@
             label81.Location = new Point(1, 101);
             label81.Margin = new Padding(1, 0, 1, 0);
             label81.Name = "label81";
-            label81.Size = new Size(12, 15);
+            label81.Size = new Size(14, 17);
             label81.TabIndex = 2;
             label81.Text = "3";
             // 
             // panel118
             // 
             panel118.BorderStyle = BorderStyle.FixedSingle;
-            panel118.Controls.Add(label56);
+            panel118.Controls.Add(lblIstikrazDegisiklik);
             panel118.Controls.Add(panel119);
             panel118.Controls.Add(panel120);
             panel118.Controls.Add(panel121);
@@ -3372,16 +3372,16 @@
             panel118.Size = new Size(88, 23);
             panel118.TabIndex = 83;
             // 
-            // label56
+            // lblIstikrazDegisiklik
             // 
-            label56.AutoSize = true;
-            label56.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            label56.Location = new Point(40, 3);
-            label56.Margin = new Padding(1, 0, 1, 0);
-            label56.Name = "label56";
-            label56.Size = new Size(46, 14);
-            label56.TabIndex = 86;
-            label56.Text = "(ARAÇ)";
+            lblIstikrazDegisiklik.AutoSize = true;
+            lblIstikrazDegisiklik.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
+            lblIstikrazDegisiklik.Location = new Point(40, 3);
+            lblIstikrazDegisiklik.Margin = new Padding(1, 0, 1, 0);
+            lblIstikrazDegisiklik.Name = "lblIstikrazDegisiklik";
+            lblIstikrazDegisiklik.Size = new Size(55, 16);
+            lblIstikrazDegisiklik.TabIndex = 86;
+            lblIstikrazDegisiklik.Text = "(ARAÇ)";
             // 
             // panel119
             // 
@@ -3399,7 +3399,7 @@
             label85.Location = new Point(1, 4);
             label85.Margin = new Padding(1, 0, 1, 0);
             label85.Name = "label85";
-            label85.Size = new Size(85, 15);
+            label85.Size = new Size(100, 17);
             label85.TabIndex = 1;
             label85.Text = "İkinci Fasıl Yekünü";
             // 
@@ -3419,7 +3419,7 @@
             label86.Location = new Point(1, 4);
             label86.Margin = new Padding(1, 0, 1, 0);
             label86.Name = "label86";
-            label86.Size = new Size(113, 15);
+            label86.Size = new Size(134, 17);
             label86.TabIndex = 1;
             label86.Text = "İmece Bedelini Ödeyenler";
             // 
@@ -3440,7 +3440,7 @@
             label87.Location = new Point(2, 4);
             label87.Margin = new Padding(1, 0, 1, 0);
             label87.Name = "label87";
-            label87.Size = new Size(113, 15);
+            label87.Size = new Size(133, 17);
             label87.TabIndex = 1;
             label87.Text = "Bedenen Çalışanlar Tutarı";
             // 
@@ -3460,7 +3460,7 @@
             label88.Location = new Point(-2, 4);
             label88.Margin = new Padding(1, 0, 1, 0);
             label88.Name = "label88";
-            label88.Size = new Size(34, 13);
+            label88.Size = new Size(43, 14);
             label88.TabIndex = 1;
             label88.Text = "İstikrazlar";
             // 
@@ -3469,7 +3469,7 @@
             panel123.BorderStyle = BorderStyle.FixedSingle;
             panel123.Controls.Add(label95);
             panel123.Controls.Add(label96);
-            panel123.Controls.Add(label57);
+            panel123.Controls.Add(lblKoyVakifDegisiklik);
             panel123.Location = new Point(39, 389);
             panel123.Margin = new Padding(1, 3, 1, 3);
             panel123.Name = "panel123";
@@ -3483,7 +3483,7 @@
             label95.Location = new Point(-2, 9);
             label95.Margin = new Padding(1, 0, 1, 0);
             label95.Name = "label95";
-            label95.Size = new Size(34, 13);
+            label95.Size = new Size(41, 14);
             label95.TabIndex = 255;
             label95.Text = "ve Avarız";
             // 
@@ -3494,20 +3494,20 @@
             label96.Location = new Point(-2, -1);
             label96.Margin = new Padding(1, 0, 1, 0);
             label96.Name = "label96";
-            label96.Size = new Size(35, 13);
+            label96.Size = new Size(41, 14);
             label96.TabIndex = 256;
             label96.Text = "Koy Vakıf";
             // 
-            // label57
+            // lblKoyVakifDegisiklik
             // 
-            label57.AutoSize = true;
-            label57.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            label57.Location = new Point(40, 4);
-            label57.Margin = new Padding(1, 0, 1, 0);
-            label57.Name = "label57";
-            label57.Size = new Size(46, 14);
-            label57.TabIndex = 87;
-            label57.Text = "(ARAÇ)";
+            lblKoyVakifDegisiklik.AutoSize = true;
+            lblKoyVakifDegisiklik.Font = new Font("Arial", 8.25F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
+            lblKoyVakifDegisiklik.Location = new Point(40, 4);
+            lblKoyVakifDegisiklik.Margin = new Padding(1, 0, 1, 0);
+            lblKoyVakifDegisiklik.Name = "lblKoyVakifDegisiklik";
+            lblKoyVakifDegisiklik.Size = new Size(55, 16);
+            lblKoyVakifDegisiklik.TabIndex = 87;
+            lblKoyVakifDegisiklik.Text = "(ARAÇ)";
             // 
             // panel124
             // 
@@ -3527,7 +3527,7 @@
             label90.Location = new Point(-2, 4);
             label90.Margin = new Padding(1, 0, 1, 0);
             label90.Name = "label90";
-            label90.Size = new Size(67, 13);
+            label90.Size = new Size(84, 14);
             label90.TabIndex = 1;
             label90.Text = "Yardımlar, Hediyeler";
             // 
@@ -3569,7 +3569,7 @@
             label91.Location = new Point(1, 4);
             label91.Margin = new Padding(1, 0, 1, 0);
             label91.Name = "label91";
-            label91.Size = new Size(85, 15);
+            label91.Size = new Size(100, 17);
             label91.TabIndex = 1;
             label91.Text = "İkinci Fasıl Yekünü";
             // 
@@ -3589,7 +3589,7 @@
             label92.Location = new Point(1, 4);
             label92.Margin = new Padding(1, 0, 1, 0);
             label92.Name = "label92";
-            label92.Size = new Size(113, 15);
+            label92.Size = new Size(134, 17);
             label92.TabIndex = 1;
             label92.Text = "İmece Bedelini Ödeyenler";
             // 
@@ -3610,7 +3610,7 @@
             label93.Location = new Point(2, 4);
             label93.Margin = new Padding(1, 0, 1, 0);
             label93.Name = "label93";
-            label93.Size = new Size(113, 15);
+            label93.Size = new Size(133, 17);
             label93.TabIndex = 1;
             label93.Text = "Bedenen Çalışanlar Tutarı";
             // 
@@ -3630,7 +3630,7 @@
             label94.Location = new Point(-2, 4);
             label94.Margin = new Padding(1, 0, 1, 0);
             label94.Name = "label94";
-            label94.Size = new Size(44, 13);
+            label94.Size = new Size(57, 14);
             label94.TabIndex = 1;
             label94.Text = "Türlü Gelirler";
             // 
@@ -3678,7 +3678,7 @@
             lblDevredenIstikraz.Location = new Point(1, 3);
             lblDevredenIstikraz.Margin = new Padding(1, 0, 1, 0);
             lblDevredenIstikraz.Name = "lblDevredenIstikraz";
-            lblDevredenIstikraz.Size = new Size(12, 15);
+            lblDevredenIstikraz.Size = new Size(14, 17);
             lblDevredenIstikraz.TabIndex = 2;
             lblDevredenIstikraz.Text = "0";
             lblDevredenIstikraz.TextAlign = ContentAlignment.MiddleRight;
@@ -3700,7 +3700,7 @@
             lblDevredenKoyVakif.Location = new Point(1, 3);
             lblDevredenKoyVakif.Margin = new Padding(1, 0, 1, 0);
             lblDevredenKoyVakif.Name = "lblDevredenKoyVakif";
-            lblDevredenKoyVakif.Size = new Size(12, 15);
+            lblDevredenKoyVakif.Size = new Size(14, 17);
             lblDevredenKoyVakif.TabIndex = 2;
             lblDevredenKoyVakif.Text = "0";
             lblDevredenKoyVakif.TextAlign = ContentAlignment.MiddleRight;
@@ -3734,7 +3734,7 @@
             lblDevredenYardim.Location = new Point(1, 3);
             lblDevredenYardim.Margin = new Padding(1, 0, 1, 0);
             lblDevredenYardim.Name = "lblDevredenYardim";
-            lblDevredenYardim.Size = new Size(12, 15);
+            lblDevredenYardim.Size = new Size(14, 17);
             lblDevredenYardim.TabIndex = 1;
             lblDevredenYardim.Text = "0";
             lblDevredenYardim.TextAlign = ContentAlignment.MiddleRight;
@@ -3774,7 +3774,7 @@
             lblTahsilIstikraz.Location = new Point(2, 3);
             lblTahsilIstikraz.Margin = new Padding(1, 0, 1, 0);
             lblTahsilIstikraz.Name = "lblTahsilIstikraz";
-            lblTahsilIstikraz.Size = new Size(32, 15);
+            lblTahsilIstikraz.Size = new Size(38, 17);
             lblTahsilIstikraz.TabIndex = 2;
             lblTahsilIstikraz.Text = "41400";
             lblTahsilIstikraz.TextAlign = ContentAlignment.MiddleRight;
@@ -3796,7 +3796,7 @@
             lblTahsilKoyVakif.Location = new Point(2, 3);
             lblTahsilKoyVakif.Margin = new Padding(1, 0, 1, 0);
             lblTahsilKoyVakif.Name = "lblTahsilKoyVakif";
-            lblTahsilKoyVakif.Size = new Size(45, 15);
+            lblTahsilKoyVakif.Size = new Size(53, 17);
             lblTahsilKoyVakif.TabIndex = 2;
             lblTahsilKoyVakif.Text = "15295,68";
             lblTahsilKoyVakif.TextAlign = ContentAlignment.MiddleRight;
@@ -3830,7 +3830,7 @@
             lblTahsilYardim.Location = new Point(2, 3);
             lblTahsilYardim.Margin = new Padding(1, 0, 1, 0);
             lblTahsilYardim.Name = "lblTahsilYardim";
-            lblTahsilYardim.Size = new Size(37, 15);
+            lblTahsilYardim.Size = new Size(44, 17);
             lblTahsilYardim.TabIndex = 111000;
             lblTahsilYardim.Text = "111000";
             lblTahsilYardim.TextAlign = ContentAlignment.MiddleRight;
@@ -3870,7 +3870,7 @@
             lblMunzamIstikraz.Location = new Point(1, 3);
             lblMunzamIstikraz.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIstikraz.Name = "lblMunzamIstikraz";
-            lblMunzamIstikraz.Size = new Size(12, 15);
+            lblMunzamIstikraz.Size = new Size(14, 17);
             lblMunzamIstikraz.TabIndex = 2;
             lblMunzamIstikraz.Text = "0";
             // 
@@ -3891,7 +3891,7 @@
             lblMunzamKoyVakif.Location = new Point(1, 3);
             lblMunzamKoyVakif.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKoyVakif.Name = "lblMunzamKoyVakif";
-            lblMunzamKoyVakif.Size = new Size(12, 15);
+            lblMunzamKoyVakif.Size = new Size(14, 17);
             lblMunzamKoyVakif.TabIndex = 2;
             lblMunzamKoyVakif.Text = "0";
             // 
@@ -3924,7 +3924,7 @@
             lblMunzamYardim.Location = new Point(1, 3);
             lblMunzamYardim.Margin = new Padding(1, 0, 1, 0);
             lblMunzamYardim.Name = "lblMunzamYardim";
-            lblMunzamYardim.Size = new Size(12, 15);
+            lblMunzamYardim.Size = new Size(14, 17);
             lblMunzamYardim.TabIndex = 1;
             lblMunzamYardim.Text = "0";
             // 
@@ -3963,7 +3963,7 @@
             lblBKIstikraz.Location = new Point(1, 3);
             lblBKIstikraz.Margin = new Padding(1, 0, 1, 0);
             lblBKIstikraz.Name = "lblBKIstikraz";
-            lblBKIstikraz.Size = new Size(32, 15);
+            lblBKIstikraz.Size = new Size(38, 17);
             lblBKIstikraz.TabIndex = 2;
             lblBKIstikraz.Text = "80000";
             lblBKIstikraz.TextAlign = ContentAlignment.MiddleRight;
@@ -3985,7 +3985,7 @@
             lblBKKoyVakif.Location = new Point(1, 3);
             lblBKKoyVakif.Margin = new Padding(1, 0, 1, 0);
             lblBKKoyVakif.Name = "lblBKKoyVakif";
-            lblBKKoyVakif.Size = new Size(12, 15);
+            lblBKKoyVakif.Size = new Size(14, 17);
             lblBKKoyVakif.TabIndex = 2;
             lblBKKoyVakif.Text = "0";
             lblBKKoyVakif.TextAlign = ContentAlignment.MiddleRight;
@@ -4019,7 +4019,7 @@
             lblBKYardim.Location = new Point(1, 3);
             lblBKYardim.Margin = new Padding(1, 0, 1, 0);
             lblBKYardim.Name = "lblBKYardim";
-            lblBKYardim.Size = new Size(37, 15);
+            lblBKYardim.Size = new Size(44, 17);
             lblBKYardim.TabIndex = 1;
             lblBKYardim.Text = "100000";
             lblBKYardim.TextAlign = ContentAlignment.MiddleRight;
@@ -4068,7 +4068,7 @@
             lblDevredenTurluGelir.Location = new Point(1, 3);
             lblDevredenTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblDevredenTurluGelir.Name = "lblDevredenTurluGelir";
-            lblDevredenTurluGelir.Size = new Size(12, 15);
+            lblDevredenTurluGelir.Size = new Size(14, 17);
             lblDevredenTurluGelir.TabIndex = 2;
             lblDevredenTurluGelir.Text = "0";
             lblDevredenTurluGelir.TextAlign = ContentAlignment.MiddleRight;
@@ -4090,7 +4090,7 @@
             lblTahsilTurluGelir.Location = new Point(2, 3);
             lblTahsilTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblTahsilTurluGelir.Name = "lblTahsilTurluGelir";
-            lblTahsilTurluGelir.Size = new Size(40, 15);
+            lblTahsilTurluGelir.Size = new Size(47, 17);
             lblTahsilTurluGelir.TabIndex = 2;
             lblTahsilTurluGelir.Text = "5484,87";
             lblTahsilTurluGelir.TextAlign = ContentAlignment.MiddleRight;
@@ -4112,7 +4112,7 @@
             lblMunzamTurluGelir.Location = new Point(1, 3);
             lblMunzamTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblMunzamTurluGelir.Name = "lblMunzamTurluGelir";
-            lblMunzamTurluGelir.Size = new Size(12, 15);
+            lblMunzamTurluGelir.Size = new Size(14, 17);
             lblMunzamTurluGelir.TabIndex = 2;
             lblMunzamTurluGelir.Text = "0";
             // 
@@ -4133,7 +4133,7 @@
             lblBKTurluGelir.Location = new Point(1, 3);
             lblBKTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblBKTurluGelir.Name = "lblBKTurluGelir";
-            lblBKTurluGelir.Size = new Size(37, 15);
+            lblBKTurluGelir.Size = new Size(44, 17);
             lblBKTurluGelir.TabIndex = 2;
             lblBKTurluGelir.Text = "120000";
             lblBKTurluGelir.TextAlign = ContentAlignment.MiddleRight;
@@ -4164,7 +4164,7 @@
             lblDevredenToplami.Location = new Point(1, 3);
             lblDevredenToplami.Margin = new Padding(1, 0, 1, 0);
             lblDevredenToplami.Name = "lblDevredenToplami";
-            lblDevredenToplami.Size = new Size(12, 15);
+            lblDevredenToplami.Size = new Size(14, 17);
             lblDevredenToplami.TabIndex = 2;
             lblDevredenToplami.Text = "0";
             lblDevredenToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -4186,7 +4186,7 @@
             lblTahsilToplami.Location = new Point(2, 3);
             lblTahsilToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahsilToplami.Name = "lblTahsilToplami";
-            lblTahsilToplami.Size = new Size(12, 15);
+            lblTahsilToplami.Size = new Size(14, 17);
             lblTahsilToplami.TabIndex = 2;
             lblTahsilToplami.Text = "0";
             lblTahsilToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -4208,7 +4208,7 @@
             lblMunzamToplami.Location = new Point(1, 3);
             lblMunzamToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamToplami.Name = "lblMunzamToplami";
-            lblMunzamToplami.Size = new Size(12, 15);
+            lblMunzamToplami.Size = new Size(14, 17);
             lblMunzamToplami.TabIndex = 2;
             lblMunzamToplami.Text = "0";
             // 
@@ -4229,7 +4229,7 @@
             lblBKResimHarcToplami.Location = new Point(1, 3);
             lblBKResimHarcToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKResimHarcToplami.Name = "lblBKResimHarcToplami";
-            lblBKResimHarcToplami.Size = new Size(12, 15);
+            lblBKResimHarcToplami.Size = new Size(14, 17);
             lblBKResimHarcToplami.TabIndex = 2;
             lblBKResimHarcToplami.Text = "0";
             lblBKResimHarcToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -4260,7 +4260,7 @@
             lblDevredenDevir.Location = new Point(1, 3);
             lblDevredenDevir.Margin = new Padding(1, 0, 1, 0);
             lblDevredenDevir.Name = "lblDevredenDevir";
-            lblDevredenDevir.Size = new Size(12, 15);
+            lblDevredenDevir.Size = new Size(14, 17);
             lblDevredenDevir.TabIndex = 2;
             lblDevredenDevir.Text = "0";
             lblDevredenDevir.TextAlign = ContentAlignment.MiddleRight;
@@ -4282,7 +4282,7 @@
             lblTahsilDevir.Location = new Point(2, 3);
             lblTahsilDevir.Margin = new Padding(1, 0, 1, 0);
             lblTahsilDevir.Name = "lblTahsilDevir";
-            lblTahsilDevir.Size = new Size(12, 15);
+            lblTahsilDevir.Size = new Size(14, 17);
             lblTahsilDevir.TabIndex = 2;
             lblTahsilDevir.Text = "0";
             lblTahsilDevir.TextAlign = ContentAlignment.MiddleRight;
@@ -4304,7 +4304,7 @@
             lblMunzamDevir.Location = new Point(1, 3);
             lblMunzamDevir.Margin = new Padding(1, 0, 1, 0);
             lblMunzamDevir.Name = "lblMunzamDevir";
-            lblMunzamDevir.Size = new Size(12, 15);
+            lblMunzamDevir.Size = new Size(14, 17);
             lblMunzamDevir.TabIndex = 2;
             lblMunzamDevir.Text = "0";
             // 
@@ -4325,7 +4325,7 @@
             lblBKDevir.Location = new Point(1, 3);
             lblBKDevir.Margin = new Padding(1, 0, 1, 0);
             lblBKDevir.Name = "lblBKDevir";
-            lblBKDevir.Size = new Size(12, 15);
+            lblBKDevir.Size = new Size(14, 17);
             lblBKDevir.TabIndex = 2;
             lblBKDevir.Text = "0";
             lblBKDevir.TextAlign = ContentAlignment.MiddleRight;
@@ -4359,7 +4359,7 @@
             label104.Location = new Point(1, 4);
             label104.Margin = new Padding(1, 0, 1, 0);
             label104.Name = "label104";
-            label104.Size = new Size(85, 15);
+            label104.Size = new Size(100, 17);
             label104.TabIndex = 1;
             label104.Text = "İkinci Fasıl Yekünü";
             // 
@@ -4379,7 +4379,7 @@
             label105.Location = new Point(1, 4);
             label105.Margin = new Padding(1, 0, 1, 0);
             label105.Name = "label105";
-            label105.Size = new Size(113, 15);
+            label105.Size = new Size(134, 17);
             label105.TabIndex = 1;
             label105.Text = "İmece Bedelini Ödeyenler";
             // 
@@ -4400,7 +4400,7 @@
             label106.Location = new Point(2, 4);
             label106.Margin = new Padding(1, 0, 1, 0);
             label106.Name = "label106";
-            label106.Size = new Size(113, 15);
+            label106.Size = new Size(133, 17);
             label106.TabIndex = 1;
             label106.Text = "Bedenen Çalışanlar Tutarı";
             // 
@@ -4420,7 +4420,7 @@
             label107.Location = new Point(-2, 4);
             label107.Margin = new Padding(1, 0, 1, 0);
             label107.Name = "label107";
-            label107.Size = new Size(71, 13);
+            label107.Size = new Size(87, 14);
             label107.TabIndex = 1;
             label107.Text = "Üçüncü Fasıl Yekünü";
             // 
@@ -4445,7 +4445,7 @@
             label115.Location = new Point(-2, 9);
             label115.Margin = new Padding(1, 0, 1, 0);
             label115.Name = "label115";
-            label115.Size = new Size(36, 13);
+            label115.Size = new Size(44, 14);
             label115.TabIndex = 257;
             label115.Text = "Müdevver";
             // 
@@ -4456,7 +4456,7 @@
             label116.Location = new Point(-2, -1);
             label116.Margin = new Padding(1, 0, 1, 0);
             label116.Name = "label116";
-            label116.Size = new Size(57, 13);
+            label116.Size = new Size(69, 14);
             label116.TabIndex = 258;
             label116.Text = "Geçen Seneden";
             // 
@@ -4476,7 +4476,7 @@
             label108.Location = new Point(1, 4);
             label108.Margin = new Padding(1, 0, 1, 0);
             label108.Name = "label108";
-            label108.Size = new Size(85, 15);
+            label108.Size = new Size(100, 17);
             label108.TabIndex = 1;
             label108.Text = "İkinci Fasıl Yekünü";
             // 
@@ -4496,7 +4496,7 @@
             label109.Location = new Point(1, 4);
             label109.Margin = new Padding(1, 0, 1, 0);
             label109.Name = "label109";
-            label109.Size = new Size(113, 15);
+            label109.Size = new Size(134, 17);
             label109.TabIndex = 1;
             label109.Text = "İmece Bedelini Ödeyenler";
             // 
@@ -4517,7 +4517,7 @@
             label110.Location = new Point(2, 4);
             label110.Margin = new Padding(1, 0, 1, 0);
             label110.Name = "label110";
-            label110.Size = new Size(113, 15);
+            label110.Size = new Size(133, 17);
             label110.TabIndex = 1;
             label110.Text = "Bedenen Çalışanlar Tutarı";
             // 
@@ -4547,7 +4547,7 @@
             label114.Location = new Point(-2, 4);
             label114.Margin = new Padding(1, 0, 1, 0);
             label114.Name = "label114";
-            label114.Size = new Size(78, 13);
+            label114.Size = new Size(96, 14);
             label114.TabIndex = 1;
             label114.Text = "Dördüncü Fasıl Yekünü";
             // 
@@ -4570,7 +4570,7 @@
             label97.Location = new Point(-2, 9);
             label97.Margin = new Padding(1, 0, 1, 0);
             label97.Name = "label97";
-            label97.Size = new Size(56, 13);
+            label97.Size = new Size(71, 14);
             label97.TabIndex = 255;
             label97.Text = "Ailelerine Yardım";
             // 
@@ -4581,7 +4581,7 @@
             label98.Location = new Point(-2, -1);
             label98.Margin = new Padding(1, 0, 1, 0);
             label98.Name = "label98";
-            label98.Size = new Size(47, 13);
+            label98.Size = new Size(57, 14);
             label98.TabIndex = 256;
             label98.Text = "Muhtaç Asker";
             // 
@@ -4629,7 +4629,7 @@
             lblDevredenAskerToplami.Location = new Point(1, 3);
             lblDevredenAskerToplami.Margin = new Padding(1, 0, 1, 0);
             lblDevredenAskerToplami.Name = "lblDevredenAskerToplami";
-            lblDevredenAskerToplami.Size = new Size(12, 15);
+            lblDevredenAskerToplami.Size = new Size(14, 17);
             lblDevredenAskerToplami.TabIndex = 3;
             lblDevredenAskerToplami.Text = "0";
             lblDevredenAskerToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -4651,7 +4651,7 @@
             lblDevredenAsker.Location = new Point(1, 3);
             lblDevredenAsker.Margin = new Padding(1, 0, 1, 0);
             lblDevredenAsker.Name = "lblDevredenAsker";
-            lblDevredenAsker.Size = new Size(12, 15);
+            lblDevredenAsker.Size = new Size(14, 17);
             lblDevredenAsker.TabIndex = 3;
             lblDevredenAsker.Text = "0";
             lblDevredenAsker.TextAlign = ContentAlignment.MiddleRight;
@@ -4673,7 +4673,7 @@
             lblTahsilAskerToplami.Location = new Point(2, 3);
             lblTahsilAskerToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahsilAskerToplami.Name = "lblTahsilAskerToplami";
-            lblTahsilAskerToplami.Size = new Size(12, 15);
+            lblTahsilAskerToplami.Size = new Size(14, 17);
             lblTahsilAskerToplami.TabIndex = 3;
             lblTahsilAskerToplami.Text = "0";
             lblTahsilAskerToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -4695,7 +4695,7 @@
             lblTahsilAsker.Location = new Point(2, 3);
             lblTahsilAsker.Margin = new Padding(1, 0, 1, 0);
             lblTahsilAsker.Name = "lblTahsilAsker";
-            lblTahsilAsker.Size = new Size(12, 15);
+            lblTahsilAsker.Size = new Size(14, 17);
             lblTahsilAsker.TabIndex = 3;
             lblTahsilAsker.Text = "0";
             lblTahsilAsker.TextAlign = ContentAlignment.MiddleRight;
@@ -4717,7 +4717,7 @@
             lblMunzamAskerToplami.Location = new Point(-1, 3);
             lblMunzamAskerToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamAskerToplami.Name = "lblMunzamAskerToplami";
-            lblMunzamAskerToplami.Size = new Size(12, 15);
+            lblMunzamAskerToplami.Size = new Size(14, 17);
             lblMunzamAskerToplami.TabIndex = 3;
             lblMunzamAskerToplami.Text = "0";
             // 
@@ -4738,7 +4738,7 @@
             lblBKAsker.Location = new Point(1, 3);
             lblBKAsker.Margin = new Padding(1, 0, 1, 0);
             lblBKAsker.Name = "lblBKAsker";
-            lblBKAsker.Size = new Size(12, 15);
+            lblBKAsker.Size = new Size(14, 17);
             lblBKAsker.TabIndex = 3;
             lblBKAsker.Text = "0";
             lblBKAsker.TextAlign = ContentAlignment.MiddleRight;
@@ -4749,7 +4749,7 @@
             label120.Location = new Point(116, 507);
             label120.Margin = new Padding(1, 0, 1, 0);
             label120.Name = "label120";
-            label120.Size = new Size(261, 15);
+            label120.Size = new Size(306, 17);
             label120.TabIndex = 118;
             label120.Text = "M U H T A Ç   A S K E R   A İ L E L E R İ N E   Y A R D I M";
             // 
@@ -4769,7 +4769,7 @@
             label122.Location = new Point(2, 5);
             label122.Margin = new Padding(1, 0, 1, 0);
             label122.Name = "label122";
-            label122.Size = new Size(12, 15);
+            label122.Size = new Size(14, 17);
             label122.TabIndex = 2;
             label122.Text = "1";
             // 
@@ -4789,7 +4789,7 @@
             label123.Location = new Point(3, 18);
             label123.Margin = new Padding(1, 0, 1, 0);
             label123.Name = "label123";
-            label123.Size = new Size(12, 15);
+            label123.Size = new Size(14, 17);
             label123.TabIndex = 2;
             label123.Text = "4";
             // 
@@ -4810,7 +4810,7 @@
             label124.Location = new Point(-2, 3);
             label124.Margin = new Padding(1, 0, 1, 0);
             label124.Name = "label124";
-            label124.Size = new Size(68, 13);
+            label124.Size = new Size(85, 14);
             label124.TabIndex = 1;
             label124.Text = "Beşinci Fasıl Yekünü";
             // 
@@ -4831,7 +4831,7 @@
             label125.Location = new Point(-2, 3);
             label125.Margin = new Padding(1, 0, 1, 0);
             label125.Name = "label125";
-            label125.Size = new Size(77, 13);
+            label125.Size = new Size(94, 14);
             label125.TabIndex = 1;
             label125.Text = "Mahsul Bakayası Tutarı";
             // 
@@ -4853,7 +4853,7 @@
             label126.Location = new Point(-2, 4);
             label126.Margin = new Padding(1, 0, 1, 0);
             label126.Name = "label126";
-            label126.Size = new Size(50, 13);
+            label126.Size = new Size(61, 14);
             label126.TabIndex = 1;
             label126.Text = "Para Bakayası";
             // 
@@ -5007,7 +5007,7 @@
             label131.Location = new Point(213, 573);
             label131.Margin = new Padding(1, 0, 1, 0);
             label131.Name = "label131";
-            label131.Size = new Size(58, 15);
+            label131.Size = new Size(71, 17);
             label131.TabIndex = 139;
             label131.Text = "B A K A Y A";
             // 
@@ -5028,7 +5028,7 @@
             label132.Location = new Point(2, 28);
             label132.Margin = new Padding(1, 0, 1, 0);
             label132.Name = "label132";
-            label132.Size = new Size(12, 15);
+            label132.Size = new Size(14, 17);
             label132.TabIndex = 3;
             label132.Text = "2";
             // 
@@ -5038,7 +5038,7 @@
             label133.Location = new Point(2, 5);
             label133.Margin = new Padding(1, 0, 1, 0);
             label133.Name = "label133";
-            label133.Size = new Size(12, 15);
+            label133.Size = new Size(14, 17);
             label133.TabIndex = 2;
             label133.Text = "1";
             // 
@@ -5058,7 +5058,7 @@
             label134.Location = new Point(3, 27);
             label134.Margin = new Padding(1, 0, 1, 0);
             label134.Name = "label134";
-            label134.Size = new Size(12, 15);
+            label134.Size = new Size(14, 17);
             label134.TabIndex = 2;
             label134.Text = "5";
             // 
@@ -5079,7 +5079,7 @@
             label113.Location = new Point(-2, 3);
             label113.Margin = new Padding(1, 0, 1, 0);
             label113.Name = "label113";
-            label113.Size = new Size(48, 13);
+            label113.Size = new Size(58, 14);
             label113.TabIndex = 1;
             label113.Text = "Umumi Yekün";
             // 
@@ -5101,7 +5101,7 @@
             label135.Location = new Point(-2, 4);
             label135.Margin = new Padding(1, 0, 1, 0);
             label135.Name = "label135";
-            label135.Size = new Size(66, 13);
+            label135.Size = new Size(80, 14);
             label135.TabIndex = 1;
             label135.Text = "Altıncı Fasıl Yekünü";
             // 
@@ -5149,7 +5149,7 @@
             lblDevredenGenelToplami.Location = new Point(1, 3);
             lblDevredenGenelToplami.Margin = new Padding(1, 0, 1, 0);
             lblDevredenGenelToplami.Name = "lblDevredenGenelToplami";
-            lblDevredenGenelToplami.Size = new Size(12, 15);
+            lblDevredenGenelToplami.Size = new Size(14, 17);
             lblDevredenGenelToplami.TabIndex = 2;
             lblDevredenGenelToplami.Text = "0";
             lblDevredenGenelToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -5180,7 +5180,7 @@
             lblTahsilGenelToplam.Location = new Point(2, 3);
             lblTahsilGenelToplam.Margin = new Padding(1, 0, 1, 0);
             lblTahsilGenelToplam.Name = "lblTahsilGenelToplam";
-            lblTahsilGenelToplam.Size = new Size(12, 15);
+            lblTahsilGenelToplam.Size = new Size(14, 17);
             lblTahsilGenelToplam.TabIndex = 2;
             lblTahsilGenelToplam.Text = "0";
             lblTahsilGenelToplam.TextAlign = ContentAlignment.MiddleRight;
@@ -5211,7 +5211,7 @@
             lblMunzamGenelToplam.Location = new Point(-1, 3);
             lblMunzamGenelToplam.Margin = new Padding(1, 0, 1, 0);
             lblMunzamGenelToplam.Name = "lblMunzamGenelToplam";
-            lblMunzamGenelToplam.Size = new Size(12, 15);
+            lblMunzamGenelToplam.Size = new Size(14, 17);
             lblMunzamGenelToplam.TabIndex = 2;
             lblMunzamGenelToplam.Text = "0";
             // 
@@ -5241,7 +5241,7 @@
             lblBKResimHarcGenelToplam.Location = new Point(1, 3);
             lblBKResimHarcGenelToplam.Margin = new Padding(1, 0, 1, 0);
             lblBKResimHarcGenelToplam.Name = "lblBKResimHarcGenelToplam";
-            lblBKResimHarcGenelToplam.Size = new Size(12, 15);
+            lblBKResimHarcGenelToplam.Size = new Size(14, 17);
             lblBKResimHarcGenelToplam.TabIndex = 2;
             lblBKResimHarcGenelToplam.Text = "0";
             lblBKResimHarcGenelToplam.TextAlign = ContentAlignment.MiddleRight;
@@ -5272,7 +5272,7 @@
             label141.Location = new Point(2, 28);
             label141.Margin = new Padding(1, 0, 1, 0);
             label141.Name = "label141";
-            label141.Size = new Size(12, 15);
+            label141.Size = new Size(14, 17);
             label141.TabIndex = 3;
             label141.Text = "2";
             // 
@@ -5282,7 +5282,7 @@
             label142.Location = new Point(2, 5);
             label142.Margin = new Padding(1, 0, 1, 0);
             label142.Name = "label142";
-            label142.Size = new Size(12, 15);
+            label142.Size = new Size(14, 17);
             label142.TabIndex = 2;
             label142.Text = "1";
             // 
@@ -5302,7 +5302,7 @@
             label143.Location = new Point(3, 18);
             label143.Margin = new Padding(1, 0, 1, 0);
             label143.Name = "label143";
-            label143.Size = new Size(12, 15);
+            label143.Size = new Size(14, 17);
             label143.TabIndex = 2;
             label143.Text = "6";
             // 
@@ -5313,7 +5313,7 @@
             label121.Location = new Point(42, 712);
             label121.Margin = new Padding(1, 0, 1, 0);
             label121.Name = "label121";
-            label121.Size = new Size(16, 13);
+            label121.Size = new Size(17, 16);
             label121.TabIndex = 216;
             label121.Text = "TL";
             // 
@@ -5324,7 +5324,7 @@
             label144.Location = new Point(361, 712);
             label144.Margin = new Padding(1, 0, 1, 0);
             label144.Name = "label144";
-            label144.Size = new Size(16, 13);
+            label144.Size = new Size(17, 16);
             label144.TabIndex = 216;
             label144.Text = "TL";
             // 
@@ -5335,7 +5335,7 @@
             label145.Location = new Point(7, 727);
             label145.Margin = new Padding(1, 0, 1, 0);
             label145.Name = "label145";
-            label145.Size = new Size(91, 13);
+            label145.Size = new Size(120, 16);
             label145.TabIndex = 1;
             label145.Text = "(1) Köy, Akar, Arazi Kirası";
             // 
@@ -5346,7 +5346,7 @@
             label146.Location = new Point(18, 740);
             label146.Margin = new Padding(1, 0, 1, 0);
             label146.Name = "label146";
-            label146.Size = new Size(66, 13);
+            label146.Size = new Size(86, 16);
             label146.TabIndex = 1;
             label146.Text = "Köy Mer'ası Kirası";
             // 
@@ -5357,7 +5357,7 @@
             label147.Location = new Point(18, 753);
             label147.Margin = new Padding(1, 0, 1, 0);
             label147.Name = "label147";
-            label147.Size = new Size(88, 13);
+            label147.Size = new Size(111, 16);
             label147.TabIndex = 1;
             label147.Text = "Köy taş, kum ocağı geliri";
             // 
@@ -5368,7 +5368,7 @@
             label148.Location = new Point(327, 753);
             label148.Margin = new Padding(1, 0, 1, 0);
             label148.Name = "label148";
-            label148.Size = new Size(60, 13);
+            label148.Size = new Size(74, 16);
             label148.TabIndex = 217;
             label148.Text = "Köy iskele geliri";
             // 
@@ -5379,7 +5379,7 @@
             label149.Location = new Point(327, 740);
             label149.Margin = new Padding(1, 0, 1, 0);
             label149.Name = "label149";
-            label149.Size = new Size(120, 13);
+            label149.Size = new Size(151, 16);
             label149.TabIndex = 218;
             label149.Text = "Köy okulu uygulama bahçesi geliri";
             // 
@@ -5390,7 +5390,7 @@
             label150.Location = new Point(316, 727);
             label150.Margin = new Padding(1, 0, 1, 0);
             label150.Name = "label150";
-            label150.Size = new Size(106, 13);
+            label150.Size = new Size(135, 16);
             label150.TabIndex = 219;
             label150.Text = "(1) Köy bağ, tarla mahsul tutarı";
             // 
@@ -5410,7 +5410,7 @@
             label30.Location = new Point(9, 37);
             label30.Margin = new Padding(1, 0, 1, 0);
             label30.Name = "label30";
-            label30.Size = new Size(58, 13);
+            label30.Size = new Size(82, 16);
             label30.TabIndex = 242;
             label30.Text = "GİDERİN CİNSİ";
             // 
@@ -5430,7 +5430,7 @@
             label31.Location = new Point(12, 4);
             label31.Margin = new Padding(1, 0, 1, 0);
             label31.Name = "label31";
-            label31.Size = new Size(57, 13);
+            label31.Size = new Size(72, 16);
             label31.TabIndex = 242;
             label31.Text = "Bütçeye Konan";
             // 
@@ -5453,7 +5453,7 @@
             label257.Location = new Point(24, 47);
             label257.Margin = new Padding(1, 0, 1, 0);
             label257.Name = "label257";
-            label257.Size = new Size(16, 13);
+            label257.Size = new Size(17, 16);
             label257.TabIndex = 251;
             label257.Text = "TL";
             // 
@@ -5464,7 +5464,7 @@
             label256.Location = new Point(3, 16);
             label256.Margin = new Padding(1, 0, 1, 0);
             label256.Name = "label256";
-            label256.Size = new Size(28, 13);
+            label256.Size = new Size(34, 14);
             label256.TabIndex = 249;
             label256.Text = "Mahsül";
             // 
@@ -5475,7 +5475,7 @@
             label254.Location = new Point(3, 29);
             label254.Margin = new Padding(1, 0, 1, 0);
             label254.Name = "label254";
-            label254.Size = new Size(28, 13);
+            label254.Size = new Size(34, 14);
             label254.TabIndex = 249;
             label254.Text = "Ayniyat";
             // 
@@ -5486,7 +5486,7 @@
             label255.Location = new Point(3, 2);
             label255.Margin = new Padding(1, 0, 1, 0);
             label255.Name = "label255";
-            label255.Size = new Size(21, 13);
+            label255.Size = new Size(25, 14);
             label255.TabIndex = 250;
             label255.Text = "Para";
             // 
@@ -5510,7 +5510,7 @@
             label262.Location = new Point(3, 34);
             label262.Margin = new Padding(1, 0, 1, 0);
             label262.Name = "label262";
-            label262.Size = new Size(11, 13);
+            label262.Size = new Size(12, 14);
             label262.TabIndex = 255;
             label262.Text = "e";
             // 
@@ -5521,7 +5521,7 @@
             label258.Location = new Point(3, 2);
             label258.Margin = new Padding(1, 0, 1, 0);
             label258.Name = "label258";
-            label258.Size = new Size(9, 13);
+            label258.Size = new Size(9, 14);
             label258.TabIndex = 251;
             label258.Text = "İ";
             // 
@@ -5532,7 +5532,7 @@
             label259.Location = new Point(3, 9);
             label259.Margin = new Padding(1, 0, 1, 0);
             label259.Name = "label259";
-            label259.Size = new Size(12, 13);
+            label259.Size = new Size(13, 14);
             label259.TabIndex = 252;
             label259.Text = "m";
             // 
@@ -5543,7 +5543,7 @@
             label260.Location = new Point(3, 16);
             label260.Margin = new Padding(1, 0, 1, 0);
             label260.Name = "label260";
-            label260.Size = new Size(11, 13);
+            label260.Size = new Size(12, 14);
             label260.TabIndex = 253;
             label260.Text = "e";
             // 
@@ -5554,7 +5554,7 @@
             label261.Location = new Point(3, 24);
             label261.Margin = new Padding(1, 0, 1, 0);
             label261.Name = "label261";
-            label261.Size = new Size(10, 13);
+            label261.Size = new Size(11, 14);
             label261.TabIndex = 254;
             label261.Text = "c";
             // 
@@ -5575,7 +5575,7 @@
             label288.Location = new Point(22, 43);
             label288.Margin = new Padding(1, 0, 1, 0);
             label288.Name = "label288";
-            label288.Size = new Size(16, 13);
+            label288.Size = new Size(17, 16);
             label288.TabIndex = 253;
             label288.Text = "TL";
             // 
@@ -5586,7 +5586,7 @@
             label289.Location = new Point(22, 15);
             label289.Margin = new Padding(1, 0, 1, 0);
             label289.Name = "label289";
-            label289.Size = new Size(21, 13);
+            label289.Size = new Size(25, 14);
             label289.TabIndex = 252;
             label289.Text = "Para";
             // 
@@ -5606,7 +5606,7 @@
             label32.Location = new Point(22, 4);
             label32.Margin = new Padding(1, 0, 1, 0);
             label32.Name = "label32";
-            label32.Size = new Size(35, 13);
+            label32.Size = new Size(44, 16);
             label32.TabIndex = 243;
             label32.Text = "Munzam";
             // 
@@ -5631,7 +5631,7 @@
             label272.Location = new Point(-1, -2);
             label272.Margin = new Padding(1, 0, 1, 0);
             label272.Name = "label272";
-            label272.Size = new Size(30, 18);
+            label272.Size = new Size(42, 24);
             label272.TabIndex = 255;
             label272.Text = "Zam";
             // 
@@ -5642,7 +5642,7 @@
             label271.Location = new Point(8, 52);
             label271.Margin = new Padding(1, 0, 1, 0);
             label271.Name = "label271";
-            label271.Size = new Size(16, 13);
+            label271.Size = new Size(17, 16);
             label271.TabIndex = 254;
             label271.Text = "TL";
             // 
@@ -5653,7 +5653,7 @@
             label268.Location = new Point(2, 26);
             label268.Margin = new Padding(1, 0, 1, 0);
             label268.Name = "label268";
-            label268.Size = new Size(28, 13);
+            label268.Size = new Size(34, 14);
             label268.TabIndex = 251;
             label268.Text = "Mahsül";
             // 
@@ -5664,7 +5664,7 @@
             label269.Location = new Point(2, 38);
             label269.Margin = new Padding(1, 0, 1, 0);
             label269.Name = "label269";
-            label269.Size = new Size(28, 13);
+            label269.Size = new Size(34, 14);
             label269.TabIndex = 252;
             label269.Text = "Ayniyat";
             // 
@@ -5675,7 +5675,7 @@
             label270.Location = new Point(2, 16);
             label270.Margin = new Padding(1, 0, 1, 0);
             label270.Name = "label270";
-            label270.Size = new Size(21, 13);
+            label270.Size = new Size(25, 14);
             label270.TabIndex = 253;
             label270.Text = "Para";
             // 
@@ -5695,7 +5695,7 @@
             label34.Location = new Point(6, 4);
             label34.Margin = new Padding(1, 0, 1, 0);
             label34.Name = "label34";
-            label34.Size = new Size(39, 13);
+            label34.Size = new Size(48, 16);
             label34.TabIndex = 243;
             label34.Text = "Münakale";
             // 
@@ -5718,7 +5718,7 @@
             label294.Location = new Point(29, 48);
             label294.Margin = new Padding(1, 0, 1, 0);
             label294.Name = "label294";
-            label294.Size = new Size(16, 13);
+            label294.Size = new Size(17, 16);
             label294.TabIndex = 259;
             label294.Text = "TL";
             // 
@@ -5729,7 +5729,7 @@
             label295.Location = new Point(19, 17);
             label295.Margin = new Padding(1, 0, 1, 0);
             label295.Name = "label295";
-            label295.Size = new Size(28, 13);
+            label295.Size = new Size(34, 14);
             label295.TabIndex = 256;
             label295.Text = "Mahsül";
             // 
@@ -5740,7 +5740,7 @@
             label296.Location = new Point(19, 30);
             label296.Margin = new Padding(1, 0, 1, 0);
             label296.Name = "label296";
-            label296.Size = new Size(28, 13);
+            label296.Size = new Size(34, 14);
             label296.TabIndex = 257;
             label296.Text = "Ayniyat";
             // 
@@ -5751,7 +5751,7 @@
             label297.Location = new Point(19, 3);
             label297.Margin = new Padding(1, 0, 1, 0);
             label297.Name = "label297";
-            label297.Size = new Size(21, 13);
+            label297.Size = new Size(25, 14);
             label297.TabIndex = 258;
             label297.Text = "Para";
             // 
@@ -5771,7 +5771,7 @@
             label153.Location = new Point(23, 4);
             label153.Margin = new Padding(1, 0, 1, 0);
             label153.Name = "label153";
-            label153.Size = new Size(33, 13);
+            label153.Size = new Size(40, 16);
             label153.TabIndex = 243;
             label153.Text = "Ödenen";
             // 
@@ -5794,7 +5794,7 @@
             label290.Location = new Point(24, 48);
             label290.Margin = new Padding(1, 0, 1, 0);
             label290.Name = "label290";
-            label290.Size = new Size(16, 13);
+            label290.Size = new Size(17, 16);
             label290.TabIndex = 255;
             label290.Text = "TL";
             // 
@@ -5805,7 +5805,7 @@
             label291.Location = new Point(14, 17);
             label291.Margin = new Padding(1, 0, 1, 0);
             label291.Name = "label291";
-            label291.Size = new Size(28, 13);
+            label291.Size = new Size(34, 14);
             label291.TabIndex = 252;
             label291.Text = "Mahsül";
             // 
@@ -5816,7 +5816,7 @@
             label292.Location = new Point(14, 30);
             label292.Margin = new Padding(1, 0, 1, 0);
             label292.Name = "label292";
-            label292.Size = new Size(28, 13);
+            label292.Size = new Size(34, 14);
             label292.TabIndex = 253;
             label292.Text = "Ayniyat";
             // 
@@ -5827,7 +5827,7 @@
             label293.Location = new Point(14, 3);
             label293.Margin = new Padding(1, 0, 1, 0);
             label293.Name = "label293";
-            label293.Size = new Size(21, 13);
+            label293.Size = new Size(25, 14);
             label293.TabIndex = 254;
             label293.Text = "Para";
             // 
@@ -5847,7 +5847,7 @@
             label152.Location = new Point(12, 3);
             label152.Margin = new Padding(1, 0, 1, 0);
             label152.Name = "label152";
-            label152.Size = new Size(59, 13);
+            label152.Size = new Size(72, 16);
             label152.TabIndex = 243;
             label152.Text = "Tahakkuk Eden";
             // 
@@ -5867,7 +5867,7 @@
             label154.Location = new Point(3, 4);
             label154.Margin = new Padding(1, 0, 1, 0);
             label154.Name = "label154";
-            label154.Size = new Size(22, 13);
+            label154.Size = new Size(27, 16);
             label154.TabIndex = 243;
             label154.Text = "Borç";
             // 
@@ -5889,7 +5889,7 @@
             label304.Location = new Point(7, 46);
             label304.Margin = new Padding(1, 0, 1, 0);
             label304.Name = "label304";
-            label304.Size = new Size(16, 13);
+            label304.Size = new Size(17, 16);
             label304.TabIndex = 261;
             label304.Text = "TL";
             // 
@@ -5900,7 +5900,7 @@
             label302.Location = new Point(2, 23);
             label302.Margin = new Padding(1, 0, 1, 0);
             label302.Name = "label302";
-            label302.Size = new Size(28, 13);
+            label302.Size = new Size(34, 14);
             label302.TabIndex = 259;
             label302.Text = "Mahsül";
             // 
@@ -5911,7 +5911,7 @@
             label303.Location = new Point(2, 9);
             label303.Margin = new Padding(1, 0, 1, 0);
             label303.Name = "label303";
-            label303.Size = new Size(21, 13);
+            label303.Size = new Size(25, 14);
             label303.TabIndex = 260;
             label303.Text = "Para";
             // 
@@ -5934,7 +5934,7 @@
             label298.Location = new Point(29, 48);
             label298.Margin = new Padding(1, 0, 1, 0);
             label298.Name = "label298";
-            label298.Size = new Size(16, 13);
+            label298.Size = new Size(17, 16);
             label298.TabIndex = 259;
             label298.Text = "TL";
             // 
@@ -5945,7 +5945,7 @@
             label299.Location = new Point(19, 17);
             label299.Margin = new Padding(1, 0, 1, 0);
             label299.Name = "label299";
-            label299.Size = new Size(28, 13);
+            label299.Size = new Size(34, 14);
             label299.TabIndex = 256;
             label299.Text = "Mahsül";
             // 
@@ -5956,7 +5956,7 @@
             label300.Location = new Point(19, 30);
             label300.Margin = new Padding(1, 0, 1, 0);
             label300.Name = "label300";
-            label300.Size = new Size(28, 13);
+            label300.Size = new Size(34, 14);
             label300.TabIndex = 257;
             label300.Text = "Ayniyat";
             // 
@@ -5967,7 +5967,7 @@
             label301.Location = new Point(19, 3);
             label301.Margin = new Padding(1, 0, 1, 0);
             label301.Name = "label301";
-            label301.Size = new Size(21, 13);
+            label301.Size = new Size(25, 14);
             label301.TabIndex = 258;
             label301.Text = "Para";
             // 
@@ -5987,7 +5987,7 @@
             label33.Location = new Point(19, 4);
             label33.Margin = new Padding(1, 0, 1, 0);
             label33.Name = "label33";
-            label33.Size = new Size(44, 13);
+            label33.Size = new Size(53, 16);
             label33.TabIndex = 243;
             label33.Text = "İptal Edilen";
             // 
@@ -6008,7 +6008,7 @@
             label181.Location = new Point(0, 4);
             label181.Margin = new Padding(1, 0, 1, 0);
             label181.Name = "label181";
-            label181.Size = new Size(61, 13);
+            label181.Size = new Size(76, 16);
             label181.TabIndex = 242;
             label181.Text = "Aylık ve Yıllıklar";
             // 
@@ -6019,7 +6019,7 @@
             label151.Location = new Point(9, 37);
             label151.Margin = new Padding(1, 0, 1, 0);
             label151.Name = "label151";
-            label151.Size = new Size(58, 13);
+            label151.Size = new Size(82, 16);
             label151.TabIndex = 242;
             label151.Text = "GİDERİN CİNSİ";
             // 
@@ -6040,7 +6040,7 @@
             label164.Location = new Point(3, 4);
             label164.Margin = new Padding(1, 0, 1, 0);
             label164.Name = "label164";
-            label164.Size = new Size(12, 15);
+            label164.Size = new Size(14, 17);
             label164.TabIndex = 1;
             label164.Text = "1";
             // 
@@ -6050,7 +6050,7 @@
             label166.Location = new Point(2, 26);
             label166.Margin = new Padding(1, 0, 1, 0);
             label166.Name = "label166";
-            label166.Size = new Size(12, 15);
+            label166.Size = new Size(14, 17);
             label166.TabIndex = 2;
             label166.Text = "2";
             // 
@@ -6070,7 +6070,7 @@
             label172.Location = new Point(2, 26);
             label172.Margin = new Padding(1, 0, 1, 0);
             label172.Name = "label172";
-            label172.Size = new Size(12, 15);
+            label172.Size = new Size(14, 17);
             label172.TabIndex = 2;
             label172.Text = "1";
             // 
@@ -6091,7 +6091,7 @@
             label192.Location = new Point(3, 4);
             label192.Margin = new Padding(1, 0, 1, 0);
             label192.Name = "label192";
-            label192.Size = new Size(53, 13);
+            label192.Size = new Size(67, 16);
             label192.TabIndex = 243;
             label192.Text = "İdari Masraflar";
             // 
@@ -6102,7 +6102,7 @@
             label163.Location = new Point(9, 37);
             label163.Margin = new Padding(1, 0, 1, 0);
             label163.Name = "label163";
-            label163.Size = new Size(58, 13);
+            label163.Size = new Size(82, 16);
             label163.TabIndex = 242;
             label163.Text = "GİDERİN CİNSİ";
             // 
@@ -6123,7 +6123,7 @@
             label208.Location = new Point(3, 4);
             label208.Margin = new Padding(1, 0, 1, 0);
             label208.Name = "label208";
-            label208.Size = new Size(74, 13);
+            label208.Size = new Size(91, 16);
             label208.TabIndex = 244;
             label208.Text = "Birinci Fasıl Yekünü";
             // 
@@ -6134,7 +6134,7 @@
             label165.Location = new Point(9, 37);
             label165.Margin = new Padding(1, 0, 1, 0);
             label165.Name = "label165";
-            label165.Size = new Size(58, 13);
+            label165.Size = new Size(82, 16);
             label165.TabIndex = 242;
             label165.Text = "GİDERİN CİNSİ";
             // 
@@ -6153,7 +6153,7 @@
             lblMunzamIdariMasraf.Location = new Point(1, 3);
             lblMunzamIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIdariMasraf.Name = "lblMunzamIdariMasraf";
-            lblMunzamIdariMasraf.Size = new Size(12, 15);
+            lblMunzamIdariMasraf.Size = new Size(14, 17);
             lblMunzamIdariMasraf.TabIndex = 2;
             lblMunzamIdariMasraf.Text = "0";
             lblMunzamIdariMasraf.TextAlign = ContentAlignment.MiddleRight;
@@ -6197,7 +6197,7 @@
             lblTahakkukIdariMasraf.Location = new Point(1, 3);
             lblTahakkukIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIdariMasraf.Name = "lblTahakkukIdariMasraf";
-            lblTahakkukIdariMasraf.Size = new Size(12, 15);
+            lblTahakkukIdariMasraf.Size = new Size(14, 17);
             lblTahakkukIdariMasraf.TabIndex = 2;
             lblTahakkukIdariMasraf.Text = "0";
             lblTahakkukIdariMasraf.TextAlign = ContentAlignment.MiddleRight;
@@ -6225,7 +6225,7 @@
             lblOdenenIdariMasraf.Location = new Point(1, 3);
             lblOdenenIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIdariMasraf.Name = "lblOdenenIdariMasraf";
-            lblOdenenIdariMasraf.Size = new Size(22, 15);
+            lblOdenenIdariMasraf.Size = new Size(26, 17);
             lblOdenenIdariMasraf.TabIndex = 2;
             lblOdenenIdariMasraf.Text = "256";
             lblOdenenIdariMasraf.TextAlign = ContentAlignment.MiddleRight;
@@ -6261,7 +6261,7 @@
             lblIptalIdariMasraf.Location = new Point(1, 3);
             lblIptalIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblIptalIdariMasraf.Name = "lblIptalIdariMasraf";
-            lblIptalIdariMasraf.Size = new Size(12, 15);
+            lblIptalIdariMasraf.Size = new Size(14, 17);
             lblIptalIdariMasraf.TabIndex = 2;
             lblIptalIdariMasraf.Text = "0";
             lblIptalIdariMasraf.TextAlign = ContentAlignment.MiddleRight;
@@ -6289,7 +6289,7 @@
             lblBKIdariMasraf.Location = new Point(1, 3);
             lblBKIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblBKIdariMasraf.Name = "lblBKIdariMasraf";
-            lblBKIdariMasraf.Size = new Size(27, 15);
+            lblBKIdariMasraf.Size = new Size(32, 17);
             lblBKIdariMasraf.TabIndex = 2;
             lblBKIdariMasraf.Text = "2500";
             lblBKIdariMasraf.TextAlign = ContentAlignment.MiddleRight;
@@ -6325,7 +6325,7 @@
             lblIptalAylik.Location = new Point(1, 3);
             lblIptalAylik.Margin = new Padding(1, 0, 1, 0);
             lblIptalAylik.Name = "lblIptalAylik";
-            lblIptalAylik.Size = new Size(12, 15);
+            lblIptalAylik.Size = new Size(14, 17);
             lblIptalAylik.TabIndex = 2;
             lblIptalAylik.Text = "0";
             lblIptalAylik.TextAlign = ContentAlignment.MiddleRight;
@@ -6361,7 +6361,7 @@
             lblOdenenAylik.Location = new Point(1, 3);
             lblOdenenAylik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenAylik.Name = "lblOdenenAylik";
-            lblOdenenAylik.Size = new Size(37, 15);
+            lblOdenenAylik.Size = new Size(44, 17);
             lblOdenenAylik.TabIndex = 2;
             lblOdenenAylik.Text = "120948";
             lblOdenenAylik.TextAlign = ContentAlignment.MiddleRight;
@@ -6389,7 +6389,7 @@
             lblTahakkukAylik.Location = new Point(1, 3);
             lblTahakkukAylik.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukAylik.Name = "lblTahakkukAylik";
-            lblTahakkukAylik.Size = new Size(12, 15);
+            lblTahakkukAylik.Size = new Size(14, 17);
             lblTahakkukAylik.TabIndex = 2;
             lblTahakkukAylik.Text = "0";
             lblTahakkukAylik.TextAlign = ContentAlignment.MiddleRight;
@@ -6433,7 +6433,7 @@
             lblMunzamAylik.Location = new Point(1, 3);
             lblMunzamAylik.Margin = new Padding(1, 0, 1, 0);
             lblMunzamAylik.Name = "lblMunzamAylik";
-            lblMunzamAylik.Size = new Size(12, 15);
+            lblMunzamAylik.Size = new Size(14, 17);
             lblMunzamAylik.TabIndex = 2;
             lblMunzamAylik.Text = "0";
             lblMunzamAylik.TextAlign = ContentAlignment.MiddleRight;
@@ -6461,7 +6461,7 @@
             lblBKAylik.Location = new Point(1, 3);
             lblBKAylik.Margin = new Padding(1, 0, 1, 0);
             lblBKAylik.Name = "lblBKAylik";
-            lblBKAylik.Size = new Size(32, 15);
+            lblBKAylik.Size = new Size(38, 17);
             lblBKAylik.TabIndex = 2;
             lblBKAylik.Text = "80000";
             lblBKAylik.TextAlign = ContentAlignment.MiddleRight;
@@ -6489,7 +6489,7 @@
             lblIptalIdariToplami.Location = new Point(1, 3);
             lblIptalIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalIdariToplami.Name = "lblIptalIdariToplami";
-            lblIptalIdariToplami.Size = new Size(12, 15);
+            lblIptalIdariToplami.Size = new Size(14, 17);
             lblIptalIdariToplami.TabIndex = 2;
             lblIptalIdariToplami.Text = "0";
             lblIptalIdariToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -6525,7 +6525,7 @@
             lblOdenenIdariToplami.Location = new Point(1, 3);
             lblOdenenIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIdariToplami.Name = "lblOdenenIdariToplami";
-            lblOdenenIdariToplami.Size = new Size(12, 15);
+            lblOdenenIdariToplami.Size = new Size(14, 17);
             lblOdenenIdariToplami.TabIndex = 2;
             lblOdenenIdariToplami.Text = "0";
             lblOdenenIdariToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -6553,7 +6553,7 @@
             lblTahakkukIdariToplami.Location = new Point(1, 3);
             lblTahakkukIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIdariToplami.Name = "lblTahakkukIdariToplami";
-            lblTahakkukIdariToplami.Size = new Size(12, 15);
+            lblTahakkukIdariToplami.Size = new Size(14, 17);
             lblTahakkukIdariToplami.TabIndex = 2;
             lblTahakkukIdariToplami.Text = "0";
             lblTahakkukIdariToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -6597,7 +6597,7 @@
             lblMunzamIdariToplami.Location = new Point(1, 3);
             lblMunzamIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIdariToplami.Name = "lblMunzamIdariToplami";
-            lblMunzamIdariToplami.Size = new Size(12, 15);
+            lblMunzamIdariToplami.Size = new Size(14, 17);
             lblMunzamIdariToplami.TabIndex = 2;
             lblMunzamIdariToplami.Text = "0";
             lblMunzamIdariToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -6625,7 +6625,7 @@
             lblBKIdariToplami.Location = new Point(1, 3);
             lblBKIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKIdariToplami.Name = "lblBKIdariToplami";
-            lblBKIdariToplami.Size = new Size(12, 15);
+            lblBKIdariToplami.Size = new Size(14, 17);
             lblBKIdariToplami.TabIndex = 2;
             lblBKIdariToplami.Text = "0";
             lblBKIdariToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -6636,7 +6636,7 @@
             label155.Location = new Point(744, 118);
             label155.Margin = new Padding(1, 0, 1, 0);
             label155.Name = "label155";
-            label155.Size = new Size(98, 15);
+            label155.Size = new Size(115, 17);
             label155.TabIndex = 293;
             label155.Text = "İ D A R E   İ Ş L E R İ";
             // 
@@ -6646,7 +6646,7 @@
             label156.Location = new Point(696, 206);
             label156.Margin = new Padding(1, 0, 1, 0);
             label156.Name = "label156";
-            label156.Size = new Size(201, 15);
+            label156.Size = new Size(233, 17);
             label156.TabIndex = 338;
             label156.Text = "Z İ R A A T   V E   E K O N O M İ   İ Ş L E R İ";
             // 
@@ -6673,7 +6673,7 @@
             lblIptalDamizlik.Location = new Point(1, 3);
             lblIptalDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblIptalDamizlik.Name = "lblIptalDamizlik";
-            lblIptalDamizlik.Size = new Size(12, 15);
+            lblIptalDamizlik.Size = new Size(14, 17);
             lblIptalDamizlik.TabIndex = 2;
             lblIptalDamizlik.Text = "0";
             lblIptalDamizlik.TextAlign = ContentAlignment.MiddleRight;
@@ -6709,7 +6709,7 @@
             lblOdenenDamizlik.Location = new Point(1, 3);
             lblOdenenDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenDamizlik.Name = "lblOdenenDamizlik";
-            lblOdenenDamizlik.Size = new Size(12, 15);
+            lblOdenenDamizlik.Size = new Size(14, 17);
             lblOdenenDamizlik.TabIndex = 3;
             lblOdenenDamizlik.Text = "0";
             lblOdenenDamizlik.TextAlign = ContentAlignment.MiddleRight;
@@ -6737,7 +6737,7 @@
             lblTahakkukDamizlik.Location = new Point(1, 3);
             lblTahakkukDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukDamizlik.Name = "lblTahakkukDamizlik";
-            lblTahakkukDamizlik.Size = new Size(12, 15);
+            lblTahakkukDamizlik.Size = new Size(14, 17);
             lblTahakkukDamizlik.TabIndex = 3;
             lblTahakkukDamizlik.Text = "0";
             lblTahakkukDamizlik.TextAlign = ContentAlignment.MiddleRight;
@@ -6781,7 +6781,7 @@
             lblMunzamDamizlik.Location = new Point(1, 3);
             lblMunzamDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblMunzamDamizlik.Name = "lblMunzamDamizlik";
-            lblMunzamDamizlik.Size = new Size(12, 15);
+            lblMunzamDamizlik.Size = new Size(14, 17);
             lblMunzamDamizlik.TabIndex = 3;
             lblMunzamDamizlik.Text = "0";
             lblMunzamDamizlik.TextAlign = ContentAlignment.MiddleRight;
@@ -6809,7 +6809,7 @@
             lblBKDamizlik.Location = new Point(1, 3);
             lblBKDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblBKDamizlik.Name = "lblBKDamizlik";
-            lblBKDamizlik.Size = new Size(12, 15);
+            lblBKDamizlik.Size = new Size(14, 17);
             lblBKDamizlik.TabIndex = 3;
             lblBKDamizlik.Text = "0";
             lblBKDamizlik.TextAlign = ContentAlignment.MiddleRight;
@@ -6839,7 +6839,7 @@
             label216.Location = new Point(-1, 4);
             label216.Margin = new Padding(1, 0, 1, 0);
             label216.Name = "label216";
-            label216.Size = new Size(36, 13);
+            label216.Size = new Size(43, 16);
             label216.TabIndex = 244;
             label216.Text = "Damızlık";
             // 
@@ -6850,7 +6850,7 @@
             label157.Location = new Point(9, 37);
             label157.Margin = new Padding(1, 0, 1, 0);
             label157.Name = "label157";
-            label157.Size = new Size(58, 13);
+            label157.Size = new Size(82, 16);
             label157.TabIndex = 242;
             label157.Text = "GİDERİN CİNSİ";
             // 
@@ -6872,7 +6872,7 @@
             label209.Location = new Point(-1, 9);
             label209.Margin = new Padding(1, 0, 1, 0);
             label209.Name = "label209";
-            label209.Size = new Size(54, 13);
+            label209.Size = new Size(67, 14);
             label209.TabIndex = 245;
             label209.Text = "Fidan Yetiştirme";
             // 
@@ -6883,7 +6883,7 @@
             label158.Location = new Point(9, 37);
             label158.Margin = new Padding(1, 0, 1, 0);
             label158.Name = "label158";
-            label158.Size = new Size(58, 13);
+            label158.Size = new Size(82, 16);
             label158.TabIndex = 242;
             label158.Text = "GİDERİN CİNSİ";
             // 
@@ -6894,7 +6894,7 @@
             label234.Location = new Point(-1, -1);
             label234.Margin = new Padding(1, 0, 1, 0);
             label234.Name = "label234";
-            label234.Size = new Size(72, 13);
+            label234.Size = new Size(88, 14);
             label234.TabIndex = 246;
             label234.Text = "Ağaçlama, Aşılama ve";
             // 
@@ -6913,7 +6913,7 @@
             lblIptalSulama.Location = new Point(1, 3);
             lblIptalSulama.Margin = new Padding(1, 0, 1, 0);
             lblIptalSulama.Name = "lblIptalSulama";
-            lblIptalSulama.Size = new Size(12, 15);
+            lblIptalSulama.Size = new Size(14, 17);
             lblIptalSulama.TabIndex = 2;
             lblIptalSulama.Text = "0";
             lblIptalSulama.TextAlign = ContentAlignment.MiddleRight;
@@ -6941,7 +6941,7 @@
             lblBKSulama.Location = new Point(1, 3);
             lblBKSulama.Margin = new Padding(1, 0, 1, 0);
             lblBKSulama.Name = "lblBKSulama";
-            lblBKSulama.Size = new Size(32, 15);
+            lblBKSulama.Size = new Size(38, 17);
             lblBKSulama.TabIndex = 3;
             lblBKSulama.Text = "50000";
             lblBKSulama.TextAlign = ContentAlignment.MiddleRight;
@@ -6969,7 +6969,7 @@
             lblIptalAgaclama.Location = new Point(1, 3);
             lblIptalAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblIptalAgaclama.Name = "lblIptalAgaclama";
-            lblIptalAgaclama.Size = new Size(12, 15);
+            lblIptalAgaclama.Size = new Size(14, 17);
             lblIptalAgaclama.TabIndex = 2;
             lblIptalAgaclama.Text = "0";
             lblIptalAgaclama.TextAlign = ContentAlignment.MiddleRight;
@@ -7021,7 +7021,7 @@
             lblMunzamSulama.Location = new Point(1, 3);
             lblMunzamSulama.Margin = new Padding(1, 0, 1, 0);
             lblMunzamSulama.Name = "lblMunzamSulama";
-            lblMunzamSulama.Size = new Size(12, 15);
+            lblMunzamSulama.Size = new Size(14, 17);
             lblMunzamSulama.TabIndex = 3;
             lblMunzamSulama.Text = "0";
             lblMunzamSulama.TextAlign = ContentAlignment.MiddleRight;
@@ -7041,7 +7041,7 @@
             lblOdenenAgaclama.Location = new Point(1, 3);
             lblOdenenAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblOdenenAgaclama.Name = "lblOdenenAgaclama";
-            lblOdenenAgaclama.Size = new Size(12, 15);
+            lblOdenenAgaclama.Size = new Size(14, 17);
             lblOdenenAgaclama.TabIndex = 3;
             lblOdenenAgaclama.Text = "0";
             lblOdenenAgaclama.TextAlign = ContentAlignment.MiddleRight;
@@ -7061,7 +7061,7 @@
             lblOdenenSulama.Location = new Point(1, 3);
             lblOdenenSulama.Margin = new Padding(1, 0, 1, 0);
             lblOdenenSulama.Name = "lblOdenenSulama";
-            lblOdenenSulama.Size = new Size(12, 15);
+            lblOdenenSulama.Size = new Size(14, 17);
             lblOdenenSulama.TabIndex = 3;
             lblOdenenSulama.Text = "0";
             lblOdenenSulama.TextAlign = ContentAlignment.MiddleRight;
@@ -7097,7 +7097,7 @@
             lblTahakkukAgaclama.Location = new Point(1, 3);
             lblTahakkukAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukAgaclama.Name = "lblTahakkukAgaclama";
-            lblTahakkukAgaclama.Size = new Size(12, 15);
+            lblTahakkukAgaclama.Size = new Size(14, 17);
             lblTahakkukAgaclama.TabIndex = 3;
             lblTahakkukAgaclama.Text = "0";
             lblTahakkukAgaclama.TextAlign = ContentAlignment.MiddleRight;
@@ -7165,7 +7165,7 @@
             lblMunzamAgaclama.Location = new Point(1, 3);
             lblMunzamAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblMunzamAgaclama.Name = "lblMunzamAgaclama";
-            lblMunzamAgaclama.Size = new Size(12, 15);
+            lblMunzamAgaclama.Size = new Size(14, 17);
             lblMunzamAgaclama.TabIndex = 3;
             lblMunzamAgaclama.Text = "0";
             lblMunzamAgaclama.TextAlign = ContentAlignment.MiddleRight;
@@ -7193,7 +7193,7 @@
             lblBKAgaclama.Location = new Point(1, 3);
             lblBKAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblBKAgaclama.Name = "lblBKAgaclama";
-            lblBKAgaclama.Size = new Size(12, 15);
+            lblBKAgaclama.Size = new Size(14, 17);
             lblBKAgaclama.TabIndex = 3;
             lblBKAgaclama.Text = "0";
             lblBKAgaclama.TextAlign = ContentAlignment.MiddleRight;
@@ -7215,7 +7215,7 @@
             label159.Location = new Point(-1, 9);
             label159.Margin = new Padding(1, 0, 1, 0);
             label159.Name = "label159";
-            label159.Size = new Size(53, 13);
+            label159.Size = new Size(63, 14);
             label159.TabIndex = 244;
             label159.Text = "Onarım Masrafı";
             // 
@@ -7226,7 +7226,7 @@
             label215.Location = new Point(-1, -1);
             label215.Margin = new Padding(1, 0, 1, 0);
             label215.Name = "label215";
-            label215.Size = new Size(79, 13);
+            label215.Size = new Size(98, 14);
             label215.TabIndex = 244;
             label215.Text = "Sulama Harklar Açma ve";
             // 
@@ -7252,7 +7252,7 @@
             label180.Location = new Point(2, 141);
             label180.Margin = new Padding(1, 0, 1, 0);
             label180.Name = "label180";
-            label180.Size = new Size(12, 15);
+            label180.Size = new Size(14, 17);
             label180.TabIndex = 7;
             label180.Text = "7";
             // 
@@ -7262,7 +7262,7 @@
             label179.Location = new Point(2, 118);
             label179.Margin = new Padding(1, 0, 1, 0);
             label179.Name = "label179";
-            label179.Size = new Size(12, 15);
+            label179.Size = new Size(14, 17);
             label179.TabIndex = 6;
             label179.Text = "6";
             // 
@@ -7272,7 +7272,7 @@
             label178.Location = new Point(2, 96);
             label178.Margin = new Padding(1, 0, 1, 0);
             label178.Name = "label178";
-            label178.Size = new Size(12, 15);
+            label178.Size = new Size(14, 17);
             label178.TabIndex = 5;
             label178.Text = "5";
             // 
@@ -7282,7 +7282,7 @@
             label177.Location = new Point(2, 72);
             label177.Margin = new Padding(1, 0, 1, 0);
             label177.Name = "label177";
-            label177.Size = new Size(12, 15);
+            label177.Size = new Size(14, 17);
             label177.TabIndex = 4;
             label177.Text = "4";
             // 
@@ -7292,7 +7292,7 @@
             label176.Location = new Point(2, 49);
             label176.Margin = new Padding(1, 0, 1, 0);
             label176.Name = "label176";
-            label176.Size = new Size(12, 15);
+            label176.Size = new Size(14, 17);
             label176.TabIndex = 3;
             label176.Text = "3";
             // 
@@ -7302,7 +7302,7 @@
             label161.Location = new Point(2, 4);
             label161.Margin = new Padding(1, 0, 1, 0);
             label161.Name = "label161";
-            label161.Size = new Size(12, 15);
+            label161.Size = new Size(14, 17);
             label161.TabIndex = 1;
             label161.Text = "1";
             // 
@@ -7312,7 +7312,7 @@
             label167.Location = new Point(2, 26);
             label167.Margin = new Padding(1, 0, 1, 0);
             label167.Name = "label167";
-            label167.Size = new Size(12, 15);
+            label167.Size = new Size(14, 17);
             label167.TabIndex = 2;
             label167.Text = "2";
             // 
@@ -7332,7 +7332,7 @@
             label168.Location = new Point(2, 81);
             label168.Margin = new Padding(1, 0, 1, 0);
             label168.Name = "label168";
-            label168.Size = new Size(12, 15);
+            label168.Size = new Size(14, 17);
             label168.TabIndex = 2;
             label168.Text = "2";
             // 
@@ -7359,7 +7359,7 @@
             lblIptalPazarCarsi.Location = new Point(1, 3);
             lblIptalPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblIptalPazarCarsi.Name = "lblIptalPazarCarsi";
-            lblIptalPazarCarsi.Size = new Size(12, 15);
+            lblIptalPazarCarsi.Size = new Size(14, 17);
             lblIptalPazarCarsi.TabIndex = 2;
             lblIptalPazarCarsi.Text = "0";
             lblIptalPazarCarsi.TextAlign = ContentAlignment.MiddleRight;
@@ -7395,7 +7395,7 @@
             lblOdenenPazarCarsi.Location = new Point(1, 3);
             lblOdenenPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenPazarCarsi.Name = "lblOdenenPazarCarsi";
-            lblOdenenPazarCarsi.Size = new Size(12, 15);
+            lblOdenenPazarCarsi.Size = new Size(14, 17);
             lblOdenenPazarCarsi.TabIndex = 3;
             lblOdenenPazarCarsi.Text = "0";
             lblOdenenPazarCarsi.TextAlign = ContentAlignment.MiddleRight;
@@ -7423,7 +7423,7 @@
             lblTahakkukPazarCarsi.Location = new Point(1, 3);
             lblTahakkukPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukPazarCarsi.Name = "lblTahakkukPazarCarsi";
-            lblTahakkukPazarCarsi.Size = new Size(12, 15);
+            lblTahakkukPazarCarsi.Size = new Size(14, 17);
             lblTahakkukPazarCarsi.TabIndex = 3;
             lblTahakkukPazarCarsi.Text = "0";
             lblTahakkukPazarCarsi.TextAlign = ContentAlignment.MiddleRight;
@@ -7467,7 +7467,7 @@
             lblMunzamPazarCarsi.Location = new Point(1, 3);
             lblMunzamPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamPazarCarsi.Name = "lblMunzamPazarCarsi";
-            lblMunzamPazarCarsi.Size = new Size(12, 15);
+            lblMunzamPazarCarsi.Size = new Size(14, 17);
             lblMunzamPazarCarsi.TabIndex = 3;
             lblMunzamPazarCarsi.Text = "0";
             lblMunzamPazarCarsi.TextAlign = ContentAlignment.MiddleRight;
@@ -7495,7 +7495,7 @@
             lblBKPazarCarsi.Location = new Point(1, 3);
             lblBKPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblBKPazarCarsi.Name = "lblBKPazarCarsi";
-            lblBKPazarCarsi.Size = new Size(12, 15);
+            lblBKPazarCarsi.Size = new Size(14, 17);
             lblBKPazarCarsi.TabIndex = 3;
             lblBKPazarCarsi.Text = "0";
             lblBKPazarCarsi.TextAlign = ContentAlignment.MiddleRight;
@@ -7525,7 +7525,7 @@
             label218.Location = new Point(-1, 9);
             label218.Margin = new Padding(1, 0, 1, 0);
             label218.Name = "label218";
-            label218.Size = new Size(29, 13);
+            label218.Size = new Size(34, 14);
             label218.TabIndex = 247;
             label218.Text = "Masrafı";
             // 
@@ -7536,7 +7536,7 @@
             label219.Location = new Point(-1, -1);
             label219.Margin = new Padding(1, 0, 1, 0);
             label219.Name = "label219";
-            label219.Size = new Size(72, 13);
+            label219.Size = new Size(89, 14);
             label219.TabIndex = 248;
             label219.Text = "Pazar, Çarşı vb Yerler";
             // 
@@ -7557,7 +7557,7 @@
             label175.Location = new Point(-1, 9);
             label175.Margin = new Padding(1, 0, 1, 0);
             label175.Name = "label175";
-            label175.Size = new Size(79, 13);
+            label175.Size = new Size(99, 14);
             label175.TabIndex = 247;
             label175.Text = "Hastalıkları ile Mücadele";
             // 
@@ -7568,7 +7568,7 @@
             label217.Location = new Point(-1, -1);
             label217.Margin = new Padding(1, 0, 1, 0);
             label217.Name = "label217";
-            label217.Size = new Size(81, 13);
+            label217.Size = new Size(101, 14);
             label217.TabIndex = 248;
             label217.Text = "Zirai Hayvanlar ve Nebat";
             // 
@@ -7587,7 +7587,7 @@
             lblIptalOrnekTarla.Location = new Point(1, 3);
             lblIptalOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblIptalOrnekTarla.Name = "lblIptalOrnekTarla";
-            lblIptalOrnekTarla.Size = new Size(12, 15);
+            lblIptalOrnekTarla.Size = new Size(14, 17);
             lblIptalOrnekTarla.TabIndex = 2;
             lblIptalOrnekTarla.Text = "0";
             lblIptalOrnekTarla.TextAlign = ContentAlignment.MiddleRight;
@@ -7615,7 +7615,7 @@
             lblBKOrnekTarla.Location = new Point(1, 3);
             lblBKOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblBKOrnekTarla.Name = "lblBKOrnekTarla";
-            lblBKOrnekTarla.Size = new Size(12, 15);
+            lblBKOrnekTarla.Size = new Size(14, 17);
             lblBKOrnekTarla.TabIndex = 3;
             lblBKOrnekTarla.Text = "0";
             lblBKOrnekTarla.TextAlign = ContentAlignment.MiddleRight;
@@ -7643,7 +7643,7 @@
             lblIptalZiraiHayvan.Location = new Point(1, 3);
             lblIptalZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblIptalZiraiHayvan.Name = "lblIptalZiraiHayvan";
-            lblIptalZiraiHayvan.Size = new Size(12, 15);
+            lblIptalZiraiHayvan.Size = new Size(14, 17);
             lblIptalZiraiHayvan.TabIndex = 2;
             lblIptalZiraiHayvan.Text = "0";
             lblIptalZiraiHayvan.TextAlign = ContentAlignment.MiddleRight;
@@ -7695,7 +7695,7 @@
             lblMunzamOrnekTarla.Location = new Point(1, 3);
             lblMunzamOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOrnekTarla.Name = "lblMunzamOrnekTarla";
-            lblMunzamOrnekTarla.Size = new Size(12, 15);
+            lblMunzamOrnekTarla.Size = new Size(14, 17);
             lblMunzamOrnekTarla.TabIndex = 3;
             lblMunzamOrnekTarla.Text = "0";
             lblMunzamOrnekTarla.TextAlign = ContentAlignment.MiddleRight;
@@ -7715,7 +7715,7 @@
             lblOdenenZiraiHayvan.Location = new Point(1, 3);
             lblOdenenZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblOdenenZiraiHayvan.Name = "lblOdenenZiraiHayvan";
-            lblOdenenZiraiHayvan.Size = new Size(12, 15);
+            lblOdenenZiraiHayvan.Size = new Size(14, 17);
             lblOdenenZiraiHayvan.TabIndex = 3;
             lblOdenenZiraiHayvan.Text = "0";
             lblOdenenZiraiHayvan.TextAlign = ContentAlignment.MiddleRight;
@@ -7735,7 +7735,7 @@
             lblOdenenOrnekTarla.Location = new Point(1, 3);
             lblOdenenOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOrnekTarla.Name = "lblOdenenOrnekTarla";
-            lblOdenenOrnekTarla.Size = new Size(12, 15);
+            lblOdenenOrnekTarla.Size = new Size(14, 17);
             lblOdenenOrnekTarla.TabIndex = 3;
             lblOdenenOrnekTarla.Text = "0";
             lblOdenenOrnekTarla.TextAlign = ContentAlignment.MiddleRight;
@@ -7771,7 +7771,7 @@
             lblTahakkukZiraiHayvan.Location = new Point(1, 3);
             lblTahakkukZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukZiraiHayvan.Name = "lblTahakkukZiraiHayvan";
-            lblTahakkukZiraiHayvan.Size = new Size(12, 15);
+            lblTahakkukZiraiHayvan.Size = new Size(14, 17);
             lblTahakkukZiraiHayvan.TabIndex = 3;
             lblTahakkukZiraiHayvan.Text = "0";
             lblTahakkukZiraiHayvan.TextAlign = ContentAlignment.MiddleRight;
@@ -7823,7 +7823,7 @@
             lblTahakkukOrnekTarla.Location = new Point(1, 3);
             lblTahakkukOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOrnekTarla.Name = "lblTahakkukOrnekTarla";
-            lblTahakkukOrnekTarla.Size = new Size(12, 15);
+            lblTahakkukOrnekTarla.Size = new Size(14, 17);
             lblTahakkukOrnekTarla.TabIndex = 3;
             lblTahakkukOrnekTarla.Text = "0";
             lblTahakkukOrnekTarla.TextAlign = ContentAlignment.MiddleRight;
@@ -7859,7 +7859,7 @@
             lblMunzamZiraiHayvan.Location = new Point(1, 3);
             lblMunzamZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblMunzamZiraiHayvan.Name = "lblMunzamZiraiHayvan";
-            lblMunzamZiraiHayvan.Size = new Size(12, 15);
+            lblMunzamZiraiHayvan.Size = new Size(14, 17);
             lblMunzamZiraiHayvan.TabIndex = 3;
             lblMunzamZiraiHayvan.Text = "0";
             lblMunzamZiraiHayvan.TextAlign = ContentAlignment.MiddleRight;
@@ -7887,7 +7887,7 @@
             lblBKZiraiHayvan.Location = new Point(1, 3);
             lblBKZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblBKZiraiHayvan.Name = "lblBKZiraiHayvan";
-            lblBKZiraiHayvan.Size = new Size(12, 15);
+            lblBKZiraiHayvan.Size = new Size(14, 17);
             lblBKZiraiHayvan.TabIndex = 3;
             lblBKZiraiHayvan.Text = "0";
             lblBKZiraiHayvan.TextAlign = ContentAlignment.MiddleRight;
@@ -7910,7 +7910,7 @@
             label169.Location = new Point(-1, 9);
             label169.Margin = new Padding(1, 0, 1, 0);
             label169.Name = "label169";
-            label169.Size = new Size(36, 13);
+            label169.Size = new Size(44, 14);
             label169.TabIndex = 247;
             label169.Text = "Masrafları";
             // 
@@ -7921,7 +7921,7 @@
             label170.Location = new Point(-1, -1);
             label170.Margin = new Padding(1, 0, 1, 0);
             label170.Name = "label170";
-            label170.Size = new Size(76, 13);
+            label170.Size = new Size(93, 14);
             label170.TabIndex = 248;
             label170.Text = "Örnek Tarla, Bahçe vb.";
             // 
@@ -7932,7 +7932,7 @@
             label171.Location = new Point(9, 37);
             label171.Margin = new Padding(1, 0, 1, 0);
             label171.Name = "label171";
-            label171.Size = new Size(58, 13);
+            label171.Size = new Size(82, 16);
             label171.TabIndex = 242;
             label171.Text = "GİDERİN CİNSİ";
             // 
@@ -7959,7 +7959,7 @@
             lblIptalZiraatToplami.Location = new Point(1, 3);
             lblIptalZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalZiraatToplami.Name = "lblIptalZiraatToplami";
-            lblIptalZiraatToplami.Size = new Size(12, 15);
+            lblIptalZiraatToplami.Size = new Size(14, 17);
             lblIptalZiraatToplami.TabIndex = 2;
             lblIptalZiraatToplami.Text = "0";
             lblIptalZiraatToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -7995,7 +7995,7 @@
             lblOdenenZiraatToplami.Location = new Point(1, 3);
             lblOdenenZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenZiraatToplami.Name = "lblOdenenZiraatToplami";
-            lblOdenenZiraatToplami.Size = new Size(12, 15);
+            lblOdenenZiraatToplami.Size = new Size(14, 17);
             lblOdenenZiraatToplami.TabIndex = 3;
             lblOdenenZiraatToplami.Text = "0";
             lblOdenenZiraatToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -8023,7 +8023,7 @@
             lblTahakkukZiraatToplami.Location = new Point(1, 3);
             lblTahakkukZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukZiraatToplami.Name = "lblTahakkukZiraatToplami";
-            lblTahakkukZiraatToplami.Size = new Size(12, 15);
+            lblTahakkukZiraatToplami.Size = new Size(14, 17);
             lblTahakkukZiraatToplami.TabIndex = 3;
             lblTahakkukZiraatToplami.Text = "0";
             lblTahakkukZiraatToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -8067,7 +8067,7 @@
             lblMunzamZiraatToplami.Location = new Point(1, 3);
             lblMunzamZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamZiraatToplami.Name = "lblMunzamZiraatToplami";
-            lblMunzamZiraatToplami.Size = new Size(12, 15);
+            lblMunzamZiraatToplami.Size = new Size(14, 17);
             lblMunzamZiraatToplami.TabIndex = 3;
             lblMunzamZiraatToplami.Text = "0";
             lblMunzamZiraatToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -8095,7 +8095,7 @@
             lblBKZiraatToplami.Location = new Point(1, 3);
             lblBKZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKZiraatToplami.Name = "lblBKZiraatToplami";
-            lblBKZiraatToplami.Size = new Size(12, 15);
+            lblBKZiraatToplami.Size = new Size(14, 17);
             lblBKZiraatToplami.TabIndex = 3;
             lblBKZiraatToplami.Text = "0";
             lblBKZiraatToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -8117,7 +8117,7 @@
             label235.Location = new Point(-1, 4);
             label235.Margin = new Padding(1, 0, 1, 0);
             label235.Name = "label235";
-            label235.Size = new Size(71, 13);
+            label235.Size = new Size(87, 16);
             label235.TabIndex = 245;
             label235.Text = "İkinci Fasıl Yekünü";
             // 
@@ -8128,7 +8128,7 @@
             label174.Location = new Point(9, 37);
             label174.Margin = new Padding(1, 0, 1, 0);
             label174.Name = "label174";
-            label174.Size = new Size(58, 13);
+            label174.Size = new Size(82, 16);
             label174.TabIndex = 242;
             label174.Text = "GİDERİN CİNSİ";
             // 
@@ -8149,7 +8149,7 @@
             label220.Location = new Point(-1, 9);
             label220.Margin = new Padding(1, 0, 1, 0);
             label220.Name = "label220";
-            label220.Size = new Size(61, 13);
+            label220.Size = new Size(75, 14);
             label220.TabIndex = 247;
             label220.Text = "Makinaları Masrafı";
             // 
@@ -8160,7 +8160,7 @@
             label221.Location = new Point(-1, -1);
             label221.Margin = new Padding(1, 0, 1, 0);
             label221.Name = "label221";
-            label221.Size = new Size(79, 13);
+            label221.Size = new Size(98, 14);
             label221.TabIndex = 248;
             label221.Text = "Küçük Endüstri ve Ziraat";
             // 
@@ -8187,7 +8187,7 @@
             lblIptalKucukEndustri.Location = new Point(1, 3);
             lblIptalKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblIptalKucukEndustri.Name = "lblIptalKucukEndustri";
-            lblIptalKucukEndustri.Size = new Size(12, 15);
+            lblIptalKucukEndustri.Size = new Size(14, 17);
             lblIptalKucukEndustri.TabIndex = 2;
             lblIptalKucukEndustri.Text = "0";
             lblIptalKucukEndustri.TextAlign = ContentAlignment.MiddleRight;
@@ -8223,7 +8223,7 @@
             lblOdenenKucukEndustri.Location = new Point(1, 3);
             lblOdenenKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKucukEndustri.Name = "lblOdenenKucukEndustri";
-            lblOdenenKucukEndustri.Size = new Size(12, 15);
+            lblOdenenKucukEndustri.Size = new Size(14, 17);
             lblOdenenKucukEndustri.TabIndex = 3;
             lblOdenenKucukEndustri.Text = "0";
             lblOdenenKucukEndustri.TextAlign = ContentAlignment.MiddleRight;
@@ -8251,7 +8251,7 @@
             lblTahakkukKucukEndustri.Location = new Point(1, 3);
             lblTahakkukKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukKucukEndustri.Name = "lblTahakkukKucukEndustri";
-            lblTahakkukKucukEndustri.Size = new Size(12, 15);
+            lblTahakkukKucukEndustri.Size = new Size(14, 17);
             lblTahakkukKucukEndustri.TabIndex = 3;
             lblTahakkukKucukEndustri.Text = "0";
             lblTahakkukKucukEndustri.TextAlign = ContentAlignment.MiddleRight;
@@ -8295,7 +8295,7 @@
             lblMunzamKucukEndustri.Location = new Point(1, 3);
             lblMunzamKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKucukEndustri.Name = "lblMunzamKucukEndustri";
-            lblMunzamKucukEndustri.Size = new Size(12, 15);
+            lblMunzamKucukEndustri.Size = new Size(14, 17);
             lblMunzamKucukEndustri.TabIndex = 3;
             lblMunzamKucukEndustri.Text = "0";
             lblMunzamKucukEndustri.TextAlign = ContentAlignment.MiddleRight;
@@ -8323,7 +8323,7 @@
             lblBKKucukEndustri.Location = new Point(1, 3);
             lblBKKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblBKKucukEndustri.Name = "lblBKKucukEndustri";
-            lblBKKucukEndustri.Size = new Size(12, 15);
+            lblBKKucukEndustri.Size = new Size(14, 17);
             lblBKKucukEndustri.TabIndex = 3;
             lblBKKucukEndustri.Text = "0";
             lblBKKucukEndustri.TextAlign = ContentAlignment.MiddleRight;
@@ -8351,7 +8351,7 @@
             lblIptalKulturToplami.Location = new Point(1, 3);
             lblIptalKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalKulturToplami.Name = "lblIptalKulturToplami";
-            lblIptalKulturToplami.Size = new Size(12, 15);
+            lblIptalKulturToplami.Size = new Size(14, 17);
             lblIptalKulturToplami.TabIndex = 3;
             lblIptalKulturToplami.Text = "0";
             lblIptalKulturToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -8387,7 +8387,7 @@
             lblOdenenKulturToplami.Location = new Point(1, 3);
             lblOdenenKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKulturToplami.Name = "lblOdenenKulturToplami";
-            lblOdenenKulturToplami.Size = new Size(12, 15);
+            lblOdenenKulturToplami.Size = new Size(14, 17);
             lblOdenenKulturToplami.TabIndex = 3;
             lblOdenenKulturToplami.Text = "0";
             lblOdenenKulturToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -8415,7 +8415,7 @@
             lblTahakkukKulturToplami.Location = new Point(1, 3);
             lblTahakkukKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukKulturToplami.Name = "lblTahakkukKulturToplami";
-            lblTahakkukKulturToplami.Size = new Size(12, 15);
+            lblTahakkukKulturToplami.Size = new Size(14, 17);
             lblTahakkukKulturToplami.TabIndex = 3;
             lblTahakkukKulturToplami.Text = "0";
             lblTahakkukKulturToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -8459,7 +8459,7 @@
             lblMunzamKulturToplami.Location = new Point(1, 3);
             lblMunzamKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKulturToplami.Name = "lblMunzamKulturToplami";
-            lblMunzamKulturToplami.Size = new Size(12, 15);
+            lblMunzamKulturToplami.Size = new Size(14, 17);
             lblMunzamKulturToplami.TabIndex = 3;
             lblMunzamKulturToplami.Text = "0";
             lblMunzamKulturToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -8487,7 +8487,7 @@
             lblBKKulturToplami.Location = new Point(1, 3);
             lblBKKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKKulturToplami.Name = "lblBKKulturToplami";
-            lblBKKulturToplami.Size = new Size(12, 15);
+            lblBKKulturToplami.Size = new Size(14, 17);
             lblBKKulturToplami.TabIndex = 3;
             lblBKKulturToplami.Text = "0";
             lblBKKulturToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -8516,7 +8516,7 @@
             label223.Location = new Point(-1, 4);
             label223.Margin = new Padding(1, 0, 1, 0);
             label223.Name = "label223";
-            label223.Size = new Size(78, 13);
+            label223.Size = new Size(98, 16);
             label223.TabIndex = 246;
             label223.Text = "Üçüncü Fasıl Yekünü";
             // 
@@ -8537,7 +8537,7 @@
             label188.Location = new Point(-1, 9);
             label188.Margin = new Padding(1, 0, 1, 0);
             label188.Name = "label188";
-            label188.Size = new Size(36, 13);
+            label188.Size = new Size(44, 14);
             label188.TabIndex = 251;
             label188.Text = "Masrafları";
             // 
@@ -8548,7 +8548,7 @@
             label189.Location = new Point(-1, -1);
             label189.Margin = new Padding(1, 0, 1, 0);
             label189.Name = "label189";
-            label189.Size = new Size(77, 13);
+            label189.Size = new Size(96, 14);
             label189.TabIndex = 252;
             label189.Text = "Okul Uygulama Bahçesi";
             // 
@@ -8567,7 +8567,7 @@
             lblIptalKurs.Location = new Point(1, 3);
             lblIptalKurs.Margin = new Padding(1, 0, 1, 0);
             lblIptalKurs.Name = "lblIptalKurs";
-            lblIptalKurs.Size = new Size(12, 15);
+            lblIptalKurs.Size = new Size(14, 17);
             lblIptalKurs.TabIndex = 3;
             lblIptalKurs.Text = "0";
             lblIptalKurs.TextAlign = ContentAlignment.MiddleRight;
@@ -8595,7 +8595,7 @@
             lblBKKurs.Location = new Point(1, 3);
             lblBKKurs.Margin = new Padding(1, 0, 1, 0);
             lblBKKurs.Name = "lblBKKurs";
-            lblBKKurs.Size = new Size(12, 15);
+            lblBKKurs.Size = new Size(14, 17);
             lblBKKurs.TabIndex = 3;
             lblBKKurs.Text = "0";
             lblBKKurs.TextAlign = ContentAlignment.MiddleRight;
@@ -8623,7 +8623,7 @@
             lblIptalOkulUygulama.Location = new Point(1, 3);
             lblIptalOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblIptalOkulUygulama.Name = "lblIptalOkulUygulama";
-            lblIptalOkulUygulama.Size = new Size(12, 15);
+            lblIptalOkulUygulama.Size = new Size(14, 17);
             lblIptalOkulUygulama.TabIndex = 3;
             lblIptalOkulUygulama.Text = "0";
             lblIptalOkulUygulama.TextAlign = ContentAlignment.MiddleRight;
@@ -8675,7 +8675,7 @@
             lblMunzamKurs.Location = new Point(1, 3);
             lblMunzamKurs.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKurs.Name = "lblMunzamKurs";
-            lblMunzamKurs.Size = new Size(12, 15);
+            lblMunzamKurs.Size = new Size(14, 17);
             lblMunzamKurs.TabIndex = 3;
             lblMunzamKurs.Text = "0";
             lblMunzamKurs.TextAlign = ContentAlignment.MiddleRight;
@@ -8695,7 +8695,7 @@
             lblOdenenOkulUygulama.Location = new Point(1, 3);
             lblOdenenOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOkulUygulama.Name = "lblOdenenOkulUygulama";
-            lblOdenenOkulUygulama.Size = new Size(12, 15);
+            lblOdenenOkulUygulama.Size = new Size(14, 17);
             lblOdenenOkulUygulama.TabIndex = 3;
             lblOdenenOkulUygulama.Text = "0";
             lblOdenenOkulUygulama.TextAlign = ContentAlignment.MiddleRight;
@@ -8715,7 +8715,7 @@
             lblOdenenKurs.Location = new Point(1, 3);
             lblOdenenKurs.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKurs.Name = "lblOdenenKurs";
-            lblOdenenKurs.Size = new Size(12, 15);
+            lblOdenenKurs.Size = new Size(14, 17);
             lblOdenenKurs.TabIndex = 3;
             lblOdenenKurs.Text = "0";
             lblOdenenKurs.TextAlign = ContentAlignment.MiddleRight;
@@ -8751,7 +8751,7 @@
             lblTahakkukOkulUygulama.Location = new Point(1, 3);
             lblTahakkukOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOkulUygulama.Name = "lblTahakkukOkulUygulama";
-            lblTahakkukOkulUygulama.Size = new Size(12, 15);
+            lblTahakkukOkulUygulama.Size = new Size(14, 17);
             lblTahakkukOkulUygulama.TabIndex = 3;
             lblTahakkukOkulUygulama.Text = "0";
             lblTahakkukOkulUygulama.TextAlign = ContentAlignment.MiddleRight;
@@ -8803,7 +8803,7 @@
             lblTahakkukKurs.Location = new Point(1, 3);
             lblTahakkukKurs.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukKurs.Name = "lblTahakkukKurs";
-            lblTahakkukKurs.Size = new Size(12, 15);
+            lblTahakkukKurs.Size = new Size(14, 17);
             lblTahakkukKurs.TabIndex = 3;
             lblTahakkukKurs.Text = "0";
             lblTahakkukKurs.TextAlign = ContentAlignment.MiddleRight;
@@ -8839,7 +8839,7 @@
             lblMunzamOkulUygulama.Location = new Point(1, 3);
             lblMunzamOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOkulUygulama.Name = "lblMunzamOkulUygulama";
-            lblMunzamOkulUygulama.Size = new Size(12, 15);
+            lblMunzamOkulUygulama.Size = new Size(14, 17);
             lblMunzamOkulUygulama.TabIndex = 3;
             lblMunzamOkulUygulama.Text = "0";
             lblMunzamOkulUygulama.TextAlign = ContentAlignment.MiddleRight;
@@ -8867,7 +8867,7 @@
             lblBKOkulUygulama.Location = new Point(1, 3);
             lblBKOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblBKOkulUygulama.Name = "lblBKOkulUygulama";
-            lblBKOkulUygulama.Size = new Size(12, 15);
+            lblBKOkulUygulama.Size = new Size(14, 17);
             lblBKOkulUygulama.TabIndex = 3;
             lblBKOkulUygulama.Text = "0";
             lblBKOkulUygulama.TextAlign = ContentAlignment.MiddleRight;
@@ -8888,7 +8888,7 @@
             label185.Location = new Point(-1, 4);
             label185.Margin = new Padding(1, 0, 1, 0);
             label185.Name = "label185";
-            label185.Size = new Size(51, 13);
+            label185.Size = new Size(63, 14);
             label185.TabIndex = 252;
             label185.Text = "Kurs Masrafları";
             // 
@@ -8898,7 +8898,7 @@
             label187.Location = new Point(731, 410);
             label187.Margin = new Padding(1, 0, 1, 0);
             label187.Name = "label187";
-            label187.Size = new Size(112, 15);
+            label187.Size = new Size(128, 17);
             label187.TabIndex = 453;
             label187.Text = "K Ü L T Ü R   İ Ş L E R İ";
             // 
@@ -8925,7 +8925,7 @@
             lblIptalOkumaOdasi.Location = new Point(1, 3);
             lblIptalOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblIptalOkumaOdasi.Name = "lblIptalOkumaOdasi";
-            lblIptalOkumaOdasi.Size = new Size(12, 15);
+            lblIptalOkumaOdasi.Size = new Size(14, 17);
             lblIptalOkumaOdasi.TabIndex = 3;
             lblIptalOkumaOdasi.Text = "0";
             lblIptalOkumaOdasi.TextAlign = ContentAlignment.MiddleRight;
@@ -8961,7 +8961,7 @@
             lblOdenenOkumaOdasi.Location = new Point(1, 3);
             lblOdenenOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOkumaOdasi.Name = "lblOdenenOkumaOdasi";
-            lblOdenenOkumaOdasi.Size = new Size(12, 15);
+            lblOdenenOkumaOdasi.Size = new Size(14, 17);
             lblOdenenOkumaOdasi.TabIndex = 3;
             lblOdenenOkumaOdasi.Text = "0";
             lblOdenenOkumaOdasi.TextAlign = ContentAlignment.MiddleRight;
@@ -8989,7 +8989,7 @@
             lblTahakkukOkumaOdasi.Location = new Point(1, 3);
             lblTahakkukOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOkumaOdasi.Name = "lblTahakkukOkumaOdasi";
-            lblTahakkukOkumaOdasi.Size = new Size(12, 15);
+            lblTahakkukOkumaOdasi.Size = new Size(14, 17);
             lblTahakkukOkumaOdasi.TabIndex = 3;
             lblTahakkukOkumaOdasi.Text = "0";
             lblTahakkukOkumaOdasi.TextAlign = ContentAlignment.MiddleRight;
@@ -9033,7 +9033,7 @@
             lblMunzamOkumaOdasi.Location = new Point(1, 3);
             lblMunzamOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOkumaOdasi.Name = "lblMunzamOkumaOdasi";
-            lblMunzamOkumaOdasi.Size = new Size(12, 15);
+            lblMunzamOkumaOdasi.Size = new Size(14, 17);
             lblMunzamOkumaOdasi.TabIndex = 3;
             lblMunzamOkumaOdasi.Text = "0";
             lblMunzamOkumaOdasi.TextAlign = ContentAlignment.MiddleRight;
@@ -9061,7 +9061,7 @@
             lblBKOkumaOdasi.Location = new Point(1, 3);
             lblBKOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblBKOkumaOdasi.Name = "lblBKOkumaOdasi";
-            lblBKOkumaOdasi.Size = new Size(12, 15);
+            lblBKOkumaOdasi.Size = new Size(14, 17);
             lblBKOkumaOdasi.TabIndex = 3;
             lblBKOkumaOdasi.Text = "0";
             lblBKOkumaOdasi.TextAlign = ContentAlignment.MiddleRight;
@@ -9090,7 +9090,7 @@
             label184.Location = new Point(-1, 4);
             label184.Margin = new Padding(1, 0, 1, 0);
             label184.Name = "label184";
-            label184.Size = new Size(79, 13);
+            label184.Size = new Size(96, 14);
             label184.TabIndex = 252;
             label184.Text = "Okuma Odası Masrafları";
             // 
@@ -9110,7 +9110,7 @@
             label183.Location = new Point(-1, 4);
             label183.Margin = new Padding(1, 0, 1, 0);
             label183.Name = "label183";
-            label183.Size = new Size(69, 13);
+            label183.Size = new Size(86, 14);
             label183.TabIndex = 251;
             label183.Text = "Okul Daimi Masrafları";
             // 
@@ -9129,7 +9129,7 @@
             lblIptalOgretmenevi.Location = new Point(1, 3);
             lblIptalOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblIptalOgretmenevi.Name = "lblIptalOgretmenevi";
-            lblIptalOgretmenevi.Size = new Size(12, 15);
+            lblIptalOgretmenevi.Size = new Size(14, 17);
             lblIptalOgretmenevi.TabIndex = 3;
             lblIptalOgretmenevi.Text = "0";
             lblIptalOgretmenevi.TextAlign = ContentAlignment.MiddleRight;
@@ -9157,7 +9157,7 @@
             lblBKOgretmenevi.Location = new Point(1, 3);
             lblBKOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblBKOgretmenevi.Name = "lblBKOgretmenevi";
-            lblBKOgretmenevi.Size = new Size(12, 15);
+            lblBKOgretmenevi.Size = new Size(14, 17);
             lblBKOgretmenevi.TabIndex = 3;
             lblBKOgretmenevi.Text = "0";
             lblBKOgretmenevi.TextAlign = ContentAlignment.MiddleRight;
@@ -9185,7 +9185,7 @@
             lblIptalOkulDaimi.Location = new Point(1, 3);
             lblIptalOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblIptalOkulDaimi.Name = "lblIptalOkulDaimi";
-            lblIptalOkulDaimi.Size = new Size(12, 15);
+            lblIptalOkulDaimi.Size = new Size(14, 17);
             lblIptalOkulDaimi.TabIndex = 3;
             lblIptalOkulDaimi.Text = "0";
             lblIptalOkulDaimi.TextAlign = ContentAlignment.MiddleRight;
@@ -9237,7 +9237,7 @@
             lblMunzamOgretmenevi.Location = new Point(1, 3);
             lblMunzamOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOgretmenevi.Name = "lblMunzamOgretmenevi";
-            lblMunzamOgretmenevi.Size = new Size(12, 15);
+            lblMunzamOgretmenevi.Size = new Size(14, 17);
             lblMunzamOgretmenevi.TabIndex = 3;
             lblMunzamOgretmenevi.Text = "0";
             lblMunzamOgretmenevi.TextAlign = ContentAlignment.MiddleRight;
@@ -9257,7 +9257,7 @@
             lblOdenenOkulDaimi.Location = new Point(1, 3);
             lblOdenenOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOkulDaimi.Name = "lblOdenenOkulDaimi";
-            lblOdenenOkulDaimi.Size = new Size(12, 15);
+            lblOdenenOkulDaimi.Size = new Size(14, 17);
             lblOdenenOkulDaimi.TabIndex = 3;
             lblOdenenOkulDaimi.Text = "0";
             lblOdenenOkulDaimi.TextAlign = ContentAlignment.MiddleRight;
@@ -9277,7 +9277,7 @@
             lblOdenenOgretmenevi.Location = new Point(1, 3);
             lblOdenenOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOgretmenevi.Name = "lblOdenenOgretmenevi";
-            lblOdenenOgretmenevi.Size = new Size(12, 15);
+            lblOdenenOgretmenevi.Size = new Size(14, 17);
             lblOdenenOgretmenevi.TabIndex = 3;
             lblOdenenOgretmenevi.Text = "0";
             lblOdenenOgretmenevi.TextAlign = ContentAlignment.MiddleRight;
@@ -9313,7 +9313,7 @@
             lblTahakkukOkulDaimi.Location = new Point(1, 3);
             lblTahakkukOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOkulDaimi.Name = "lblTahakkukOkulDaimi";
-            lblTahakkukOkulDaimi.Size = new Size(12, 15);
+            lblTahakkukOkulDaimi.Size = new Size(14, 17);
             lblTahakkukOkulDaimi.TabIndex = 3;
             lblTahakkukOkulDaimi.Text = "0";
             lblTahakkukOkulDaimi.TextAlign = ContentAlignment.MiddleRight;
@@ -9365,7 +9365,7 @@
             lblTahakkukOgretmenevi.Location = new Point(1, 3);
             lblTahakkukOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOgretmenevi.Name = "lblTahakkukOgretmenevi";
-            lblTahakkukOgretmenevi.Size = new Size(12, 15);
+            lblTahakkukOgretmenevi.Size = new Size(14, 17);
             lblTahakkukOgretmenevi.TabIndex = 3;
             lblTahakkukOgretmenevi.Text = "0";
             lblTahakkukOgretmenevi.TextAlign = ContentAlignment.MiddleRight;
@@ -9401,7 +9401,7 @@
             lblMunzamOkulDaimi.Location = new Point(1, 3);
             lblMunzamOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOkulDaimi.Name = "lblMunzamOkulDaimi";
-            lblMunzamOkulDaimi.Size = new Size(12, 15);
+            lblMunzamOkulDaimi.Size = new Size(14, 17);
             lblMunzamOkulDaimi.TabIndex = 3;
             lblMunzamOkulDaimi.Text = "0";
             lblMunzamOkulDaimi.TextAlign = ContentAlignment.MiddleRight;
@@ -9429,7 +9429,7 @@
             lblBKOkulDaimi.Location = new Point(1, 3);
             lblBKOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblBKOkulDaimi.Name = "lblBKOkulDaimi";
-            lblBKOkulDaimi.Size = new Size(32, 15);
+            lblBKOkulDaimi.Size = new Size(38, 17);
             lblBKOkulDaimi.TabIndex = 3;
             lblBKOkulDaimi.Text = "50000";
             lblBKOkulDaimi.TextAlign = ContentAlignment.MiddleRight;
@@ -9452,7 +9452,7 @@
             label222.Location = new Point(-1, 9);
             label222.Margin = new Padding(1, 0, 1, 0);
             label222.Name = "label222";
-            label222.Size = new Size(56, 13);
+            label222.Size = new Size(68, 14);
             label222.TabIndex = 249;
             label222.Text = "ve Tamir Masrafı";
             // 
@@ -9463,7 +9463,7 @@
             label236.Location = new Point(-1, -1);
             label236.Margin = new Padding(1, 0, 1, 0);
             label236.Name = "label236";
-            label236.Size = new Size(84, 13);
+            label236.Size = new Size(103, 14);
             label236.TabIndex = 250;
             label236.Text = "Okul ve Öğretmenevi İnşa";
             // 
@@ -9474,7 +9474,7 @@
             label190.Location = new Point(9, 37);
             label190.Margin = new Padding(1, 0, 1, 0);
             label190.Name = "label190";
-            label190.Size = new Size(58, 13);
+            label190.Size = new Size(82, 16);
             label190.TabIndex = 242;
             label190.Text = "GİDERİN CİNSİ";
             // 
@@ -9498,7 +9498,7 @@
             label194.Location = new Point(2, 96);
             label194.Margin = new Padding(1, 0, 1, 0);
             label194.Name = "label194";
-            label194.Size = new Size(12, 15);
+            label194.Size = new Size(14, 17);
             label194.TabIndex = 5;
             label194.Text = "5";
             // 
@@ -9508,7 +9508,7 @@
             label195.Location = new Point(2, 72);
             label195.Margin = new Padding(1, 0, 1, 0);
             label195.Name = "label195";
-            label195.Size = new Size(12, 15);
+            label195.Size = new Size(14, 17);
             label195.TabIndex = 4;
             label195.Text = "4";
             // 
@@ -9518,7 +9518,7 @@
             label196.Location = new Point(2, 49);
             label196.Margin = new Padding(1, 0, 1, 0);
             label196.Name = "label196";
-            label196.Size = new Size(12, 15);
+            label196.Size = new Size(14, 17);
             label196.TabIndex = 3;
             label196.Text = "3";
             // 
@@ -9528,7 +9528,7 @@
             label197.Location = new Point(2, 4);
             label197.Margin = new Padding(1, 0, 1, 0);
             label197.Name = "label197";
-            label197.Size = new Size(12, 15);
+            label197.Size = new Size(14, 17);
             label197.TabIndex = 1;
             label197.Text = "1";
             // 
@@ -9538,7 +9538,7 @@
             label198.Location = new Point(2, 26);
             label198.Margin = new Padding(1, 0, 1, 0);
             label198.Name = "label198";
-            label198.Size = new Size(12, 15);
+            label198.Size = new Size(14, 17);
             label198.TabIndex = 2;
             label198.Text = "2";
             // 
@@ -9558,7 +9558,7 @@
             label199.Location = new Point(2, 68);
             label199.Margin = new Padding(1, 0, 1, 0);
             label199.Name = "label199";
-            label199.Size = new Size(12, 15);
+            label199.Size = new Size(14, 17);
             label199.TabIndex = 2;
             label199.Text = "3";
             // 
@@ -9587,7 +9587,7 @@
             label233.Location = new Point(-1, 4);
             label233.Margin = new Padding(1, 0, 1, 0);
             label233.Name = "label233";
-            label233.Size = new Size(84, 13);
+            label233.Size = new Size(105, 16);
             label233.TabIndex = 244;
             label233.Text = "Dördünce Fasıl Yekünü";
             // 
@@ -9598,7 +9598,7 @@
             label200.Location = new Point(9, 37);
             label200.Margin = new Padding(1, 0, 1, 0);
             label200.Name = "label200";
-            label200.Size = new Size(58, 13);
+            label200.Size = new Size(82, 16);
             label200.TabIndex = 242;
             label200.Text = "GİDERİN CİNSİ";
             // 
@@ -9617,7 +9617,7 @@
             lblIptalIctimai.Location = new Point(1, 3);
             lblIptalIctimai.Margin = new Padding(1, 0, 1, 0);
             lblIptalIctimai.Name = "lblIptalIctimai";
-            lblIptalIctimai.Size = new Size(12, 15);
+            lblIptalIctimai.Size = new Size(14, 17);
             lblIptalIctimai.TabIndex = 3;
             lblIptalIctimai.Text = "0";
             lblIptalIctimai.TextAlign = ContentAlignment.MiddleRight;
@@ -9645,7 +9645,7 @@
             lblBKIctimai.Location = new Point(1, 3);
             lblBKIctimai.Margin = new Padding(1, 0, 1, 0);
             lblBKIctimai.Name = "lblBKIctimai";
-            lblBKIctimai.Size = new Size(12, 15);
+            lblBKIctimai.Size = new Size(14, 17);
             lblBKIctimai.TabIndex = 3;
             lblBKIctimai.Text = "0";
             lblBKIctimai.TextAlign = ContentAlignment.MiddleRight;
@@ -9673,7 +9673,7 @@
             lblIptalSaglikToplami.Location = new Point(1, 3);
             lblIptalSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalSaglikToplami.Name = "lblIptalSaglikToplami";
-            lblIptalSaglikToplami.Size = new Size(12, 15);
+            lblIptalSaglikToplami.Size = new Size(14, 17);
             lblIptalSaglikToplami.TabIndex = 3;
             lblIptalSaglikToplami.Text = "0";
             lblIptalSaglikToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -9725,7 +9725,7 @@
             lblMunzamIctimai.Location = new Point(1, 3);
             lblMunzamIctimai.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIctimai.Name = "lblMunzamIctimai";
-            lblMunzamIctimai.Size = new Size(12, 15);
+            lblMunzamIctimai.Size = new Size(14, 17);
             lblMunzamIctimai.TabIndex = 3;
             lblMunzamIctimai.Text = "0";
             lblMunzamIctimai.TextAlign = ContentAlignment.MiddleRight;
@@ -9745,7 +9745,7 @@
             lblOdenenSaglikToplami.Location = new Point(1, 3);
             lblOdenenSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenSaglikToplami.Name = "lblOdenenSaglikToplami";
-            lblOdenenSaglikToplami.Size = new Size(12, 15);
+            lblOdenenSaglikToplami.Size = new Size(14, 17);
             lblOdenenSaglikToplami.TabIndex = 3;
             lblOdenenSaglikToplami.Text = "0";
             lblOdenenSaglikToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -9765,7 +9765,7 @@
             lblOdenenIctimai.Location = new Point(1, 3);
             lblOdenenIctimai.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIctimai.Name = "lblOdenenIctimai";
-            lblOdenenIctimai.Size = new Size(12, 15);
+            lblOdenenIctimai.Size = new Size(14, 17);
             lblOdenenIctimai.TabIndex = 3;
             lblOdenenIctimai.Text = "0";
             lblOdenenIctimai.TextAlign = ContentAlignment.MiddleRight;
@@ -9801,7 +9801,7 @@
             lblTahakkukSaglikToplami.Location = new Point(1, 3);
             lblTahakkukSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukSaglikToplami.Name = "lblTahakkukSaglikToplami";
-            lblTahakkukSaglikToplami.Size = new Size(12, 15);
+            lblTahakkukSaglikToplami.Size = new Size(14, 17);
             lblTahakkukSaglikToplami.TabIndex = 3;
             lblTahakkukSaglikToplami.Text = "0";
             lblTahakkukSaglikToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -9853,7 +9853,7 @@
             lblTahakkukIctimai.Location = new Point(1, 3);
             lblTahakkukIctimai.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIctimai.Name = "lblTahakkukIctimai";
-            lblTahakkukIctimai.Size = new Size(12, 15);
+            lblTahakkukIctimai.Size = new Size(14, 17);
             lblTahakkukIctimai.TabIndex = 3;
             lblTahakkukIctimai.Text = "0";
             lblTahakkukIctimai.TextAlign = ContentAlignment.MiddleRight;
@@ -9889,7 +9889,7 @@
             lblMunzamSaglikToplami.Location = new Point(1, 3);
             lblMunzamSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamSaglikToplami.Name = "lblMunzamSaglikToplami";
-            lblMunzamSaglikToplami.Size = new Size(12, 15);
+            lblMunzamSaglikToplami.Size = new Size(14, 17);
             lblMunzamSaglikToplami.TabIndex = 3;
             lblMunzamSaglikToplami.Text = "0";
             lblMunzamSaglikToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -9917,7 +9917,7 @@
             lblBKSaglikToplami.Location = new Point(1, 3);
             lblBKSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKSaglikToplami.Name = "lblBKSaglikToplami";
-            lblBKSaglikToplami.Size = new Size(12, 15);
+            lblBKSaglikToplami.Size = new Size(14, 17);
             lblBKSaglikToplami.TabIndex = 3;
             lblBKSaglikToplami.Text = "0";
             lblBKSaglikToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -9939,7 +9939,7 @@
             label232.Location = new Point(-1, 4);
             label232.Margin = new Padding(1, 0, 1, 0);
             label232.Name = "label232";
-            label232.Size = new Size(80, 13);
+            label232.Size = new Size(101, 16);
             label232.TabIndex = 244;
             label232.Text = "İçtimai Yardım Masrafı";
             // 
@@ -9950,7 +9950,7 @@
             label201.Location = new Point(9, 37);
             label201.Margin = new Padding(1, 0, 1, 0);
             label201.Name = "label201";
-            label201.Size = new Size(58, 13);
+            label201.Size = new Size(82, 16);
             label201.TabIndex = 242;
             label201.Text = "GİDERİN CİNSİ";
             // 
@@ -9960,7 +9960,7 @@
             label203.Location = new Point(697, 570);
             label203.Margin = new Padding(1, 0, 1, 0);
             label203.Name = "label203";
-            label203.Size = new Size(249, 15);
+            label203.Size = new Size(292, 17);
             label203.TabIndex = 554;
             label203.Text = "S A Ğ L I K   V E   İ Ç T İ M A İ   Y A R D I M   İ Ş L E R İ";
             // 
@@ -9987,7 +9987,7 @@
             lblIptalSpor.Location = new Point(1, 3);
             lblIptalSpor.Margin = new Padding(1, 0, 1, 0);
             lblIptalSpor.Name = "lblIptalSpor";
-            lblIptalSpor.Size = new Size(12, 15);
+            lblIptalSpor.Size = new Size(14, 17);
             lblIptalSpor.TabIndex = 3;
             lblIptalSpor.Text = "0";
             lblIptalSpor.TextAlign = ContentAlignment.MiddleRight;
@@ -10023,7 +10023,7 @@
             lblOdenenSpor.Location = new Point(1, 3);
             lblOdenenSpor.Margin = new Padding(1, 0, 1, 0);
             lblOdenenSpor.Name = "lblOdenenSpor";
-            lblOdenenSpor.Size = new Size(12, 15);
+            lblOdenenSpor.Size = new Size(14, 17);
             lblOdenenSpor.TabIndex = 3;
             lblOdenenSpor.Text = "0";
             lblOdenenSpor.TextAlign = ContentAlignment.MiddleRight;
@@ -10051,7 +10051,7 @@
             lblTahakkukSpor.Location = new Point(1, 3);
             lblTahakkukSpor.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukSpor.Name = "lblTahakkukSpor";
-            lblTahakkukSpor.Size = new Size(12, 15);
+            lblTahakkukSpor.Size = new Size(14, 17);
             lblTahakkukSpor.TabIndex = 3;
             lblTahakkukSpor.Text = "0";
             lblTahakkukSpor.TextAlign = ContentAlignment.MiddleRight;
@@ -10095,7 +10095,7 @@
             lblMunzamSpor.Location = new Point(1, 3);
             lblMunzamSpor.Margin = new Padding(1, 0, 1, 0);
             lblMunzamSpor.Name = "lblMunzamSpor";
-            lblMunzamSpor.Size = new Size(12, 15);
+            lblMunzamSpor.Size = new Size(14, 17);
             lblMunzamSpor.TabIndex = 3;
             lblMunzamSpor.Text = "0";
             lblMunzamSpor.TextAlign = ContentAlignment.MiddleRight;
@@ -10123,7 +10123,7 @@
             lblBKSpor.Location = new Point(1, 3);
             lblBKSpor.Margin = new Padding(1, 0, 1, 0);
             lblBKSpor.Name = "lblBKSpor";
-            lblBKSpor.Size = new Size(12, 15);
+            lblBKSpor.Size = new Size(14, 17);
             lblBKSpor.TabIndex = 3;
             lblBKSpor.Text = "0";
             lblBKSpor.TextAlign = ContentAlignment.MiddleRight;
@@ -10153,7 +10153,7 @@
             label231.Location = new Point(-1, 4);
             label231.Margin = new Padding(1, 0, 1, 0);
             label231.Name = "label231";
-            label231.Size = new Size(66, 13);
+            label231.Size = new Size(84, 16);
             label231.TabIndex = 244;
             label231.Text = "Spor İşleri Masrafı";
             // 
@@ -10164,7 +10164,7 @@
             label204.Location = new Point(9, 37);
             label204.Margin = new Padding(1, 0, 1, 0);
             label204.Name = "label204";
-            label204.Size = new Size(58, 13);
+            label204.Size = new Size(82, 16);
             label204.TabIndex = 242;
             label204.Text = "GİDERİN CİNSİ";
             // 
@@ -10186,7 +10186,7 @@
             label182.Location = new Point(-1, 9);
             label182.Margin = new Padding(1, 0, 1, 0);
             label182.Name = "label182";
-            label182.Size = new Size(54, 13);
+            label182.Size = new Size(68, 14);
             label182.TabIndex = 253;
             label182.Text = "Tesisleri Masrafı";
             // 
@@ -10197,7 +10197,7 @@
             label193.Location = new Point(-1, -1);
             label193.Margin = new Padding(1, 0, 1, 0);
             label193.Name = "label193";
-            label193.Size = new Size(58, 13);
+            label193.Size = new Size(73, 14);
             label193.TabIndex = 254;
             label193.Text = "Temizlik ve Sağlık";
             // 
@@ -10208,7 +10208,7 @@
             label205.Location = new Point(9, 37);
             label205.Margin = new Padding(1, 0, 1, 0);
             label205.Name = "label205";
-            label205.Size = new Size(58, 13);
+            label205.Size = new Size(82, 16);
             label205.TabIndex = 242;
             label205.Text = "GİDERİN CİNSİ";
             // 
@@ -10227,7 +10227,7 @@
             lblIptalIcmeSulari.Location = new Point(1, 3);
             lblIptalIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblIptalIcmeSulari.Name = "lblIptalIcmeSulari";
-            lblIptalIcmeSulari.Size = new Size(12, 15);
+            lblIptalIcmeSulari.Size = new Size(14, 17);
             lblIptalIcmeSulari.TabIndex = 3;
             lblIptalIcmeSulari.Text = "0";
             lblIptalIcmeSulari.TextAlign = ContentAlignment.MiddleRight;
@@ -10255,7 +10255,7 @@
             lblBKIcmeSulari.Location = new Point(1, 3);
             lblBKIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblBKIcmeSulari.Name = "lblBKIcmeSulari";
-            lblBKIcmeSulari.Size = new Size(37, 15);
+            lblBKIcmeSulari.Size = new Size(44, 17);
             lblBKIcmeSulari.TabIndex = 3;
             lblBKIcmeSulari.Text = "242500";
             lblBKIcmeSulari.TextAlign = ContentAlignment.MiddleRight;
@@ -10283,7 +10283,7 @@
             lblIptalTemizlik.Location = new Point(1, 3);
             lblIptalTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblIptalTemizlik.Name = "lblIptalTemizlik";
-            lblIptalTemizlik.Size = new Size(12, 15);
+            lblIptalTemizlik.Size = new Size(14, 17);
             lblIptalTemizlik.TabIndex = 3;
             lblIptalTemizlik.Text = "0";
             lblIptalTemizlik.TextAlign = ContentAlignment.MiddleRight;
@@ -10335,7 +10335,7 @@
             lblMunzamIcmeSulari.Location = new Point(1, 3);
             lblMunzamIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIcmeSulari.Name = "lblMunzamIcmeSulari";
-            lblMunzamIcmeSulari.Size = new Size(12, 15);
+            lblMunzamIcmeSulari.Size = new Size(14, 17);
             lblMunzamIcmeSulari.TabIndex = 3;
             lblMunzamIcmeSulari.Text = "0";
             lblMunzamIcmeSulari.TextAlign = ContentAlignment.MiddleRight;
@@ -10355,7 +10355,7 @@
             lblOdenenTemizlik.Location = new Point(1, 3);
             lblOdenenTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenTemizlik.Name = "lblOdenenTemizlik";
-            lblOdenenTemizlik.Size = new Size(12, 15);
+            lblOdenenTemizlik.Size = new Size(14, 17);
             lblOdenenTemizlik.TabIndex = 3;
             lblOdenenTemizlik.Text = "0";
             lblOdenenTemizlik.TextAlign = ContentAlignment.MiddleRight;
@@ -10375,7 +10375,7 @@
             lblOdenenIcmeSulari.Location = new Point(1, 3);
             lblOdenenIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIcmeSulari.Name = "lblOdenenIcmeSulari";
-            lblOdenenIcmeSulari.Size = new Size(50, 15);
+            lblOdenenIcmeSulari.Size = new Size(59, 17);
             lblOdenenIcmeSulari.TabIndex = 3;
             lblOdenenIcmeSulari.Text = "358674,77";
             lblOdenenIcmeSulari.TextAlign = ContentAlignment.MiddleRight;
@@ -10411,7 +10411,7 @@
             lblTahakkukTemizlik.Location = new Point(1, 3);
             lblTahakkukTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukTemizlik.Name = "lblTahakkukTemizlik";
-            lblTahakkukTemizlik.Size = new Size(12, 15);
+            lblTahakkukTemizlik.Size = new Size(14, 17);
             lblTahakkukTemizlik.TabIndex = 3;
             lblTahakkukTemizlik.Text = "0";
             lblTahakkukTemizlik.TextAlign = ContentAlignment.MiddleRight;
@@ -10463,7 +10463,7 @@
             lblTahakkukIcmeSulari.Location = new Point(1, 3);
             lblTahakkukIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIcmeSulari.Name = "lblTahakkukIcmeSulari";
-            lblTahakkukIcmeSulari.Size = new Size(12, 15);
+            lblTahakkukIcmeSulari.Size = new Size(14, 17);
             lblTahakkukIcmeSulari.TabIndex = 3;
             lblTahakkukIcmeSulari.Text = "0";
             lblTahakkukIcmeSulari.TextAlign = ContentAlignment.MiddleRight;
@@ -10499,7 +10499,7 @@
             lblMunzamTemizlik.Location = new Point(1, 3);
             lblMunzamTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblMunzamTemizlik.Name = "lblMunzamTemizlik";
-            lblMunzamTemizlik.Size = new Size(12, 15);
+            lblMunzamTemizlik.Size = new Size(14, 17);
             lblMunzamTemizlik.TabIndex = 3;
             lblMunzamTemizlik.Text = "0";
             lblMunzamTemizlik.TextAlign = ContentAlignment.MiddleRight;
@@ -10527,7 +10527,7 @@
             lblBKTemizlik.Location = new Point(1, 3);
             lblBKTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblBKTemizlik.Name = "lblBKTemizlik";
-            lblBKTemizlik.Size = new Size(12, 15);
+            lblBKTemizlik.Size = new Size(14, 17);
             lblBKTemizlik.TabIndex = 3;
             lblBKTemizlik.Text = "0";
             lblBKTemizlik.TextAlign = ContentAlignment.MiddleRight;
@@ -10549,7 +10549,7 @@
             label229.Location = new Point(-1, 4);
             label229.Margin = new Padding(1, 0, 1, 0);
             label229.Name = "label229";
-            label229.Size = new Size(70, 13);
+            label229.Size = new Size(89, 16);
             label229.TabIndex = 244;
             label229.Text = "İçme Suları Masrafı";
             // 
@@ -10560,7 +10560,7 @@
             label206.Location = new Point(9, 37);
             label206.Margin = new Padding(1, 0, 1, 0);
             label206.Name = "label206";
-            label206.Size = new Size(58, 13);
+            label206.Size = new Size(82, 16);
             label206.TabIndex = 242;
             label206.Text = "GİDERİN CİNSİ";
             // 
@@ -10583,7 +10583,7 @@
             label210.Location = new Point(2, 72);
             label210.Margin = new Padding(1, 0, 1, 0);
             label210.Name = "label210";
-            label210.Size = new Size(12, 15);
+            label210.Size = new Size(14, 17);
             label210.TabIndex = 4;
             label210.Text = "4";
             // 
@@ -10593,7 +10593,7 @@
             label211.Location = new Point(2, 49);
             label211.Margin = new Padding(1, 0, 1, 0);
             label211.Name = "label211";
-            label211.Size = new Size(12, 15);
+            label211.Size = new Size(14, 17);
             label211.TabIndex = 3;
             label211.Text = "3";
             // 
@@ -10603,7 +10603,7 @@
             label212.Location = new Point(2, 4);
             label212.Margin = new Padding(1, 0, 1, 0);
             label212.Name = "label212";
-            label212.Size = new Size(12, 15);
+            label212.Size = new Size(14, 17);
             label212.TabIndex = 1;
             label212.Text = "1";
             // 
@@ -10613,7 +10613,7 @@
             label213.Location = new Point(2, 26);
             label213.Margin = new Padding(1, 0, 1, 0);
             label213.Name = "label213";
-            label213.Size = new Size(12, 15);
+            label213.Size = new Size(14, 17);
             label213.TabIndex = 2;
             label213.Text = "2";
             // 
@@ -10633,7 +10633,7 @@
             label214.Location = new Point(2, 41);
             label214.Margin = new Padding(1, 0, 1, 0);
             label214.Name = "label214";
-            label214.Size = new Size(12, 15);
+            label214.Size = new Size(14, 17);
             label214.TabIndex = 2;
             label214.Text = "4";
             // 
@@ -10657,7 +10657,7 @@
             label263.Location = new Point(3, 34);
             label263.Margin = new Padding(1, 0, 1, 0);
             label263.Name = "label263";
-            label263.Size = new Size(11, 13);
+            label263.Size = new Size(12, 14);
             label263.TabIndex = 255;
             label263.Text = "e";
             // 
@@ -10668,7 +10668,7 @@
             label264.Location = new Point(3, 2);
             label264.Margin = new Padding(1, 0, 1, 0);
             label264.Name = "label264";
-            label264.Size = new Size(9, 13);
+            label264.Size = new Size(9, 14);
             label264.TabIndex = 251;
             label264.Text = "İ";
             // 
@@ -10679,7 +10679,7 @@
             label265.Location = new Point(3, 9);
             label265.Margin = new Padding(1, 0, 1, 0);
             label265.Name = "label265";
-            label265.Size = new Size(12, 13);
+            label265.Size = new Size(13, 14);
             label265.TabIndex = 252;
             label265.Text = "m";
             // 
@@ -10690,7 +10690,7 @@
             label266.Location = new Point(3, 16);
             label266.Margin = new Padding(1, 0, 1, 0);
             label266.Name = "label266";
-            label266.Size = new Size(11, 13);
+            label266.Size = new Size(12, 14);
             label266.TabIndex = 253;
             label266.Text = "e";
             // 
@@ -10701,7 +10701,7 @@
             label267.Location = new Point(3, 24);
             label267.Margin = new Padding(1, 0, 1, 0);
             label267.Name = "label267";
-            label267.Size = new Size(10, 13);
+            label267.Size = new Size(11, 14);
             label267.TabIndex = 254;
             label267.Text = "c";
             // 
@@ -10723,7 +10723,7 @@
             label307.Location = new Point(4, 41);
             label307.Margin = new Padding(1, 0, 1, 0);
             label307.Name = "label307";
-            label307.Size = new Size(16, 13);
+            label307.Size = new Size(17, 16);
             label307.TabIndex = 258;
             label307.Text = "TL";
             // 
@@ -10734,7 +10734,7 @@
             label306.Location = new Point(2, 17);
             label306.Margin = new Padding(1, 0, 1, 0);
             label306.Name = "label306";
-            label306.Size = new Size(21, 13);
+            label306.Size = new Size(25, 14);
             label306.TabIndex = 257;
             label306.Text = "Para";
             // 
@@ -10746,7 +10746,7 @@
             label305.Location = new Point(-3, -1);
             label305.Margin = new Padding(1, 0, 1, 0);
             label305.Name = "label305";
-            label305.Size = new Size(30, 15);
+            label305.Size = new Size(33, 18);
             label305.TabIndex = 256;
             label305.Text = "Tenzil";
             // 
@@ -10770,7 +10770,7 @@
             label273.Location = new Point(3, 34);
             label273.Margin = new Padding(1, 0, 1, 0);
             label273.Name = "label273";
-            label273.Size = new Size(11, 13);
+            label273.Size = new Size(12, 14);
             label273.TabIndex = 255;
             label273.Text = "e";
             // 
@@ -10781,7 +10781,7 @@
             label274.Location = new Point(3, 2);
             label274.Margin = new Padding(1, 0, 1, 0);
             label274.Name = "label274";
-            label274.Size = new Size(9, 13);
+            label274.Size = new Size(9, 14);
             label274.TabIndex = 251;
             label274.Text = "İ";
             // 
@@ -10792,7 +10792,7 @@
             label275.Location = new Point(3, 9);
             label275.Margin = new Padding(1, 0, 1, 0);
             label275.Name = "label275";
-            label275.Size = new Size(12, 13);
+            label275.Size = new Size(13, 14);
             label275.TabIndex = 252;
             label275.Text = "m";
             // 
@@ -10803,7 +10803,7 @@
             label276.Location = new Point(3, 16);
             label276.Margin = new Padding(1, 0, 1, 0);
             label276.Name = "label276";
-            label276.Size = new Size(11, 13);
+            label276.Size = new Size(12, 14);
             label276.TabIndex = 253;
             label276.Text = "e";
             // 
@@ -10814,7 +10814,7 @@
             label277.Location = new Point(3, 24);
             label277.Margin = new Padding(1, 0, 1, 0);
             label277.Name = "label277";
-            label277.Size = new Size(10, 13);
+            label277.Size = new Size(11, 14);
             label277.TabIndex = 254;
             label277.Text = "c";
             // 
@@ -10838,7 +10838,7 @@
             label278.Location = new Point(3, 34);
             label278.Margin = new Padding(1, 0, 1, 0);
             label278.Name = "label278";
-            label278.Size = new Size(11, 13);
+            label278.Size = new Size(12, 14);
             label278.TabIndex = 255;
             label278.Text = "e";
             // 
@@ -10849,7 +10849,7 @@
             label279.Location = new Point(3, 2);
             label279.Margin = new Padding(1, 0, 1, 0);
             label279.Name = "label279";
-            label279.Size = new Size(9, 13);
+            label279.Size = new Size(9, 14);
             label279.TabIndex = 251;
             label279.Text = "İ";
             // 
@@ -10860,7 +10860,7 @@
             label280.Location = new Point(3, 9);
             label280.Margin = new Padding(1, 0, 1, 0);
             label280.Name = "label280";
-            label280.Size = new Size(12, 13);
+            label280.Size = new Size(13, 14);
             label280.TabIndex = 252;
             label280.Text = "m";
             // 
@@ -10871,7 +10871,7 @@
             label281.Location = new Point(3, 16);
             label281.Margin = new Padding(1, 0, 1, 0);
             label281.Name = "label281";
-            label281.Size = new Size(11, 13);
+            label281.Size = new Size(12, 14);
             label281.TabIndex = 253;
             label281.Text = "e";
             // 
@@ -10882,7 +10882,7 @@
             label282.Location = new Point(3, 24);
             label282.Margin = new Padding(1, 0, 1, 0);
             label282.Name = "label282";
-            label282.Size = new Size(10, 13);
+            label282.Size = new Size(11, 14);
             label282.TabIndex = 254;
             label282.Text = "c";
             // 
@@ -10906,7 +10906,7 @@
             label283.Location = new Point(3, 34);
             label283.Margin = new Padding(1, 0, 1, 0);
             label283.Name = "label283";
-            label283.Size = new Size(11, 13);
+            label283.Size = new Size(12, 14);
             label283.TabIndex = 255;
             label283.Text = "e";
             // 
@@ -10917,7 +10917,7 @@
             label284.Location = new Point(3, 2);
             label284.Margin = new Padding(1, 0, 1, 0);
             label284.Name = "label284";
-            label284.Size = new Size(9, 13);
+            label284.Size = new Size(9, 14);
             label284.TabIndex = 251;
             label284.Text = "İ";
             // 
@@ -10928,7 +10928,7 @@
             label285.Location = new Point(3, 9);
             label285.Margin = new Padding(1, 0, 1, 0);
             label285.Name = "label285";
-            label285.Size = new Size(12, 13);
+            label285.Size = new Size(13, 14);
             label285.TabIndex = 252;
             label285.Text = "m";
             // 
@@ -10939,7 +10939,7 @@
             label286.Location = new Point(3, 16);
             label286.Margin = new Padding(1, 0, 1, 0);
             label286.Name = "label286";
-            label286.Size = new Size(11, 13);
+            label286.Size = new Size(12, 14);
             label286.TabIndex = 253;
             label286.Text = "e";
             // 
@@ -10950,7 +10950,7 @@
             label287.Location = new Point(3, 24);
             label287.Margin = new Padding(1, 0, 1, 0);
             label287.Name = "label287";
-            label287.Size = new Size(10, 13);
+            label287.Size = new Size(11, 14);
             label287.TabIndex = 254;
             label287.Text = "c";
             // 
@@ -10969,7 +10969,7 @@
             lblTahakkukSulama.Location = new Point(1, 3);
             lblTahakkukSulama.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukSulama.Name = "lblTahakkukSulama";
-            lblTahakkukSulama.Size = new Size(12, 15);
+            lblTahakkukSulama.Size = new Size(14, 17);
             lblTahakkukSulama.TabIndex = 3;
             lblTahakkukSulama.Text = "0";
             lblTahakkukSulama.TextAlign = ContentAlignment.MiddleRight;
@@ -10991,7 +10991,7 @@
             lblMunzamAsker.Location = new Point(-1, 3);
             lblMunzamAsker.Margin = new Padding(1, 0, 1, 0);
             lblMunzamAsker.Name = "lblMunzamAsker";
-            lblMunzamAsker.Size = new Size(12, 15);
+            lblMunzamAsker.Size = new Size(14, 17);
             lblMunzamAsker.TabIndex = 3;
             lblMunzamAsker.Text = "0";
             // 
@@ -11012,7 +11012,7 @@
             lblBKAskerToplami.Location = new Point(1, 3);
             lblBKAskerToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKAskerToplami.Name = "lblBKAskerToplami";
-            lblBKAskerToplami.Size = new Size(12, 15);
+            lblBKAskerToplami.Size = new Size(14, 17);
             lblBKAskerToplami.TabIndex = 3;
             lblBKAskerToplami.Text = "0";
             lblBKAskerToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -11151,7 +11151,7 @@
             label119.Location = new Point(14, 17);
             label119.Margin = new Padding(1, 0, 1, 0);
             label119.Name = "label119";
-            label119.Size = new Size(33, 15);
+            label119.Size = new Size(40, 17);
             label119.TabIndex = 2;
             label119.Text = "Yekün";
             // 
@@ -11161,7 +11161,7 @@
             label127.Location = new Point(22, 40);
             label127.Margin = new Padding(1, 0, 1, 0);
             label127.Name = "label127";
-            label127.Size = new Size(18, 15);
+            label127.Size = new Size(21, 17);
             label127.TabIndex = 1;
             label127.Text = "TL";
             // 
@@ -11380,7 +11380,7 @@
             lblYekunIstikraz.Location = new Point(1, 3);
             lblYekunIstikraz.Margin = new Padding(1, 0, 1, 0);
             lblYekunIstikraz.Name = "lblYekunIstikraz";
-            lblYekunIstikraz.Size = new Size(12, 15);
+            lblYekunIstikraz.Size = new Size(14, 17);
             lblYekunIstikraz.TabIndex = 25;
             lblYekunIstikraz.Text = "0";
             lblYekunIstikraz.TextAlign = ContentAlignment.MiddleRight;
@@ -11432,7 +11432,7 @@
             lblYekunKoyVakif.Location = new Point(1, 3);
             lblYekunKoyVakif.Margin = new Padding(1, 0, 1, 0);
             lblYekunKoyVakif.Name = "lblYekunKoyVakif";
-            lblYekunKoyVakif.Size = new Size(12, 15);
+            lblYekunKoyVakif.Size = new Size(14, 17);
             lblYekunKoyVakif.TabIndex = 25;
             lblYekunKoyVakif.Text = "0";
             lblYekunKoyVakif.TextAlign = ContentAlignment.MiddleRight;
@@ -11484,7 +11484,7 @@
             lblYekunYardim.Location = new Point(1, 3);
             lblYekunYardim.Margin = new Padding(1, 0, 1, 0);
             lblYekunYardim.Name = "lblYekunYardim";
-            lblYekunYardim.Size = new Size(12, 15);
+            lblYekunYardim.Size = new Size(14, 17);
             lblYekunYardim.TabIndex = 25;
             lblYekunYardim.Text = "0";
             lblYekunYardim.TextAlign = ContentAlignment.MiddleRight;
@@ -11536,7 +11536,7 @@
             lblYekunCeza.Location = new Point(1, 3);
             lblYekunCeza.Margin = new Padding(1, 0, 1, 0);
             lblYekunCeza.Name = "lblYekunCeza";
-            lblYekunCeza.Size = new Size(12, 15);
+            lblYekunCeza.Size = new Size(14, 17);
             lblYekunCeza.TabIndex = 25;
             lblYekunCeza.Text = "0";
             lblYekunCeza.TextAlign = ContentAlignment.MiddleRight;
@@ -11588,7 +11588,7 @@
             lblYekunResim.Location = new Point(1, 3);
             lblYekunResim.Margin = new Padding(1, 0, 1, 0);
             lblYekunResim.Name = "lblYekunResim";
-            lblYekunResim.Size = new Size(12, 15);
+            lblYekunResim.Size = new Size(14, 17);
             lblYekunResim.TabIndex = 25;
             lblYekunResim.Text = "0";
             lblYekunResim.TextAlign = ContentAlignment.MiddleRight;
@@ -11640,7 +11640,7 @@
             lblYekunHasilat.Location = new Point(1, 3);
             lblYekunHasilat.Margin = new Padding(1, 0, 1, 0);
             lblYekunHasilat.Name = "lblYekunHasilat";
-            lblYekunHasilat.Size = new Size(0, 15);
+            lblYekunHasilat.Size = new Size(0, 17);
             lblYekunHasilat.TabIndex = 25;
             lblYekunHasilat.TextAlign = ContentAlignment.MiddleRight;
             // 
@@ -11691,7 +11691,7 @@
             lblYekunToplami.Location = new Point(1, 3);
             lblYekunToplami.Margin = new Padding(1, 0, 1, 0);
             lblYekunToplami.Name = "lblYekunToplami";
-            lblYekunToplami.Size = new Size(12, 15);
+            lblYekunToplami.Size = new Size(14, 17);
             lblYekunToplami.TabIndex = 25;
             lblYekunToplami.Text = "0";
             lblYekunToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -11743,7 +11743,7 @@
             lblYekunDevir.Location = new Point(1, 3);
             lblYekunDevir.Margin = new Padding(1, 0, 1, 0);
             lblYekunDevir.Name = "lblYekunDevir";
-            lblYekunDevir.Size = new Size(12, 15);
+            lblYekunDevir.Size = new Size(14, 17);
             lblYekunDevir.TabIndex = 25;
             lblYekunDevir.Text = "0";
             lblYekunDevir.TextAlign = ContentAlignment.MiddleRight;
@@ -11795,7 +11795,7 @@
             lblYekunTurluGelir.Location = new Point(1, 3);
             lblYekunTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblYekunTurluGelir.Name = "lblYekunTurluGelir";
-            lblYekunTurluGelir.Size = new Size(12, 15);
+            lblYekunTurluGelir.Size = new Size(14, 17);
             lblYekunTurluGelir.TabIndex = 25;
             lblYekunTurluGelir.Text = "0";
             lblYekunTurluGelir.TextAlign = ContentAlignment.MiddleRight;
@@ -11964,7 +11964,7 @@
             lblYekunAskerToplami.Location = new Point(1, 3);
             lblYekunAskerToplami.Margin = new Padding(1, 0, 1, 0);
             lblYekunAskerToplami.Name = "lblYekunAskerToplami";
-            lblYekunAskerToplami.Size = new Size(12, 15);
+            lblYekunAskerToplami.Size = new Size(14, 17);
             lblYekunAskerToplami.TabIndex = 25;
             lblYekunAskerToplami.Text = "0";
             lblYekunAskerToplami.TextAlign = ContentAlignment.MiddleRight;
@@ -12016,7 +12016,7 @@
             lblYekunAsker.Location = new Point(1, 3);
             lblYekunAsker.Margin = new Padding(1, 0, 1, 0);
             lblYekunAsker.Name = "lblYekunAsker";
-            lblYekunAsker.Size = new Size(12, 15);
+            lblYekunAsker.Size = new Size(14, 17);
             lblYekunAsker.TabIndex = 25;
             lblYekunAsker.Text = "0";
             lblYekunAsker.TextAlign = ContentAlignment.MiddleRight;
@@ -12068,7 +12068,7 @@
             lblYekunGenelToplam.Location = new Point(1, 3);
             lblYekunGenelToplam.Margin = new Padding(1, 0, 1, 0);
             lblYekunGenelToplam.Name = "lblYekunGenelToplam";
-            lblYekunGenelToplam.Size = new Size(12, 15);
+            lblYekunGenelToplam.Size = new Size(14, 17);
             lblYekunGenelToplam.TabIndex = 25;
             lblYekunGenelToplam.Text = "0";
             lblYekunGenelToplam.TextAlign = ContentAlignment.MiddleRight;
@@ -12145,23 +12145,23 @@
             label16.Location = new Point(40, 4);
             label16.Margin = new Padding(1, 0, 1, 0);
             label16.Name = "label16";
-            label16.Size = new Size(42, 15);
+            label16.Size = new Size(50, 17);
             label16.TabIndex = 4;
             label16.Text = "Aksaray";
             // 
-            // label58
+            // lblceAdi
             // 
-            label58.AutoSize = true;
-            label58.Location = new Point(40, 20);
-            label58.Margin = new Padding(1, 0, 1, 0);
-            label58.Name = "label58";
-            label58.Size = new Size(17, 15);
-            label58.TabIndex = 4;
-            label58.Text = "00";
+            lblceAdi.AutoSize = true;
+            lblceAdi.Location = new Point(40, 20);
+            lblceAdi.Margin = new Padding(1, 0, 1, 0);
+            lblceAdi.Name = "lblceAdi";
+            lblceAdi.Size = new Size(20, 17);
+            lblceAdi.TabIndex = 4;
+            lblceAdi.Text = "00";
             // 
-            // FrmKesinHesap1Y
+            // FrmKesinHesap1
             // 
-            this.AutoScaleDimensions = new SizeF(5F, 15F);
+            this.AutoScaleDimensions = new SizeF(7F, 17F);
             this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new Size(1118, 793);
             this.Controls.Add(p48);
@@ -12699,9 +12699,9 @@
             this.Controls.Add(label11);
             this.Controls.Add(label10);
             this.Controls.Add(label7);
-            this.Controls.Add(label58);
+            this.Controls.Add(lblceAdi);
             this.Controls.Add(label16);
-            this.Controls.Add(label41);
+            this.Controls.Add(lblKoyAdi);
             this.Controls.Add(label8);
             this.Controls.Add(label40);
             this.Controls.Add(label14);
@@ -12712,7 +12712,7 @@
             this.Font = new Font("Arial Narrow", 8.25F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
             this.FormBorderStyle = FormBorderStyle.None;
             this.Margin = new Padding(1, 3, 1, 3);
-            this.Name = "FrmKesinHesap1Y";
+            this.Name = "FrmKesinHesap1";
             this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "FrmKesinHesap1Y";
             this.Load += (this.FrmKesinHesap1Y_Load);
@@ -13337,7 +13337,7 @@
         private Label label38;
         private Label label39;
         private Label label40;
-        private Label label41;
+        private Label lblKoyAdi;
         private Panel panel7;
         private Label label43;
         private Panel panel8;
@@ -14239,10 +14239,10 @@
         private Label lblDevredenGenelToplami;
         private Label lblTahsilGenelToplam;
         private Label lblMunzamGenelToplam;
-        private Label label55;
-        private Label label54;
-        private Label label56;
-        private Label label57;
+        private Label lblResimDegisiklik;
+        private Label lblHasilatDegisiklik;
+        private Label lblIstikrazDegisiklik;
+        private Label lblKoyVakifDegisiklik;
         private Label lblBKResimHarcGenelToplam;
         private Panel p40;
         private Panel p43;
@@ -14264,7 +14264,7 @@
         private Label lblBKAskerToplami;
         private Label label95;
         private Label label96;
-        private Label label89;
+        private Label lblCezaDegisiklik;
         private Label label97;
         private Label label98;
         private Label label115;
@@ -14384,6 +14384,6 @@
         private Label lblYekunAsker;
         private Label lblYekunGenelToplam;
         private Label label16;
-        private Label label58;
+        private Label lblceAdi;
     }
 }

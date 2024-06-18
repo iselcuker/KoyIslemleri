@@ -18,32 +18,27 @@ namespace Business.Concrete
             _ilceDal = ilceDal;
         }
 
+        public void Add(Ilce ilce)
+        {
+            _ilceDal.Add(ilce);
+        }
+
+        public void Delete(Ilce ilce)
+        {
+            _ilceDal.Delete(ilce);
+        }
+
         public List<Ilce> GetAll()
         {
             return _ilceDal.GetAll();
         }
 
-        void IIlceService.Add(Ilce ilce)
+        public Ilce GetById(byte ilceId)
         {
-            _ilceDal.Add(ilce);
+            return _ilceDal.Get(i => i.Id == ilceId);
         }
 
-        void IIlceService.Delete(Ilce ilce)
-        {
-           _ilceDal.Delete(ilce);
-        }
-
-        List<Ilce> IIlceService.GetAll()
-        {
-            return _ilceDal.GetAll();
-        }
-
-        Ilce IIlceService.GetById(int ilceId)
-        {
-            return _ilceDal.Get(i=>i.Id== ilceId);   
-        }
-
-        void IIlceService.Update(Ilce ilce)
+        public void Update(Ilce ilce)
         {
             _ilceDal.Update(ilce);
         }

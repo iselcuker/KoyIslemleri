@@ -1,6 +1,6 @@
 ﻿namespace Forms
 {
-    partial class FrmKesinHesap2Y
+    partial class FrmKesinHesap2
     {
         /// <summary>
         /// Required designer variable.

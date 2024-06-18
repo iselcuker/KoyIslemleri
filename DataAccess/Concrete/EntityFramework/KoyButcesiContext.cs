@@ -37,6 +37,7 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<TahminiButceIdariIsler> TahminiButceIdariIslers { get; set; }
         public DbSet<TahminiButce> TahminiButces { get; set; }
         public DbSet<Unvan> Unvans { get; set; }
+       
 
 
 

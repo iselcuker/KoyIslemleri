@@ -1,4 +1,7 @@
 ﻿using Business.Concrete;
+using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,13 +14,74 @@ using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class FrmKesinHesap1Y : Form
+    public partial class FrmKesinHesap1 : Form
     {
-        public FrmKesinHesap1Y()
+        //TahminiButceGelirManager tahminiButceGelirManager;
+        // TahminiButceGiderManager tahminiButceGiderManager;
+        //GelirManager gelirManager;
+        //GiderManager giderManager;
+        //DegisiklikManager degisiklikManager;
+        IlceManager ilceManager;
+        KoyManager koyManager;
+        //DonemManager donemManager;
+
+        //AnaSayfada comboboxlardan yapılan seçimlerin index lerini getirmek için
+        int _seciliKoyIndex;
+        byte _seciliDonemIndex;
+        byte _seciliIlceIndex;
+        private GelirManager _gelirManager;
+        private GiderManager _giderManager;
+        private TahminiButceGelirManager _tahminiButceManager;
+        private TahminiButceGiderManager _tahminiButceGiderManager;
+
+        public FrmKesinHesap1(int seciliKoyIndex, byte seciliDonemIndex, byte seciliIlceIndex)
         {
             InitializeComponent();
+
+            //TahminiButceGelirManager _tahminiButceGelirManager = new TahminiButceGelirManager(new EfTahminiButceGelirDal());
+            //tahminiButceGelirManager = _tahminiButceGelirManager;
+
+            //TahminiButceGiderManager _tahminiButceGiderManager = new TahminiButceGiderManager(new EfTahminiButceGiderDal());
+            //tahminiButceGiderManager = _tahminiButceGiderManager;
+
+            //DegisiklikManager _degisiklikManager = new DegisiklikManager(new EfDegisiklikDal());
+            //degisiklikManager = _degisiklikManager;
+
+            _seciliKoyIndex = seciliKoyIndex;
+            _seciliDonemIndex = seciliDonemIndex;
+            _seciliIlceIndex = seciliIlceIndex;
+
+            IlceManager _ilceManager = new IlceManager(new EfIlceDal());
+            ilceManager = _ilceManager;
+
+            KoyManager _koyManager = new KoyManager(new EfKoyDal());
+            koyManager = _koyManager;
+
+            //DonemManager _donemManager = new DonemManager(new EfDonemDal());
+            //donemManager = _donemManager;
+
+            _gelirManager = new GelirManager(new EfGelirDal()); // Burada uygun IGelirDal implementasyonunu geçmelisiniz
+            _giderManager = new GiderManager(new EfGiderDal());
+           // _tahminiButceGelirManager = new TahminiButceGelirManager(EfTahminiButceGelirDal());
+            //_tahminiButceGiderManager = new TahminiButceGiderManager(EfTahminiButceGiderDal());
         }
 
+        //Gelir'de Hasilat Toplamı için Kullanıyorum
+        public void GelirToplami(int koyId, byte donemId, byte gelirKategoriId, Label label)
+        {
+            decimal toplamTutar = _gelirManager.GelirKategoriToplam(koyId, donemId, gelirKategoriId);
+
+            // Label'e toplam tutarı yazdır
+            label.Text = toplamTutar.ToString(); // Currency formatında yazdırma
+        }
+
+        public void AlanlariDoldur(int koyId, byte donemId, byte ilceId)
+        {
+            Koy secilenKoy = koyManager.GetById(koyId);
+            lblKoyAdi.Text = secilenKoy.KoyAdi;
+            Ilce secilenIlce = ilceManager.GetById(ilceId);
+            lblceAdi.Text = secilenIlce.IlceAdi;
+        }
         public void AylikHesap()
         {
             decimal munzamAylik;
@@ -677,6 +741,19 @@ namespace Forms
                 AskerHesap();
 
                 Toplamlar();
+
+                AlanlariDoldur(_seciliKoyIndex, _seciliDonemIndex, _seciliIlceIndex);
+                //HasilatToplami();
+                // Gelir kategorilerine göre toplam tutarları label'lara yazdır
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 1, lblTahsilHasilat); // Hasilat için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 2, lblTahsilResim); // Resim için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 3, lblTahsilCeza); // Ceza için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 4, lblTahsilYardim); // Yardım için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 5, lblTahsilKoyVakif); // Köy Vakıf için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 6, lblTahsilIstikraz); // İstikraz için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 7, lblTahsilTurluGelir); // Türlü Gelir için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 8, lblTahsilDevir); // Devir için
+
             }
         }
 

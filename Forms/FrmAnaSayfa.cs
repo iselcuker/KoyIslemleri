@@ -330,6 +330,25 @@ namespace Forms
             }
         }
 
+        private void pcBoxKesinHesap_Click(object sender, EventArgs e)
+        {
+            if (cmbKoy.SelectedIndex > 0)
+            {
+                Ilce secilenIlce = cmbIlce.SelectedItem as Ilce;
+                byte seciliIlceIndex = Convert.ToByte(secilenIlce.Id);
+                Koy secilenKoy = cmbKoy.SelectedItem as Koy; // cmbKoy'den seçilen öge aslýnda bir Koy'dur
+                int seciliKoyIndex = secilenKoy.Id;
+                Donem secilenDonem = cmbDonem.SelectedItem as Donem;
+                byte seciliDonemIndex = Convert.ToByte(secilenDonem.Id);               
+                FrmKesinHesap frmKesinHesap = new FrmKesinHesap(seciliKoyIndex, seciliDonemIndex,seciliIlceIndex); //seciliKoyIndex, seciliDonemIndex FrmKesinHesap'a gönderilecek              
+                load_form(frmKesinHesap);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Kesin Hesap Ýþlemi Yapacaðýnýz Köyü Seçiniz...");
+            }
+        }
+
         private void pcBoxGorevliler_Click(object sender, EventArgs e)
         {
             if (cmbKoy.SelectedIndex > 0)
@@ -347,17 +366,7 @@ namespace Forms
             }
         }
 
-        private void pcBoxKesinHesap_Click(object sender, EventArgs e)
-        {
-            if (cmbKoy.SelectedIndex > 0)
-            {
-                load_form(new FrmKesinHesap());
-            }
-            else
-            {
-                MessageBox.Show("Lütfen Kesin Hesap Ýþlemi Yapacaðýnýz Köyü Seçiniz...");
-            }
-        }
+
 
         public void cmbKoy_SelectedIndexChanged(object sender, EventArgs e)
         {
