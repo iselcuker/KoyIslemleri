@@ -14,10 +14,11 @@ namespace Business.Abstract
         List<Gider> GetListKoyId(int koyId);
         List<Gider> GetListKoyIdAndDonemId(int koyId, byte donemId);
         List<Gider> GetListDonemIdAndKoyIdAndGiderKategoriId(byte donemId, int koyId, byte giderKategoriId);
-        List<Gider> GetListDonemIdAndKoyIdAndGiderKategoriIdAndGiderAltKategori(byte donemId, int koyId, byte giderKategoriId,byte giderAltKategoriId);
+        List<Gider> GetListDonemIdAndKoyIdAndGiderKategoriIdAndGiderAltKategori(byte donemId, int koyId, byte giderKategoriId, byte giderAltKategoriId);
         void Add(Gider gider);
         void Delete(Gider gider);
         void Update(Gider gider);
+        decimal GiderAltKategoriToplami(int koyId, byte donemId, byte giderAltKategoriId);
 
         List<GiderDetailDto> GetGiderDetails();
         List<GiderDetailDto> GetListGiderDetailsKoyAndDonemId(int koyId, byte donemId);

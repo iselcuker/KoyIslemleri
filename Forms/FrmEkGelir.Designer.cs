@@ -55,17 +55,18 @@
             pnlGelirBaslik.Controls.Add(lblBaslik);
             pnlGelirBaslik.Dock = DockStyle.Top;
             pnlGelirBaslik.Location = new Point(0, 0);
+            pnlGelirBaslik.Margin = new Padding(3, 4, 3, 4);
             pnlGelirBaslik.Name = "pnlGelirBaslik";
-            pnlGelirBaslik.Size = new Size(807, 60);
+            pnlGelirBaslik.Size = new Size(922, 80);
             pnlGelirBaslik.TabIndex = 132;
             // 
             // lblBaslik
             // 
             lblBaslik.AutoSize = true;
             lblBaslik.Font = new Font("321impact", 35.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblBaslik.Location = new Point(275, 3);
+            lblBaslik.Location = new Point(314, 4);
             lblBaslik.Name = "lblBaslik";
-            lblBaslik.Size = new Size(195, 53);
+            lblBaslik.Size = new Size(246, 67);
             lblBaslik.TabIndex = 1;
             lblBaslik.Text = "EK GELİR";
             // 
@@ -74,9 +75,9 @@
             lblTutar.AutoSize = true;
             lblTutar.Font = new Font("Verdana", 14.25F);
             lblTutar.ImeMode = ImeMode.NoControl;
-            lblTutar.Location = new Point(9, 148);
+            lblTutar.Location = new Point(10, 197);
             lblTutar.Name = "lblTutar";
-            lblTutar.Size = new Size(58, 23);
+            lblTutar.Size = new Size(74, 29);
             lblTutar.TabIndex = 127;
             lblTutar.Text = "Tutar";
             // 
@@ -88,9 +89,10 @@
             cmbDegisiklik.Font = new Font("Verdana", 14.25F);
             cmbDegisiklik.ForeColor = SystemColors.MenuText;
             cmbDegisiklik.FormattingEnabled = true;
-            cmbDegisiklik.Location = new Point(176, 106);
+            cmbDegisiklik.Location = new Point(201, 141);
+            cmbDegisiklik.Margin = new Padding(3, 4, 3, 4);
             cmbDegisiklik.Name = "cmbDegisiklik";
-            cmbDegisiklik.Size = new Size(396, 31);
+            cmbDegisiklik.Size = new Size(452, 37);
             cmbDegisiklik.TabIndex = 122;
             cmbDegisiklik.SelectedIndexChanged += cmbDegisiklik_SelectedIndexChanged;
             // 
@@ -99,9 +101,9 @@
             lblDegisiklik.AutoSize = true;
             lblDegisiklik.Font = new Font("Verdana", 14.25F);
             lblDegisiklik.ImeMode = ImeMode.NoControl;
-            lblDegisiklik.Location = new Point(9, 111);
+            lblDegisiklik.Location = new Point(10, 148);
             lblDegisiklik.Name = "lblDegisiklik";
-            lblDegisiklik.Size = new Size(104, 23);
+            lblDegisiklik.Size = new Size(126, 29);
             lblDegisiklik.TabIndex = 125;
             lblDegisiklik.Text = "Değişiklik";
             // 
@@ -113,9 +115,10 @@
             cmbGelirKategori.Font = new Font("Verdana", 14.25F);
             cmbGelirKategori.ForeColor = SystemColors.MenuText;
             cmbGelirKategori.FormattingEnabled = true;
-            cmbGelirKategori.Location = new Point(176, 66);
+            cmbGelirKategori.Location = new Point(201, 88);
+            cmbGelirKategori.Margin = new Padding(3, 4, 3, 4);
             cmbGelirKategori.Name = "cmbGelirKategori";
-            cmbGelirKategori.Size = new Size(396, 31);
+            cmbGelirKategori.Size = new Size(452, 37);
             cmbGelirKategori.TabIndex = 123;
             cmbGelirKategori.SelectedIndexChanged += cmbGelirKategori_SelectedIndexChanged;
             // 
@@ -124,28 +127,30 @@
             lblGelirKategori.AutoSize = true;
             lblGelirKategori.Font = new Font("Verdana", 14.25F);
             lblGelirKategori.ImeMode = ImeMode.NoControl;
-            lblGelirKategori.Location = new Point(9, 74);
+            lblGelirKategori.Location = new Point(10, 99);
             lblGelirKategori.Name = "lblGelirKategori";
-            lblGelirKategori.Size = new Size(142, 23);
+            lblGelirKategori.Size = new Size(175, 29);
             lblGelirKategori.TabIndex = 126;
             lblGelirKategori.Text = "Gelir Kategori";
             // 
             // txtTutar
             // 
             txtTutar.Cursor = Cursors.IBeam;
-            txtTutar.Font = new Font("Lucida Calligraphy", 14.25F);
-            txtTutar.Location = new Point(176, 146);
+            txtTutar.Font = new Font("Verdana", 14.25F);
+            txtTutar.Location = new Point(201, 195);
+            txtTutar.Margin = new Padding(3, 4, 3, 4);
             txtTutar.Name = "txtTutar";
-            txtTutar.Size = new Size(209, 33);
+            txtTutar.Size = new Size(238, 36);
             txtTutar.TabIndex = 124;
             // 
             // pcBoxSil
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(267, 185);
+            pcBoxSil.Location = new Point(305, 247);
+            pcBoxSil.Margin = new Padding(3, 4, 3, 4);
             pcBoxSil.Name = "pcBoxSil";
-            pcBoxSil.Size = new Size(85, 65);
+            pcBoxSil.Size = new Size(97, 87);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxSil.TabIndex = 133;
             pcBoxSil.TabStop = false;
@@ -155,9 +160,10 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(358, 185);
+            pcBoxGuncelle.Location = new Point(409, 247);
+            pcBoxGuncelle.Margin = new Padding(3, 4, 3, 4);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
-            pcBoxGuncelle.Size = new Size(85, 65);
+            pcBoxGuncelle.Size = new Size(97, 87);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxGuncelle.TabIndex = 134;
             pcBoxGuncelle.TabStop = false;
@@ -167,9 +173,10 @@
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(176, 185);
+            pcBoxKaydet.Location = new Point(201, 247);
+            pcBoxKaydet.Margin = new Padding(3, 4, 3, 4);
             pcBoxKaydet.Name = "pcBoxKaydet";
-            pcBoxKaydet.Size = new Size(85, 65);
+            pcBoxKaydet.Size = new Size(97, 87);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxKaydet.TabIndex = 135;
             pcBoxKaydet.TabStop = false;
@@ -184,38 +191,39 @@
             dgvTahminiEkGelirler.BackgroundColor = SystemColors.Control;
             dgvTahminiEkGelirler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiEkGelirler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiEkGelirler.Location = new Point(9, 257);
+            dgvTahminiEkGelirler.Location = new Point(10, 343);
+            dgvTahminiEkGelirler.Margin = new Padding(3, 4, 3, 4);
             dgvTahminiEkGelirler.Name = "dgvTahminiEkGelirler";
             dgvTahminiEkGelirler.ReadOnly = true;
             dgvTahminiEkGelirler.RowHeadersWidth = 51;
             dgvTahminiEkGelirler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvTahminiEkGelirler.Size = new Size(785, 366);
+            dgvTahminiEkGelirler.Size = new Size(897, 488);
             dgvTahminiEkGelirler.TabIndex = 136;
             dgvTahminiEkGelirler.CellDoubleClick += dgvTahminiEkGelirler_CellDoubleClick;
             // 
             // lblKalanTutar
             // 
             lblKalanTutar.AutoSize = true;
-            lblKalanTutar.Location = new Point(639, 74);
+            lblKalanTutar.Location = new Point(730, 99);
             lblKalanTutar.Name = "lblKalanTutar";
-            lblKalanTutar.Size = new Size(66, 15);
+            lblKalanTutar.Size = new Size(84, 20);
             lblKalanTutar.TabIndex = 137;
             lblKalanTutar.Text = "Kalan Tutar";
             // 
             // lblKalan
             // 
             lblKalan.AutoSize = true;
-            lblKalan.Location = new Point(661, 95);
+            lblKalan.Location = new Point(755, 127);
             lblKalan.Name = "lblKalan";
-            lblKalan.Size = new Size(19, 15);
+            lblKalan.Size = new Size(25, 20);
             lblKalan.TabIndex = 138;
             lblKalan.Text = "00";
             // 
             // FrmEkGelir
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(807, 705);
+            ClientSize = new Size(922, 940);
             Controls.Add(lblKalan);
             Controls.Add(lblKalanTutar);
             Controls.Add(dgvTahminiEkGelirler);
@@ -230,6 +238,7 @@
             Controls.Add(lblGelirKategori);
             Controls.Add(txtTutar);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmEkGelir";
             Text = "EkGelir";
             Load += FrmEkGelir_Load;

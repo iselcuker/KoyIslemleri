@@ -39,6 +39,11 @@ namespace Business.Concrete
             return _tahminiButceGiderDal.GetAll(tbgi => tbgi.KoyId == koyId && tbgi.DonemId == donemId);
         }
 
+        public List<TahminiButceGider> GetListByKoyIdAndDonemIdAndGiderAltKategoriId(int koyId, byte donemId, byte giderAltKategoriId)
+        {
+            return _tahminiButceGiderDal.GetAll(tbgi=>tbgi.KoyId==koyId&&tbgi.DonemId==donemId&&tbgi.GiderAltKategoriId==giderAltKategoriId);
+        }
+
         public List<TahminiButceGider> GetListByKoyIdAndDonemIdAndGiderKategoriId(int koyId, byte donemId, byte giderKategoriId)
         {
             return _tahminiButceGiderDal.GetAll(tbgi => tbgi.KoyId == koyId && tbgi.DonemId == donemId && tbgi.GiderKategoriId == giderKategoriId);

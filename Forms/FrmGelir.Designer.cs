@@ -74,8 +74,9 @@
             pnlGelirBaslik.Controls.Add(lblBaslik);
             pnlGelirBaslik.Dock = DockStyle.Top;
             pnlGelirBaslik.Location = new Point(0, 0);
+            pnlGelirBaslik.Margin = new Padding(3, 4, 3, 4);
             pnlGelirBaslik.Name = "pnlGelirBaslik";
-            pnlGelirBaslik.Size = new Size(1250, 60);
+            pnlGelirBaslik.Size = new Size(1429, 80);
             pnlGelirBaslik.TabIndex = 0;
             pnlGelirBaslik.Paint += pnlGelirBaslik_Paint;
             // 
@@ -83,9 +84,9 @@
             // 
             lblBaslik.AutoSize = true;
             lblBaslik.Font = new Font("321impact", 35.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblBaslik.Location = new Point(182, 4);
+            lblBaslik.Location = new Point(208, 5);
             lblBaslik.Name = "lblBaslik";
-            lblBaslik.Size = new Size(345, 53);
+            lblBaslik.Size = new Size(436, 67);
             lblBaslik.TabIndex = 1;
             lblBaslik.Text = "GELİR İŞLEMLERİ";
             // 
@@ -93,10 +94,11 @@
             // 
             mskTarih.Cursor = Cursors.IBeam;
             mskTarih.Font = new Font("Lucida Calligraphy", 14.25F);
-            mskTarih.Location = new Point(191, 173);
+            mskTarih.Location = new Point(218, 231);
+            mskTarih.Margin = new Padding(3, 4, 3, 4);
             mskTarih.Mask = "00/00/0000";
             mskTarih.Name = "mskTarih";
-            mskTarih.Size = new Size(103, 33);
+            mskTarih.Size = new Size(117, 40);
             mskTarih.TabIndex = 96;
             mskTarih.ValidatingType = typeof(DateTime);
             // 
@@ -104,18 +106,20 @@
             // 
             txtEvrakNo.Cursor = Cursors.IBeam;
             txtEvrakNo.Font = new Font("Lucida Calligraphy", 14.25F);
-            txtEvrakNo.Location = new Point(191, 245);
+            txtEvrakNo.Location = new Point(218, 327);
+            txtEvrakNo.Margin = new Padding(3, 4, 3, 4);
             txtEvrakNo.Name = "txtEvrakNo";
-            txtEvrakNo.Size = new Size(209, 33);
+            txtEvrakNo.Size = new Size(238, 40);
             txtEvrakNo.TabIndex = 98;
             // 
             // txtVeren
             // 
             txtVeren.Cursor = Cursors.IBeam;
             txtVeren.Font = new Font("Lucida Calligraphy", 14.25F);
-            txtVeren.Location = new Point(191, 209);
+            txtVeren.Location = new Point(218, 279);
+            txtVeren.Margin = new Padding(3, 4, 3, 4);
             txtVeren.Name = "txtVeren";
-            txtVeren.Size = new Size(267, 33);
+            txtVeren.Size = new Size(305, 40);
             txtVeren.TabIndex = 97;
             txtVeren.TextChanged += txtVeren_TextChanged;
             // 
@@ -123,52 +127,53 @@
             // 
             txtTutar.Cursor = Cursors.IBeam;
             txtTutar.Font = new Font("Lucida Calligraphy", 14.25F);
-            txtTutar.Location = new Point(191, 137);
+            txtTutar.Location = new Point(218, 183);
+            txtTutar.Margin = new Padding(3, 4, 3, 4);
             txtTutar.Name = "txtTutar";
-            txtTutar.Size = new Size(209, 33);
+            txtTutar.Size = new Size(238, 40);
             txtTutar.TabIndex = 95;
             // 
             // lblEvrakNo
             // 
             lblEvrakNo.AutoSize = true;
-            lblEvrakNo.Font = new Font("Lucida Calligraphy", 14.25F);
+            lblEvrakNo.Font = new Font("Verdana", 14.25F);
             lblEvrakNo.ImeMode = ImeMode.NoControl;
-            lblEvrakNo.Location = new Point(10, 248);
+            lblEvrakNo.Location = new Point(11, 331);
             lblEvrakNo.Name = "lblEvrakNo";
-            lblEvrakNo.Size = new Size(110, 24);
+            lblEvrakNo.Size = new Size(121, 29);
             lblEvrakNo.TabIndex = 102;
             lblEvrakNo.Text = "Evrak No";
             // 
             // lblTarih
             // 
             lblTarih.AutoSize = true;
-            lblTarih.Font = new Font("Lucida Calligraphy", 14.25F);
+            lblTarih.Font = new Font("Verdana", 14.25F);
             lblTarih.ImeMode = ImeMode.NoControl;
-            lblTarih.Location = new Point(10, 176);
+            lblTarih.Location = new Point(11, 235);
             lblTarih.Name = "lblTarih";
-            lblTarih.Size = new Size(68, 24);
+            lblTarih.Size = new Size(70, 29);
             lblTarih.TabIndex = 103;
             lblTarih.Text = "Tarih";
             // 
             // lblVeren
             // 
             lblVeren.AutoSize = true;
-            lblVeren.Font = new Font("Lucida Calligraphy", 14.25F);
+            lblVeren.Font = new Font("Verdana", 14.25F);
             lblVeren.ImeMode = ImeMode.NoControl;
-            lblVeren.Location = new Point(10, 212);
+            lblVeren.Location = new Point(11, 283);
             lblVeren.Name = "lblVeren";
-            lblVeren.Size = new Size(72, 24);
+            lblVeren.Size = new Size(81, 29);
             lblVeren.TabIndex = 104;
             lblVeren.Text = "Veren";
             // 
             // lblTutar
             // 
             lblTutar.AutoSize = true;
-            lblTutar.Font = new Font("Lucida Calligraphy", 14.25F);
+            lblTutar.Font = new Font("Verdana", 14.25F);
             lblTutar.ImeMode = ImeMode.NoControl;
-            lblTutar.Location = new Point(10, 140);
+            lblTutar.Location = new Point(11, 187);
             lblTutar.Name = "lblTutar";
-            lblTutar.Size = new Size(70, 24);
+            lblTutar.Size = new Size(74, 29);
             lblTutar.TabIndex = 105;
             lblTutar.Text = "Tutar";
             // 
@@ -182,11 +187,13 @@
             dgvGelirler.BorderStyle = BorderStyle.Fixed3D;
             dgvGelirler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvGelirler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvGelirler.Location = new Point(12, 394);
+            dgvGelirler.Location = new Point(14, 525);
+            dgvGelirler.Margin = new Padding(3, 4, 3, 4);
             dgvGelirler.Name = "dgvGelirler";
             dgvGelirler.ReadOnly = true;
+            dgvGelirler.RowHeadersWidth = 51;
             dgvGelirler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvGelirler.Size = new Size(1226, 424);
+            dgvGelirler.Size = new Size(1401, 565);
             dgvGelirler.TabIndex = 100;
             dgvGelirler.CellDoubleClick += dgvGelirler_CellDoubleClick;
             // 
@@ -198,20 +205,21 @@
             cmbGelirKategori.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbGelirKategori.ForeColor = SystemColors.MenuText;
             cmbGelirKategori.FormattingEnabled = true;
-            cmbGelirKategori.Location = new Point(191, 100);
+            cmbGelirKategori.Location = new Point(218, 133);
+            cmbGelirKategori.Margin = new Padding(3, 4, 3, 4);
             cmbGelirKategori.Name = "cmbGelirKategori";
-            cmbGelirKategori.Size = new Size(396, 31);
+            cmbGelirKategori.Size = new Size(452, 37);
             cmbGelirKategori.TabIndex = 94;
             cmbGelirKategori.SelectedIndexChanged += cmbGelirKategori_SelectedIndexChanged;
             // 
             // lblGelirKategori
             // 
             lblGelirKategori.AutoSize = true;
-            lblGelirKategori.Font = new Font("Lucida Calligraphy", 14.25F);
+            lblGelirKategori.Font = new Font("Verdana", 14.25F);
             lblGelirKategori.ImeMode = ImeMode.NoControl;
-            lblGelirKategori.Location = new Point(10, 108);
+            lblGelirKategori.Location = new Point(11, 144);
             lblGelirKategori.Name = "lblGelirKategori";
-            lblGelirKategori.Size = new Size(156, 24);
+            lblGelirKategori.Size = new Size(175, 29);
             lblGelirKategori.TabIndex = 99;
             lblGelirKategori.Text = "Gelir Kategori";
             // 
@@ -219,9 +227,10 @@
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(282, 284);
+            pcBoxSil.Location = new Point(322, 379);
+            pcBoxSil.Margin = new Padding(3, 4, 3, 4);
             pcBoxSil.Name = "pcBoxSil";
-            pcBoxSil.Size = new Size(85, 65);
+            pcBoxSil.Size = new Size(97, 87);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxSil.TabIndex = 121;
             pcBoxSil.TabStop = false;
@@ -231,9 +240,10 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(373, 285);
+            pcBoxGuncelle.Location = new Point(426, 380);
+            pcBoxGuncelle.Margin = new Padding(3, 4, 3, 4);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
-            pcBoxGuncelle.Size = new Size(85, 65);
+            pcBoxGuncelle.Size = new Size(97, 87);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxGuncelle.TabIndex = 122;
             pcBoxGuncelle.TabStop = false;
@@ -243,9 +253,10 @@
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(191, 284);
+            pcBoxKaydet.Location = new Point(218, 379);
+            pcBoxKaydet.Margin = new Padding(3, 4, 3, 4);
             pcBoxKaydet.Name = "pcBoxKaydet";
-            pcBoxKaydet.Size = new Size(85, 65);
+            pcBoxKaydet.Size = new Size(97, 87);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxKaydet.TabIndex = 123;
             pcBoxKaydet.TabStop = false;
@@ -256,9 +267,9 @@
             lblToplamGelir.AutoSize = true;
             lblToplamGelir.Font = new Font("Lucida Calligraphy", 14.25F);
             lblToplamGelir.ImeMode = ImeMode.NoControl;
-            lblToplamGelir.Location = new Point(24, 332);
+            lblToplamGelir.Location = new Point(27, 443);
             lblToplamGelir.Name = "lblToplamGelir";
-            lblToplamGelir.Size = new Size(36, 24);
+            lblToplamGelir.Size = new Size(46, 31);
             lblToplamGelir.TabIndex = 124;
             lblToplamGelir.Text = "00";
             // 
@@ -266,9 +277,9 @@
             // 
             lblDevir.AutoSize = true;
             lblDevir.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblDevir.Location = new Point(878, 250);
+            lblDevir.Location = new Point(1003, 333);
             lblDevir.Name = "lblDevir";
-            lblDevir.Size = new Size(26, 18);
+            lblDevir.Size = new Size(32, 23);
             lblDevir.TabIndex = 153;
             lblDevir.Text = "00";
             // 
@@ -276,9 +287,9 @@
             // 
             lblYardim.AutoSize = true;
             lblYardim.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblYardim.Location = new Point(878, 166);
+            lblYardim.Location = new Point(1003, 221);
             lblYardim.Name = "lblYardim";
-            lblYardim.Size = new Size(26, 18);
+            lblYardim.Size = new Size(32, 23);
             lblYardim.TabIndex = 151;
             lblYardim.Text = "00";
             // 
@@ -286,9 +297,9 @@
             // 
             lblIstikraz.AutoSize = true;
             lblIstikraz.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblIstikraz.Location = new Point(878, 208);
+            lblIstikraz.Location = new Point(1003, 277);
             lblIstikraz.Name = "lblIstikraz";
-            lblIstikraz.Size = new Size(26, 18);
+            lblIstikraz.Size = new Size(32, 23);
             lblIstikraz.TabIndex = 149;
             lblIstikraz.Text = "00";
             // 
@@ -296,9 +307,9 @@
             // 
             lblResimHarc.AutoSize = true;
             lblResimHarc.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblResimHarc.Location = new Point(878, 124);
+            lblResimHarc.Location = new Point(1003, 165);
             lblResimHarc.Name = "lblResimHarc";
-            lblResimHarc.Size = new Size(26, 18);
+            lblResimHarc.Size = new Size(32, 23);
             lblResimHarc.TabIndex = 147;
             lblResimHarc.Text = "00";
             // 
@@ -306,9 +317,9 @@
             // 
             lblTurluGelir.AutoSize = true;
             lblTurluGelir.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblTurluGelir.Location = new Point(878, 229);
+            lblTurluGelir.Location = new Point(1003, 305);
             lblTurluGelir.Name = "lblTurluGelir";
-            lblTurluGelir.Size = new Size(26, 18);
+            lblTurluGelir.Size = new Size(32, 23);
             lblTurluGelir.TabIndex = 145;
             lblTurluGelir.Text = "00";
             // 
@@ -316,9 +327,9 @@
             // 
             lblParaCezasi.AutoSize = true;
             lblParaCezasi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblParaCezasi.Location = new Point(878, 145);
+            lblParaCezasi.Location = new Point(1003, 193);
             lblParaCezasi.Name = "lblParaCezasi";
-            lblParaCezasi.Size = new Size(26, 18);
+            lblParaCezasi.Size = new Size(32, 23);
             lblParaCezasi.TabIndex = 143;
             lblParaCezasi.Text = "00";
             // 
@@ -326,9 +337,9 @@
             // 
             lblKoyVakif.AutoSize = true;
             lblKoyVakif.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblKoyVakif.Location = new Point(878, 187);
+            lblKoyVakif.Location = new Point(1003, 249);
             lblKoyVakif.Name = "lblKoyVakif";
-            lblKoyVakif.Size = new Size(26, 18);
+            lblKoyVakif.Size = new Size(32, 23);
             lblKoyVakif.TabIndex = 141;
             lblKoyVakif.Text = "00";
             // 
@@ -336,9 +347,9 @@
             // 
             lblHasilat.AutoSize = true;
             lblHasilat.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblHasilat.Location = new Point(878, 103);
+            lblHasilat.Location = new Point(1003, 137);
             lblHasilat.Name = "lblHasilat";
-            lblHasilat.Size = new Size(26, 18);
+            lblHasilat.Size = new Size(32, 23);
             lblHasilat.TabIndex = 140;
             lblHasilat.Text = "00";
             // 
@@ -347,9 +358,9 @@
             lblDevirYazi.AutoSize = true;
             lblDevirYazi.BorderStyle = BorderStyle.FixedSingle;
             lblDevirYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblDevirYazi.Location = new Point(707, 249);
+            lblDevirYazi.Location = new Point(808, 332);
             lblDevirYazi.Name = "lblDevirYazi";
-            lblDevirYazi.Size = new Size(164, 20);
+            lblDevirYazi.Size = new Size(204, 25);
             lblDevirYazi.TabIndex = 138;
             lblDevirYazi.Text = "Geçen Seneden Devir";
             // 
@@ -358,9 +369,9 @@
             lblYardimYazi.AutoSize = true;
             lblYardimYazi.BorderStyle = BorderStyle.FixedSingle;
             lblYardimYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblYardimYazi.Location = new Point(707, 165);
+            lblYardimYazi.Location = new Point(808, 220);
             lblYardimYazi.Name = "lblYardimYazi";
-            lblYardimYazi.Size = new Size(74, 20);
+            lblYardimYazi.Size = new Size(98, 25);
             lblYardimYazi.TabIndex = 136;
             lblYardimYazi.Text = "Yardımlar";
             // 
@@ -369,9 +380,9 @@
             lblIstikrazYazi.AutoSize = true;
             lblIstikrazYazi.BorderStyle = BorderStyle.FixedSingle;
             lblIstikrazYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblIstikrazYazi.Location = new Point(707, 207);
+            lblIstikrazYazi.Location = new Point(808, 276);
             lblIstikrazYazi.Name = "lblIstikrazYazi";
-            lblIstikrazYazi.Size = new Size(75, 20);
+            lblIstikrazYazi.Size = new Size(97, 25);
             lblIstikrazYazi.TabIndex = 134;
             lblIstikrazYazi.Text = "İstikrazlar";
             // 
@@ -380,9 +391,9 @@
             lblTurluGelirYazi.AutoSize = true;
             lblTurluGelirYazi.BorderStyle = BorderStyle.FixedSingle;
             lblTurluGelirYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblTurluGelirYazi.Location = new Point(707, 228);
+            lblTurluGelirYazi.Location = new Point(808, 304);
             lblTurluGelirYazi.Name = "lblTurluGelirYazi";
-            lblTurluGelirYazi.Size = new Size(97, 20);
+            lblTurluGelirYazi.Size = new Size(127, 25);
             lblTurluGelirYazi.TabIndex = 131;
             lblTurluGelirYazi.Text = "Türlü Gelirler";
             // 
@@ -391,9 +402,9 @@
             lblResimHarcYazi.AutoSize = true;
             lblResimHarcYazi.BorderStyle = BorderStyle.FixedSingle;
             lblResimHarcYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblResimHarcYazi.Location = new Point(707, 123);
+            lblResimHarcYazi.Location = new Point(808, 164);
             lblResimHarcYazi.Name = "lblResimHarcYazi";
-            lblResimHarcYazi.Size = new Size(96, 20);
+            lblResimHarcYazi.Size = new Size(120, 25);
             lblResimHarcYazi.TabIndex = 130;
             lblResimHarcYazi.Text = "Resim, Harç";
             // 
@@ -402,9 +413,9 @@
             lblKoyVakifYazi.AutoSize = true;
             lblKoyVakifYazi.BorderStyle = BorderStyle.FixedSingle;
             lblKoyVakifYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblKoyVakifYazi.Location = new Point(707, 186);
+            lblKoyVakifYazi.Location = new Point(808, 248);
             lblKoyVakifYazi.Name = "lblKoyVakifYazi";
-            lblKoyVakifYazi.Size = new Size(75, 20);
+            lblKoyVakifYazi.Size = new Size(97, 25);
             lblKoyVakifYazi.TabIndex = 127;
             lblKoyVakifYazi.Text = "Köy Vakıf";
             // 
@@ -413,9 +424,9 @@
             lblParaCezasiYazi.AutoSize = true;
             lblParaCezasiYazi.BorderStyle = BorderStyle.FixedSingle;
             lblParaCezasiYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblParaCezasiYazi.Location = new Point(707, 144);
+            lblParaCezasiYazi.Location = new Point(808, 192);
             lblParaCezasiYazi.Name = "lblParaCezasiYazi";
-            lblParaCezasiYazi.Size = new Size(96, 20);
+            lblParaCezasiYazi.Size = new Size(121, 25);
             lblParaCezasiYazi.TabIndex = 154;
             lblParaCezasiYazi.Text = "Para Cezası";
             // 
@@ -424,17 +435,17 @@
             lblHasilatYazi.AutoSize = true;
             lblHasilatYazi.BorderStyle = BorderStyle.FixedSingle;
             lblHasilatYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblHasilatYazi.Location = new Point(707, 102);
+            lblHasilatYazi.Location = new Point(808, 136);
             lblHasilatYazi.Name = "lblHasilatYazi";
-            lblHasilatYazi.Size = new Size(57, 20);
+            lblHasilatYazi.Size = new Size(73, 25);
             lblHasilatYazi.TabIndex = 155;
             lblHasilatYazi.Text = "Hasılat";
             // 
             // FrmGelir
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1250, 950);
+            ClientSize = new Size(1429, 1102);
             Controls.Add(lblDevir);
             Controls.Add(lblYardim);
             Controls.Add(lblIstikraz);
@@ -468,6 +479,7 @@
             Controls.Add(lblGelirKategori);
             Controls.Add(pnlGelirBaslik);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmGelir";
             Text = "FrmGelir";
             Load += FrmGelir_Load;

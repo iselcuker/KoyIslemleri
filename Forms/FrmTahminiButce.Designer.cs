@@ -58,36 +58,38 @@
             pnlGelirBaslik.Controls.Add(lblBaslik);
             pnlGelirBaslik.Dock = DockStyle.Top;
             pnlGelirBaslik.Location = new Point(0, 0);
+            pnlGelirBaslik.Margin = new Padding(3, 4, 3, 4);
             pnlGelirBaslik.Name = "pnlGelirBaslik";
-            pnlGelirBaslik.Size = new Size(1250, 60);
+            pnlGelirBaslik.Size = new Size(1429, 80);
             pnlGelirBaslik.TabIndex = 1;
             // 
             // lblBaslik
             // 
             lblBaslik.AutoSize = true;
             lblBaslik.Font = new Font("321impact", 35.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblBaslik.Location = new Point(182, 4);
+            lblBaslik.Location = new Point(208, 5);
             lblBaslik.Name = "lblBaslik";
-            lblBaslik.Size = new Size(555, 53);
+            lblBaslik.Size = new Size(702, 67);
             lblBaslik.TabIndex = 1;
             lblBaslik.Text = "TAHMİNİ BÜTÇE İŞLEMLERİ";
             // 
             // txtButceTutari
             // 
             txtButceTutari.Font = new Font("Lucida Calligraphy", 14.25F);
-            txtButceTutari.Location = new Point(148, 64);
+            txtButceTutari.Location = new Point(169, 85);
+            txtButceTutari.Margin = new Padding(3, 4, 3, 4);
             txtButceTutari.Name = "txtButceTutari";
-            txtButceTutari.Size = new Size(267, 33);
+            txtButceTutari.Size = new Size(305, 40);
             txtButceTutari.TabIndex = 108;
             // 
             // lblButceTutari
             // 
             lblButceTutari.AutoSize = true;
-            lblButceTutari.Font = new Font("Lucida Calligraphy", 14.25F);
+            lblButceTutari.Font = new Font("Verdana", 14.25F);
             lblButceTutari.ImeMode = ImeMode.NoControl;
-            lblButceTutari.Location = new Point(2, 67);
+            lblButceTutari.Location = new Point(2, 89);
             lblButceTutari.Name = "lblButceTutari";
-            lblButceTutari.Size = new Size(140, 24);
+            lblButceTutari.Size = new Size(155, 29);
             lblButceTutari.TabIndex = 109;
             lblButceTutari.Text = "Bütçe Tutarı";
             // 
@@ -97,12 +99,13 @@
             dgvTahminiButceler.AllowUserToDeleteRows = false;
             dgvTahminiButceler.BackgroundColor = SystemColors.Control;
             dgvTahminiButceler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiButceler.Location = new Point(3, 174);
+            dgvTahminiButceler.Location = new Point(3, 232);
+            dgvTahminiButceler.Margin = new Padding(3, 4, 3, 4);
             dgvTahminiButceler.Name = "dgvTahminiButceler";
             dgvTahminiButceler.ReadOnly = true;
             dgvTahminiButceler.RowHeadersWidth = 51;
             dgvTahminiButceler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvTahminiButceler.Size = new Size(412, 623);
+            dgvTahminiButceler.Size = new Size(471, 831);
             dgvTahminiButceler.TabIndex = 117;
             dgvTahminiButceler.DataSourceChanged += dgvTahminiButceler_DataSourceChanged;
             dgvTahminiButceler.CellDoubleClick += dgvTahminiButceler_CellDoubleClick;
@@ -112,18 +115,20 @@
             pnlButceButonlari.Controls.Add(pcBoxIdariIsler);
             pnlButceButonlari.Controls.Add(pcBoxTahminiGider);
             pnlButceButonlari.Controls.Add(pcBoxTahminiGelir);
-            pnlButceButonlari.Location = new Point(455, 64);
+            pnlButceButonlari.Location = new Point(520, 85);
+            pnlButceButonlari.Margin = new Padding(3, 4, 3, 4);
             pnlButceButonlari.Name = "pnlButceButonlari";
-            pnlButceButonlari.Size = new Size(420, 104);
+            pnlButceButonlari.Size = new Size(480, 139);
             pnlButceButonlari.TabIndex = 118;
             // 
             // pcBoxIdariIsler
             // 
             pcBoxIdariIsler.Cursor = Cursors.Hand;
             pcBoxIdariIsler.Image = (Image)resources.GetObject("pcBoxIdariIsler.Image");
-            pcBoxIdariIsler.Location = new Point(282, 10);
+            pcBoxIdariIsler.Location = new Point(322, 13);
+            pcBoxIdariIsler.Margin = new Padding(3, 4, 3, 4);
             pcBoxIdariIsler.Name = "pcBoxIdariIsler";
-            pcBoxIdariIsler.Size = new Size(130, 80);
+            pcBoxIdariIsler.Size = new Size(149, 107);
             pcBoxIdariIsler.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxIdariIsler.TabIndex = 116;
             pcBoxIdariIsler.TabStop = false;
@@ -133,9 +138,10 @@
             // 
             pcBoxTahminiGider.Cursor = Cursors.Hand;
             pcBoxTahminiGider.Image = (Image)resources.GetObject("pcBoxTahminiGider.Image");
-            pcBoxTahminiGider.Location = new Point(146, 10);
+            pcBoxTahminiGider.Location = new Point(167, 13);
+            pcBoxTahminiGider.Margin = new Padding(3, 4, 3, 4);
             pcBoxTahminiGider.Name = "pcBoxTahminiGider";
-            pcBoxTahminiGider.Size = new Size(130, 80);
+            pcBoxTahminiGider.Size = new Size(149, 107);
             pcBoxTahminiGider.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxTahminiGider.TabIndex = 115;
             pcBoxTahminiGider.TabStop = false;
@@ -145,9 +151,10 @@
             // 
             pcBoxTahminiGelir.Cursor = Cursors.Hand;
             pcBoxTahminiGelir.Image = (Image)resources.GetObject("pcBoxTahminiGelir.Image");
-            pcBoxTahminiGelir.Location = new Point(10, 10);
+            pcBoxTahminiGelir.Location = new Point(11, 13);
+            pcBoxTahminiGelir.Margin = new Padding(3, 4, 3, 4);
             pcBoxTahminiGelir.Name = "pcBoxTahminiGelir";
-            pcBoxTahminiGelir.Size = new Size(130, 80);
+            pcBoxTahminiGelir.Size = new Size(149, 107);
             pcBoxTahminiGelir.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxTahminiGelir.TabIndex = 114;
             pcBoxTahminiGelir.TabStop = false;
@@ -155,18 +162,20 @@
             // 
             // pnlButceFormlari
             // 
-            pnlButceFormlari.Location = new Point(421, 174);
+            pnlButceFormlari.Location = new Point(481, 232);
+            pnlButceFormlari.Margin = new Padding(3, 4, 3, 4);
             pnlButceFormlari.Name = "pnlButceFormlari";
-            pnlButceFormlari.Size = new Size(817, 764);
+            pnlButceFormlari.Size = new Size(934, 1019);
             pnlButceFormlari.TabIndex = 119;
             // 
             // pcBoxKaydet
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(148, 102);
+            pcBoxKaydet.Location = new Point(169, 136);
+            pcBoxKaydet.Margin = new Padding(3, 4, 3, 4);
             pcBoxKaydet.Name = "pcBoxKaydet";
-            pcBoxKaydet.Size = new Size(85, 65);
+            pcBoxKaydet.Size = new Size(97, 87);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxKaydet.TabIndex = 120;
             pcBoxKaydet.TabStop = false;
@@ -176,9 +185,10 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(330, 102);
+            pcBoxGuncelle.Location = new Point(377, 136);
+            pcBoxGuncelle.Margin = new Padding(3, 4, 3, 4);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
-            pcBoxGuncelle.Size = new Size(85, 65);
+            pcBoxGuncelle.Size = new Size(97, 87);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxGuncelle.TabIndex = 120;
             pcBoxGuncelle.TabStop = false;
@@ -188,9 +198,10 @@
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(239, 102);
+            pcBoxSil.Location = new Point(273, 136);
+            pcBoxSil.Margin = new Padding(3, 4, 3, 4);
             pcBoxSil.Name = "pcBoxSil";
-            pcBoxSil.Size = new Size(85, 65);
+            pcBoxSil.Size = new Size(97, 87);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxSil.TabIndex = 120;
             pcBoxSil.TabStop = false;
@@ -198,9 +209,9 @@
             // 
             // FrmTahminiButce
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1250, 802);
+            ClientSize = new Size(1429, 1069);
             Controls.Add(pnlButceButonlari);
             Controls.Add(pcBoxSil);
             Controls.Add(pcBoxGuncelle);
@@ -211,6 +222,7 @@
             Controls.Add(lblButceTutari);
             Controls.Add(pnlGelirBaslik);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmTahminiButce";
             Text = "FrmTahminiButce";
             Load += FrmTahminiButce_Load;

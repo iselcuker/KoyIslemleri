@@ -339,8 +339,8 @@ namespace Forms
                 Koy secilenKoy = cmbKoy.SelectedItem as Koy; // cmbKoy'den seçilen öge aslýnda bir Koy'dur
                 int seciliKoyIndex = secilenKoy.Id;
                 Donem secilenDonem = cmbDonem.SelectedItem as Donem;
-                byte seciliDonemIndex = Convert.ToByte(secilenDonem.Id);               
-                FrmKesinHesap frmKesinHesap = new FrmKesinHesap(seciliKoyIndex, seciliDonemIndex,seciliIlceIndex); //seciliKoyIndex, seciliDonemIndex FrmKesinHesap'a gönderilecek              
+                byte seciliDonemIndex = Convert.ToByte(secilenDonem.Id);
+                FrmKesinHesap frmKesinHesap = new FrmKesinHesap(seciliKoyIndex, seciliDonemIndex, seciliIlceIndex); //seciliKoyIndex, seciliDonemIndex FrmKesinHesap'a gönderilecek              
                 load_form(frmKesinHesap);
             }
             else
@@ -603,6 +603,11 @@ namespace Forms
             {
                 MessageBox.Show("Lütfen Ýþlem Yapacaðýnýz Köyü Seçiniz...");
             }
+        }
+
+        private void pcBoxKucult_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

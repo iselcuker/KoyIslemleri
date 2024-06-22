@@ -53,20 +53,21 @@
             // 
             // txtTutar
             // 
-            txtTutar.Font = new Font("Lucida Calligraphy", 14.25F);
-            txtTutar.Location = new Point(177, 64);
+            txtTutar.Font = new Font("Leelawadee", 13.8F);
+            txtTutar.Location = new Point(202, 85);
+            txtTutar.Margin = new Padding(3, 4, 3, 4);
             txtTutar.Name = "txtTutar";
-            txtTutar.Size = new Size(238, 33);
+            txtTutar.Size = new Size(271, 35);
             txtTutar.TabIndex = 118;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Lucida Calligraphy", 14.25F);
+            label7.Font = new Font("Leelawadee", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ImeMode = ImeMode.NoControl;
-            label7.Location = new Point(2, 67);
+            label7.Location = new Point(18, 90);
             label7.Name = "label7";
-            label7.Size = new Size(172, 24);
+            label7.Size = new Size(163, 27);
             label7.TabIndex = 119;
             label7.Text = "Ek Bütçe Tutarı";
             // 
@@ -75,17 +76,18 @@
             pnlGelirBaslik.Controls.Add(lblBaslik);
             pnlGelirBaslik.Dock = DockStyle.Top;
             pnlGelirBaslik.Location = new Point(0, 0);
+            pnlGelirBaslik.Margin = new Padding(3, 4, 3, 4);
             pnlGelirBaslik.Name = "pnlGelirBaslik";
-            pnlGelirBaslik.Size = new Size(1250, 60);
+            pnlGelirBaslik.Size = new Size(1429, 80);
             pnlGelirBaslik.TabIndex = 133;
             // 
             // lblBaslik
             // 
             lblBaslik.AutoSize = true;
             lblBaslik.Font = new Font("321impact", 35.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblBaslik.Location = new Point(474, 3);
+            lblBaslik.Location = new Point(542, 4);
             lblBaslik.Name = "lblBaslik";
-            lblBaslik.Size = new Size(216, 53);
+            lblBaslik.Size = new Size(273, 67);
             lblBaslik.TabIndex = 1;
             lblBaslik.Text = "EK BÜTÇE";
             // 
@@ -93,9 +95,10 @@
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(239, 102);
+            pcBoxSil.Location = new Point(273, 136);
+            pcBoxSil.Margin = new Padding(3, 4, 3, 4);
             pcBoxSil.Name = "pcBoxSil";
-            pcBoxSil.Size = new Size(85, 65);
+            pcBoxSil.Size = new Size(97, 87);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxSil.TabIndex = 135;
             pcBoxSil.TabStop = false;
@@ -105,9 +108,10 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(330, 102);
+            pcBoxGuncelle.Location = new Point(377, 136);
+            pcBoxGuncelle.Margin = new Padding(3, 4, 3, 4);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
-            pcBoxGuncelle.Size = new Size(85, 65);
+            pcBoxGuncelle.Size = new Size(97, 87);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxGuncelle.TabIndex = 136;
             pcBoxGuncelle.TabStop = false;
@@ -117,9 +121,10 @@
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(148, 102);
+            pcBoxKaydet.Location = new Point(169, 136);
+            pcBoxKaydet.Margin = new Padding(3, 4, 3, 4);
             pcBoxKaydet.Name = "pcBoxKaydet";
-            pcBoxKaydet.Size = new Size(85, 65);
+            pcBoxKaydet.Size = new Size(97, 87);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxKaydet.TabIndex = 137;
             pcBoxKaydet.TabStop = false;
@@ -133,12 +138,13 @@
             dgvEkButceler.AllowUserToResizeRows = false;
             dgvEkButceler.BackgroundColor = SystemColors.Control;
             dgvEkButceler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvEkButceler.Location = new Point(3, 174);
+            dgvEkButceler.Location = new Point(3, 232);
+            dgvEkButceler.Margin = new Padding(3, 4, 3, 4);
             dgvEkButceler.Name = "dgvEkButceler";
             dgvEkButceler.ReadOnly = true;
             dgvEkButceler.RowHeadersWidth = 51;
             dgvEkButceler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvEkButceler.Size = new Size(412, 623);
+            dgvEkButceler.Size = new Size(471, 831);
             dgvEkButceler.TabIndex = 138;
             dgvEkButceler.DataSourceChanged += dgvEkButceler_DataSourceChanged;
             dgvEkButceler.CellDoubleClick += dgvEkButceler_CellDoubleClick;
@@ -147,18 +153,20 @@
             // 
             pnlEkButceButonlari.Controls.Add(pcBoxEkGider);
             pnlEkButceButonlari.Controls.Add(pcBoxEkGelir);
-            pnlEkButceButonlari.Location = new Point(455, 64);
+            pnlEkButceButonlari.Location = new Point(520, 85);
+            pnlEkButceButonlari.Margin = new Padding(3, 4, 3, 4);
             pnlEkButceButonlari.Name = "pnlEkButceButonlari";
-            pnlEkButceButonlari.Size = new Size(288, 104);
+            pnlEkButceButonlari.Size = new Size(329, 139);
             pnlEkButceButonlari.TabIndex = 140;
             // 
             // pcBoxEkGider
             // 
             pcBoxEkGider.Cursor = Cursors.Hand;
             pcBoxEkGider.Image = (Image)resources.GetObject("pcBoxEkGider.Image");
-            pcBoxEkGider.Location = new Point(146, 10);
+            pcBoxEkGider.Location = new Point(167, 13);
+            pcBoxEkGider.Margin = new Padding(3, 4, 3, 4);
             pcBoxEkGider.Name = "pcBoxEkGider";
-            pcBoxEkGider.Size = new Size(130, 80);
+            pcBoxEkGider.Size = new Size(149, 107);
             pcBoxEkGider.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxEkGider.TabIndex = 115;
             pcBoxEkGider.TabStop = false;
@@ -168,9 +176,10 @@
             // 
             pcBoxEkGelir.Cursor = Cursors.Hand;
             pcBoxEkGelir.Image = (Image)resources.GetObject("pcBoxEkGelir.Image");
-            pcBoxEkGelir.Location = new Point(10, 10);
+            pcBoxEkGelir.Location = new Point(11, 13);
+            pcBoxEkGelir.Margin = new Padding(3, 4, 3, 4);
             pcBoxEkGelir.Name = "pcBoxEkGelir";
-            pcBoxEkGelir.Size = new Size(130, 80);
+            pcBoxEkGelir.Size = new Size(149, 107);
             pcBoxEkGelir.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxEkGelir.TabIndex = 114;
             pcBoxEkGelir.TabStop = false;
@@ -178,16 +187,17 @@
             // 
             // pnlEkButceFormlari
             // 
-            pnlEkButceFormlari.Location = new Point(421, 174);
+            pnlEkButceFormlari.Location = new Point(481, 232);
+            pnlEkButceFormlari.Margin = new Padding(3, 4, 3, 4);
             pnlEkButceFormlari.Name = "pnlEkButceFormlari";
-            pnlEkButceFormlari.Size = new Size(817, 764);
+            pnlEkButceFormlari.Size = new Size(934, 1019);
             pnlEkButceFormlari.TabIndex = 141;
             // 
             // FrmEkButce
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1250, 802);
+            ClientSize = new Size(1429, 1069);
             Controls.Add(pnlEkButceFormlari);
             Controls.Add(pnlEkButceButonlari);
             Controls.Add(dgvEkButceler);
@@ -198,6 +208,7 @@
             Controls.Add(txtTutar);
             Controls.Add(label7);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmEkButce";
             Text = "FrmEkButce";
             Load += FrmEkButce_Load;

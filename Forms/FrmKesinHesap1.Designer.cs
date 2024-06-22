@@ -3000,9 +3000,9 @@
             lblDevredenHasilat.Location = new Point(1, 3);
             lblDevredenHasilat.Margin = new Padding(1, 0, 1, 0);
             lblDevredenHasilat.Name = "lblDevredenHasilat";
-            lblDevredenHasilat.Size = new Size(11, 17);
+            lblDevredenHasilat.Size = new Size(17, 17);
             lblDevredenHasilat.TabIndex = 2;
-            lblDevredenHasilat.Text = " ";
+            lblDevredenHasilat.Text = " 0";
             lblDevredenHasilat.TextAlign = ContentAlignment.MiddleRight;
             // 
             // p13
@@ -3066,9 +3066,9 @@
             lblTahsilHasilat.Location = new Point(2, 3);
             lblTahsilHasilat.Margin = new Padding(1, 0, 1, 0);
             lblTahsilHasilat.Name = "lblTahsilHasilat";
-            lblTahsilHasilat.Size = new Size(44, 17);
+            lblTahsilHasilat.Size = new Size(38, 17);
             lblTahsilHasilat.TabIndex = 2;
-            lblTahsilHasilat.Text = "272680";
+            lblTahsilHasilat.Text = "99153";
             lblTahsilHasilat.TextAlign = ContentAlignment.MiddleRight;
             // 
             // p12
@@ -3130,8 +3130,9 @@
             lblMunzamHasilat.Location = new Point(1, 3);
             lblMunzamHasilat.Margin = new Padding(1, 0, 1, 0);
             lblMunzamHasilat.Name = "lblMunzamHasilat";
-            lblMunzamHasilat.Size = new Size(0, 17);
+            lblMunzamHasilat.Size = new Size(14, 17);
             lblMunzamHasilat.TabIndex = 2;
+            lblMunzamHasilat.Text = "0";
             lblMunzamHasilat.TextAlign = ContentAlignment.MiddleRight;
             // 
             // p11
@@ -3173,9 +3174,9 @@
             lblBKResim.Location = new Point(1, 3);
             lblBKResim.Margin = new Padding(1, 0, 1, 0);
             lblBKResim.Name = "lblBKResim";
-            lblBKResim.Size = new Size(44, 17);
+            lblBKResim.Size = new Size(14, 17);
             lblBKResim.TabIndex = 2;
-            lblBKResim.Text = "300000";
+            lblBKResim.Text = "0";
             lblBKResim.TextAlign = ContentAlignment.MiddleRight;
             // 
             // p1
@@ -3209,7 +3210,7 @@
             lblBKHasilat.Name = "lblBKHasilat";
             lblBKHasilat.Size = new Size(44, 17);
             lblBKHasilat.TabIndex = 1;
-            lblBKHasilat.Text = "400000";
+            lblBKHasilat.Text = "300000";
             lblBKHasilat.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel110
@@ -3774,9 +3775,9 @@
             lblTahsilIstikraz.Location = new Point(2, 3);
             lblTahsilIstikraz.Margin = new Padding(1, 0, 1, 0);
             lblTahsilIstikraz.Name = "lblTahsilIstikraz";
-            lblTahsilIstikraz.Size = new Size(38, 17);
+            lblTahsilIstikraz.Size = new Size(14, 17);
             lblTahsilIstikraz.TabIndex = 2;
-            lblTahsilIstikraz.Text = "41400";
+            lblTahsilIstikraz.Text = "0";
             lblTahsilIstikraz.TextAlign = ContentAlignment.MiddleRight;
             // 
             // p21
@@ -3796,9 +3797,9 @@
             lblTahsilKoyVakif.Location = new Point(2, 3);
             lblTahsilKoyVakif.Margin = new Padding(1, 0, 1, 0);
             lblTahsilKoyVakif.Name = "lblTahsilKoyVakif";
-            lblTahsilKoyVakif.Size = new Size(53, 17);
+            lblTahsilKoyVakif.Size = new Size(14, 17);
             lblTahsilKoyVakif.TabIndex = 2;
-            lblTahsilKoyVakif.Text = "15295,68";
+            lblTahsilKoyVakif.Text = "0";
             lblTahsilKoyVakif.TextAlign = ContentAlignment.MiddleRight;
             // 
             // p17
@@ -3830,9 +3831,9 @@
             lblTahsilYardim.Location = new Point(2, 3);
             lblTahsilYardim.Margin = new Padding(1, 0, 1, 0);
             lblTahsilYardim.Name = "lblTahsilYardim";
-            lblTahsilYardim.Size = new Size(44, 17);
+            lblTahsilYardim.Size = new Size(14, 17);
             lblTahsilYardim.TabIndex = 111000;
-            lblTahsilYardim.Text = "111000";
+            lblTahsilYardim.Text = "0";
             lblTahsilYardim.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel144
@@ -3963,9 +3964,9 @@
             lblBKIstikraz.Location = new Point(1, 3);
             lblBKIstikraz.Margin = new Padding(1, 0, 1, 0);
             lblBKIstikraz.Name = "lblBKIstikraz";
-            lblBKIstikraz.Size = new Size(38, 17);
+            lblBKIstikraz.Size = new Size(14, 17);
             lblBKIstikraz.TabIndex = 2;
-            lblBKIstikraz.Text = "80000";
+            lblBKIstikraz.Text = "0";
             lblBKIstikraz.TextAlign = ContentAlignment.MiddleRight;
             // 
             // p19
@@ -4019,9 +4020,9 @@
             lblBKYardim.Location = new Point(1, 3);
             lblBKYardim.Margin = new Padding(1, 0, 1, 0);
             lblBKYardim.Name = "lblBKYardim";
-            lblBKYardim.Size = new Size(44, 17);
+            lblBKYardim.Size = new Size(14, 17);
             lblBKYardim.TabIndex = 1;
-            lblBKYardim.Text = "100000";
+            lblBKYardim.Text = "0";
             lblBKYardim.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel156
@@ -4090,9 +4091,9 @@
             lblTahsilTurluGelir.Location = new Point(2, 3);
             lblTahsilTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblTahsilTurluGelir.Name = "lblTahsilTurluGelir";
-            lblTahsilTurluGelir.Size = new Size(47, 17);
+            lblTahsilTurluGelir.Size = new Size(14, 17);
             lblTahsilTurluGelir.TabIndex = 2;
-            lblTahsilTurluGelir.Text = "5484,87";
+            lblTahsilTurluGelir.Text = "0";
             lblTahsilTurluGelir.TextAlign = ContentAlignment.MiddleRight;
             // 
             // p28
@@ -4133,9 +4134,9 @@
             lblBKTurluGelir.Location = new Point(1, 3);
             lblBKTurluGelir.Margin = new Padding(1, 0, 1, 0);
             lblBKTurluGelir.Name = "lblBKTurluGelir";
-            lblBKTurluGelir.Size = new Size(44, 17);
+            lblBKTurluGelir.Size = new Size(14, 17);
             lblBKTurluGelir.TabIndex = 2;
-            lblBKTurluGelir.Text = "120000";
+            lblBKTurluGelir.Text = "0";
             lblBKTurluGelir.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel163
@@ -5406,11 +5407,11 @@
             // label30
             // 
             label30.AutoSize = true;
-            label30.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label30.Location = new Point(9, 37);
+            label30.Font = new Font("Arial Narrow", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label30.Location = new Point(-1, 37);
             label30.Margin = new Padding(1, 0, 1, 0);
             label30.Name = "label30";
-            label30.Size = new Size(82, 16);
+            label30.Size = new Size(84, 16);
             label30.TabIndex = 242;
             label30.Text = "GİDERİN CİNSİ";
             // 
@@ -5649,33 +5650,33 @@
             // label268
             // 
             label268.AutoSize = true;
-            label268.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label268.Location = new Point(2, 26);
+            label268.Font = new Font("Arial Narrow", 4.8F);
+            label268.Location = new Point(0, 30);
             label268.Margin = new Padding(1, 0, 1, 0);
             label268.Name = "label268";
-            label268.Size = new Size(34, 14);
+            label268.Size = new Size(28, 13);
             label268.TabIndex = 251;
             label268.Text = "Mahsül";
             // 
             // label269
             // 
             label269.AutoSize = true;
-            label269.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label269.Location = new Point(2, 38);
+            label269.Font = new Font("Arial Narrow", 4.8F);
+            label269.Location = new Point(0, 41);
             label269.Margin = new Padding(1, 0, 1, 0);
             label269.Name = "label269";
-            label269.Size = new Size(34, 14);
+            label269.Size = new Size(28, 13);
             label269.TabIndex = 252;
             label269.Text = "Ayniyat";
             // 
             // label270
             // 
             label270.AutoSize = true;
-            label270.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label270.Location = new Point(2, 16);
+            label270.Font = new Font("Arial Narrow", 4.8F);
+            label270.Location = new Point(2, 19);
             label270.Margin = new Padding(1, 0, 1, 0);
             label270.Name = "label270";
-            label270.Size = new Size(25, 14);
+            label270.Size = new Size(21, 13);
             label270.TabIndex = 253;
             label270.Text = "Para";
             // 
@@ -6225,9 +6226,9 @@
             lblOdenenIdariMasraf.Location = new Point(1, 3);
             lblOdenenIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIdariMasraf.Name = "lblOdenenIdariMasraf";
-            lblOdenenIdariMasraf.Size = new Size(26, 17);
+            lblOdenenIdariMasraf.Size = new Size(14, 17);
             lblOdenenIdariMasraf.TabIndex = 2;
-            lblOdenenIdariMasraf.Text = "256";
+            lblOdenenIdariMasraf.Text = "0";
             lblOdenenIdariMasraf.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel304
@@ -6289,9 +6290,9 @@
             lblBKIdariMasraf.Location = new Point(1, 3);
             lblBKIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblBKIdariMasraf.Name = "lblBKIdariMasraf";
-            lblBKIdariMasraf.Size = new Size(32, 17);
+            lblBKIdariMasraf.Size = new Size(14, 17);
             lblBKIdariMasraf.TabIndex = 2;
-            lblBKIdariMasraf.Text = "2500";
+            lblBKIdariMasraf.Text = "0";
             lblBKIdariMasraf.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel320
@@ -6361,9 +6362,9 @@
             lblOdenenAylik.Location = new Point(1, 3);
             lblOdenenAylik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenAylik.Name = "lblOdenenAylik";
-            lblOdenenAylik.Size = new Size(44, 17);
+            lblOdenenAylik.Size = new Size(14, 17);
             lblOdenenAylik.TabIndex = 2;
-            lblOdenenAylik.Text = "120948";
+            lblOdenenAylik.Text = "0";
             lblOdenenAylik.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel309
@@ -6461,9 +6462,9 @@
             lblBKAylik.Location = new Point(1, 3);
             lblBKAylik.Margin = new Padding(1, 0, 1, 0);
             lblBKAylik.Name = "lblBKAylik";
-            lblBKAylik.Size = new Size(38, 17);
+            lblBKAylik.Size = new Size(14, 17);
             lblBKAylik.TabIndex = 2;
-            lblBKAylik.Text = "80000";
+            lblBKAylik.Text = "0";
             lblBKAylik.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel328
@@ -6941,9 +6942,9 @@
             lblBKSulama.Location = new Point(1, 3);
             lblBKSulama.Margin = new Padding(1, 0, 1, 0);
             lblBKSulama.Name = "lblBKSulama";
-            lblBKSulama.Size = new Size(38, 17);
+            lblBKSulama.Size = new Size(14, 17);
             lblBKSulama.TabIndex = 3;
-            lblBKSulama.Text = "50000";
+            lblBKSulama.Text = "0";
             lblBKSulama.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel360
@@ -7543,8 +7544,8 @@
             // panel401
             // 
             panel401.BorderStyle = BorderStyle.FixedSingle;
-            panel401.Controls.Add(label175);
             panel401.Controls.Add(label217);
+            panel401.Controls.Add(label175);
             panel401.Location = new Point(523, 316);
             panel401.Name = "panel401";
             panel401.Size = new Size(83, 23);
@@ -7895,9 +7896,9 @@
             // panel428
             // 
             panel428.BorderStyle = BorderStyle.FixedSingle;
-            panel428.Controls.Add(label169);
             panel428.Controls.Add(label170);
             panel428.Controls.Add(label171);
+            panel428.Controls.Add(label169);
             panel428.Location = new Point(523, 293);
             panel428.Name = "panel428";
             panel428.Size = new Size(83, 23);
@@ -8135,8 +8136,8 @@
             // panel443
             // 
             panel443.BorderStyle = BorderStyle.FixedSingle;
-            panel443.Controls.Add(label220);
             panel443.Controls.Add(label221);
+            panel443.Controls.Add(label220);
             panel443.Location = new Point(523, 362);
             panel443.Name = "panel443";
             panel443.Size = new Size(83, 23);
@@ -8523,8 +8524,8 @@
             // panel500
             // 
             panel500.BorderStyle = BorderStyle.FixedSingle;
-            panel500.Controls.Add(label188);
             panel500.Controls.Add(label189);
+            panel500.Controls.Add(label188);
             panel500.Location = new Point(523, 520);
             panel500.Name = "panel500";
             panel500.Size = new Size(83, 23);
@@ -9429,9 +9430,9 @@
             lblBKOkulDaimi.Location = new Point(1, 3);
             lblBKOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblBKOkulDaimi.Name = "lblBKOkulDaimi";
-            lblBKOkulDaimi.Size = new Size(38, 17);
+            lblBKOkulDaimi.Size = new Size(14, 17);
             lblBKOkulDaimi.TabIndex = 3;
-            lblBKOkulDaimi.Text = "50000";
+            lblBKOkulDaimi.Text = "0";
             lblBKOkulDaimi.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel570
@@ -10171,9 +10172,9 @@
             // panel631
             // 
             panel631.BorderStyle = BorderStyle.FixedSingle;
-            panel631.Controls.Add(label182);
             panel631.Controls.Add(label193);
             panel631.Controls.Add(label205);
+            panel631.Controls.Add(label182);
             panel631.Location = new Point(523, 611);
             panel631.Name = "panel631";
             panel631.Size = new Size(83, 23);
@@ -10255,9 +10256,9 @@
             lblBKIcmeSulari.Location = new Point(1, 3);
             lblBKIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblBKIcmeSulari.Name = "lblBKIcmeSulari";
-            lblBKIcmeSulari.Size = new Size(44, 17);
+            lblBKIcmeSulari.Size = new Size(14, 17);
             lblBKIcmeSulari.TabIndex = 3;
-            lblBKIcmeSulari.Text = "242500";
+            lblBKIcmeSulari.Text = "0";
             lblBKIcmeSulari.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel635
@@ -10375,9 +10376,9 @@
             lblOdenenIcmeSulari.Location = new Point(1, 3);
             lblOdenenIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIcmeSulari.Name = "lblOdenenIcmeSulari";
-            lblOdenenIcmeSulari.Size = new Size(59, 17);
+            lblOdenenIcmeSulari.Size = new Size(14, 17);
             lblOdenenIcmeSulari.TabIndex = 3;
-            lblOdenenIcmeSulari.Text = "358674,77";
+            lblOdenenIcmeSulari.Text = "0";
             lblOdenenIcmeSulari.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel644
@@ -11640,8 +11641,9 @@
             lblYekunHasilat.Location = new Point(1, 3);
             lblYekunHasilat.Margin = new Padding(1, 0, 1, 0);
             lblYekunHasilat.Name = "lblYekunHasilat";
-            lblYekunHasilat.Size = new Size(0, 17);
+            lblYekunHasilat.Size = new Size(14, 17);
             lblYekunHasilat.TabIndex = 25;
+            lblYekunHasilat.Text = "0";
             lblYekunHasilat.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel172

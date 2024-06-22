@@ -20,6 +20,7 @@ namespace Business.Abstract
         void Update(Gelir gelir);
 
         decimal GelirKategoriToplam(int koyId, byte donemId, byte gelirKategoriId);
+       
 
 
         //Gelir GetToplamByKoyIdAndDonemIdAndGelirKategoriId(int koyId, byte donemId,byte gelirKategoriId);

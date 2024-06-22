@@ -58,6 +58,7 @@
             lblIlce = new Label();
             pnlFormlar = new Panel();
             pnlButonlar = new Panel();
+            pcBoxKucult = new PictureBox();
             pcBoxEkButce = new PictureBox();
             pcBoxGorevliler = new PictureBox();
             pcBoxKesinHesap = new PictureBox();
@@ -76,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)pcBoxGuncelle).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxKaydet).BeginInit();
             pnlButonlar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pcBoxKucult).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxEkButce).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxGorevliler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxKesinHesap).BeginInit();
@@ -87,10 +89,10 @@
             // pnlBaslik
             // 
             pnlBaslik.Controls.Add(lblBaslik);
-            pnlBaslik.Location = new Point(0, 0);
+            pnlBaslik.Location = new Point(0, -2);
             pnlBaslik.Margin = new Padding(3, 4, 3, 4);
             pnlBaslik.Name = "pnlBaslik";
-            pnlBaslik.Size = new Size(1917, 120);
+            pnlBaslik.Size = new Size(1562, 120);
             pnlBaslik.TabIndex = 0;
             pnlBaslik.Paint += pnlBaslik_Paint;
             // 
@@ -106,11 +108,12 @@
             // pcBoxClose
             // 
             pcBoxClose.Cursor = Cursors.Hand;
-            pcBoxClose.Image = Properties.Resources.Creative_Freedom_Free_Funktional_14_Delete_48;
-            pcBoxClose.Location = new Point(1861, 0);
+            pcBoxClose.Image = (Image)resources.GetObject("pcBoxClose.Image");
+            pcBoxClose.Location = new Point(1650, 0);
             pcBoxClose.Margin = new Padding(3, 4, 3, 4);
             pcBoxClose.Name = "pcBoxClose";
-            pcBoxClose.Size = new Size(57, 67);
+            pcBoxClose.Size = new Size(48, 48);
+            pcBoxClose.SizeMode = PictureBoxSizeMode.StretchImage;
             pcBoxClose.TabIndex = 1;
             pcBoxClose.TabStop = false;
             pcBoxClose.Click += pcBoxClose_Click;
@@ -300,7 +303,7 @@
             // 
             // rchBoxNot
             // 
-            rchBoxNot.Font = new Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rchBoxNot.Font = new Font("Verdana", 14.25F);
             rchBoxNot.Location = new Point(6, 37);
             rchBoxNot.Margin = new Padding(3, 4, 3, 4);
             rchBoxNot.Name = "rchBoxNot";
@@ -343,7 +346,7 @@
             cmbDonem.Font = new Font("Microsoft Sans Serif", 20.25F);
             cmbDonem.FormattingEnabled = true;
             cmbDonem.IntegralHeight = false;
-            cmbDonem.Location = new Point(137, 124);
+            cmbDonem.Location = new Point(145, 124);
             cmbDonem.Margin = new Padding(3, 4, 3, 4);
             cmbDonem.Name = "cmbDonem";
             cmbDonem.Size = new Size(327, 47);
@@ -369,7 +372,7 @@
             cmbKoy.Font = new Font("Microsoft Sans Serif", 20.25F);
             cmbKoy.FormattingEnabled = true;
             cmbKoy.IntegralHeight = false;
-            cmbKoy.Location = new Point(137, 64);
+            cmbKoy.Location = new Point(145, 64);
             cmbKoy.Margin = new Padding(3, 4, 3, 4);
             cmbKoy.Name = "cmbKoy";
             cmbKoy.Size = new Size(327, 47);
@@ -392,7 +395,7 @@
             cmbIlce.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbIlce.Font = new Font("Microsoft Sans Serif", 20.25F);
             cmbIlce.FormattingEnabled = true;
-            cmbIlce.Location = new Point(137, 4);
+            cmbIlce.Location = new Point(145, 4);
             cmbIlce.Margin = new Padding(3, 4, 3, 4);
             cmbIlce.Name = "cmbIlce";
             cmbIlce.Size = new Size(327, 47);
@@ -430,6 +433,18 @@
             pnlButonlar.Name = "pnlButonlar";
             pnlButonlar.Size = new Size(1434, 133);
             pnlButonlar.TabIndex = 3;
+            // 
+            // pcBoxKucult
+            // 
+            pcBoxKucult.Cursor = Cursors.Hand;
+            pcBoxKucult.Image = (Image)resources.GetObject("pcBoxKucult.Image");
+            pcBoxKucult.Location = new Point(1568, 0);
+            pcBoxKucult.Name = "pcBoxKucult";
+            pcBoxKucult.Size = new Size(48, 48);
+            pcBoxKucult.SizeMode = PictureBoxSizeMode.StretchImage;
+            pcBoxKucult.TabIndex = 0;
+            pcBoxKucult.TabStop = false;
+            pcBoxKucult.Click += pcBoxKucult_Click;
             // 
             // pcBoxEkButce
             // 
@@ -523,6 +538,7 @@
             ClientSize = new Size(1701, 1069);
             Controls.Add(pcBoxClose);
             Controls.Add(pnlButonlar);
+            Controls.Add(pcBoxKucult);
             Controls.Add(pnlFormlar);
             Controls.Add(pnlYanEkran);
             Controls.Add(pnlBaslik);
@@ -548,6 +564,7 @@
             ((System.ComponentModel.ISupportInitialize)pcBoxGuncelle).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxKaydet).EndInit();
             pnlButonlar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pcBoxKucult).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxEkButce).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxGorevliler).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxKesinHesap).EndInit();
@@ -594,5 +611,6 @@
         public ComboBox cmbKoy;
         private PictureBox pcBoxEkButce;
         public ComboBox cmbIlce;
+        private PictureBox pcBoxKucult;
     }
 }

@@ -6,7 +6,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,11 +18,8 @@ namespace Forms
 {
     public partial class FrmKesinHesap1 : Form
     {
-        //TahminiButceGelirManager tahminiButceGelirManager;
-        // TahminiButceGiderManager tahminiButceGiderManager;
-        //GelirManager gelirManager;
-        //GiderManager giderManager;
-        //DegisiklikManager degisiklikManager;
+        // TahminiButceGelirManager tahminiButceGelirManager;
+
         IlceManager ilceManager;
         KoyManager koyManager;
         //DonemManager donemManager;
@@ -31,21 +30,12 @@ namespace Forms
         byte _seciliIlceIndex;
         private GelirManager _gelirManager;
         private GiderManager _giderManager;
-        private TahminiButceGelirManager _tahminiButceManager;
+        private TahminiButceGelirManager _tahminiButceGelirManager;
         private TahminiButceGiderManager _tahminiButceGiderManager;
 
         public FrmKesinHesap1(int seciliKoyIndex, byte seciliDonemIndex, byte seciliIlceIndex)
         {
             InitializeComponent();
-
-            //TahminiButceGelirManager _tahminiButceGelirManager = new TahminiButceGelirManager(new EfTahminiButceGelirDal());
-            //tahminiButceGelirManager = _tahminiButceGelirManager;
-
-            //TahminiButceGiderManager _tahminiButceGiderManager = new TahminiButceGiderManager(new EfTahminiButceGiderDal());
-            //tahminiButceGiderManager = _tahminiButceGiderManager;
-
-            //DegisiklikManager _degisiklikManager = new DegisiklikManager(new EfDegisiklikDal());
-            //degisiklikManager = _degisiklikManager;
 
             _seciliKoyIndex = seciliKoyIndex;
             _seciliDonemIndex = seciliDonemIndex;
@@ -57,22 +47,198 @@ namespace Forms
             KoyManager _koyManager = new KoyManager(new EfKoyDal());
             koyManager = _koyManager;
 
-            //DonemManager _donemManager = new DonemManager(new EfDonemDal());
-            //donemManager = _donemManager;
-
             _gelirManager = new GelirManager(new EfGelirDal()); // Burada uygun IGelirDal implementasyonunu geçmelisiniz
             _giderManager = new GiderManager(new EfGiderDal());
-           // _tahminiButceGelirManager = new TahminiButceGelirManager(EfTahminiButceGelirDal());
-            //_tahminiButceGiderManager = new TahminiButceGiderManager(EfTahminiButceGiderDal());
+            _tahminiButceGelirManager = new TahminiButceGelirManager(new EfTahminiButceGelirDal());
+            _tahminiButceGiderManager = new TahminiButceGiderManager(new EfTahminiButceGiderDal());
         }
 
-        //Gelir'de Hasilat Toplamı için Kullanıyorum
-        public void GelirToplami(int koyId, byte donemId, byte gelirKategoriId, Label label)
+        private void FrmKesinHesap1_Load(object sender, EventArgs e)
         {
-            decimal toplamTutar = _gelirManager.GelirKategoriToplam(koyId, donemId, gelirKategoriId);
+            GelirKategoriVerileriYukleVeToplamiHesapla();
+        }
 
-            // Label'e toplam tutarı yazdır
-            label.Text = toplamTutar.ToString(); // Currency formatında yazdırma
+        // Gelir kategorilerine göre toplam tutarları label'lara yazdır
+        private void LoadGelirKategoriToplamlari()
+        {
+            try
+            {
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 1, lblTahsilHasilat); // Hasilat için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 2, lblTahsilResim); // Resim için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 3, lblTahsilCeza); // Ceza için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 4, lblTahsilYardim); // Yardım için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 5, lblTahsilKoyVakif); // Köy Vakıf için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 6, lblTahsilIstikraz); // İstikraz için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 7, lblTahsilTurluGelir); // Türlü Gelir için
+                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 8, lblTahsilDevir); // Devir için
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gelir verilerini yüklerken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        // Gelir Toplamı için Kullanıyorum
+        private void GelirToplami(int koyId, byte donemId, byte gelirKategoriId, Label label)
+        {
+            try
+            {
+                decimal toplamTutar = _gelirManager.GelirKategoriToplam(koyId, donemId, gelirKategoriId);
+
+                // Label'e toplam tutarı yazdır
+                label.Text = toplamTutar.ToString(); // Currency formatında yazdırma
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Gelir Kategorisi {gelirKategoriId} için toplam tutar yüklenirken bir hata oluştu: " + ex.Message);
+                label.Text = "0.00"; // Hata durumunda varsayılan değeri yazdır
+            }
+        }
+
+        //TahminiButceGelir'de yer alan kayıtları ilgili label'lara yazıdrma
+        private void LoadGelirKategoriVerileri()
+        {
+            try
+            {
+                GelirKategoriLabellarAyarla(lblBKHasilat, 1);
+                GelirKategoriLabellarAyarla(lblBKResim, 2);
+                GelirKategoriLabellarAyarla(lblBKCeza, 3);
+                GelirKategoriLabellarAyarla(lblBKYardim, 4);
+                GelirKategoriLabellarAyarla(lblBKKoyVakif, 5);
+                GelirKategoriLabellarAyarla(lblBKIstikraz, 6);
+                GelirKategoriLabellarAyarla(lblBKTurluGelir, 7);
+                GelirKategoriLabellarAyarla(lblBKDevir, 8);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Verileri yüklerken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        private void GelirKategoriLabellarAyarla(Label label, byte gelirKategoriId)
+        {
+            try
+            {
+                // Veritabanından belirtilen gelir kategorisi için veriyi al
+                var tahminiButceGelir = _tahminiButceGelirManager
+                    .GetListByKoyIdAndDonemIdAndGelirKategoriId(_seciliKoyIndex, _seciliDonemIndex, gelirKategoriId)
+                    .FirstOrDefault();
+
+                // Eğer veri bulunduysa, Label'e formatlı şekilde yazdır; yoksa "0.00" olarak ayarla
+                if (tahminiButceGelir != null)
+                {
+                    label.Text = string.Format("{0:#,0.00}", tahminiButceGelir.TahimiGelirTutari);
+                }
+                else
+                {
+                    label.Text = "0.00";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Gelir Kategorisi {gelirKategoriId} verilerini yüklerken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        // Gelir kategorilerine göre toplam tutarları label'lara yazdır
+        private void LoadGiderAltKategoriToplamlari()
+        {
+            try
+            {
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 1, lblOdenenAylik); // Hasilat için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 2, lblOdenenIdariMasraf); // Resim için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 3, lblOdenenSulama); // Ceza için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 4, lblOdenenAgaclama); // Yardım için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 5, lblOdenenDamizlik); // Köy Vakıf için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 6, lblOdenenOrnekTarla); // İstikraz için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 7, lblOdenenZiraiHayvan); // Türlü Gelir için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 8, lblOdenenPazarCarsi); // Devir için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 9, lblOdenenKucukEndustri); // Hasilat için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 10, lblOdenenOgretmenevi); // Resim için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 11, lblOdenenOkulDaimi); // Ceza için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 12, lblOdenenOkumaOdasi); // Yardım için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 13, lblOdenenKurs); // Köy Vakıf için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 14, lblOdenenOkulUygulama); // İstikraz için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 15, lblOdenenIcmeSulari); // Türlü Gelir için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 16, lblOdenenTemizlik); // Devir için
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 17, lblOdenenSpor);
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 18, lblOdenenIctimai);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gider verilerini yüklerken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        // Gelir Toplamı için Kullanıyorum
+        private void GiderToplami(int koyId, byte donemId, byte giderAltKategoriId, Label label)
+        {
+            try
+            {
+                decimal toplamTutar = _giderManager.GiderAltKategoriToplami(koyId, donemId, giderAltKategoriId);
+
+                // Label'e toplam tutarı yazdır
+                label.Text = toplamTutar.ToString(); // Currency formatında yazdırma
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Gider Kategorisi {giderAltKategoriId} için toplam tutar yüklenirken bir hata oluştu: " + ex.Message);
+                label.Text = "0.00"; // Hata durumunda varsayılan değeri yazdır
+            }
+        }
+
+        private void LoadGiderAltKategoriVerileri()
+        {
+            try
+            {
+                GiderAltKategoriLabellarAyarla(lblBKAylik, 1);
+                GiderAltKategoriLabellarAyarla(lblBKIdariMasraf, 2);
+                GiderAltKategoriLabellarAyarla(lblBKSulama, 3);
+                GiderAltKategoriLabellarAyarla(lblBKAgaclama, 4);
+                GiderAltKategoriLabellarAyarla(lblBKDamizlik, 5);
+                GiderAltKategoriLabellarAyarla(lblBKOrnekTarla, 6);
+                GiderAltKategoriLabellarAyarla(lblBKZiraiHayvan, 7);
+                GiderAltKategoriLabellarAyarla(lblBKPazarCarsi, 8);
+                GiderAltKategoriLabellarAyarla(lblBKKucukEndustri, 9);
+                GiderAltKategoriLabellarAyarla(lblBKOgretmenevi, 10);
+                GiderAltKategoriLabellarAyarla(lblBKOkulDaimi, 11);
+                GiderAltKategoriLabellarAyarla(lblBKOkumaOdasi, 12);
+                GiderAltKategoriLabellarAyarla(lblBKKurs, 13);
+                GiderAltKategoriLabellarAyarla(lblBKOkulUygulama, 14);
+                GiderAltKategoriLabellarAyarla(lblBKIcmeSulari, 15);
+                GiderAltKategoriLabellarAyarla(lblBKTemizlik, 16);
+                GiderAltKategoriLabellarAyarla(lblBKSpor, 17);
+                GiderAltKategoriLabellarAyarla(lblBKIctimai, 18);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Verileri yüklerken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        private void GiderAltKategoriLabellarAyarla(Label label, byte giderAltKategoriId)
+        {
+            try
+            {
+                // Veritabanından belirtilen gelir kategorisi için veriyi al
+                var tahminiButceGider = _tahminiButceGiderManager
+                    .GetListByKoyIdAndDonemIdAndGiderAltKategoriId(_seciliKoyIndex, _seciliDonemIndex, giderAltKategoriId)
+                    .FirstOrDefault();
+
+                // Eğer veri bulunduysa, Label'e formatlı şekilde yazdır; yoksa "0.00" olarak ayarla
+                if (tahminiButceGider != null)
+                {
+                    label.Text = string.Format("{0:#,0.00}", tahminiButceGider.Tutar);
+                }
+                else
+                {
+                    label.Text = "0.00";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Gelir Kategorisi {giderAltKategoriId} verilerini yüklerken bir hata oluştu: " + ex.Message);
+            }
         }
 
         public void AlanlariDoldur(int koyId, byte donemId, byte ilceId)
@@ -82,655 +248,632 @@ namespace Forms
             Ilce secilenIlce = ilceManager.GetById(ilceId);
             lblceAdi.Text = secilenIlce.IlceAdi;
         }
-        public void AylikHesap()
+
+        private void GelirKategoriVerileriYukleVeToplamiHesapla()
         {
-            decimal munzamAylik;
-            decimal tahakkukEdenAylik;
-            decimal iptalAylik;
-
-            if (Convert.ToDecimal(lblOdenenAylik.Text) < Convert.ToDecimal(lblBKAylik.Text))
+            try
             {
-                lblMunzamAylik.Text = 0.ToString();
+                // Gelir kategorisi verilerini ilgili label'lara yazdırma
+                GelirKategoriLabellarAyarla(lblBKHasilat, 1);
+                GelirKategoriLabellarAyarla(lblBKResim, 2);
+                GelirKategoriLabellarAyarla(lblBKCeza, 3);
+                GelirKategoriLabellarAyarla(lblBKYardim, 4);
+                GelirKategoriLabellarAyarla(lblBKKoyVakif, 5);
+                GelirKategoriLabellarAyarla(lblBKIstikraz, 6);
+                GelirKategoriLabellarAyarla(lblBKTurluGelir, 7);
+                GelirKategoriLabellarAyarla(lblBKDevir, 8);
+
+                // Label'ların Text değerlerini decimal türüne dönüştür ve topla
+                decimal toplam = 0;
+
+                toplam += ParseDecimalFromLabel(lblBKHasilat);
+                toplam += ParseDecimalFromLabel(lblBKResim);
+                toplam += ParseDecimalFromLabel(lblBKCeza);
+                toplam += ParseDecimalFromLabel(lblBKYardim);
+                toplam += ParseDecimalFromLabel(lblBKKoyVakif);
+                toplam += ParseDecimalFromLabel(lblBKIstikraz);
+                toplam += ParseDecimalFromLabel(lblBKTurluGelir);
+                toplam += ParseDecimalFromLabel(lblBKDevir);
+
+                // Toplamı lblBKResimHarcToplami label'ına yazdır
+                lblBKResimHarcToplami.Text = string.Format("{0:#,0.00}", toplam);
             }
-            else
+            catch (Exception ex)
             {
-                munzamAylik = Convert.ToDecimal(lblOdenenAylik.Text) - Convert.ToDecimal(lblBKAylik.Text);
-                lblMunzamAylik.Text = munzamAylik.ToString();
+                MessageBox.Show("Verileri yüklerken veya BK Resim Harc Toplamı hesaplanırken bir hata oluştu: " + ex.Message);
             }
-
-            tahakkukEdenAylik = Convert.ToDecimal(lblBKAylik.Text) + Convert.ToDecimal(lblMunzamAylik.Text);
-            lblTahakkukAylik.Text = tahakkukEdenAylik.ToString();
-
-            iptalAylik = Convert.ToDecimal(lblTahakkukAylik.Text) - Convert.ToDecimal(lblOdenenAylik.Text);
-            lblIptalAylik.Text = iptalAylik.ToString();
         }
 
-        public void IdariMasrafHesap()
+        //AYLIK YILLIK TOPLAMLARINI ALMA
+        private void AylikYillikVerileriYukleVeToplamiHesapla()
         {
-            decimal munzamIdariMasraf;
-            decimal tahakkukEdenIdariMasraf;
-            decimal iptalIdariMasraf;
-
-            if (Convert.ToDecimal(lblOdenenIdariMasraf.Text) < Convert.ToDecimal(lblBKIdariMasraf.Text))
+            try
             {
-                lblMunzamIdariMasraf.Text = 0.ToString();
+                // Gider kategorisi verilerini ilgili label'lara yazdırma
+                GiderAltKategoriLabellarAyarla(lblBKAylik, 1);
+                GiderAltKategoriLabellarAyarla(lblBKIdariMasraf, 2);
+
+                // Label'ların Text değerlerini decimal türüne dönüştür ve topla
+                decimal toplam = 0;
+
+                toplam += ParseDecimalFromLabel(lblBKAylik);
+                toplam += ParseDecimalFromLabel(lblBKIdariMasraf);
+
+                // Toplamı lblBKResimHarcToplami label'ına yazdır
+                lblBKIdariToplami.Text = string.Format("{0:#,0.00}", toplam);
             }
-            else
+            catch (Exception ex)
             {
-                munzamIdariMasraf = Convert.ToDecimal(lblOdenenIdariMasraf.Text) - Convert.ToDecimal(lblBKIdariMasraf.Text);
-                lblMunzamIdariMasraf.Text = munzamIdariMasraf.ToString();
+                MessageBox.Show("Verileri yüklerken veya BK Resim Harc Toplamı hesaplanırken bir hata oluştu: " + ex.Message);
             }
-
-            tahakkukEdenIdariMasraf = Convert.ToDecimal(lblBKIdariMasraf.Text) + Convert.ToDecimal(lblMunzamIdariMasraf.Text);
-            lblTahakkukIdariMasraf.Text = tahakkukEdenIdariMasraf.ToString();
-
-            iptalIdariMasraf = Convert.ToDecimal(lblTahakkukIdariMasraf.Text) - Convert.ToDecimal(lblOdenenIdariMasraf.Text);
-            lblIptalIdariMasraf.Text = iptalIdariMasraf.ToString();
         }
 
-        public void SulamaHesap()
+        private void ZiraaVerileriYukleVeToplamiHesapla()
         {
-            decimal munzamSulama;
-            decimal tahakkukEdenSulama;
-            decimal iptalSulama;
-
-            if (Convert.ToDecimal(lblOdenenSulama.Text) < Convert.ToDecimal(lblBKSulama.Text))
+            try
             {
-                lblMunzamSulama.Text = 0.ToString();
+                // Gider kategorisi verilerini ilgili label'lara yazdırma
+                GiderAltKategoriLabellarAyarla(lblBKSulama, 3);
+                GiderAltKategoriLabellarAyarla(lblBKAgaclama, 4);
+                GiderAltKategoriLabellarAyarla(lblBKDamizlik, 5);
+                GiderAltKategoriLabellarAyarla(lblBKOrnekTarla, 6);
+                GiderAltKategoriLabellarAyarla(lblBKZiraiHayvan, 7);
+                GiderAltKategoriLabellarAyarla(lblBKPazarCarsi, 8);
+                GiderAltKategoriLabellarAyarla(lblBKKucukEndustri, 9);
+
+                // Label'ların Text değerlerini decimal türüne dönüştür ve topla
+                decimal toplam = 0;
+
+                toplam += ParseDecimalFromLabel(lblBKSulama);
+                toplam += ParseDecimalFromLabel(lblBKAgaclama);
+                toplam += ParseDecimalFromLabel(lblBKDamizlik);
+                toplam += ParseDecimalFromLabel(lblBKOrnekTarla);
+                toplam += ParseDecimalFromLabel(lblBKZiraiHayvan);
+                toplam += ParseDecimalFromLabel(lblBKPazarCarsi);
+                toplam += ParseDecimalFromLabel(lblBKKucukEndustri);
+
+                // Toplamı lblBKResimHarcToplami label'ına yazdır
+                lblBKZiraatToplami.Text = string.Format("{0:#,0.00}", toplam);
             }
-            else
+            catch (Exception ex)
             {
-                munzamSulama = Convert.ToDecimal(lblOdenenSulama.Text) - Convert.ToDecimal(lblBKSulama.Text);
-                lblMunzamSulama.Text = munzamSulama.ToString();
+                MessageBox.Show("Verileri yüklerken veya BK Resim Harc Toplamı hesaplanırken bir hata oluştu: " + ex.Message);
             }
-
-            tahakkukEdenSulama = Convert.ToDecimal(lblBKSulama.Text) + Convert.ToDecimal(lblMunzamSulama.Text);
-            lblTahakkukSulama.Text = tahakkukEdenSulama.ToString();
-
-            iptalSulama = Convert.ToDecimal(lblTahakkukSulama.Text) - Convert.ToDecimal(lblOdenenSulama.Text);
-            lblIptalSulama.Text = iptalSulama.ToString();
         }
 
-        public void AgaclamaHesap()
+        private void KulturVerileriYukleVeToplamiHesapla()
         {
-            decimal munzamAgaclama;
-            decimal tahakkukEdenAgaclama;
-            decimal iptalAgaclama;
-
-            if (Convert.ToDecimal(lblOdenenAgaclama.Text) < Convert.ToDecimal(lblBKAgaclama.Text))
+            try
             {
-                lblMunzamAgaclama.Text = 0.ToString();
+                // Gider kategorisi verilerini ilgili label'lara yazdırma
+                GiderAltKategoriLabellarAyarla(lblBKOgretmenevi, 10);
+                GiderAltKategoriLabellarAyarla(lblBKOkulDaimi, 11);
+                GiderAltKategoriLabellarAyarla(lblBKOkumaOdasi, 12);
+                GiderAltKategoriLabellarAyarla(lblBKKurs, 13);
+                GiderAltKategoriLabellarAyarla(lblBKOkulUygulama, 14);
+
+
+                // Label'ların Text değerlerini decimal türüne dönüştür ve topla
+                decimal toplam = 0;
+
+                toplam += ParseDecimalFromLabel(lblBKOgretmenevi);
+                toplam += ParseDecimalFromLabel(lblBKOkulDaimi);
+                toplam += ParseDecimalFromLabel(lblBKOkumaOdasi);
+                toplam += ParseDecimalFromLabel(lblBKKurs);
+                toplam += ParseDecimalFromLabel(lblBKOkulUygulama);
+
+
+                // Toplamı lblBKResimHarcToplami label'ına yazdır
+                lblBKKulturToplami.Text = string.Format("{0:#,0.00}", toplam);
             }
-            else
+            catch (Exception ex)
             {
-                munzamAgaclama = Convert.ToDecimal(lblOdenenAgaclama.Text) - Convert.ToDecimal(lblBKAgaclama.Text);
-                lblMunzamAgaclama.Text = munzamAgaclama.ToString();
+                MessageBox.Show("Verileri yüklerken veya BK Resim Harc Toplamı hesaplanırken bir hata oluştu: " + ex.Message);
             }
-
-            tahakkukEdenAgaclama = Convert.ToDecimal(lblBKAgaclama.Text) + Convert.ToDecimal(lblMunzamAgaclama.Text);
-            lblTahakkukAgaclama.Text = tahakkukEdenAgaclama.ToString();
-
-            iptalAgaclama = Convert.ToDecimal(lblTahakkukAgaclama.Text) - Convert.ToDecimal(lblOdenenAgaclama.Text);
-            lblIptalAgaclama.Text = iptalAgaclama.ToString();
         }
 
-        public void DamizlikHesap()
+        private void SaglikVerileriYukleVeToplamiHesapla()
         {
-            decimal munzamDamizlik;
-            decimal tahakkukEdenDamizlik;
-            decimal iptalDamizlik;
-
-            if (Convert.ToDecimal(lblOdenenDamizlik.Text) < Convert.ToDecimal(lblBKDamizlik.Text))
+            try
             {
-                lblMunzamDamizlik.Text = 0.ToString();
+                // Gider kategorisi verilerini ilgili label'lara yazdırma
+                GiderAltKategoriLabellarAyarla(lblBKIcmeSulari, 15);
+                GiderAltKategoriLabellarAyarla(lblBKTemizlik, 16);
+                GiderAltKategoriLabellarAyarla(lblBKSpor, 17);
+                GiderAltKategoriLabellarAyarla(lblBKIctimai, 18);
+
+                // Label'ların Text değerlerini decimal türüne dönüştür ve topla
+                decimal toplam = 0;
+
+                toplam += ParseDecimalFromLabel(lblBKIcmeSulari);
+                toplam += ParseDecimalFromLabel(lblBKTemizlik);
+                toplam += ParseDecimalFromLabel(lblBKSpor);
+                toplam += ParseDecimalFromLabel(lblBKIctimai);
+
+                // Toplamı lblBKResimHarcToplami label'ına yazdır
+                lblBKSaglikToplami.Text = string.Format("{0:#,0.00}", toplam);
             }
-            else
+            catch (Exception ex)
             {
-                munzamDamizlik = Convert.ToDecimal(lblOdenenDamizlik.Text) - Convert.ToDecimal(lblBKDamizlik.Text);
-                lblMunzamDamizlik.Text = munzamDamizlik.ToString();
+                MessageBox.Show("Verileri yüklerken veya BK Resim Harc Toplamı hesaplanırken bir hata oluştu: " + ex.Message);
             }
-
-            tahakkukEdenDamizlik = Convert.ToDecimal(lblBKDamizlik.Text) + Convert.ToDecimal(lblMunzamDamizlik.Text);
-            lblTahakkukDamizlik.Text = tahakkukEdenDamizlik.ToString();
-
-            iptalDamizlik = Convert.ToDecimal(lblTahakkukDamizlik.Text) - Convert.ToDecimal(lblOdenenDamizlik.Text);
-            lblIptalDamizlik.Text = iptalDamizlik.ToString();
         }
 
-        public void OrnekTarlaHesap()
+        // Bir label'ın Text değerini decimal olarak parse eder, hata olursa 0 döner
+        private decimal ParseDecimalFromLabel(Label label)
         {
-            decimal munzamOrnekTarla;
-            decimal tahakkukEdenOrnekTarla;
-            decimal iptalOrnekTarla;
-
-            if (Convert.ToDecimal(lblOdenenOrnekTarla.Text) < Convert.ToDecimal(lblBKOrnekTarla.Text))
+            if (decimal.TryParse(label.Text, out decimal value))
             {
-                lblMunzamOrnekTarla.Text = 0.ToString();
+                return value;
             }
-            else
-            {
-                munzamOrnekTarla = Convert.ToDecimal(lblOdenenOrnekTarla.Text) - Convert.ToDecimal(lblBKOrnekTarla.Text);
-                lblMunzamOrnekTarla.Text = munzamOrnekTarla.ToString();
-            }
-
-            tahakkukEdenOrnekTarla = Convert.ToDecimal(lblBKOrnekTarla.Text) + Convert.ToDecimal(lblMunzamOrnekTarla.Text);
-            lblTahakkukOrnekTarla.Text = tahakkukEdenOrnekTarla.ToString();
-
-            iptalOrnekTarla = Convert.ToDecimal(lblTahakkukOrnekTarla.Text) - Convert.ToDecimal(lblOdenenOrnekTarla.Text);
-            lblIptalOrnekTarla.Text = iptalOrnekTarla.ToString();
-        }
-
-        public void ZiraiHayvanHesap()
-        {
-            decimal munzamZiraiHayvan;
-            decimal tahakkukEdenZiraiHayvan;
-            decimal iptalZiraiHayvan;
-
-            if (Convert.ToDecimal(lblOdenenZiraiHayvan.Text) < Convert.ToDecimal(lblBKZiraiHayvan.Text))
-            {
-                lblMunzamZiraiHayvan.Text = 0.ToString();
-            }
-            else
-            {
-                munzamZiraiHayvan = Convert.ToDecimal(lblOdenenZiraiHayvan.Text) - Convert.ToDecimal(lblBKZiraiHayvan.Text);
-                lblMunzamZiraiHayvan.Text = munzamZiraiHayvan.ToString();
-            }
-
-            tahakkukEdenZiraiHayvan = Convert.ToDecimal(lblBKZiraiHayvan.Text) + Convert.ToDecimal(lblMunzamZiraiHayvan.Text);
-            lblTahakkukZiraiHayvan.Text = tahakkukEdenZiraiHayvan.ToString();
-
-            iptalZiraiHayvan = Convert.ToDecimal(lblTahakkukZiraiHayvan.Text) - Convert.ToDecimal(lblOdenenZiraiHayvan.Text);
-            lblIptalZiraiHayvan.Text = iptalZiraiHayvan.ToString();
-        }
-
-        public void PazarCarsiHesap()
-        {
-            decimal munzamPazarCarsi;
-            decimal tahakkukEdenPazarCarsi;
-            decimal iptalPazarCarsi;
-
-            if (Convert.ToDecimal(lblOdenenPazarCarsi.Text) < Convert.ToDecimal(lblBKPazarCarsi.Text))
-            {
-                lblMunzamPazarCarsi.Text = 0.ToString();
-            }
-            else
-            {
-                munzamPazarCarsi = Convert.ToDecimal(lblOdenenPazarCarsi.Text) - Convert.ToDecimal(lblBKPazarCarsi.Text);
-                lblMunzamPazarCarsi.Text = munzamPazarCarsi.ToString();
-            }
-
-            tahakkukEdenPazarCarsi = Convert.ToDecimal(lblBKPazarCarsi.Text) + Convert.ToDecimal(lblMunzamPazarCarsi.Text);
-            lblTahakkukPazarCarsi.Text = tahakkukEdenPazarCarsi.ToString();
-
-            iptalPazarCarsi = Convert.ToDecimal(lblTahakkukPazarCarsi.Text) - Convert.ToDecimal(lblOdenenPazarCarsi.Text);
-            lblIptalPazarCarsi.Text = iptalPazarCarsi.ToString();
-        }
-
-        public void KucukEndustriHesap()
-        {
-            decimal munzamKucukEndustri;
-            decimal tahakkukEdenKucukEndustri;
-            decimal iptalKucukEndustri;
-
-            if (Convert.ToDecimal(lblOdenenKucukEndustri.Text) < Convert.ToDecimal(lblBKKucukEndustri.Text))
-            {
-                lblMunzamKucukEndustri.Text = 0.ToString();
-            }
-            else
-            {
-                munzamKucukEndustri = Convert.ToDecimal(lblOdenenKucukEndustri.Text) - Convert.ToDecimal(lblBKKucukEndustri.Text);
-                lblMunzamKucukEndustri.Text = munzamKucukEndustri.ToString();
-            }
-
-            tahakkukEdenKucukEndustri = Convert.ToDecimal(lblBKKucukEndustri.Text) + Convert.ToDecimal(lblMunzamKucukEndustri.Text);
-            lblTahakkukKucukEndustri.Text = tahakkukEdenKucukEndustri.ToString();
-
-            iptalKucukEndustri = Convert.ToDecimal(lblTahakkukKucukEndustri.Text) - Convert.ToDecimal(lblOdenenKucukEndustri.Text);
-            lblIptalKucukEndustri.Text = iptalKucukEndustri.ToString();
-        }
-
-        public void OgretmeneviHesap()
-        {
-            decimal munzamOgretmenevi;
-            decimal tahakkukEdenOgretmenevi;
-            decimal iptalOgretmenevi;
-
-            if (Convert.ToDecimal(lblOdenenOgretmenevi.Text) < Convert.ToDecimal(lblBKOgretmenevi.Text))
-            {
-                lblMunzamOgretmenevi.Text = 0.ToString();
-            }
-            else
-            {
-                munzamOgretmenevi = Convert.ToDecimal(lblOdenenOgretmenevi.Text) - Convert.ToDecimal(lblBKOgretmenevi.Text);
-                lblMunzamOgretmenevi.Text = munzamOgretmenevi.ToString();
-            }
-
-            tahakkukEdenOgretmenevi = Convert.ToDecimal(lblBKOgretmenevi.Text) + Convert.ToDecimal(lblMunzamOgretmenevi.Text);
-            lblTahakkukOgretmenevi.Text = tahakkukEdenOgretmenevi.ToString();
-
-            iptalOgretmenevi = Convert.ToDecimal(lblTahakkukOgretmenevi.Text) - Convert.ToDecimal(lblOdenenOgretmenevi.Text);
-            lblIptalOgretmenevi.Text = iptalOgretmenevi.ToString();
-        }
-
-        public void OkulDaimiHesap()
-        {
-            decimal munzamOkulDaimi;
-            decimal tahakkukEdenOkulDaimi;
-            decimal iptalOkulDaimi;
-
-            if (Convert.ToDecimal(lblOdenenOkulDaimi.Text) < Convert.ToDecimal(lblBKOkulDaimi.Text))
-            {
-                lblMunzamOkulDaimi.Text = 0.ToString();
-            }
-            else
-            {
-                munzamOkulDaimi = Convert.ToDecimal(lblOdenenOkulDaimi.Text) - Convert.ToDecimal(lblBKOkulDaimi.Text);
-                lblMunzamOkulDaimi.Text = munzamOkulDaimi.ToString();
-            }
-
-            tahakkukEdenOkulDaimi = Convert.ToDecimal(lblBKOkulDaimi.Text) + Convert.ToDecimal(lblMunzamOkulDaimi.Text);
-            lblTahakkukOkulDaimi.Text = tahakkukEdenOkulDaimi.ToString();
-
-            iptalOkulDaimi = Convert.ToDecimal(lblTahakkukOkulDaimi.Text) - Convert.ToDecimal(lblOdenenOkulDaimi.Text);
-            lblIptalOkulDaimi.Text = iptalOkulDaimi.ToString();
-        }
-
-        public void KursHesap()
-        {
-            decimal munzamKurs;
-            decimal tahakkukEdenKurs;
-            decimal iptalKurs;
-
-            if (Convert.ToDecimal(lblOdenenKurs.Text) < Convert.ToDecimal(lblBKKurs.Text))
-            {
-                lblMunzamKurs.Text = 0.ToString();
-            }
-            else
-            {
-                munzamKurs = Convert.ToDecimal(lblOdenenKurs.Text) - Convert.ToDecimal(lblBKKurs.Text);
-                lblMunzamKurs.Text = munzamKurs.ToString();
-            }
-
-            tahakkukEdenKurs = Convert.ToDecimal(lblBKKurs.Text) + Convert.ToDecimal(lblMunzamKurs.Text);
-            lblTahakkukKurs.Text = tahakkukEdenKurs.ToString();
-
-            iptalKurs = Convert.ToDecimal(lblTahakkukKurs.Text) - Convert.ToDecimal(lblOdenenKurs.Text);
-            lblIptalKurs.Text = iptalKurs.ToString();
-        }
-
-        public void OkumaOdasiHesap()
-        {
-            decimal munzamOkumaOdasi;
-            decimal tahakkukEdenOkumaOdasi;
-            decimal iptalOkumaOdasi;
-
-            if (Convert.ToDecimal(lblOdenenOkumaOdasi.Text) < Convert.ToDecimal(lblBKOkumaOdasi.Text))
-            {
-                lblMunzamOkumaOdasi.Text = 0.ToString();
-            }
-            else
-            {
-                munzamOkumaOdasi = Convert.ToDecimal(lblOdenenOkumaOdasi.Text) - Convert.ToDecimal(lblBKOkumaOdasi.Text);
-                lblMunzamOkumaOdasi.Text = munzamOkumaOdasi.ToString();
-            }
-
-            tahakkukEdenOkumaOdasi = Convert.ToDecimal(lblBKOkumaOdasi.Text) + Convert.ToDecimal(lblMunzamOkumaOdasi.Text);
-            lblTahakkukOkumaOdasi.Text = tahakkukEdenOkumaOdasi.ToString();
-
-            iptalOkumaOdasi = Convert.ToDecimal(lblTahakkukOkumaOdasi.Text) - Convert.ToDecimal(lblOdenenOkumaOdasi.Text);
-            lblIptalOkumaOdasi.Text = iptalOkumaOdasi.ToString();
-        }
-
-        public void OkulUygulamaHesap()
-        {
-            decimal munzamOkulUygulama;
-            decimal tahakkukEdenOkulUygulama;
-            decimal iptalOkulUygulama;
-
-            if (Convert.ToDecimal(lblOdenenOkulUygulama.Text) < Convert.ToDecimal(lblBKOkulUygulama.Text))
-            {
-                lblMunzamOkulUygulama.Text = 0.ToString();
-            }
-            else
-            {
-                munzamOkulUygulama = Convert.ToDecimal(lblOdenenOkulUygulama.Text) - Convert.ToDecimal(lblBKOkulUygulama.Text);
-                lblMunzamOkulUygulama.Text = munzamOkulUygulama.ToString();
-            }
-
-            tahakkukEdenOkulUygulama = Convert.ToDecimal(lblBKOkulUygulama.Text) + Convert.ToDecimal(lblMunzamOkulUygulama.Text);
-            lblTahakkukOkulUygulama.Text = tahakkukEdenOkulUygulama.ToString();
-
-            iptalOkulUygulama = Convert.ToDecimal(lblTahakkukOkulUygulama.Text) - Convert.ToDecimal(lblOdenenOkulUygulama.Text);
-            lblIptalOkulUygulama.Text = iptalOkulUygulama.ToString();
-        }
-
-        public void IcmeSulariHesap()
-        {
-            decimal munzamIcmeSulari;
-            decimal tahakkukEdenIcmeSulari;
-            decimal iptalIcmeSulari;
-
-            if (Convert.ToDecimal(lblOdenenIcmeSulari.Text) < Convert.ToDecimal(lblBKIcmeSulari.Text))
-            {
-                lblMunzamIcmeSulari.Text = 0.ToString();
-            }
-            else
-            {
-                munzamIcmeSulari = Convert.ToDecimal(lblOdenenIcmeSulari.Text) - Convert.ToDecimal(lblBKIcmeSulari.Text);
-                lblMunzamIcmeSulari.Text = munzamIcmeSulari.ToString();
-            }
-
-            tahakkukEdenIcmeSulari = Convert.ToDecimal(lblBKIcmeSulari.Text) + Convert.ToDecimal(lblMunzamIcmeSulari.Text);
-            lblTahakkukIcmeSulari.Text = tahakkukEdenIcmeSulari.ToString();
-
-            iptalIcmeSulari = Convert.ToDecimal(lblTahakkukIcmeSulari.Text) - Convert.ToDecimal(lblOdenenIcmeSulari.Text);
-            lblIptalIcmeSulari.Text = iptalIcmeSulari.ToString();
-        }
-
-        public void TemizlikHesap()
-        {
-            decimal munzamTemizlik;
-            decimal tahakkukEdenTemizlik;
-            decimal iptalTemizlik;
-
-            if (Convert.ToDecimal(lblOdenenTemizlik.Text) < Convert.ToDecimal(lblBKTemizlik.Text))
-            {
-                lblMunzamTemizlik.Text = 0.ToString();
-            }
-            else
-            {
-                munzamTemizlik = Convert.ToDecimal(lblOdenenTemizlik.Text) - Convert.ToDecimal(lblBKTemizlik.Text);
-                lblMunzamTemizlik.Text = munzamTemizlik.ToString();
-            }
-
-            tahakkukEdenTemizlik = Convert.ToDecimal(lblBKTemizlik.Text) + Convert.ToDecimal(lblMunzamTemizlik.Text);
-            lblTahakkukTemizlik.Text = tahakkukEdenTemizlik.ToString();
-
-            iptalTemizlik = Convert.ToDecimal(lblTahakkukTemizlik.Text) - Convert.ToDecimal(lblOdenenTemizlik.Text);
-            lblIptalTemizlik.Text = iptalTemizlik.ToString();
-        }
-
-        public void SporHesap()
-        {
-            decimal munzamSpor;
-            decimal tahakkukEdenSpor;
-            decimal iptalSpor;
-
-            if (Convert.ToDecimal(lblOdenenSpor.Text) < Convert.ToDecimal(lblBKSpor.Text))
-            {
-                lblMunzamSpor.Text = 0.ToString();
-            }
-            else
-            {
-                munzamSpor = Convert.ToDecimal(lblOdenenSpor.Text) - Convert.ToDecimal(lblBKSpor.Text);
-                lblMunzamSpor.Text = munzamSpor.ToString();
-            }
-
-            tahakkukEdenSpor = Convert.ToDecimal(lblBKSpor.Text) + Convert.ToDecimal(lblMunzamSpor.Text);
-            lblTahakkukSpor.Text = tahakkukEdenSpor.ToString();
-
-            iptalSpor = Convert.ToDecimal(lblTahakkukSpor.Text) - Convert.ToDecimal(lblOdenenSpor.Text);
-            lblIptalSpor.Text = iptalSpor.ToString();
-        }
-
-        public void IctimaiHesap()
-        {
-            decimal munzamIctimai;
-            decimal tahakkukEdenIctimai;
-            decimal iptalIctimai;
-
-            if (Convert.ToDecimal(lblOdenenIctimai.Text) < Convert.ToDecimal(lblBKIctimai.Text))
-            {
-                lblMunzamIctimai.Text = 0.ToString();
-            }
-            else
-            {
-                munzamIctimai = Convert.ToDecimal(lblOdenenIctimai.Text) - Convert.ToDecimal(lblBKIctimai.Text);
-                lblMunzamIctimai.Text = munzamIctimai.ToString();
-            }
-
-            tahakkukEdenIctimai = Convert.ToDecimal(lblBKIctimai.Text) + Convert.ToDecimal(lblMunzamIctimai.Text);
-            lblTahakkukIctimai.Text = tahakkukEdenIctimai.ToString();
-
-            iptalIctimai = Convert.ToDecimal(lblTahakkukIctimai.Text) - Convert.ToDecimal(lblOdenenIctimai.Text);
-            lblIptalIctimai.Text = iptalIctimai.ToString();
+            return 0m;
         }
 
         public void HasilatHesap()
         {
-            decimal munzamHasilat;
-            decimal yekunHasilat;
-            decimal devredenHasilat;
-
-            if (Convert.ToDecimal(lblTahsilHasilat.Text) < Convert.ToDecimal(lblBKHasilat.Text))
+            try
             {
-                lblMunzamHasilat.Text = 0.ToString();
+                decimal tahsilHasilat = 0;
+                decimal bkHasilat = 0;
+                decimal munzamHasilat = 0;
+                decimal yekunHasilat = 0;
+                decimal devredenHasilat = 0;
+
+                // lblTahsilHasilat.Text'i decimal türüne dönüştür
+                if (!decimal.TryParse(lblTahsilHasilat.Text, out tahsilHasilat))
+                {
+                    MessageBox.Show("lblTahsilHasilat.Text geçerli bir sayı değil: " + lblTahsilHasilat.Text);
+                    return;
+                }
+
+                // lblBKHasilat.Text'i decimal türüne dönüştür
+                if (!decimal.TryParse(lblBKHasilat.Text, out bkHasilat))
+                {
+                    MessageBox.Show("lblBKHasilat.Text geçerli bir sayı değil: " + lblBKHasilat.Text);
+                    return;
+                }
+
+                Debug.WriteLine($"tahsilHasilat: {tahsilHasilat}, bkHasilat: {bkHasilat}");
+
+                // munzamHasilat hesaplama
+                if (tahsilHasilat < bkHasilat)
+                {
+                    lblMunzamHasilat.Text = "0.00";
+                }
+                else
+                {
+                    munzamHasilat = tahsilHasilat - bkHasilat;
+                    lblMunzamHasilat.Text = string.Format("{0:#,0.00}", munzamHasilat);
+                }
+
+                Debug.WriteLine($"munzamHasilat: {munzamHasilat}");
+
+                // yekunHasilat hesaplama
+                yekunHasilat = bkHasilat + munzamHasilat;
+                lblYekunHasilat.Text = string.Format("{0:#,0.00}", yekunHasilat);
+
+                Debug.WriteLine($"yekunHasilat: {yekunHasilat}");
+
+                // devredenHasilat hesaplama
+                devredenHasilat = yekunHasilat - tahsilHasilat;
+                lblDevredenHasilat.Text = string.Format("{0:#,0.00}", devredenHasilat);
+
+                Debug.WriteLine($"devredenHasilat: {devredenHasilat}");
+
+                // Label'ların Visible ayarı
+                lblMunzamHasilat.Visible = !IsZeroOrEmpty(lblMunzamHasilat.Text);
+                lblYekunHasilat.Visible = !IsZeroOrEmpty(lblYekunHasilat.Text);
+                lblDevredenHasilat.Visible = !IsZeroOrEmpty(lblDevredenHasilat.Text);
             }
-            else
+            catch (Exception ex)
             {
-                munzamHasilat = Convert.ToDecimal(lblTahsilHasilat.Text) - Convert.ToDecimal(lblBKHasilat.Text);
-                lblMunzamHasilat.Text = munzamHasilat.ToString();
-            }
-
-            yekunHasilat = Convert.ToDecimal(lblBKHasilat.Text) + Convert.ToDecimal(lblMunzamHasilat.Text);
-            lblYekunHasilat.Text = yekunHasilat.ToString();
-
-            devredenHasilat = Convert.ToDecimal(lblYekunHasilat.Text) - Convert.ToDecimal(lblTahsilHasilat.Text);
-            lblDevredenHasilat.Text = devredenHasilat.ToString();
-
-            if (lblMunzamHasilat.Text == "0")
-            {
-                lblMunzamHasilat.Visible = false;
+                MessageBox.Show("Hasilat hesapları yapılırken bir hata oluştu: " + ex.Message);
             }
         }
 
         public void ResimHesap()
         {
-            decimal munzamResim;
-            decimal yekunResim;
-            decimal devredenResim;
-
-            if (Convert.ToDecimal(lblTahsilResim.Text) < Convert.ToDecimal(lblBKResim.Text))
+            try
             {
-                lblMunzamResim.Text = 0.ToString();
+                decimal tahsilResim = 0;
+                decimal bkResim = 0;
+                decimal munzamResim = 0;
+                decimal yekunResim = 0;
+                decimal devredenResim = 0;
+
+                // lblTahsilResim.Text'i decimal türüne dönüştür
+                if (!decimal.TryParse(lblTahsilResim.Text.Replace(".", ","), NumberStyles.Any, CultureInfo.InvariantCulture, out tahsilResim))
+                {
+                    MessageBox.Show("lblTahsilResim.Text geçerli bir sayı değil: " + lblTahsilResim.Text);
+                    return;
+                }
+
+                // lblBKResim.Text'i decimal türüne dönüştür
+                if (!decimal.TryParse(lblBKResim.Text.Replace(".", ","), NumberStyles.Any, CultureInfo.InvariantCulture, out bkResim))
+                {
+                    MessageBox.Show("lblBKResim.Text geçerli bir sayı değil: " + lblBKResim.Text);
+                    return;
+                }
+
+                // Debug mesajları ekleyerek değerleri kontrol et
+                Debug.WriteLine($"lblTahsilResim.Text: {lblTahsilResim.Text}");
+                Debug.WriteLine($"lblBKResim.Text: {lblBKResim.Text}");
+
+                // munzamResim hesaplama
+                if (tahsilResim < bkResim)
+                {
+                    lblMunzamResim.Text = "0";
+                }
+                else
+                {
+                    munzamResim = tahsilResim - bkResim;
+                    lblMunzamResim.Text = string.Format("{0:#,0.00}", munzamResim);
+                }
+
+                // yekunResim hesaplama
+                yekunResim = bkResim + munzamResim;
+                lblYekunResim.Text = string.Format("{0:#,0.00}", yekunResim);
+
+                // devredenResim hesaplama
+                devredenResim = yekunResim - tahsilResim;
+                lblDevredenResim.Text = string.Format("{0:#,0.00}", devredenResim);
+
+                // Text'i "0" olan labelların görünürlüğünü kapatma
+                lblMunzamResim.Visible = !IsZeroOrEmpty(lblMunzamResim.Text);
+                lblYekunResim.Visible = !IsZeroOrEmpty(lblYekunResim.Text);
+                lblDevredenResim.Visible = !IsZeroOrEmpty(lblDevredenResim.Text);
             }
-            else
+            catch (Exception ex)
             {
-                munzamResim = Convert.ToDecimal(lblTahsilResim.Text) - Convert.ToDecimal(lblBKResim.Text);
-                lblMunzamResim.Text = munzamResim.ToString();
+                MessageBox.Show("Resim, Harç hesapları yapılırken bir hata oluştu: " + ex.Message);
             }
-
-            yekunResim = Convert.ToDecimal(lblBKResim.Text) + Convert.ToDecimal(lblMunzamResim.Text);
-            lblYekunResim.Text = yekunResim.ToString();
-
-            devredenResim = Convert.ToDecimal(lblYekunResim.Text) - Convert.ToDecimal(lblTahsilResim.Text);
-            lblDevredenResim.Text = devredenResim.ToString();
         }
 
         public void CezaHesap()
         {
-            decimal munzamCeza;
-            decimal yekunCeza;
-            decimal devredenCeza;
-
-            if (Convert.ToDecimal(lblTahsilCeza.Text) < Convert.ToDecimal(lblBKCeza.Text))
+            try
             {
-                lblMunzamCeza.Text = 0.ToString();
+                decimal tahsilCeza = 0;
+                decimal bkCeza = 0;
+                decimal munzamCeza = 0;
+                decimal yekunCeza = 0;
+                decimal devredenCeza = 0;
+
+                // lblTahsilHasilat.Text'i decimal türüne dönüştür
+                if (!decimal.TryParse(lblTahsilCeza.Text, out tahsilCeza))
+                {
+                    MessageBox.Show("lblTahsilHasilat.Text geçerli bir sayı değil: " + lblTahsilCeza.Text);
+                    return;
+                }
+
+                // lblBKHasilat.Text'i decimal türüne dönüştür
+                if (!decimal.TryParse(lblBKCeza.Text, out bkCeza))
+                {
+                    MessageBox.Show("lblBKCeza.Text geçerli bir sayı değil: " + lblBKCeza.Text);
+                    return;
+                }
+
+                Debug.WriteLine($"tahsilCeza: {tahsilCeza}, bkHasilat: {bkCeza}");
+
+                // munzamHasilat hesaplama
+                if (tahsilCeza < bkCeza)
+                {
+                    lblMunzamCeza.Text = "0.00";
+                }
+                else
+                {
+                    munzamCeza = tahsilCeza - bkCeza;
+                    lblMunzamCeza.Text = string.Format("{0:#,0.00}", munzamCeza);
+                }
+
+                Debug.WriteLine($"munzamHasilat: {munzamCeza}");
+
+                // yekunHasilat hesaplama
+                yekunCeza = bkCeza + munzamCeza;
+                lblYekunCeza.Text = string.Format("{0:#,0.00}", yekunCeza);
+
+                Debug.WriteLine($"yekunCeza: {yekunCeza}");
+
+                // devredenHasilat hesaplama
+                devredenCeza = yekunCeza - tahsilCeza;
+                lblDevredenCeza.Text = string.Format("{0:#,0.00}", devredenCeza);
+
+                Debug.WriteLine($"devredenCeza: {devredenCeza}");
+
+                // lblMunzamHasilat için Visible ayarı
+                lblMunzamCeza.Visible = !IsZeroOrEmpty(lblMunzamHasilat.Text);
+
+                // lblYekunHasilat için Visible ayarı
+                lblYekunCeza.Visible = !IsZeroOrEmpty(lblYekunCeza.Text);
+
+                // lblDevredenHasilat için Visible ayarı
+                lblDevredenCeza.Visible = !IsZeroOrEmpty(lblDevredenCeza.Text);
             }
-            else
+            catch (Exception ex)
             {
-                munzamCeza = Convert.ToDecimal(lblTahsilCeza.Text) - Convert.ToDecimal(lblBKCeza.Text);
-                lblMunzamCeza.Text = munzamCeza.ToString();
+                MessageBox.Show("Ceza hesapları yapılırken bir hata oluştu: " + ex.Message);
             }
-
-            yekunCeza = Convert.ToDecimal(lblBKCeza.Text) + Convert.ToDecimal(lblMunzamCeza.Text);
-            lblYekunCeza.Text = yekunCeza.ToString();
-
-            devredenCeza = Convert.ToDecimal(lblYekunCeza.Text) - Convert.ToDecimal(lblTahsilCeza.Text);
-            lblDevredenCeza.Text = devredenCeza.ToString();
         }
 
         public void YardimHesap()
         {
-            decimal munzamYardim;
-            decimal yekunYardim;
-            decimal devredenYardim;
-
-            if (Convert.ToDecimal(lblTahsilYardim.Text) < Convert.ToDecimal(lblBKYardim.Text))
+            try
             {
-                lblMunzamYardim.Text = 0.ToString();
+                decimal tahsilYardim = 0;
+                decimal bkYardim = 0;
+                decimal munzamYardim = 0;
+                decimal yekunYardim = 0;
+                decimal devredenYardim = 0;
+
+                // lblTahsilHasilat.Text'i decimal türüne dönüştür
+                if (!decimal.TryParse(lblTahsilYardim.Text, out tahsilYardim))
+                {
+                    MessageBox.Show("lblTahsilYardim.Text geçerli bir sayı değil: " + lblTahsilYardim.Text);
+                    return;
+                }
+
+                // lblBKHasilat.Text'i decimal türüne dönüştür
+                if (!decimal.TryParse(lblBKYardim.Text, out bkYardim))
+                {
+                    MessageBox.Show("lblBKYardim.Text geçerli bir sayı değil: " + lblBKYardim.Text);
+                    return;
+                }
+
+                //Debug.WriteLine($"tahsilCeza: {tahsilCeza}, bkHasilat: {bkCeza}");
+
+                // munzamHasilat hesaplama
+                if (tahsilYardim < bkYardim)
+                {
+                    lblMunzamYardim.Text = "0.00";
+                }
+                else
+                {
+                    munzamYardim = tahsilYardim - bkYardim;
+                    lblMunzamYardim.Text = string.Format("{0:#,0.00}", munzamYardim);
+                }
+
+                // yekunYardim hesaplama
+                yekunYardim = bkYardim + munzamYardim;
+                lblYekunYardim.Text = string.Format("{0:#,0.00}", yekunYardim);
+
+                // devredenYardim hesaplama
+                devredenYardim = yekunYardim - tahsilYardim;
+                lblDevredenYardim.Text = string.Format("{0:#,0.00}", devredenYardim);
+
+                // lblMunzamYardim için Visible ayarı
+                lblMunzamYardim.Visible = !IsZeroOrEmpty(lblMunzamYardim.Text);
+
+                // lblYekunHYardim için Visible ayarı
+                lblYekunYardim.Visible = !IsZeroOrEmpty(lblYekunYardim.Text);
+
+                // lblDevredenHYardim için Visible ayarı
+                lblDevredenYardim.Visible = !IsZeroOrEmpty(lblDevredenYardim.Text);
             }
-            else
+            catch (Exception ex)
             {
-                munzamYardim = Convert.ToDecimal(lblTahsilYardim.Text) - Convert.ToDecimal(lblBKYardim.Text);
-                lblMunzamYardim.Text = munzamYardim.ToString();
+                MessageBox.Show("Yardim hesapları yapılırken bir hata oluştu: " + ex.Message);
             }
-
-            yekunYardim = Convert.ToDecimal(lblBKYardim.Text) + Convert.ToDecimal(lblMunzamYardim.Text);
-            lblYekunYardim.Text = yekunYardim.ToString();
-
-            devredenYardim = Convert.ToDecimal(lblYekunYardim.Text) - Convert.ToDecimal(lblTahsilYardim.Text);
-            lblDevredenYardim.Text = devredenYardim.ToString();
         }
 
         public void KoyVakifHesap()
         {
-            decimal munzamKoyVakif;
-            decimal yekunKoyVakif;
-            decimal devredenKoyVakif;
-
-            if (Convert.ToDecimal(lblTahsilKoyVakif.Text) < Convert.ToDecimal(lblBKKoyVakif.Text))
+            try
             {
-                lblMunzamKoyVakif.Text = 0.ToString();
+                decimal tahsilKoyVakif = 0;
+                decimal bkKoyVakif = 0;
+                decimal munzamKoyVakif = 0;
+                decimal yekunKoyVakif = 0;
+                decimal devredenKoyVakif = 0;
+
+                if (!decimal.TryParse(lblTahsilKoyVakif.Text, out tahsilKoyVakif))
+                {
+                    MessageBox.Show("lblTahsilKoyVakif.Text geçerli bir sayı değil: " + lblTahsilKoyVakif.Text);
+                    return;
+                }
+
+                if (!decimal.TryParse(lblBKKoyVakif.Text, out bkKoyVakif))
+                {
+                    MessageBox.Show("lblBKKoyVakif.Text geçerli bir sayı değil: " + lblBKKoyVakif.Text);
+                    return;
+                }
+
+                if (tahsilKoyVakif < bkKoyVakif)
+                {
+                    lblMunzamKoyVakif.Text = "0.00";
+                }
+                else
+                {
+                    munzamKoyVakif = tahsilKoyVakif - bkKoyVakif;
+                    lblMunzamKoyVakif.Text = string.Format("{0:#,0.00}", munzamKoyVakif);
+                }
+
+                yekunKoyVakif = bkKoyVakif + munzamKoyVakif;
+                lblYekunKoyVakif.Text = string.Format("{0:#,0.00}", yekunKoyVakif);
+                devredenKoyVakif = yekunKoyVakif - tahsilKoyVakif;
+                lblDevredenKoyVakif.Text = string.Format("{0:#,0.00}", devredenKoyVakif);
+                lblMunzamKoyVakif.Visible = !IsZeroOrEmpty(lblMunzamKoyVakif.Text);
+                lblYekunKoyVakif.Visible = !IsZeroOrEmpty(lblYekunKoyVakif.Text);
+                lblDevredenKoyVakif.Visible = !IsZeroOrEmpty(lblDevredenKoyVakif.Text);
             }
-            else
+            catch (Exception ex)
             {
-                munzamKoyVakif = Convert.ToDecimal(lblTahsilKoyVakif.Text) - Convert.ToDecimal(lblBKKoyVakif.Text);
-                lblMunzamKoyVakif.Text = munzamKoyVakif.ToString();
+                MessageBox.Show("Köy Vakıf hesapları yapılırken bir hata oluştu: " + ex.Message);
             }
-
-            yekunKoyVakif = Convert.ToDecimal(lblBKKoyVakif.Text) + Convert.ToDecimal(lblMunzamKoyVakif.Text);
-            lblYekunKoyVakif.Text = yekunKoyVakif.ToString();
-
-            devredenKoyVakif = Convert.ToDecimal(lblYekunKoyVakif.Text) - Convert.ToDecimal(lblTahsilKoyVakif.Text);
-            lblDevredenKoyVakif.Text = devredenKoyVakif.ToString();
         }
 
         public void IstikrazHesap()
         {
-            decimal munzamIstikraz;
-            decimal yekunIstikraz;
-            decimal devredenIstikraz;
-
-            if (Convert.ToDecimal(lblTahsilIstikraz.Text) < Convert.ToDecimal(lblBKIstikraz.Text))
+            try
             {
-                lblMunzamIstikraz.Text = 0.ToString();
+                decimal tahsilIstikraz = 0;
+                decimal bkIstikraz = 0;
+                decimal munzamIstikraz = 0;
+                decimal yekunIstikraz = 0;
+                decimal devredenIstikraz = 0;
+
+                if (!decimal.TryParse(lblTahsilIstikraz.Text, out tahsilIstikraz))
+                {
+                    MessageBox.Show("lblTahsilIstikraz.Text geçerli bir sayı değil: " + lblTahsilIstikraz.Text);
+                    return;
+                }
+
+                if (!decimal.TryParse(lblBKIstikraz.Text, out bkIstikraz))
+                {
+                    MessageBox.Show("lblBKIstikraz.Text geçerli bir sayı değil: " + lblBKIstikraz.Text);
+                    return;
+                }
+
+                if (tahsilIstikraz < bkIstikraz)
+                {
+                    lblMunzamIstikraz.Text = "0.00";
+                }
+                else
+                {
+                    munzamIstikraz = tahsilIstikraz - bkIstikraz;
+                    lblMunzamIstikraz.Text = string.Format("{0:#,0.00}", munzamIstikraz);
+                }
+
+                yekunIstikraz = bkIstikraz + munzamIstikraz;
+                lblYekunIstikraz.Text = string.Format("{0:#,0.00}", yekunIstikraz);
+                devredenIstikraz = yekunIstikraz - tahsilIstikraz;
+                lblDevredenIstikraz.Text = string.Format("{0:#,0.00}", devredenIstikraz);
+                lblMunzamIstikraz.Visible = !IsZeroOrEmpty(lblMunzamIstikraz.Text);
+                lblYekunIstikraz.Visible = !IsZeroOrEmpty(lblYekunIstikraz.Text);
+                lblDevredenIstikraz.Visible = !IsZeroOrEmpty(lblDevredenIstikraz.Text);
             }
-            else
+            catch (Exception ex)
             {
-                munzamIstikraz = Convert.ToDecimal(lblTahsilIstikraz.Text) - Convert.ToDecimal(lblBKIstikraz.Text);
-                lblMunzamIstikraz.Text = munzamIstikraz.ToString();
+                MessageBox.Show("İstikraz hesapları yapılırken bir hata oluştu: " + ex.Message);
             }
-
-            yekunIstikraz = Convert.ToDecimal(lblBKIstikraz.Text) + Convert.ToDecimal(lblMunzamIstikraz.Text);
-            lblYekunIstikraz.Text = yekunIstikraz.ToString();
-
-            devredenIstikraz = Convert.ToDecimal(lblYekunIstikraz.Text) - Convert.ToDecimal(lblTahsilIstikraz.Text);
-            lblDevredenIstikraz.Text = devredenIstikraz.ToString();
         }
 
         public void TurluGelirHesap()
         {
-            decimal munzamTurluGelir;
-            decimal yekunTurluGelir;
-            decimal devredenTurluGelir;
-
-            if (Convert.ToDecimal(lblTahsilTurluGelir.Text) < Convert.ToDecimal(lblBKTurluGelir.Text))
+            try
             {
-                lblMunzamTurluGelir.Text = 0.ToString();
+                decimal tahsilTurluGelir = 0;
+                decimal bkTurluGelir = 0;
+                decimal munzamTurluGelir = 0;
+                decimal yekunTurluGelir = 0;
+                decimal devredenTurluGelir = 0;
+
+                if (!decimal.TryParse(lblTahsilTurluGelir.Text, out tahsilTurluGelir))
+                {
+                    MessageBox.Show("lblTahsilTurluGelir.Text geçerli bir sayı değil: " + lblTahsilTurluGelir.Text);
+                    return;
+                }
+
+                if (!decimal.TryParse(lblBKTurluGelir.Text, out bkTurluGelir))
+                {
+                    MessageBox.Show("lblBKTurluGelir.Text geçerli bir sayı değil: " + lblBKTurluGelir.Text);
+                    return;
+                }
+
+                if (tahsilTurluGelir < bkTurluGelir)
+                {
+                    lblMunzamIstikraz.Text = "0.00";
+                }
+                else
+                {
+                    munzamTurluGelir = tahsilTurluGelir - bkTurluGelir;
+                    lblMunzamTurluGelir.Text = string.Format("{0:#,0.00}", munzamTurluGelir);
+                }
+
+                yekunTurluGelir = bkTurluGelir + munzamTurluGelir;
+                lblYekunTurluGelir.Text = string.Format("{0:#,0.00}", yekunTurluGelir);
+                devredenTurluGelir = yekunTurluGelir - tahsilTurluGelir;
+                lblDevredenTurluGelir.Text = string.Format("{0:#,0.00}", devredenTurluGelir);
+                lblMunzamTurluGelir.Visible = !IsZeroOrEmpty(lblMunzamTurluGelir.Text);
+                lblYekunTurluGelir.Visible = !IsZeroOrEmpty(lblYekunTurluGelir.Text);
+                lblDevredenTurluGelir.Visible = !IsZeroOrEmpty(lblDevredenTurluGelir.Text);
             }
-            else
+            catch (Exception ex)
             {
-                munzamTurluGelir = Convert.ToDecimal(lblTahsilTurluGelir.Text) - Convert.ToDecimal(lblBKTurluGelir.Text);
-                lblMunzamTurluGelir.Text = munzamTurluGelir.ToString();
+                MessageBox.Show("Türlü Gelir hesapları yapılırken bir hata oluştu: " + ex.Message);
             }
-
-            yekunTurluGelir = Convert.ToDecimal(lblBKTurluGelir.Text) + Convert.ToDecimal(lblMunzamTurluGelir.Text);
-            lblYekunTurluGelir.Text = yekunTurluGelir.ToString();
-
-            devredenTurluGelir = Convert.ToDecimal(lblYekunTurluGelir.Text) - Convert.ToDecimal(lblTahsilTurluGelir.Text);
-            lblDevredenTurluGelir.Text = devredenTurluGelir.ToString();
         }
 
         public void DevirHesap()
         {
-            decimal munzamDevir;
-            decimal yekunDevir;
-            decimal devredenDevir;
-
-            if (Convert.ToDecimal(lblTahsilDevir.Text) < Convert.ToDecimal(lblBKDevir.Text))
+            try
             {
-                lblMunzamDevir.Text = 0.ToString();
+                decimal tahsilDevir = 0;
+                decimal bkDevir = 0;
+                decimal munzamDevir = 0;
+                decimal yekunDevir = 0;
+                decimal devredenDevir = 0;
+
+                if (!decimal.TryParse(lblTahsilDevir.Text, out tahsilDevir))
+                {
+                    MessageBox.Show("lblTahsilDevir.Text geçerli bir sayı değil: " + lblTahsilDevir.Text);
+                    return;
+                }
+
+                if (!decimal.TryParse(lblBKDevir.Text, out bkDevir))
+                {
+                    MessageBox.Show("lblBKDevir.Text geçerli bir sayı değil: " + lblBKDevir.Text);
+                    return;
+                }
+
+                if (tahsilDevir < bkDevir)
+                {
+                    lblMunzamDevir.Text = "0.00";
+                }
+                else
+                {
+                    munzamDevir = tahsilDevir - bkDevir;
+                    lblMunzamDevir.Text = string.Format("{0:#,0.00}", munzamDevir);
+                }
+
+                yekunDevir = bkDevir + munzamDevir;
+                lblYekunDevir.Text = string.Format("{0:#,0.00}", yekunDevir);
+                devredenDevir = yekunDevir - tahsilDevir;
+                lblDevredenDevir.Text = string.Format("{0:#,0.00}", devredenDevir);
+                lblMunzamDevir.Visible = !IsZeroOrEmpty(lblMunzamDevir.Text);
+                lblYekunDevir.Visible = !IsZeroOrEmpty(lblYekunDevir.Text);
+                lblDevredenDevir.Visible = !IsZeroOrEmpty(lblDevredenDevir.Text);
             }
-            else
+            catch (Exception ex)
             {
-                munzamDevir = Convert.ToDecimal(lblTahsilDevir.Text) - Convert.ToDecimal(lblBKDevir.Text);
-                lblMunzamDevir.Text = munzamDevir.ToString();
+                MessageBox.Show("Devir hesapları yapılırken bir hata oluştu: " + ex.Message);
             }
-
-            yekunDevir = Convert.ToDecimal(lblBKDevir.Text) + Convert.ToDecimal(lblMunzamDevir.Text);
-            lblYekunDevir.Text = yekunDevir.ToString();
-
-            devredenDevir = Convert.ToDecimal(lblYekunDevir.Text) - Convert.ToDecimal(lblTahsilDevir.Text);
-            lblDevredenDevir.Text = devredenDevir.ToString();
         }
 
-        public void AskerHesap()
-        {
-            decimal munzamAsker;
-            decimal yekunAsker;
-            decimal devredenAsker;
+        //public void AskerHesap()
+        //{
+        //    decimal munzamAsker;
+        //    decimal yekunAsker;
+        //    decimal devredenAsker;
 
-            if (Convert.ToDecimal(lblTahsilAsker.Text) < Convert.ToDecimal(lblBKAsker.Text))
-            {
-                lblMunzamAsker.Text = 0.ToString();
-            }
-            else
-            {
-                munzamAsker = Convert.ToDecimal(lblTahsilAsker.Text) - Convert.ToDecimal(lblBKAsker.Text);
-                lblMunzamAsker.Text = munzamAsker.ToString();
-            }
+        //    if (Convert.ToDecimal(lblTahsilAsker.Text) < Convert.ToDecimal(lblBKAsker.Text))
+        //    {
+        //        lblMunzamAsker.Text = 0.ToString();
+        //    }
+        //    else
+        //    {
+        //        munzamAsker = Convert.ToDecimal(lblTahsilAsker.Text) - Convert.ToDecimal(lblBKAsker.Text);
+        //        lblMunzamAsker.Text = munzamAsker.ToString();
+        //    }
 
-            yekunAsker = Convert.ToDecimal(lblBKAsker.Text) + Convert.ToDecimal(lblMunzamAsker.Text);
-            lblYekunAsker.Text = yekunAsker.ToString();
+        //    yekunAsker = Convert.ToDecimal(lblBKAsker.Text) + Convert.ToDecimal(lblMunzamAsker.Text);
+        //    lblYekunAsker.Text = yekunAsker.ToString();
 
-            devredenAsker = Convert.ToDecimal(lblYekunAsker.Text) - Convert.ToDecimal(lblTahsilAsker.Text);
-            lblDevredenAsker.Text = devredenAsker.ToString();
-        }
+        //    devredenAsker = Convert.ToDecimal(lblYekunAsker.Text) - Convert.ToDecimal(lblTahsilAsker.Text);
+        //    lblDevredenAsker.Text = devredenAsker.ToString();
+        //}
 
         private void FrmKesinHesap1Y_Load(object sender, EventArgs e)
         {
+            try
             {
-                AylikHesap();
-                IdariMasrafHesap();
-                SulamaHesap();
-                AgaclamaHesap();
-                DamizlikHesap();
-                OrnekTarlaHesap();
-                ZiraiHayvanHesap();
-                PazarCarsiHesap();
-                KucukEndustriHesap();
-                OgretmeneviHesap();
-                OkulDaimiHesap();
-                OkumaOdasiHesap();
-                OkulUygulamaHesap();
-                IcmeSulariHesap();
-                TemizlikHesap();
-                SporHesap();
-                IctimaiHesap();
-                KursHesap();
 
                 HasilatHesap();
+
+                // Veri tabanından değerleri almak için gereken işlemleri yapın
+                // Örneğin, burada lblBKResim ve lblTahsilResim etiketlerinin değerlerini sıfıra veya boş bir değere ayarlayabilirsiniz.
+                //lblBKResim.Text = "0.00";
+                //lblTahsilResim.Text = "0";
+
                 ResimHesap();
                 CezaHesap();
                 YardimHesap();
@@ -738,23 +881,31 @@ namespace Forms
                 IstikrazHesap();
                 TurluGelirHesap();
                 DevirHesap();
-                AskerHesap();
+
 
                 Toplamlar();
 
                 AlanlariDoldur(_seciliKoyIndex, _seciliDonemIndex, _seciliIlceIndex);
-                //HasilatToplami();
-                // Gelir kategorilerine göre toplam tutarları label'lara yazdır
-                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 1, lblTahsilHasilat); // Hasilat için
-                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 2, lblTahsilResim); // Resim için
-                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 3, lblTahsilCeza); // Ceza için
-                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 4, lblTahsilYardim); // Yardım için
-                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 5, lblTahsilKoyVakif); // Köy Vakıf için
-                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 6, lblTahsilIstikraz); // İstikraz için
-                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 7, lblTahsilTurluGelir); // Türlü Gelir için
-                GelirToplami(_seciliKoyIndex, _seciliDonemIndex, 8, lblTahsilDevir); // Devir için
 
+                LoadGelirKategoriToplamlari();
+                GelirKategoriVerileriYukleVeToplamiHesapla();
+                LoadGelirKategoriVerileri();
+
+                LoadGiderAltKategoriVerileri();
+                LoadGiderAltKategoriToplamlari();
+
+                AylikYillikVerileriYukleVeToplamiHesapla();
+                ZiraaVerileriYukleVeToplamiHesapla();
+                KulturVerileriYukleVeToplamiHesapla();
+                SaglikVerileriYukleVeToplamiHesapla();
+
+                lblBKResimHarcGenelToplam.Text = lblBKResimHarcToplami.Text;
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Form yüklenirken bir hata oluştu: " + ex.Message);
+            }
+
         }
 
         public void Toplamlar()
@@ -884,6 +1035,39 @@ namespace Forms
             decimal IptalSaglikToplami = Convert.ToDecimal(lblIptalIcmeSulari.Text) + Convert.ToDecimal(lblIptalTemizlik.Text) + Convert.ToDecimal(lblIptalSpor.Text) +
                           Convert.ToDecimal(lblIptalIctimai.Text);
             lblIptalSaglikToplami.Text = IptalSaglikToplami.ToString();
+
+            ////////////////////////////////////////
+            decimal BKAylikToplami = Convert.ToDecimal(lblBKAylik.Text) + Convert.ToDecimal(lblBKIdariMasraf.Text);
+            lblBKIdariToplami.Text = BKAylikToplami.ToString();
+
+            //decimal MunzamSaglikToplami = Convert.ToDecimal(lblMunzamIcmeSulari.Text) + Convert.ToDecimal(lblMunzamTemizlik.Text) + Convert.ToDecimal(lblMunzamSpor.Text) +
+            //                          Convert.ToDecimal(lblMunzamIctimai.Text);
+            //lblMunzamSaglikToplami.Text = MunzamSaglikToplami.ToString();
+
+            //decimal TahakkukSaglikToplami = Convert.ToDecimal(lblTahakkukIcmeSulari.Text) + Convert.ToDecimal(lblTahakkukTemizlik.Text) + Convert.ToDecimal(lblTahakkukSpor.Text) +
+            //                          Convert.ToDecimal(lblTahakkukIctimai.Text);
+            //lblTahakkukSaglikToplami.Text = TahakkukSaglikToplami.ToString();
+
+            //decimal OdenenSaglikToplami = Convert.ToDecimal(lblOdenenIcmeSulari.Text) + Convert.ToDecimal(lblOdenenTemizlik.Text) + Convert.ToDecimal(lblOdenenSpor.Text) +
+            //                          Convert.ToDecimal(lblOdenenIctimai.Text);
+            //lblOdenenSaglikToplami.Text = OdenenSaglikToplami.ToString();
+
+            //decimal IptalSaglikToplami = Convert.ToDecimal(lblIptalIcmeSulari.Text) + Convert.ToDecimal(lblIptalTemizlik.Text) + Convert.ToDecimal(lblIptalSpor.Text) +
+            //              Convert.ToDecimal(lblIptalIctimai.Text);
+            //lblIptalSaglikToplami.Text = IptalSaglikToplami.ToString();
+
+
+        }
+
+        //labellerda 0 olanların visible=false yapmak için metot
+        private bool IsZeroOrEmpty(string text)
+        {
+            decimal value;
+            if (decimal.TryParse(text.Replace(".", ","), NumberStyles.Any, CultureInfo.InvariantCulture, out value))
+            {
+                return value == 0m;
+            }
+            return string.IsNullOrEmpty(text);
         }
     }
 }

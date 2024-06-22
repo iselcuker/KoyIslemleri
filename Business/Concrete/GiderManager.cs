@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
@@ -62,6 +63,15 @@ namespace Business.Concrete
         public List<Gider> GetListKoyIdAndDonemId(int koyId, byte donemId)
         {
             return _giderDal.GetAll(gi => gi.DonemId == donemId && gi.KoyId == koyId);
+        }
+
+        public decimal GiderAltKategoriToplami(int koyId, byte donemId, byte giderAltKategoriId)
+        {
+            List<Gider> giderler = _giderDal.GetAll(gi => gi.KoyId == koyId && gi.DonemId == donemId && gi.GiderAltKategoriId == giderAltKategoriId);
+
+            decimal toplamTutar = giderler.Sum(gi => gi.Tutar);
+
+            return toplamTutar;
         }
 
         public void Update(Gider gider)
