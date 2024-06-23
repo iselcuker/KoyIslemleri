@@ -21,7 +21,7 @@ namespace DataAccess.Concrete.EntityFramework
                              on tahminiButceGelir.GelirKategoriId equals gelirkategori.Id
                              join koy in context.Koys
                              on tahminiButceGelir.KoyId equals koy.Id
-                             
+
                              join donem in context.Donems
                              on tahminiButceGelir.DonemId equals donem.Id
 

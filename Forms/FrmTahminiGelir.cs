@@ -19,7 +19,8 @@ namespace Forms
     {
         GelirKategoriManager gelirKategoriManager;
         DegisiklikManager degisiklikManager;
-        TahminiButceGelirManager tahminiButceGelirManager;
+        //TahminiButceGelirManager tahminiButceGelirManager;
+        private TahminiButceGelirManager tahminiButceGelirManager;
         KoyManager koyManager;
         DonemManager donemManager;
         //AnaSayfada comboboxlardan yapılan seçimlerin index lerini getirmek için
@@ -37,6 +38,7 @@ namespace Forms
         public FrmTahminiGelir(int seciliKoyIndex, byte seciliDonemIndex)
         {
             InitializeComponent();
+
 
             TahminiButceGelirManager _tahminiButceGelirManager = new TahminiButceGelirManager(new EfTahminiButceGelirDal());
             tahminiButceGelirManager = _tahminiButceGelirManager;
@@ -149,7 +151,7 @@ namespace Forms
 
         private void cmbGelirKategori_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbGelirKategori.Text == "Hasılat" || cmbGelirKategori.Text == "Resim ve harçlar" || cmbGelirKategori.Text == "Köy vakıf ve avarız geliri" || cmbGelirKategori.Text == "İstikrazlar")
+            if (cmbGelirKategori.Text == "Hasılat" || cmbGelirKategori.Text == "Resim ve harçlar" || cmbGelirKategori.Text == "Köy vakıf ve avarız geliri" || cmbGelirKategori.Text == "İstikrazlar" || cmbGelirKategori.Text == "Para Cezaları")
             {
                 cmbDegisiklik.Visible = true;
                 lblDegisiklik.Visible = true;
@@ -376,7 +378,7 @@ namespace Forms
                 dgvTahminiGelirler.ColumnHeadersHeight = 40; // Başlık yüksekliği
                 dgvTahminiGelirler.EnableHeadersVisualStyles = false; // Başlık yazı rengini değiştirmek için
                 dgvTahminiGelirler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray; // Başlık arka plan rengi
-               
+
             }
             catch (Exception ex)
             {
@@ -431,7 +433,7 @@ namespace Forms
                 // Verileri ilgili alanlara aktar
                 cmbGelirKategori.SelectedIndex = (byte)selectedRow.Cells["GelirKategoriId"].Value;
                 cmbGelirKategori.SelectedText = selectedRow.Cells["GelirKategoriAdi"].Value.ToString();
-               // cmbDegisiklik.SelectedIndex = (byte)selectedRow.Cells["DegisiklikId"].Value;
+                // cmbDegisiklik.SelectedIndex = (byte)selectedRow.Cells["DegisiklikId"].Value;
                 cmbDegisiklik.SelectedText = selectedRow.Cells["DegisiklikAdi"].Value.ToString();
                 //txtTutar.Text=selectedRow.Cells
                 txtTutar.Text = selectedRow.Cells["TahimiGelirTutari"].Value.ToString();
