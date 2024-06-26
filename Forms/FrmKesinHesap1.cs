@@ -188,25 +188,25 @@ namespace Forms
         {
             try
             {
-                Debug.WriteLine($"GelirKategoriLabellarAyarla - gelirKategoriId: {gelirKategoriId}");
+                //Debug.WriteLine($"GelirKategoriLabellarAyarla - gelirKategoriId: {gelirKategoriId}");
 
                 // Veritabanından belirtilen gelir kategorisi için veriyi al
                 var tahminiButceGelir = _tahminiButceGelirManager
                     .GetListByKoyIdAndDonemIdAndGelirKategoriId(_seciliKoyIndex, _seciliDonemIndex, gelirKategoriId)
                     .FirstOrDefault();
 
-                Debug.WriteLine($"lblBKResim.Text: {lblBKResim.Text}");
-                Debug.WriteLine($"lblTahsilResim.Text: {lblTahsilResim.Text}");
+                //Debug.WriteLine($"lblBKResim.Text: {lblBKResim.Text}");
+                //Debug.WriteLine($"lblTahsilResim.Text: {lblTahsilResim.Text}");
 
 
                 if (tahminiButceGelir != null)
                 {
-                    Debug.WriteLine($"GelirKategoriLabellarAyarla - Bulunan tahmini gelir: {tahminiButceGelir.TahimiGelirTutari}");
+                    //Debug.WriteLine($"GelirKategoriLabellarAyarla - Bulunan tahmini gelir: {tahminiButceGelir.TahimiGelirTutari}");
                     label.Text = string.Format("{0:#,0.00}", tahminiButceGelir.TahimiGelirTutari);
                 }
                 else
                 {
-                    Debug.WriteLine($"GelirKategoriLabellarAyarla - Veri bulunamadı, Label 0.00 olarak ayarlandı.");
+                    //Debug.WriteLine($"GelirKategoriLabellarAyarla - Veri bulunamadı, Label 0.00 olarak ayarlandı.");
                     label.Text = "0.00";
                 }
             }
@@ -533,7 +533,7 @@ namespace Forms
 
         public void ResimHesap()
         {
-            Debug.WriteLine("ResimHesap başladı");
+            //Debug.WriteLine("ResimHesap başladı");
             try
             {
                 decimal tahsilResim = 0;
@@ -547,41 +547,41 @@ namespace Forms
                     MessageBox.Show("lblTahsilResim.Text geçerli bir sayı değil: " + lblTahsilResim.Text);
                     return;
                 }
-                Debug.WriteLine($"tahsilResim: {tahsilResim}");
+                //Debug.WriteLine($"tahsilResim: {tahsilResim}");
 
                 if (!decimal.TryParse(lblBKResim.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out bkResim))
                 {
                     MessageBox.Show("lblBKResim.Text geçerli bir sayı değil: " + lblBKResim.Text);
                     return;
                 }
-                Debug.WriteLine($"bkResim: {bkResim}");
+                //Debug.WriteLine($"bkResim: {bkResim}");
 
                 if (tahsilResim < bkResim)
                 {
                     lblMunzamResim.Text = "0";
-                    Debug.WriteLine("Tahsil edilen resim BK Resimden küçük, Munzam Resim 0 olarak ayarlandı.");
+ //                   Debug.WriteLine("Tahsil edilen resim BK Resimden küçük, Munzam Resim 0 olarak ayarlandı.");
                 }
                 else
                 {
                     munzamResim = tahsilResim - bkResim;
                     lblMunzamResim.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", munzamResim);
-                    Debug.WriteLine($"munzamResim: {munzamResim}");
+ //                   Debug.WriteLine($"munzamResim: {munzamResim}");
                 }
 
                 yekunResim = bkResim + munzamResim;
                 lblYekunResim.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", yekunResim);
-                Debug.WriteLine($"yekunResim: {yekunResim}");
+ //               Debug.WriteLine($"yekunResim: {yekunResim}");
 
                 devredenResim = yekunResim - tahsilResim;
                 lblDevredenResim1.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", devredenResim);
-                Debug.WriteLine($"devredenResim: {devredenResim}");
+  //              Debug.WriteLine($"devredenResim: {devredenResim}");
 
                 // Visible ayarlarını kontrol et
                 lblMunzamResim.Visible = !IsZeroOrEmpty(lblMunzamResim.Text);
                 lblYekunResim.Visible = !IsZeroOrEmpty(lblYekunResim.Text);
                 lblDevredenResim1.Visible = !IsZeroOrEmpty(lblDevredenResim1.Text);
 
-                Debug.WriteLine($"lblDevredenResim1.Text: {lblDevredenResim1.Text}, Visible: {lblDevredenResim1.Visible}");
+//                Debug.WriteLine($"lblDevredenResim1.Text: {lblDevredenResim1.Text}, Visible: {lblDevredenResim1.Visible}");
             }
             catch (Exception ex)
             {
@@ -909,9 +909,9 @@ namespace Forms
                 DegisiklikLabellarıYaz();
                 dgvTahminiGelir.Visible = false;
 
-                Debug.WriteLine("ResimHesap çağrılmadan önce");
+  //              Debug.WriteLine("ResimHesap çağrılmadan önce");
                 ResimHesap();
-                Debug.WriteLine("ResimHesap çağrıldıktan sonra");
+ //               Debug.WriteLine("ResimHesap çağrıldıktan sonra");
 
                 HasilatHesap();
                 //ResimHesap();
@@ -1128,14 +1128,14 @@ namespace Forms
             //}
             //return string.IsNullOrEmpty(text);
 
-            Debug.WriteLine($"IsZeroOrEmpty çağrıldı. Text: {text}");
+            //Debug.WriteLine($"IsZeroOrEmpty çağrıldı. Text: {text}");
             decimal value;
             if (decimal.TryParse(text, NumberStyles.Number, new CultureInfo("tr-TR"), out value))
             {
-                Debug.WriteLine($"Parsed value: {value}, IsZero: {value == 0}");
+                //Debug.WriteLine($"Parsed value: {value}, IsZero: {value == 0}");
                 return value == 0;
             }
-            Debug.WriteLine($"Parse edilemedi, IsNullOrEmpty: {string.IsNullOrEmpty(text)}");
+            //Debug.WriteLine($"Parse edilemedi, IsNullOrEmpty: {string.IsNullOrEmpty(text)}");
             return string.IsNullOrEmpty(text);
         }
     }
