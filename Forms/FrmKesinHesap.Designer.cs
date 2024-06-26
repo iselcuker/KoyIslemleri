@@ -29,31 +29,21 @@
         private void InitializeComponent()
         {
             pnlKesinHesaplar = new Panel();
-            btnKesinHesap1 = new Button();
             btnYazdir = new Button();
+            btnKesinHesap1 = new Button();
             btnKesinHesap2 = new Button();
             SuspendLayout();
             // 
             // pnlKesinHesaplar
             // 
-            pnlKesinHesaplar.Location = new Point(7, 5);
+            pnlKesinHesaplar.Location = new Point(0, 0);
             pnlKesinHesaplar.Name = "pnlKesinHesaplar";
-            pnlKesinHesaplar.Size = new Size(1134, 1046);
+            pnlKesinHesaplar.Size = new Size(1194, 1046);
             pnlKesinHesaplar.TabIndex = 135;
-            // 
-            // btnKesinHesap1
-            // 
-            btnKesinHesap1.Location = new Point(1147, 296);
-            btnKesinHesap1.Name = "btnKesinHesap1";
-            btnKesinHesap1.Size = new Size(107, 55);
-            btnKesinHesap1.TabIndex = 197;
-            btnKesinHesap1.Text = "Kesin Hesap 1Y";
-            btnKesinHesap1.UseVisualStyleBackColor = true;
-            btnKesinHesap1.Click += btnKesinHesap1_Click_1;
             // 
             // btnYazdir
             // 
-            btnYazdir.Location = new Point(1161, 371);
+            btnYazdir.Location = new Point(1198, 79);
             btnYazdir.Name = "btnYazdir";
             btnYazdir.Size = new Size(75, 23);
             btnYazdir.TabIndex = 198;
@@ -61,13 +51,23 @@
             btnYazdir.UseVisualStyleBackColor = true;
             btnYazdir.Click += btnYazdir_Click;
             // 
+            // btnKesinHesap1
+            // 
+            btnKesinHesap1.Location = new Point(1196, 12);
+            btnKesinHesap1.Name = "btnKesinHesap1";
+            btnKesinHesap1.Size = new Size(77, 55);
+            btnKesinHesap1.TabIndex = 197;
+            btnKesinHesap1.Text = "Kesin Hesap 1";
+            btnKesinHesap1.UseVisualStyleBackColor = true;
+            btnKesinHesap1.Click += btnKesinHesap1_Click_1;
+            // 
             // btnKesinHesap2
             // 
-            btnKesinHesap2.Location = new Point(1145, 411);
+            btnKesinHesap2.Location = new Point(1196, 116);
             btnKesinHesap2.Name = "btnKesinHesap2";
-            btnKesinHesap2.Size = new Size(107, 55);
+            btnKesinHesap2.Size = new Size(77, 55);
             btnKesinHesap2.TabIndex = 197;
-            btnKesinHesap2.Text = "Kesin Hesap 2Y";
+            btnKesinHesap2.Text = "Kesin Hesap 2";
             btnKesinHesap2.UseVisualStyleBackColor = true;
             btnKesinHesap2.Click += btnKesinHesap2_Click_1;
             // 
@@ -75,7 +75,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1256, 1070);
+            ClientSize = new Size(1300, 1070);
             Controls.Add(btnYazdir);
             Controls.Add(btnKesinHesap2);
             Controls.Add(btnKesinHesap1);

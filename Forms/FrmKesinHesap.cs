@@ -79,7 +79,6 @@ namespace Forms
             this.pnlKesinHesaplar.Controls.Add(frm);
             this.pnlKesinHesaplar.Tag = frm;
 
-
             frm.Show();
         }
 
