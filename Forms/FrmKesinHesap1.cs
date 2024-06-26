@@ -1754,7 +1754,296 @@ namespace Forms
 
         public void KursHesap()
         {
+            try
+            {
+                decimal odenenKurs = 0;
+                decimal bkKurs = 0;
+                decimal munzamKurs = 0;
+                decimal tahakkukKurs = 0;
+                decimal iptalKurs = 0;
 
+                if (!decimal.TryParse(lblOdenenKurs.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out odenenKurs))
+                {
+                    MessageBox.Show("lblOdenenKurs.Text geçerli bir sayı değil: " + lblOdenenKurs.Text);
+                    return;
+                }
+
+                if (!decimal.TryParse(lblBKKurs.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out bkKurs))
+                {
+                    MessageBox.Show("lblBK.Text geçerli bir sayı değil: " + lblBKKurs.Text);
+                    return;
+                }
+
+                if (bkKurs > odenenKurs)
+                {
+                    lblMunzamKurs.Text = "0";
+                }
+                else
+                {
+                    munzamKurs = odenenKurs - bkKurs;
+                    lblMunzamKurs.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", munzamKurs);
+                }
+
+                tahakkukKurs = bkKurs + munzamKurs;
+                lblTahakkukKurs.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", tahakkukKurs);
+
+                iptalKurs = tahakkukKurs - odenenKurs;
+                lblIptalKurs.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", iptalKurs);
+
+                // Visible ayarlarını kontrol et
+                lblMunzamKurs.Visible = !IsZeroOrEmpty(lblMunzamKurs.Text);
+                lblTahakkukKurs.Visible = !IsZeroOrEmpty(lblTahakkukKurs.Text);
+                lblIptalKurs.Visible = !IsZeroOrEmpty(lblIptalKurs.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kurs hesapları yapılırken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        public void OkulUygulamaHesap()
+        {
+            try
+            {
+                decimal odenenOkulUygulama = 0;
+                decimal bkOkulUygulama = 0;
+                decimal munzamOkulUygulama = 0;
+                decimal tahakkukOkulUygulama = 0;
+                decimal iptalOkulUygulama = 0;
+
+                if (!decimal.TryParse(lblOdenenOkulUygulama.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out odenenOkulUygulama))
+                {
+                    MessageBox.Show("lblOdenenOkulUygulama.Text geçerli bir sayı değil: " + lblOdenenOkulUygulama.Text);
+                    return;
+                }
+
+                if (!decimal.TryParse(lblBKOkulUygulama.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out bkOkulUygulama))
+                {
+                    MessageBox.Show("lblBKOkulUygulama.Text geçerli bir sayı değil: " + lblBKOkulUygulama.Text);
+                    return;
+                }
+
+                if (bkOkulUygulama > odenenOkulUygulama)
+                {
+                    lblMunzamOkulUygulama.Text = "0";
+                }
+                else
+                {
+                    munzamOkulUygulama = odenenOkulUygulama - bkOkulUygulama;
+                    lblMunzamOkulUygulama.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", munzamOkulUygulama);
+                }
+
+                tahakkukOkulUygulama = bkOkulUygulama + munzamOkulUygulama;
+                lblTahakkukOkulUygulama.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", tahakkukOkulUygulama);
+
+                iptalOkulUygulama = tahakkukOkulUygulama - odenenOkulUygulama;
+                lblIptalOkulUygulama.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", iptalOkulUygulama);
+
+                // Visible ayarlarını kontrol et
+                lblMunzamOkulUygulama.Visible = !IsZeroOrEmpty(lblMunzamOkulUygulama.Text);
+                lblTahakkukOkulUygulama.Visible = !IsZeroOrEmpty(lblTahakkukOkulUygulama.Text);
+                lblIptalOkulUygulama.Visible = !IsZeroOrEmpty(lblIptalOkulUygulama.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("OkulUygulama hesapları yapılırken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        public void IcmeSulariHesap()
+        {
+            try
+            {
+                decimal odenenIcmeSulari = 0;
+                decimal bkIcmeSulari = 0;
+                decimal munzamIcmeSulari = 0;
+                decimal tahakkukIcmeSulari = 0;
+                decimal iptalIcmeSulari = 0;
+
+                if (!decimal.TryParse(lblOdenenIcmeSulari.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out odenenIcmeSulari))
+                {
+                    MessageBox.Show("lblOdenenIcmeSulari.Text geçerli bir sayı değil: " + lblOdenenIcmeSulari.Text);
+                    return;
+                }
+
+                if (!decimal.TryParse(lblBKIcmeSulari.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out bkIcmeSulari))
+                {
+                    MessageBox.Show("lblBKIcmeSulari.Text geçerli bir sayı değil: " + lblBKIcmeSulari.Text);
+                    return;
+                }
+
+                if (bkIcmeSulari > odenenIcmeSulari)
+                {
+                    lblMunzamIcmeSulari.Text = "0";
+                }
+                else
+                {
+                    munzamIcmeSulari = odenenIcmeSulari - bkIcmeSulari;
+                    lblMunzamIcmeSulari.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", munzamIcmeSulari);
+                }
+
+                tahakkukIcmeSulari = bkIcmeSulari + munzamIcmeSulari;
+                lblTahakkukIcmeSulari.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", tahakkukIcmeSulari);
+
+                iptalIcmeSulari = tahakkukIcmeSulari - odenenIcmeSulari;
+                lblIptalIcmeSulari.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", iptalIcmeSulari);
+
+                // Visible ayarlarını kontrol et
+                lblMunzamIcmeSulari.Visible = !IsZeroOrEmpty(lblMunzamIcmeSulari.Text);
+                lblTahakkukIcmeSulari.Visible = !IsZeroOrEmpty(lblTahakkukIcmeSulari.Text);
+                lblIptalIcmeSulari.Visible = !IsZeroOrEmpty(lblIptalIcmeSulari.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("İçme Suları hesapları yapılırken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        public void TemizlikHesap()
+        {
+            try
+            {
+                decimal odenenTemizlik = 0;
+                decimal bkTemizlik = 0;
+                decimal munzamTemizlik = 0;
+                decimal tahakkukTemizlik = 0;
+                decimal iptalTemizlik = 0;
+
+                if (!decimal.TryParse(lblOdenenTemizlik.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out odenenTemizlik))
+                {
+                    MessageBox.Show("lblOdenenTemizlik.Text geçerli bir sayı değil: " + lblOdenenTemizlik.Text);
+                    return;
+                }
+
+                if (!decimal.TryParse(lblBKTemizlik.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out bkTemizlik))
+                {
+                    MessageBox.Show("lblBKTemizlik.Text geçerli bir sayı değil: " + lblBKTemizlik.Text);
+                    return;
+                }
+
+                if (bkTemizlik > odenenTemizlik)
+                {
+                    lblMunzamTemizlik.Text = "0";
+                }
+                else
+                {
+                    munzamTemizlik = odenenTemizlik - bkTemizlik;
+                    lblMunzamTemizlik.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", munzamTemizlik);
+                }
+
+                tahakkukTemizlik = bkTemizlik + munzamTemizlik;
+                lblTahakkukTemizlik.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", tahakkukTemizlik);
+
+                iptalTemizlik = tahakkukTemizlik - odenenTemizlik;
+                lblIptalTemizlik.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", iptalTemizlik);
+
+                // Visible ayarlarını kontrol et
+                lblMunzamTemizlik.Visible = !IsZeroOrEmpty(lblMunzamTemizlik.Text);
+                lblTahakkukTemizlik.Visible = !IsZeroOrEmpty(lblTahakkukTemizlik.Text);
+                lblIptalTemizlik.Visible = !IsZeroOrEmpty(lblIptalTemizlik.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Temizlik hesapları yapılırken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        public void SporHesap()
+        {
+            try
+            {
+                decimal odenenSpor = 0;
+                decimal bkSpor = 0;
+                decimal munzamSpor = 0;
+                decimal tahakkukSpor = 0;
+                decimal iptalSpor = 0;
+
+                if (!decimal.TryParse(lblOdenenSpor.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out odenenSpor))
+                {
+                    MessageBox.Show("lblOdenenSpor.Text geçerli bir sayı değil: " + lblOdenenSpor.Text);
+                    return;
+                }
+
+                if (!decimal.TryParse(lblBKSpor.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out bkSpor))
+                {
+                    MessageBox.Show("lblBKSpor.Text geçerli bir sayı değil: " + lblBKSpor.Text);
+                    return;
+                }
+
+                if (bkSpor > odenenSpor)
+                {
+                    lblMunzamSpor.Text = "0";
+                }
+                else
+                {
+                    munzamSpor = odenenSpor - bkSpor;
+                    lblMunzamSpor.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", munzamSpor);
+                }
+
+                tahakkukSpor = bkSpor + munzamSpor;
+                lblTahakkukSpor.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", tahakkukSpor);
+
+                iptalSpor = tahakkukSpor - odenenSpor;
+                lblIptalSpor.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", iptalSpor);
+
+                // Visible ayarlarını kontrol et
+                lblMunzamSpor.Visible = !IsZeroOrEmpty(lblMunzamSpor.Text);
+                lblTahakkukSpor.Visible = !IsZeroOrEmpty(lblTahakkukSpor.Text);
+                lblIptalSpor.Visible = !IsZeroOrEmpty(lblIptalSpor.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Spor hesapları yapılırken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        public void IctimaiHesap()
+        {
+            try
+            {
+                decimal odenenIctimai = 0;
+                decimal bkIctimai = 0;
+                decimal munzamIctimai = 0;
+                decimal tahakkukIctimai = 0;
+                decimal iptalIctimai = 0;
+
+                if (!decimal.TryParse(lblOdenenIctimai.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out odenenIctimai))
+                {
+                    MessageBox.Show("lblOdenenIctimai.Text geçerli bir sayı değil: " + lblOdenenIctimai.Text);
+                    return;
+                }
+
+                if (!decimal.TryParse(lblBKIctimai.Text, NumberStyles.Number, new CultureInfo("tr-TR"), out bkIctimai))
+                {
+                    MessageBox.Show("lblBK.Text geçerli bir sayı değil: " + lblBKIctimai.Text);
+                    return;
+                }
+
+                if (bkIctimai > odenenIctimai)
+                {
+                    lblMunzamIctimai.Text = "0";
+                }
+                else
+                {
+                    munzamIctimai = odenenIctimai - bkIctimai;
+                    lblMunzamIctimai.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", munzamIctimai);
+                }
+
+                tahakkukIctimai = bkIctimai + munzamIctimai;
+                lblTahakkukIctimai.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", tahakkukIctimai);
+
+                iptalIctimai = tahakkukIctimai - odenenIctimai;
+                lblIptalIctimai.Text = string.Format(new CultureInfo("tr-TR"), "{0:#,0.00}", iptalIctimai);
+
+                // Visible ayarlarını kontrol et
+                lblMunzamIctimai.Visible = !IsZeroOrEmpty(lblMunzamIctimai.Text);
+                lblTahakkukIctimai.Visible = !IsZeroOrEmpty(lblTahakkukIctimai.Text);
+                lblIptalIctimai.Visible = !IsZeroOrEmpty(lblIptalIctimai.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("İçtimai hesapları yapılırken bir hata oluştu: " + ex.Message);
+            }
         }
     }
 }
