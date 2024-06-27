@@ -139,7 +139,26 @@ namespace Forms
 
         private void btnKesinHesap2_Click_1(object sender, EventArgs e)
         {
-            load_form(new FrmKesinHesap2());
+            // FrmAnaSayfa formunu bul ve seçili köy ve dönem indexlerini al
+            FrmAnaSayfa frmAnaSayfa = Application.OpenForms["FrmAnaSayfa"] as FrmAnaSayfa;
+
+            if (frmAnaSayfa != null)
+            {
+                // FrmAnaSayfa formundaki ComboBox'lardan seçili köy ve dönem indexlerini al
+                Ilce secilenIlce = frmAnaSayfa.cmbIlce?.SelectedItem as Ilce;
+                byte seciliIlceIndex = secilenIlce?.Id ?? _seciliIlceIndex;
+
+                Koy secilenKoy = frmAnaSayfa.CmbKoy.SelectedItem as Koy;
+                int seciliKoyIndex = secilenKoy?.Id ?? _seciliKoyIndex;
+
+                Donem secilenDonem = frmAnaSayfa.CmbDonem.SelectedItem as Donem;
+                byte seciliDonemIndex = secilenDonem != null ? Convert.ToByte(secilenDonem.Id) : _seciliDonemIndex;
+
+                // FrmTahminiGelir formunu oluştur ve load_form metoduyla yükle
+                FrmKesinHesap2 frmKesinHesap2 = new FrmKesinHesap2(seciliKoyIndex, seciliDonemIndex, seciliIlceIndex);
+                load_form(frmKesinHesap2);
+            }
+           // load_form(new FrmKesinHesap2());
         }
     }
 }

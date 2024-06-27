@@ -39,6 +39,11 @@ namespace Business.Concrete
             return _gorevliDal.GetGorevliDetails(koyId, donemId);
         }
 
+        public Gorevli GetKoyIdAndDonemId(int koyId, byte donemId)
+        {
+            return _gorevliDal.Get(g => g.KoyId == koyId && g.DonemId == donemId);
+        }
+
         public List<Gorevli> GetListKoyIdAndDonemId(int koyId, byte donemId)
         {
             return _gorevliDal.GetAll(go => go.KoyId == koyId && go.DonemId == donemId);

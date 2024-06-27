@@ -11,6 +11,7 @@ namespace Business.Abstract
     public interface IGorevliService
     {
         List<Gorevli> GetListKoyIdAndDonemId(int koyId, byte donemId);
+        Gorevli GetKoyIdAndDonemId(int koyId, byte donemId);
         public bool GorevliKontrol(int koyId, byte donemId, byte unvanId);
         Gorevli GetById(int gorevliId);
         void Add(Gorevli gorevli);

@@ -44,10 +44,10 @@
             label13 = new Label();
             label14 = new Label();
             panel3 = new Panel();
+            label23 = new Label();
             label20 = new Label();
             label21 = new Label();
             label22 = new Label();
-            label23 = new Label();
             label24 = new Label();
             panel4 = new Panel();
             label28 = new Label();
@@ -182,6 +182,7 @@
             p14 = new Panel();
             lblDevredenCeza = new Label();
             p10 = new Panel();
+            lblDevredenResim1 = new Label();
             p5 = new Panel();
             lblDevredenHasilat = new Label();
             p13 = new Panel();
@@ -1117,7 +1118,6 @@
             panel153 = new Panel();
             lblBKResim = new Label();
             panel161 = new Panel();
-            lblDevredenResim1 = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -1427,20 +1427,22 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(3, -1);
+            label1.Font = new Font("Arial Narrow", 6F);
+            label1.Location = new Point(2, 1);
             label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(13, 15);
+            label1.Size = new Size(11, 13);
             label1.TabIndex = 1;
             label1.Text = "F";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(3, 11);
+            label2.Font = new Font("Arial Narrow", 6F);
+            label2.Location = new Point(2, 11);
             label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
-            label2.Size = new Size(12, 15);
+            label2.Size = new Size(11, 13);
             label2.TabIndex = 2;
             label2.Text = "a";
             // 
@@ -1461,30 +1463,33 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(3, 36);
+            label4.Font = new Font("Arial Narrow", 6F);
+            label4.Location = new Point(4, 36);
             label4.Margin = new Padding(1, 0, 1, 0);
             label4.Name = "label4";
-            label4.Size = new Size(9, 15);
+            label4.Size = new Size(9, 13);
             label4.TabIndex = 2;
             label4.Text = "ı";
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Arial Narrow", 6F);
             label5.Location = new Point(3, 47);
             label5.Margin = new Padding(1, 0, 1, 0);
             label5.Name = "label5";
-            label5.Size = new Size(9, 15);
+            label5.Size = new Size(8, 13);
             label5.TabIndex = 2;
             label5.Text = "l";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Arial Narrow", 6F);
             label3.Location = new Point(3, 23);
             label3.Margin = new Padding(1, 0, 1, 0);
             label3.Name = "label3";
-            label3.Size = new Size(12, 15);
+            label3.Size = new Size(10, 13);
             label3.TabIndex = 2;
             label3.Text = "s";
             // 
@@ -1581,10 +1586,10 @@
             // panel3
             // 
             panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Controls.Add(label23);
             panel3.Controls.Add(label20);
             panel3.Controls.Add(label21);
             panel3.Controls.Add(label22);
-            panel3.Controls.Add(label23);
             panel3.Controls.Add(label24);
             panel3.Location = new Point(17, 36);
             panel3.Margin = new Padding(1, 3, 1, 3);
@@ -1592,53 +1597,58 @@
             panel3.Size = new Size(17, 63);
             panel3.TabIndex = 5;
             // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Arial Narrow", 6.75F);
+            label23.Location = new Point(1, 11);
+            label23.Margin = new Padding(1, 0, 1, 0);
+            label23.Name = "label23";
+            label23.Size = new Size(11, 13);
+            label23.TabIndex = 2;
+            label23.Text = "a";
+            // 
             // label20
             // 
             label20.AutoSize = true;
+            label20.Font = new Font("Arial Narrow", 6.75F);
             label20.Location = new Point(1, 36);
             label20.Margin = new Padding(1, 0, 1, 0);
             label20.Name = "label20";
-            label20.Size = new Size(12, 15);
+            label20.Size = new Size(11, 13);
             label20.TabIndex = 2;
             label20.Text = "d";
             // 
             // label21
             // 
             label21.AutoSize = true;
-            label21.Location = new Point(0, -1);
+            label21.Font = new Font("Arial Narrow", 6.75F);
+            label21.Location = new Point(1, 1);
             label21.Margin = new Padding(1, 0, 1, 0);
             label21.Name = "label21";
-            label21.Size = new Size(15, 15);
+            label21.Size = new Size(13, 13);
             label21.TabIndex = 1;
             label21.Text = "M";
             // 
             // label22
             // 
             label22.AutoSize = true;
-            label22.Location = new Point(1, 47);
+            label22.Font = new Font("Arial Narrow", 6.75F);
+            label22.Location = new Point(1, 46);
             label22.Margin = new Padding(1, 0, 1, 0);
             label22.Name = "label22";
-            label22.Size = new Size(12, 15);
+            label22.Size = new Size(11, 13);
             label22.TabIndex = 2;
             label22.Text = "e";
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new Point(1, 11);
-            label23.Margin = new Padding(1, 0, 1, 0);
-            label23.Name = "label23";
-            label23.Size = new Size(12, 15);
-            label23.TabIndex = 2;
-            label23.Text = "a";
             // 
             // label24
             // 
             label24.AutoSize = true;
+            label24.Font = new Font("Arial Narrow", 6.75F);
             label24.Location = new Point(1, 23);
             label24.Margin = new Padding(1, 0, 1, 0);
             label24.Name = "label24";
-            label24.Size = new Size(12, 15);
+            label24.Size = new Size(11, 13);
             label24.TabIndex = 2;
             label24.Text = "d";
             // 
@@ -1689,7 +1699,7 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.Location = new Point(2, 58);
+            label27.Location = new Point(2, 61);
             label27.Margin = new Padding(1, 0, 1, 0);
             label27.Name = "label27";
             label27.Size = new Size(12, 15);
@@ -1743,10 +1753,11 @@
             // label36
             // 
             label36.AutoSize = true;
-            label36.Location = new Point(3, 11);
+            label36.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label36.Location = new Point(2, 11);
             label36.Margin = new Padding(1, 0, 1, 0);
             label36.Name = "label36";
-            label36.Size = new Size(13, 15);
+            label36.Size = new Size(12, 13);
             label36.TabIndex = 1;
             label36.Text = "F";
             // 
@@ -1773,7 +1784,7 @@
             // label40
             // 
             label40.AutoSize = true;
-            label40.Location = new Point(951, 4);
+            label40.Location = new Point(802, 4);
             label40.Margin = new Padding(1, 0, 1, 0);
             label40.Name = "label40";
             label40.Size = new Size(86, 15);
@@ -1907,22 +1918,22 @@
             // label49
             // 
             label49.AutoSize = true;
-            label49.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label49.Location = new Point(1, 40);
+            label49.Font = new Font("Arial Narrow", 5.25F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label49.Location = new Point(2, 39);
             label49.Margin = new Padding(1, 0, 1, 0);
             label49.Name = "label49";
-            label49.Size = new Size(33, 13);
+            label49.Size = new Size(26, 7);
             label49.TabIndex = 1;
             label49.Text = "Eden TL";
             // 
             // label45
             // 
             label45.AutoSize = true;
-            label45.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label45.Location = new Point(-2, 17);
+            label45.Font = new Font("Arial Narrow", 5.25F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label45.Location = new Point(1, 17);
             label45.Margin = new Padding(1, 0, 1, 0);
             label45.Name = "label45";
-            label45.Size = new Size(36, 13);
+            label45.Size = new Size(29, 7);
             label45.TabIndex = 1;
             label45.Text = "Tahakkuk";
             // 
@@ -2156,22 +2167,22 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Font = new Font("Arial Narrow", 6F);
+            label18.Font = new Font("Arial Narrow", 5.25F);
             label18.Location = new Point(2, 2);
             label18.Margin = new Padding(1, 0, 1, 0);
             label18.Name = "label18";
-            label18.Size = new Size(39, 13);
+            label18.Size = new Size(34, 7);
             label18.TabIndex = 1;
             label18.Text = "Birinci Fasıl";
             // 
             // label19
             // 
             label19.AutoSize = true;
-            label19.Font = new Font("Arial Narrow", 6F);
-            label19.Location = new Point(2, 10);
+            label19.Font = new Font("Arial Narrow", 5.25F);
+            label19.Location = new Point(3, 11);
             label19.Margin = new Padding(1, 0, 1, 0);
             label19.Name = "label19";
-            label19.Size = new Size(30, 13);
+            label19.Size = new Size(23, 7);
             label19.TabIndex = 17;
             label19.Text = "Yekünü";
             // 
@@ -2725,22 +2736,22 @@
             // label54
             // 
             label54.AutoSize = true;
-            label54.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label54.Location = new Point(7, -2);
+            label54.Font = new Font("Arial Narrow", 5.25F);
+            label54.Location = new Point(3, 2);
             label54.Margin = new Padding(1, 0, 1, 0);
             label54.Name = "label54";
-            label54.Size = new Size(67, 13);
+            label54.Size = new Size(53, 7);
             label54.TabIndex = 258;
             label54.Text = "Bedenen Çalışanlar";
             // 
             // label41
             // 
             label41.AutoSize = true;
-            label41.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label41.Location = new Point(7, 8);
+            label41.Font = new Font("Arial Narrow", 5.25F);
+            label41.Location = new Point(3, 11);
             label41.Margin = new Padding(1, 0, 1, 0);
             label41.Name = "label41";
-            label41.Size = new Size(25, 13);
+            label41.Size = new Size(20, 7);
             label41.TabIndex = 257;
             label41.Text = "Tutarı";
             // 
@@ -2797,9 +2808,8 @@
             lblCezaDegisiklik.Location = new Point(47, 7);
             lblCezaDegisiklik.Margin = new Padding(1, 0, 1, 0);
             lblCezaDegisiklik.Name = "lblCezaDegisiklik";
-            lblCezaDegisiklik.Size = new Size(11, 12);
+            lblCezaDegisiklik.Size = new Size(0, 12);
             lblCezaDegisiklik.TabIndex = 86;
-            lblCezaDegisiklik.Text = "0";
             // 
             // panel114
             // 
@@ -2901,9 +2911,8 @@
             lblResimDegisiklik.Location = new Point(47, 7);
             lblResimDegisiklik.Margin = new Padding(1, 0, 1, 0);
             lblResimDegisiklik.Name = "lblResimDegisiklik";
-            lblResimDegisiklik.Size = new Size(11, 12);
+            lblResimDegisiklik.Size = new Size(0, 12);
             lblResimDegisiklik.TabIndex = 25;
-            lblResimDegisiklik.Text = "0";
             // 
             // label56
             // 
@@ -2919,11 +2928,11 @@
             // label72
             // 
             label72.AutoSize = true;
-            label72.Font = new Font("Arial Narrow", 6F);
-            label72.Location = new Point(5, 6);
+            label72.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label72.Location = new Point(3, 6);
             label72.Margin = new Padding(1, 0, 1, 0);
             label72.Name = "label72";
-            label72.Size = new Size(28, 13);
+            label72.Size = new Size(30, 13);
             label72.TabIndex = 1;
             label72.Text = "Hasılat";
             // 
@@ -2985,6 +2994,18 @@
             p10.Name = "p10";
             p10.Size = new Size(71, 28);
             p10.TabIndex = 75;
+            // 
+            // lblDevredenResim1
+            // 
+            lblDevredenResim1.AutoSize = true;
+            lblDevredenResim1.Font = new Font("Arial Narrow", 8.25F);
+            lblDevredenResim1.Location = new Point(2, 5);
+            lblDevredenResim1.Margin = new Padding(1, 0, 1, 0);
+            lblDevredenResim1.Name = "lblDevredenResim1";
+            lblDevredenResim1.Size = new Size(12, 15);
+            lblDevredenResim1.TabIndex = 616;
+            lblDevredenResim1.Text = "0";
+            lblDevredenResim1.TextAlign = ContentAlignment.MiddleRight;
             // 
             // p5
             // 
@@ -3358,12 +3379,11 @@
             // 
             lblIstikrazDegisiklik.AutoSize = true;
             lblIstikrazDegisiklik.Font = new Font("Arial", 7.20000029F, FontStyle.Bold);
-            lblIstikrazDegisiklik.Location = new Point(47, 7);
+            lblIstikrazDegisiklik.Location = new Point(50, 7);
             lblIstikrazDegisiklik.Margin = new Padding(1, 0, 1, 0);
             lblIstikrazDegisiklik.Name = "lblIstikrazDegisiklik";
-            lblIstikrazDegisiklik.Size = new Size(11, 12);
+            lblIstikrazDegisiklik.Size = new Size(0, 12);
             lblIstikrazDegisiklik.TabIndex = 86;
-            lblIstikrazDegisiklik.Text = "0";
             // 
             // panel119
             // 
@@ -3487,15 +3507,14 @@
             lblKoyVakifDegisiklik.Location = new Point(47, 7);
             lblKoyVakifDegisiklik.Margin = new Padding(1, 0, 1, 0);
             lblKoyVakifDegisiklik.Name = "lblKoyVakifDegisiklik";
-            lblKoyVakifDegisiklik.Size = new Size(11, 12);
+            lblKoyVakifDegisiklik.Size = new Size(0, 12);
             lblKoyVakifDegisiklik.TabIndex = 87;
-            lblKoyVakifDegisiklik.Text = "0";
             // 
             // label90
             // 
             label90.AutoSize = true;
             label90.Font = new Font("Arial Narrow", 6F);
-            label90.Location = new Point(7, 6);
+            label90.Location = new Point(3, 6);
             label90.Margin = new Padding(1, 0, 1, 0);
             label90.Name = "label90";
             label90.Size = new Size(67, 13);
@@ -4403,22 +4422,22 @@
             // label116
             // 
             label116.AutoSize = true;
-            label116.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label116.Location = new Point(2, 2);
+            label116.Font = new Font("Arial Narrow", 5.25F);
+            label116.Location = new Point(2, 4);
             label116.Margin = new Padding(1, 0, 1, 0);
             label116.Name = "label116";
-            label116.Size = new Size(57, 13);
+            label116.Size = new Size(44, 7);
             label116.TabIndex = 258;
             label116.Text = "Geçen Seneden";
             // 
             // label115
             // 
             label115.AutoSize = true;
-            label115.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label115.Location = new Point(2, 9);
+            label115.Font = new Font("Arial Narrow", 5.25F);
+            label115.Location = new Point(3, 15);
             label115.Margin = new Padding(1, 0, 1, 0);
             label115.Name = "label115";
-            label115.Size = new Size(36, 13);
+            label115.Size = new Size(29, 7);
             label115.TabIndex = 257;
             label115.Text = "Müdevver";
             // 
@@ -4528,22 +4547,22 @@
             // label98
             // 
             label98.AutoSize = true;
-            label98.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label98.Font = new Font("Arial Narrow", 5.25F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
             label98.Location = new Point(3, 2);
             label98.Margin = new Padding(1, 0, 1, 0);
             label98.Name = "label98";
-            label98.Size = new Size(47, 13);
+            label98.Size = new Size(40, 7);
             label98.TabIndex = 256;
             label98.Text = "Muhtaç Asker";
             // 
             // label97
             // 
             label97.AutoSize = true;
-            label97.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label97.Location = new Point(3, 9);
+            label97.Font = new Font("Arial Narrow", 5.25F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            label97.Location = new Point(3, 11);
             label97.Margin = new Padding(1, 0, 1, 0);
             label97.Name = "label97";
-            label97.Size = new Size(56, 13);
+            label97.Size = new Size(47, 7);
             label97.TabIndex = 255;
             label97.Text = "Ailelerine Yardım";
             // 
@@ -5349,7 +5368,7 @@
             // 
             label30.AutoSize = true;
             label30.Font = new Font("Arial Narrow", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label30.Location = new Point(9, 37);
+            label30.Location = new Point(10, 37);
             label30.Margin = new Padding(1, 0, 1, 0);
             label30.Name = "label30";
             label30.Size = new Size(63, 14);
@@ -5403,7 +5422,7 @@
             // 
             label256.AutoSize = true;
             label256.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label256.Location = new Point(3, 16);
+            label256.Location = new Point(19, 16);
             label256.Margin = new Padding(1, 0, 1, 0);
             label256.Name = "label256";
             label256.Size = new Size(28, 13);
@@ -5414,7 +5433,7 @@
             // 
             label254.AutoSize = true;
             label254.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label254.Location = new Point(3, 29);
+            label254.Location = new Point(19, 29);
             label254.Margin = new Padding(1, 0, 1, 0);
             label254.Name = "label254";
             label254.Size = new Size(28, 13);
@@ -5425,7 +5444,7 @@
             // 
             label255.AutoSize = true;
             label255.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label255.Location = new Point(3, 2);
+            label255.Location = new Point(21, 2);
             label255.Margin = new Padding(1, 0, 1, 0);
             label255.Name = "label255";
             label255.Size = new Size(21, 13);
@@ -5545,7 +5564,7 @@
             // 
             label32.AutoSize = true;
             label32.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label32.Location = new Point(19, 4);
+            label32.Location = new Point(23, 4);
             label32.Margin = new Padding(1, 0, 1, 0);
             label32.Name = "label32";
             label32.Size = new Size(35, 13);
@@ -5581,7 +5600,7 @@
             // 
             label271.AutoSize = true;
             label271.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label271.Location = new Point(8, 52);
+            label271.Location = new Point(6, 49);
             label271.Margin = new Padding(1, 0, 1, 0);
             label271.Name = "label271";
             label271.Size = new Size(16, 13);
@@ -5634,7 +5653,7 @@
             // 
             label34.AutoSize = true;
             label34.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label34.Location = new Point(5, 4);
+            label34.Location = new Point(7, 4);
             label34.Margin = new Padding(1, 0, 1, 0);
             label34.Name = "label34";
             label34.Size = new Size(39, 13);
@@ -5690,7 +5709,7 @@
             // 
             label297.AutoSize = true;
             label297.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label297.Location = new Point(19, 3);
+            label297.Location = new Point(21, 4);
             label297.Margin = new Padding(1, 0, 1, 0);
             label297.Name = "label297";
             label297.Size = new Size(21, 13);
@@ -5710,7 +5729,7 @@
             // 
             label153.AutoSize = true;
             label153.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label153.Location = new Point(22, 3);
+            label153.Location = new Point(23, 4);
             label153.Margin = new Padding(1, 0, 1, 0);
             label153.Name = "label153";
             label153.Size = new Size(33, 13);
@@ -5744,7 +5763,7 @@
             // 
             label291.AutoSize = true;
             label291.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label291.Location = new Point(14, 17);
+            label291.Location = new Point(18, 17);
             label291.Margin = new Padding(1, 0, 1, 0);
             label291.Name = "label291";
             label291.Size = new Size(28, 13);
@@ -5755,7 +5774,7 @@
             // 
             label292.AutoSize = true;
             label292.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label292.Location = new Point(14, 30);
+            label292.Location = new Point(19, 30);
             label292.Margin = new Padding(1, 0, 1, 0);
             label292.Name = "label292";
             label292.Size = new Size(28, 13);
@@ -5766,7 +5785,7 @@
             // 
             label293.AutoSize = true;
             label293.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label293.Location = new Point(14, 3);
+            label293.Location = new Point(20, 4);
             label293.Margin = new Padding(1, 0, 1, 0);
             label293.Name = "label293";
             label293.Size = new Size(21, 13);
@@ -5786,7 +5805,7 @@
             // 
             label152.AutoSize = true;
             label152.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label152.Location = new Point(4, 3);
+            label152.Location = new Point(12, 4);
             label152.Margin = new Padding(1, 0, 1, 0);
             label152.Name = "label152";
             label152.Size = new Size(59, 13);
@@ -5806,7 +5825,7 @@
             // 
             label154.AutoSize = true;
             label154.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label154.Location = new Point(3, 3);
+            label154.Location = new Point(4, 4);
             label154.Margin = new Padding(1, 0, 1, 0);
             label154.Name = "label154";
             label154.Size = new Size(22, 13);
@@ -5839,7 +5858,7 @@
             // 
             label302.AutoSize = true;
             label302.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label302.Location = new Point(-1, 23);
+            label302.Location = new Point(1, 23);
             label302.Margin = new Padding(1, 0, 1, 0);
             label302.Name = "label302";
             label302.Size = new Size(28, 13);
@@ -5850,7 +5869,7 @@
             // 
             label303.AutoSize = true;
             label303.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label303.Location = new Point(2, 9);
+            label303.Location = new Point(4, 9);
             label303.Margin = new Padding(1, 0, 1, 0);
             label303.Name = "label303";
             label303.Size = new Size(21, 13);
@@ -5884,7 +5903,7 @@
             // 
             label299.AutoSize = true;
             label299.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label299.Location = new Point(15, 17);
+            label299.Location = new Point(17, 17);
             label299.Margin = new Padding(1, 0, 1, 0);
             label299.Name = "label299";
             label299.Size = new Size(28, 13);
@@ -5895,7 +5914,7 @@
             // 
             label300.AutoSize = true;
             label300.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label300.Location = new Point(15, 30);
+            label300.Location = new Point(18, 30);
             label300.Margin = new Padding(1, 0, 1, 0);
             label300.Name = "label300";
             label300.Size = new Size(28, 13);
@@ -5906,7 +5925,7 @@
             // 
             label301.AutoSize = true;
             label301.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label301.Location = new Point(18, 3);
+            label301.Location = new Point(20, 4);
             label301.Margin = new Padding(1, 0, 1, 0);
             label301.Name = "label301";
             label301.Size = new Size(21, 13);
@@ -5926,7 +5945,7 @@
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label33.Location = new Point(13, 3);
+            label33.Location = new Point(20, 4);
             label33.Margin = new Padding(1, 0, 1, 0);
             label33.Name = "label33";
             label33.Size = new Size(44, 13);
@@ -6092,7 +6111,7 @@
             // lblMunzamIdariMasraf
             // 
             lblMunzamIdariMasraf.AutoSize = true;
-            lblMunzamIdariMasraf.Location = new Point(1, 3);
+            lblMunzamIdariMasraf.Location = new Point(3, 4);
             lblMunzamIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIdariMasraf.Name = "lblMunzamIdariMasraf";
             lblMunzamIdariMasraf.Size = new Size(12, 15);
@@ -6136,7 +6155,7 @@
             // lblTahakkukIdariMasraf
             // 
             lblTahakkukIdariMasraf.AutoSize = true;
-            lblTahakkukIdariMasraf.Location = new Point(1, 3);
+            lblTahakkukIdariMasraf.Location = new Point(3, 4);
             lblTahakkukIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIdariMasraf.Name = "lblTahakkukIdariMasraf";
             lblTahakkukIdariMasraf.Size = new Size(12, 15);
@@ -6164,7 +6183,7 @@
             // lblOdenenIdariMasraf
             // 
             lblOdenenIdariMasraf.AutoSize = true;
-            lblOdenenIdariMasraf.Location = new Point(1, 3);
+            lblOdenenIdariMasraf.Location = new Point(3, 4);
             lblOdenenIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIdariMasraf.Name = "lblOdenenIdariMasraf";
             lblOdenenIdariMasraf.Size = new Size(12, 15);
@@ -6200,7 +6219,7 @@
             // lblIptalIdariMasraf
             // 
             lblIptalIdariMasraf.AutoSize = true;
-            lblIptalIdariMasraf.Location = new Point(1, 3);
+            lblIptalIdariMasraf.Location = new Point(3, 4);
             lblIptalIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblIptalIdariMasraf.Name = "lblIptalIdariMasraf";
             lblIptalIdariMasraf.Size = new Size(12, 15);
@@ -6228,7 +6247,7 @@
             // lblBKIdariMasraf
             // 
             lblBKIdariMasraf.AutoSize = true;
-            lblBKIdariMasraf.Location = new Point(1, 3);
+            lblBKIdariMasraf.Location = new Point(3, 4);
             lblBKIdariMasraf.Margin = new Padding(1, 0, 1, 0);
             lblBKIdariMasraf.Name = "lblBKIdariMasraf";
             lblBKIdariMasraf.Size = new Size(12, 15);
@@ -6264,7 +6283,7 @@
             // lblIptalAylik
             // 
             lblIptalAylik.AutoSize = true;
-            lblIptalAylik.Location = new Point(1, 3);
+            lblIptalAylik.Location = new Point(3, 4);
             lblIptalAylik.Margin = new Padding(1, 0, 1, 0);
             lblIptalAylik.Name = "lblIptalAylik";
             lblIptalAylik.Size = new Size(12, 15);
@@ -6300,7 +6319,7 @@
             // lblOdenenAylik
             // 
             lblOdenenAylik.AutoSize = true;
-            lblOdenenAylik.Location = new Point(1, 3);
+            lblOdenenAylik.Location = new Point(3, 4);
             lblOdenenAylik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenAylik.Name = "lblOdenenAylik";
             lblOdenenAylik.Size = new Size(12, 15);
@@ -6328,7 +6347,7 @@
             // lblTahakkukAylik
             // 
             lblTahakkukAylik.AutoSize = true;
-            lblTahakkukAylik.Location = new Point(1, 3);
+            lblTahakkukAylik.Location = new Point(3, 4);
             lblTahakkukAylik.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukAylik.Name = "lblTahakkukAylik";
             lblTahakkukAylik.Size = new Size(12, 15);
@@ -6372,7 +6391,7 @@
             // lblMunzamAylik
             // 
             lblMunzamAylik.AutoSize = true;
-            lblMunzamAylik.Location = new Point(1, 3);
+            lblMunzamAylik.Location = new Point(3, 4);
             lblMunzamAylik.Margin = new Padding(1, 0, 1, 0);
             lblMunzamAylik.Name = "lblMunzamAylik";
             lblMunzamAylik.Size = new Size(12, 15);
@@ -6400,7 +6419,7 @@
             // lblBKAylik
             // 
             lblBKAylik.AutoSize = true;
-            lblBKAylik.Location = new Point(1, 3);
+            lblBKAylik.Location = new Point(3, 4);
             lblBKAylik.Margin = new Padding(1, 0, 1, 0);
             lblBKAylik.Name = "lblBKAylik";
             lblBKAylik.Size = new Size(12, 15);
@@ -6428,7 +6447,7 @@
             // lblIptalIdariToplami
             // 
             lblIptalIdariToplami.AutoSize = true;
-            lblIptalIdariToplami.Location = new Point(1, 3);
+            lblIptalIdariToplami.Location = new Point(3, 4);
             lblIptalIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalIdariToplami.Name = "lblIptalIdariToplami";
             lblIptalIdariToplami.Size = new Size(12, 15);
@@ -6464,7 +6483,7 @@
             // lblOdenenIdariToplami
             // 
             lblOdenenIdariToplami.AutoSize = true;
-            lblOdenenIdariToplami.Location = new Point(1, 3);
+            lblOdenenIdariToplami.Location = new Point(3, 4);
             lblOdenenIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIdariToplami.Name = "lblOdenenIdariToplami";
             lblOdenenIdariToplami.Size = new Size(12, 15);
@@ -6492,7 +6511,7 @@
             // lblTahakkukIdariToplami
             // 
             lblTahakkukIdariToplami.AutoSize = true;
-            lblTahakkukIdariToplami.Location = new Point(1, 3);
+            lblTahakkukIdariToplami.Location = new Point(3, 4);
             lblTahakkukIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIdariToplami.Name = "lblTahakkukIdariToplami";
             lblTahakkukIdariToplami.Size = new Size(12, 15);
@@ -6536,7 +6555,7 @@
             // lblMunzamIdariToplami
             // 
             lblMunzamIdariToplami.AutoSize = true;
-            lblMunzamIdariToplami.Location = new Point(1, 3);
+            lblMunzamIdariToplami.Location = new Point(3, 4);
             lblMunzamIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIdariToplami.Name = "lblMunzamIdariToplami";
             lblMunzamIdariToplami.Size = new Size(12, 15);
@@ -6564,7 +6583,7 @@
             // lblBKIdariToplami
             // 
             lblBKIdariToplami.AutoSize = true;
-            lblBKIdariToplami.Location = new Point(1, 3);
+            lblBKIdariToplami.Location = new Point(3, 4);
             lblBKIdariToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKIdariToplami.Name = "lblBKIdariToplami";
             lblBKIdariToplami.Size = new Size(12, 15);
@@ -6612,7 +6631,7 @@
             // lblIptalDamizlik
             // 
             lblIptalDamizlik.AutoSize = true;
-            lblIptalDamizlik.Location = new Point(1, 3);
+            lblIptalDamizlik.Location = new Point(3, 4);
             lblIptalDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblIptalDamizlik.Name = "lblIptalDamizlik";
             lblIptalDamizlik.Size = new Size(12, 15);
@@ -6648,7 +6667,7 @@
             // lblOdenenDamizlik
             // 
             lblOdenenDamizlik.AutoSize = true;
-            lblOdenenDamizlik.Location = new Point(1, 3);
+            lblOdenenDamizlik.Location = new Point(3, 4);
             lblOdenenDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenDamizlik.Name = "lblOdenenDamizlik";
             lblOdenenDamizlik.Size = new Size(12, 15);
@@ -6676,7 +6695,7 @@
             // lblTahakkukDamizlik
             // 
             lblTahakkukDamizlik.AutoSize = true;
-            lblTahakkukDamizlik.Location = new Point(1, 3);
+            lblTahakkukDamizlik.Location = new Point(3, 4);
             lblTahakkukDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukDamizlik.Name = "lblTahakkukDamizlik";
             lblTahakkukDamizlik.Size = new Size(12, 15);
@@ -6720,7 +6739,7 @@
             // lblMunzamDamizlik
             // 
             lblMunzamDamizlik.AutoSize = true;
-            lblMunzamDamizlik.Location = new Point(1, 3);
+            lblMunzamDamizlik.Location = new Point(3, 4);
             lblMunzamDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblMunzamDamizlik.Name = "lblMunzamDamizlik";
             lblMunzamDamizlik.Size = new Size(12, 15);
@@ -6748,7 +6767,7 @@
             // lblBKDamizlik
             // 
             lblBKDamizlik.AutoSize = true;
-            lblBKDamizlik.Location = new Point(1, 3);
+            lblBKDamizlik.Location = new Point(3, 4);
             lblBKDamizlik.Margin = new Padding(1, 0, 1, 0);
             lblBKDamizlik.Name = "lblBKDamizlik";
             lblBKDamizlik.Size = new Size(12, 15);
@@ -6852,7 +6871,7 @@
             // lblIptalSulama
             // 
             lblIptalSulama.AutoSize = true;
-            lblIptalSulama.Location = new Point(1, 3);
+            lblIptalSulama.Location = new Point(3, 4);
             lblIptalSulama.Margin = new Padding(1, 0, 1, 0);
             lblIptalSulama.Name = "lblIptalSulama";
             lblIptalSulama.Size = new Size(12, 15);
@@ -6880,7 +6899,7 @@
             // lblBKSulama
             // 
             lblBKSulama.AutoSize = true;
-            lblBKSulama.Location = new Point(1, 3);
+            lblBKSulama.Location = new Point(3, 4);
             lblBKSulama.Margin = new Padding(1, 0, 1, 0);
             lblBKSulama.Name = "lblBKSulama";
             lblBKSulama.Size = new Size(12, 15);
@@ -6908,7 +6927,7 @@
             // lblIptalAgaclama
             // 
             lblIptalAgaclama.AutoSize = true;
-            lblIptalAgaclama.Location = new Point(1, 3);
+            lblIptalAgaclama.Location = new Point(3, 4);
             lblIptalAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblIptalAgaclama.Name = "lblIptalAgaclama";
             lblIptalAgaclama.Size = new Size(12, 15);
@@ -6960,7 +6979,7 @@
             // lblMunzamSulama
             // 
             lblMunzamSulama.AutoSize = true;
-            lblMunzamSulama.Location = new Point(1, 3);
+            lblMunzamSulama.Location = new Point(3, 4);
             lblMunzamSulama.Margin = new Padding(1, 0, 1, 0);
             lblMunzamSulama.Name = "lblMunzamSulama";
             lblMunzamSulama.Size = new Size(12, 15);
@@ -6980,7 +6999,7 @@
             // lblOdenenAgaclama
             // 
             lblOdenenAgaclama.AutoSize = true;
-            lblOdenenAgaclama.Location = new Point(1, 3);
+            lblOdenenAgaclama.Location = new Point(3, 4);
             lblOdenenAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblOdenenAgaclama.Name = "lblOdenenAgaclama";
             lblOdenenAgaclama.Size = new Size(12, 15);
@@ -7000,7 +7019,7 @@
             // lblOdenenSulama
             // 
             lblOdenenSulama.AutoSize = true;
-            lblOdenenSulama.Location = new Point(1, 3);
+            lblOdenenSulama.Location = new Point(3, 4);
             lblOdenenSulama.Margin = new Padding(1, 0, 1, 0);
             lblOdenenSulama.Name = "lblOdenenSulama";
             lblOdenenSulama.Size = new Size(12, 15);
@@ -7036,7 +7055,7 @@
             // lblTahakkukAgaclama
             // 
             lblTahakkukAgaclama.AutoSize = true;
-            lblTahakkukAgaclama.Location = new Point(1, 3);
+            lblTahakkukAgaclama.Location = new Point(3, 4);
             lblTahakkukAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukAgaclama.Name = "lblTahakkukAgaclama";
             lblTahakkukAgaclama.Size = new Size(12, 15);
@@ -7104,7 +7123,7 @@
             // lblMunzamAgaclama
             // 
             lblMunzamAgaclama.AutoSize = true;
-            lblMunzamAgaclama.Location = new Point(1, 3);
+            lblMunzamAgaclama.Location = new Point(3, 4);
             lblMunzamAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblMunzamAgaclama.Name = "lblMunzamAgaclama";
             lblMunzamAgaclama.Size = new Size(12, 15);
@@ -7132,7 +7151,7 @@
             // lblBKAgaclama
             // 
             lblBKAgaclama.AutoSize = true;
-            lblBKAgaclama.Location = new Point(1, 3);
+            lblBKAgaclama.Location = new Point(3, 4);
             lblBKAgaclama.Margin = new Padding(1, 0, 1, 0);
             lblBKAgaclama.Name = "lblBKAgaclama";
             lblBKAgaclama.Size = new Size(12, 15);
@@ -7153,22 +7172,22 @@
             // label215
             // 
             label215.AutoSize = true;
-            label215.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label215.Location = new Point(1, 2);
+            label215.Font = new Font("Arial Narrow", 5.25F);
+            label215.Location = new Point(3, 3);
             label215.Margin = new Padding(1, 0, 1, 0);
             label215.Name = "label215";
-            label215.Size = new Size(79, 13);
+            label215.Size = new Size(68, 7);
             label215.TabIndex = 244;
             label215.Text = "Sulama Harklar Açma ve";
             // 
             // label159
             // 
             label159.AutoSize = true;
-            label159.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label159.Location = new Point(1, 9);
+            label159.Font = new Font("Arial Narrow", 5.25F);
+            label159.Location = new Point(3, 13);
             label159.Margin = new Padding(1, 0, 1, 0);
             label159.Name = "label159";
-            label159.Size = new Size(53, 13);
+            label159.Size = new Size(45, 7);
             label159.TabIndex = 244;
             label159.Text = "Onarım Masrafı";
             // 
@@ -7298,7 +7317,7 @@
             // lblIptalPazarCarsi
             // 
             lblIptalPazarCarsi.AutoSize = true;
-            lblIptalPazarCarsi.Location = new Point(1, 3);
+            lblIptalPazarCarsi.Location = new Point(3, 4);
             lblIptalPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblIptalPazarCarsi.Name = "lblIptalPazarCarsi";
             lblIptalPazarCarsi.Size = new Size(12, 15);
@@ -7334,7 +7353,7 @@
             // lblOdenenPazarCarsi
             // 
             lblOdenenPazarCarsi.AutoSize = true;
-            lblOdenenPazarCarsi.Location = new Point(1, 3);
+            lblOdenenPazarCarsi.Location = new Point(3, 4);
             lblOdenenPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenPazarCarsi.Name = "lblOdenenPazarCarsi";
             lblOdenenPazarCarsi.Size = new Size(12, 15);
@@ -7362,7 +7381,7 @@
             // lblTahakkukPazarCarsi
             // 
             lblTahakkukPazarCarsi.AutoSize = true;
-            lblTahakkukPazarCarsi.Location = new Point(1, 3);
+            lblTahakkukPazarCarsi.Location = new Point(3, 4);
             lblTahakkukPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukPazarCarsi.Name = "lblTahakkukPazarCarsi";
             lblTahakkukPazarCarsi.Size = new Size(12, 15);
@@ -7406,7 +7425,7 @@
             // lblMunzamPazarCarsi
             // 
             lblMunzamPazarCarsi.AutoSize = true;
-            lblMunzamPazarCarsi.Location = new Point(1, 3);
+            lblMunzamPazarCarsi.Location = new Point(3, 4);
             lblMunzamPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamPazarCarsi.Name = "lblMunzamPazarCarsi";
             lblMunzamPazarCarsi.Size = new Size(12, 15);
@@ -7434,7 +7453,7 @@
             // lblBKPazarCarsi
             // 
             lblBKPazarCarsi.AutoSize = true;
-            lblBKPazarCarsi.Location = new Point(1, 3);
+            lblBKPazarCarsi.Location = new Point(3, 4);
             lblBKPazarCarsi.Margin = new Padding(1, 0, 1, 0);
             lblBKPazarCarsi.Name = "lblBKPazarCarsi";
             lblBKPazarCarsi.Size = new Size(12, 15);
@@ -7463,22 +7482,22 @@
             // label219
             // 
             label219.AutoSize = true;
-            label219.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label219.Location = new Point(1, 1);
+            label219.Font = new Font("Arial Narrow", 5.25F);
+            label219.Location = new Point(2, 2);
             label219.Margin = new Padding(1, 0, 1, 0);
             label219.Name = "label219";
-            label219.Size = new Size(72, 13);
+            label219.Size = new Size(62, 7);
             label219.TabIndex = 248;
             label219.Text = "Pazar, Çarşı vb Yerler";
             // 
             // label218
             // 
             label218.AutoSize = true;
-            label218.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label218.Location = new Point(1, 9);
+            label218.Font = new Font("Arial Narrow", 5.25F);
+            label218.Location = new Point(2, 13);
             label218.Margin = new Padding(1, 0, 1, 0);
             label218.Name = "label218";
-            label218.Size = new Size(29, 13);
+            label218.Size = new Size(24, 7);
             label218.TabIndex = 247;
             label218.Text = "Masrafı";
             // 
@@ -7526,7 +7545,7 @@
             // lblIptalOrnekTarla
             // 
             lblIptalOrnekTarla.AutoSize = true;
-            lblIptalOrnekTarla.Location = new Point(1, 3);
+            lblIptalOrnekTarla.Location = new Point(3, 4);
             lblIptalOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblIptalOrnekTarla.Name = "lblIptalOrnekTarla";
             lblIptalOrnekTarla.Size = new Size(12, 15);
@@ -7554,7 +7573,7 @@
             // lblBKOrnekTarla
             // 
             lblBKOrnekTarla.AutoSize = true;
-            lblBKOrnekTarla.Location = new Point(1, 3);
+            lblBKOrnekTarla.Location = new Point(3, 4);
             lblBKOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblBKOrnekTarla.Name = "lblBKOrnekTarla";
             lblBKOrnekTarla.Size = new Size(12, 15);
@@ -7582,7 +7601,7 @@
             // lblIptalZiraiHayvan
             // 
             lblIptalZiraiHayvan.AutoSize = true;
-            lblIptalZiraiHayvan.Location = new Point(1, 3);
+            lblIptalZiraiHayvan.Location = new Point(3, 4);
             lblIptalZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblIptalZiraiHayvan.Name = "lblIptalZiraiHayvan";
             lblIptalZiraiHayvan.Size = new Size(12, 15);
@@ -7634,7 +7653,7 @@
             // lblMunzamOrnekTarla
             // 
             lblMunzamOrnekTarla.AutoSize = true;
-            lblMunzamOrnekTarla.Location = new Point(1, 3);
+            lblMunzamOrnekTarla.Location = new Point(3, 4);
             lblMunzamOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOrnekTarla.Name = "lblMunzamOrnekTarla";
             lblMunzamOrnekTarla.Size = new Size(12, 15);
@@ -7654,7 +7673,7 @@
             // lblOdenenZiraiHayvan
             // 
             lblOdenenZiraiHayvan.AutoSize = true;
-            lblOdenenZiraiHayvan.Location = new Point(1, 3);
+            lblOdenenZiraiHayvan.Location = new Point(3, 4);
             lblOdenenZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblOdenenZiraiHayvan.Name = "lblOdenenZiraiHayvan";
             lblOdenenZiraiHayvan.Size = new Size(12, 15);
@@ -7674,7 +7693,7 @@
             // lblOdenenOrnekTarla
             // 
             lblOdenenOrnekTarla.AutoSize = true;
-            lblOdenenOrnekTarla.Location = new Point(1, 3);
+            lblOdenenOrnekTarla.Location = new Point(3, 4);
             lblOdenenOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOrnekTarla.Name = "lblOdenenOrnekTarla";
             lblOdenenOrnekTarla.Size = new Size(12, 15);
@@ -7710,7 +7729,7 @@
             // lblTahakkukZiraiHayvan
             // 
             lblTahakkukZiraiHayvan.AutoSize = true;
-            lblTahakkukZiraiHayvan.Location = new Point(1, 3);
+            lblTahakkukZiraiHayvan.Location = new Point(3, 4);
             lblTahakkukZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukZiraiHayvan.Name = "lblTahakkukZiraiHayvan";
             lblTahakkukZiraiHayvan.Size = new Size(12, 15);
@@ -7762,7 +7781,7 @@
             // lblTahakkukOrnekTarla
             // 
             lblTahakkukOrnekTarla.AutoSize = true;
-            lblTahakkukOrnekTarla.Location = new Point(1, 3);
+            lblTahakkukOrnekTarla.Location = new Point(3, 4);
             lblTahakkukOrnekTarla.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOrnekTarla.Name = "lblTahakkukOrnekTarla";
             lblTahakkukOrnekTarla.Size = new Size(12, 15);
@@ -7798,7 +7817,7 @@
             // lblMunzamZiraiHayvan
             // 
             lblMunzamZiraiHayvan.AutoSize = true;
-            lblMunzamZiraiHayvan.Location = new Point(1, 3);
+            lblMunzamZiraiHayvan.Location = new Point(3, 4);
             lblMunzamZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblMunzamZiraiHayvan.Name = "lblMunzamZiraiHayvan";
             lblMunzamZiraiHayvan.Size = new Size(12, 15);
@@ -7826,7 +7845,7 @@
             // lblBKZiraiHayvan
             // 
             lblBKZiraiHayvan.AutoSize = true;
-            lblBKZiraiHayvan.Location = new Point(1, 3);
+            lblBKZiraiHayvan.Location = new Point(3, 4);
             lblBKZiraiHayvan.Margin = new Padding(1, 0, 1, 0);
             lblBKZiraiHayvan.Name = "lblBKZiraiHayvan";
             lblBKZiraiHayvan.Size = new Size(12, 15);
@@ -7898,7 +7917,7 @@
             // lblIptalZiraatToplami
             // 
             lblIptalZiraatToplami.AutoSize = true;
-            lblIptalZiraatToplami.Location = new Point(1, 3);
+            lblIptalZiraatToplami.Location = new Point(3, 4);
             lblIptalZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalZiraatToplami.Name = "lblIptalZiraatToplami";
             lblIptalZiraatToplami.Size = new Size(12, 15);
@@ -7934,7 +7953,7 @@
             // lblOdenenZiraatToplami
             // 
             lblOdenenZiraatToplami.AutoSize = true;
-            lblOdenenZiraatToplami.Location = new Point(1, 3);
+            lblOdenenZiraatToplami.Location = new Point(3, 4);
             lblOdenenZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenZiraatToplami.Name = "lblOdenenZiraatToplami";
             lblOdenenZiraatToplami.Size = new Size(12, 15);
@@ -7962,7 +7981,7 @@
             // lblTahakkukZiraatToplami
             // 
             lblTahakkukZiraatToplami.AutoSize = true;
-            lblTahakkukZiraatToplami.Location = new Point(1, 3);
+            lblTahakkukZiraatToplami.Location = new Point(3, 4);
             lblTahakkukZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukZiraatToplami.Name = "lblTahakkukZiraatToplami";
             lblTahakkukZiraatToplami.Size = new Size(12, 15);
@@ -8006,7 +8025,7 @@
             // lblMunzamZiraatToplami
             // 
             lblMunzamZiraatToplami.AutoSize = true;
-            lblMunzamZiraatToplami.Location = new Point(1, 3);
+            lblMunzamZiraatToplami.Location = new Point(3, 4);
             lblMunzamZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamZiraatToplami.Name = "lblMunzamZiraatToplami";
             lblMunzamZiraatToplami.Size = new Size(12, 15);
@@ -8034,7 +8053,7 @@
             // lblBKZiraatToplami
             // 
             lblBKZiraatToplami.AutoSize = true;
-            lblBKZiraatToplami.Location = new Point(1, 3);
+            lblBKZiraatToplami.Location = new Point(3, 4);
             lblBKZiraatToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKZiraatToplami.Name = "lblBKZiraatToplami";
             lblBKZiraatToplami.Size = new Size(12, 15);
@@ -8056,7 +8075,7 @@
             // 
             label235.AutoSize = true;
             label235.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label235.Location = new Point(-1, 4);
+            label235.Location = new Point(1, 5);
             label235.Margin = new Padding(1, 0, 1, 0);
             label235.Name = "label235";
             label235.Size = new Size(71, 13);
@@ -8087,22 +8106,22 @@
             // label221
             // 
             label221.AutoSize = true;
-            label221.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label221.Location = new Point(1, 1);
+            label221.Font = new Font("Arial Narrow", 5.25F);
+            label221.Location = new Point(3, 3);
             label221.Margin = new Padding(1, 0, 1, 0);
             label221.Name = "label221";
-            label221.Size = new Size(79, 13);
+            label221.Size = new Size(68, 7);
             label221.TabIndex = 248;
             label221.Text = "Küçük Endüstri ve Ziraat";
             // 
             // label220
             // 
             label220.AutoSize = true;
-            label220.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label220.Location = new Point(1, 9);
+            label220.Font = new Font("Arial Narrow", 5.25F);
+            label220.Location = new Point(3, 12);
             label220.Margin = new Padding(1, 0, 1, 0);
             label220.Name = "label220";
-            label220.Size = new Size(61, 13);
+            label220.Size = new Size(52, 7);
             label220.TabIndex = 247;
             label220.Text = "Makinaları Masrafı";
             // 
@@ -8126,7 +8145,7 @@
             // lblIptalKucukEndustri
             // 
             lblIptalKucukEndustri.AutoSize = true;
-            lblIptalKucukEndustri.Location = new Point(1, 3);
+            lblIptalKucukEndustri.Location = new Point(3, 4);
             lblIptalKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblIptalKucukEndustri.Name = "lblIptalKucukEndustri";
             lblIptalKucukEndustri.Size = new Size(12, 15);
@@ -8162,7 +8181,7 @@
             // lblOdenenKucukEndustri
             // 
             lblOdenenKucukEndustri.AutoSize = true;
-            lblOdenenKucukEndustri.Location = new Point(1, 3);
+            lblOdenenKucukEndustri.Location = new Point(3, 4);
             lblOdenenKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKucukEndustri.Name = "lblOdenenKucukEndustri";
             lblOdenenKucukEndustri.Size = new Size(12, 15);
@@ -8190,7 +8209,7 @@
             // lblTahakkukKucukEndustri
             // 
             lblTahakkukKucukEndustri.AutoSize = true;
-            lblTahakkukKucukEndustri.Location = new Point(1, 3);
+            lblTahakkukKucukEndustri.Location = new Point(3, 4);
             lblTahakkukKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukKucukEndustri.Name = "lblTahakkukKucukEndustri";
             lblTahakkukKucukEndustri.Size = new Size(12, 15);
@@ -8234,7 +8253,7 @@
             // lblMunzamKucukEndustri
             // 
             lblMunzamKucukEndustri.AutoSize = true;
-            lblMunzamKucukEndustri.Location = new Point(1, 3);
+            lblMunzamKucukEndustri.Location = new Point(3, 4);
             lblMunzamKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKucukEndustri.Name = "lblMunzamKucukEndustri";
             lblMunzamKucukEndustri.Size = new Size(12, 15);
@@ -8262,7 +8281,7 @@
             // lblBKKucukEndustri
             // 
             lblBKKucukEndustri.AutoSize = true;
-            lblBKKucukEndustri.Location = new Point(1, 3);
+            lblBKKucukEndustri.Location = new Point(3, 4);
             lblBKKucukEndustri.Margin = new Padding(1, 0, 1, 0);
             lblBKKucukEndustri.Name = "lblBKKucukEndustri";
             lblBKKucukEndustri.Size = new Size(12, 15);
@@ -8290,7 +8309,7 @@
             // lblIptalKulturToplami
             // 
             lblIptalKulturToplami.AutoSize = true;
-            lblIptalKulturToplami.Location = new Point(1, 3);
+            lblIptalKulturToplami.Location = new Point(3, 4);
             lblIptalKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalKulturToplami.Name = "lblIptalKulturToplami";
             lblIptalKulturToplami.Size = new Size(12, 15);
@@ -8326,7 +8345,7 @@
             // lblOdenenKulturToplami
             // 
             lblOdenenKulturToplami.AutoSize = true;
-            lblOdenenKulturToplami.Location = new Point(1, 3);
+            lblOdenenKulturToplami.Location = new Point(3, 4);
             lblOdenenKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKulturToplami.Name = "lblOdenenKulturToplami";
             lblOdenenKulturToplami.Size = new Size(12, 15);
@@ -8354,7 +8373,7 @@
             // lblTahakkukKulturToplami
             // 
             lblTahakkukKulturToplami.AutoSize = true;
-            lblTahakkukKulturToplami.Location = new Point(1, 3);
+            lblTahakkukKulturToplami.Location = new Point(3, 4);
             lblTahakkukKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukKulturToplami.Name = "lblTahakkukKulturToplami";
             lblTahakkukKulturToplami.Size = new Size(12, 15);
@@ -8398,7 +8417,7 @@
             // lblMunzamKulturToplami
             // 
             lblMunzamKulturToplami.AutoSize = true;
-            lblMunzamKulturToplami.Location = new Point(1, 3);
+            lblMunzamKulturToplami.Location = new Point(3, 4);
             lblMunzamKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKulturToplami.Name = "lblMunzamKulturToplami";
             lblMunzamKulturToplami.Size = new Size(12, 15);
@@ -8426,7 +8445,7 @@
             // lblBKKulturToplami
             // 
             lblBKKulturToplami.AutoSize = true;
-            lblBKKulturToplami.Location = new Point(1, 3);
+            lblBKKulturToplami.Location = new Point(3, 4);
             lblBKKulturToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKKulturToplami.Name = "lblBKKulturToplami";
             lblBKKulturToplami.Size = new Size(12, 15);
@@ -8455,7 +8474,7 @@
             // 
             label223.AutoSize = true;
             label223.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label223.Location = new Point(-1, 4);
+            label223.Location = new Point(2, 5);
             label223.Margin = new Padding(1, 0, 1, 0);
             label223.Name = "label223";
             label223.Size = new Size(78, 13);
@@ -8475,22 +8494,22 @@
             // label189
             // 
             label189.AutoSize = true;
-            label189.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label189.Location = new Point(1, 1);
+            label189.Font = new Font("Arial Narrow", 5.25F);
+            label189.Location = new Point(2, 2);
             label189.Margin = new Padding(1, 0, 1, 0);
             label189.Name = "label189";
-            label189.Size = new Size(77, 13);
+            label189.Size = new Size(64, 7);
             label189.TabIndex = 252;
             label189.Text = "Okul Uygulama Bahçesi";
             // 
             // label188
             // 
             label188.AutoSize = true;
-            label188.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label188.Location = new Point(1, 9);
+            label188.Font = new Font("Arial Narrow", 5.25F);
+            label188.Location = new Point(2, 14);
             label188.Margin = new Padding(1, 0, 1, 0);
             label188.Name = "label188";
-            label188.Size = new Size(36, 13);
+            label188.Size = new Size(30, 7);
             label188.TabIndex = 251;
             label188.Text = "Masrafları";
             // 
@@ -8506,7 +8525,7 @@
             // lblIptalKurs
             // 
             lblIptalKurs.AutoSize = true;
-            lblIptalKurs.Location = new Point(1, 3);
+            lblIptalKurs.Location = new Point(3, 4);
             lblIptalKurs.Margin = new Padding(1, 0, 1, 0);
             lblIptalKurs.Name = "lblIptalKurs";
             lblIptalKurs.Size = new Size(12, 15);
@@ -8534,7 +8553,7 @@
             // lblBKKurs
             // 
             lblBKKurs.AutoSize = true;
-            lblBKKurs.Location = new Point(1, 3);
+            lblBKKurs.Location = new Point(3, 4);
             lblBKKurs.Margin = new Padding(1, 0, 1, 0);
             lblBKKurs.Name = "lblBKKurs";
             lblBKKurs.Size = new Size(12, 15);
@@ -8562,7 +8581,7 @@
             // lblIptalOkulUygulama
             // 
             lblIptalOkulUygulama.AutoSize = true;
-            lblIptalOkulUygulama.Location = new Point(1, 3);
+            lblIptalOkulUygulama.Location = new Point(3, 4);
             lblIptalOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblIptalOkulUygulama.Name = "lblIptalOkulUygulama";
             lblIptalOkulUygulama.Size = new Size(12, 15);
@@ -8614,7 +8633,7 @@
             // lblMunzamKurs
             // 
             lblMunzamKurs.AutoSize = true;
-            lblMunzamKurs.Location = new Point(1, 3);
+            lblMunzamKurs.Location = new Point(3, 4);
             lblMunzamKurs.Margin = new Padding(1, 0, 1, 0);
             lblMunzamKurs.Name = "lblMunzamKurs";
             lblMunzamKurs.Size = new Size(12, 15);
@@ -8634,7 +8653,7 @@
             // lblOdenenOkulUygulama
             // 
             lblOdenenOkulUygulama.AutoSize = true;
-            lblOdenenOkulUygulama.Location = new Point(1, 3);
+            lblOdenenOkulUygulama.Location = new Point(3, 4);
             lblOdenenOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOkulUygulama.Name = "lblOdenenOkulUygulama";
             lblOdenenOkulUygulama.Size = new Size(12, 15);
@@ -8654,7 +8673,7 @@
             // lblOdenenKurs
             // 
             lblOdenenKurs.AutoSize = true;
-            lblOdenenKurs.Location = new Point(1, 3);
+            lblOdenenKurs.Location = new Point(3, 4);
             lblOdenenKurs.Margin = new Padding(1, 0, 1, 0);
             lblOdenenKurs.Name = "lblOdenenKurs";
             lblOdenenKurs.Size = new Size(12, 15);
@@ -8690,7 +8709,7 @@
             // lblTahakkukOkulUygulama
             // 
             lblTahakkukOkulUygulama.AutoSize = true;
-            lblTahakkukOkulUygulama.Location = new Point(1, 3);
+            lblTahakkukOkulUygulama.Location = new Point(3, 4);
             lblTahakkukOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOkulUygulama.Name = "lblTahakkukOkulUygulama";
             lblTahakkukOkulUygulama.Size = new Size(12, 15);
@@ -8742,7 +8761,7 @@
             // lblTahakkukKurs
             // 
             lblTahakkukKurs.AutoSize = true;
-            lblTahakkukKurs.Location = new Point(1, 3);
+            lblTahakkukKurs.Location = new Point(3, 4);
             lblTahakkukKurs.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukKurs.Name = "lblTahakkukKurs";
             lblTahakkukKurs.Size = new Size(12, 15);
@@ -8778,7 +8797,7 @@
             // lblMunzamOkulUygulama
             // 
             lblMunzamOkulUygulama.AutoSize = true;
-            lblMunzamOkulUygulama.Location = new Point(1, 3);
+            lblMunzamOkulUygulama.Location = new Point(3, 4);
             lblMunzamOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOkulUygulama.Name = "lblMunzamOkulUygulama";
             lblMunzamOkulUygulama.Size = new Size(12, 15);
@@ -8806,7 +8825,7 @@
             // lblBKOkulUygulama
             // 
             lblBKOkulUygulama.AutoSize = true;
-            lblBKOkulUygulama.Location = new Point(1, 3);
+            lblBKOkulUygulama.Location = new Point(3, 4);
             lblBKOkulUygulama.Margin = new Padding(1, 0, 1, 0);
             lblBKOkulUygulama.Name = "lblBKOkulUygulama";
             lblBKOkulUygulama.Size = new Size(12, 15);
@@ -8827,7 +8846,7 @@
             // 
             label185.AutoSize = true;
             label185.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label185.Location = new Point(-1, 4);
+            label185.Location = new Point(1, 5);
             label185.Margin = new Padding(1, 0, 1, 0);
             label185.Name = "label185";
             label185.Size = new Size(51, 13);
@@ -8864,7 +8883,7 @@
             // lblIptalOkumaOdasi
             // 
             lblIptalOkumaOdasi.AutoSize = true;
-            lblIptalOkumaOdasi.Location = new Point(1, 3);
+            lblIptalOkumaOdasi.Location = new Point(3, 4);
             lblIptalOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblIptalOkumaOdasi.Name = "lblIptalOkumaOdasi";
             lblIptalOkumaOdasi.Size = new Size(12, 15);
@@ -8900,7 +8919,7 @@
             // lblOdenenOkumaOdasi
             // 
             lblOdenenOkumaOdasi.AutoSize = true;
-            lblOdenenOkumaOdasi.Location = new Point(1, 3);
+            lblOdenenOkumaOdasi.Location = new Point(3, 4);
             lblOdenenOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOkumaOdasi.Name = "lblOdenenOkumaOdasi";
             lblOdenenOkumaOdasi.Size = new Size(12, 15);
@@ -8928,7 +8947,7 @@
             // lblTahakkukOkumaOdasi
             // 
             lblTahakkukOkumaOdasi.AutoSize = true;
-            lblTahakkukOkumaOdasi.Location = new Point(1, 3);
+            lblTahakkukOkumaOdasi.Location = new Point(3, 4);
             lblTahakkukOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOkumaOdasi.Name = "lblTahakkukOkumaOdasi";
             lblTahakkukOkumaOdasi.Size = new Size(12, 15);
@@ -8972,7 +8991,7 @@
             // lblMunzamOkumaOdasi
             // 
             lblMunzamOkumaOdasi.AutoSize = true;
-            lblMunzamOkumaOdasi.Location = new Point(1, 3);
+            lblMunzamOkumaOdasi.Location = new Point(3, 4);
             lblMunzamOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOkumaOdasi.Name = "lblMunzamOkumaOdasi";
             lblMunzamOkumaOdasi.Size = new Size(12, 15);
@@ -9000,7 +9019,7 @@
             // lblBKOkumaOdasi
             // 
             lblBKOkumaOdasi.AutoSize = true;
-            lblBKOkumaOdasi.Location = new Point(1, 3);
+            lblBKOkumaOdasi.Location = new Point(3, 4);
             lblBKOkumaOdasi.Margin = new Padding(1, 0, 1, 0);
             lblBKOkumaOdasi.Name = "lblBKOkumaOdasi";
             lblBKOkumaOdasi.Size = new Size(12, 15);
@@ -9029,7 +9048,7 @@
             // 
             label184.AutoSize = true;
             label184.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label184.Location = new Point(-1, 4);
+            label184.Location = new Point(1, 4);
             label184.Margin = new Padding(1, 0, 1, 0);
             label184.Name = "label184";
             label184.Size = new Size(79, 13);
@@ -9049,7 +9068,7 @@
             // 
             label183.AutoSize = true;
             label183.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label183.Location = new Point(-1, 4);
+            label183.Location = new Point(1, 4);
             label183.Margin = new Padding(1, 0, 1, 0);
             label183.Name = "label183";
             label183.Size = new Size(69, 13);
@@ -9068,7 +9087,7 @@
             // lblIptalOgretmenevi
             // 
             lblIptalOgretmenevi.AutoSize = true;
-            lblIptalOgretmenevi.Location = new Point(1, 3);
+            lblIptalOgretmenevi.Location = new Point(3, 4);
             lblIptalOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblIptalOgretmenevi.Name = "lblIptalOgretmenevi";
             lblIptalOgretmenevi.Size = new Size(12, 15);
@@ -9096,7 +9115,7 @@
             // lblBKOgretmenevi
             // 
             lblBKOgretmenevi.AutoSize = true;
-            lblBKOgretmenevi.Location = new Point(1, 3);
+            lblBKOgretmenevi.Location = new Point(3, 4);
             lblBKOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblBKOgretmenevi.Name = "lblBKOgretmenevi";
             lblBKOgretmenevi.Size = new Size(12, 15);
@@ -9124,7 +9143,7 @@
             // lblIptalOkulDaimi
             // 
             lblIptalOkulDaimi.AutoSize = true;
-            lblIptalOkulDaimi.Location = new Point(1, 3);
+            lblIptalOkulDaimi.Location = new Point(3, 4);
             lblIptalOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblIptalOkulDaimi.Name = "lblIptalOkulDaimi";
             lblIptalOkulDaimi.Size = new Size(12, 15);
@@ -9176,7 +9195,7 @@
             // lblMunzamOgretmenevi
             // 
             lblMunzamOgretmenevi.AutoSize = true;
-            lblMunzamOgretmenevi.Location = new Point(1, 3);
+            lblMunzamOgretmenevi.Location = new Point(3, 4);
             lblMunzamOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOgretmenevi.Name = "lblMunzamOgretmenevi";
             lblMunzamOgretmenevi.Size = new Size(12, 15);
@@ -9196,7 +9215,7 @@
             // lblOdenenOkulDaimi
             // 
             lblOdenenOkulDaimi.AutoSize = true;
-            lblOdenenOkulDaimi.Location = new Point(1, 3);
+            lblOdenenOkulDaimi.Location = new Point(3, 4);
             lblOdenenOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOkulDaimi.Name = "lblOdenenOkulDaimi";
             lblOdenenOkulDaimi.Size = new Size(12, 15);
@@ -9216,7 +9235,7 @@
             // lblOdenenOgretmenevi
             // 
             lblOdenenOgretmenevi.AutoSize = true;
-            lblOdenenOgretmenevi.Location = new Point(1, 3);
+            lblOdenenOgretmenevi.Location = new Point(3, 4);
             lblOdenenOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblOdenenOgretmenevi.Name = "lblOdenenOgretmenevi";
             lblOdenenOgretmenevi.Size = new Size(12, 15);
@@ -9252,7 +9271,7 @@
             // lblTahakkukOkulDaimi
             // 
             lblTahakkukOkulDaimi.AutoSize = true;
-            lblTahakkukOkulDaimi.Location = new Point(1, 3);
+            lblTahakkukOkulDaimi.Location = new Point(3, 4);
             lblTahakkukOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOkulDaimi.Name = "lblTahakkukOkulDaimi";
             lblTahakkukOkulDaimi.Size = new Size(12, 15);
@@ -9304,7 +9323,7 @@
             // lblTahakkukOgretmenevi
             // 
             lblTahakkukOgretmenevi.AutoSize = true;
-            lblTahakkukOgretmenevi.Location = new Point(1, 3);
+            lblTahakkukOgretmenevi.Location = new Point(3, 4);
             lblTahakkukOgretmenevi.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukOgretmenevi.Name = "lblTahakkukOgretmenevi";
             lblTahakkukOgretmenevi.Size = new Size(12, 15);
@@ -9340,7 +9359,7 @@
             // lblMunzamOkulDaimi
             // 
             lblMunzamOkulDaimi.AutoSize = true;
-            lblMunzamOkulDaimi.Location = new Point(1, 3);
+            lblMunzamOkulDaimi.Location = new Point(3, 4);
             lblMunzamOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblMunzamOkulDaimi.Name = "lblMunzamOkulDaimi";
             lblMunzamOkulDaimi.Size = new Size(12, 15);
@@ -9368,7 +9387,7 @@
             // lblBKOkulDaimi
             // 
             lblBKOkulDaimi.AutoSize = true;
-            lblBKOkulDaimi.Location = new Point(1, 3);
+            lblBKOkulDaimi.Location = new Point(3, 4);
             lblBKOkulDaimi.Margin = new Padding(1, 0, 1, 0);
             lblBKOkulDaimi.Name = "lblBKOkulDaimi";
             lblBKOkulDaimi.Size = new Size(12, 15);
@@ -9390,22 +9409,22 @@
             // label236
             // 
             label236.AutoSize = true;
-            label236.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label236.Location = new Point(1, 1);
+            label236.Font = new Font("Arial Narrow", 5.25F);
+            label236.Location = new Point(1, 2);
             label236.Margin = new Padding(1, 0, 1, 0);
             label236.Name = "label236";
-            label236.Size = new Size(84, 13);
+            label236.Size = new Size(70, 7);
             label236.TabIndex = 250;
             label236.Text = "Okul ve Öğretmenevi İnşa";
             // 
             // label222
             // 
             label222.AutoSize = true;
-            label222.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label222.Location = new Point(1, 9);
+            label222.Font = new Font("Arial Narrow", 5.25F);
+            label222.Location = new Point(1, 14);
             label222.Margin = new Padding(1, 0, 1, 0);
             label222.Name = "label222";
-            label222.Size = new Size(56, 13);
+            label222.Size = new Size(49, 7);
             label222.TabIndex = 249;
             label222.Text = "ve Tamir Masrafı";
             // 
@@ -9526,7 +9545,7 @@
             // 
             label233.AutoSize = true;
             label233.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label233.Location = new Point(-1, 4);
+            label233.Location = new Point(1, 4);
             label233.Margin = new Padding(1, 0, 1, 0);
             label233.Name = "label233";
             label233.Size = new Size(84, 13);
@@ -9556,7 +9575,7 @@
             // lblIptalIctimai
             // 
             lblIptalIctimai.AutoSize = true;
-            lblIptalIctimai.Location = new Point(1, 3);
+            lblIptalIctimai.Location = new Point(3, 4);
             lblIptalIctimai.Margin = new Padding(1, 0, 1, 0);
             lblIptalIctimai.Name = "lblIptalIctimai";
             lblIptalIctimai.Size = new Size(12, 15);
@@ -9584,7 +9603,7 @@
             // lblBKIctimai
             // 
             lblBKIctimai.AutoSize = true;
-            lblBKIctimai.Location = new Point(1, 3);
+            lblBKIctimai.Location = new Point(3, 4);
             lblBKIctimai.Margin = new Padding(1, 0, 1, 0);
             lblBKIctimai.Name = "lblBKIctimai";
             lblBKIctimai.Size = new Size(12, 15);
@@ -9612,7 +9631,7 @@
             // lblIptalSaglikToplami
             // 
             lblIptalSaglikToplami.AutoSize = true;
-            lblIptalSaglikToplami.Location = new Point(1, 3);
+            lblIptalSaglikToplami.Location = new Point(3, 4);
             lblIptalSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblIptalSaglikToplami.Name = "lblIptalSaglikToplami";
             lblIptalSaglikToplami.Size = new Size(12, 15);
@@ -9664,7 +9683,7 @@
             // lblMunzamIctimai
             // 
             lblMunzamIctimai.AutoSize = true;
-            lblMunzamIctimai.Location = new Point(1, 3);
+            lblMunzamIctimai.Location = new Point(3, 4);
             lblMunzamIctimai.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIctimai.Name = "lblMunzamIctimai";
             lblMunzamIctimai.Size = new Size(12, 15);
@@ -9684,7 +9703,7 @@
             // lblOdenenSaglikToplami
             // 
             lblOdenenSaglikToplami.AutoSize = true;
-            lblOdenenSaglikToplami.Location = new Point(1, 3);
+            lblOdenenSaglikToplami.Location = new Point(3, 4);
             lblOdenenSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblOdenenSaglikToplami.Name = "lblOdenenSaglikToplami";
             lblOdenenSaglikToplami.Size = new Size(12, 15);
@@ -9704,7 +9723,7 @@
             // lblOdenenIctimai
             // 
             lblOdenenIctimai.AutoSize = true;
-            lblOdenenIctimai.Location = new Point(1, 3);
+            lblOdenenIctimai.Location = new Point(3, 4);
             lblOdenenIctimai.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIctimai.Name = "lblOdenenIctimai";
             lblOdenenIctimai.Size = new Size(12, 15);
@@ -9740,7 +9759,7 @@
             // lblTahakkukSaglikToplami
             // 
             lblTahakkukSaglikToplami.AutoSize = true;
-            lblTahakkukSaglikToplami.Location = new Point(1, 3);
+            lblTahakkukSaglikToplami.Location = new Point(3, 4);
             lblTahakkukSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukSaglikToplami.Name = "lblTahakkukSaglikToplami";
             lblTahakkukSaglikToplami.Size = new Size(12, 15);
@@ -9792,7 +9811,7 @@
             // lblTahakkukIctimai
             // 
             lblTahakkukIctimai.AutoSize = true;
-            lblTahakkukIctimai.Location = new Point(1, 3);
+            lblTahakkukIctimai.Location = new Point(3, 4);
             lblTahakkukIctimai.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIctimai.Name = "lblTahakkukIctimai";
             lblTahakkukIctimai.Size = new Size(12, 15);
@@ -9828,7 +9847,7 @@
             // lblMunzamSaglikToplami
             // 
             lblMunzamSaglikToplami.AutoSize = true;
-            lblMunzamSaglikToplami.Location = new Point(1, 3);
+            lblMunzamSaglikToplami.Location = new Point(3, 4);
             lblMunzamSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblMunzamSaglikToplami.Name = "lblMunzamSaglikToplami";
             lblMunzamSaglikToplami.Size = new Size(12, 15);
@@ -9856,7 +9875,7 @@
             // lblBKSaglikToplami
             // 
             lblBKSaglikToplami.AutoSize = true;
-            lblBKSaglikToplami.Location = new Point(1, 3);
+            lblBKSaglikToplami.Location = new Point(3, 4);
             lblBKSaglikToplami.Margin = new Padding(1, 0, 1, 0);
             lblBKSaglikToplami.Name = "lblBKSaglikToplami";
             lblBKSaglikToplami.Size = new Size(12, 15);
@@ -9878,7 +9897,7 @@
             // 
             label232.AutoSize = true;
             label232.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label232.Location = new Point(-1, 4);
+            label232.Location = new Point(1, 5);
             label232.Margin = new Padding(1, 0, 1, 0);
             label232.Name = "label232";
             label232.Size = new Size(80, 13);
@@ -9926,7 +9945,7 @@
             // lblIptalSpor
             // 
             lblIptalSpor.AutoSize = true;
-            lblIptalSpor.Location = new Point(1, 3);
+            lblIptalSpor.Location = new Point(3, 4);
             lblIptalSpor.Margin = new Padding(1, 0, 1, 0);
             lblIptalSpor.Name = "lblIptalSpor";
             lblIptalSpor.Size = new Size(12, 15);
@@ -9962,7 +9981,7 @@
             // lblOdenenSpor
             // 
             lblOdenenSpor.AutoSize = true;
-            lblOdenenSpor.Location = new Point(1, 3);
+            lblOdenenSpor.Location = new Point(3, 4);
             lblOdenenSpor.Margin = new Padding(1, 0, 1, 0);
             lblOdenenSpor.Name = "lblOdenenSpor";
             lblOdenenSpor.Size = new Size(12, 15);
@@ -9990,7 +10009,7 @@
             // lblTahakkukSpor
             // 
             lblTahakkukSpor.AutoSize = true;
-            lblTahakkukSpor.Location = new Point(1, 3);
+            lblTahakkukSpor.Location = new Point(3, 4);
             lblTahakkukSpor.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukSpor.Name = "lblTahakkukSpor";
             lblTahakkukSpor.Size = new Size(12, 15);
@@ -10034,7 +10053,7 @@
             // lblMunzamSpor
             // 
             lblMunzamSpor.AutoSize = true;
-            lblMunzamSpor.Location = new Point(1, 3);
+            lblMunzamSpor.Location = new Point(3, 4);
             lblMunzamSpor.Margin = new Padding(1, 0, 1, 0);
             lblMunzamSpor.Name = "lblMunzamSpor";
             lblMunzamSpor.Size = new Size(12, 15);
@@ -10062,7 +10081,7 @@
             // lblBKSpor
             // 
             lblBKSpor.AutoSize = true;
-            lblBKSpor.Location = new Point(1, 3);
+            lblBKSpor.Location = new Point(3, 4);
             lblBKSpor.Margin = new Padding(1, 0, 1, 0);
             lblBKSpor.Name = "lblBKSpor";
             lblBKSpor.Size = new Size(12, 15);
@@ -10092,7 +10111,7 @@
             // 
             label231.AutoSize = true;
             label231.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label231.Location = new Point(-1, 4);
+            label231.Location = new Point(1, 5);
             label231.Margin = new Padding(1, 0, 1, 0);
             label231.Name = "label231";
             label231.Size = new Size(66, 13);
@@ -10124,11 +10143,11 @@
             // label193
             // 
             label193.AutoSize = true;
-            label193.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label193.Location = new Point(1, 1);
+            label193.Font = new Font("Arial Narrow", 5.25F);
+            label193.Location = new Point(3, 2);
             label193.Margin = new Padding(1, 0, 1, 0);
             label193.Name = "label193";
-            label193.Size = new Size(58, 13);
+            label193.Size = new Size(51, 7);
             label193.TabIndex = 254;
             label193.Text = "Temizlik ve Sağlık";
             // 
@@ -10146,11 +10165,11 @@
             // label182
             // 
             label182.AutoSize = true;
-            label182.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label182.Location = new Point(1, 9);
+            label182.Font = new Font("Arial Narrow", 5.25F);
+            label182.Location = new Point(2, 13);
             label182.Margin = new Padding(1, 0, 1, 0);
             label182.Name = "label182";
-            label182.Size = new Size(54, 13);
+            label182.Size = new Size(47, 7);
             label182.TabIndex = 253;
             label182.Text = "Tesisleri Masrafı";
             // 
@@ -10166,7 +10185,7 @@
             // lblIptalIcmeSulari
             // 
             lblIptalIcmeSulari.AutoSize = true;
-            lblIptalIcmeSulari.Location = new Point(1, 3);
+            lblIptalIcmeSulari.Location = new Point(3, 4);
             lblIptalIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblIptalIcmeSulari.Name = "lblIptalIcmeSulari";
             lblIptalIcmeSulari.Size = new Size(12, 15);
@@ -10194,7 +10213,7 @@
             // lblBKIcmeSulari
             // 
             lblBKIcmeSulari.AutoSize = true;
-            lblBKIcmeSulari.Location = new Point(1, 3);
+            lblBKIcmeSulari.Location = new Point(3, 4);
             lblBKIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblBKIcmeSulari.Name = "lblBKIcmeSulari";
             lblBKIcmeSulari.Size = new Size(12, 15);
@@ -10222,7 +10241,7 @@
             // lblIptalTemizlik
             // 
             lblIptalTemizlik.AutoSize = true;
-            lblIptalTemizlik.Location = new Point(1, 3);
+            lblIptalTemizlik.Location = new Point(3, 4);
             lblIptalTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblIptalTemizlik.Name = "lblIptalTemizlik";
             lblIptalTemizlik.Size = new Size(12, 15);
@@ -10274,7 +10293,7 @@
             // lblMunzamIcmeSulari
             // 
             lblMunzamIcmeSulari.AutoSize = true;
-            lblMunzamIcmeSulari.Location = new Point(1, 3);
+            lblMunzamIcmeSulari.Location = new Point(3, 4);
             lblMunzamIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblMunzamIcmeSulari.Name = "lblMunzamIcmeSulari";
             lblMunzamIcmeSulari.Size = new Size(12, 15);
@@ -10294,7 +10313,7 @@
             // lblOdenenTemizlik
             // 
             lblOdenenTemizlik.AutoSize = true;
-            lblOdenenTemizlik.Location = new Point(1, 3);
+            lblOdenenTemizlik.Location = new Point(3, 4);
             lblOdenenTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblOdenenTemizlik.Name = "lblOdenenTemizlik";
             lblOdenenTemizlik.Size = new Size(12, 15);
@@ -10314,7 +10333,7 @@
             // lblOdenenIcmeSulari
             // 
             lblOdenenIcmeSulari.AutoSize = true;
-            lblOdenenIcmeSulari.Location = new Point(1, 3);
+            lblOdenenIcmeSulari.Location = new Point(3, 4);
             lblOdenenIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblOdenenIcmeSulari.Name = "lblOdenenIcmeSulari";
             lblOdenenIcmeSulari.Size = new Size(12, 15);
@@ -10350,7 +10369,7 @@
             // lblTahakkukTemizlik
             // 
             lblTahakkukTemizlik.AutoSize = true;
-            lblTahakkukTemizlik.Location = new Point(1, 3);
+            lblTahakkukTemizlik.Location = new Point(3, 4);
             lblTahakkukTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukTemizlik.Name = "lblTahakkukTemizlik";
             lblTahakkukTemizlik.Size = new Size(12, 15);
@@ -10402,7 +10421,7 @@
             // lblTahakkukIcmeSulari
             // 
             lblTahakkukIcmeSulari.AutoSize = true;
-            lblTahakkukIcmeSulari.Location = new Point(1, 3);
+            lblTahakkukIcmeSulari.Location = new Point(3, 4);
             lblTahakkukIcmeSulari.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukIcmeSulari.Name = "lblTahakkukIcmeSulari";
             lblTahakkukIcmeSulari.Size = new Size(12, 15);
@@ -10438,7 +10457,7 @@
             // lblMunzamTemizlik
             // 
             lblMunzamTemizlik.AutoSize = true;
-            lblMunzamTemizlik.Location = new Point(1, 3);
+            lblMunzamTemizlik.Location = new Point(3, 4);
             lblMunzamTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblMunzamTemizlik.Name = "lblMunzamTemizlik";
             lblMunzamTemizlik.Size = new Size(12, 15);
@@ -10466,7 +10485,7 @@
             // lblBKTemizlik
             // 
             lblBKTemizlik.AutoSize = true;
-            lblBKTemizlik.Location = new Point(1, 3);
+            lblBKTemizlik.Location = new Point(3, 4);
             lblBKTemizlik.Margin = new Padding(1, 0, 1, 0);
             lblBKTemizlik.Name = "lblBKTemizlik";
             lblBKTemizlik.Size = new Size(12, 15);
@@ -10488,7 +10507,7 @@
             // 
             label229.AutoSize = true;
             label229.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label229.Location = new Point(-1, 4);
+            label229.Location = new Point(2, 5);
             label229.Margin = new Padding(1, 0, 1, 0);
             label229.Name = "label229";
             label229.Size = new Size(70, 13);
@@ -10908,7 +10927,7 @@
             // lblTahakkukSulama
             // 
             lblTahakkukSulama.AutoSize = true;
-            lblTahakkukSulama.Location = new Point(1, 3);
+            lblTahakkukSulama.Location = new Point(3, 4);
             lblTahakkukSulama.Margin = new Padding(1, 0, 1, 0);
             lblTahakkukSulama.Name = "lblTahakkukSulama";
             lblTahakkukSulama.Size = new Size(12, 15);
@@ -12124,12 +12143,11 @@
             // 
             lblHasilatDegisiklik.AutoSize = true;
             lblHasilatDegisiklik.Font = new Font("Arial", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            lblHasilatDegisiklik.Location = new Point(46, 7);
+            lblHasilatDegisiklik.Location = new Point(49, 7);
             lblHasilatDegisiklik.Margin = new Padding(1, 0, 1, 0);
             lblHasilatDegisiklik.Name = "lblHasilatDegisiklik";
-            lblHasilatDegisiklik.Size = new Size(11, 12);
+            lblHasilatDegisiklik.Size = new Size(0, 12);
             lblHasilatDegisiklik.TabIndex = 24;
-            lblHasilatDegisiklik.Text = "0";
             // 
             // panel81
             // 
@@ -12250,18 +12268,6 @@
             panel161.Name = "panel161";
             panel161.Size = new Size(71, 28);
             panel161.TabIndex = 615;
-            // 
-            // lblDevredenResim1
-            // 
-            lblDevredenResim1.AutoSize = true;
-            lblDevredenResim1.Font = new Font("Arial Narrow", 8.25F);
-            lblDevredenResim1.Location = new Point(2, 5);
-            lblDevredenResim1.Margin = new Padding(1, 0, 1, 0);
-            lblDevredenResim1.Name = "lblDevredenResim1";
-            lblDevredenResim1.Size = new Size(12, 15);
-            lblDevredenResim1.TabIndex = 616;
-            lblDevredenResim1.Text = "0";
-            lblDevredenResim1.TextAlign = ContentAlignment.MiddleRight;
             // 
             // FrmKesinHesap1
             // 
