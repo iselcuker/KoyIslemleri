@@ -822,23 +822,23 @@
             lblAza2 = new Label();
             lblAza3 = new Label();
             lblKatip = new Label();
-            pMuhtar = new Panel();
+            g1 = new Panel();
             lblMuhtar = new Label();
             lblMuhtarY = new Label();
-            pMudur = new Panel();
+            g2 = new Panel();
             lblMudur = new Label();
             lblMudurY = new Label();
-            pImam = new Panel();
+            g3 = new Panel();
             lblImam = new Label();
             lblImamY = new Label();
-            pAza1 = new Panel();
+            g4 = new Panel();
             lblAza1 = new Label();
             lblAza1Y = new Label();
-            pAza2 = new Panel();
-            pAza3 = new Panel();
-            pAza4 = new Panel();
+            g5 = new Panel();
+            g6 = new Panel();
+            g7 = new Panel();
             lblAza4 = new Label();
-            pKatip = new Panel();
+            g8 = new Panel();
             p66 = new Panel();
             p136 = new Panel();
             p140 = new Panel();
@@ -1053,14 +1053,14 @@
             p134.SuspendLayout();
             p133.SuspendLayout();
             p135.SuspendLayout();
-            pMuhtar.SuspendLayout();
-            pMudur.SuspendLayout();
-            pImam.SuspendLayout();
-            pAza1.SuspendLayout();
-            pAza2.SuspendLayout();
-            pAza3.SuspendLayout();
-            pAza4.SuspendLayout();
-            pKatip.SuspendLayout();
+            g1.SuspendLayout();
+            g2.SuspendLayout();
+            g3.SuspendLayout();
+            g4.SuspendLayout();
+            g5.SuspendLayout();
+            g6.SuspendLayout();
+            g7.SuspendLayout();
+            g8.SuspendLayout();
             p66.SuspendLayout();
             p136.SuspendLayout();
             p140.SuspendLayout();
@@ -8846,7 +8846,7 @@
             // 
             lblAza2Y.AutoSize = true;
             lblAza2Y.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblAza2Y.Location = new Point(34, 16);
+            lblAza2Y.Location = new Point(37, 16);
             lblAza2Y.Margin = new Padding(1, 0, 1, 0);
             lblAza2Y.Name = "lblAza2Y";
             lblAza2Y.Size = new Size(26, 13);
@@ -8857,7 +8857,7 @@
             // 
             lblAza3Y.AutoSize = true;
             lblAza3Y.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblAza3Y.Location = new Point(36, 16);
+            lblAza3Y.Location = new Point(41, 16);
             lblAza3Y.Margin = new Padding(1, 0, 1, 0);
             lblAza3Y.Name = "lblAza3Y";
             lblAza3Y.Size = new Size(26, 13);
@@ -8868,7 +8868,7 @@
             // 
             lblKatipY.AutoSize = true;
             lblKatipY.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblKatipY.Location = new Point(40, 16);
+            lblKatipY.Location = new Point(41, 16);
             lblKatipY.Margin = new Padding(1, 0, 1, 0);
             lblKatipY.Name = "lblKatipY";
             lblKatipY.Size = new Size(24, 13);
@@ -8879,7 +8879,7 @@
             // 
             lblAza4Y.AutoSize = true;
             lblAza4Y.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblAza4Y.Location = new Point(32, 16);
+            lblAza4Y.Location = new Point(39, 16);
             lblAza4Y.Margin = new Padding(1, 0, 1, 0);
             lblAza4Y.Name = "lblAza4Y";
             lblAza4Y.Size = new Size(26, 13);
@@ -8890,110 +8890,117 @@
             // 
             lblAza2.AutoSize = true;
             lblAza2.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblAza2.Location = new Point(1, 3);
+            lblAza2.Location = new Point(44, 3);
             lblAza2.Margin = new Padding(1, 0, 1, 0);
             lblAza2.Name = "lblAza2";
             lblAza2.Size = new Size(0, 13);
             lblAza2.TabIndex = 1091;
+            lblAza2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblAza3
             // 
             lblAza3.AutoSize = true;
             lblAza3.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblAza3.Location = new Point(3, 3);
+            lblAza3.Location = new Point(48, 3);
             lblAza3.Margin = new Padding(1, 0, 1, 0);
             lblAza3.Name = "lblAza3";
             lblAza3.Size = new Size(0, 13);
             lblAza3.TabIndex = 1091;
+            lblAza3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblKatip
             // 
             lblKatip.AutoSize = true;
             lblKatip.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblKatip.Location = new Point(5, 3);
+            lblKatip.Location = new Point(46, 3);
             lblKatip.Margin = new Padding(1, 0, 1, 0);
             lblKatip.Name = "lblKatip";
             lblKatip.Size = new Size(0, 13);
             lblKatip.TabIndex = 1091;
+            lblKatip.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // pMuhtar
+            // g1
             // 
-            pMuhtar.Controls.Add(lblMuhtar);
-            pMuhtar.Controls.Add(lblMuhtarY);
-            pMuhtar.Location = new Point(672, 539);
-            pMuhtar.Name = "pMuhtar";
-            pMuhtar.Size = new Size(114, 33);
-            pMuhtar.TabIndex = 1092;
+            g1.BorderStyle = BorderStyle.FixedSingle;
+            g1.Controls.Add(lblMuhtar);
+            g1.Controls.Add(lblMuhtarY);
+            g1.Location = new Point(672, 539);
+            g1.Name = "g1";
+            g1.Size = new Size(114, 33);
+            g1.TabIndex = 1092;
             // 
             // lblMuhtar
             // 
             lblMuhtar.AutoSize = true;
             lblMuhtar.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblMuhtar.Location = new Point(43, 3);
+            lblMuhtar.Location = new Point(3, 3);
             lblMuhtar.Margin = new Padding(1, 0, 1, 0);
             lblMuhtar.Name = "lblMuhtar";
             lblMuhtar.Size = new Size(0, 13);
             lblMuhtar.TabIndex = 1092;
+            lblMuhtar.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblMuhtarY
             // 
             lblMuhtarY.AutoSize = true;
             lblMuhtarY.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblMuhtarY.Location = new Point(29, 16);
+            lblMuhtarY.Location = new Point(42, 16);
             lblMuhtarY.Margin = new Padding(1, 0, 1, 0);
             lblMuhtarY.Name = "lblMuhtarY";
             lblMuhtarY.Size = new Size(29, 13);
             lblMuhtarY.TabIndex = 1093;
             lblMuhtarY.Text = "Muhtar";
             // 
-            // pMudur
+            // g2
             // 
-            pMudur.Controls.Add(lblMudur);
-            pMudur.Controls.Add(lblMudurY);
-            pMudur.Location = new Point(822, 539);
-            pMudur.Name = "pMudur";
-            pMudur.Size = new Size(114, 33);
-            pMudur.TabIndex = 1093;
+            g2.Controls.Add(lblMudur);
+            g2.Controls.Add(lblMudurY);
+            g2.Location = new Point(822, 539);
+            g2.Name = "g2";
+            g2.Size = new Size(114, 33);
+            g2.TabIndex = 1093;
             // 
             // lblMudur
             // 
             lblMudur.AutoSize = true;
             lblMudur.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblMudur.Location = new Point(2, 3);
+            lblMudur.Location = new Point(46, 3);
             lblMudur.Margin = new Padding(1, 0, 1, 0);
             lblMudur.Name = "lblMudur";
             lblMudur.Size = new Size(0, 13);
             lblMudur.TabIndex = 1092;
+            lblMudur.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblMudurY
             // 
             lblMudurY.AutoSize = true;
             lblMudurY.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblMudurY.Location = new Point(23, 16);
+            lblMudurY.Location = new Point(31, 16);
             lblMudurY.Margin = new Padding(1, 0, 1, 0);
             lblMudurY.Name = "lblMudurY";
             lblMudurY.Size = new Size(49, 13);
             lblMudurY.TabIndex = 1093;
             lblMudurY.Text = "Okul Müdürü";
             // 
-            // pImam
+            // g3
             // 
-            pImam.Controls.Add(lblImam);
-            pImam.Controls.Add(lblImamY);
-            pImam.Location = new Point(985, 539);
-            pImam.Name = "pImam";
-            pImam.Size = new Size(114, 33);
-            pImam.TabIndex = 1094;
+            g3.Controls.Add(lblImam);
+            g3.Controls.Add(lblImamY);
+            g3.Location = new Point(985, 539);
+            g3.Name = "g3";
+            g3.Size = new Size(114, 33);
+            g3.TabIndex = 1094;
             // 
             // lblImam
             // 
             lblImam.AutoSize = true;
             lblImam.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblImam.Location = new Point(4, 2);
+            lblImam.Location = new Point(48, 2);
             lblImam.Margin = new Padding(1, 0, 1, 0);
             lblImam.Name = "lblImam";
             lblImam.Size = new Size(0, 13);
             lblImam.TabIndex = 1092;
+            lblImam.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblImamY
             // 
@@ -9006,81 +9013,83 @@
             lblImamY.TabIndex = 1093;
             lblImamY.Text = "İmam";
             // 
-            // pAza1
+            // g4
             // 
-            pAza1.Controls.Add(lblAza1);
-            pAza1.Controls.Add(lblAza1Y);
-            pAza1.Location = new Point(672, 630);
-            pAza1.Name = "pAza1";
-            pAza1.Size = new Size(114, 33);
-            pAza1.TabIndex = 1095;
+            g4.Controls.Add(lblAza1);
+            g4.Controls.Add(lblAza1Y);
+            g4.Location = new Point(672, 630);
+            g4.Name = "g4";
+            g4.Size = new Size(114, 33);
+            g4.TabIndex = 1095;
             // 
             // lblAza1
             // 
             lblAza1.AutoSize = true;
             lblAza1.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblAza1.Location = new Point(5, 3);
+            lblAza1.Location = new Point(45, 3);
             lblAza1.Margin = new Padding(1, 0, 1, 0);
             lblAza1.Name = "lblAza1";
             lblAza1.Size = new Size(0, 13);
             lblAza1.TabIndex = 1092;
+            lblAza1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblAza1Y
             // 
             lblAza1Y.AutoSize = true;
             lblAza1Y.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblAza1Y.Location = new Point(37, 16);
+            lblAza1Y.Location = new Point(38, 16);
             lblAza1Y.Margin = new Padding(1, 0, 1, 0);
             lblAza1Y.Name = "lblAza1Y";
             lblAza1Y.Size = new Size(26, 13);
             lblAza1Y.TabIndex = 1093;
             lblAza1Y.Text = "Aza 1";
             // 
-            // pAza2
+            // g5
             // 
-            pAza2.Controls.Add(lblAza2);
-            pAza2.Controls.Add(lblAza2Y);
-            pAza2.Location = new Point(822, 630);
-            pAza2.Name = "pAza2";
-            pAza2.Size = new Size(114, 33);
-            pAza2.TabIndex = 1096;
+            g5.Controls.Add(lblAza2);
+            g5.Controls.Add(lblAza2Y);
+            g5.Location = new Point(822, 630);
+            g5.Name = "g5";
+            g5.Size = new Size(114, 33);
+            g5.TabIndex = 1096;
             // 
-            // pAza3
+            // g6
             // 
-            pAza3.Controls.Add(lblAza3);
-            pAza3.Controls.Add(lblAza3Y);
-            pAza3.Location = new Point(985, 630);
-            pAza3.Name = "pAza3";
-            pAza3.Size = new Size(114, 33);
-            pAza3.TabIndex = 1097;
+            g6.Controls.Add(lblAza3);
+            g6.Controls.Add(lblAza3Y);
+            g6.Location = new Point(985, 630);
+            g6.Name = "g6";
+            g6.Size = new Size(114, 33);
+            g6.TabIndex = 1097;
             // 
-            // pAza4
+            // g7
             // 
-            pAza4.Controls.Add(lblAza4);
-            pAza4.Controls.Add(lblAza4Y);
-            pAza4.Location = new Point(672, 724);
-            pAza4.Name = "pAza4";
-            pAza4.Size = new Size(114, 33);
-            pAza4.TabIndex = 1098;
+            g7.Controls.Add(lblAza4);
+            g7.Controls.Add(lblAza4Y);
+            g7.Location = new Point(672, 724);
+            g7.Name = "g7";
+            g7.Size = new Size(114, 33);
+            g7.TabIndex = 1098;
             // 
             // lblAza4
             // 
             lblAza4.AutoSize = true;
             lblAza4.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblAza4.Location = new Point(5, 3);
+            lblAza4.Location = new Point(46, 3);
             lblAza4.Margin = new Padding(1, 0, 1, 0);
             lblAza4.Name = "lblAza4";
             lblAza4.Size = new Size(0, 13);
             lblAza4.TabIndex = 1091;
+            lblAza4.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // pKatip
+            // g8
             // 
-            pKatip.Controls.Add(lblKatip);
-            pKatip.Controls.Add(lblKatipY);
-            pKatip.Location = new Point(822, 725);
-            pKatip.Name = "pKatip";
-            pKatip.Size = new Size(114, 33);
-            pKatip.TabIndex = 1099;
+            g8.Controls.Add(lblKatip);
+            g8.Controls.Add(lblKatipY);
+            g8.Location = new Point(822, 725);
+            g8.Name = "g8";
+            g8.Size = new Size(114, 33);
+            g8.TabIndex = 1099;
             // 
             // p66
             // 
@@ -9207,14 +9216,14 @@
             this.Controls.Add(p139);
             this.Controls.Add(p140);
             this.Controls.Add(p136);
-            this.Controls.Add(pKatip);
-            this.Controls.Add(pAza4);
-            this.Controls.Add(pAza3);
-            this.Controls.Add(pAza2);
-            this.Controls.Add(pAza1);
-            this.Controls.Add(pImam);
-            this.Controls.Add(pMudur);
-            this.Controls.Add(pMuhtar);
+            this.Controls.Add(g8);
+            this.Controls.Add(g7);
+            this.Controls.Add(g6);
+            this.Controls.Add(g5);
+            this.Controls.Add(g4);
+            this.Controls.Add(g3);
+            this.Controls.Add(g2);
+            this.Controls.Add(g1);
             this.Controls.Add(label124);
             this.Controls.Add(label123);
             this.Controls.Add(label120);
@@ -10090,22 +10099,22 @@
             p133.PerformLayout();
             p135.ResumeLayout(false);
             p135.PerformLayout();
-            pMuhtar.ResumeLayout(false);
-            pMuhtar.PerformLayout();
-            pMudur.ResumeLayout(false);
-            pMudur.PerformLayout();
-            pImam.ResumeLayout(false);
-            pImam.PerformLayout();
-            pAza1.ResumeLayout(false);
-            pAza1.PerformLayout();
-            pAza2.ResumeLayout(false);
-            pAza2.PerformLayout();
-            pAza3.ResumeLayout(false);
-            pAza3.PerformLayout();
-            pAza4.ResumeLayout(false);
-            pAza4.PerformLayout();
-            pKatip.ResumeLayout(false);
-            pKatip.PerformLayout();
+            g1.ResumeLayout(false);
+            g1.PerformLayout();
+            g2.ResumeLayout(false);
+            g2.PerformLayout();
+            g3.ResumeLayout(false);
+            g3.PerformLayout();
+            g4.ResumeLayout(false);
+            g4.PerformLayout();
+            g5.ResumeLayout(false);
+            g5.PerformLayout();
+            g6.ResumeLayout(false);
+            g6.PerformLayout();
+            g7.ResumeLayout(false);
+            g7.PerformLayout();
+            g8.ResumeLayout(false);
+            g8.PerformLayout();
             p66.ResumeLayout(false);
             p66.PerformLayout();
             p136.ResumeLayout(false);
@@ -10926,22 +10935,22 @@
         private Label lblTahakkukAskerYardim;
         private Label lblMunzamAskerToplami;
         private Label lblBKAskerToplami;
-        private Panel pMuhtar;
+        private Panel g1;
         private Label lblMuhtar;
         private Label lblMuhtarY;
-        private Panel pMudur;
+        private Panel g2;
         private Label lblMudur;
         private Label lblMudurY;
-        private Panel pImam;
+        private Panel g3;
         private Label lblImam;
         private Label lblImamY;
-        private Panel pAza1;
+        private Panel g4;
         private Label lblAza1;
         private Label lblAza1Y;
-        private Panel pAza2;
-        private Panel pAza3;
-        private Panel pAza4;
-        private Panel pKatip;
+        private Panel g5;
+        private Panel g6;
+        private Panel g7;
+        private Panel g8;
         private Panel p66;
         private Panel p136;
         private Panel p140;

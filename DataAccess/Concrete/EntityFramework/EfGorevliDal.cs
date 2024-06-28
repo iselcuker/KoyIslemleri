@@ -18,16 +18,10 @@ namespace DataAccess.Concrete.EntityFramework
             using (KoyButcesiContext context = new KoyButcesiContext())
             {
                 var result = from gorevli in context.Gorevlis
-
-                             join koy in context.Koys
-                             on gorevli.KoyId equals koy.Id
-
-                             join donem in context.Donems
-                             on gorevli.DonemId equals donem.Id
-
-                             join unvan in context.Unvans
-                             on gorevli.UnvanId equals unvan.Id
-
+                             join koy in context.Koys on gorevli.KoyId equals koy.Id
+                             join donem in context.Donems on gorevli.DonemId equals donem.Id
+                             join unvan in context.Unvans on gorevli.UnvanId equals unvan.Id
+                             where gorevli.KoyId == koyId && gorevli.DonemId == donemId
                              select new GorevliDetailDto
                              {
                                  GorevliId = gorevli.Id,
@@ -39,7 +33,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  Soyadi = gorevli.Soyadi,
                                  TelefonNo = gorevli.TelefonNo,
                                  UnvanId = unvan.Id,
-                                 UnvanAdi=unvan.UnvanAdi,
+                                 UnvanAdi = unvan.UnvanAdi,
                              };
                 return result.ToList();
             }

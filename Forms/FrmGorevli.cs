@@ -36,6 +36,10 @@ namespace Forms
             // Parametreler sınıfın alanlarına atanıyor
             _seciliKoyIndex = seciliKoyIndex;
             _seciliDonemIndex = seciliDonemIndex;
+
+            // Form yüklenirken Gorevliler() metodunu çağır
+            this.Load += new EventHandler(FrmGorevli_Load);
+
         }
 
         private void UnvanDoldur()
@@ -95,7 +99,7 @@ namespace Forms
                     // Yeni görevli ekle
                     gorevliManager.Add(yeniGorevli);
                     MessageBox.Show("Görevli Kaydı Yapıldı");
-
+                    Gorevliler();
                     Temizle();
                 }
                 else
