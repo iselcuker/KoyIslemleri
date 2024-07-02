@@ -87,7 +87,7 @@
             panel606 = new Panel();
             panel607 = new Panel();
             p103 = new Panel();
-            lblTahakkukSaglıkToplami = new Label();
+            lblTahakkukSaglikToplami = new Label();
             panel609 = new Panel();
             panel610 = new Panel();
             p112 = new Panel();
@@ -1677,23 +1677,23 @@
             // p103
             // 
             p103.BorderStyle = BorderStyle.FixedSingle;
-            p103.Controls.Add(lblTahakkukSaglıkToplami);
+            p103.Controls.Add(lblTahakkukSaglikToplami);
             p103.Location = new Point(357, 647);
             p103.Name = "p103";
             p103.Size = new Size(68, 23);
             p103.TabIndex = 921;
             // 
-            // lblTahakkukSaglıkToplami
+            // lblTahakkukSaglikToplami
             // 
-            lblTahakkukSaglıkToplami.AutoSize = true;
-            lblTahakkukSaglıkToplami.Font = new Font("Segoe UI", 6.75F);
-            lblTahakkukSaglıkToplami.Location = new Point(3, 4);
-            lblTahakkukSaglıkToplami.Margin = new Padding(1, 0, 1, 0);
-            lblTahakkukSaglıkToplami.Name = "lblTahakkukSaglıkToplami";
-            lblTahakkukSaglıkToplami.Size = new Size(10, 12);
-            lblTahakkukSaglıkToplami.TabIndex = 3;
-            lblTahakkukSaglıkToplami.Text = "0";
-            lblTahakkukSaglıkToplami.TextAlign = ContentAlignment.MiddleRight;
+            lblTahakkukSaglikToplami.AutoSize = true;
+            lblTahakkukSaglikToplami.Font = new Font("Segoe UI", 6.75F);
+            lblTahakkukSaglikToplami.Location = new Point(3, 4);
+            lblTahakkukSaglikToplami.Margin = new Padding(1, 0, 1, 0);
+            lblTahakkukSaglikToplami.Name = "lblTahakkukSaglikToplami";
+            lblTahakkukSaglikToplami.Size = new Size(10, 12);
+            lblTahakkukSaglikToplami.TabIndex = 3;
+            lblTahakkukSaglikToplami.Text = "0";
+            lblTahakkukSaglikToplami.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel609
             // 
@@ -9192,6 +9192,7 @@
             dgvTahminiGiderler.AllowUserToResizeColumns = false;
             dgvTahminiGiderler.AllowUserToResizeRows = false;
             dgvTahminiGiderler.BackgroundColor = SystemColors.Control;
+            dgvTahminiGiderler.BorderStyle = BorderStyle.None;
             dgvTahminiGiderler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTahminiGiderler.Location = new Point(658, 668);
@@ -10856,7 +10857,7 @@
         private Label lblOdenenToplamBayindirlik;
         private Label lblOdenenSaglikToplami;
         private Label lblTahakkukToplamBayindirlik;
-        private Label lblTahakkukSaglıkToplami;
+        private Label lblTahakkukSaglikToplami;
         private Label lblMunzamToplamBayindirlik;
         private Label lblBKBayindirlik;
         private Label lblIptalKulturToplami;

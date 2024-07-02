@@ -31,6 +31,7 @@ namespace Forms
         private TahminiButceGelirManager _tahminiButceGelirManager;
         private TahminiButceGiderManager _tahminiButceGiderManager;
         private GorevliManager _gorevliManager;
+        private FrmKesinHesap1 frmKesinHesap1;
 
         public FrmKesinHesap2(int seciliKoyIndex, byte seciliDonemIndex, byte seciliIlceIndex)
         {
@@ -1157,6 +1158,50 @@ namespace Forms
             }
         }
 
+        public void GiderlerToplamlari()
+        {
+            try
+            {
+                //TurluIsler İPTAL İŞLEMLERİ
+                decimal bkIdariIsler, bkZiraat, bkKultur, bkSaglik, bkBayindirlik, bkTurluIsler,
+                        munzamIdariIsler, munzamZiraat, munzamKultur, munzamSaglik, munzamBayindirlik, munzamTurluIsler,
+                        tahakkukIdariIsler, tahakkukZiraat, tahakkukKultur, tahakkukSaglik, tahakkukBayindirlik, tahakkukTurluIsler,
+                        odenenIdariIsler, odenenZiraat, odenenKultur, odenenSaglik, odenenBayindirlik, odenenTurluIsler,
+                        iptalIdariIsler, iptalZiraat, iptalKultur, iptalSaglik, iptalBayindirlik, iptalTurluIsler;
+                        
+                        
+
+                //TurluIsler İPTAL İŞLEMLERİ
+                if (!decimal.TryParse(lblIptalVergi.Text, out iptalVergi))
+                    iptalVergi = 0;
+                if (!decimal.TryParse(lblIptalKoyBorcu.Text, out iptalKoyBorcu))
+                    iptalKoyBorcu = 0;
+                if (!decimal.TryParse(lblIptalMahkeme.Text, out iptalMahkeme))
+                    iptalMahkeme = 0;
+                if (!decimal.TryParse(lblIptalIstimlak.Text, out iptalIstimlak))
+                    iptalIstimlak = 0;
+                if (!decimal.TryParse(lblIptalUmulmadik.Text, out iptalUmulmadik))
+                    iptalUmulmadik = 0;
+                if (!decimal.TryParse(lblIptalTurluMasraf.Text, out iptalTurluMasraf))
+                    iptalTurluMasraf = 0;
+                if (!decimal.TryParse(lblIptalIlkogretim.Text, out iptalIlkogretim))
+                    iptalIlkogretim = 0;
+                if (!decimal.TryParse(lblIptalKHGB.Text, out iptalKHGB))
+                    iptalKHGB = 0;
+
+                // Toplamları hesaplayın
+                decimal IptalTurluIslerToplami = iptalVergi + iptalKoyBorcu + iptalMahkeme + iptalIstimlak + iptalUmulmadik + iptalTurluMasraf + iptalIlkogretim + iptalKHGB;
+
+                // Sonucu etikete atayın
+                lblIptalTurluIslerToplami.Text = IptalTurluIslerToplami.ToString("#,0.00");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bir hata oluştu: " + ex.Message);
+            }
+        }
+
         private bool IsZeroOrEmpty(string text)
         {
             //Debug.WriteLine($"IsZeroOrEmpty çağrıldı. Text: {text}");
@@ -1199,8 +1244,59 @@ namespace Forms
             }
         }
 
+        //KesinHesap1'den KesinHesap2 ye label aktarımı
+        private void TransferLabelValuesFromKesinHesap1()
+        {
+            // FrmKesinHesap1 formunu kontrol edin, eğer null ise arka planda oluşturun
+            if (frmKesinHesap1 == null)
+            {
+                frmKesinHesap1 = new FrmKesinHesap1(_seciliKoyIndex, _seciliDonemIndex, _seciliIlceIndex);
+                frmKesinHesap1.StartPosition = FormStartPosition.Manual;
+                frmKesinHesap1.Location = new Point(-frmKesinHesap1.Width - 100, -frmKesinHesap1.Height - 100); // Ekran dışında bir konum
+                frmKesinHesap1.ShowInTaskbar = false; // Görev çubuğunda gösterme
+                frmKesinHesap1.Visible = false; // Görünmez olarak ayarla
+            }
+
+            // FrmKesinHesap1 formu yüklenene kadar bekleyin
+            frmKesinHesap1.Load += (sender, e) =>
+            {
+                // İlgili label değerlerini FrmKesinHesap2'ye kopyalayın
+                lblBKIdariIsler.Text = frmKesinHesap1.lblBKIdariToplami.Text;
+                lblMunzamIdariIslerToplami.Text = frmKesinHesap1.lblMunzamIdariToplami.Text;
+                lblTahakkukIdariIslerToplami.Text = frmKesinHesap1.lblTahakkukIdariToplami.Text;
+                lblOdenenIdariIslerToplami.Text = frmKesinHesap1.lblOdenenIdariToplami.Text;
+                lblIptalIdariIslerToplami.Text = frmKesinHesap1.lblIptalIdariToplami.Text;
+
+                lblBKZiraat.Text = frmKesinHesap1.lblBKZiraatToplami.Text;
+                lblMunzamZiraatToplami.Text = frmKesinHesap1.lblMunzamZiraatToplami.Text;
+                lblTahakkukZiraatToplami.Text = frmKesinHesap1.lblTahakkukZiraatToplami.Text;
+                lblOdenenZiraatToplami.Text = frmKesinHesap1.lblOdenenZiraatToplami.Text;
+                lblIptalZiraatToplami.Text = frmKesinHesap1.lblIptalZiraatToplami.Text;
+
+                lblBKKultur.Text = frmKesinHesap1.lblBKKulturToplami.Text;
+                lblMunzamKulturToplami.Text = frmKesinHesap1.lblMunzamKulturToplami.Text;
+                lblTahakkukKulturToplami.Text = frmKesinHesap1.lblTahakkukKulturToplami.Text;
+                lblOdenenKulturToplami.Text = frmKesinHesap1.lblOdenenKulturToplami.Text;
+                lblIptalKulturToplami.Text = frmKesinHesap1.lblIptalKulturToplami.Text;
+
+                lblBKSaglik.Text = frmKesinHesap1.lblBKKulturToplami.Text;
+                lblMunzamSaglikToplami.Text = frmKesinHesap1.lblMunzamSaglikToplami.Text;
+                lblTahakkukSaglikToplami.Text = frmKesinHesap1.lblTahakkukSaglikToplami.Text;
+                lblOdenenSaglikToplami.Text = frmKesinHesap1.lblOdenenSaglikToplami.Text;
+                lblIptalSaglikToplami.Text = frmKesinHesap1.lblIptalSaglikToplami.Text;
+
+                // İşlem tamamlandıktan sonra formu kapatın
+                frmKesinHesap1.Close();
+                frmKesinHesap1 = null; // Referansı null yapın, bir sonraki işlem için tekrar oluşturulacak
+            };
+
+            // Formu göstermeden yükleyin
+            frmKesinHesap1.Show();
+        }
+
         private void FrmKesinHesap2_Load(object sender, EventArgs e)
         {
+            TransferLabelValuesFromKesinHesap1();
             LoadGiderAltKategoriVerileri();
             LoadGiderAltKategoriToplamlari();
             TahminiGiderler();
@@ -1214,7 +1310,6 @@ namespace Forms
             lblOdenenTurluIslerToplami.Text = lblOdenenGenelToplami.Text;
 
             UpdateLabelsFromTahminiButce();
-
 
             YolKopruHesap();
             KoyAkarHesap();

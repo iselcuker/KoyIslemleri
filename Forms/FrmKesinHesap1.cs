@@ -54,6 +54,7 @@ namespace Forms
             _tahminiButceGiderManager = new TahminiButceGiderManager(new EfTahminiButceGiderDal());
         }
 
+ 
         //Degisiklik labellarına veri yazdırma
         public void DegisiklikLabellarıYaz()
         {
@@ -2411,6 +2412,11 @@ namespace Forms
             {
                 MessageBox.Show("Bir hata oluştu: " + ex.Message);
             }
+        }
+
+        private void FrmKesinHesap1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //PaylasilanDegerleriAyarla();
         }
     }
 }
