@@ -9192,7 +9192,6 @@
             dgvTahminiGiderler.AllowUserToResizeColumns = false;
             dgvTahminiGiderler.AllowUserToResizeRows = false;
             dgvTahminiGiderler.BackgroundColor = SystemColors.Control;
-            dgvTahminiGiderler.BorderStyle = BorderStyle.None;
             dgvTahminiGiderler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTahminiGiderler.Location = new Point(658, 668);

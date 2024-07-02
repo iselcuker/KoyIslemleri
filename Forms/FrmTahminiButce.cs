@@ -44,7 +44,6 @@ namespace Forms
             donemManager = new DonemManager(new EfDonemDal());
 
             //pnlEkButceButonlari.Visible = false;
-
         }
 
         public void load_form(object Form)

@@ -134,11 +134,30 @@ namespace Forms
                 FrmKesinHesap1 frmKesinHesap1Y = new FrmKesinHesap1(seciliKoyIndex, seciliDonemIndex,seciliIlceIndex);
                 load_form(frmKesinHesap1Y);
             }
-            //load_form(new FrmKesinHesap1Y(seciliKoyIndex,seciliDonemIndex));
         }
 
         private void btnKesinHesap2_Click_1(object sender, EventArgs e)
         {
+            //// FrmAnaSayfa formunu bul ve seçili köy ve dönem indexlerini al
+            //FrmAnaSayfa frmAnaSayfa = Application.OpenForms["FrmAnaSayfa"] as FrmAnaSayfa;
+
+            //if (frmAnaSayfa != null)
+            //{
+            //    // FrmAnaSayfa formundaki ComboBox'lardan seçili köy ve dönem indexlerini al
+            //    Ilce secilenIlce = frmAnaSayfa.cmbIlce?.SelectedItem as Ilce;
+            //    byte seciliIlceIndex = secilenIlce?.Id ?? _seciliIlceIndex;
+
+            //    Koy secilenKoy = frmAnaSayfa.CmbKoy.SelectedItem as Koy;
+            //    int seciliKoyIndex = secilenKoy?.Id ?? _seciliKoyIndex;
+
+            //    Donem secilenDonem = frmAnaSayfa.CmbDonem.SelectedItem as Donem;
+            //    byte seciliDonemIndex = secilenDonem != null ? Convert.ToByte(secilenDonem.Id) : _seciliDonemIndex;
+
+            //    // FrmTahminiGelir formunu oluştur ve load_form metoduyla yükle
+            //    FrmKesinHesap2 frmKesinHesap2 = new FrmKesinHesap2(seciliKoyIndex, seciliDonemIndex, seciliIlceIndex);
+            //    load_form(frmKesinHesap2);
+            //}
+
             // FrmAnaSayfa formunu bul ve seçili köy ve dönem indexlerini al
             FrmAnaSayfa frmAnaSayfa = Application.OpenForms["FrmAnaSayfa"] as FrmAnaSayfa;
 
@@ -154,11 +173,27 @@ namespace Forms
                 Donem secilenDonem = frmAnaSayfa.CmbDonem.SelectedItem as Donem;
                 byte seciliDonemIndex = secilenDonem != null ? Convert.ToByte(secilenDonem.Id) : _seciliDonemIndex;
 
-                // FrmTahminiGelir formunu oluştur ve load_form metoduyla yükle
-                FrmKesinHesap2 frmKesinHesap2 = new FrmKesinHesap2(seciliKoyIndex, seciliDonemIndex, seciliIlceIndex);
-                load_form(frmKesinHesap2);
+                // FrmTahminiButce formunu arka planda açın
+                FrmTahminiButce frmTahminiButce = Application.OpenForms.OfType<FrmTahminiButce>().FirstOrDefault();
+                if (frmTahminiButce == null)
+                {
+                    frmTahminiButce = new FrmTahminiButce(seciliKoyIndex, seciliDonemIndex); // Gerekli parametreleri geçin
+                    frmTahminiButce.Load += (s, args) =>
+                    {
+                        // FrmTahminiButce yüklendikten sonra FrmKesinHesap2 formunu load_form metoduyla açın
+                        FrmKesinHesap2 frmKesinHesap2 = new FrmKesinHesap2(seciliKoyIndex, seciliDonemIndex, seciliIlceIndex);
+                        load_form(frmKesinHesap2);
+                    };
+                    frmTahminiButce.Show();
+                    frmTahminiButce.Hide(); // Formu arka planda açın
+                }
+                else
+                {
+                    // FrmTahminiButce zaten açıksa doğrudan FrmKesinHesap2'yi load_form metoduyla açın
+                    FrmKesinHesap2 frmKesinHesap2 = new FrmKesinHesap2(seciliKoyIndex, seciliDonemIndex, seciliIlceIndex);
+                    load_form(frmKesinHesap2);
+                }
             }
-           // load_form(new FrmKesinHesap2());
         }
     }
 }

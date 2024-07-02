@@ -271,7 +271,7 @@ namespace Forms
                 string selectedGiderAltKategori = ((GiderAltKategori)cmbGiderAltKategori.SelectedItem).GiderAltKategoriAdi;
 
                 // Eğer seçilen gelir kategorisi belirli bir değer ise
-                if (selectedGiderAltKategori == "Yangın Vesaiti Masrafı" || selectedGiderAltKategori == "Aydınlatma Masrafı" || selectedGiderAltKategori == "Vergi ve Sigorta Masrafı" || selectedGiderAltKategori == "Köy Borçları, İstikraz Taksit ve Faizleri" || selectedGiderAltKategori == "Mahkeme ve Keşif Masrafları" || selectedGiderAltKategori == "İstimlak Masrafları" || selectedGiderAltKategori == "Umulmadık Masraflar")
+                if (selectedGiderAltKategori == "Yangın Vesaiti Masrafı" || selectedGiderAltKategori == "Aydınlatma Masrafı" || selectedGiderAltKategori == "Vergi ve Sigorta Masrafı" || selectedGiderAltKategori == "Mahkeme ve Keşif Masrafları" || selectedGiderAltKategori == "İstimlak Masrafları" || selectedGiderAltKategori == "Umulmadık Masraflar")
                 {
                     // Alt kategorinin seçili olup olmadığını kontrol et
                     if (cmbDegisiklik.SelectedIndex < 0 || !(cmbDegisiklik.SelectedItem is Degisiklik))
