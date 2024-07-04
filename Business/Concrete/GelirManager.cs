@@ -69,10 +69,6 @@ namespace Business.Concrete
             return _gelirDal.GetAll(ge => ge.KoyId == koyId && ge.DonemId == donemId);
         }
 
-  
-
-
-
         //public Gelir GetToplamByKoyIdAndDonemIdAndGelirKategoriId(int koyId, byte donemId, byte gelirKategoriId)
         //{
         //    //return _gelirDal.Get(ge=>ge.KoyId==koyId&&ge.DonemId==donemId&&ge.GelirKategoriId==gelirKategoriId);

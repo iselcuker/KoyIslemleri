@@ -86,7 +86,6 @@ namespace Forms
 
         private void FrmGelir_Load(object sender, EventArgs e)
         {
-
             try
             {
                 ToplamGelir();

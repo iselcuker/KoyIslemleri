@@ -88,7 +88,6 @@ namespace Forms
             }
         }
 
-
         private void RakamlariPanelinSaginaYasla()
         {
             for (int i = 1; i <= 143; i++)
@@ -991,6 +990,7 @@ namespace Forms
 
                 // Sonucu etikete atayın
                 lblIptalBayindirlikToplami.Text = IptalBayindirlikToplami.ToString("#,0.00");
+                lblIptalToplamBayindirlik.Text = lblIptalBayindirlikToplami.Text;
 
                 ////BAYINDIRLIK ODENEN İŞLEMLERİ
                 if (!decimal.TryParse(lblOdenenYolKopru.Text, out odenenYolKopru))
@@ -1009,20 +1009,9 @@ namespace Forms
 
                 // Sonucu etikete atayın
                 lblOdenenBayindirlikToplami.Text = OdenenBayindirlikToplami.ToString("#,0.00");
+                lblOdenenToplamBayindirlik.Text = lblOdenenBayindirlikToplami.Text;
 
-                ////BAYINDIRLIK TAHAKKUK İŞLEMLERİ tahakkukYolKopru, tahakkukKoyAkar, tahakkukVesait, tahakkukAydinlatma, tahakkukMezarlik,
-                if (!decimal.TryParse(lblTahakkukYolKopru.Text, out tahakkukYolKopru))
-                    tahakkukYolKopru = 0;
-                if (!decimal.TryParse(lblTahakkukKoyAkar.Text, out tahakkukKoyAkar))
-                    tahakkukKoyAkar = 0;
-                if (!decimal.TryParse(lblTahakkukVesait.Text, out tahakkukVesait))
-                    tahakkukVesait = 0;
-                if (!decimal.TryParse(lblTahakkukAydinlatma.Text, out tahakkukAydinlatma))
-                    tahakkukAydinlatma = 0;
-                if (!decimal.TryParse(lblTahakkukMezarlik.Text, out tahakkukMezarlik))
-                    tahakkukMezarlik = 0;
-
-                // Toplamları hesaplayın
+                ////BAYINDIRLIK TAHAKKUK İŞLEMLERİ
                 if (!decimal.TryParse(lblTahakkukYolKopru.Text, out tahakkukYolKopru))
                     tahakkukYolKopru = 0;
                 if (!decimal.TryParse(lblTahakkukKoyAkar.Text, out tahakkukKoyAkar))
@@ -1039,6 +1028,27 @@ namespace Forms
 
                 // Sonucu etikete atayın
                 lblTahakkukBayindirlikToplami.Text = TahakkukBayindirlikToplami.ToString("#,0.00");
+                lblTahakkukToplamBayindirlik.Text = lblTahakkukBayindirlikToplami.Text;
+
+                ////BAYINDIRLIK MUNZAM İŞLEMLERİ
+                if (!decimal.TryParse(lblMunzamYolKopru.Text, out munzamYolKopru))
+                    munzamYolKopru = 0;
+                if (!decimal.TryParse(lblMunzamKoyAkar.Text, out munzamKoyAkar))
+                    munzamKoyAkar = 0;
+                if (!decimal.TryParse(lblMunzamVesait.Text, out munzamVesait))
+                    munzamVesait = 0;
+                if (!decimal.TryParse(lblMunzamAydinlatma.Text, out munzamAydinlatma))
+                    munzamMezarlik = 0;
+                if (!decimal.TryParse(lblMunzamMezarlik.Text, out munzamMezarlik))
+                    munzamMezarlik = 0;
+
+                // Toplamları hesaplayın
+                decimal MunzamBayindirlikToplami = munzamYolKopru + munzamKoyAkar + munzamVesait + munzamAydinlatma + munzamMezarlik;
+
+                // Sonucu etikete atayın
+                lblMunzamBayindirlikToplami.Text = MunzamBayindirlikToplami.ToString("#,0.00");
+                lblMunzamToplamBayindirlik.Text = lblMunzamBayindirlikToplami.Text;
+
             }
             catch (Exception ex)
             {
@@ -1079,6 +1089,7 @@ namespace Forms
 
                 // Sonucu etikete atayın
                 lblIptalTurluIslerToplami.Text = IptalTurluIslerToplami.ToString("#,0.00");
+                lblIptalToplamTurluIsler.Text = lblIptalTurluIslerToplami.Text;
 
                 ////TurluIsler ODENEN İŞLEMLERİ
                 if (!decimal.TryParse(lblOdenenVergi.Text, out odenenVergi))
@@ -1103,6 +1114,7 @@ namespace Forms
 
                 // Sonucu etikete atayın
                 lblOdenenTurluIslerToplami.Text = OdenenTurluIslerToplami.ToString("#,0.00");
+                lblOdenenToplamTurluİsler.Text = lblOdenenTurluIslerToplami.Text;
 
                 ////TurluIsler TAHAKKUK İŞLEMLERİ tahakkukYolKopru, tahakkukKoyAkar, tahakkukVesait, tahakkukAydinlatma, tahakkukMezarlik,
                 if (!decimal.TryParse(lblTahakkukVergi.Text, out tahakkukVergi))
@@ -1127,6 +1139,7 @@ namespace Forms
 
                 // Sonucu etikete atayın
                 lblTahakkukTurluIslerToplami.Text = TahakkukTurluIslerToplami.ToString("#,0.00");
+                lblTahakkukToplamTurluİsler.Text = lblTahakkukTurluIslerToplami.Text;
 
                 ////TurluIsler MUNZAM İŞLEMLERİ
                 if (!decimal.TryParse(lblMunzamVergi.Text, out munzamVergi))
@@ -1151,6 +1164,7 @@ namespace Forms
 
                 // Sonucu etikete atayın
                 lblMunzamTurluIslerToplami.Text = MunzamTurluIslerToplami.ToString("#,0.00");
+                lblMunzamToplamTurluİsler.Text = lblMunzamTurluIslerToplami.Text;
             }
             catch (Exception ex)
             {
@@ -1163,38 +1177,122 @@ namespace Forms
             try
             {
                 //TurluIsler İPTAL İŞLEMLERİ
-                decimal bkIdariIsler, bkZiraat, bkKultur, bkSaglik, bkBayindirlik, bkTurluIsler,
-                        munzamIdariIsler, munzamZiraat, munzamKultur, munzamSaglik, munzamBayindirlik, munzamTurluIsler,
-                        tahakkukIdariIsler, tahakkukZiraat, tahakkukKultur, tahakkukSaglik, tahakkukBayindirlik, tahakkukTurluIsler,
-                        odenenIdariIsler, odenenZiraat, odenenKultur, odenenSaglik, odenenBayindirlik, odenenTurluIsler,
-                        iptalIdariIsler, iptalZiraat, iptalKultur, iptalSaglik, iptalBayindirlik, iptalTurluIsler;
-                        
-                        
+                decimal bkIdariIsler, bkZiraat, bkKultur, bkSaglik, bkBayindirlik, bkTurluIsler, bkAsker,
+                        munzamIdariIsler, munzamZiraat, munzamKultur, munzamSaglik, munzamBayindirlik, munzamTurluIsler, munzamAsker,
+                        tahakkukIdariIsler, tahakkukZiraat, tahakkukKultur, tahakkukSaglik, tahakkukBayindirlik, tahakkukTurluIsler, tahakkukAsker,
+                        odenenIdariIsler, odenenZiraat, odenenKultur, odenenSaglik, odenenBayindirlik, odenenTurluIsler, odenenAsker,
+                        iptalIdariIsler, iptalZiraat, iptalKultur, iptalSaglik, iptalBayindirlik, iptalTurluIsler, iptalAsker;
 
-                //TurluIsler İPTAL İŞLEMLERİ
-                if (!decimal.TryParse(lblIptalVergi.Text, out iptalVergi))
-                    iptalVergi = 0;
-                if (!decimal.TryParse(lblIptalKoyBorcu.Text, out iptalKoyBorcu))
-                    iptalKoyBorcu = 0;
-                if (!decimal.TryParse(lblIptalMahkeme.Text, out iptalMahkeme))
-                    iptalMahkeme = 0;
-                if (!decimal.TryParse(lblIptalIstimlak.Text, out iptalIstimlak))
-                    iptalIstimlak = 0;
-                if (!decimal.TryParse(lblIptalUmulmadik.Text, out iptalUmulmadik))
-                    iptalUmulmadik = 0;
-                if (!decimal.TryParse(lblIptalTurluMasraf.Text, out iptalTurluMasraf))
-                    iptalTurluMasraf = 0;
-                if (!decimal.TryParse(lblIptalIlkogretim.Text, out iptalIlkogretim))
-                    iptalIlkogretim = 0;
-                if (!decimal.TryParse(lblIptalKHGB.Text, out iptalKHGB))
-                    iptalKHGB = 0;
+                //BK İŞLEMLERİ
+                if (!decimal.TryParse(lblBKIdariIsler.Text, out bkIdariIsler))
+                    bkIdariIsler = 0;
+                if (!decimal.TryParse(lblBKZiraat.Text, out bkZiraat))
+                    bkZiraat = 0;
+                if (!decimal.TryParse(lblBKKultur.Text, out bkKultur))
+                    bkKultur = 0;
+                if (!decimal.TryParse(lblBKSaglik.Text, out bkSaglik))
+                    bkSaglik = 0;
+                if (!decimal.TryParse(lblBKBayindirlik.Text, out bkBayindirlik))
+                    bkBayindirlik = 0;
+                if (!decimal.TryParse(lblBKTurluIsler.Text, out bkTurluIsler))
+                    bkTurluIsler = 0;
+                if (!decimal.TryParse(lblBKAsker.Text, out bkAsker))
+                    bkAsker = 0;
 
                 // Toplamları hesaplayın
-                decimal IptalTurluIslerToplami = iptalVergi + iptalKoyBorcu + iptalMahkeme + iptalIstimlak + iptalUmulmadik + iptalTurluMasraf + iptalIlkogretim + iptalKHGB;
+                decimal BKGenelToplami = bkIdariIsler + bkZiraat + bkKultur + bkSaglik + bkBayindirlik + bkTurluIsler + bkAsker;
 
                 // Sonucu etikete atayın
-                lblIptalTurluIslerToplami.Text = IptalTurluIslerToplami.ToString("#,0.00");
+                lblButceGenelToplami.Text = BKGenelToplami.ToString("#,0.00");
 
+                //MUNZAM İŞLEMLERİ
+                if (!decimal.TryParse(lblMunzamIdariIslerToplami.Text, out munzamIdariIsler))
+                    munzamIdariIsler = 0;
+                if (!decimal.TryParse(lblMunzamZiraatToplami.Text, out munzamZiraat))
+                    munzamZiraat = 0;
+                if (!decimal.TryParse(lblMunzamKulturToplami.Text, out munzamKultur))
+                    munzamKultur = 0;
+                if (!decimal.TryParse(lblMunzamSaglikToplami.Text, out munzamSaglik))
+                    munzamSaglik = 0;
+                if (!decimal.TryParse(lblMunzamToplamBayindirlik.Text, out munzamBayindirlik))
+                    munzamBayindirlik = 0;
+                if (!decimal.TryParse(lblMunzamTurluIslerToplami.Text, out munzamTurluIsler))
+                    munzamTurluIsler = 0;
+                if (!decimal.TryParse(lblMunzamToplamAsker.Text, out munzamAsker))
+                    munzamAsker = 0;
+
+                // Toplamları hesaplayın
+                decimal MunzamGenelToplami = munzamIdariIsler + munzamZiraat + munzamKultur + munzamSaglik + munzamBayindirlik + munzamTurluIsler + munzamAsker;
+
+                // Sonucu etikete atayın
+                lblMunzamGenelToplami.Text = MunzamGenelToplami.ToString("#,0.00");
+
+                //TAHAKKUK İŞLEMLERİ
+                if (!decimal.TryParse(lblTahakkukIdariIslerToplami.Text, out tahakkukIdariIsler))
+                    tahakkukIdariIsler = 0;
+                if (!decimal.TryParse(lblTahakkukZiraatToplami.Text, out tahakkukZiraat))
+                    tahakkukZiraat = 0;
+                if (!decimal.TryParse(lblTahakkukKulturToplami.Text, out tahakkukKultur))
+                    tahakkukKultur = 0;
+                if (!decimal.TryParse(lblTahakkukSaglikToplami.Text, out tahakkukSaglik))
+                    tahakkukSaglik = 0;
+                if (!decimal.TryParse(lblTahakkukBayindirlikToplami.Text, out tahakkukBayindirlik))
+                    tahakkukBayindirlik = 0;
+                if (!decimal.TryParse(lblTahakkukTurluIslerToplami.Text, out tahakkukTurluIsler))
+                    tahakkukTurluIsler = 0;
+                if (!decimal.TryParse(lblTahakkukAskerToplami.Text, out tahakkukAsker))
+                    tahakkukAsker = 0;
+
+                // Toplamları hesaplayın
+                decimal TahakkukGenelToplami = tahakkukIdariIsler + tahakkukZiraat + tahakkukKultur + tahakkukSaglik + tahakkukBayindirlik + tahakkukTurluIsler + tahakkukAsker;
+
+                // Sonucu etikete atayın
+                lblTahakkukGenelToplam.Text = TahakkukGenelToplami.ToString("#,0.00");
+
+                //ÖDENEN İŞLEMLERİ
+                if (!decimal.TryParse(lblOdenenIdariIslerToplami.Text, out odenenIdariIsler))
+                    odenenIdariIsler = 0;
+                if (!decimal.TryParse(lblOdenenZiraatToplami.Text, out odenenZiraat))
+                    odenenZiraat = 0;
+                if (!decimal.TryParse(lblOdenenKulturToplami.Text, out odenenKultur))
+                    odenenKultur = 0;
+                if (!decimal.TryParse(lblOdenenSaglikToplami.Text, out odenenSaglik))
+                    odenenSaglik = 0;
+                if (!decimal.TryParse(lblOdenenToplamBayindirlik.Text, out odenenBayindirlik))
+                    odenenBayindirlik = 0;
+                if (!decimal.TryParse(lblOdenenToplamTurluİsler.Text, out odenenTurluIsler))
+                    odenenTurluIsler = 0;
+                if (!decimal.TryParse(lblOdenenToplamAsker.Text, out odenenAsker))
+                    odenenAsker = 0;
+
+                // Toplamları hesaplayın
+                decimal OdenenGenelToplami = odenenIdariIsler + odenenZiraat + odenenKultur + odenenSaglik + odenenBayindirlik + odenenTurluIsler + odenenAsker;
+
+                // Sonucu etikete atayın
+                lblOdenenGenelToplami.Text = OdenenGenelToplami.ToString("#,0.00");
+                lblToplamGider.Text = lblOdenenGenelToplami.Text;
+
+                //İPTAL İŞLEMLERİ
+                if (!decimal.TryParse(lblIptalIdariIslerToplami.Text, out iptalIdariIsler))
+                    iptalIdariIsler = 0;
+                if (!decimal.TryParse(lblIptalZiraatToplami.Text, out iptalZiraat))
+                    iptalZiraat = 0;
+                if (!decimal.TryParse(lblIptalKulturToplami.Text, out iptalKultur))
+                    iptalKultur = 0;
+                if (!decimal.TryParse(lblIptalSaglikToplami.Text, out iptalSaglik))
+                    iptalSaglik = 0;
+                if (!decimal.TryParse(lblIptalToplamBayindirlik.Text, out iptalBayindirlik))
+                    iptalBayindirlik = 0;
+                if (!decimal.TryParse(lblIptalToplamTurluIsler.Text, out iptalTurluIsler))
+                    iptalTurluIsler = 0;
+                if (!decimal.TryParse(lblIptalToplamAsker.Text, out iptalAsker))
+                    iptalAsker = 0;
+
+                // Toplamları hesaplayın
+                decimal IptalGenelToplami = iptalIdariIsler + iptalZiraat + iptalKultur + iptalSaglik + iptalBayindirlik + iptalTurluIsler + iptalAsker;
+
+                // Sonucu etikete atayın
+                lblIptalGenelToplami.Text = IptalGenelToplami.ToString("#,0.00");
             }
             catch (Exception ex)
             {
@@ -1289,9 +1387,99 @@ namespace Forms
                 frmKesinHesap1.Close();
                 frmKesinHesap1 = null; // Referansı null yapın, bir sonraki işlem için tekrar oluşturulacak
             };
-
             // Formu göstermeden yükleyin
             frmKesinHesap1.Show();
+        }
+
+        private void LoadDevirToplami()
+        {
+            try
+            {
+                decimal devirToplami = GetGelirToplami(_seciliKoyIndex, _seciliDonemIndex, 8);
+                lblDevir.Text = string.Format("{0:#,0.00}", devirToplami);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Devir geliri yüklenirken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        private void LoadGelirKategoriToplamlari()
+        {
+            try
+            {
+                decimal toplamGelir = 0;
+
+                // Diğer gelir kategorileri için toplamı hesapla
+                toplamGelir += GetGelirToplami(_seciliKoyIndex, _seciliDonemIndex, 1); // Hasilat için
+                toplamGelir += GetGelirToplami(_seciliKoyIndex, _seciliDonemIndex, 2); // Resim için
+                toplamGelir += GetGelirToplami(_seciliKoyIndex, _seciliDonemIndex, 3); // Ceza için
+                toplamGelir += GetGelirToplami(_seciliKoyIndex, _seciliDonemIndex, 4); // Yardım için
+                toplamGelir += GetGelirToplami(_seciliKoyIndex, _seciliDonemIndex, 5); // Köy Vakıf için
+                toplamGelir += GetGelirToplami(_seciliKoyIndex, _seciliDonemIndex, 6); // İstikraz için
+                toplamGelir += GetGelirToplami(_seciliKoyIndex, _seciliDonemIndex, 7); // Türlü Gelir için
+
+                // Toplamı lblGelir etiketine yazdır
+                lblGelir.Text = string.Format("{0:#,0.00}", toplamGelir);
+
+                //YEKÜN TOPLAMA İŞLEMİ
+                decimal devir, gelir;
+                if (!decimal.TryParse(lblDevir.Text, out devir))
+                    devir = 0;
+                if (!decimal.TryParse(lblGelir.Text, out gelir))
+                    gelir = 0;
+                
+                // Toplamları hesaplayın
+                decimal Yekun = devir + gelir ;
+
+                // Sonucu etikete atayın
+                lblYekun.Text = Yekun.ToString("#,0.00");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gelir verilerini yüklerken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        private decimal GetGelirToplami(int koyId, byte donemId, byte gelirKategoriId)
+        {
+            try
+            {
+                return _gelirManager.GelirKategoriToplam(koyId, donemId, gelirKategoriId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Gelir Kategorisi {gelirKategoriId} için toplam tutar yüklenirken bir hata oluştu: " + ex.Message);
+                return 0; // Hata durumunda varsayılan değeri döndür
+            }
+        }
+
+        public void ButceSonucu()
+        {
+            try
+            {
+
+                decimal yekun, toplamGider;
+                if (!decimal.TryParse(lblYekun.Text, out yekun))
+                    yekun = 0;
+                if (!decimal.TryParse(lblToplamGider.Text, out toplamGider))
+                    toplamGider = 0;
+
+                // Toplamları hesaplayın
+                decimal ButceSonucu = yekun - toplamGider;
+
+                // Sonucu etikete atayın, pozitif ise direkt olarak yazdırın
+                lblButceSonucu.Text = ButceSonucu >= 0 ? ButceSonucu.ToString("#,0.00") : "+" + (-ButceSonucu).ToString("#,0.00");
+
+                if (toplamGider<yekun)
+                {
+                    BURADA KALDIM
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Veriler yüklenirken bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void FrmKesinHesap2_Load(object sender, EventArgs e)
@@ -1326,6 +1514,10 @@ namespace Forms
             KHGBHesap();
             BayindirlikToplamlari();
             TurluIslerToplamlari();
+            GiderlerToplamlari();
+            LoadDevirToplami(); //Devir toplamlarının lblDevir'in textine yazdıran metot
+            LoadGelirKategoriToplamlari(); //Gelir Toplamlarının lblGelir textine yazdıran metot
+            ButceSonucu();
 
             RakamlariPanelinSaginaYasla();
             GorevliPaneleOrtala();

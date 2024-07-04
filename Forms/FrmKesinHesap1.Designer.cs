@@ -12130,7 +12130,7 @@
             dgvTahminiGelir.BorderStyle = BorderStyle.Fixed3D;
             dgvTahminiGelir.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiGelir.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiGelir.Location = new Point(809, 778);
+            dgvTahminiGelir.Location = new Point(809, 772);
             dgvTahminiGelir.Margin = new Padding(3, 4, 3, 4);
             dgvTahminiGelir.Name = "dgvTahminiGelir";
             dgvTahminiGelir.ReadOnly = true;
@@ -14319,7 +14319,6 @@
         private Label lblMunzamToplami;
         private Label lblBKResimHarcToplami;
         private Label lblDevredenDevir;
-        private Label lblTahsilDevir;
         private Label lblMunzamDevir;
         private Label lblBKDevir;
         private Label lblDevredenGenelToplami;
@@ -14511,6 +14510,7 @@
         public Label lblIptalKulturToplami;
         public Label lblIptalSaglikToplami;
         public Label lblOdenenSaglikToplami;
+        public Label lblTahsilDevir;
         //       private Label lblBKResim;
     }
 }

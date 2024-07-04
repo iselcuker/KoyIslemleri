@@ -503,6 +503,7 @@
             panel291 = new Panel();
             label152 = new Label();
             panel283 = new Panel();
+            panel3 = new Panel();
             label272 = new Label();
             label271 = new Label();
             label268 = new Label();
@@ -761,9 +762,6 @@
             panel133 = new Panel();
             panel134 = new Panel();
             panel135 = new Panel();
-            panel136 = new Panel();
-            panel137 = new Panel();
-            panel138 = new Panel();
             panel139 = new Panel();
             panel140 = new Panel();
             panel141 = new Panel();
@@ -851,6 +849,7 @@
             p139 = new Panel();
             p5 = new Panel();
             dgvTahminiGiderler = new DataGridView();
+            lblSonucMetni = new Label();
             panel281.SuspendLayout();
             panel280.SuspendLayout();
             panel277.SuspendLayout();
@@ -980,6 +979,7 @@
             panel290.SuspendLayout();
             panel291.SuspendLayout();
             panel283.SuspendLayout();
+            panel3.SuspendLayout();
             panel284.SuspendLayout();
             panel278.SuspendLayout();
             panel279.SuspendLayout();
@@ -1053,6 +1053,7 @@
             p134.SuspendLayout();
             p133.SuspendLayout();
             p135.SuspendLayout();
+            panel135.SuspendLayout();
             g1.SuspendLayout();
             g2.SuspendLayout();
             g3.SuspendLayout();
@@ -1283,10 +1284,9 @@
             panel276.BorderStyle = BorderStyle.FixedSingle;
             panel276.Controls.Add(label307);
             panel276.Controls.Add(label306);
-            panel276.Controls.Add(label305);
-            panel276.Location = new Point(331, 44);
+            panel276.Location = new Point(331, 63);
             panel276.Name = "panel276";
-            panel276.Size = new Size(26, 66);
+            panel276.Size = new Size(26, 47);
             panel276.TabIndex = 929;
             // 
             // label307
@@ -1304,7 +1304,7 @@
             // 
             label306.AutoSize = true;
             label306.Font = new Font("Arial Narrow", 6F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label306.Location = new Point(2, 17);
+            label306.Location = new Point(2, 15);
             label306.Margin = new Padding(1, 0, 1, 0);
             label306.Name = "label306";
             label306.Size = new Size(21, 13);
@@ -1314,12 +1314,11 @@
             // label305
             // 
             label305.AutoSize = true;
-            label305.BorderStyle = BorderStyle.FixedSingle;
             label305.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label305.Location = new Point(-3, -1);
+            label305.Location = new Point(331, 47);
             label305.Margin = new Padding(1, 0, 1, 0);
             label305.Name = "label305";
-            label305.Size = new Size(30, 15);
+            label305.Size = new Size(28, 13);
             label305.TabIndex = 256;
             label305.Text = "Tenzil";
             // 
@@ -5745,7 +5744,7 @@
             // panel283
             // 
             panel283.BorderStyle = BorderStyle.FixedSingle;
-            panel283.Controls.Add(label272);
+            panel283.Controls.Add(panel3);
             panel283.Controls.Add(label271);
             panel283.Controls.Add(label268);
             panel283.Controls.Add(label269);
@@ -5755,15 +5754,23 @@
             panel283.Size = new Size(30, 66);
             panel283.TabIndex = 599;
             // 
+            // panel3
+            // 
+            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Controls.Add(label272);
+            panel3.Location = new Point(-1, -1);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(55, 20);
+            panel3.TabIndex = 255;
+            // 
             // label272
             // 
             label272.AutoSize = true;
-            label272.BorderStyle = BorderStyle.FixedSingle;
-            label272.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label272.Location = new Point(-1, -2);
+            label272.Font = new Font("Arial Narrow", 6.75F);
+            label272.Location = new Point(3, 2);
             label272.Margin = new Padding(1, 0, 1, 0);
             label272.Name = "label272";
-            label272.Size = new Size(27, 18);
+            label272.Size = new Size(22, 13);
             label272.TabIndex = 255;
             label272.Text = "Zam";
             // 
@@ -8304,34 +8311,11 @@
             // panel135
             // 
             panel135.BorderStyle = BorderStyle.FixedSingle;
-            panel135.Location = new Point(1016, 210);
+            panel135.Controls.Add(lblSonucMetni);
+            panel135.Location = new Point(896, 210);
             panel135.Name = "panel135";
-            panel135.Size = new Size(83, 23);
+            panel135.Size = new Size(203, 23);
             panel135.TabIndex = 1058;
-            // 
-            // panel136
-            // 
-            panel136.BorderStyle = BorderStyle.FixedSingle;
-            panel136.Location = new Point(976, 210);
-            panel136.Name = "panel136";
-            panel136.Size = new Size(40, 23);
-            panel136.TabIndex = 1057;
-            // 
-            // panel137
-            // 
-            panel137.BorderStyle = BorderStyle.FixedSingle;
-            panel137.Location = new Point(936, 210);
-            panel137.Name = "panel137";
-            panel137.Size = new Size(40, 23);
-            panel137.TabIndex = 1056;
-            // 
-            // panel138
-            // 
-            panel138.BorderStyle = BorderStyle.FixedSingle;
-            panel138.Location = new Point(896, 210);
-            panel138.Name = "panel138";
-            panel138.Size = new Size(40, 23);
-            panel138.TabIndex = 1055;
             // 
             // panel139
             // 
@@ -8552,7 +8536,7 @@
             // 
             lblBKGelir.AutoSize = true;
             lblBKGelir.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblBKGelir.Location = new Point(0, 6);
+            lblBKGelir.Location = new Point(2, 4);
             lblBKGelir.Margin = new Padding(1, 0, 1, 0);
             lblBKGelir.Name = "lblBKGelir";
             lblBKGelir.Size = new Size(10, 12);
@@ -8921,7 +8905,6 @@
             // 
             // g1
             // 
-            g1.BorderStyle = BorderStyle.FixedSingle;
             g1.Controls.Add(lblMuhtar);
             g1.Controls.Add(lblMuhtarY);
             g1.Location = new Point(672, 539);
@@ -9192,7 +9175,6 @@
             dgvTahminiGiderler.AllowUserToResizeColumns = false;
             dgvTahminiGiderler.AllowUserToResizeRows = false;
             dgvTahminiGiderler.BackgroundColor = SystemColors.Control;
-            dgvTahminiGiderler.BorderStyle = BorderStyle.None;
             dgvTahminiGiderler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTahminiGiderler.Location = new Point(658, 668);
@@ -9202,11 +9184,24 @@
             dgvTahminiGiderler.Size = new Size(448, 52);
             dgvTahminiGiderler.TabIndex = 1108;
             // 
+            // lblSonucMetni
+            // 
+            lblSonucMetni.AutoSize = true;
+            lblSonucMetni.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            lblSonucMetni.Location = new Point(2, 2);
+            lblSonucMetni.Margin = new Padding(1, 0, 1, 0);
+            lblSonucMetni.Name = "lblSonucMetni";
+            lblSonucMetni.Size = new Size(15, 17);
+            lblSonucMetni.TabIndex = 5;
+            lblSonucMetni.Text = "0";
+            lblSonucMetni.TextAlign = ContentAlignment.MiddleRight;
+            // 
             // FrmKesinHesap2
             // 
             this.AutoScaleDimensions = new SizeF(7F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new Size(1118, 793);
+            this.Controls.Add(panel284);
             this.Controls.Add(dgvTahminiGiderler);
             this.Controls.Add(p138);
             this.Controls.Add(p142);
@@ -9265,9 +9260,6 @@
             this.Controls.Add(label94);
             this.Controls.Add(label93);
             this.Controls.Add(panel135);
-            this.Controls.Add(panel136);
-            this.Controls.Add(panel137);
-            this.Controls.Add(panel138);
             this.Controls.Add(panel139);
             this.Controls.Add(panel140);
             this.Controls.Add(panel141);
@@ -9407,7 +9399,6 @@
             this.Controls.Add(panel281);
             this.Controls.Add(panel280);
             this.Controls.Add(panel277);
-            this.Controls.Add(panel276);
             this.Controls.Add(panel190);
             this.Controls.Add(panel586);
             this.Controls.Add(panel588);
@@ -9681,7 +9672,6 @@
             this.Controls.Add(panel290);
             this.Controls.Add(panel291);
             this.Controls.Add(panel283);
-            this.Controls.Add(panel284);
             this.Controls.Add(panel278);
             this.Controls.Add(panel279);
             this.Controls.Add(panel187);
@@ -9691,10 +9681,11 @@
             this.Controls.Add(panel4);
             this.Controls.Add(panel5);
             this.Controls.Add(label40);
+            this.Controls.Add(panel276);
+            this.Controls.Add(label305);
             this.FormBorderStyle = FormBorderStyle.None;
             this.Name = "FrmKesinHesap2";
             this.Text = "FrmKesinHesap2Y";
-            this.Load += (this.FrmKesinHesap2_Load);
             panel281.ResumeLayout(false);
             panel281.PerformLayout();
             panel280.ResumeLayout(false);
@@ -9953,6 +9944,8 @@
             panel291.PerformLayout();
             panel283.ResumeLayout(false);
             panel283.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel284.ResumeLayout(false);
             panel284.PerformLayout();
             panel278.ResumeLayout(false);
@@ -10099,6 +10092,8 @@
             p133.PerformLayout();
             p135.ResumeLayout(false);
             p135.PerformLayout();
+            panel135.ResumeLayout(false);
+            panel135.PerformLayout();
             g1.ResumeLayout(false);
             g1.PerformLayout();
             g2.ResumeLayout(false);
@@ -10769,9 +10764,6 @@
         private Panel panel133;
         private Panel panel134;
         private Panel panel135;
-        private Panel panel136;
-        private Panel panel137;
-        private Panel panel138;
         private Panel panel139;
         private Panel panel140;
         private Panel panel141;
@@ -10966,5 +10958,7 @@
         private Label label14;
         private Label label19;
         public DataGridView dgvTahminiGiderler;
+        private Panel panel3;
+        private Label lblSonucMetni;
     }
 }
