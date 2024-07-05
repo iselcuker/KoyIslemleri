@@ -951,13 +951,38 @@ namespace Forms
                 KulturToplamlari();
                 SaglikToplamlari();
 
-
+                RakamlariPanelinSaginaYasla();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Form yüklenirken bir hata oluştu: " + ex.Message);
             }
 
+        }
+
+        private void RakamlariPanelinSaginaYasla()
+        {
+            for (int i = 1; i <= 200; i++)
+            {
+                string panelName = "p" + i;
+                Panel panel = Controls.Find(panelName, true).FirstOrDefault() as Panel;
+                if (panel != null)
+                {
+                    foreach (Control ctrl in panel.Controls)
+                    {
+                        if (ctrl is Label label)
+                        {
+                            // Etiketin içeriğine göre genişliğini ayarla
+                            Size textSize = TextRenderer.MeasureText(label.Text, label.Font);
+                            label.Width = textSize.Width;
+
+                            // Etiketi panelin sağ kenarına yasla
+                            int labelLeft = panel.Width - label.Width;
+                            label.Location = new Point(labelLeft, label.Location.Y);
+                        }
+                    }
+                }
+            }
         }
 
         public void MunzamToplami()
