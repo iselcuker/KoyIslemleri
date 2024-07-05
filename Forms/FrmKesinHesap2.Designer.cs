@@ -4559,7 +4559,7 @@
             // 
             lblVergiDegisiklik.AutoSize = true;
             lblVergiDegisiklik.Font = new Font("Arial", 6.75F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-            lblVergiDegisiklik.Location = new Point(43, 8);
+            lblVergiDegisiklik.Location = new Point(51, 8);
             lblVergiDegisiklik.Margin = new Padding(1, 0, 1, 0);
             lblVergiDegisiklik.Name = "lblVergiDegisiklik";
             lblVergiDegisiklik.Size = new Size(10, 11);

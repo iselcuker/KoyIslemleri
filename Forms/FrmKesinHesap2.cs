@@ -254,12 +254,12 @@ namespace Forms
                 GiderAltKategoriLabellarAyarla(lblBKAydinlatma, 22);
                 GiderAltKategoriLabellarAyarla(lblBKMezarlik, 23);
 
-                GiderAltKategoriLabellarAyarla(lblBKVergi, 24);
-                GiderAltKategoriLabellarAyarla(lblBKKoyBorcu, 25);
-                GiderAltKategoriLabellarAyarla(lblBKMahkeme, 26);
-                GiderAltKategoriLabellarAyarla(lblBKIstimlak, 27);
-                GiderAltKategoriLabellarAyarla(lblBKUmulmadik, 28);
-                GiderAltKategoriLabellarAyarla(lblBKTurluMasraf, 29);
+                GiderAltKategoriLabellarAyarla(lblBKVergi, 25);
+                GiderAltKategoriLabellarAyarla(lblBKKoyBorcu, 26);
+                GiderAltKategoriLabellarAyarla(lblBKMahkeme, 27);
+                GiderAltKategoriLabellarAyarla(lblBKIstimlak, 28);
+                GiderAltKategoriLabellarAyarla(lblBKUmulmadik, 29);
+                GiderAltKategoriLabellarAyarla(lblBKTurluMasraf, 24);
                 GiderAltKategoriLabellarAyarla(lblBKIlkogretim, 30);
                 GiderAltKategoriLabellarAyarla(lblBKKHGB, 31);
 
@@ -1468,7 +1468,8 @@ namespace Forms
                 decimal ButceSonucu = yekun - toplamGider;
 
                 // Sonucu etikete atayın, pozitif ise direkt olarak yazdırın
-                lblButceSonucu.Text = ButceSonucu >= 0 ? ButceSonucu.ToString("#,0.00") : "+" + (-ButceSonucu).ToString("#,0.00");
+                lblButceSonucu.Text = ButceSonucu >= 0 ? ButceSonucu.ToString("#,0.00") : (-ButceSonucu).ToString("#,0.00");
+                //lblButceSonucu.Text = ButceSonucu >= 0 ? ButceSonucu.ToString("#,0.00") : "+" + (-ButceSonucu).ToString("#,0.00");
 
                 if (toplamGider < yekun)
                 {
