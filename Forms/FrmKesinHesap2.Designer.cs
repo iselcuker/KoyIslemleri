@@ -8018,7 +8018,7 @@
             panel114.BorderStyle = BorderStyle.FixedSingle;
             panel114.Controls.Add(label89);
             panel114.Controls.Add(label88);
-            panel114.Location = new Point(974, 276);
+            panel114.Location = new Point(974, 271);
             panel114.Name = "panel114";
             panel114.Size = new Size(103, 25);
             panel114.TabIndex = 1033;
@@ -8049,7 +8049,7 @@
             // 
             panel115.BorderStyle = BorderStyle.FixedSingle;
             panel115.Controls.Add(label90);
-            panel115.Location = new Point(872, 276);
+            panel115.Location = new Point(872, 271);
             panel115.Name = "panel115";
             panel115.Size = new Size(102, 25);
             panel115.TabIndex = 1032;
@@ -8069,7 +8069,7 @@
             // 
             panel116.BorderStyle = BorderStyle.FixedSingle;
             panel116.Controls.Add(label91);
-            panel116.Location = new Point(770, 276);
+            panel116.Location = new Point(770, 271);
             panel116.Name = "panel116";
             panel116.Size = new Size(102, 25);
             panel116.TabIndex = 1031;
@@ -8089,7 +8089,7 @@
             // 
             panel117.BorderStyle = BorderStyle.FixedSingle;
             panel117.Controls.Add(label92);
-            panel117.Location = new Point(668, 276);
+            panel117.Location = new Point(668, 271);
             panel117.Name = "panel117";
             panel117.Size = new Size(102, 25);
             panel117.TabIndex = 1030;
@@ -8375,7 +8375,7 @@
             // label94
             // 
             label94.AutoSize = true;
-            label94.Location = new Point(765, 257);
+            label94.Location = new Point(765, 252);
             label94.Margin = new Padding(1, 0, 1, 0);
             label94.Name = "label94";
             label94.Size = new Size(217, 15);
@@ -8385,7 +8385,7 @@
             // panel143
             // 
             panel143.BorderStyle = BorderStyle.FixedSingle;
-            panel143.Location = new Point(973, 301);
+            panel143.Location = new Point(973, 296);
             panel143.Name = "panel143";
             panel143.Size = new Size(104, 20);
             panel143.TabIndex = 1064;
@@ -8393,7 +8393,7 @@
             // panel144
             // 
             panel144.BorderStyle = BorderStyle.FixedSingle;
-            panel144.Location = new Point(872, 301);
+            panel144.Location = new Point(872, 296);
             panel144.Name = "panel144";
             panel144.Size = new Size(102, 20);
             panel144.TabIndex = 1063;
@@ -8401,7 +8401,7 @@
             // panel145
             // 
             panel145.BorderStyle = BorderStyle.FixedSingle;
-            panel145.Location = new Point(770, 301);
+            panel145.Location = new Point(770, 296);
             panel145.Name = "panel145";
             panel145.Size = new Size(102, 20);
             panel145.TabIndex = 1062;
@@ -8409,7 +8409,7 @@
             // panel146
             // 
             panel146.BorderStyle = BorderStyle.FixedSingle;
-            panel146.Location = new Point(668, 301);
+            panel146.Location = new Point(668, 296);
             panel146.Name = "panel146";
             panel146.Size = new Size(102, 20);
             panel146.TabIndex = 1061;
@@ -8417,7 +8417,7 @@
             // panel147
             // 
             panel147.BorderStyle = BorderStyle.FixedSingle;
-            panel147.Location = new Point(973, 321);
+            panel147.Location = new Point(973, 316);
             panel147.Name = "panel147";
             panel147.Size = new Size(104, 20);
             panel147.TabIndex = 1068;
@@ -8425,7 +8425,7 @@
             // panel148
             // 
             panel148.BorderStyle = BorderStyle.FixedSingle;
-            panel148.Location = new Point(872, 321);
+            panel148.Location = new Point(872, 316);
             panel148.Name = "panel148";
             panel148.Size = new Size(102, 20);
             panel148.TabIndex = 1067;
@@ -8433,7 +8433,7 @@
             // panel149
             // 
             panel149.BorderStyle = BorderStyle.FixedSingle;
-            panel149.Location = new Point(770, 321);
+            panel149.Location = new Point(770, 316);
             panel149.Name = "panel149";
             panel149.Size = new Size(102, 20);
             panel149.TabIndex = 1066;
@@ -8441,7 +8441,7 @@
             // panel150
             // 
             panel150.BorderStyle = BorderStyle.FixedSingle;
-            panel150.Location = new Point(668, 321);
+            panel150.Location = new Point(668, 316);
             panel150.Name = "panel150";
             panel150.Size = new Size(102, 20);
             panel150.TabIndex = 1065;
@@ -8449,7 +8449,7 @@
             // panel151
             // 
             panel151.BorderStyle = BorderStyle.FixedSingle;
-            panel151.Location = new Point(973, 360);
+            panel151.Location = new Point(973, 355);
             panel151.Name = "panel151";
             panel151.Size = new Size(104, 20);
             panel151.TabIndex = 1076;
@@ -8457,7 +8457,7 @@
             // panel152
             // 
             panel152.BorderStyle = BorderStyle.FixedSingle;
-            panel152.Location = new Point(872, 360);
+            panel152.Location = new Point(872, 355);
             panel152.Name = "panel152";
             panel152.Size = new Size(102, 20);
             panel152.TabIndex = 1075;
@@ -8465,7 +8465,7 @@
             // panel153
             // 
             panel153.BorderStyle = BorderStyle.FixedSingle;
-            panel153.Location = new Point(770, 360);
+            panel153.Location = new Point(770, 355);
             panel153.Name = "panel153";
             panel153.Size = new Size(102, 20);
             panel153.TabIndex = 1074;
@@ -8473,7 +8473,7 @@
             // panel154
             // 
             panel154.BorderStyle = BorderStyle.FixedSingle;
-            panel154.Location = new Point(668, 360);
+            panel154.Location = new Point(668, 355);
             panel154.Name = "panel154";
             panel154.Size = new Size(102, 20);
             panel154.TabIndex = 1073;
@@ -8481,7 +8481,7 @@
             // panel155
             // 
             panel155.BorderStyle = BorderStyle.FixedSingle;
-            panel155.Location = new Point(973, 340);
+            panel155.Location = new Point(973, 335);
             panel155.Name = "panel155";
             panel155.Size = new Size(104, 20);
             panel155.TabIndex = 1072;
@@ -8489,7 +8489,7 @@
             // panel156
             // 
             panel156.BorderStyle = BorderStyle.FixedSingle;
-            panel156.Location = new Point(872, 340);
+            panel156.Location = new Point(872, 335);
             panel156.Name = "panel156";
             panel156.Size = new Size(102, 20);
             panel156.TabIndex = 1071;
@@ -8497,7 +8497,7 @@
             // panel157
             // 
             panel157.BorderStyle = BorderStyle.FixedSingle;
-            panel157.Location = new Point(770, 340);
+            panel157.Location = new Point(770, 335);
             panel157.Name = "panel157";
             panel157.Size = new Size(102, 20);
             panel157.TabIndex = 1070;
@@ -8505,7 +8505,7 @@
             // panel158
             // 
             panel158.BorderStyle = BorderStyle.FixedSingle;
-            panel158.Location = new Point(668, 340);
+            panel158.Location = new Point(668, 335);
             panel158.Name = "panel158";
             panel158.Size = new Size(102, 20);
             panel158.TabIndex = 1069;
@@ -8514,7 +8514,7 @@
             // 
             label95.AutoSize = true;
             label95.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label95.Location = new Point(658, 390);
+            label95.Location = new Point(658, 383);
             label95.Margin = new Padding(1, 0, 1, 0);
             label95.Name = "label95";
             label95.Size = new Size(13, 13);
@@ -8525,7 +8525,7 @@
             // 
             lblGelirYil.AutoSize = true;
             lblGelirYil.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblGelirYil.Location = new Point(673, 390);
+            lblGelirYil.Location = new Point(673, 383);
             lblGelirYil.Margin = new Padding(1, 0, 1, 0);
             lblGelirYil.Name = "lblGelirYil";
             lblGelirYil.Size = new Size(11, 13);
@@ -8537,7 +8537,7 @@
             // 
             label97.AutoSize = true;
             label97.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label97.Location = new Point(697, 390);
+            label97.Location = new Point(697, 383);
             label97.Margin = new Padding(1, 0, 1, 0);
             label97.Name = "label97";
             label97.Size = new Size(121, 13);
@@ -8560,7 +8560,7 @@
             // 
             label99.AutoSize = true;
             label99.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label99.Location = new Point(888, 390);
+            label99.Location = new Point(890, 383);
             label99.Margin = new Padding(1, 0, 1, 0);
             label99.Name = "label99";
             label99.Size = new Size(44, 13);
@@ -8583,7 +8583,7 @@
             // 
             label101.AutoSize = true;
             label101.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label101.Location = new Point(995, 390);
+            label101.Location = new Point(1004, 383);
             label101.Margin = new Padding(1, 0, 1, 0);
             label101.Name = "label101";
             label101.Size = new Size(70, 13);
@@ -8606,7 +8606,7 @@
             // 
             label104.AutoSize = true;
             label104.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label104.Location = new Point(995, 410);
+            label104.Location = new Point(1004, 403);
             label104.Margin = new Padding(1, 0, 1, 0);
             label104.Name = "label104";
             label104.Size = new Size(64, 13);
@@ -8617,7 +8617,7 @@
             // 
             label105.AutoSize = true;
             label105.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label105.Location = new Point(888, 411);
+            label105.Location = new Point(890, 404);
             label105.Margin = new Padding(1, 0, 1, 0);
             label105.Name = "label105";
             label105.Size = new Size(46, 13);
@@ -8628,7 +8628,7 @@
             // 
             label106.AutoSize = true;
             label106.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label106.Location = new Point(697, 411);
+            label106.Location = new Point(697, 404);
             label106.Margin = new Padding(1, 0, 1, 0);
             label106.Name = "label106";
             label106.Size = new Size(121, 13);
@@ -8639,7 +8639,7 @@
             // 
             lblGiderYil.AutoSize = true;
             lblGiderYil.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblGiderYil.Location = new Point(673, 410);
+            lblGiderYil.Location = new Point(673, 403);
             lblGiderYil.Margin = new Padding(1, 0, 1, 0);
             lblGiderYil.Name = "lblGiderYil";
             lblGiderYil.Size = new Size(11, 13);
@@ -8651,7 +8651,7 @@
             // 
             label108.AutoSize = true;
             label108.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label108.Location = new Point(658, 410);
+            label108.Location = new Point(658, 403);
             label108.Margin = new Padding(1, 0, 1, 0);
             label108.Name = "label108";
             label108.Size = new Size(13, 13);
@@ -8662,7 +8662,7 @@
             // 
             label109.AutoSize = true;
             label109.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label109.Location = new Point(658, 432);
+            label109.Location = new Point(658, 425);
             label109.Margin = new Padding(1, 0, 1, 0);
             label109.Name = "label109";
             label109.Size = new Size(13, 13);
@@ -8673,7 +8673,7 @@
             // 
             lblSalmaYil.AutoSize = true;
             lblSalmaYil.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblSalmaYil.Location = new Point(673, 432);
+            lblSalmaYil.Location = new Point(673, 425);
             lblSalmaYil.Margin = new Padding(1, 0, 1, 0);
             lblSalmaYil.Name = "lblSalmaYil";
             lblSalmaYil.Size = new Size(0, 13);
@@ -8684,7 +8684,7 @@
             // 
             label111.AutoSize = true;
             label111.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label111.Location = new Point(697, 432);
+            label111.Location = new Point(697, 425);
             label111.Margin = new Padding(1, 0, 1, 0);
             label111.Name = "label111";
             label111.Size = new Size(107, 13);
@@ -8695,7 +8695,7 @@
             // 
             label112.AutoSize = true;
             label112.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label112.Location = new Point(872, 431);
+            label112.Location = new Point(872, 424);
             label112.Margin = new Padding(1, 0, 1, 0);
             label112.Name = "label112";
             label112.Size = new Size(66, 13);
@@ -8706,7 +8706,7 @@
             // 
             label113.AutoSize = true;
             label113.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label113.Location = new Point(1000, 431);
+            label113.Location = new Point(1000, 424);
             label113.Margin = new Padding(1, 0, 1, 0);
             label113.Name = "label113";
             label113.Size = new Size(74, 13);
@@ -8739,7 +8739,7 @@
             // 
             label116.AutoSize = true;
             label116.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label116.Location = new Point(658, 453);
+            label116.Location = new Point(658, 446);
             label116.Margin = new Padding(1, 0, 1, 0);
             label116.Name = "label116";
             label116.Size = new Size(13, 13);
@@ -8750,7 +8750,7 @@
             // 
             label118.AutoSize = true;
             label118.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label118.Location = new Point(673, 453);
+            label118.Location = new Point(673, 446);
             label118.Margin = new Padding(1, 0, 1, 0);
             label118.Name = "label118";
             label118.Size = new Size(130, 13);
@@ -8783,7 +8783,7 @@
             // 
             label117.AutoSize = true;
             label117.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label117.Location = new Point(1004, 453);
+            label117.Location = new Point(1004, 446);
             label117.Margin = new Padding(1, 0, 1, 0);
             label117.Name = "label117";
             label117.Size = new Size(74, 13);
@@ -8794,7 +8794,7 @@
             // 
             label119.AutoSize = true;
             label119.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label119.Location = new Point(876, 453);
+            label119.Location = new Point(876, 446);
             label119.Margin = new Padding(1, 0, 1, 0);
             label119.Name = "label119";
             label119.Size = new Size(66, 13);
@@ -8805,7 +8805,7 @@
             // 
             label120.AutoSize = true;
             label120.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label120.Location = new Point(658, 473);
+            label120.Location = new Point(658, 466);
             label120.Margin = new Padding(1, 0, 1, 0);
             label120.Name = "label120";
             label120.Size = new Size(13, 13);
@@ -8816,7 +8816,7 @@
             // 
             label123.AutoSize = true;
             label123.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label123.Location = new Point(673, 473);
+            label123.Location = new Point(673, 466);
             label123.Margin = new Padding(1, 0, 1, 0);
             label123.Name = "label123";
             label123.Size = new Size(390, 13);
@@ -8827,7 +8827,7 @@
             // 
             label124.AutoSize = true;
             label124.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label124.Location = new Point(674, 493);
+            label124.Location = new Point(674, 486);
             label124.Margin = new Padding(1, 0, 1, 0);
             label124.Name = "label124";
             label124.Size = new Size(227, 13);
@@ -8915,7 +8915,7 @@
             // 
             g1.Controls.Add(lblMuhtar);
             g1.Controls.Add(lblMuhtarY);
-            g1.Location = new Point(672, 539);
+            g1.Location = new Point(672, 535);
             g1.Name = "g1";
             g1.Size = new Size(114, 33);
             g1.TabIndex = 1092;
@@ -8946,7 +8946,7 @@
             // 
             g2.Controls.Add(lblMudur);
             g2.Controls.Add(lblMudurY);
-            g2.Location = new Point(822, 539);
+            g2.Location = new Point(822, 535);
             g2.Name = "g2";
             g2.Size = new Size(114, 33);
             g2.TabIndex = 1093;
@@ -8977,7 +8977,7 @@
             // 
             g3.Controls.Add(lblImam);
             g3.Controls.Add(lblImamY);
-            g3.Location = new Point(985, 539);
+            g3.Location = new Point(985, 535);
             g3.Name = "g3";
             g3.Size = new Size(114, 33);
             g3.TabIndex = 1094;
@@ -9008,7 +9008,7 @@
             // 
             g4.Controls.Add(lblAza1);
             g4.Controls.Add(lblAza1Y);
-            g4.Location = new Point(672, 630);
+            g4.Location = new Point(672, 626);
             g4.Name = "g4";
             g4.Size = new Size(114, 33);
             g4.TabIndex = 1095;
@@ -9039,7 +9039,7 @@
             // 
             g5.Controls.Add(lblAza2);
             g5.Controls.Add(lblAza2Y);
-            g5.Location = new Point(822, 630);
+            g5.Location = new Point(822, 626);
             g5.Name = "g5";
             g5.Size = new Size(114, 33);
             g5.TabIndex = 1096;
@@ -9048,7 +9048,7 @@
             // 
             g6.Controls.Add(lblAza3);
             g6.Controls.Add(lblAza3Y);
-            g6.Location = new Point(985, 630);
+            g6.Location = new Point(985, 626);
             g6.Name = "g6";
             g6.Size = new Size(114, 33);
             g6.TabIndex = 1097;
@@ -9057,7 +9057,7 @@
             // 
             g7.Controls.Add(lblAza4);
             g7.Controls.Add(lblAza4Y);
-            g7.Location = new Point(672, 724);
+            g7.Location = new Point(672, 723);
             g7.Name = "g7";
             g7.Size = new Size(114, 33);
             g7.TabIndex = 1098;
@@ -9077,7 +9077,7 @@
             // 
             g8.Controls.Add(lblKatip);
             g8.Controls.Add(lblKatipY);
-            g8.Location = new Point(822, 725);
+            g8.Location = new Point(822, 723);
             g8.Name = "g8";
             g8.Size = new Size(114, 33);
             g8.TabIndex = 1099;
@@ -9094,7 +9094,7 @@
             // p136
             // 
             p136.Controls.Add(lblBKGelir);
-            p136.Location = new Point(826, 383);
+            p136.Location = new Point(821, 378);
             p136.Name = "p136";
             p136.Size = new Size(63, 20);
             p136.TabIndex = 1100;
@@ -9102,7 +9102,7 @@
             // p140
             // 
             p140.Controls.Add(lblBKSalma);
-            p140.Location = new Point(812, 425);
+            p140.Location = new Point(812, 418);
             p140.Name = "p140";
             p140.Size = new Size(63, 20);
             p140.TabIndex = 1101;
@@ -9110,7 +9110,7 @@
             // p138
             // 
             p138.Controls.Add(lblYilToplamGideri);
-            p138.Location = new Point(932, 404);
+            p138.Location = new Point(938, 399);
             p138.Name = "p138";
             p138.Size = new Size(63, 20);
             p138.TabIndex = 1101;
@@ -9118,7 +9118,7 @@
             // p137
             // 
             p137.Controls.Add(lblYilToplamGeliri);
-            p137.Location = new Point(931, 383);
+            p137.Location = new Point(938, 378);
             p137.Name = "p137";
             p137.Size = new Size(63, 20);
             p137.TabIndex = 1103;
@@ -9126,7 +9126,7 @@
             // p141
             // 
             p141.Controls.Add(lblSalma);
-            p141.Location = new Point(937, 425);
+            p141.Location = new Point(937, 418);
             p141.Name = "p141";
             p141.Size = new Size(63, 20);
             p141.TabIndex = 1104;
@@ -9134,7 +9134,7 @@
             // p143
             // 
             p143.Controls.Add(lblBKDigerGelir);
-            p143.Location = new Point(815, 446);
+            p143.Location = new Point(815, 439);
             p143.Name = "p143";
             p143.Size = new Size(63, 20);
             p143.TabIndex = 1105;
@@ -9142,7 +9142,7 @@
             // p142
             // 
             p142.Controls.Add(lblDigerGelirSonucu);
-            p142.Location = new Point(942, 446);
+            p142.Location = new Point(942, 439);
             p142.Name = "p142";
             p142.Size = new Size(63, 20);
             p142.TabIndex = 1107;
@@ -9162,7 +9162,7 @@
             // p139
             // 
             p139.Controls.Add(lblBKGider);
-            p139.Location = new Point(826, 404);
+            p139.Location = new Point(821, 399);
             p139.Name = "p139";
             p139.Size = new Size(63, 20);
             p139.TabIndex = 1102;
@@ -9185,7 +9185,7 @@
             dgvTahminiGiderler.BackgroundColor = SystemColors.Control;
             dgvTahminiGiderler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiGiderler.Location = new Point(658, 668);
+            dgvTahminiGiderler.Location = new Point(658, 664);
             dgvTahminiGiderler.Name = "dgvTahminiGiderler";
             dgvTahminiGiderler.RowHeadersWidth = 51;
             dgvTahminiGiderler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;

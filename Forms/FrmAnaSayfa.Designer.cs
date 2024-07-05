@@ -156,60 +156,60 @@
             // lblFark
             // 
             lblFark.AutoSize = true;
-            lblFark.Font = new Font("Monotype Corsiva", 18F, FontStyle.Bold | FontStyle.Italic);
-            lblFark.Location = new Point(142, 128);
+            lblFark.Font = new Font("Verdana", 14.25F);
+            lblFark.Location = new Point(147, 131);
             lblFark.Name = "lblFark";
-            lblFark.Size = new Size(36, 28);
+            lblFark.Size = new Size(34, 23);
             lblFark.TabIndex = 3;
             lblFark.Text = "00";
             // 
             // lblToplamGider
             // 
             lblToplamGider.AutoSize = true;
-            lblToplamGider.Font = new Font("Monotype Corsiva", 18F, FontStyle.Bold | FontStyle.Italic);
-            lblToplamGider.Location = new Point(142, 77);
+            lblToplamGider.Font = new Font("Verdana", 14.25F);
+            lblToplamGider.Location = new Point(147, 80);
             lblToplamGider.Name = "lblToplamGider";
-            lblToplamGider.Size = new Size(36, 28);
+            lblToplamGider.Size = new Size(34, 23);
             lblToplamGider.TabIndex = 3;
             lblToplamGider.Text = "00";
             // 
             // lblToplamGelir
             // 
             lblToplamGelir.AutoSize = true;
-            lblToplamGelir.Font = new Font("Monotype Corsiva", 18F, FontStyle.Bold | FontStyle.Italic);
-            lblToplamGelir.Location = new Point(142, 38);
+            lblToplamGelir.Font = new Font("Verdana", 14.25F);
+            lblToplamGelir.Location = new Point(147, 42);
             lblToplamGelir.Name = "lblToplamGelir";
-            lblToplamGelir.Size = new Size(36, 28);
+            lblToplamGelir.Size = new Size(34, 23);
             lblToplamGelir.TabIndex = 3;
             lblToplamGelir.Text = "00";
             // 
             // lblGenelSonuc
             // 
             lblGenelSonuc.AutoSize = true;
-            lblGenelSonuc.Font = new Font("Monotype Corsiva", 18F, FontStyle.Bold | FontStyle.Italic);
+            lblGenelSonuc.Font = new Font("Verdana", 14.25F);
             lblGenelSonuc.Location = new Point(28, 174);
             lblGenelSonuc.Name = "lblGenelSonuc";
-            lblGenelSonuc.Size = new Size(24, 28);
+            lblGenelSonuc.Size = new Size(22, 23);
             lblGenelSonuc.TabIndex = 2;
             lblGenelSonuc.Text = "0";
             // 
             // lblSonuc
             // 
             lblSonuc.AutoSize = true;
-            lblSonuc.Font = new Font("Monotype Corsiva", 18F, FontStyle.Bold | FontStyle.Italic);
-            lblSonuc.Location = new Point(49, 128);
+            lblSonuc.Font = new Font("Verdana", 14.25F);
+            lblSonuc.Location = new Point(54, 131);
             lblSonuc.Name = "lblSonuc";
-            lblSonuc.Size = new Size(89, 28);
+            lblSonuc.Size = new Size(79, 23);
             lblSonuc.TabIndex = 2;
             lblSonuc.Text = "SONUÇ";
             // 
             // lblGider
             // 
             lblGider.AutoSize = true;
-            lblGider.Font = new Font("Monotype Corsiva", 18F, FontStyle.Bold | FontStyle.Italic);
-            lblGider.Location = new Point(49, 77);
+            lblGider.Font = new Font("Verdana", 14.25F);
+            lblGider.Location = new Point(54, 80);
             lblGider.Name = "lblGider";
-            lblGider.Size = new Size(87, 28);
+            lblGider.Size = new Size(73, 23);
             lblGider.TabIndex = 2;
             lblGider.Text = "GİDER";
             // 
@@ -246,10 +246,10 @@
             // lblGelir
             // 
             lblGelir.AutoSize = true;
-            lblGelir.Font = new Font("Monotype Corsiva", 18F, FontStyle.Bold | FontStyle.Italic);
-            lblGelir.Location = new Point(49, 38);
+            lblGelir.Font = new Font("Verdana", 14.25F);
+            lblGelir.Location = new Point(54, 42);
             lblGelir.Name = "lblGelir";
-            lblGelir.Size = new Size(84, 28);
+            lblGelir.Size = new Size(69, 23);
             lblGelir.TabIndex = 2;
             lblGelir.Text = "GELİR";
             // 
@@ -417,7 +417,6 @@
             // 
             // pcBoxEkButce
             // 
-            pcBoxEkButce.BorderStyle = BorderStyle.FixedSingle;
             pcBoxEkButce.Cursor = Cursors.Hand;
             pcBoxEkButce.Image = (Image)resources.GetObject("pcBoxEkButce.Image");
             pcBoxEkButce.Location = new Point(429, 3);
@@ -430,7 +429,6 @@
             // 
             // pcBoxGorevliler
             // 
-            pcBoxGorevliler.BorderStyle = BorderStyle.FixedSingle;
             pcBoxGorevliler.Cursor = Cursors.Hand;
             pcBoxGorevliler.Image = (Image)resources.GetObject("pcBoxGorevliler.Image");
             pcBoxGorevliler.Location = new Point(764, 2);
@@ -443,7 +441,6 @@
             // 
             // pcBoxKesinHesap
             // 
-            pcBoxKesinHesap.BorderStyle = BorderStyle.FixedSingle;
             pcBoxKesinHesap.Cursor = Cursors.Hand;
             pcBoxKesinHesap.Image = (Image)resources.GetObject("pcBoxKesinHesap.Image");
             pcBoxKesinHesap.Location = new Point(626, 3);
@@ -456,7 +453,6 @@
             // 
             // pcBoxTahminiButce
             // 
-            pcBoxTahminiButce.BorderStyle = BorderStyle.FixedSingle;
             pcBoxTahminiButce.Cursor = Cursors.Hand;
             pcBoxTahminiButce.Image = (Image)resources.GetObject("pcBoxTahminiButce.Image");
             pcBoxTahminiButce.Location = new Point(287, 3);
@@ -469,7 +465,6 @@
             // 
             // pcBoxGider
             // 
-            pcBoxGider.BorderStyle = BorderStyle.FixedSingle;
             pcBoxGider.Cursor = Cursors.Hand;
             pcBoxGider.Image = (Image)resources.GetObject("pcBoxGider.Image");
             pcBoxGider.Location = new Point(146, 3);
@@ -482,7 +477,6 @@
             // 
             // pcBoxGelir
             // 
-            pcBoxGelir.BorderStyle = BorderStyle.FixedSingle;
             pcBoxGelir.Cursor = Cursors.Hand;
             pcBoxGelir.Image = (Image)resources.GetObject("pcBoxGelir.Image");
             pcBoxGelir.Location = new Point(7, 3);
