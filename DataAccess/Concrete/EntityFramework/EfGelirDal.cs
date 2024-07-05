@@ -69,9 +69,36 @@ namespace DataAccess.Concrete.EntityFramework
         //    }
         //}
 
+        //public List<GelirDetailDto> GetListGelirDetailsKoyAndDonemId(int koyId, byte donemId)
+        //{
+        //    using (var context = new KoyButcesiContext())
+        //    {
+        //        var result = from g in context.Gelirs
+        //                     join gelirkategori in context.GelirKategoris on g.GelirKategoriId equals gelirkategori.Id
+        //                     join koy in context.Koys on g.KoyId equals koy.Id
+        //                     join donem in context.Donems on g.DonemId equals donem.Id
+        //                     where g.KoyId == koyId && g.DonemId == donemId
+        //                     select new GelirDetailDto
+        //                     {
+        //                         GelirId = g.Id,
+        //                         GelirKategoriAdi = gelirkategori.GelirKategoriAdi,
+        //                         KoyAdi = koy.KoyAdi,
+        //                         DonemAdi = donem.DonemAdi,
+        //                         Tutar = g.Tutar,
+        //                         Tarih = g.Tarih,
+        //                         EvrakNo = g.EvrakNo,
+        //                         Veren = g.Veren,
+        //                         KoyId = koy.Id,
+        //                         DonemId = donem.Id,
+        //                         GelirKategoriId = g.GelirKategoriId
+        //                     };
+        //        return result.ToList();
+        //    }
+        //}
+
         public List<GelirDetailDto> GetListGelirDetailsKoyAndDonemId(int koyId, byte donemId)
         {
-            using (var context = new KoyButcesiContext())
+            using (KoyButcesiContext context = new KoyButcesiContext())
             {
                 var result = from g in context.Gelirs
                              join gelirkategori in context.GelirKategoris on g.GelirKategoriId equals gelirkategori.Id
@@ -81,13 +108,13 @@ namespace DataAccess.Concrete.EntityFramework
                              select new GelirDetailDto
                              {
                                  GelirId = g.Id,
-                                 GelirKategoriAdi = gelirkategori.GelirKategoriAdi,
-                                 KoyAdi = koy.KoyAdi,
-                                 DonemAdi = donem.DonemAdi,
-                                 Tutar = g.Tutar,
-                                 Tarih = g.Tarih,
-                                 EvrakNo = g.EvrakNo,
-                                 Veren = g.Veren,
+                                 GelirKategoriAdi = gelirkategori.GelirKategoriAdi ?? string.Empty,
+                                 KoyAdi = koy.KoyAdi ?? string.Empty,
+                                 DonemAdi = donem.DonemAdi ?? string.Empty,
+                                 Tutar = g.Tutar, // Nullable değilse doğrudan atama yapabilirsiniz
+                                 Tarih = g.Tarih, // Nullable değilse doğrudan atama yapabilirsiniz
+                                 EvrakNo = g.EvrakNo ?? string.Empty,
+                                 Veren = g.Veren ?? string.Empty,
                                  KoyId = koy.Id,
                                  DonemId = donem.Id,
                                  GelirKategoriId = g.GelirKategoriId
@@ -95,6 +122,10 @@ namespace DataAccess.Concrete.EntityFramework
                 return result.ToList();
             }
         }
+
+
+
+
 
     }
 }
