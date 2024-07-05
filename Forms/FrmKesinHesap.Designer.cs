@@ -36,16 +36,16 @@
             // 
             // pnlKesinHesaplar
             // 
-            pnlKesinHesaplar.Location = new Point(0, 0);
+            pnlKesinHesaplar.Location = new Point(1, 1);
             pnlKesinHesaplar.Name = "pnlKesinHesaplar";
-            pnlKesinHesaplar.Size = new Size(1194, 1046);
+            pnlKesinHesaplar.Size = new Size(1122, 794);
             pnlKesinHesaplar.TabIndex = 135;
             // 
             // btnYazdir
             // 
-            btnYazdir.Location = new Point(1198, 79);
+            btnYazdir.Location = new Point(1131, 58);
             btnYazdir.Name = "btnYazdir";
-            btnYazdir.Size = new Size(75, 23);
+            btnYazdir.Size = new Size(93, 84);
             btnYazdir.TabIndex = 198;
             btnYazdir.Text = "Yazdır";
             btnYazdir.UseVisualStyleBackColor = true;
@@ -53,9 +53,9 @@
             // 
             // btnKesinHesap1
             // 
-            btnKesinHesap1.Location = new Point(1196, 12);
+            btnKesinHesap1.Location = new Point(1131, 12);
             btnKesinHesap1.Name = "btnKesinHesap1";
-            btnKesinHesap1.Size = new Size(77, 55);
+            btnKesinHesap1.Size = new Size(93, 40);
             btnKesinHesap1.TabIndex = 197;
             btnKesinHesap1.Text = "Kesin Hesap 1";
             btnKesinHesap1.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@
             // 
             // btnKesinHesap2
             // 
-            btnKesinHesap2.Location = new Point(1196, 116);
+            btnKesinHesap2.Location = new Point(1131, 148);
             btnKesinHesap2.Name = "btnKesinHesap2";
-            btnKesinHesap2.Size = new Size(77, 55);
+            btnKesinHesap2.Size = new Size(93, 40);
             btnKesinHesap2.TabIndex = 197;
             btnKesinHesap2.Text = "Kesin Hesap 2";
             btnKesinHesap2.UseVisualStyleBackColor = true;

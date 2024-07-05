@@ -82,30 +82,76 @@ namespace Forms
             frm.Show();
         }
 
+        //private void btnYazdir_Click(object sender, EventArgs e)
+        //{
+        //    // pnlKesinHesaplar panelinin ekran görüntüsünü yakala
+        //    CapturePanel(pnlKesinHesaplar);
+
+        //    // Baskı önizlemesi için PrintPreviewDialog gösterilir
+        //    DialogResult result = printPreviewDialog.ShowDialog();
+
+        //    // Eğer kullanıcı önizlemeyi onayladıysa baskı işlemi gerçekleştirilir
+        //    if (result == DialogResult.OK && printDocument.PrinterSettings.IsValid)
+        //    {
+        //        printDocument.Print();
+        //    }
+        //}
+
+        //private void CapturePanel(Panel panel)
+        //{
+        //    // Panelin ekran görüntüsünü yakala
+        //    Bitmap bitmap = new Bitmap(panel.Width, panel.Height);
+        //    panel.DrawToBitmap(bitmap, new Rectangle(Point.Empty, panel.Size));
+
+        //    // Ekran görüntüsünü belleğe al
+        //    memoryImage = bitmap;
+        //}
+
         private void btnYazdir_Click(object sender, EventArgs e)
         {
-            // pnlKesinHesaplar panelinin ekran görüntüsünü yakala
-            CapturePanel(pnlKesinHesaplar);
-
-            // Baskı önizlemesi için PrintPreviewDialog gösterilir
-            DialogResult result = printPreviewDialog.ShowDialog();
-
-            // Eğer kullanıcı önizlemeyi onayladıysa baskı işlemi gerçekleştirilir
-            if (result == DialogResult.OK && printDocument.PrinterSettings.IsValid)
+            try
             {
-                printDocument.Print();
+                // Panelin ekran görüntüsünü yakala
+                Bitmap panelImage = CapturePanel(pnlKesinHesaplar);
+
+                // PrintDocument oluştur
+                PrintDocument pd = new PrintDocument();
+                pd.DefaultPageSettings.Landscape = true; // Sayfayı yatay olarak ayarla
+                pd.PrintPage += (s, ev) =>
+                {
+                    // Yazdırma işlemi sırasında panel görüntüsünü çiz
+                    ev.Graphics.DrawImage(panelImage, ev.PageBounds);
+                };
+
+                // Baskı önizlemesi için PrintPreviewDialog göster
+                PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+                printPreviewDialog.Document = pd;
+
+                // Baskı önizlemesini göster
+                DialogResult result = printPreviewDialog.ShowDialog();
+
+                // Eğer kullanıcı önizlemeyi onayladıysa baskı işlemi gerçekleştir
+                if (result == DialogResult.OK)
+                {
+                    pd.Print();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Baskı işlemi sırasında bir hata oluştu: " + ex.Message);
             }
         }
 
-        private void CapturePanel(Panel panel)
+        // Panelin ekran görüntüsünü alacak olan metod
+        private Bitmap CapturePanel(Panel panel)
         {
-            // Panelin ekran görüntüsünü yakala
             Bitmap bitmap = new Bitmap(panel.Width, panel.Height);
-            panel.DrawToBitmap(bitmap, new Rectangle(Point.Empty, panel.Size));
-
-            // Ekran görüntüsünü belleğe al
-            memoryImage = bitmap;
+            panel.DrawToBitmap(bitmap, new Rectangle(0, 0, panel.Width, panel.Height));
+            return bitmap;
         }
+
+
+
 
         private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {

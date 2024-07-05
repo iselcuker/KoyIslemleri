@@ -1428,9 +1428,9 @@ namespace Forms
                     devir = 0;
                 if (!decimal.TryParse(lblGelir.Text, out gelir))
                     gelir = 0;
-                
+
                 // Toplamları hesaplayın
-                decimal Yekun = devir + gelir ;
+                decimal Yekun = devir + gelir;
 
                 // Sonucu etikete atayın
                 lblYekun.Text = Yekun.ToString("#,0.00");
@@ -1458,7 +1458,6 @@ namespace Forms
         {
             try
             {
-
                 decimal yekun, toplamGider;
                 if (!decimal.TryParse(lblYekun.Text, out yekun))
                     yekun = 0;
@@ -1471,9 +1470,17 @@ namespace Forms
                 // Sonucu etikete atayın, pozitif ise direkt olarak yazdırın
                 lblButceSonucu.Text = ButceSonucu >= 0 ? ButceSonucu.ToString("#,0.00") : "+" + (-ButceSonucu).ToString("#,0.00");
 
-                if (toplamGider<yekun)
+                if (toplamGider < yekun)
                 {
-                    BURADA KALDIM
+                    lblSonucMetni.Text = Convert.ToInt32(lblGelirYil.Text) + 1 + " YILINA GELİR DEVRİ";
+                }
+                if (toplamGider > yekun)
+                {
+                    lblSonucMetni.Text = "KÖY BORCU (MUHTAR ALACAĞI)";
+                }
+                if (toplamGider == yekun)
+                {
+                    lblSonucMetni.Text = "";
                 }
             }
             catch (Exception ex)
@@ -1518,6 +1525,11 @@ namespace Forms
             LoadDevirToplami(); //Devir toplamlarının lblDevir'in textine yazdıran metot
             LoadGelirKategoriToplamlari(); //Gelir Toplamlarının lblGelir textine yazdıran metot
             ButceSonucu();
+
+            lblBKGelir.Text = lblButceGenelToplami.Text;
+            lblBKGider.Text = lblButceGenelToplami.Text;
+            lblYilToplamGeliri.Text = lblYekun.Text;
+            lblYilToplamGideri.Text = lblToplamGider.Text;
 
             RakamlariPanelinSaginaYasla();
             GorevliPaneleOrtala();

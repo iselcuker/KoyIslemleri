@@ -762,6 +762,7 @@
             panel133 = new Panel();
             panel134 = new Panel();
             panel135 = new Panel();
+            lblSonucMetni = new Label();
             panel139 = new Panel();
             panel140 = new Panel();
             panel141 = new Panel();
@@ -849,7 +850,6 @@
             p139 = new Panel();
             p5 = new Panel();
             dgvTahminiGiderler = new DataGridView();
-            lblSonucMetni = new Label();
             panel281.SuspendLayout();
             panel280.SuspendLayout();
             panel277.SuspendLayout();
@@ -8317,6 +8317,18 @@
             panel135.Size = new Size(203, 23);
             panel135.TabIndex = 1058;
             // 
+            // lblSonucMetni
+            // 
+            lblSonucMetni.AutoSize = true;
+            lblSonucMetni.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
+            lblSonucMetni.Location = new Point(2, 2);
+            lblSonucMetni.Margin = new Padding(1, 0, 1, 0);
+            lblSonucMetni.Name = "lblSonucMetni";
+            lblSonucMetni.Size = new Size(15, 17);
+            lblSonucMetni.TabIndex = 5;
+            lblSonucMetni.Text = "0";
+            lblSonucMetni.TextAlign = ContentAlignment.MiddleRight;
+            // 
             // panel139
             // 
             panel139.BorderStyle = BorderStyle.FixedSingle;
@@ -8536,7 +8548,7 @@
             // 
             lblBKGelir.AutoSize = true;
             lblBKGelir.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblBKGelir.Location = new Point(2, 4);
+            lblBKGelir.Location = new Point(3, 5);
             lblBKGelir.Margin = new Padding(1, 0, 1, 0);
             lblBKGelir.Name = "lblBKGelir";
             lblBKGelir.Size = new Size(10, 12);
@@ -8559,7 +8571,7 @@
             // 
             lblYilToplamGeliri.AutoSize = true;
             lblYilToplamGeliri.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblYilToplamGeliri.Location = new Point(0, 4);
+            lblYilToplamGeliri.Location = new Point(2, 5);
             lblYilToplamGeliri.Margin = new Padding(1, 0, 1, 0);
             lblYilToplamGeliri.Name = "lblYilToplamGeliri";
             lblYilToplamGeliri.Size = new Size(10, 12);
@@ -8582,7 +8594,7 @@
             // 
             lblYilToplamGideri.AutoSize = true;
             lblYilToplamGideri.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblYilToplamGideri.Location = new Point(-1, 2);
+            lblYilToplamGideri.Location = new Point(3, 5);
             lblYilToplamGideri.Margin = new Padding(1, 0, 1, 0);
             lblYilToplamGideri.Name = "lblYilToplamGideri";
             lblYilToplamGideri.Size = new Size(10, 12);
@@ -8605,7 +8617,7 @@
             // 
             label105.AutoSize = true;
             label105.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label105.Location = new Point(888, 410);
+            label105.Location = new Point(888, 411);
             label105.Margin = new Padding(1, 0, 1, 0);
             label105.Name = "label105";
             label105.Size = new Size(46, 13);
@@ -8650,7 +8662,7 @@
             // 
             label109.AutoSize = true;
             label109.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label109.Location = new Point(658, 430);
+            label109.Location = new Point(658, 432);
             label109.Margin = new Padding(1, 0, 1, 0);
             label109.Name = "label109";
             label109.Size = new Size(13, 13);
@@ -8661,7 +8673,7 @@
             // 
             lblSalmaYil.AutoSize = true;
             lblSalmaYil.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblSalmaYil.Location = new Point(673, 430);
+            lblSalmaYil.Location = new Point(673, 432);
             lblSalmaYil.Margin = new Padding(1, 0, 1, 0);
             lblSalmaYil.Name = "lblSalmaYil";
             lblSalmaYil.Size = new Size(0, 13);
@@ -8672,7 +8684,7 @@
             // 
             label111.AutoSize = true;
             label111.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label111.Location = new Point(697, 430);
+            label111.Location = new Point(697, 432);
             label111.Margin = new Padding(1, 0, 1, 0);
             label111.Name = "label111";
             label111.Size = new Size(107, 13);
@@ -8683,7 +8695,7 @@
             // 
             label112.AutoSize = true;
             label112.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label112.Location = new Point(872, 429);
+            label112.Location = new Point(872, 431);
             label112.Margin = new Padding(1, 0, 1, 0);
             label112.Name = "label112";
             label112.Size = new Size(66, 13);
@@ -8694,7 +8706,7 @@
             // 
             label113.AutoSize = true;
             label113.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label113.Location = new Point(1000, 429);
+            label113.Location = new Point(1000, 431);
             label113.Margin = new Padding(1, 0, 1, 0);
             label113.Name = "label113";
             label113.Size = new Size(74, 13);
@@ -8705,31 +8717,29 @@
             // 
             lblBKSalma.AutoSize = true;
             lblBKSalma.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblBKSalma.Location = new Point(0, 4);
+            lblBKSalma.Location = new Point(4, 4);
             lblBKSalma.Margin = new Padding(1, 0, 1, 0);
             lblBKSalma.Name = "lblBKSalma";
-            lblBKSalma.Size = new Size(10, 12);
+            lblBKSalma.Size = new Size(0, 12);
             lblBKSalma.TabIndex = 1080;
-            lblBKSalma.Text = "0";
             lblBKSalma.TextAlign = ContentAlignment.MiddleRight;
             // 
             // lblSalma
             // 
             lblSalma.AutoSize = true;
             lblSalma.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblSalma.Location = new Point(0, 4);
+            lblSalma.Location = new Point(3, 4);
             lblSalma.Margin = new Padding(1, 0, 1, 0);
             lblSalma.Name = "lblSalma";
-            lblSalma.Size = new Size(10, 12);
+            lblSalma.Size = new Size(0, 12);
             lblSalma.TabIndex = 1080;
-            lblSalma.Text = "0";
             lblSalma.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label116
             // 
             label116.AutoSize = true;
             label116.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label116.Location = new Point(658, 450);
+            label116.Location = new Point(658, 453);
             label116.Margin = new Padding(1, 0, 1, 0);
             label116.Name = "label116";
             label116.Size = new Size(13, 13);
@@ -8740,7 +8750,7 @@
             // 
             label118.AutoSize = true;
             label118.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label118.Location = new Point(673, 450);
+            label118.Location = new Point(673, 453);
             label118.Margin = new Padding(1, 0, 1, 0);
             label118.Name = "label118";
             label118.Size = new Size(130, 13);
@@ -8751,31 +8761,29 @@
             // 
             lblBKDigerGelir.AutoSize = true;
             lblBKDigerGelir.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblBKDigerGelir.Location = new Point(1, 4);
+            lblBKDigerGelir.Location = new Point(3, 5);
             lblBKDigerGelir.Margin = new Padding(1, 0, 1, 0);
             lblBKDigerGelir.Name = "lblBKDigerGelir";
-            lblBKDigerGelir.Size = new Size(10, 12);
+            lblBKDigerGelir.Size = new Size(0, 12);
             lblBKDigerGelir.TabIndex = 1087;
-            lblBKDigerGelir.Text = "0";
             lblBKDigerGelir.TextAlign = ContentAlignment.MiddleRight;
             // 
             // lblDigerGelirSonucu
             // 
             lblDigerGelirSonucu.AutoSize = true;
             lblDigerGelirSonucu.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblDigerGelirSonucu.Location = new Point(1, 4);
+            lblDigerGelirSonucu.Location = new Point(3, 5);
             lblDigerGelirSonucu.Margin = new Padding(1, 0, 1, 0);
             lblDigerGelirSonucu.Name = "lblDigerGelirSonucu";
-            lblDigerGelirSonucu.Size = new Size(10, 12);
+            lblDigerGelirSonucu.Size = new Size(0, 12);
             lblDigerGelirSonucu.TabIndex = 1086;
-            lblDigerGelirSonucu.Text = "0";
             lblDigerGelirSonucu.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label117
             // 
             label117.AutoSize = true;
             label117.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label117.Location = new Point(1004, 450);
+            label117.Location = new Point(1004, 453);
             label117.Margin = new Padding(1, 0, 1, 0);
             label117.Name = "label117";
             label117.Size = new Size(74, 13);
@@ -8786,7 +8794,7 @@
             // 
             label119.AutoSize = true;
             label119.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label119.Location = new Point(876, 450);
+            label119.Location = new Point(876, 453);
             label119.Margin = new Padding(1, 0, 1, 0);
             label119.Name = "label119";
             label119.Size = new Size(66, 13);
@@ -8797,7 +8805,7 @@
             // 
             label120.AutoSize = true;
             label120.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label120.Location = new Point(658, 470);
+            label120.Location = new Point(658, 473);
             label120.Margin = new Padding(1, 0, 1, 0);
             label120.Name = "label120";
             label120.Size = new Size(13, 13);
@@ -8808,7 +8816,7 @@
             // 
             label123.AutoSize = true;
             label123.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label123.Location = new Point(673, 470);
+            label123.Location = new Point(673, 473);
             label123.Margin = new Padding(1, 0, 1, 0);
             label123.Name = "label123";
             label123.Size = new Size(390, 13);
@@ -8819,7 +8827,7 @@
             // 
             label124.AutoSize = true;
             label124.Font = new Font("Arial Narrow", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            label124.Location = new Point(674, 490);
+            label124.Location = new Point(674, 493);
             label124.Margin = new Padding(1, 0, 1, 0);
             label124.Name = "label124";
             label124.Size = new Size(227, 13);
@@ -9102,7 +9110,7 @@
             // p138
             // 
             p138.Controls.Add(lblYilToplamGideri);
-            p138.Location = new Point(932, 408);
+            p138.Location = new Point(932, 404);
             p138.Name = "p138";
             p138.Size = new Size(63, 20);
             p138.TabIndex = 1101;
@@ -9110,7 +9118,7 @@
             // p137
             // 
             p137.Controls.Add(lblYilToplamGeliri);
-            p137.Location = new Point(931, 385);
+            p137.Location = new Point(931, 383);
             p137.Name = "p137";
             p137.Size = new Size(63, 20);
             p137.TabIndex = 1103;
@@ -9143,7 +9151,7 @@
             // 
             lblBKGider.AutoSize = true;
             lblBKGider.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblBKGider.Location = new Point(1, 4);
+            lblBKGider.Location = new Point(1, 5);
             lblBKGider.Margin = new Padding(1, 0, 1, 0);
             lblBKGider.Name = "lblBKGider";
             lblBKGider.Size = new Size(10, 12);
@@ -9154,7 +9162,7 @@
             // p139
             // 
             p139.Controls.Add(lblBKGider);
-            p139.Location = new Point(826, 407);
+            p139.Location = new Point(826, 404);
             p139.Name = "p139";
             p139.Size = new Size(63, 20);
             p139.TabIndex = 1102;
@@ -9183,18 +9191,6 @@
             dgvTahminiGiderler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvTahminiGiderler.Size = new Size(448, 52);
             dgvTahminiGiderler.TabIndex = 1108;
-            // 
-            // lblSonucMetni
-            // 
-            lblSonucMetni.AutoSize = true;
-            lblSonucMetni.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)162);
-            lblSonucMetni.Location = new Point(2, 2);
-            lblSonucMetni.Margin = new Padding(1, 0, 1, 0);
-            lblSonucMetni.Name = "lblSonucMetni";
-            lblSonucMetni.Size = new Size(15, 17);
-            lblSonucMetni.TabIndex = 5;
-            lblSonucMetni.Text = "0";
-            lblSonucMetni.TextAlign = ContentAlignment.MiddleRight;
             // 
             // FrmKesinHesap2
             // 
