@@ -94,6 +94,9 @@ namespace Forms
                 snColumn.HeaderText = "S.N";
                 snColumn.ReadOnly = true; // Sıra numarası kolonunu yalnızca okunabilir yap
                 dgvGelirler.Columns.Insert(0, snColumn); // Kolonu en başa ekleyelim
+
+                // S.N kolonunun genişliğini ayarla
+                dgvGelirler.Columns["SN"].Width = 10; // Örneğin 50 piksel olarak ayarlayabilirsiniz
             }
 
             // Diğer DataGridView ayarları
@@ -152,8 +155,8 @@ namespace Forms
                 decimal tutar;
 
                 // Her satırın GelirKategoriId ve Tutar değerlerini al
-                if (int.TryParse(row.Cells["GelirKategoriId"].Value.ToString(), out gelirKategoriId) &&
-                    decimal.TryParse(row.Cells["Tutar"].Value.ToString(), out tutar))
+                if (int.TryParse(row.Cells["GelirKategoriId"].Value?.ToString(), out gelirKategoriId) &&
+                    decimal.TryParse(row.Cells["Tutar"].Value?.ToString(), out tutar))
                 {
                     // Toplam miktarları sözlükte ilgili kategoriye göre topla
                     if (!toplamMiktarlar.ContainsKey(gelirKategoriId))
@@ -165,30 +168,37 @@ namespace Forms
                 }
             }
 
-            // Elde edilen toplam miktarları ilgili label'lere yazdır
-            lblHasilat.Text = toplamMiktarlar.ContainsKey(1) && toplamMiktarlar[1] != 0 ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[1]) : "";
+            // Etiketlere miktarları yazdır
+            lblHasilat.Text = toplamMiktarlar.ContainsKey(1) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[1]) : "";
             lblHasilatYazi.Visible = !string.IsNullOrEmpty(lblHasilat.Text);
 
-            lblResimHarc.Text = toplamMiktarlar.ContainsKey(2) && toplamMiktarlar[2] != 0 ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[2]) : "";
-            lblResimHarcYazi.Visible = !string.IsNullOrWhiteSpace(lblResimHarc.Text);
+            lblResimHarc.Text = toplamMiktarlar.ContainsKey(2) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[2]) : "";
+            lblResimHarcYazi.Visible = !string.IsNullOrEmpty(lblResimHarc.Text);
 
-            lblParaCezasi.Text = toplamMiktarlar.ContainsKey(3) && toplamMiktarlar[3] != 0 ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[3]) : "";
+            lblParaCezasi.Text = toplamMiktarlar.ContainsKey(3) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[3]) : "";
             lblParaCezasiYazi.Visible = !string.IsNullOrEmpty(lblParaCezasi.Text);
 
-            lblYardim.Text = toplamMiktarlar.ContainsKey(4) && toplamMiktarlar[4] != 0 ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[4]) : "";
+            lblYardim.Text = toplamMiktarlar.ContainsKey(4) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[4]) : "";
             lblYardimYazi.Visible = !string.IsNullOrEmpty(lblYardim.Text);
 
-            lblKoyVakif.Text = toplamMiktarlar.ContainsKey(5) && toplamMiktarlar[5] != 0 ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[5]) : "";
+            lblKoyVakif.Text = toplamMiktarlar.ContainsKey(5) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[5]) : "";
             lblKoyVakifYazi.Visible = !string.IsNullOrEmpty(lblKoyVakif.Text);
 
-            lblIstikraz.Text = toplamMiktarlar.ContainsKey(6) && toplamMiktarlar[6] != 0 ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[6]) : "";
+            lblIstikraz.Text = toplamMiktarlar.ContainsKey(6) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[6]) : "";
             lblIstikrazYazi.Visible = !string.IsNullOrEmpty(lblIstikraz.Text);
 
-            lblTurluGelir.Text = toplamMiktarlar.ContainsKey(7) && toplamMiktarlar[7] != 0 ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[7]) : "";
+            lblTurluGelir.Text = toplamMiktarlar.ContainsKey(7) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[7]) : "";
             lblTurluGelirYazi.Visible = !string.IsNullOrEmpty(lblTurluGelir.Text);
 
-            lblDevir.Text = toplamMiktarlar.ContainsKey(8) && toplamMiktarlar[8] != 0 ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[8]) : "";
+            lblDevir.Text = toplamMiktarlar.ContainsKey(8) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[8]) : "";
             lblDevirYazi.Visible = !string.IsNullOrEmpty(lblDevir.Text);
+
+            // Toplam miktarı hesapla
+            decimal toplam = toplamMiktarlar.Values.Sum();
+            lblToplam.Text = string.Format("{0:#,0.00}.-TL", toplam);
+            lblToplam.Visible = !string.IsNullOrEmpty(lblToplam.Text);
+            lblToplamYazi.Visible = !string.IsNullOrEmpty(lblToplamYazi.Text);
+
         }
 
         private void pcBoxKaydet_Click(object sender, EventArgs e)
@@ -508,6 +518,8 @@ namespace Forms
                 pcBoxKaydet.Visible = true;
                 pcBoxGuncelle.Visible = true;
                 pcBoxSil.Visible = true;
+                //lblToplam.Visible = true;
+                //lblToplamYazi.Visible = true;
             }
         }
 
@@ -526,6 +538,8 @@ namespace Forms
             pcBoxKaydet.Visible = false;
             pcBoxGuncelle.Visible = false;
             pcBoxSil.Visible = false;
+            lblToplam.Visible = false;
+            lblToplamYazi.Visible = false;
         }
 
         private void txtTutar_KeyPress(object sender, KeyPressEventArgs e)
@@ -556,5 +570,6 @@ namespace Forms
                 e.KeyChar = ',';
             }
         }
+        /////////
     }
 }
