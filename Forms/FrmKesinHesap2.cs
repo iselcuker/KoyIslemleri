@@ -213,12 +213,12 @@ namespace Forms
                 GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 21, lblOdenenVesait);
                 GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 22, lblOdenenAydinlatma);
                 GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 23, lblOdenenMezarlik);
-                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 24, lblOdenenVergi);
-                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 25, lblOdenenKoyBorcu);
-                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 26, lblOdenenMahkeme);
-                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 27, lblOdenenIstimlak);
-                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 28, lblOdenenUmulmadik);
-                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 29, lblOdenenTurluMasraf);
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 24, lblOdenenTurluMasraf);
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 25, lblOdenenVergi);
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 26, lblOdenenKoyBorcu);
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 27, lblOdenenMahkeme);
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 28, lblOdenenIstimlak);
+                GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 29, lblOdenenUmulmadik);
                 GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 30, lblOdenenIlkogretim);
                 GiderToplami(_seciliKoyIndex, _seciliDonemIndex, 31, lblOdenenKHGB);
             }
@@ -253,13 +253,12 @@ namespace Forms
                 GiderAltKategoriLabellarAyarla(lblBKVesait, 21);
                 GiderAltKategoriLabellarAyarla(lblBKAydinlatma, 22);
                 GiderAltKategoriLabellarAyarla(lblBKMezarlik, 23);
-
+                GiderAltKategoriLabellarAyarla(lblBKTurluMasraf, 24);
                 GiderAltKategoriLabellarAyarla(lblBKVergi, 25);
                 GiderAltKategoriLabellarAyarla(lblBKKoyBorcu, 26);
                 GiderAltKategoriLabellarAyarla(lblBKMahkeme, 27);
                 GiderAltKategoriLabellarAyarla(lblBKIstimlak, 28);
                 GiderAltKategoriLabellarAyarla(lblBKUmulmadik, 29);
-                GiderAltKategoriLabellarAyarla(lblBKTurluMasraf, 24);
                 GiderAltKategoriLabellarAyarla(lblBKIlkogretim, 30);
                 GiderAltKategoriLabellarAyarla(lblBKKHGB, 31);
 
@@ -1469,7 +1468,6 @@ namespace Forms
 
                 // Sonucu etikete atayın, pozitif ise direkt olarak yazdırın
                 lblButceSonucu.Text = ButceSonucu >= 0 ? ButceSonucu.ToString("#,0.00") : (-ButceSonucu).ToString("#,0.00");
-                //lblButceSonucu.Text = ButceSonucu >= 0 ? ButceSonucu.ToString("#,0.00") : "+" + (-ButceSonucu).ToString("#,0.00");
 
                 if (toplamGider < yekun)
                 {
