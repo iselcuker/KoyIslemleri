@@ -127,6 +127,7 @@
             txtTutar.Name = "txtTutar";
             txtTutar.Size = new Size(209, 31);
             txtTutar.TabIndex = 95;
+            txtTutar.KeyPress += txtTutar_KeyPress;
             // 
             // lblEvrakNo
             // 

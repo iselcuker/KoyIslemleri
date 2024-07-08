@@ -206,7 +206,18 @@ namespace Forms
         {
             try
             {
-                dgvGiderler.DataSource = giderManager.GetListGiderDetailsKoyAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
+                DataGridVieweSiraNoEkle(dgvGiderler); // S.N kolonunu ekle
+
+                var giderListesi = giderManager.GetListGiderDetailsKoyAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
+
+                dgvGiderler.DataSource = giderListesi; // Verileri bağla
+
+                // S.N numaralarını güncelleyelim
+                for (int i = 0; i < dgvGiderler.Rows.Count; i++)
+                {
+                    dgvGiderler.Rows[i].Cells["SN"].Value = (i + 1).ToString();
+                }
+
                 dgvGiderler.Columns["GiderId"].Visible = false;
                 dgvGiderler.Columns["KoyAdi"].Visible = false;
                 dgvGiderler.Columns["DonemAdi"].Visible = false;
@@ -214,12 +225,6 @@ namespace Forms
                 dgvGiderler.Columns["DonemId"].Visible = false;
                 dgvGiderler.Columns["GiderKategoriId"].Visible = false;
                 dgvGiderler.Columns["GiderAltKategoriId"].Visible = false;
-                dgvGiderler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//datagridview'in tüm alanı kaplamasını sağlıyor
-                dgvGiderler.RowHeadersVisible = false; ///datagridview'in sol baştaki boş satırları gizliyor
-                dgvGiderler.ColumnHeadersDefaultCellStyle.Font = new Font("Impact", 14);//Başlığın yazı fontu ve yazı büyüklüğü
-                dgvGiderler.ColumnHeadersHeight = 40;
-                dgvGiderler.EnableHeadersVisualStyles = false; //Başlık yazı rengini değiştermek için bu özelliğin false yapılması gerekir
-                dgvGiderler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray; //Başlık arka plan rengi
 
                 dgvGiderler.Columns["GiderKategoriAdi"].HeaderText = "Kategori";
                 dgvGiderler.Columns["GiderAltKategoriAdi"].HeaderText = "Alt Kategori";
@@ -233,7 +238,26 @@ namespace Forms
             }
         }
 
-        // FrmGider_Load olayını düzenleyelim
+        public void DataGridVieweSiraNoEkle(DataGridView dataGridView)
+        {
+            // S.N kolonunu ekle, eğer zaten yoksa
+            if (!dataGridView.Columns.Contains("SN"))
+            {
+                DataGridViewTextBoxColumn snColumn = new DataGridViewTextBoxColumn();
+                snColumn.Name = "SN";
+                snColumn.HeaderText = "S.N";
+                snColumn.ReadOnly = true; // Sıra numarası kolonunu yalnızca okunabilir yap
+                dataGridView.Columns.Insert(0, snColumn); // Kolonu en başa ekleyelim
+            }
+
+            // Diğer DataGridView ayarları
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView.RowHeadersVisible = false;
+            dataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Impact", 14);
+            dataGridView.ColumnHeadersHeight = 40;
+            dataGridView.EnableHeadersVisualStyles = false;
+            dataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
+        }
         private void FrmGider_Load(object sender, EventArgs e)
         {
             try
@@ -241,6 +265,7 @@ namespace Forms
                 ToplamGider();
                 // Gider kategorilerini doldur
                 GiderKategoriDoldur();
+                DataGridVieweSiraNoEkle(dgvGiderler);
                 Giderler();
                 lblToplamGider.Visible = false;
                 HesaplaVeYazdir();
@@ -371,7 +396,7 @@ namespace Forms
                     // Kontroller temizlenir ve yeniden başlangıç durumuna getirilir
                     Temizle();
                     AnaSayfaGuncelle();
-                    Giderler();
+                    Giderler(); // Verileri yeniden yükle
                     HesaplaVeYazdir();
                 }
                 else
@@ -389,13 +414,13 @@ namespace Forms
         // Alanları temizler
         private void Temizle()
         {
-            cmbGiderKategori.SelectedIndex = -1;
+            cmbGiderKategori.SelectedIndex = 0;
             cmbGiderAltKategori.SelectedIndex = -1;
             txtTutar.Text = string.Empty;
             mskTarih.Text = string.Empty;
             txtAlan.Text = string.Empty;
             txtEvrakNo.Text = string.Empty;
-            cmbGiderAltKategori.Focus();
+            cmbGiderKategori.Focus();
         }
 
         // Gider alt kategorilerini yükler
@@ -545,6 +570,35 @@ namespace Forms
                 mskTarih.Text = Convert.ToDateTime(row.Cells["Tarih"].Value).ToString("dd/MM/yyyy");
                 txtAlan.Text = row.Cells["Alan"].Value.ToString();
                 txtEvrakNo.Text = row.Cells["EvrakNo"].Value.ToString();
+            }
+        }
+
+        private void txtTutar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Sadece sayılar, kontrol tuşları ve kültüre göre ondalık işaret izin verilir
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != ',' && e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // Kültüre göre ondalık işaret ayarlaması
+            if (e.KeyChar == ',' || e.KeyChar == '.')
+            {
+                // Eğer zaten bir ondalık işaret varsa veya ilk karakter ondalık işaret ise geçersiz kıl
+                if ((sender as System.Windows.Forms.TextBox).Text.Contains(',') || (sender as System.Windows.Forms.TextBox).Text.Contains('.'))
+                {
+                    e.Handled = true;
+                }
+
+                // İlk karakter olarak ondalık işaret geldiğinde de geçersiz kıl
+                if ((sender as System.Windows.Forms.TextBox).Text.Length == 0)
+                {
+                    e.Handled = true;
+                }
+
+                // Kültüre göre ondalık işaret olarak virgülü kabul et
+                e.KeyChar = ',';
             }
         }
     }

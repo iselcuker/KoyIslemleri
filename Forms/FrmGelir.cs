@@ -49,7 +49,7 @@ namespace Forms
             _seciliDonemIndex = seciliDonemIndex;
         }
 
-            private void ToplamGelir()
+        private void ToplamGelir()
         {
             // Toplam değeri tutmak için değişken
             decimal toplam = 0;
@@ -84,16 +84,41 @@ namespace Forms
             }
         }
 
+        public void DataGridVieweSiraNoEkle()
+        {
+            // S.N kolonunu ekle, eğer zaten yoksa
+            if (!dgvGelirler.Columns.Contains("SN"))
+            {
+                DataGridViewTextBoxColumn snColumn = new DataGridViewTextBoxColumn();
+                snColumn.Name = "SN";
+                snColumn.HeaderText = "S.N";
+                snColumn.ReadOnly = true; // Sıra numarası kolonunu yalnızca okunabilir yap
+                dgvGelirler.Columns.Insert(0, snColumn); // Kolonu en başa ekleyelim
+            }
+
+            // Diğer DataGridView ayarları
+            dgvGelirler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvGelirler.RowHeadersVisible = false;
+            dgvGelirler.ColumnHeadersDefaultCellStyle.Font = new Font("Impact", 14);
+            dgvGelirler.ColumnHeadersHeight = 40;
+            dgvGelirler.EnableHeadersVisualStyles = false;
+            dgvGelirler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
+        }
         private void FrmGelir_Load(object sender, EventArgs e)
         {
             try
             {
+                HesaplaVeYazdir();
                 ToplamGelir();
                 GelirKategoriDoldur();
                 Gizle();
-                Gelirler();
                 lblToplamGelir.Visible = false;
-                HesaplaVeYazdir();
+
+                DataGridVieweSiraNoEkle();
+                Gelirler();
+
+
+                dgvGelirler.ClearSelection(); // İlk satırın seçili olmasını engelle
             }
             catch (Exception)
             {
@@ -168,6 +193,38 @@ namespace Forms
 
         private void pcBoxKaydet_Click(object sender, EventArgs e)
         {
+            //try
+            //{
+            //    if (!string.IsNullOrEmpty(txtTutar.Text) && !string.IsNullOrEmpty(txtVeren.Text) && !string.IsNullOrEmpty(cmbGelirKategori.Text) && !string.IsNullOrEmpty(mskTarih.Text))
+            //    {
+            //        Gelir yeniGelir = new Gelir();
+            //        yeniGelir.KoyId = _seciliKoyIndex;
+            //        yeniGelir.DonemId = _seciliDonemIndex;
+            //        yeniGelir.GelirKategoriId = (cmbGelirKategori.SelectedItem as GelirKategori).Id;//cmbGelirKategori'den seçilen öge GelirKategori türüne dönüştürülür, yoksa null değeri alır.
+            //        yeniGelir.Tutar = Convert.ToDecimal(txtTutar.Text);
+            //        yeniGelir.Tarih = Convert.ToDateTime(mskTarih.Text);
+            //        yeniGelir.Veren = txtVeren.Text;
+            //        yeniGelir.EvrakNo = txtEvrakNo.Text;
+
+            //        gelirManager.Add(yeniGelir);
+            //        Gelirler();
+            //        Temizle();
+
+            //        ToplamGelir();
+            //        HesaplaVeYazdir();
+            //        AnaSayfaGuncelle();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Lütfen Boş Alanları Doldurunuz!");
+            //    }
+
+            //}
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Gelir Kaydı Yapılamadı !!!");
+            //    throw;
+            //}
             try
             {
                 if (!string.IsNullOrEmpty(txtTutar.Text) && !string.IsNullOrEmpty(txtVeren.Text) && !string.IsNullOrEmpty(cmbGelirKategori.Text) && !string.IsNullOrEmpty(mskTarih.Text))
@@ -175,24 +232,24 @@ namespace Forms
                     Gelir yeniGelir = new Gelir();
                     yeniGelir.KoyId = _seciliKoyIndex;
                     yeniGelir.DonemId = _seciliDonemIndex;
-                    yeniGelir.GelirKategoriId = (cmbGelirKategori.SelectedItem as GelirKategori).Id;//cmbGelirKategori'den seçilen öge GelirKategori türüne dönüştürülür, yoksa null değeri alır.
+                    yeniGelir.GelirKategoriId = (cmbGelirKategori.SelectedItem as GelirKategori).Id; // cmbGelirKategori'den seçilen öge GelirKategori türüne dönüştürülür, yoksa null değeri alır.
                     yeniGelir.Tutar = Convert.ToDecimal(txtTutar.Text);
                     yeniGelir.Tarih = Convert.ToDateTime(mskTarih.Text);
                     yeniGelir.Veren = txtVeren.Text;
                     yeniGelir.EvrakNo = txtEvrakNo.Text;
 
                     gelirManager.Add(yeniGelir);
-                    Gelirler();
+                    Gelirler(yeniGelir.Id);
                     Temizle();
 
                     ToplamGelir();
                     HesaplaVeYazdir();
+                    AnaSayfaGuncelle();
                 }
                 else
                 {
                     MessageBox.Show("Lütfen Boş Alanları Doldurunuz!");
                 }
-
             }
             catch (Exception)
             {
@@ -257,27 +314,28 @@ namespace Forms
         }
 
         //Gelirleri DatagridView'e yükleyecek metot
-        private void Gelirler()
+        private void Gelirler(int yeniGelirId = -1)
         {
             try
             {
                 dgvGelirler.DataSource = gelirManager.GetListGelirDetailsKoyAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
+
+                // Sıra numarası kolonunu güncelle
+                for (int i = 0; i < dgvGelirler.Rows.Count; i++)
+                {
+                    dgvGelirler.Rows[i].Cells["SN"].Value = i + 1;
+                }
+
+                // Diğer kolon ayarları
                 dgvGelirler.Columns["GelirId"].Visible = false;
                 dgvGelirler.Columns["KoyAdi"].Visible = false;
                 dgvGelirler.Columns["DonemAdi"].Visible = false;
                 dgvGelirler.Columns["KoyId"].Visible = false;
                 dgvGelirler.Columns["DonemId"].Visible = false;
                 dgvGelirler.Columns["GelirKategoriId"].Visible = false;
-                dgvGelirler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//datagridview'in tüm alanı kaplamasını sağlıyor
-                dgvGelirler.RowHeadersVisible = false; ///datagridview'in sol baştaki boş satırları gizliyor
-                dgvGelirler.ColumnHeadersDefaultCellStyle.Font = new Font("Impact", 14);//Başlığın yazı fontu ve yazı büyüklüğü
-                dgvGelirler.ColumnHeadersHeight = 40;
-                dgvGelirler.EnableHeadersVisualStyles = false; //Başlık yazı rengini değiştermek için bu özelliğin false yapılması gerekir
-                dgvGelirler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray; //Başlık arka plan rengi
 
                 dgvGelirler.Columns["GelirKategoriAdi"].HeaderText = "Kategori";
                 dgvGelirler.Columns["EvrakNo"].HeaderText = "Evrak No";
-
 
                 ToplamGelir(); // Veriler yenilendiğinde toplamı hesapla
             }
@@ -468,6 +526,35 @@ namespace Forms
             pcBoxKaydet.Visible = false;
             pcBoxGuncelle.Visible = false;
             pcBoxSil.Visible = false;
+        }
+
+        private void txtTutar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Sadece sayılar, kontrol tuşları ve kültüre göre ondalık işaret izin verilir
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != ',' && e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // Kültüre göre ondalık işaret ayarlaması
+            if (e.KeyChar == ',' || e.KeyChar == '.')
+            {
+                // Eğer zaten bir ondalık işaret varsa veya ilk karakter ondalık işaret ise geçersiz kıl
+                if ((sender as System.Windows.Forms.TextBox).Text.Contains(',') || (sender as System.Windows.Forms.TextBox).Text.Contains('.'))
+                {
+                    e.Handled = true;
+                }
+
+                // İlk karakter olarak ondalık işaret geldiğinde de geçersiz kıl
+                if ((sender as System.Windows.Forms.TextBox).Text.Length == 0)
+                {
+                    e.Handled = true;
+                }
+
+                // Kültüre göre ondalık işaret olarak virgülü kabul et
+                e.KeyChar = ',';
+            }
         }
     }
 }
