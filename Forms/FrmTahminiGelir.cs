@@ -255,7 +255,7 @@ namespace Forms
                 {
                     KoyId = _seciliKoyIndex,
                     DonemId = _seciliDonemIndex,
-                    TahimiGelirTutari = girilenTutar,
+                    TahminiGelirTutari = girilenTutar,
                     GelirKategoriId = selectedGelirKategori.Id,
                     DegisiklikId = selectedDegisiklik?.Id
                 };
@@ -307,7 +307,7 @@ namespace Forms
             {
                 var toplamTahminiGelir = context.TahminiButceGelirs
                     .Where(tb => tb.KoyId == koyId && tb.DonemId == donemId)
-                    .Sum(tb => (decimal?)tb.TahimiGelirTutari) ?? 0;
+                    .Sum(tb => (decimal?)tb.TahminiGelirTutari) ?? 0;
 
                 return toplamTahminiGelir;
             }
@@ -319,7 +319,7 @@ namespace Forms
             {
                 return context.TahminiButceGelirs
                     .Where(tb => tb.KoyId == koyId && tb.DonemId == donemId)
-                    .Select(tb => tb.TahimiGelirTutari)
+                    .Select(tb => tb.TahminiGelirTutari)
                     .ToList();
             }
         }
@@ -369,6 +369,10 @@ namespace Forms
                 dgvTahminiGelirler.Columns["DonemId"].Visible = false;
                 dgvTahminiGelirler.Columns["GelirKategoriId"].Visible = false;
                 dgvTahminiGelirler.Columns["DegisiklikId"].Visible = false; // Bu satırı kaldırın
+
+                dgvTahminiGelirler.Columns["GelirKategoriAdi"].HeaderText = "Gelir Kategori Türü";
+                dgvTahminiGelirler.Columns["DegisiklikAdi"].HeaderText = "Değişiklik";
+                dgvTahminiGelirler.Columns["TahminiGelirTutari"].HeaderText = "Tutar";
 
                 // DataGridView'in görüntü ayarlarını yapar
                 dgvTahminiGelirler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Tüm alanı kaplaması için
@@ -466,7 +470,7 @@ namespace Forms
                     DonemId = _seciliDonemIndex,
                     GelirKategoriId = gelirKategoriId,
                     DegisiklikId = degisiklikId,
-                    TahimiGelirTutari = tutar,
+                    TahminiGelirTutari = tutar,
                 };
 
                 // Güncelleme işlemini yapmak için GelirManager üzerinden Update metodunu çağır

@@ -203,7 +203,7 @@ namespace Forms
                 if (tahminiButceGelir != null)
                 {
                     //Debug.WriteLine($"GelirKategoriLabellarAyarla - Bulunan tahmini gelir: {tahminiButceGelir.TahimiGelirTutari}");
-                    label.Text = string.Format("{0:#,0.00}", tahminiButceGelir.TahimiGelirTutari);
+                    label.Text = string.Format("{0:#,0.00}", tahminiButceGelir.TahminiGelirTutari);
                 }
                 else
                 {

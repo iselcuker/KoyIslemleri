@@ -14,6 +14,6 @@ namespace Entities.Concrete
         public byte DonemId { get; set; }
         public byte GelirKategoriId { get; set; }
         public byte? DegisiklikId { get; set; }
-        public decimal TahimiGelirTutari { get; set; }
+        public decimal TahminiGelirTutari { get; set; }
     }
 }

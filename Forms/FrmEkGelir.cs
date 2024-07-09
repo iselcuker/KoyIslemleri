@@ -307,6 +307,10 @@ namespace Forms
                 dgvTahminiEkGelirler.Columns["GelirKategoriId"].Visible = false;
                 dgvTahminiEkGelirler.Columns["DegisiklikId"].Visible = false; // Bu satırı kaldırın
 
+                dgvTahminiEkGelirler.Columns["GelirKategoriAdi"].HeaderText = "Gelir Kategori Türü";
+                dgvTahminiEkGelirler.Columns["DegisiklikAdi"].HeaderText = "Değişiklik";
+                dgvTahminiEkGelirler.Columns["EkGelirTutari"].HeaderText = "Tutar";
+
                 // DataGridView'in görüntü ayarlarını yapar
                 dgvTahminiEkGelirler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Tüm alanı kaplaması için
                 dgvTahminiEkGelirler.RowHeadersVisible = false; // Sol baştaki boş satırları gizler
@@ -382,92 +386,6 @@ namespace Forms
 
         private void pcBoxGuncelle_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    // Seçili satırın indeksini al
-            //    if (dgvTahminiEkGelirler.SelectedRows.Count == 0)
-            //    {
-            //        MessageBox.Show("Güncellemek için bir satır seçiniz!");
-            //        return;
-            //    }
-
-            //    DataGridViewRow selectedRow = dgvTahminiEkGelirler.SelectedRows[0];
-            //    int selectedRowIndex = selectedRow.Index;
-
-            //    // Kategorinin seçili olup olmadığını kontrol et
-            //    if (cmbGelirKategori.SelectedIndex < 0 || !(cmbGelirKategori.SelectedItem is GelirKategori))
-            //    {
-            //        MessageBox.Show("Lütfen geçerli Gelir Türü seçiniz!");
-            //        return;
-            //    }
-
-            //    // Gelir kategorisinin metinsel değerini al
-            //    string selectedGelirKategori = ((GelirKategori)cmbGelirKategori.SelectedItem).GelirKategoriAdi;
-
-            //    // Eğer seçilen gelir kategorisi belirli bir değer ise
-            //    if (selectedGelirKategori == "Hasılat" || selectedGelirKategori == "Resim ve harçlar" || selectedGelirKategori == "Köy vakıf ve avarız geliri" || selectedGelirKategori == "İstikrazlar")
-            //    {
-            //        // Alt kategorinin seçili olup olmadığını kontrol et
-            //        if (cmbDegisiklik.SelectedIndex < 0 || !(cmbDegisiklik.SelectedItem is Degisiklik))
-            //        {
-            //            MessageBox.Show("Lütfen geçerli bir Değişiklik seçiniz!");
-            //            return;
-            //        }
-            //    }
-
-            //    // Tutarın boş olup olmadığını kontrol et
-            //    if (string.IsNullOrEmpty(txtTutar.Text))
-            //    {
-            //        MessageBox.Show("Lütfen Tutarı Giriniz !!!");
-            //        return;
-            //    }
-
-            //    // Girilen tutarı decimal tipine dönüştür
-            //    if (!decimal.TryParse(txtTutar.Text, out decimal girilenTutar))
-            //    {
-            //        MessageBox.Show("Lütfen geçerli bir tutar giriniz!");
-            //        return;
-            //    }
-
-            //    // Güncellenecek tahmini idari işleri oluştur
-            //    EkButceGelir guncellenecekEkGelir = new EkButceGelir
-            //    {
-            //        Id = (int)selectedRow.Cells["EkButceGelirId"].Value, // EkButceGelir kaydının Id'sini kullanarak güncelleme yapılacak
-            //        KoyId = _seciliKoyIndex,
-            //        DonemId = _seciliDonemIndex,
-            //        EkGelirTutari = girilenTutar,
-            //        GelirKategoriId = ((GelirKategori)cmbGelirKategori.SelectedItem).Id
-            //    };
-
-            //    // Eğer seçilen gelir kategorisi belirli bir değer ise
-            //    if (selectedGelirKategori == "Hasılat" || selectedGelirKategori == "Resim ve harçlar" || selectedGelirKategori == "Köy vakıf ve avarız geliri" || selectedGelirKategori == "İstikrazlar")
-            //    {
-            //        // Seçilen değişiklik id'sini ekle
-            //        guncellenecekEkGelir.DegisiklikId = ((Degisiklik)cmbDegisiklik.SelectedItem).Id;
-            //    }
-            //    else
-            //    {
-            //        guncellenecekEkGelir.DegisiklikId = null; // Diğer kategoriler için DegisiklikId null olabilir
-            //    }
-
-            //    // TahminiButceGelir tablosunda mevcut kaydı güncelle
-            //    ekButceGelirManager.Update(guncellenecekEkGelir);
-
-            //    // Temizle ve idari işleri güncelle
-            //    EkButceGelirleri();
-
-            //    // Eklenen veya güncellenen satırı seç
-            //    SelectRowInDataGridView(guncellenecekEkGelir.Id);
-
-            //    Temizle();
-
-            //    MessageBox.Show("Kayıt başarıyla güncellendi!");
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Ek Bütçe için Gelir Kaydı Güncellenemedi !!! " + ex.Message);
-            //}
-
             try
             {
                 // Seçili satırın indeksini al

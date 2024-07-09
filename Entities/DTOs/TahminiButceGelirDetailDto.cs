@@ -18,6 +18,6 @@ namespace Entities.DTOs
         public string GelirKategoriAdi { get; set; }
         public byte? DegisiklikId { get; set; }
         public string DegisiklikAdi { get; set; }
-        public decimal TahimiGelirTutari { get; set; }
+        public decimal TahminiGelirTutari { get; set; }
     }
 }

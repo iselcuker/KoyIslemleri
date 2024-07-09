@@ -38,7 +38,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  KoyId = koy.Id,
                                  DonemAdi = donem.DonemAdi,
                                  DonemId = donem.Id,
-                                 TahimiGelirTutari = tahminiButceGelir.TahimiGelirTutari,
+                                 TahminiGelirTutari = tahminiButceGelir.TahminiGelirTutari,
                                  DegisiklikAdi = degisiklik != null ? degisiklik.DegisiklikAdi : "",
                                  DegisiklikId = tahminiButceGelir.DegisiklikId,
                              };

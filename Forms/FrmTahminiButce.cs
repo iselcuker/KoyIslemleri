@@ -63,7 +63,7 @@ namespace Forms
 
                 // Mevcut gelirleri topla ve kalan bütçeden çıkar
                 List<TahminiButceGelir> mevcutGelirler = tahminiButceGelirManager.GetListByKoyIdAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
-                decimal toplamGelir = mevcutGelirler.Sum(g => g.TahimiGelirTutari);
+                decimal toplamGelir = mevcutGelirler.Sum(g => g.TahminiGelirTutari);
                 kalanButceTutari -= toplamGelir;
 
                 if (kalanButceTutari <= 0)
