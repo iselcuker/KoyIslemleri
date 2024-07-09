@@ -183,7 +183,7 @@ namespace Forms
             // Toplam miktarı hesapla
             decimal toplam = toplamMiktarlar.Values.Sum();
             ListViewItem toplamItem = new ListViewItem();
-            toplamItem.Text = "Toplam";
+            toplamItem.Text = "TOPLAM";
             toplamItem.SubItems.Add(string.Format("{0:#,0.00}", toplam));
             listViewGelirler.Items.Add(toplamItem);
 
@@ -209,8 +209,14 @@ namespace Forms
         private void SetupListView()
         {
             listViewGelirler.View = System.Windows.Forms.View.Details;
-            listViewGelirler.Columns.Add("Kategori", 150);
-            listViewGelirler.Columns.Add("Tutar", 100);
+            listViewGelirler.Columns.Add("GELİR KATEGORİ", 150);
+            listViewGelirler.Columns.Add("TUTAR", 100);
+
+            // FullRowSelect özelliğini aktif et
+            listViewGelirler.FullRowSelect = true;
+            // Başlık stilini ayarla
+            listViewGelirler.HeaderStyle = ColumnHeaderStyle.Nonclickable; // Tıklanabilir olmasını istemiyorsanız Nonclickable olarak ayarlayabilirsiniz
+            listViewGelirler.BackColor = SystemColors.Control; // Arka plan rengini control rengine (varsayılan tema rengi) ayarlayabilirsiniz
         }
         private void pcBoxKaydet_Click(object sender, EventArgs e)
         {

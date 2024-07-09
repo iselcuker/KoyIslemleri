@@ -276,6 +276,8 @@
             // 
             // listViewGiderler
             // 
+            listViewGiderler.BackColor = SystemColors.Control;
+            listViewGiderler.BorderStyle = BorderStyle.None;
             listViewGiderler.Location = new Point(632, 66);
             listViewGiderler.Name = "listViewGiderler";
             listViewGiderler.Size = new Size(465, 317);
@@ -286,6 +288,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(1250, 802);
             Controls.Add(listViewGiderler);
             Controls.Add(dgvGiderler);

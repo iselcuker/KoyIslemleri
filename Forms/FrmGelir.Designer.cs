@@ -250,6 +250,8 @@
             // 
             // listViewGelirler
             // 
+            listViewGelirler.BackColor = SystemColors.Control;
+            listViewGelirler.BorderStyle = BorderStyle.None;
             listViewGelirler.Location = new Point(678, 66);
             listViewGelirler.Name = "listViewGelirler";
             listViewGelirler.Size = new Size(406, 196);
