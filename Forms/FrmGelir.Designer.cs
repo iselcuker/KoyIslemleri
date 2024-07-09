@@ -45,25 +45,8 @@
             pcBoxSil = new PictureBox();
             pcBoxGuncelle = new PictureBox();
             pcBoxKaydet = new PictureBox();
-            lblDevir = new Label();
-            lblYardim = new Label();
-            lblIstikraz = new Label();
-            lblResimHarc = new Label();
-            lblTurluGelir = new Label();
-            lblParaCezasi = new Label();
-            lblKoyVakif = new Label();
-            lblHasilat = new Label();
-            lblDevirYazi = new Label();
-            lblYardimYazi = new Label();
-            lblIstikrazYazi = new Label();
-            lblTurluGelirYazi = new Label();
-            lblResimHarcYazi = new Label();
-            lblKoyVakifYazi = new Label();
-            lblParaCezasiYazi = new Label();
-            lblHasilatYazi = new Label();
-            lblToplamYazi = new Label();
-            lblToplam = new Label();
             lblToplamGelir = new Label();
+            listViewGelirler = new ListView();
             pnlGelirBaslik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvGelirler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxSil).BeginInit();
@@ -255,229 +238,31 @@
             pcBoxKaydet.TabStop = false;
             pcBoxKaydet.Click += pcBoxKaydet_Click;
             // 
-            // lblDevir
-            // 
-            lblDevir.AutoSize = true;
-            lblDevir.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblDevir.Location = new Point(878, 217);
-            lblDevir.Name = "lblDevir";
-            lblDevir.Size = new Size(26, 18);
-            lblDevir.TabIndex = 153;
-            lblDevir.Text = "00";
-            // 
-            // lblYardim
-            // 
-            lblYardim.AutoSize = true;
-            lblYardim.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblYardim.Location = new Point(878, 133);
-            lblYardim.Name = "lblYardim";
-            lblYardim.Size = new Size(26, 18);
-            lblYardim.TabIndex = 151;
-            lblYardim.Text = "00";
-            // 
-            // lblIstikraz
-            // 
-            lblIstikraz.AutoSize = true;
-            lblIstikraz.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblIstikraz.Location = new Point(878, 175);
-            lblIstikraz.Name = "lblIstikraz";
-            lblIstikraz.Size = new Size(26, 18);
-            lblIstikraz.TabIndex = 149;
-            lblIstikraz.Text = "00";
-            // 
-            // lblResimHarc
-            // 
-            lblResimHarc.AutoSize = true;
-            lblResimHarc.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblResimHarc.Location = new Point(878, 91);
-            lblResimHarc.Name = "lblResimHarc";
-            lblResimHarc.Size = new Size(26, 18);
-            lblResimHarc.TabIndex = 147;
-            lblResimHarc.Text = "00";
-            // 
-            // lblTurluGelir
-            // 
-            lblTurluGelir.AutoSize = true;
-            lblTurluGelir.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblTurluGelir.Location = new Point(878, 196);
-            lblTurluGelir.Name = "lblTurluGelir";
-            lblTurluGelir.Size = new Size(26, 18);
-            lblTurluGelir.TabIndex = 145;
-            lblTurluGelir.Text = "00";
-            // 
-            // lblParaCezasi
-            // 
-            lblParaCezasi.AutoSize = true;
-            lblParaCezasi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblParaCezasi.Location = new Point(878, 112);
-            lblParaCezasi.Name = "lblParaCezasi";
-            lblParaCezasi.Size = new Size(26, 18);
-            lblParaCezasi.TabIndex = 143;
-            lblParaCezasi.Text = "00";
-            // 
-            // lblKoyVakif
-            // 
-            lblKoyVakif.AutoSize = true;
-            lblKoyVakif.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblKoyVakif.Location = new Point(878, 154);
-            lblKoyVakif.Name = "lblKoyVakif";
-            lblKoyVakif.Size = new Size(26, 18);
-            lblKoyVakif.TabIndex = 141;
-            lblKoyVakif.Text = "00";
-            // 
-            // lblHasilat
-            // 
-            lblHasilat.AutoSize = true;
-            lblHasilat.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblHasilat.Location = new Point(878, 70);
-            lblHasilat.Name = "lblHasilat";
-            lblHasilat.Size = new Size(26, 18);
-            lblHasilat.TabIndex = 140;
-            lblHasilat.Text = "00";
-            // 
-            // lblDevirYazi
-            // 
-            lblDevirYazi.AutoSize = true;
-            lblDevirYazi.BorderStyle = BorderStyle.FixedSingle;
-            lblDevirYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblDevirYazi.Location = new Point(707, 216);
-            lblDevirYazi.Name = "lblDevirYazi";
-            lblDevirYazi.Size = new Size(164, 20);
-            lblDevirYazi.TabIndex = 138;
-            lblDevirYazi.Text = "Geçen Seneden Devir";
-            // 
-            // lblYardimYazi
-            // 
-            lblYardimYazi.AutoSize = true;
-            lblYardimYazi.BorderStyle = BorderStyle.FixedSingle;
-            lblYardimYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblYardimYazi.Location = new Point(707, 132);
-            lblYardimYazi.Name = "lblYardimYazi";
-            lblYardimYazi.Size = new Size(74, 20);
-            lblYardimYazi.TabIndex = 136;
-            lblYardimYazi.Text = "Yardımlar";
-            // 
-            // lblIstikrazYazi
-            // 
-            lblIstikrazYazi.AutoSize = true;
-            lblIstikrazYazi.BorderStyle = BorderStyle.FixedSingle;
-            lblIstikrazYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblIstikrazYazi.Location = new Point(707, 174);
-            lblIstikrazYazi.Name = "lblIstikrazYazi";
-            lblIstikrazYazi.Size = new Size(75, 20);
-            lblIstikrazYazi.TabIndex = 134;
-            lblIstikrazYazi.Text = "İstikrazlar";
-            // 
-            // lblTurluGelirYazi
-            // 
-            lblTurluGelirYazi.AutoSize = true;
-            lblTurluGelirYazi.BorderStyle = BorderStyle.FixedSingle;
-            lblTurluGelirYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblTurluGelirYazi.Location = new Point(707, 195);
-            lblTurluGelirYazi.Name = "lblTurluGelirYazi";
-            lblTurluGelirYazi.Size = new Size(97, 20);
-            lblTurluGelirYazi.TabIndex = 131;
-            lblTurluGelirYazi.Text = "Türlü Gelirler";
-            // 
-            // lblResimHarcYazi
-            // 
-            lblResimHarcYazi.AutoSize = true;
-            lblResimHarcYazi.BorderStyle = BorderStyle.FixedSingle;
-            lblResimHarcYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblResimHarcYazi.Location = new Point(707, 90);
-            lblResimHarcYazi.Name = "lblResimHarcYazi";
-            lblResimHarcYazi.Size = new Size(96, 20);
-            lblResimHarcYazi.TabIndex = 130;
-            lblResimHarcYazi.Text = "Resim, Harç";
-            // 
-            // lblKoyVakifYazi
-            // 
-            lblKoyVakifYazi.AutoSize = true;
-            lblKoyVakifYazi.BorderStyle = BorderStyle.FixedSingle;
-            lblKoyVakifYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblKoyVakifYazi.Location = new Point(707, 153);
-            lblKoyVakifYazi.Name = "lblKoyVakifYazi";
-            lblKoyVakifYazi.Size = new Size(75, 20);
-            lblKoyVakifYazi.TabIndex = 127;
-            lblKoyVakifYazi.Text = "Köy Vakıf";
-            // 
-            // lblParaCezasiYazi
-            // 
-            lblParaCezasiYazi.AutoSize = true;
-            lblParaCezasiYazi.BorderStyle = BorderStyle.FixedSingle;
-            lblParaCezasiYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblParaCezasiYazi.Location = new Point(707, 111);
-            lblParaCezasiYazi.Name = "lblParaCezasiYazi";
-            lblParaCezasiYazi.Size = new Size(96, 20);
-            lblParaCezasiYazi.TabIndex = 154;
-            lblParaCezasiYazi.Text = "Para Cezası";
-            // 
-            // lblHasilatYazi
-            // 
-            lblHasilatYazi.AutoSize = true;
-            lblHasilatYazi.BorderStyle = BorderStyle.FixedSingle;
-            lblHasilatYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblHasilatYazi.Location = new Point(707, 69);
-            lblHasilatYazi.Name = "lblHasilatYazi";
-            lblHasilatYazi.Size = new Size(57, 20);
-            lblHasilatYazi.TabIndex = 155;
-            lblHasilatYazi.Text = "Hasılat";
-            // 
-            // lblToplamYazi
-            // 
-            lblToplamYazi.AutoSize = true;
-            lblToplamYazi.BorderStyle = BorderStyle.FixedSingle;
-            lblToplamYazi.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblToplamYazi.Location = new Point(707, 237);
-            lblToplamYazi.Name = "lblToplamYazi";
-            lblToplamYazi.Size = new Size(75, 20);
-            lblToplamYazi.TabIndex = 138;
-            lblToplamYazi.Text = "TOPLAM";
-            // 
-            // lblToplam
-            // 
-            lblToplam.AutoSize = true;
-            lblToplam.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblToplam.Location = new Point(878, 238);
-            lblToplam.Name = "lblToplam";
-            lblToplam.Size = new Size(26, 18);
-            lblToplam.TabIndex = 153;
-            lblToplam.Text = "00";
-            // 
             // lblToplamGelir
             // 
             lblToplamGelir.AutoSize = true;
             lblToplamGelir.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblToplamGelir.Location = new Point(878, 284);
+            lblToplamGelir.Location = new Point(800, 283);
             lblToplamGelir.Name = "lblToplamGelir";
             lblToplamGelir.Size = new Size(26, 18);
             lblToplamGelir.TabIndex = 153;
             lblToplamGelir.Text = "00";
+            // 
+            // listViewGelirler
+            // 
+            listViewGelirler.Location = new Point(678, 66);
+            listViewGelirler.Name = "listViewGelirler";
+            listViewGelirler.Size = new Size(406, 196);
+            listViewGelirler.TabIndex = 156;
+            listViewGelirler.UseCompatibleStateImageBehavior = false;
             // 
             // FrmGelir
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1250, 802);
+            Controls.Add(listViewGelirler);
             Controls.Add(lblToplamGelir);
-            Controls.Add(lblToplam);
-            Controls.Add(lblDevir);
-            Controls.Add(lblYardim);
-            Controls.Add(lblIstikraz);
-            Controls.Add(lblResimHarc);
-            Controls.Add(lblTurluGelir);
-            Controls.Add(lblParaCezasi);
-            Controls.Add(lblKoyVakif);
-            Controls.Add(lblHasilat);
-            Controls.Add(lblToplamYazi);
-            Controls.Add(lblDevirYazi);
-            Controls.Add(lblYardimYazi);
-            Controls.Add(lblIstikrazYazi);
-            Controls.Add(lblTurluGelirYazi);
-            Controls.Add(lblResimHarcYazi);
-            Controls.Add(lblKoyVakifYazi);
-            Controls.Add(lblParaCezasiYazi);
-            Controls.Add(lblHasilatYazi);
             Controls.Add(pcBoxSil);
             Controls.Add(pcBoxGuncelle);
             Controls.Add(pcBoxKaydet);
@@ -525,24 +310,7 @@
         private PictureBox pcBoxSil;
         private PictureBox pcBoxGuncelle;
         private PictureBox pcBoxKaydet;
-        private Label lblDevir;
-        private Label lblYardim;
-        private Label lblIstikraz;
-        private Label lblResimHarc;
-        private Label lblTurluGelir;
-        private Label lblParaCezasi;
-        private Label lblKoyVakif;
-        private Label lblHasilat;
-        private Label lblDevirYazi;
-        private Label lblYardimYazi;
-        private Label lblIstikrazYazi;
-        private Label lblTurluGelirYazi;
-        private Label lblResimHarcYazi;
-        private Label lblKoyVakifYazi;
-        private Label lblParaCezasiYazi;
-        private Label lblHasilatYazi;
-        private Label lblToplamYazi;
-        private Label lblToplam;
         private Label lblToplamGelir;
+        private ListView listViewGelirler;
     }
 }

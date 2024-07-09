@@ -46,14 +46,22 @@ namespace Forms
         {
             try
             {
+                // ComboBox öğelerini temizle
+                cmbUnvan.Items.Clear();
+
+                // Ünvan listesini al
                 List<Unvan> unvanListesi = unvanManager.GetAll();
+
+                // Ünvan listesini ComboBox'a ekle
                 cmbUnvan.Items.AddRange(unvanListesi.ToArray());
+
+                // İlk öğeyi ekle ve seçili hale getir
                 cmbUnvan.Items.Insert(0, "-Ünvan Seçiniz-");
                 cmbUnvan.SelectedIndex = 0;
             }
             catch (Exception)
             {
-                MessageBox.Show("Ünvan Listesi Getirilirken Hata Oluştur !");
+                MessageBox.Show("Ünvan Listesi Getirilirken Hata Oluştu!");
                 throw;
             }
         }
@@ -156,19 +164,30 @@ namespace Forms
         {
             // Satırın indeksini al
             int rowIndex = e.RowIndex;
-            //Seçili satırın verilerini al
+            // Seçili satırın verilerini al
             if (rowIndex >= 0 && rowIndex < dgvGorevliler.Rows.Count)
             {
                 DataGridViewRow selectedRow = dgvGorevliler.Rows[rowIndex];
 
                 // Verileri ilgili alanlara aktar
-                cmbUnvan.SelectedIndex = (byte)selectedRow.Cells["UnvanId"].Value;
-                cmbUnvan.SelectedText = selectedRow.Cells["UnvanAdi"].Value.ToString();
+                byte unvanId = (byte)selectedRow.Cells["UnvanId"].Value;
+                string unvanAdi = selectedRow.Cells["UnvanAdi"].Value.ToString();
+
+                // cmbUnvan'da uygun itemi seç
+                for (int i = 0; i < cmbUnvan.Items.Count; i++)
+                {
+                    if (cmbUnvan.Items[i].ToString() == unvanAdi)
+                    {
+                        cmbUnvan.SelectedIndex = i;
+                        break;
+                    }
+                }
+
                 txtAdi.Text = selectedRow.Cells["Adi"].Value.ToString();
                 txtSoyadi.Text = selectedRow.Cells["Soyadi"].Value.ToString();
                 mskTelefoNo.Text = selectedRow.Cells["TelefonNo"].Value.ToString();
 
-                //Seçili satırı işaretle
+                // Seçili satırı işaretle
                 dgvGorevliler.Rows[rowIndex].Selected = true;
             }
         }

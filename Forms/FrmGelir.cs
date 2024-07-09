@@ -111,7 +111,7 @@ namespace Forms
         {
             try
             {
-                HesaplaVeYazdir();
+
                 ToplamGelir();
                 GelirKategoriDoldur();
                 Gizle();
@@ -119,8 +119,8 @@ namespace Forms
 
                 DataGridVieweSiraNoEkle();
                 Gelirler();
-
-
+                SetupListView();
+                HesaplaVeYazdir();
                 dgvGelirler.ClearSelection(); // İlk satırın seçili olmasını engelle
             }
             catch (Exception)
@@ -146,16 +146,16 @@ namespace Forms
         private void HesaplaVeYazdir()
         {
             // Toplam miktarları saklamak için bir sözlük oluştur
-            Dictionary<int, decimal> toplamMiktarlar = new Dictionary<int, decimal>();
+            Dictionary<byte, decimal> toplamMiktarlar = new Dictionary<byte, decimal>();
 
             // dgvGelirler'deki satırları kontrol et
             foreach (DataGridViewRow row in dgvGelirler.Rows)
             {
-                int gelirKategoriId;
+                byte gelirKategoriId;
                 decimal tutar;
 
                 // Her satırın GelirKategoriId ve Tutar değerlerini al
-                if (int.TryParse(row.Cells["GelirKategoriId"].Value?.ToString(), out gelirKategoriId) &&
+                if (byte.TryParse(row.Cells["GelirKategoriId"].Value?.ToString(), out gelirKategoriId) &&
                     decimal.TryParse(row.Cells["Tutar"].Value?.ToString(), out tutar))
                 {
                     // Toplam miktarları sözlükte ilgili kategoriye göre topla
@@ -168,73 +168,52 @@ namespace Forms
                 }
             }
 
-            // Etiketlere miktarları yazdır
-            lblHasilat.Text = toplamMiktarlar.ContainsKey(1) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[1]) : "";
-            lblHasilatYazi.Visible = !string.IsNullOrEmpty(lblHasilat.Text);
+            // ListView'i temizle
+            listViewGelirler.Items.Clear();
 
-            lblResimHarc.Text = toplamMiktarlar.ContainsKey(2) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[2]) : "";
-            lblResimHarcYazi.Visible = !string.IsNullOrEmpty(lblResimHarc.Text);
-
-            lblParaCezasi.Text = toplamMiktarlar.ContainsKey(3) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[3]) : "";
-            lblParaCezasiYazi.Visible = !string.IsNullOrEmpty(lblParaCezasi.Text);
-
-            lblYardim.Text = toplamMiktarlar.ContainsKey(4) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[4]) : "";
-            lblYardimYazi.Visible = !string.IsNullOrEmpty(lblYardim.Text);
-
-            lblKoyVakif.Text = toplamMiktarlar.ContainsKey(5) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[5]) : "";
-            lblKoyVakifYazi.Visible = !string.IsNullOrEmpty(lblKoyVakif.Text);
-
-            lblIstikraz.Text = toplamMiktarlar.ContainsKey(6) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[6]) : "";
-            lblIstikrazYazi.Visible = !string.IsNullOrEmpty(lblIstikraz.Text);
-
-            lblTurluGelir.Text = toplamMiktarlar.ContainsKey(7) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[7]) : "";
-            lblTurluGelirYazi.Visible = !string.IsNullOrEmpty(lblTurluGelir.Text);
-
-            lblDevir.Text = toplamMiktarlar.ContainsKey(8) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[8]) : "";
-            lblDevirYazi.Visible = !string.IsNullOrEmpty(lblDevir.Text);
+            // Her kategori için ListViewItem oluştur ve ekle
+            foreach (var kategori in toplamMiktarlar)
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = GetGelirKategoriAdi(kategori.Key); // Kategori adını al
+                item.SubItems.Add(string.Format("{0:#,0.00}", kategori.Value));
+                listViewGelirler.Items.Add(item);
+            }
 
             // Toplam miktarı hesapla
             decimal toplam = toplamMiktarlar.Values.Sum();
-            lblToplam.Text = string.Format("{0:#,0.00}.-TL", toplam);
-            lblToplam.Visible = !string.IsNullOrEmpty(lblToplam.Text);
-            lblToplamYazi.Visible = !string.IsNullOrEmpty(lblToplamYazi.Text);
+            ListViewItem toplamItem = new ListViewItem();
+            toplamItem.Text = "Toplam";
+            toplamItem.SubItems.Add(string.Format("{0:#,0.00}", toplam));
+            listViewGelirler.Items.Add(toplamItem);
 
         }
 
+        // GelirKategoriId'ye göre kategori adını dönen yardımcı bir metot
+        private string GetGelirKategoriAdi(int kategoriId)
+        {
+            switch (kategoriId)
+            {
+                case 1: return "Hasılat";
+                case 2: return "Resim Harcı";
+                case 3: return "Para Cezası";
+                case 4: return "Yardım";
+                case 5: return "Köy Vakıf";
+                case 6: return "İstikraz";
+                case 7: return "Türlü Gelir";
+                case 8: return "Devir";
+                default: return "Bilinmeyen Kategori";
+            }
+        }
+
+        private void SetupListView()
+        {
+            listViewGelirler.View = System.Windows.Forms.View.Details;
+            listViewGelirler.Columns.Add("Kategori", 150);
+            listViewGelirler.Columns.Add("Tutar", 100);
+        }
         private void pcBoxKaydet_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    if (!string.IsNullOrEmpty(txtTutar.Text) && !string.IsNullOrEmpty(txtVeren.Text) && !string.IsNullOrEmpty(cmbGelirKategori.Text) && !string.IsNullOrEmpty(mskTarih.Text))
-            //    {
-            //        Gelir yeniGelir = new Gelir();
-            //        yeniGelir.KoyId = _seciliKoyIndex;
-            //        yeniGelir.DonemId = _seciliDonemIndex;
-            //        yeniGelir.GelirKategoriId = (cmbGelirKategori.SelectedItem as GelirKategori).Id;//cmbGelirKategori'den seçilen öge GelirKategori türüne dönüştürülür, yoksa null değeri alır.
-            //        yeniGelir.Tutar = Convert.ToDecimal(txtTutar.Text);
-            //        yeniGelir.Tarih = Convert.ToDateTime(mskTarih.Text);
-            //        yeniGelir.Veren = txtVeren.Text;
-            //        yeniGelir.EvrakNo = txtEvrakNo.Text;
-
-            //        gelirManager.Add(yeniGelir);
-            //        Gelirler();
-            //        Temizle();
-
-            //        ToplamGelir();
-            //        HesaplaVeYazdir();
-            //        AnaSayfaGuncelle();
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Lütfen Boş Alanları Doldurunuz!");
-            //    }
-
-            //}
-            //catch (Exception)
-            //{
-            //    MessageBox.Show("Gelir Kaydı Yapılamadı !!!");
-            //    throw;
-            //}
             try
             {
                 if (!string.IsNullOrEmpty(txtTutar.Text) && !string.IsNullOrEmpty(txtVeren.Text) && !string.IsNullOrEmpty(cmbGelirKategori.Text) && !string.IsNullOrEmpty(mskTarih.Text))
@@ -538,8 +517,6 @@ namespace Forms
             pcBoxKaydet.Visible = false;
             pcBoxGuncelle.Visible = false;
             pcBoxSil.Visible = false;
-            lblToplam.Visible = false;
-            lblToplamYazi.Visible = false;
         }
 
         private void txtTutar_KeyPress(object sender, KeyPressEventArgs e)
@@ -570,6 +547,5 @@ namespace Forms
                 e.KeyChar = ',';
             }
         }
-        /////////
     }
 }

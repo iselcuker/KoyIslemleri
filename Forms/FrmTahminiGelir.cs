@@ -148,7 +148,6 @@ namespace Forms
             txtTutar.Location = new Point(180, 94);//
         }
 
-
         private void cmbGelirKategori_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbGelirKategori.Text == "Hasılat" || cmbGelirKategori.Text == "Resim ve harçlar" || cmbGelirKategori.Text == "Köy vakıf ve avarız geliri" || cmbGelirKategori.Text == "İstikrazlar" || cmbGelirKategori.Text == "Para Cezaları")

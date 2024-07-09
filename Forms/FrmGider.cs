@@ -86,20 +86,58 @@ namespace Forms
             }
         }
 
+        // GelirKategoriId'ye göre kategori adını dönen yardımcı bir metot
+        private string GetGiderAltKategoriAdi(byte kategoriId)
+        {
+            switch (kategoriId)
+            {
+                case 1: return "Aylık ve Yıllıklar";
+                case 2: return "İdari Masraflar";
+                case 3: return "Sulama Harkları Açma ve Onarım Masrafı";
+                case 4: return "Ağaçlama, Aşılama ve Fidan Yetiştirme";
+                case 5: return "Damızlık";
+                case 6: return "Örnek Tarla, Bahçe vb. Masrafları";
+                case 7: return "Zararlı Hayvanlar ve Nebat Hastalıkları İle Mücadele Masrafı";
+                case 8: return "Pazar, Çarşı vb. Yerler Masrafı";
+                case 9: return "Küçük Endüstri ve Ziraat Makinaları Masrafı";
+                case 10: return "Okul ve Öğretmenevi İnşa ve Tamir Masrafı";
+                case 11: return "Okul Daimi Masrafları";
+                case 12: return "Okuma Odası Masrafları";
+                case 13: return "Kurs Masrafları";
+                case 14: return "Okul Uygulama Bahçesi Masrafları";
+                case 15: return "İçme Suları Masrafı";
+                case 16: return "Temizlik ve Sağlık Tesisleri Masrafı";
+                case 17: return "Spor İşleri Masrafı";
+                case 18: return "İçtimai Yardım Masrafı";
+                case 19: return "Yol, Köprü, Maydan İnşa ve Tamir Masrafı";
+                case 20: return "Köye Ait Akar ve Emlak İnşa ve Tamir Masrafı";
+                case 21: return "Yangın Vesaiti Masrafı";
+                case 22: return "Aydınlatma Masrafı";
+                case 23: return "Mezarlık Masrafı";
+                case 24: return "Türlü Masraflar";
+                case 25: return "Vergi ve Sigorta Masrafı";
+                case 26: return "Köy Borçları, İstikraz Taksit ve Faizleri";
+                case 27: return "Mahkeme ve Keşif Masrafları";
+                case 28: return "İstimlak Masrafları";
+                case 29: return "Umulmadık Masraflar";
+
+                default: return "Bilinmeyen Kategori";
+            }
+        }
         private void HesaplaVeYazdir()
         {
             // Toplam miktarları saklamak için bir sözlük oluştur
-            Dictionary<int, decimal> toplamMiktarlar = new Dictionary<int, decimal>();
+            Dictionary<byte, decimal> toplamMiktarlar = new Dictionary<byte, decimal>();
 
-            // dgvGiderler'deki satırları kontrol et
+            // dgvGelirler'deki satırları kontrol et
             foreach (DataGridViewRow row in dgvGiderler.Rows)
             {
-                int giderAltKategoriId;
+                byte giderAltKategoriId;
                 decimal tutar;
 
-                // Her satırın GiderAltKategoriId ve Tutar değerlerini al
-                if (int.TryParse(row.Cells["GiderAltKategoriId"].Value.ToString(), out giderAltKategoriId) &&
-                    decimal.TryParse(row.Cells["Tutar"].Value.ToString(), out tutar))
+                // Her satırın GelirKategoriId ve Tutar değerlerini al
+                if (byte.TryParse(row.Cells["GiderAltKategoriId"].Value?.ToString(), out giderAltKategoriId) &&
+                    decimal.TryParse(row.Cells["Tutar"].Value?.ToString(), out tutar))
                 {
                     // Toplam miktarları sözlükte ilgili kategoriye göre topla
                     if (!toplamMiktarlar.ContainsKey(giderAltKategoriId))
@@ -111,95 +149,143 @@ namespace Forms
                 }
             }
 
-            // Elde edilen toplam miktarları ilgili label'lere yazdır
-            lblAylik.Text = toplamMiktarlar.ContainsKey(1) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[1]) : "";
-            lblAylikYazi.Visible = !string.IsNullOrEmpty(lblAylik.Text);
+            // ListView'i temizle
+            listViewGiderler.Items.Clear();
 
-            lblIdariMasraf.Text = toplamMiktarlar.ContainsKey(2) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[2]) : "";
-            lblIdariMasrafYazi.Visible = !string.IsNullOrEmpty(lblIdariMasraf.Text);
+            // Her kategori için ListViewItem oluştur ve ekle
+            foreach (var giderAltKategori in toplamMiktarlar)
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = GetGiderAltKategoriAdi(giderAltKategori.Key); // Kategori adını al
+                item.SubItems.Add(string.Format("{0:#,0.00}", giderAltKategori.Value));
+                listViewGiderler.Items.Add(item);
+            }
 
-            lblSulama.Text = toplamMiktarlar.ContainsKey(3) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[3]) : "";
-            lblSulamaYazi.Visible = !string.IsNullOrEmpty(lblSulama.Text);
+            // Toplam miktarı hesapla
+            decimal toplam = toplamMiktarlar.Values.Sum();
+            ListViewItem toplamItem = new ListViewItem();
+            toplamItem.Text = "Toplam";
+            toplamItem.SubItems.Add(string.Format("{0:#,0.00}", toplam));
+            listViewGiderler.Items.Add(toplamItem);
+            //    // Toplam miktarları saklamak için bir sözlük oluştur
+            //    Dictionary<int, decimal> toplamMiktarlar = new Dictionary<int, decimal>();
 
-            lblAgaclama.Text = toplamMiktarlar.ContainsKey(4) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[4]) : "";
-            lblAgaclamaYazi.Visible = !string.IsNullOrEmpty(lblAgaclama.Text);
+            //// dgvGiderler'deki satırları kontrol et
+            //foreach (DataGridViewRow row in dgvGiderler.Rows)
+            //{
+            //    int giderAltKategoriId;
+            //    decimal tutar;
 
-            lblDamizlik.Text = toplamMiktarlar.ContainsKey(5) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[5]) : "";
-            lblDamizlikYazi.Visible = !string.IsNullOrEmpty(lblDamizlik.Text);
+            //    // Her satırın GiderAltKategoriId ve Tutar değerlerini al
+            //    if (int.TryParse(row.Cells["GiderAltKategoriId"].Value.ToString(), out giderAltKategoriId) &&
+            //        decimal.TryParse(row.Cells["Tutar"].Value.ToString(), out tutar))
+            //    {
+            //        // Toplam miktarları sözlükte ilgili kategoriye göre topla
+            //        if (!toplamMiktarlar.ContainsKey(giderAltKategoriId))
+            //        {
+            //            toplamMiktarlar[giderAltKategoriId] = 0;
+            //        }
 
-            lblOrnetTarla.Text = toplamMiktarlar.ContainsKey(6) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[6]) : "";
-            lblOrnetTarlaYazi.Visible = !string.IsNullOrEmpty(lblOrnetTarla.Text);
+            //        toplamMiktarlar[giderAltKategoriId] += tutar;
+            //    }
+            //}
 
-            lblZararliHayvan.Text = toplamMiktarlar.ContainsKey(7) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[7]) : "";
-            lblZararliHayvanYazi.Visible = !string.IsNullOrEmpty(lblZararliHayvan.Text);
+            //// Elde edilen toplam miktarları ilgili label'lere yazdır
+            //lblAylik.Text = toplamMiktarlar.ContainsKey(1) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[1]) : "";
+            //lblAylikYazi.Visible = !string.IsNullOrEmpty(lblAylik.Text);
 
-            lblPazarCarsi.Text = toplamMiktarlar.ContainsKey(8) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[8]) : "";
-            lblPazarCarsiYazi.Visible = !string.IsNullOrEmpty(lblPazarCarsi.Text);
+            //lblIdariMasraf.Text = toplamMiktarlar.ContainsKey(2) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[2]) : "";
+            //lblIdariMasrafYazi.Visible = !string.IsNullOrEmpty(lblIdariMasraf.Text);
 
-            lblKucukEndustri.Text = toplamMiktarlar.ContainsKey(9) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[9]) : "";
-            lblKucukEndustriYazi.Visible = !string.IsNullOrEmpty(lblKucukEndustri.Text);
+            //lblSulama.Text = toplamMiktarlar.ContainsKey(3) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[3]) : "";
+            //lblSulamaYazi.Visible = !string.IsNullOrEmpty(lblSulama.Text);
 
-            lblOkulOgretmenevi.Text = toplamMiktarlar.ContainsKey(10) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[10]) : "";
-            lblOkulOgretmeneviYazi.Visible = !string.IsNullOrEmpty(lblOkulOgretmenevi.Text);
+            //lblAgaclama.Text = toplamMiktarlar.ContainsKey(4) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[4]) : "";
+            //lblAgaclamaYazi.Visible = !string.IsNullOrEmpty(lblAgaclama.Text);
 
-            lblOkulDaimi.Text = toplamMiktarlar.ContainsKey(11) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[11]) : "";
-            lblOkulDaimiYazi.Visible = !string.IsNullOrEmpty(lblOkulDaimi.Text);
+            //lblDamizlik.Text = toplamMiktarlar.ContainsKey(5) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[5]) : "";
+            //lblDamizlikYazi.Visible = !string.IsNullOrEmpty(lblDamizlik.Text);
 
-            lblOkumaOdasi.Text = toplamMiktarlar.ContainsKey(12) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[12]) : "";
-            lblOkumaOdasiYazi.Visible = !string.IsNullOrEmpty(lblOkumaOdasi.Text);
+            //lblOrnetTarla.Text = toplamMiktarlar.ContainsKey(6) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[6]) : "";
+            //lblOrnetTarlaYazi.Visible = !string.IsNullOrEmpty(lblOrnetTarla.Text);
 
-            lblKurs.Text = toplamMiktarlar.ContainsKey(13) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[13]) : "";
-            lblKursYazi.Visible = !string.IsNullOrEmpty(lblKurs.Text);
+            //lblZararliHayvan.Text = toplamMiktarlar.ContainsKey(7) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[7]) : "";
+            //lblZararliHayvanYazi.Visible = !string.IsNullOrEmpty(lblZararliHayvan.Text);
 
-            lblOkulUygulama.Text = toplamMiktarlar.ContainsKey(14) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[14]) : "";
-            lblOkulUygulamaYazi.Visible = !string.IsNullOrEmpty(lblOkulUygulama.Text);
-            //
-            lblIcmeSulari.Text = toplamMiktarlar.ContainsKey(15) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[15]) : "";
-            lblIcmeSulariYazi.Visible = !string.IsNullOrEmpty(lblIcmeSulari.Text);
+            //lblPazarCarsi.Text = toplamMiktarlar.ContainsKey(8) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[8]) : "";
+            //lblPazarCarsiYazi.Visible = !string.IsNullOrEmpty(lblPazarCarsi.Text);
 
-            //16
-            lblTemizlik.Text = toplamMiktarlar.ContainsKey(16) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[16]) : "";
-            lblTemizlikYazi.Visible = !string.IsNullOrEmpty(lblTemizlik.Text);
-            //17
-            lblSpor.Text = toplamMiktarlar.ContainsKey(17) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[17]) : "";
-            lblSporYazi.Visible = !string.IsNullOrEmpty(lblSpor.Text);
-            //18
-            lblIctimai.Text = toplamMiktarlar.ContainsKey(18) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[18]) : "";
-            lblIctimaiYazi.Visible = !string.IsNullOrEmpty(lblIctimai.Text);
-            //19
-            lblYolKopru.Text = toplamMiktarlar.ContainsKey(19) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[19]) : "";
-            lblYolKopruYazi.Visible = !string.IsNullOrEmpty(lblYolKopru.Text);
-            //20
-            lblKoyeAitAkar.Text = toplamMiktarlar.ContainsKey(20) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[20]) : "";
-            lblKoyeAitAkarYazi.Visible = !string.IsNullOrEmpty(lblKoyeAitAkar.Text);
-            //21
-            lblYanginVesaiti.Text = toplamMiktarlar.ContainsKey(21) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[21]) : "";
-            lblYanginVesaitiYazi.Visible = !string.IsNullOrEmpty(lblYanginVesaiti.Text);
-            //22
-            lblAydinlatma.Text = toplamMiktarlar.ContainsKey(22) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[22]) : "";
-            lblAydinlatmaYazi.Visible = !string.IsNullOrEmpty(lblAydinlatma.Text);
-            //23
-            lblMezarlik.Text = toplamMiktarlar.ContainsKey(23) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[23]) : "";
-            lblMezarlikYazi.Visible = !string.IsNullOrEmpty(lblMezarlik.Text);
-            //24
-            lblTurluMasraf.Text = toplamMiktarlar.ContainsKey(24) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[24]) : "";
-            lblTurluMasrafYazi.Visible = !string.IsNullOrEmpty(lblTurluMasraf.Text);
-            //25
-            lblVergiSigorta.Text = toplamMiktarlar.ContainsKey(25) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[25]) : "";
-            lblVergiSigortaYazi.Visible = !string.IsNullOrEmpty(lblVergiSigorta.Text);
-            //26
-            lblKoyBorclari.Text = toplamMiktarlar.ContainsKey(26) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[26]) : "";
-            lblKoyBorclariYazi.Visible = !string.IsNullOrEmpty(lblKoyBorclari.Text);
-            //27
-            lblMahkemeKesif.Text = toplamMiktarlar.ContainsKey(27) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[27]) : "";
-            lblMahkemeKesifYazi.Visible = !string.IsNullOrEmpty(lblMahkemeKesif.Text);
-            //28
-            lblIstimlakMasraf.Text = toplamMiktarlar.ContainsKey(28) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[28]) : "";
-            lblIstimlakMasrafYazi.Visible = !string.IsNullOrEmpty(lblIstimlakMasraf.Text);
-            //29
-            lblUmulmadikMasraf.Text = toplamMiktarlar.ContainsKey(29) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[29]) : "";
-            lblUmulmadikMasrafYazi.Visible = !string.IsNullOrEmpty(lblUmulmadikMasraf.Text);
+            //lblKucukEndustri.Text = toplamMiktarlar.ContainsKey(9) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[9]) : "";
+            //lblKucukEndustriYazi.Visible = !string.IsNullOrEmpty(lblKucukEndustri.Text);
+
+            //lblOkulOgretmenevi.Text = toplamMiktarlar.ContainsKey(10) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[10]) : "";
+            //lblOkulOgretmeneviYazi.Visible = !string.IsNullOrEmpty(lblOkulOgretmenevi.Text);
+
+            //lblOkulDaimi.Text = toplamMiktarlar.ContainsKey(11) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[11]) : "";
+            //lblOkulDaimiYazi.Visible = !string.IsNullOrEmpty(lblOkulDaimi.Text);
+
+            //lblOkumaOdasi.Text = toplamMiktarlar.ContainsKey(12) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[12]) : "";
+            //lblOkumaOdasiYazi.Visible = !string.IsNullOrEmpty(lblOkumaOdasi.Text);
+
+            //lblKurs.Text = toplamMiktarlar.ContainsKey(13) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[13]) : "";
+            //lblKursYazi.Visible = !string.IsNullOrEmpty(lblKurs.Text);
+
+            //lblOkulUygulama.Text = toplamMiktarlar.ContainsKey(14) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[14]) : "";
+            //lblOkulUygulamaYazi.Visible = !string.IsNullOrEmpty(lblOkulUygulama.Text);
+            ////
+            //lblIcmeSulari.Text = toplamMiktarlar.ContainsKey(15) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[15]) : "";
+            //lblIcmeSulariYazi.Visible = !string.IsNullOrEmpty(lblIcmeSulari.Text);
+
+            ////16
+            //lblTemizlik.Text = toplamMiktarlar.ContainsKey(16) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[16]) : "";
+            //lblTemizlikYazi.Visible = !string.IsNullOrEmpty(lblTemizlik.Text);
+            ////17
+            //lblSpor.Text = toplamMiktarlar.ContainsKey(17) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[17]) : "";
+            //lblSporYazi.Visible = !string.IsNullOrEmpty(lblSpor.Text);
+            ////18
+            //lblIctimai.Text = toplamMiktarlar.ContainsKey(18) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[18]) : "";
+            //lblIctimaiYazi.Visible = !string.IsNullOrEmpty(lblIctimai.Text);
+            ////19
+            //lblYolKopru.Text = toplamMiktarlar.ContainsKey(19) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[19]) : "";
+            //lblYolKopruYazi.Visible = !string.IsNullOrEmpty(lblYolKopru.Text);
+            ////20
+            //lblKoyeAitAkar.Text = toplamMiktarlar.ContainsKey(20) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[20]) : "";
+            //lblKoyeAitAkarYazi.Visible = !string.IsNullOrEmpty(lblKoyeAitAkar.Text);
+            ////21
+            //lblYanginVesaiti.Text = toplamMiktarlar.ContainsKey(21) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[21]) : "";
+            //lblYanginVesaitiYazi.Visible = !string.IsNullOrEmpty(lblYanginVesaiti.Text);
+            ////22
+            //lblAydinlatma.Text = toplamMiktarlar.ContainsKey(22) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[22]) : "";
+            //lblAydinlatmaYazi.Visible = !string.IsNullOrEmpty(lblAydinlatma.Text);
+            ////23
+            //lblMezarlik.Text = toplamMiktarlar.ContainsKey(23) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[23]) : "";
+            //lblMezarlikYazi.Visible = !string.IsNullOrEmpty(lblMezarlik.Text);
+            ////24
+            //lblTurluMasraf.Text = toplamMiktarlar.ContainsKey(24) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[24]) : "";
+            //lblTurluMasrafYazi.Visible = !string.IsNullOrEmpty(lblTurluMasraf.Text);
+            ////25
+            //lblVergiSigorta.Text = toplamMiktarlar.ContainsKey(25) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[25]) : "";
+            //lblVergiSigortaYazi.Visible = !string.IsNullOrEmpty(lblVergiSigorta.Text);
+            ////26
+            //lblKoyBorclari.Text = toplamMiktarlar.ContainsKey(26) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[26]) : "";
+            //lblKoyBorclariYazi.Visible = !string.IsNullOrEmpty(lblKoyBorclari.Text);
+            ////27
+            //lblMahkemeKesif.Text = toplamMiktarlar.ContainsKey(27) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[27]) : "";
+            //lblMahkemeKesifYazi.Visible = !string.IsNullOrEmpty(lblMahkemeKesif.Text);
+            ////28
+            //lblIstimlakMasraf.Text = toplamMiktarlar.ContainsKey(28) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[28]) : "";
+            //lblIstimlakMasrafYazi.Visible = !string.IsNullOrEmpty(lblIstimlakMasraf.Text);
+            ////29
+            //lblUmulmadikMasraf.Text = toplamMiktarlar.ContainsKey(29) ? string.Format("{0:#,0.00}.-TL", toplamMiktarlar[29]) : "";
+            //lblUmulmadikMasrafYazi.Visible = !string.IsNullOrEmpty(lblUmulmadikMasraf.Text);
+
+            //// Toplam miktarı hesapla
+            //decimal toplam = toplamMiktarlar.Values.Sum();
+            //lblGiderlerToplami.Text = string.Format("{0:#,0.00}.-TL", toplam);
+            //lblGiderlerToplami.Visible = !string.IsNullOrEmpty(lblGiderlerToplami.Text);
+            //lblGiderToplami.Visible = !string.IsNullOrEmpty(lblGiderToplami.Text);
         }
+        
 
         //Giderleri DatagridView'e yükleyecek metot
         private void Giderler()
@@ -258,6 +344,13 @@ namespace Forms
             dataGridView.EnableHeadersVisualStyles = false;
             dataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
         }
+
+        private void SetupListView()
+        {
+            listViewGiderler.View = System.Windows.Forms.View.Details;
+            listViewGiderler.Columns.Add("Kategori", 150);
+            listViewGiderler.Columns.Add("Tutar", 100);
+        }
         private void FrmGider_Load(object sender, EventArgs e)
         {
             try
@@ -269,6 +362,7 @@ namespace Forms
                 Giderler();
                 lblToplamGider.Visible = false;
                 HesaplaVeYazdir();
+                SetupListView();
                 // İlk kategoriye göre alt kategorileri yükle
                 if (cmbGiderKategori.SelectedItem != null)
                 {

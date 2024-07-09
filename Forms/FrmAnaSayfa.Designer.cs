@@ -91,7 +91,7 @@
             pnlBaslik.Controls.Add(lblBaslik);
             pnlBaslik.Location = new Point(0, -2);
             pnlBaslik.Name = "pnlBaslik";
-            pnlBaslik.Size = new Size(1367, 85);
+            pnlBaslik.Size = new Size(1489, 85);
             pnlBaslik.TabIndex = 0;
             pnlBaslik.Paint += pnlBaslik_Paint;
             // 
@@ -419,7 +419,7 @@
             // 
             pcBoxEkButce.Cursor = Cursors.Hand;
             pcBoxEkButce.Image = (Image)resources.GetObject("pcBoxEkButce.Image");
-            pcBoxEkButce.Location = new Point(429, 3);
+            pcBoxEkButce.Location = new Point(499, 5);
             pcBoxEkButce.Name = "pcBoxEkButce";
             pcBoxEkButce.Size = new Size(136, 90);
             pcBoxEkButce.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -431,7 +431,7 @@
             // 
             pcBoxGorevliler.Cursor = Cursors.Hand;
             pcBoxGorevliler.Image = (Image)resources.GetObject("pcBoxGorevliler.Image");
-            pcBoxGorevliler.Location = new Point(764, 2);
+            pcBoxGorevliler.Location = new Point(825, 5);
             pcBoxGorevliler.Name = "pcBoxGorevliler";
             pcBoxGorevliler.Size = new Size(136, 90);
             pcBoxGorevliler.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -443,7 +443,7 @@
             // 
             pcBoxKesinHesap.Cursor = Cursors.Hand;
             pcBoxKesinHesap.Image = (Image)resources.GetObject("pcBoxKesinHesap.Image");
-            pcBoxKesinHesap.Location = new Point(626, 3);
+            pcBoxKesinHesap.Location = new Point(662, 5);
             pcBoxKesinHesap.Name = "pcBoxKesinHesap";
             pcBoxKesinHesap.Size = new Size(136, 90);
             pcBoxKesinHesap.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -455,7 +455,7 @@
             // 
             pcBoxTahminiButce.Cursor = Cursors.Hand;
             pcBoxTahminiButce.Image = (Image)resources.GetObject("pcBoxTahminiButce.Image");
-            pcBoxTahminiButce.Location = new Point(287, 3);
+            pcBoxTahminiButce.Location = new Point(336, 5);
             pcBoxTahminiButce.Name = "pcBoxTahminiButce";
             pcBoxTahminiButce.Size = new Size(136, 90);
             pcBoxTahminiButce.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -467,7 +467,7 @@
             // 
             pcBoxGider.Cursor = Cursors.Hand;
             pcBoxGider.Image = (Image)resources.GetObject("pcBoxGider.Image");
-            pcBoxGider.Location = new Point(146, 3);
+            pcBoxGider.Location = new Point(173, 5);
             pcBoxGider.Name = "pcBoxGider";
             pcBoxGider.Size = new Size(136, 90);
             pcBoxGider.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -479,7 +479,7 @@
             // 
             pcBoxGelir.Cursor = Cursors.Hand;
             pcBoxGelir.Image = (Image)resources.GetObject("pcBoxGelir.Image");
-            pcBoxGelir.Location = new Point(7, 3);
+            pcBoxGelir.Location = new Point(10, 5);
             pcBoxGelir.Name = "pcBoxGelir";
             pcBoxGelir.Size = new Size(136, 90);
             pcBoxGelir.SizeMode = PictureBoxSizeMode.StretchImage;
