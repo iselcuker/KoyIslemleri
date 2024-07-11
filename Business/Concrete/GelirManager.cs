@@ -48,6 +48,13 @@ namespace Business.Concrete
             return _gelirDal.GetGelirDetails();
         }
 
+        //ARAMA İŞLEMİ İÇİN
+        public List<Gelir> GetListByVeren(int koyId, byte donemId, string veren)
+        {
+            // Burada ilgili veritabanı sorgusunu gerçekleştirip sonuçları döneceksiniz
+            return _gelirDal.GetAll(g => g.Veren.Contains(veren));
+        }
+
         public List<Gelir> GetListDonemIdAndKoyIdAndGelirKategoriId(byte donemId, int koyId, byte gelirKategoriId)
         {
             return _gelirDal.GetAll(ge => ge.DonemId == donemId && ge.KoyId == koyId && ge.GelirKategoriId == gelirKategoriId);

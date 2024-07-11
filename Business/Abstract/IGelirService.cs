@@ -19,14 +19,13 @@ namespace Business.Abstract
         void Delete(Gelir gelir);
         void Update(Gelir gelir);
 
-        decimal GelirKategoriToplam(int koyId, byte donemId, byte gelirKategoriId);
-       
-
-
-        //Gelir GetToplamByKoyIdAndDonemIdAndGelirKategoriId(int koyId, byte donemId,byte gelirKategoriId);
+        decimal GelirKategoriToplam(int koyId, byte donemId, byte gelirKategoriId);      
 
         List<GelirDetailDto> GetGelirDetails();
         List<GelirDetailDto> GetListGelirDetailsKoyAndDonemId(int koyId, byte donemId);
+
+        List<Gelir> GetListByVeren(int koyId, byte donemId, string veren); //ARAMA İŞLEMİ İÇİN
+
 
     }
 }

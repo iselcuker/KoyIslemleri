@@ -47,6 +47,8 @@
             pcBoxKaydet = new PictureBox();
             lblToplamGelir = new Label();
             listViewGelirler = new ListView();
+            label1 = new Label();
+            txtBul = new TextBox();
             pnlGelirBaslik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvGelirler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxSil).BeginInit();
@@ -176,6 +178,7 @@
             dgvGelirler.Size = new Size(1226, 478);
             dgvGelirler.TabIndex = 100;
             dgvGelirler.CellDoubleClick += dgvGelirler_CellDoubleClick;
+            dgvGelirler.DataBindingComplete += dgvGelirler_DataBindingComplete;
             // 
             // cmbGelirKategori
             // 
@@ -242,7 +245,7 @@
             // 
             lblToplamGelir.AutoSize = true;
             lblToplamGelir.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblToplamGelir.Location = new Point(800, 283);
+            lblToplamGelir.Location = new Point(48, 282);
             lblToplamGelir.Name = "lblToplamGelir";
             lblToplamGelir.Size = new Size(26, 18);
             lblToplamGelir.TabIndex = 153;
@@ -258,11 +261,33 @@
             listViewGelirler.TabIndex = 156;
             listViewGelirler.UseCompatibleStateImageBehavior = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Verdana", 14.25F);
+            label1.Location = new Point(678, 280);
+            label1.Name = "label1";
+            label1.Size = new Size(57, 23);
+            label1.TabIndex = 157;
+            label1.Text = "Bul :";
+            // 
+            // txtBul
+            // 
+            txtBul.Font = new Font("Verdana", 14.25F);
+            txtBul.Location = new Point(731, 277);
+            txtBul.Name = "txtBul";
+            txtBul.Size = new Size(353, 31);
+            txtBul.TabIndex = 158;
+            txtBul.TextChanged += txtBul_TextChanged;
+            txtBul.KeyPress += txtBul_KeyPress;
+            // 
             // FrmGelir
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1250, 802);
+            Controls.Add(txtBul);
+            Controls.Add(label1);
             Controls.Add(listViewGelirler);
             Controls.Add(lblToplamGelir);
             Controls.Add(pcBoxSil);
@@ -314,5 +339,7 @@
         private PictureBox pcBoxKaydet;
         private Label lblToplamGelir;
         private ListView listViewGelirler;
+        private Label label1;
+        private TextBox txtBul;
     }
 }

@@ -1376,7 +1376,7 @@ namespace Forms
                 lblOdenenKulturToplami.Text = frmKesinHesap1.lblOdenenKulturToplami.Text;
                 lblIptalKulturToplami.Text = frmKesinHesap1.lblIptalKulturToplami.Text;
 
-                lblBKSaglik.Text = frmKesinHesap1.lblBKKulturToplami.Text;
+                lblBKSaglik.Text = frmKesinHesap1.lblBKSaglikToplami.Text;
                 lblMunzamSaglikToplami.Text = frmKesinHesap1.lblMunzamSaglikToplami.Text;
                 lblTahakkukSaglikToplami.Text = frmKesinHesap1.lblTahakkukSaglikToplami.Text;
                 lblOdenenSaglikToplami.Text = frmKesinHesap1.lblOdenenSaglikToplami.Text;

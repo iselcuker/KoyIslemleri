@@ -32,6 +32,9 @@ namespace Forms
 
             InitializeComponent();
 
+            txtBul.TextChanged += new EventHandler(txtBul_TextChanged); //ARAMA İŞLEMİ İÇİN
+            dgvGelirler.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(dgvGelirler_DataBindingComplete);//ARAMA İŞLEMİ İÇİN
+
             GelirKategoriManager _gelirKategoriManager = new GelirKategoriManager(new EfGelirKategoriDal());
             gelirKategoriManager = _gelirKategoriManager;
 
@@ -551,6 +554,64 @@ namespace Forms
 
                 // Kültüre göre ondalık işaret olarak virgülü kabul et
                 e.KeyChar = ',';
+            }
+        }
+
+        //ARABA İŞLEMİ İÇİN
+        private void txtBul_TextChanged(object sender, EventArgs e)
+        {
+            // TextBox'taki metni al
+            string aramaMetni = txtBul.Text;
+
+            // TextBox'ın mevcut metnini büyük harfe çevir
+            txtBul.Text = txtBul.Text.ToUpper();
+
+            // İmleci son karakterin sonrasına taşı
+            txtBul.SelectionStart = txtBul.Text.Length;
+
+            // Eğer metin boş değilse arama yap
+            if (!string.IsNullOrEmpty(aramaMetni))
+            {
+                // GelirManager'den arama sonuçlarını al
+                var sonucListesi = gelirManager.GetListByVeren(_seciliKoyIndex, _seciliDonemIndex, aramaMetni);
+
+                // DataGridView'i güncelle
+                dgvGelirler.DataSource = sonucListesi;
+            }
+            else
+            {
+                // Eğer metin boşsa, tüm kayıtları göster veya önceki duruma döndür
+                dgvGelirler.DataSource = gelirManager.GetListGelirDetailsKoyAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
+            }
+        }
+
+        //ARAMA İŞLEMİ İÇİN
+        private void dgvGelirler_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            if (dgvGelirler.Columns["GelirId"] != null)
+            {
+                dgvGelirler.Columns["GelirId"].Visible = false;
+            }
+            if (dgvGelirler.Columns["KoyId"] != null)
+            {
+                dgvGelirler.Columns["KoyId"].Visible = false;
+            }
+            if (dgvGelirler.Columns["DonemId"] != null)
+            {
+                dgvGelirler.Columns["DonemId"].Visible = false;
+            }
+            if (dgvGelirler.Columns["GelirKategoriId"] != null)
+            {
+                dgvGelirler.Columns["GelirKategoriId"].Visible = false;
+            }
+        }
+
+        private void txtBul_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Eğer karakter harf ise, büyük harfe çevir
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.KeyChar = char.ToUpper(e.KeyChar);
             }
         }
     }
