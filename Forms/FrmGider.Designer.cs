@@ -49,6 +49,8 @@
             lblToplamGider = new Label();
             dgvGiderler = new DataGridView();
             listViewGiderler = new ListView();
+            txtBul = new TextBox();
+            label2 = new Label();
             pnlGiderBaslik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcBoxSil).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcBoxGuncelle).BeginInit();
@@ -94,6 +96,7 @@
             txtAlan.Name = "txtAlan";
             txtAlan.Size = new Size(209, 31);
             txtAlan.TabIndex = 113;
+            txtAlan.TextChanged += txtAlan_TextChanged;
             // 
             // txtTutar
             // 
@@ -273,6 +276,7 @@
             dgvGiderler.Size = new Size(1226, 424);
             dgvGiderler.TabIndex = 128;
             dgvGiderler.CellDoubleClick += dgvGiderler_CellDoubleClick;
+            dgvGiderler.DataBindingComplete += dgvGiderler_DataBindingComplete;
             // 
             // listViewGiderler
             // 
@@ -280,9 +284,28 @@
             listViewGiderler.BorderStyle = BorderStyle.None;
             listViewGiderler.Location = new Point(632, 66);
             listViewGiderler.Name = "listViewGiderler";
-            listViewGiderler.Size = new Size(465, 317);
+            listViewGiderler.Size = new Size(465, 286);
             listViewGiderler.TabIndex = 129;
             listViewGiderler.UseCompatibleStateImageBehavior = false;
+            // 
+            // txtBul
+            // 
+            txtBul.Font = new Font("Verdana", 14.25F);
+            txtBul.Location = new Point(695, 359);
+            txtBul.Name = "txtBul";
+            txtBul.Size = new Size(402, 31);
+            txtBul.TabIndex = 160;
+            txtBul.TextChanged += txtBul_TextChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Verdana", 14.25F);
+            label2.Location = new Point(632, 362);
+            label2.Name = "label2";
+            label2.Size = new Size(57, 23);
+            label2.TabIndex = 159;
+            label2.Text = "Bul :";
             // 
             // FrmGider
             // 
@@ -290,6 +313,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(1250, 802);
+            Controls.Add(txtBul);
+            Controls.Add(label2);
             Controls.Add(listViewGiderler);
             Controls.Add(dgvGiderler);
             Controls.Add(pcBoxSil);
@@ -344,5 +369,7 @@
         public Label lblToplamGider;
         public DataGridView dgvGiderler;
         private ListView listViewGiderler;
+        private TextBox txtBul;
+        private Label label2;
     }
 }

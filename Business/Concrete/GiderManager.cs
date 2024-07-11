@@ -40,6 +40,12 @@ namespace Business.Concrete
             return _giderDal.GetGiderDetails();
         }
 
+        public List<Gider> GetListByAlan(int koyId, byte donemId, string alan)
+        {
+            // Burada ilgili veritabanı sorgusunu gerçekleştirip sonuçları döneceksiniz
+            return _giderDal.GetAll(g => g.Alan.Contains(alan));
+        }
+
         public List<Gider> GetListDonemIdAndKoyIdAndGiderKategoriId(byte donemId, int koyId, byte giderKategoriId)
         {
             return _giderDal.GetAll(gi => gi.DonemId == donemId && gi.KoyId == koyId && gi.GiderKategoriId == giderKategoriId);

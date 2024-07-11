@@ -22,5 +22,7 @@ namespace Business.Abstract
 
         List<GiderDetailDto> GetGiderDetails();
         List<GiderDetailDto> GetListGiderDetailsKoyAndDonemId(int koyId, byte donemId);
+
+        List<Gider> GetListByAlan(int koyId, byte donemId, string alan); //ARAMA İŞLEMİ İÇİN
     }
 }

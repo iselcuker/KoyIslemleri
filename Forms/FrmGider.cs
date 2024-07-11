@@ -39,6 +39,9 @@ namespace Forms
             koyManager = new KoyManager(new EfKoyDal());
             donemManager = new DonemManager(new EfDonemDal());
 
+            txtBul.TextChanged += new EventHandler(txtBul_TextChanged); //ARAMA İŞLEMİ İÇİN
+            dgvGiderler.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(dgvGiderler_DataBindingComplete);//ARAMA İŞLEMİ İÇİN
+
             // Parametreler sınıfın alanlarına atanıyor
             _seciliKoyIndex = seciliKoyIndex;
             _seciliDonemIndex = seciliDonemIndex;
@@ -586,6 +589,63 @@ namespace Forms
 
                 // Kültüre göre ondalık işaret olarak virgülü kabul et
                 e.KeyChar = ',';
+            }
+        }
+
+        private void txtAlan_TextChanged(object sender, EventArgs e)
+        {
+            txtAlan.Text = txtAlan.Text.ToUpper();
+            txtAlan.SelectionStart = txtAlan.Text.Length; // Metnin sonuna atlamak için
+        }
+
+        private void txtBul_TextChanged(object sender, EventArgs e)
+        {
+            // TextBox'taki metni al
+            string aramaMetni = txtBul.Text;
+
+            // TextBox'ın mevcut metnini büyük harfe çevir
+            txtBul.Text = txtBul.Text.ToUpper();
+
+            // İmleci son karakterin sonrasına taşı
+            txtBul.SelectionStart = txtBul.Text.Length; // Metnin sonuna atlamak için
+
+            // Eğer metin boş değilse arama yap
+            if (!string.IsNullOrEmpty(aramaMetni))
+            {
+                // GelirManager'den arama sonuçlarını al
+                var sonucListesi = giderManager.GetListByAlan(_seciliKoyIndex, _seciliDonemIndex, aramaMetni);
+
+                // DataGridView'i güncelle
+                dgvGiderler.DataSource = sonucListesi;
+            }
+            else
+            {
+                // Eğer metin boşsa, tüm kayıtları göster veya önceki duruma döndür
+                dgvGiderler.DataSource = giderManager.GetListGiderDetailsKoyAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
+            }
+        }
+
+        private void dgvGiderler_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            if (dgvGiderler.Columns["GiderId"] != null)
+            {
+                dgvGiderler.Columns["GiderId"].Visible = false;
+            }
+            if (dgvGiderler.Columns["KoyId"] != null)
+            {
+                dgvGiderler.Columns["KoyId"].Visible = false;
+            }
+            if (dgvGiderler.Columns["DonemId"] != null)
+            {
+                dgvGiderler.Columns["DonemId"].Visible = false;
+            }
+            if (dgvGiderler.Columns["GiderKategoriId"] != null)
+            {
+                dgvGiderler.Columns["GiderKategoriId"].Visible = false;
+            }
+            if (dgvGiderler.Columns["GiderAltKategoriId"] != null)
+            {
+                dgvGiderler.Columns["GiderAltKategoriId"].Visible = false;
             }
         }
     }

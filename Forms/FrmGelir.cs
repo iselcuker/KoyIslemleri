@@ -506,8 +506,6 @@ namespace Forms
                 pcBoxKaydet.Visible = true;
                 pcBoxGuncelle.Visible = true;
                 pcBoxSil.Visible = true;
-                //lblToplam.Visible = true;
-                //lblToplamYazi.Visible = true;
             }
         }
 
