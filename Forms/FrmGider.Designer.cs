@@ -72,7 +72,7 @@
             // 
             mskTarih.Cursor = Cursors.IBeam;
             mskTarih.Font = new Font("Verdana", 14.25F);
-            mskTarih.Location = new Point(214, 216);
+            mskTarih.Location = new Point(214, 185);
             mskTarih.Mask = "00/00/0000";
             mskTarih.Name = "mskTarih";
             mskTarih.Size = new Size(126, 31);
@@ -83,7 +83,7 @@
             // 
             txtEvrakNo.Cursor = Cursors.IBeam;
             txtEvrakNo.Font = new Font("Verdana", 14.25F);
-            txtEvrakNo.Location = new Point(214, 288);
+            txtEvrakNo.Location = new Point(214, 257);
             txtEvrakNo.Name = "txtEvrakNo";
             txtEvrakNo.Size = new Size(209, 31);
             txtEvrakNo.TabIndex = 114;
@@ -92,7 +92,7 @@
             // 
             txtAlan.Cursor = Cursors.IBeam;
             txtAlan.Font = new Font("Verdana", 14.25F);
-            txtAlan.Location = new Point(214, 252);
+            txtAlan.Location = new Point(214, 221);
             txtAlan.Name = "txtAlan";
             txtAlan.Size = new Size(209, 31);
             txtAlan.TabIndex = 113;
@@ -102,7 +102,7 @@
             // 
             txtTutar.Cursor = Cursors.IBeam;
             txtTutar.Font = new Font("Verdana", 14.25F);
-            txtTutar.Location = new Point(214, 180);
+            txtTutar.Location = new Point(214, 149);
             txtTutar.Name = "txtTutar";
             txtTutar.Size = new Size(209, 31);
             txtTutar.TabIndex = 111;
@@ -113,7 +113,7 @@
             lblEvrakNo.AutoSize = true;
             lblEvrakNo.Font = new Font("Verdana", 14.25F);
             lblEvrakNo.ImeMode = ImeMode.NoControl;
-            lblEvrakNo.Location = new Point(10, 291);
+            lblEvrakNo.Location = new Point(10, 260);
             lblEvrakNo.Name = "lblEvrakNo";
             lblEvrakNo.Size = new Size(96, 23);
             lblEvrakNo.TabIndex = 118;
@@ -124,7 +124,7 @@
             lblTarih.AutoSize = true;
             lblTarih.Font = new Font("Verdana", 14.25F);
             lblTarih.ImeMode = ImeMode.NoControl;
-            lblTarih.Location = new Point(10, 219);
+            lblTarih.Location = new Point(10, 188);
             lblTarih.Name = "lblTarih";
             lblTarih.Size = new Size(57, 23);
             lblTarih.TabIndex = 119;
@@ -135,7 +135,7 @@
             lblAlan.AutoSize = true;
             lblAlan.Font = new Font("Verdana", 14.25F);
             lblAlan.ImeMode = ImeMode.NoControl;
-            lblAlan.Location = new Point(10, 255);
+            lblAlan.Location = new Point(10, 224);
             lblAlan.Name = "lblAlan";
             lblAlan.Size = new Size(52, 23);
             lblAlan.TabIndex = 120;
@@ -146,7 +146,7 @@
             lblTutar.AutoSize = true;
             lblTutar.Font = new Font("Verdana", 14.25F);
             lblTutar.ImeMode = ImeMode.NoControl;
-            lblTutar.Location = new Point(10, 183);
+            lblTutar.Location = new Point(10, 152);
             lblTutar.Name = "lblTutar";
             lblTutar.Size = new Size(58, 23);
             lblTutar.TabIndex = 121;
@@ -160,7 +160,7 @@
             cmbGiderKategori.Font = new Font("Verdana", 14.25F);
             cmbGiderKategori.ForeColor = SystemColors.MenuText;
             cmbGiderKategori.FormattingEnabled = true;
-            cmbGiderKategori.Location = new Point(214, 100);
+            cmbGiderKategori.Location = new Point(214, 69);
             cmbGiderKategori.Name = "cmbGiderKategori";
             cmbGiderKategori.Size = new Size(396, 31);
             cmbGiderKategori.TabIndex = 110;
@@ -171,7 +171,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Verdana", 14.25F);
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(10, 103);
+            label1.Location = new Point(10, 72);
             label1.Name = "label1";
             label1.Size = new Size(148, 23);
             label1.TabIndex = 115;
@@ -191,7 +191,7 @@
             lblGiderAltKategori.AutoSize = true;
             lblGiderAltKategori.Font = new Font("Verdana", 14.25F);
             lblGiderAltKategori.ImeMode = ImeMode.NoControl;
-            lblGiderAltKategori.Location = new Point(10, 143);
+            lblGiderAltKategori.Location = new Point(10, 112);
             lblGiderAltKategori.Name = "lblGiderAltKategori";
             lblGiderAltKategori.Size = new Size(181, 23);
             lblGiderAltKategori.TabIndex = 115;
@@ -205,7 +205,7 @@
             cmbGiderAltKategori.Font = new Font("Verdana", 14.25F);
             cmbGiderAltKategori.ForeColor = SystemColors.MenuText;
             cmbGiderAltKategori.FormattingEnabled = true;
-            cmbGiderAltKategori.Location = new Point(214, 140);
+            cmbGiderAltKategori.Location = new Point(214, 109);
             cmbGiderAltKategori.Name = "cmbGiderAltKategori";
             cmbGiderAltKategori.Size = new Size(396, 31);
             cmbGiderAltKategori.TabIndex = 110;
@@ -215,7 +215,7 @@
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(305, 327);
+            pcBoxSil.Location = new Point(305, 296);
             pcBoxSil.Name = "pcBoxSil";
             pcBoxSil.Size = new Size(85, 65);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -227,7 +227,7 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(396, 328);
+            pcBoxGuncelle.Location = new Point(396, 297);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -239,7 +239,7 @@
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(214, 327);
+            pcBoxKaydet.Location = new Point(214, 296);
             pcBoxKaydet.Name = "pcBoxKaydet";
             pcBoxKaydet.Size = new Size(85, 65);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -252,7 +252,7 @@
             lblToplamGider.AutoSize = true;
             lblToplamGider.Font = new Font("Lucida Calligraphy", 14.25F);
             lblToplamGider.ImeMode = ImeMode.NoControl;
-            lblToplamGider.Location = new Point(21, 363);
+            lblToplamGider.Location = new Point(21, 332);
             lblToplamGider.Name = "lblToplamGider";
             lblToplamGider.Size = new Size(36, 24);
             lblToplamGider.TabIndex = 119;
@@ -268,12 +268,12 @@
             dgvGiderler.BorderStyle = BorderStyle.Fixed3D;
             dgvGiderler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvGiderler.Location = new Point(12, 394);
+            dgvGiderler.Location = new Point(12, 364);
             dgvGiderler.Name = "dgvGiderler";
             dgvGiderler.ReadOnly = true;
             dgvGiderler.RowHeadersWidth = 51;
             dgvGiderler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvGiderler.Size = new Size(1226, 424);
+            dgvGiderler.Size = new Size(1226, 434);
             dgvGiderler.TabIndex = 128;
             dgvGiderler.CellDoubleClick += dgvGiderler_CellDoubleClick;
             dgvGiderler.DataBindingComplete += dgvGiderler_DataBindingComplete;
@@ -281,17 +281,17 @@
             // listViewGiderler
             // 
             listViewGiderler.BackColor = SystemColors.Control;
-            listViewGiderler.BorderStyle = BorderStyle.None;
-            listViewGiderler.Location = new Point(632, 66);
+            listViewGiderler.BorderStyle = BorderStyle.FixedSingle;
+            listViewGiderler.Location = new Point(632, 69);
             listViewGiderler.Name = "listViewGiderler";
-            listViewGiderler.Size = new Size(465, 286);
+            listViewGiderler.Size = new Size(465, 252);
             listViewGiderler.TabIndex = 129;
             listViewGiderler.UseCompatibleStateImageBehavior = false;
             // 
             // txtBul
             // 
             txtBul.Font = new Font("Verdana", 14.25F);
-            txtBul.Location = new Point(695, 359);
+            txtBul.Location = new Point(695, 328);
             txtBul.Name = "txtBul";
             txtBul.Size = new Size(402, 31);
             txtBul.TabIndex = 160;
@@ -301,7 +301,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Verdana", 14.25F);
-            label2.Location = new Point(632, 362);
+            label2.Location = new Point(632, 331);
             label2.Name = "label2";
             label2.Size = new Size(57, 23);
             label2.TabIndex = 159;

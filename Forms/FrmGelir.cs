@@ -238,7 +238,7 @@ namespace Forms
                     yeniGelir.EvrakNo = txtEvrakNo.Text;
 
                     gelirManager.Add(yeniGelir);
-                    Gelirler(yeniGelir.Id);
+                    Gelirler(yeniGelir.Id);  // yeniGelir.Id'yi Gelirler metoduna geçiriyoruz
                     Temizle();
 
                     ToplamGelir();
@@ -343,6 +343,20 @@ namespace Forms
                 dgvGelirler.Columns["Tarih"].DefaultCellStyle.Format = "dd.MM.yyyy";
 
                 ToplamGelir(); // Veriler yenilendiğinde toplamı hesapla
+
+                // Yeni kaydın indeksini bul ve seç
+                if (yeniGelirId != -1)
+                {
+                    foreach (DataGridViewRow row in dgvGelirler.Rows)
+                    {
+                        if (Convert.ToInt32(row.Cells["GelirId"].Value) == yeniGelirId)
+                        {
+                            row.Selected = true;
+                            dgvGelirler.FirstDisplayedScrollingRowIndex = row.Index;
+                            break;
+                        }
+                    }
+                }
             }
             catch (Exception)
             {

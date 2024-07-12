@@ -174,7 +174,7 @@ namespace Forms
 
 
         //Giderleri DatagridView'e yükleyecek metot
-        private void Giderler()
+        private void Giderler(int yeniGiderId = -1)
         {
             try
             {
@@ -209,6 +209,20 @@ namespace Forms
                 dgvGiderler.Columns["Tarih"].DefaultCellStyle.Format = "dd.MM.yyyy";
 
                 ToplamGider(); // Veriler yenilendiğinde toplamı hesapla
+
+                // Yeni kaydın indeksini bul ve seç
+                if (yeniGiderId != -1)
+                {
+                    foreach (DataGridViewRow row in dgvGiderler.Rows)
+                    {
+                        if (Convert.ToInt32(row.Cells["GiderId"].Value) == yeniGiderId)
+                        {
+                            row.Selected = true;
+                            dgvGiderler.FirstDisplayedScrollingRowIndex = row.Index;
+                            break;
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -392,7 +406,7 @@ namespace Forms
                     // Kontroller temizlenir ve yeniden başlangıç durumuna getirilir
                     Temizle();
                     AnaSayfaGuncelle();
-                    Giderler(); // Verileri yeniden yükle
+                    Giderler(yeniGider.Id); // Verileri yeniden yükle ve yeni girilen kaydın id'sini geçir
                     HesaplaVeYazdir();
                 }
                 else
