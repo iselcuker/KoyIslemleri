@@ -205,6 +205,9 @@ namespace Forms
                 // Tutar kolonundaki sayıları formatlamak için
                 dgvGiderler.Columns["Tutar"].DefaultCellStyle.Format = "#,0.00";
 
+                // Tarih kolonundaki tarihi formatlamak için
+                dgvGiderler.Columns["Tarih"].DefaultCellStyle.Format = "dd.MM.yyyy";
+
                 ToplamGider(); // Veriler yenilendiğinde toplamı hesapla
             }
             catch (Exception ex)
@@ -526,6 +529,44 @@ namespace Forms
 
         private void dgvGiderler_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            //if (e.RowIndex >= 0)
+            //{
+            //    // Sadece double click yapılan satırı seç
+            //    dgvGiderler.Rows[e.RowIndex].Selected = true;
+
+            //    // Seçilen satırın görünürlüğünü sağla
+            //    dgvGiderler.FirstDisplayedScrollingRowIndex = e.RowIndex;
+            //    dgvGiderler.Rows[e.RowIndex].Cells[0].Selected = true;
+
+            //    // Seçilen satırın bilgilerini al ve ilgili alanlara aktar
+            //    DataGridViewRow row = dgvGiderler.Rows[e.RowIndex];
+
+            //    // cmbGiderKategori için
+            //    foreach (var item in cmbGiderKategori.Items.Cast<GiderKategori>())
+            //    {
+            //        if (item.Id == Convert.ToByte(row.Cells["GiderKategoriId"].Value))
+            //        {
+            //            cmbGiderKategori.SelectedItem = item;
+            //            break;
+            //        }
+            //    }
+
+            //    // cmbGiderAltKategori için
+            //    foreach (var item in cmbGiderAltKategori.Items.Cast<GiderAltKategori>())
+            //    {
+            //        if (item.Id == Convert.ToByte(row.Cells["GiderAltKategoriId"].Value))
+            //        {
+            //            cmbGiderAltKategori.SelectedItem = item;
+            //            break;
+            //        }
+            //    }
+
+            //    // Diğer alanlar ilgili hücrelerden alınıyor
+            //    txtTutar.Text = row.Cells["Tutar"].Value.ToString();
+            //    mskTarih.Text = Convert.ToDateTime(row.Cells["Tarih"].Value).ToString("dd/MM/yyyy");
+            //    txtAlan.Text = row.Cells["Alan"].Value.ToString();
+            //    txtEvrakNo.Text = row.Cells["EvrakNo"].Value.ToString();
+            //}
             if (e.RowIndex >= 0)
             {
                 // Sadece double click yapılan satırı seç
@@ -560,7 +601,17 @@ namespace Forms
 
                 // Diğer alanlar ilgili hücrelerden alınıyor
                 txtTutar.Text = row.Cells["Tutar"].Value.ToString();
-                mskTarih.Text = Convert.ToDateTime(row.Cells["Tarih"].Value).ToString("dd/MM/yyyy");
+
+                // Tarihi doğru formatta al
+                if (row.Cells["Tarih"].Value != null && DateTime.TryParse(row.Cells["Tarih"].Value.ToString(), out DateTime tarih))
+                {
+                    mskTarih.Text = tarih.ToString("dd/MM/yyyy");
+                }
+                else
+                {
+                    mskTarih.Text = "";
+                }
+
                 txtAlan.Text = row.Cells["Alan"].Value.ToString();
                 txtEvrakNo.Text = row.Cells["EvrakNo"].Value.ToString();
             }

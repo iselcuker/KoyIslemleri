@@ -339,6 +339,9 @@ namespace Forms
                 // Tutar kolonundaki sayıları formatlamak için
                 dgvGelirler.Columns["Tutar"].DefaultCellStyle.Format = "#,0.00";
 
+                // Tarih kolonundaki tarihi formatlamak için
+                dgvGelirler.Columns["Tarih"].DefaultCellStyle.Format = "dd.MM.yyyy";
+
                 ToplamGelir(); // Veriler yenilendiğinde toplamı hesapla
             }
             catch (Exception)
@@ -465,6 +468,26 @@ namespace Forms
 
         private void dgvGelirler_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            //// Satırın indeksini al
+            //int rowIndex = e.RowIndex;
+
+            //// Seçili satırın verilerini al
+            //if (rowIndex >= 0 && rowIndex < dgvGelirler.Rows.Count)
+            //{
+            //    DataGridViewRow selectedRow = dgvGelirler.Rows[rowIndex];
+
+            //    // Verileri ilgili alanlara aktar
+            //    cmbGelirKategori.SelectedIndex = (byte)selectedRow.Cells["GelirKategoriId"].Value;
+            //    cmbGelirKategori.SelectedText = selectedRow.Cells["GelirKategoriAdi"].Value.ToString();
+            //    txtTutar.Text = selectedRow.Cells["Tutar"].Value.ToString();
+            //    mskTarih.Text = selectedRow.Cells["Tarih"].Value.ToString();
+            //    txtVeren.Text = selectedRow.Cells["Veren"].Value.ToString();
+            //    txtEvrakNo.Text = selectedRow.Cells["EvrakNo"].Value.ToString();
+
+            //    // Seçili satırı işaretle
+            //    dgvGelirler.Rows[rowIndex].Selected = true;
+            //}
+
             // Satırın indeksini al
             int rowIndex = e.RowIndex;
 
@@ -477,7 +500,17 @@ namespace Forms
                 cmbGelirKategori.SelectedIndex = (byte)selectedRow.Cells["GelirKategoriId"].Value;
                 cmbGelirKategori.SelectedText = selectedRow.Cells["GelirKategoriAdi"].Value.ToString();
                 txtTutar.Text = selectedRow.Cells["Tutar"].Value.ToString();
-                mskTarih.Text = selectedRow.Cells["Tarih"].Value.ToString();
+
+                // Tarihi doğru formatta al
+                if (selectedRow.Cells["Tarih"].Value != null && DateTime.TryParse(selectedRow.Cells["Tarih"].Value.ToString(), out DateTime tarih))
+                {
+                    mskTarih.Text = tarih.ToString("dd.MM.yyyy");
+                }
+                else
+                {
+                    mskTarih.Text = "";
+                }
+
                 txtVeren.Text = selectedRow.Cells["Veren"].Value.ToString();
                 txtEvrakNo.Text = selectedRow.Cells["EvrakNo"].Value.ToString();
 
