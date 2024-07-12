@@ -6,6 +6,7 @@ using Entities.DTOs;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -89,6 +90,27 @@ namespace Forms
 
         public void DataGridVieweSiraNoEkle()
         {
+            //// S.N kolonunu ekle, eğer zaten yoksa
+            //if (!dgvGelirler.Columns.Contains("SN"))
+            //{
+            //    DataGridViewTextBoxColumn snColumn = new DataGridViewTextBoxColumn();
+            //    snColumn.Name = "SN";
+            //    snColumn.HeaderText = "S.N";
+            //    snColumn.ReadOnly = true; // Sıra numarası kolonunu yalnızca okunabilir yap
+            //    dgvGelirler.Columns.Insert(0, snColumn); // Kolonu en başa ekleyelim
+
+            //    // S.N kolonunun genişliğini ayarla
+            //    dgvGelirler.Columns["SN"].Width = 10; // Örneğin 50 piksel olarak ayarlayabilirsiniz
+            //}
+
+            //// Diğer DataGridView ayarları
+            //dgvGelirler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            //dgvGelirler.RowHeadersVisible = false;
+            //dgvGelirler.ColumnHeadersDefaultCellStyle.Font = new Font("Impact", 14);
+            //dgvGelirler.ColumnHeadersHeight = 40;
+            //dgvGelirler.EnableHeadersVisualStyles = false;
+            //dgvGelirler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
+
             // S.N kolonunu ekle, eğer zaten yoksa
             if (!dgvGelirler.Columns.Contains("SN"))
             {
@@ -99,7 +121,7 @@ namespace Forms
                 dgvGelirler.Columns.Insert(0, snColumn); // Kolonu en başa ekleyelim
 
                 // S.N kolonunun genişliğini ayarla
-                dgvGelirler.Columns["SN"].Width = 10; // Örneğin 50 piksel olarak ayarlayabilirsiniz
+                dgvGelirler.Columns["SN"].Width = 50; // Örneğin 50 piksel olarak ayarlayabilirsiniz
             }
 
             // Diğer DataGridView ayarları
@@ -110,6 +132,16 @@ namespace Forms
             dgvGelirler.EnableHeadersVisualStyles = false;
             dgvGelirler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
         }
+
+        //SIRA NO EKLEMEK İÇİN
+        private void UpdateSiraNumaralari()
+        {
+            for (int i = 0; i < dgvGelirler.Rows.Count; i++)
+            {
+                dgvGelirler.Rows[i].Cells["SN"].Value = (i + 1).ToString();
+            }
+        }
+
         private void FrmGelir_Load(object sender, EventArgs e)
         {
             try
@@ -120,8 +152,13 @@ namespace Forms
                 Gizle();
                 lblToplamGelir.Visible = false;
 
+
+                // Sıra numarası kolonunu ekleyin ve doldurun
                 DataGridVieweSiraNoEkle();
                 Gelirler();
+                Debug.WriteLine($"Row Count Before Updating SN: {dgvGelirler.Rows.Count}");
+                UpdateSiraNumaralari();
+
 
                 SetupListView();
                 HesaplaVeYazdir();
@@ -190,8 +227,8 @@ namespace Forms
             toplamItem.Text = "TOPLAM";
             toplamItem.SubItems.Add(string.Format("{0:#,0.00}", toplam));
             listViewGelirler.Items.Add(toplamItem);
-
         }
+
 
         // GelirKategoriId'ye göre kategori adını dönen yardımcı bir metot
         private string GetGelirKategoriAdi(int kategoriId)
@@ -224,6 +261,37 @@ namespace Forms
         }
         private void pcBoxKaydet_Click(object sender, EventArgs e)
         {
+            //try
+            //{
+            //    if (!string.IsNullOrEmpty(txtTutar.Text) && !string.IsNullOrEmpty(txtVeren.Text) && !string.IsNullOrEmpty(cmbGelirKategori.Text) && !string.IsNullOrEmpty(mskTarih.Text))
+            //    {
+            //        Gelir yeniGelir = new Gelir();
+            //        yeniGelir.KoyId = _seciliKoyIndex;
+            //        yeniGelir.DonemId = _seciliDonemIndex;
+            //        yeniGelir.GelirKategoriId = (cmbGelirKategori.SelectedItem as GelirKategori).Id; // cmbGelirKategori'den seçilen öge GelirKategori türüne dönüştürülür, yoksa null değeri alır.
+            //        yeniGelir.Tutar = Convert.ToDecimal(txtTutar.Text);
+            //        yeniGelir.Tarih = Convert.ToDateTime(mskTarih.Text);
+            //        yeniGelir.Veren = txtVeren.Text;
+            //        yeniGelir.EvrakNo = txtEvrakNo.Text;
+
+            //        gelirManager.Add(yeniGelir);
+            //        Gelirler(yeniGelir.Id);  // yeniGelir.Id'yi Gelirler metoduna geçiriyoruz
+            //        Temizle();
+
+            //        ToplamGelir();
+            //        HesaplaVeYazdir();
+            //        AnaSayfaGuncelle();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Lütfen Boş Alanları Doldurunuz!");
+            //    }
+            //}
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Gelir Kaydı Yapılamadı !!!");
+            //    throw;
+            //}
             try
             {
                 if (!string.IsNullOrEmpty(txtTutar.Text) && !string.IsNullOrEmpty(txtVeren.Text) && !string.IsNullOrEmpty(cmbGelirKategori.Text) && !string.IsNullOrEmpty(mskTarih.Text))
@@ -238,12 +306,15 @@ namespace Forms
                     yeniGelir.EvrakNo = txtEvrakNo.Text;
 
                     gelirManager.Add(yeniGelir);
-                    Gelirler(yeniGelir.Id);  // yeniGelir.Id'yi Gelirler metoduna geçiriyoruz
+                    Gelirler(yeniGelir.Id);
                     Temizle();
 
                     ToplamGelir();
                     HesaplaVeYazdir();
                     AnaSayfaGuncelle();
+
+                    // Sıra numaralarını güncelle
+                    UpdateSiraNumaralari();
                 }
                 else
                 {
@@ -315,15 +386,58 @@ namespace Forms
         //Gelirleri DatagridView'e yükleyecek metot
         private void Gelirler(int yeniGelirId = -1)
         {
+            //try
+            //{
+            //    dgvGelirler.DataSource = gelirManager.GetListGelirDetailsKoyAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
+
+            //    // Sıra numarası kolonunu güncelle
+            //    for (int i = 0; i < dgvGelirler.Rows.Count; i++)
+            //    {
+            //        dgvGelirler.Rows[i].Cells["SN"].Value = i + 1;
+            //    }
+
+            //    // Diğer kolon ayarları
+            //    dgvGelirler.Columns["GelirId"].Visible = false;
+            //    dgvGelirler.Columns["KoyAdi"].Visible = false;
+            //    dgvGelirler.Columns["DonemAdi"].Visible = false;
+            //    dgvGelirler.Columns["KoyId"].Visible = false;
+            //    dgvGelirler.Columns["DonemId"].Visible = false;
+            //    dgvGelirler.Columns["GelirKategoriId"].Visible = false;
+
+            //    dgvGelirler.Columns["GelirKategoriAdi"].HeaderText = "Kategori";
+            //    dgvGelirler.Columns["EvrakNo"].HeaderText = "Evrak No";
+
+            //    // Tutar kolonundaki sayıları formatlamak için
+            //    dgvGelirler.Columns["Tutar"].DefaultCellStyle.Format = "#,0.00";
+
+            //    // Tarih kolonundaki tarihi formatlamak için
+            //    dgvGelirler.Columns["Tarih"].DefaultCellStyle.Format = "dd.MM.yyyy";
+
+            //    ToplamGelir(); // Veriler yenilendiğinde toplamı hesapla
+
+            //    // Yeni kaydın indeksini bul ve seç
+            //    if (yeniGelirId != -1)
+            //    {
+            //        foreach (DataGridViewRow row in dgvGelirler.Rows)
+            //        {
+            //            if (Convert.ToInt32(row.Cells["GelirId"].Value) == yeniGelirId)
+            //            {
+            //                row.Selected = true;
+            //                dgvGelirler.FirstDisplayedScrollingRowIndex = row.Index;
+            //                break;
+            //            }
+            //        }
+            //    }
+            //}
+            //catch (Exception)
+            //{
+            //    throw;
+            //}
             try
             {
-                dgvGelirler.DataSource = gelirManager.GetListGelirDetailsKoyAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
+                var gelirListesi = gelirManager.GetListGelirDetailsKoyAndDonemId(_seciliKoyIndex, _seciliDonemIndex);
 
-                // Sıra numarası kolonunu güncelle
-                for (int i = 0; i < dgvGelirler.Rows.Count; i++)
-                {
-                    dgvGelirler.Rows[i].Cells["SN"].Value = i + 1;
-                }
+                dgvGelirler.DataSource = gelirListesi; // Gelirleri DataGridView'e bağlayın
 
                 // Diğer kolon ayarları
                 dgvGelirler.Columns["GelirId"].Visible = false;
@@ -342,25 +456,18 @@ namespace Forms
                 // Tarih kolonundaki tarihi formatlamak için
                 dgvGelirler.Columns["Tarih"].DefaultCellStyle.Format = "dd.MM.yyyy";
 
-                ToplamGelir(); // Veriler yenilendiğinde toplamı hesapla
+                dgvGelirler.AutoGenerateColumns = false; // Bu satırı ekleyin
 
-                // Yeni kaydın indeksini bul ve seç
-                if (yeniGelirId != -1)
-                {
-                    foreach (DataGridViewRow row in dgvGelirler.Rows)
-                    {
-                        if (Convert.ToInt32(row.Cells["GelirId"].Value) == yeniGelirId)
-                        {
-                            row.Selected = true;
-                            dgvGelirler.FirstDisplayedScrollingRowIndex = row.Index;
-                            break;
-                        }
-                    }
-                }
+                // Toplam geliri hesapla
+                ToplamGelir();
+
+                // SN numaralarını güncelleyin
+                UpdateSiraNumaralari(); // Burada çağırıyoruz
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                MessageBox.Show("Gelirler yüklenirken bir hata oluştu: " + ex.Message);
+                MessageBox.Show($"Hata: {ex.Message}"); // Hata mesajını göster
             }
         }
 

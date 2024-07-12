@@ -63,6 +63,16 @@ namespace Forms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BtnKaydet {
+            get {
+                object obj = ResourceManager.GetObject("BtnKaydet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Creative_Freedom_Free_Funktional_14_Delete_48 {
             get {
                 object obj = ResourceManager.GetObject("Creative-Freedom-Free-Funktional-14-Delete.48", resourceCulture);

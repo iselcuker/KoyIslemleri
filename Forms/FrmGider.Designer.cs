@@ -273,7 +273,7 @@
             dgvGiderler.ReadOnly = true;
             dgvGiderler.RowHeadersWidth = 51;
             dgvGiderler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvGiderler.Size = new Size(1226, 434);
+            dgvGiderler.Size = new Size(1226, 430);
             dgvGiderler.TabIndex = 128;
             dgvGiderler.CellDoubleClick += dgvGiderler_CellDoubleClick;
             dgvGiderler.DataBindingComplete += dgvGiderler_DataBindingComplete;
@@ -281,7 +281,7 @@
             // listViewGiderler
             // 
             listViewGiderler.BackColor = SystemColors.Control;
-            listViewGiderler.BorderStyle = BorderStyle.FixedSingle;
+            listViewGiderler.BorderStyle = BorderStyle.None;
             listViewGiderler.Location = new Point(632, 69);
             listViewGiderler.Name = "listViewGiderler";
             listViewGiderler.Size = new Size(465, 252);

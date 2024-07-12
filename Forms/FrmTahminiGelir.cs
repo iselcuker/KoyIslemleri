@@ -353,41 +353,6 @@ namespace Forms
         //Gelirleri DatagridView'e yükleyecek metot
         private void TahminiGelirler()
         {
-            //try
-            //{
-            //    // Tahmini gelirleri DataGridView'e yükler
-            //    var gelirler = tahminiButceGelirManager.GetTahminiButceGelirDetails(_seciliKoyIndex, _seciliDonemIndex);
-
-            //    // Veriyi DataGridView'e bağla
-            //    dgvTahminiGelirler.DataSource = gelirler;
-
-            //    // Gereksiz kolonları gizle
-            //    dgvTahminiGelirler.Columns["TahminiButceGelirId"].Visible = false;
-            //    dgvTahminiGelirler.Columns["KoyAdi"].Visible = false;
-            //    dgvTahminiGelirler.Columns["DonemAdi"].Visible = false;
-            //    dgvTahminiGelirler.Columns["KoyId"].Visible = false;
-            //    dgvTahminiGelirler.Columns["DonemId"].Visible = false;
-            //    dgvTahminiGelirler.Columns["GelirKategoriId"].Visible = false;
-            //    dgvTahminiGelirler.Columns["DegisiklikId"].Visible = false; // Bu satırı kaldırın
-
-            //    dgvTahminiGelirler.Columns["GelirKategoriAdi"].HeaderText = "Gelir Kategori Türü";
-            //    dgvTahminiGelirler.Columns["DegisiklikAdi"].HeaderText = "Değişiklik";
-            //    dgvTahminiGelirler.Columns["TahminiGelirTutari"].HeaderText = "Tutar";
-
-            //    // DataGridView'in görüntü ayarlarını yapar
-            //    dgvTahminiGelirler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Tüm alanı kaplaması için
-            //    dgvTahminiGelirler.RowHeadersVisible = false; // Sol baştaki boş satırları gizler
-            //    dgvTahminiGelirler.ColumnHeadersDefaultCellStyle.Font = new Font("Impact", 14); // Başlık yazı fontu ve büyüklüğü
-            //    dgvTahminiGelirler.ColumnHeadersHeight = 40; // Başlık yüksekliği
-            //    dgvTahminiGelirler.EnableHeadersVisualStyles = false; // Başlık yazı rengini değiştirmek için
-            //    dgvTahminiGelirler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray; // Başlık arka plan rengi
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    // Hata oluştuğunda kullanıcıya bilgi verir
-            //    MessageBox.Show("Veri yüklenirken bir hata oluştu: " + ex.Message);
-            //}
             try
             {
                 // Tahmini gelirleri DataGridView'e yükler
