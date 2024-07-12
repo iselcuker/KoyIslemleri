@@ -268,8 +268,6 @@ namespace Forms
                 pcBoxSil.Location = new Point(267, 185);
                 pcBoxGuncelle.Location = new Point(358, 185);
 
-
-
                 LoadDegisiklikler();
             }
             else
@@ -310,6 +308,9 @@ namespace Forms
                 dgvTahminiEkGelirler.Columns["GelirKategoriAdi"].HeaderText = "Gelir Kategori Türü";
                 dgvTahminiEkGelirler.Columns["DegisiklikAdi"].HeaderText = "Değişiklik";
                 dgvTahminiEkGelirler.Columns["EkGelirTutari"].HeaderText = "Tutar";
+
+                // Tutar kolonundaki sayıları formatlamak için
+                dgvTahminiEkGelirler.Columns["EkGelirTutari"].DefaultCellStyle.Format = "#,0.00";
 
                 // DataGridView'in görüntü ayarlarını yapar
                 dgvTahminiEkGelirler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Tüm alanı kaplaması için

@@ -181,6 +181,9 @@ namespace Forms
                 dgvTahminiGiderler.Columns["GiderAltKategoriId"].Visible = false;
                 dgvTahminiGiderler.Columns["DegisiklikId"].Visible = false; // Bu satırı kaldırın
 
+                // Tutar kolonundaki sayıları formatlamak için
+                dgvTahminiGiderler.Columns["Tutar"].DefaultCellStyle.Format = "#,0.00";
+
                 // DataGridView'in görüntü ayarlarını yapar
                 dgvTahminiGiderler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Tüm alanı kaplaması için
                 dgvTahminiGiderler.RowHeadersVisible = false; // Sol baştaki boş satırları gizler

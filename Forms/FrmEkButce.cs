@@ -131,6 +131,9 @@ namespace Forms
 
                     dgvEkButceler.Columns["EkButceTutari"].HeaderText = "TUTAR";
 
+                    // Tutar kolonundaki sayıları formatlamak için
+                    dgvEkButceler.Columns["EkButceTutari"].DefaultCellStyle.Format = "#,0.00";
+
                     // DataGridView'in sütunlarının yeniden düzenlenmesini engelle.
                     dgvEkButceler.AllowUserToOrderColumns = false;
                     // DataGridView'in kullanıcı tarafından sütun eklenmesini engelle.

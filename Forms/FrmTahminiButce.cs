@@ -26,7 +26,7 @@ namespace Forms
         private FrmAnaSayfa _anaSayfaForm;
         private FrmTahminiButce _tahminiButceForm;
 
-       
+
 
         private decimal kalanButceTutari; // Kalan bütçe tutarını takip etmek için
 
@@ -194,6 +194,9 @@ namespace Forms
                     dgvTahminiButceler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
                     dgvTahminiButceler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
                     dgvTahminiButceler.ColumnHeadersHeight = 40;
+
+                    // Tutar kolonundaki sayıları formatlamak için
+                    dgvTahminiButceler.Columns["TahminiButceTutari"].DefaultCellStyle.Format = "#,0.00";
 
                     // DataGridView'in sütunlarının yeniden düzenlenmesini engelle.
                     dgvTahminiButceler.AllowUserToOrderColumns = false;

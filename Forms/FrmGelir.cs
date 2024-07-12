@@ -122,6 +122,7 @@ namespace Forms
 
                 DataGridVieweSiraNoEkle();
                 Gelirler();
+
                 SetupListView();
                 HesaplaVeYazdir();
                 dgvGelirler.ClearSelection(); // İlk satırın seçili olmasını engelle
@@ -334,6 +335,9 @@ namespace Forms
 
                 dgvGelirler.Columns["GelirKategoriAdi"].HeaderText = "Kategori";
                 dgvGelirler.Columns["EvrakNo"].HeaderText = "Evrak No";
+
+                // Tutar kolonundaki sayıları formatlamak için
+                dgvGelirler.Columns["Tutar"].DefaultCellStyle.Format = "#,0.00";
 
                 ToplamGelir(); // Veriler yenilendiğinde toplamı hesapla
             }
@@ -555,7 +559,7 @@ namespace Forms
             }
         }
 
-        //ARABA İŞLEMİ İÇİN
+        //ARAMA İŞLEMİ İÇİN
         private void txtBul_TextChanged(object sender, EventArgs e)
         {
             // TextBox'taki metni al
@@ -601,6 +605,10 @@ namespace Forms
             if (dgvGelirler.Columns["GelirKategoriId"] != null)
             {
                 dgvGelirler.Columns["GelirKategoriId"].Visible = false;
+            }
+            if (dgvGelirler.Columns["GelirKategoriAdi"] != null)
+            {
+                dgvGelirler.Columns["GelirKategoriAdi"].Visible = true;
             }
         }
 

@@ -114,8 +114,6 @@ namespace Forms
                         cmbIdariIslerAltKategori.DisplayMember = "AltKategoriAdi"; // Görüntülenecek alan
                         cmbIdariIslerAltKategori.ValueMember = "Id"; // Değer olarak kullanılacak alan
                         cmbIdariIslerAltKategori.DataSource = secilenKategorinAltKategorisi;
-
-
                     }
                 }
             }
@@ -224,6 +222,9 @@ namespace Forms
                 dgvTahminiIdariIsler.Columns["DonemId"].Visible = false;
                 dgvTahminiIdariIsler.Columns["IdariIslerKategoriId"].Visible = false;
                 dgvTahminiIdariIsler.Columns["IdariIslerAltKategoriId"].Visible = false; // Bu satırı kaldırın
+
+                // Tutar kolonundaki sayıları formatlamak için
+                dgvTahminiIdariIsler.Columns["TahminiIdariIslarTutari"].DefaultCellStyle.Format = "#,0.00";
 
                 // DataGridView'in görüntü ayarlarını yapar
                 dgvTahminiIdariIsler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Tüm alanı kaplaması için

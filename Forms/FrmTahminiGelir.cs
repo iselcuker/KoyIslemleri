@@ -221,6 +221,7 @@ namespace Forms
 
                 // Kalan tutarı mesaj olarak göster
                 MessageBox.Show(girilenTutar + " girişi yapıldı. Tahmini bütçeden kalan tutar: " + kalanTutar);
+                lblYeniTutar.Text = kalanTutar.ToString();
 
                 // Eğer kalan tutar 0 veya daha küçükse, yeni kayıt girmeyi engelle
                 if (kalanTutar <= 0)
@@ -279,7 +280,6 @@ namespace Forms
                 MessageBox.Show("Tahmini Gelir Kaydı Yapılamadı !!! " + ex.Message);
             }
         }
-
 
         public decimal GetTahminiButceTutari(int koyId, byte donemId)
         {
@@ -353,6 +353,41 @@ namespace Forms
         //Gelirleri DatagridView'e yükleyecek metot
         private void TahminiGelirler()
         {
+            //try
+            //{
+            //    // Tahmini gelirleri DataGridView'e yükler
+            //    var gelirler = tahminiButceGelirManager.GetTahminiButceGelirDetails(_seciliKoyIndex, _seciliDonemIndex);
+
+            //    // Veriyi DataGridView'e bağla
+            //    dgvTahminiGelirler.DataSource = gelirler;
+
+            //    // Gereksiz kolonları gizle
+            //    dgvTahminiGelirler.Columns["TahminiButceGelirId"].Visible = false;
+            //    dgvTahminiGelirler.Columns["KoyAdi"].Visible = false;
+            //    dgvTahminiGelirler.Columns["DonemAdi"].Visible = false;
+            //    dgvTahminiGelirler.Columns["KoyId"].Visible = false;
+            //    dgvTahminiGelirler.Columns["DonemId"].Visible = false;
+            //    dgvTahminiGelirler.Columns["GelirKategoriId"].Visible = false;
+            //    dgvTahminiGelirler.Columns["DegisiklikId"].Visible = false; // Bu satırı kaldırın
+
+            //    dgvTahminiGelirler.Columns["GelirKategoriAdi"].HeaderText = "Gelir Kategori Türü";
+            //    dgvTahminiGelirler.Columns["DegisiklikAdi"].HeaderText = "Değişiklik";
+            //    dgvTahminiGelirler.Columns["TahminiGelirTutari"].HeaderText = "Tutar";
+
+            //    // DataGridView'in görüntü ayarlarını yapar
+            //    dgvTahminiGelirler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Tüm alanı kaplaması için
+            //    dgvTahminiGelirler.RowHeadersVisible = false; // Sol baştaki boş satırları gizler
+            //    dgvTahminiGelirler.ColumnHeadersDefaultCellStyle.Font = new Font("Impact", 14); // Başlık yazı fontu ve büyüklüğü
+            //    dgvTahminiGelirler.ColumnHeadersHeight = 40; // Başlık yüksekliği
+            //    dgvTahminiGelirler.EnableHeadersVisualStyles = false; // Başlık yazı rengini değiştirmek için
+            //    dgvTahminiGelirler.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray; // Başlık arka plan rengi
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    // Hata oluştuğunda kullanıcıya bilgi verir
+            //    MessageBox.Show("Veri yüklenirken bir hata oluştu: " + ex.Message);
+            //}
             try
             {
                 // Tahmini gelirleri DataGridView'e yükler
@@ -373,6 +408,9 @@ namespace Forms
                 dgvTahminiGelirler.Columns["GelirKategoriAdi"].HeaderText = "Gelir Kategori Türü";
                 dgvTahminiGelirler.Columns["DegisiklikAdi"].HeaderText = "Değişiklik";
                 dgvTahminiGelirler.Columns["TahminiGelirTutari"].HeaderText = "Tutar";
+
+                // Tutar kolonundaki sayıları formatlamak için
+                dgvTahminiGelirler.Columns["TahminiGelirTutari"].DefaultCellStyle.Format = "#,0.00";
 
                 // DataGridView'in görüntü ayarlarını yapar
                 dgvTahminiGelirler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Tüm alanı kaplaması için
@@ -436,11 +474,25 @@ namespace Forms
                 // Verileri ilgili alanlara aktar
                 cmbGelirKategori.SelectedIndex = (byte)selectedRow.Cells["GelirKategoriId"].Value;
                 cmbGelirKategori.SelectedText = selectedRow.Cells["GelirKategoriAdi"].Value.ToString();
-                // cmbDegisiklik.SelectedIndex = (byte)selectedRow.Cells["DegisiklikId"].Value;
+                cmbDegisiklik.SelectedIndex = (byte)selectedRow.Cells["DegisiklikId"].Value;/////
                 cmbDegisiklik.SelectedText = selectedRow.Cells["DegisiklikAdi"].Value.ToString();
                 //txtTutar.Text=selectedRow.Cells
-                txtTutar.Text = selectedRow.Cells["TahimiGelirTutari"].Value.ToString();
+                txtTutar.Text = selectedRow.Cells["TahminiGelirTutari"].Value.ToString();
 
+                // Kalan tutarı hesapla
+                // TahminiButceTutari'nı al
+                decimal tahminiButceTutari = GetTahminiButceTutari(_seciliKoyIndex, _seciliDonemIndex);
+                // Girilen tutarı decimal tipine dönüştür
+                if (!decimal.TryParse(txtTutar.Text, out decimal girilenTutar))
+                {
+                    MessageBox.Show("Lütfen geçerli bir tutar giriniz!");
+                    return;
+                }
+                decimal kalanTutar = KalanTutar(tahminiButceTutari, girilenTutar);
+
+                // Kalan tutarı mesaj olarak göster
+                MessageBox.Show(girilenTutar + " güncellemesi yapıldı. Tahmini bütçeden kalan tutar: " + kalanTutar);
+                lblYeniTutar.Text = kalanTutar.ToString();
 
                 // Seçili satırı işaretle
                 dgvTahminiGelirler.Rows[rowIndex].Selected = true;

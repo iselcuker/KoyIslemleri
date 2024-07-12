@@ -202,6 +202,9 @@ namespace Forms
                 dgvGiderler.Columns["GiderAltKategoriAdi"].HeaderText = "Alt Kategori";
                 dgvGiderler.Columns["EvrakNo"].HeaderText = "Evrak No";
 
+                // Tutar kolonundaki sayıları formatlamak için
+                dgvGiderler.Columns["Tutar"].DefaultCellStyle.Format = "#,0.00";
+
                 ToplamGider(); // Veriler yenilendiğinde toplamı hesapla
             }
             catch (Exception ex)
