@@ -18,5 +18,7 @@ namespace Business.Abstract
         void Update(TahminiButce tahminiButce);
 
         List<TahminiButceDetailDto> GetTahminiButceDetails();
+
+       // void DeleteTahminiGelirAndTahminiGider(TahminiButce tahminiButce,TahminiButceGelir tahminiButceGelir,TahminiButceGider tahminiButceGider);
     }
 }

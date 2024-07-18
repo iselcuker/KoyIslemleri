@@ -4915,9 +4915,9 @@
             lblYanginDegisiklik.Location = new Point(46, 5);
             lblYanginDegisiklik.Margin = new Padding(1, 0, 1, 0);
             lblYanginDegisiklik.Name = "lblYanginDegisiklik";
-            lblYanginDegisiklik.Size = new Size(34, 11);
+            lblYanginDegisiklik.Size = new Size(10, 11);
             lblYanginDegisiklik.TabIndex = 249;
-            lblYanginDegisiklik.Text = "(ARAÇ)";
+            lblYanginDegisiklik.Text = "0";
             // 
             // panel274
             // 

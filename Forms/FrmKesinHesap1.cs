@@ -877,6 +877,32 @@ namespace Forms
             }
         }
 
+        private void KontrolEtVeGizle()
+        {
+            foreach (Control control in Controls) // Formdaki tüm kontrolleri döngüye al
+            {
+                if (control is Panel) // Kontrol bir panel mi kontrol et
+                {
+                    Panel panel = (Panel)control; // Panel olarak cast et
+
+                    foreach (Control innerControl in panel.Controls) // Panel içindeki kontrolleri döngüye al
+                    {
+                        if (innerControl is Label) // Kontrol bir label mı kontrol et
+                        {
+                            Label label = (Label)innerControl; // Label olarak cast et
+
+                            // Label'ın Text değerine göre visible'ı ayarla
+                            if (label.Text == "0" || label.Text == "0.00" || label.Text == "0,00")
+                            {
+                                label.Visible = false;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
         private void FrmKesinHesap1_Load(object sender, EventArgs e)
         {
             try
@@ -952,6 +978,9 @@ namespace Forms
                 SaglikToplamlari();
 
                 RakamlariPanelinSaginaYasla();
+
+                KontrolEtVeGizle();
+
             }
             catch (Exception ex)
             {
