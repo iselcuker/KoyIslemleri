@@ -43,7 +43,7 @@
             pcBoxSil = new PictureBox();
             pcBoxGuncelle = new PictureBox();
             pcBoxKaydet = new PictureBox();
-            lblYeniTutarYazisi = new Label();
+            lblKalanGiderTutari = new Label();
             lblYeniTutar = new Label();
             pnlGiderBaslik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvTahminiGiderler).BeginInit();
@@ -219,16 +219,16 @@
             pcBoxKaydet.TabStop = false;
             pcBoxKaydet.Click += pcBoxKaydet_Click;
             // 
-            // lblYeniTutarYazisi
+            // lblKalanGiderTutari
             // 
-            lblYeniTutarYazisi.AutoSize = true;
-            lblYeniTutarYazisi.Font = new Font("Calibri", 12F);
-            lblYeniTutarYazisi.ImeMode = ImeMode.NoControl;
-            lblYeniTutarYazisi.Location = new Point(547, 179);
-            lblYeniTutarYazisi.Name = "lblYeniTutarYazisi";
-            lblYeniTutarYazisi.Size = new Size(129, 19);
-            lblYeniTutarYazisi.TabIndex = 127;
-            lblYeniTutarYazisi.Text = "Kalan Gider Tutarı:";
+            lblKalanGiderTutari.AutoSize = true;
+            lblKalanGiderTutari.Font = new Font("Calibri", 12F);
+            lblKalanGiderTutari.ImeMode = ImeMode.NoControl;
+            lblKalanGiderTutari.Location = new Point(547, 179);
+            lblKalanGiderTutari.Name = "lblKalanGiderTutari";
+            lblKalanGiderTutari.Size = new Size(129, 19);
+            lblKalanGiderTutari.TabIndex = 127;
+            lblKalanGiderTutari.Text = "Kalan Gider Tutarı:";
             // 
             // lblYeniTutar
             // 
@@ -254,7 +254,7 @@
             Controls.Add(pnlGiderBaslik);
             Controls.Add(dgvTahminiGiderler);
             Controls.Add(lblYeniTutar);
-            Controls.Add(lblYeniTutarYazisi);
+            Controls.Add(lblKalanGiderTutari);
             Controls.Add(lblTutar);
             Controls.Add(cmbGiderAltKategori);
             Controls.Add(lblGiderAltKategori);
@@ -291,7 +291,7 @@
         private PictureBox pcBoxSil;
         private PictureBox pcBoxGuncelle;
         private PictureBox pcBoxKaydet;
-        private Label lblYeniTutarYazisi;
+        private Label lblKalanGiderTutari;
         private Label lblYeniTutar;
     }
 }
