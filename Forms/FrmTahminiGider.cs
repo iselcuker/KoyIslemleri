@@ -253,10 +253,36 @@ namespace Forms
             cmbGiderAltKategori.Items.AddRange(giderAltKategorileri.ToArray());
         }
 
+        private decimal GetToplamTahminiGider(int koyId, byte donemId)
+        {
+            using (KoyButcesiContext context = new KoyButcesiContext())
+            {
+                var toplamTahminiGider = context.TahminiButceGiders
+                    .Where(tb => tb.KoyId == koyId && tb.DonemId == donemId)
+                    .Sum(tb => (decimal?)tb.Tutar) ?? 0;
+
+                return toplamTahminiGider;
+            }
+        }
+
+        private decimal KalanTutar(decimal tahminiButceTutari, decimal girilenTutar)
+        {
+            // Toplam tahmini geliri al
+            decimal toplamTahminiGider = GetToplamTahminiGider(_seciliKoyIndex, _seciliDonemIndex);
+
+            // Kalan tutarı hesapla
+            decimal kalanTutar = tahminiButceTutari - toplamTahminiGider - girilenTutar;
+
+            return kalanTutar;
+        }
+
         private void pcBoxKaydet_Click(object sender, EventArgs e)
         {
             try
             {
+                // TahminiButceTutari'nı al
+                decimal tahminiButceTutari = GetTahminiButceTutari(_seciliKoyIndex, _seciliDonemIndex);
+
                 // Kategorinin seçili olup olmadığını kontrol et
                 if (cmbGiderKategori.SelectedIndex < 0 || !(cmbGiderKategori.SelectedItem is GiderKategori))
                 {
@@ -313,6 +339,30 @@ namespace Forms
                 {
                     // Seçilen değişiklik id'sini ekle
                     yeniTahminiGider.DegisiklikId = ((Degisiklik)cmbDegisiklik.SelectedItem).Id;
+                }
+
+
+                // Kalan tutarı hesapla
+                decimal kalanTutar = KalanTutar(tahminiButceTutari, girilenTutar);
+
+                // Kalan tutarı mesaj olarak göster
+                MessageBox.Show(girilenTutar + " girişi yapıldı. Tahmini bütçeden kalan tutar: " + kalanTutar);
+                lblYeniTutar.Text = kalanTutar.ToString();
+
+                // Eğer kalan tutar 0 veya daha küçükse, yeni kayıt girmeyi engelle
+                if (kalanTutar <= 0 )
+                {
+                    pcBoxKaydet.Visible = false;
+                    lblGiderKategori.Visible = false;
+                    cmbGiderKategori.Visible = false;
+                    lblGiderAltKategori.Visible = false;
+                    cmbGiderAltKategori.Visible = false;
+                    lblDegisiklik.Visible = false;
+                    cmbDegisiklik.Visible = false;
+                    lblTutar.Visible = false;
+                    txtTutar.Visible = false;
+                    lblYeniTutar.Visible = false;
+                    lblYeniTutarYazisi.Visible = false;
                 }
 
                 // TahminiButceGelir tablosuna yeni kaydı ekle

@@ -200,7 +200,7 @@
             lblYeniTutar.AutoSize = true;
             lblYeniTutar.Font = new Font("Verdana", 14.25F);
             lblYeniTutar.ImeMode = ImeMode.NoControl;
-            lblYeniTutar.Location = new Point(658, 186);
+            lblYeniTutar.Location = new Point(698, 186);
             lblYeniTutar.Name = "lblYeniTutar";
             lblYeniTutar.Size = new Size(22, 23);
             lblYeniTutar.TabIndex = 109;
@@ -211,7 +211,7 @@
             lblKalanGelirTutari.AutoSize = true;
             lblKalanGelirTutari.Font = new Font("Verdana", 14.25F);
             lblKalanGelirTutari.ImeMode = ImeMode.NoControl;
-            lblKalanGelirTutari.Location = new Point(454, 186);
+            lblKalanGelirTutari.Location = new Point(494, 186);
             lblKalanGelirTutari.Name = "lblKalanGelirTutari";
             lblKalanGelirTutari.Size = new Size(185, 23);
             lblKalanGelirTutari.TabIndex = 109;

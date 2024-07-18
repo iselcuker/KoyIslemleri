@@ -233,6 +233,8 @@ namespace Forms
                     cmbDegisiklik.Visible = false;
                     lblTutar.Visible = false;
                     txtTutar.Visible = false;
+                    lblYeniTutar.Visible = false;
+                    lblKalanGelirTutari.Visible = false;
                 }
 
                 // Degisiklik seçiliyse, Degisiklik nesnesini al
@@ -307,7 +309,7 @@ namespace Forms
             {
                 var toplamTahminiGelir = context.TahminiButceGelirs
                     .Where(tb => tb.KoyId == koyId && tb.DonemId == donemId)
-                    .Sum(tb => (decimal?)tb.TahminiGelirTutari) ?? 0;
+                    .Sum(tb => (decimal?)tb .TahminiGelirTutari) ?? 0;
 
                 return toplamTahminiGelir;
             }
@@ -437,27 +439,22 @@ namespace Forms
                 DataGridViewRow selectedRow = dgvTahminiGelirler.Rows[rowIndex];
 
                 // Verileri ilgili alanlara aktar
-                cmbGelirKategori.SelectedIndex = (byte)selectedRow.Cells["GelirKategoriId"].Value;
-                cmbGelirKategori.SelectedText = selectedRow.Cells["GelirKategoriAdi"].Value.ToString();
-                cmbDegisiklik.SelectedIndex = (byte)selectedRow.Cells["DegisiklikId"].Value;/////
-                cmbDegisiklik.SelectedText = selectedRow.Cells["DegisiklikAdi"].Value.ToString();
-                //txtTutar.Text=selectedRow.Cells
-                txtTutar.Text = selectedRow.Cells["TahminiGelirTutari"].Value.ToString();
+                cmbGelirKategori.SelectedIndex = selectedRow.Cells["GelirKategoriId"].Value != null ? (byte)selectedRow.Cells["GelirKategoriId"].Value : -1;
+                cmbGelirKategori.SelectedText = selectedRow.Cells["GelirKategoriAdi"].Value != null ? selectedRow.Cells["GelirKategoriAdi"].Value.ToString() : string.Empty;
 
-                // Kalan tutarı hesapla
-                // TahminiButceTutari'nı al
-                decimal tahminiButceTutari = GetTahminiButceTutari(_seciliKoyIndex, _seciliDonemIndex);
-                // Girilen tutarı decimal tipine dönüştür
-                if (!decimal.TryParse(txtTutar.Text, out decimal girilenTutar))
+                // DegisiklikId hücresinin null olup olmadığını kontrol et
+                if (selectedRow.Cells["DegisiklikId"].Value != null && (byte)selectedRow.Cells["DegisiklikId"].Value >= 0 && (byte)selectedRow.Cells["DegisiklikId"].Value < cmbDegisiklik.Items.Count)
                 {
-                    MessageBox.Show("Lütfen geçerli bir tutar giriniz!");
-                    return;
+                    cmbDegisiklik.SelectedIndex = (byte)selectedRow.Cells["DegisiklikId"].Value;
+                    cmbDegisiklik.SelectedText = selectedRow.Cells["DegisiklikAdi"].Value != null ? selectedRow.Cells["DegisiklikAdi"].Value.ToString() : string.Empty;
                 }
-                decimal kalanTutar = KalanTutar(tahminiButceTutari, girilenTutar);
+                else
+                {
+                    cmbDegisiklik.SelectedIndex = -1; // veya uygun bir varsayılan değer
+                    cmbDegisiklik.SelectedText = string.Empty;
+                }
 
-                // Kalan tutarı mesaj olarak göster
-                MessageBox.Show(girilenTutar + " güncellemesi yapıldı. Tahmini bütçeden kalan tutar: " + kalanTutar);
-                lblYeniTutar.Text = kalanTutar.ToString();
+                txtTutar.Text = selectedRow.Cells["TahminiGelirTutari"].Value != null ? selectedRow.Cells["TahminiGelirTutari"].Value.ToString() : string.Empty;
 
                 // Seçili satırı işaretle
                 dgvTahminiGelirler.Rows[rowIndex].Selected = true;
