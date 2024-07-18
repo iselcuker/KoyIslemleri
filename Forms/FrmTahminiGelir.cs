@@ -146,6 +146,9 @@ namespace Forms
 
             lblTutar.Location = new Point(22, 97);//
             txtTutar.Location = new Point(180, 94);//
+
+            // Kalan tutarı güncelle
+            GuncelleKalanTutar();
         }
 
         private void cmbGelirKategori_SelectedIndexChanged(object sender, EventArgs e)
@@ -173,25 +176,69 @@ namespace Forms
             }
         }
 
-        private decimal KalanTutar(decimal tahminiButceTutari, decimal girilenTutar)
-        {
-            // Toplam tahmini geliri al
-            decimal toplamTahminiGelir = GetToplamTahminiGelir(_seciliKoyIndex, _seciliDonemIndex);
-
-            // Kalan tutarı hesapla
-            decimal kalanTutar = tahminiButceTutari - toplamTahminiGelir - girilenTutar;
-
-            return kalanTutar;
-        }
-
-
-        private void pcBoxKaydet_Click(object sender, EventArgs e)
+        private void GuncelleKalanTutar(decimal girilenTutar = 0)
         {
             try
             {
                 // TahminiButceTutari'nı al
                 decimal tahminiButceTutari = GetTahminiButceTutari(_seciliKoyIndex, _seciliDonemIndex);
 
+                // Toplam tahmini geliri al
+                decimal toplamTahminiGelir = GetToplamTahminiGelir(_seciliKoyIndex, _seciliDonemIndex);
+
+                // Kalan tutarı hesapla
+                decimal kalanTutar = tahminiButceTutari - toplamTahminiGelir - girilenTutar;
+
+                // Kalan tutarı lblYeniTutar'a yazdır
+                lblYeniTutar.Text = kalanTutar.ToString();
+
+                // Eğer kalan tutar 0 veya daha küçükse, yeni kayıt girmeyi engelle
+                if (kalanTutar <= 0)
+                {
+                    pcBoxKaydet.Visible = false;
+                    lblGelirKategori.Visible = false;
+                    cmbGelirKategori.Visible = false;
+                    lblDegisiklik.Visible = false;
+                    cmbDegisiklik.Visible = false;
+                    lblTutar.Visible = false;
+                    txtTutar.Visible = false;
+                    lblYeniTutar.Visible = false;
+                    lblKalanGelirTutari.Visible = false;
+                    pcBoxGuncelle.Visible = false;
+                    pcBoxSil.Visible = false;
+                    dgvTahminiGelirler.Enabled = false;
+                }
+                else
+                {
+                    pcBoxKaydet.Visible = true;
+                    lblGelirKategori.Visible = true;
+                    cmbGelirKategori.Visible = true;
+                    lblDegisiklik.Visible = true;
+                    cmbDegisiklik.Visible = true;
+                    lblTutar.Visible = true;
+                    txtTutar.Visible = true;
+                    lblYeniTutar.Visible = true;
+                    lblKalanGelirTutari.Visible = true;
+                    pcBoxGuncelle.Visible = true;
+                    pcBoxSil.Visible = true;
+                    dgvTahminiGelirler.Enabled = true;
+
+                    lblTutar.Location = new Point(22, 130);//
+                    txtTutar.Location = new Point(180, 128);//
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kalan Tutar Güncellenemedi !!! " + ex.Message);
+            }
+        }
+
+
+
+        private void pcBoxKaydet_Click(object sender, EventArgs e)
+        {
+            try
+            {
                 // Kategorinin seçili olup olmadığını kontrol et
                 if (cmbGelirKategori.SelectedIndex < 0 || !(cmbGelirKategori.SelectedItem is GelirKategori))
                 {
@@ -216,26 +263,8 @@ namespace Forms
                     return;
                 }
 
-                // Kalan tutarı hesapla
-                decimal kalanTutar = KalanTutar(tahminiButceTutari, girilenTutar);
-
-                // Kalan tutarı mesaj olarak göster
-                MessageBox.Show(girilenTutar + " girişi yapıldı. Tahmini bütçeden kalan tutar: " + kalanTutar);
-                lblYeniTutar.Text = kalanTutar.ToString();
-
-                // Eğer kalan tutar 0 veya daha küçükse, yeni kayıt girmeyi engelle
-                if (kalanTutar <= 0)
-                {
-                    pcBoxKaydet.Visible = false;
-                    lblGelirKategori.Visible = false;
-                    cmbGelirKategori.Visible = false;
-                    lblDegisiklik.Visible = false;
-                    cmbDegisiklik.Visible = false;
-                    lblTutar.Visible = false;
-                    txtTutar.Visible = false;
-                    lblYeniTutar.Visible = false;
-                    lblKalanGelirTutari.Visible = false;
-                }
+                // Kalan tutarı güncelle
+                GuncelleKalanTutar(girilenTutar);
 
                 // Degisiklik seçiliyse, Degisiklik nesnesini al
                 Degisiklik selectedDegisiklik = null;
@@ -309,7 +338,7 @@ namespace Forms
             {
                 var toplamTahminiGelir = context.TahminiButceGelirs
                     .Where(tb => tb.KoyId == koyId && tb.DonemId == donemId)
-                    .Sum(tb => (decimal?)tb .TahminiGelirTutari) ?? 0;
+                    .Sum(tb => (decimal?)tb.TahminiGelirTutari) ?? 0;
 
                 return toplamTahminiGelir;
             }
