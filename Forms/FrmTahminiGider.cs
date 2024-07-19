@@ -46,18 +46,56 @@ namespace Forms
             //// Combobox'ları doldurma metotlarını çağır
             FillGiderKategori();
             LoadDegisiklikler();
+
+            // Button'ların MouseEnter ve MouseLeave olaylarını bağlayın
+            AttachMouseEvents(pcBoxKaydet, new Size(100, 84), new Size(85, 65));
+            AttachMouseEvents(pcBoxSil, new Size(100, 84), new Size(85, 65));
+            AttachMouseEvents(pcBoxGuncelle, new Size(100, 84), new Size(85, 65));
         }
+
+        #region Butonların üzerine mouse geldiğinde ve ayrıldığında boyut değişimi
+        private void AttachMouseEvents(Control control, Size enterSize, Size leaveSize)
+        {
+            control.MouseEnter += (sender, e) => Control_MouseEnter(sender, e, enterSize);
+            control.MouseLeave += (sender, e) => Control_MouseLeave(sender, e, leaveSize);
+        }
+
+        private void Control_MouseEnter(object sender, EventArgs e, Size size)
+        {
+            Control control = sender as Control;
+            if (control != null)
+            {
+                control.Size = size;
+            }
+        }
+
+        private void Control_MouseLeave(object sender, EventArgs e, Size size)
+        {
+            Control control = sender as Control;
+            if (control != null)
+            {
+                control.Size = size;
+            }
+        }
+        #endregion
 
         private void OgeYerlestir()
         {
+            lblGiderKategori.Location = new Point(10, 68);
+            cmbGiderKategori.Location = new Point(217, 60);
+            lblGiderAltKategori.Visible = false;
+            cmbGiderAltKategori.Visible = false;
             lblDegisiklik.Visible = false;
             cmbDegisiklik.Visible = false;
-            lblTutar.Location = new Point(10, 139);
-            txtTutar.Location = new Point(217, 134);
+            lblTutar.Visible = false;
+            txtTutar.Visible = false;
 
-            pcBoxKaydet.Location = new Point(217, 171);
-            pcBoxSil.Location = new Point(308, 171);
-            pcBoxGuncelle.Location = new Point(399, 171);
+            //lblTutar.Location = new Point(10, 139);
+            //txtTutar.Location = new Point(217, 134);
+
+            //pcBoxKaydet.Location = new Point(217, 211);
+            //pcBoxSil.Location = new Point(323, 171);
+            //pcBoxGuncelle.Location = new Point(428, 171);
         }
 
         // ComboBox'ları doldurma fonksiyonlarınızı gözden geçirin
@@ -107,10 +145,10 @@ namespace Forms
 
         private void FrmTahminiGider_Load(object sender, EventArgs e)
         {
+            OgeYerlestir();
             FillGiderKategori();
             LoadDegisiklikler();
             TahminiButceGiderleri();
-            OgeYerlestir();
             GuncelleKalanTutar();
         }
 
@@ -134,14 +172,18 @@ namespace Forms
                     // cmbGiderAltKategori'nin öğeleri olarak seçilen kategorinin alt kategorileri eklenir.
                     cmbGiderAltKategori.Items.AddRange(secilenKategorinAltKategorisi.ToArray());
 
+                    //// Öğeleri görünür yap
+                    //lblGiderAltKategori.Visible = true;
+                    //cmbGiderAltKategori.Visible = true;
+                    //lblTutar.Visible = true;
+                    //txtTutar.Visible = true;
+
                     // İlk alt kategori seçildiğinde sadece gerekli durumlarda Degisiklik görünürlüğünü ayarla
                     GiderAltKategori ilkAltKategori = secilenKategorinAltKategorisi.FirstOrDefault();
                     if (ilkAltKategori != null &&
                         (ilkAltKategori.GiderAltKategoriAdi == "Yangın Vesaiti Masrafı" ||
                          ilkAltKategori.GiderAltKategoriAdi == "Aydınlatma Masrafı" ||
                          ilkAltKategori.GiderAltKategoriAdi == "Vergi ve Sigorta Masrafı" ||
-                         ilkAltKategori.GiderAltKategoriAdi == "Köy Borçları, İstikraz Taksit ve Faizleri" ||
-                         ilkAltKategori.GiderAltKategoriAdi == "Mahkeme ve Keşif Masrafları" ||
                          ilkAltKategori.GiderAltKategoriAdi == "İstimlak Masrafları" ||
                          ilkAltKategori.GiderAltKategoriAdi == "Umulmadık Masraflar"))
                     {
@@ -150,7 +192,10 @@ namespace Forms
                     }
                     else
                     {
-                        OgeYerlestir();
+                        lblDegisiklik.Visible = false;
+                        cmbDegisiklik.Visible = false;
+                        lblTutar.Location = new Point(10, 139);
+                        txtTutar.Location = new Point(217, 134);
                     }
                 }
             }
@@ -285,15 +330,8 @@ namespace Forms
                 // Eğer kalan tutar 0 veya daha küçükse, yeni kayıt girmeyi engelle
                 if (kalanTutar <= 0)
                 {
+                    OgeYerlestir(); // Öğeleri gizle
                     pcBoxKaydet.Visible = false;
-                    lblGiderKategori.Visible = false;
-                    cmbGiderKategori.Visible = false;
-                    lblGiderAltKategori.Visible = false;
-                    cmbGiderAltKategori.Visible = false;
-                    lblDegisiklik.Visible = false;
-                    cmbDegisiklik.Visible = false;
-                    lblTutar.Visible = false;
-                    txtTutar.Visible = false;
                     lblYeniTutar.Visible = false;
                     lblKalanGiderTutari.Visible = false;
                     pcBoxGuncelle.Visible = false;
@@ -316,9 +354,6 @@ namespace Forms
                     pcBoxGuncelle.Visible = true;
                     pcBoxSil.Visible = true;
                     dgvTahminiGiderler.Enabled = true;
-
-                    //lblTutar.Location = new Point(22, 130);//
-                    //txtTutar.Location = new Point(180, 128);//
                 }
             }
             catch (Exception ex)

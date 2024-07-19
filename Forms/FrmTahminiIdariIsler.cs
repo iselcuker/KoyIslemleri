@@ -50,7 +50,38 @@ namespace Forms
             //AnaSayfada comboboxlardan yapılan seçimlerin index lerini getirmek için
             _seciliKoyIndex = seciliKoyIndex;
             _seciliDonemIndex = seciliDonemIndex;
+
+            // Button'ların MouseEnter ve MouseLeave olaylarını bağlayın
+            AttachMouseEvents(pcBoxKaydet, new Size(100, 84), new Size(85, 65));
+            AttachMouseEvents(pcBoxSil, new Size(100, 84), new Size(85, 65));
+            AttachMouseEvents(pcBoxGuncelle, new Size(100, 84), new Size(85, 65));
         }
+
+        #region Butonların üzerine mouse geldiğinde ve ayrıldığında boyut değişimi
+        private void AttachMouseEvents(Control control, Size enterSize, Size leaveSize)
+        {
+            control.MouseEnter += (sender, e) => Control_MouseEnter(sender, e, enterSize);
+            control.MouseLeave += (sender, e) => Control_MouseLeave(sender, e, leaveSize);
+        }
+
+        private void Control_MouseEnter(object sender, EventArgs e, Size size)
+        {
+            Control control = sender as Control;
+            if (control != null)
+            {
+                control.Size = size;
+            }
+        }
+
+        private void Control_MouseLeave(object sender, EventArgs e, Size size)
+        {
+            Control control = sender as Control;
+            if (control != null)
+            {
+                control.Size = size;
+            }
+        }
+        #endregion
 
         private void FrmTahminiIdariIsler_Load(object sender, EventArgs e)
         {

@@ -71,7 +71,45 @@ namespace Forms
 
             NotManager _notManager = new NotManager(new EfNotDal());
             notManager = _notManager;
+
+            // PictureBox'larýn MouseEnter ve MouseLeave olaylarýný baðlayýn
+            AttachMouseEvents(pcBoxGelir, new Size(157, 95), new Size(136, 90));
+            AttachMouseEvents(pcBoxGider, new Size(157, 95), new Size(136, 90));
+            AttachMouseEvents(pcBoxTahminiButce, new Size(157, 95), new Size(136, 90));
+            AttachMouseEvents(pcBoxEkButce, new Size(157, 95), new Size(136, 90));
+            AttachMouseEvents(pcBoxKesinHesap, new Size(157, 95), new Size(136, 90));
+            AttachMouseEvents(pcBoxGorevliler, new Size(157, 95), new Size(136, 90));
+
+            // Button'larýn MouseEnter ve MouseLeave olaylarýný baðlayýn
+            AttachMouseEvents(pcBoxKaydet, new Size(100, 84), new Size(85, 65));
+            AttachMouseEvents(pcBoxSil, new Size(100, 84), new Size(85, 65));
+            AttachMouseEvents(pcBoxGuncelle, new Size(100, 84), new Size(85, 65));
         }
+        #region Butonlarýn üzerine mouse geldiðinde ve ayrýldýðýnda boyut deðiþimi
+        private void AttachMouseEvents(Control control, Size enterSize, Size leaveSize)
+        {
+            control.MouseEnter += (sender, e) => Control_MouseEnter(sender, e, enterSize);
+            control.MouseLeave += (sender, e) => Control_MouseLeave(sender, e, leaveSize);
+        }
+
+        private void Control_MouseEnter(object sender, EventArgs e, Size size)
+        {
+            Control control = sender as Control;
+            if (control != null)
+            {
+                control.Size = size;
+            }
+        }
+
+        private void Control_MouseLeave(object sender, EventArgs e, Size size)
+        {
+            Control control = sender as Control;
+            if (control != null)
+            {
+                control.Size = size;
+            }
+        }
+        #endregion
 
         private decimal HesaplaToplamGelir(int seciliKoyIndex, byte seciliDonemIndex)
         {
@@ -419,8 +457,10 @@ namespace Forms
         {
             string Baslik = cmbKoy.Text;
             string Donem = cmbDonem.Text;
-            Donem = cmbDonem.Text;
             lblBaslik.Text = Baslik + " Köyü " + Donem + " Yýlý Ýþlemleri";
+
+            // lblBaslik'in yazý rengini kýrmýzý yap
+            lblBaslik.ForeColor = Color.DarkTurquoise;
         }
 
         private void PaneldekiFormuKapat()

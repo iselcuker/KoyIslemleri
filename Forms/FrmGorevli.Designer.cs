@@ -56,7 +56,7 @@
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(268, 254);
+            pcBoxSil.Location = new Point(259, 254);
             pcBoxSil.Name = "pcBoxSil";
             pcBoxSil.Size = new Size(85, 65);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -68,7 +68,7 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(359, 255);
+            pcBoxGuncelle.Location = new Point(360, 255);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -80,7 +80,7 @@
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(177, 254);
+            pcBoxKaydet.Location = new Point(155, 254);
             pcBoxKaydet.Name = "pcBoxKaydet";
             pcBoxKaydet.Size = new Size(85, 65);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -94,16 +94,16 @@
             pnlGelirBaslik.Dock = DockStyle.Top;
             pnlGelirBaslik.Location = new Point(0, 0);
             pnlGelirBaslik.Name = "pnlGelirBaslik";
-            pnlGelirBaslik.Size = new Size(807, 91);
+            pnlGelirBaslik.Size = new Size(807, 55);
             pnlGelirBaslik.TabIndex = 139;
             // 
             // lblBaslik
             // 
             lblBaslik.AutoSize = true;
-            lblBaslik.Font = new Font("321impact", 50.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblBaslik.Location = new Point(123, 9);
+            lblBaslik.Font = new Font("321impact", 30F);
+            lblBaslik.Location = new Point(254, 4);
             lblBaslik.Name = "lblBaslik";
-            lblBaslik.Size = new Size(367, 76);
+            lblBaslik.Size = new Size(219, 46);
             lblBaslik.TabIndex = 1;
             lblBaslik.Text = "GÖREVLİLER";
             // 
@@ -116,11 +116,11 @@
             dgvGorevliler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvGorevliler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvGorevliler.Dock = DockStyle.Bottom;
-            dgvGorevliler.Location = new Point(0, 326);
+            dgvGorevliler.Location = new Point(0, 341);
             dgvGorevliler.Name = "dgvGorevliler";
             dgvGorevliler.ReadOnly = true;
             dgvGorevliler.RowHeadersWidth = 51;
-            dgvGorevliler.Size = new Size(807, 379);
+            dgvGorevliler.Size = new Size(807, 364);
             dgvGorevliler.TabIndex = 138;
             dgvGorevliler.CellDoubleClick += dgvGorevliler_CellDoubleClick;
             // 

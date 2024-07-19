@@ -97,12 +97,12 @@
             dgvTahminiButceler.AllowUserToDeleteRows = false;
             dgvTahminiButceler.BackgroundColor = SystemColors.Control;
             dgvTahminiButceler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiButceler.Location = new Point(3, 174);
+            dgvTahminiButceler.Location = new Point(3, 187);
             dgvTahminiButceler.Name = "dgvTahminiButceler";
             dgvTahminiButceler.ReadOnly = true;
             dgvTahminiButceler.RowHeadersWidth = 51;
             dgvTahminiButceler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvTahminiButceler.Size = new Size(412, 623);
+            dgvTahminiButceler.Size = new Size(412, 611);
             dgvTahminiButceler.TabIndex = 117;
             dgvTahminiButceler.DataSourceChanged += dgvTahminiButceler_DataSourceChanged;
             dgvTahminiButceler.CellDoubleClick += dgvTahminiButceler_CellDoubleClick;
@@ -114,14 +114,14 @@
             pnlButceButonlari.Controls.Add(pcBoxTahminiGelir);
             pnlButceButonlari.Location = new Point(455, 64);
             pnlButceButonlari.Name = "pnlButceButonlari";
-            pnlButceButonlari.Size = new Size(420, 104);
+            pnlButceButonlari.Size = new Size(481, 104);
             pnlButceButonlari.TabIndex = 118;
             // 
             // pcBoxIdariIsler
             // 
             pcBoxIdariIsler.Cursor = Cursors.Hand;
             pcBoxIdariIsler.Image = (Image)resources.GetObject("pcBoxIdariIsler.Image");
-            pcBoxIdariIsler.Location = new Point(282, 10);
+            pcBoxIdariIsler.Location = new Point(334, 10);
             pcBoxIdariIsler.Name = "pcBoxIdariIsler";
             pcBoxIdariIsler.Size = new Size(130, 80);
             pcBoxIdariIsler.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -133,7 +133,7 @@
             // 
             pcBoxTahminiGider.Cursor = Cursors.Hand;
             pcBoxTahminiGider.Image = (Image)resources.GetObject("pcBoxTahminiGider.Image");
-            pcBoxTahminiGider.Location = new Point(146, 10);
+            pcBoxTahminiGider.Location = new Point(172, 10);
             pcBoxTahminiGider.Name = "pcBoxTahminiGider";
             pcBoxTahminiGider.Size = new Size(130, 80);
             pcBoxTahminiGider.SizeMode = PictureBoxSizeMode.StretchImage;

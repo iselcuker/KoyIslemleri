@@ -149,14 +149,14 @@
             pnlEkButceButonlari.Controls.Add(pcBoxEkGelir);
             pnlEkButceButonlari.Location = new Point(455, 64);
             pnlEkButceButonlari.Name = "pnlEkButceButonlari";
-            pnlEkButceButonlari.Size = new Size(288, 104);
+            pnlEkButceButonlari.Size = new Size(318, 104);
             pnlEkButceButonlari.TabIndex = 140;
             // 
             // pcBoxEkGider
             // 
             pcBoxEkGider.Cursor = Cursors.Hand;
             pcBoxEkGider.Image = (Image)resources.GetObject("pcBoxEkGider.Image");
-            pcBoxEkGider.Location = new Point(146, 10);
+            pcBoxEkGider.Location = new Point(165, 10);
             pcBoxEkGider.Name = "pcBoxEkGider";
             pcBoxEkGider.Size = new Size(130, 80);
             pcBoxEkGider.SizeMode = PictureBoxSizeMode.StretchImage;

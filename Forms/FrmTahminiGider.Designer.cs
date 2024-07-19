@@ -81,7 +81,7 @@
             dgvTahminiGiderler.BorderStyle = BorderStyle.None;
             dgvTahminiGiderler.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dgvTahminiGiderler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTahminiGiderler.Location = new Point(8, 283);
+            dgvTahminiGiderler.Location = new Point(7, 330);
             dgvTahminiGiderler.Name = "dgvTahminiGiderler";
             dgvTahminiGiderler.RowHeadersWidth = 51;
             dgvTahminiGiderler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -187,7 +187,7 @@
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(308, 171);
+            pcBoxSil.Location = new Point(323, 211);
             pcBoxSil.Name = "pcBoxSil";
             pcBoxSil.Size = new Size(85, 65);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -199,7 +199,7 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(399, 171);
+            pcBoxGuncelle.Location = new Point(428, 211);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -211,7 +211,7 @@
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(217, 171);
+            pcBoxKaydet.Location = new Point(217, 211);
             pcBoxKaydet.Name = "pcBoxKaydet";
             pcBoxKaydet.Size = new Size(85, 65);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;

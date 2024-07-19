@@ -99,7 +99,7 @@
             // 
             lblBaslik.AutoSize = true;
             lblBaslik.Font = new Font("321impact", 50.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblBaslik.Location = new Point(760, 9);
+            lblBaslik.Location = new Point(760, 5);
             lblBaslik.Name = "lblBaslik";
             lblBaslik.Size = new Size(0, 76);
             lblBaslik.TabIndex = 0;
@@ -303,7 +303,7 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(304, 260);
+            pcBoxGuncelle.Location = new Point(295, 260);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;

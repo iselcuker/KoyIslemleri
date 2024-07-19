@@ -43,8 +43,42 @@ namespace Forms
             koyManager = new KoyManager(new EfKoyDal());
             donemManager = new DonemManager(new EfDonemDal());
 
-            //pnlEkButceButonlari.Visible = false;
+            // PictureBox'ların MouseEnter ve MouseLeave olaylarını bağlayın
+            AttachMouseEvents(pcBoxTahminiGelir, new Size(157, 95), new Size(136, 90));
+            AttachMouseEvents(pcBoxTahminiGider, new Size(157, 95), new Size(136, 90));
+            AttachMouseEvents(pcBoxIdariIsler, new Size(157, 95), new Size(136, 90));
+
+            // Button'ların MouseEnter ve MouseLeave olaylarını bağlayın
+            AttachMouseEvents(pcBoxKaydet, new Size(100, 84), new Size(85, 65));
+            AttachMouseEvents(pcBoxSil, new Size(100, 84), new Size(85, 65));
+            AttachMouseEvents(pcBoxGuncelle, new Size(100, 84), new Size(85, 65));
         }
+
+        #region Butonların üzerine mouse geldiğinde ve ayrıldığında boyut değişimi
+        private void AttachMouseEvents(Control control, Size enterSize, Size leaveSize)
+        {
+            control.MouseEnter += (sender, e) => Control_MouseEnter(sender, e, enterSize);
+            control.MouseLeave += (sender, e) => Control_MouseLeave(sender, e, leaveSize);
+        }
+
+        private void Control_MouseEnter(object sender, EventArgs e, Size size)
+        {
+            Control control = sender as Control;
+            if (control != null)
+            {
+                control.Size = size;
+            }
+        }
+
+        private void Control_MouseLeave(object sender, EventArgs e, Size size)
+        {
+            Control control = sender as Control;
+            if (control != null)
+            {
+                control.Size = size;
+            }
+        }
+        #endregion
 
         public void load_form(object Form)
         {
