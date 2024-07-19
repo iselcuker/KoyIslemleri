@@ -172,12 +172,6 @@ namespace Forms
                     // cmbGiderAltKategori'nin öğeleri olarak seçilen kategorinin alt kategorileri eklenir.
                     cmbGiderAltKategori.Items.AddRange(secilenKategorinAltKategorisi.ToArray());
 
-                    //// Öğeleri görünür yap
-                    //lblGiderAltKategori.Visible = true;
-                    //cmbGiderAltKategori.Visible = true;
-                    //lblTutar.Visible = true;
-                    //txtTutar.Visible = true;
-
                     // İlk alt kategori seçildiğinde sadece gerekli durumlarda Degisiklik görünürlüğünü ayarla
                     GiderAltKategori ilkAltKategori = secilenKategorinAltKategorisi.FirstOrDefault();
                     if (ilkAltKategori != null &&
@@ -196,6 +190,9 @@ namespace Forms
                         cmbDegisiklik.Visible = false;
                         lblTutar.Location = new Point(10, 139);
                         txtTutar.Location = new Point(217, 134);
+                        pcBoxKaydet.Location = new Point(217, 172);
+                        pcBoxSil.Location = new Point(323, 172);
+                        pcBoxGuncelle.Location = new Point(428, 172);
                     }
                 }
             }

@@ -146,7 +146,7 @@
             grpSonDurum.Controls.Add(label1);
             grpSonDurum.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             grpSonDurum.ForeColor = SystemColors.ActiveCaptionText;
-            grpSonDurum.Location = new Point(12, 485);
+            grpSonDurum.Location = new Point(12, 501);
             grpSonDurum.Name = "grpSonDurum";
             grpSonDurum.Size = new Size(395, 216);
             grpSonDurum.TabIndex = 9;
@@ -273,7 +273,7 @@
             grpNot.Font = new Font("Stencil", 18F, FontStyle.Bold);
             grpNot.Location = new Point(12, 143);
             grpNot.Name = "grpNot";
-            grpNot.Size = new Size(395, 336);
+            grpNot.Size = new Size(395, 352);
             grpNot.TabIndex = 8;
             grpNot.TabStop = false;
             grpNot.Text = "NOT";

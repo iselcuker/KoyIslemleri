@@ -187,7 +187,7 @@
             // 
             pcBoxSil.Cursor = Cursors.Hand;
             pcBoxSil.Image = (Image)resources.GetObject("pcBoxSil.Image");
-            pcBoxSil.Location = new Point(323, 211);
+            pcBoxSil.Location = new Point(323, 172);
             pcBoxSil.Name = "pcBoxSil";
             pcBoxSil.Size = new Size(85, 65);
             pcBoxSil.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -199,7 +199,7 @@
             // 
             pcBoxGuncelle.Cursor = Cursors.Hand;
             pcBoxGuncelle.Image = (Image)resources.GetObject("pcBoxGuncelle.Image");
-            pcBoxGuncelle.Location = new Point(428, 211);
+            pcBoxGuncelle.Location = new Point(428, 172);
             pcBoxGuncelle.Name = "pcBoxGuncelle";
             pcBoxGuncelle.Size = new Size(85, 65);
             pcBoxGuncelle.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -211,7 +211,7 @@
             // 
             pcBoxKaydet.Cursor = Cursors.Hand;
             pcBoxKaydet.Image = Properties.Resources.Kaydet1;
-            pcBoxKaydet.Location = new Point(217, 211);
+            pcBoxKaydet.Location = new Point(217, 172);
             pcBoxKaydet.Name = "pcBoxKaydet";
             pcBoxKaydet.Size = new Size(85, 65);
             pcBoxKaydet.SizeMode = PictureBoxSizeMode.StretchImage;
