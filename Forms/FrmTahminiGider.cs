@@ -83,13 +83,16 @@ namespace Forms
         {
             lblGiderKategori.Location = new Point(10, 68);
             cmbGiderKategori.Location = new Point(217, 60);
-            lblGiderAltKategori.Visible = false;
-            cmbGiderAltKategori.Visible = false;
-            lblDegisiklik.Visible = false;
-            cmbDegisiklik.Visible = false;
-            lblTutar.Visible = false;
-            txtTutar.Visible = false;
 
+            // Gerekli olan kontrollerin görünürlüğünü true yapıyoruz
+            lblGiderAltKategori.Visible = true;
+            cmbGiderAltKategori.Visible = true;
+            lblDegisiklik.Visible = true;
+            cmbDegisiklik.Visible = true;
+            lblTutar.Visible = true;
+            txtTutar.Visible = true;
+
+            // Diğer kontrollerin yerleşimlerini ayarlıyoruz
             //lblTutar.Location = new Point(10, 139);
             //txtTutar.Location = new Point(217, 134);
 
@@ -97,6 +100,7 @@ namespace Forms
             //pcBoxSil.Location = new Point(323, 171);
             //pcBoxGuncelle.Location = new Point(428, 171);
         }
+
 
         // ComboBox'ları doldurma fonksiyonlarınızı gözden geçirin
         private void FillGiderKategori()
