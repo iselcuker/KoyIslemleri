@@ -312,32 +312,97 @@ namespace Forms
             }
         }
 
+        //private void GuncelleKalanTutar(decimal girilenTutar = 0)
+        //{
+        //    try
+        //    {
+        //        // TahminiButceTutari'nı al
+        //        decimal tahminiButceTutari = GetTahminiButceTutari(_seciliKoyIndex, _seciliDonemIndex);
+
+        //        // Toplam tahmini geliri al
+        //        decimal toplamTahminiGider = GetToplamTahminiGider(_seciliKoyIndex, _seciliDonemIndex);
+
+        //        // Kalan tutarı hesapla
+        //        decimal kalanTutar = tahminiButceTutari - toplamTahminiGider - girilenTutar;
+
+        //        // Kalan tutarı lblYeniTutar'a yazdır
+        //        lblYeniTutar.Text = kalanTutar.ToString();
+
+        //        // Eğer kalan tutar 0 veya daha küçükse, yeni kayıt girmeyi engelle
+        //        if (kalanTutar <= 0)
+        //        {
+        //            OgeYerlestir(); // Öğeleri gizle
+        //            pcBoxKaydet.Visible = false;
+        //            lblYeniTutar.Visible = false;
+        //            lblKalanGiderTutari.Visible = false;
+        //            pcBoxGuncelle.Visible = false;
+        //            pcBoxSil.Visible = false;
+        //            dgvTahminiGiderler.Enabled = false;
+        //        }
+        //        else
+        //        {
+        //            pcBoxKaydet.Visible = true;
+        //            lblGiderKategori.Visible = true;
+        //            cmbGiderKategori.Visible = true;
+        //            lblGiderAltKategori.Visible = true;
+        //            cmbGiderAltKategori.Visible = true;
+        //            lblDegisiklik.Visible = true;
+        //            cmbDegisiklik.Visible = true;
+        //            lblTutar.Visible = true;
+        //            txtTutar.Visible = true;
+        //            lblYeniTutar.Visible = true;
+        //            lblKalanGiderTutari.Visible = true;
+        //            pcBoxGuncelle.Visible = true;
+        //            pcBoxSil.Visible = true;
+        //            dgvTahminiGiderler.Enabled = true;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Kalan Tutar Güncellenemedi !!! " + ex.Message);
+        //    }
+        //}
+
         private void GuncelleKalanTutar(decimal girilenTutar = 0)
         {
             try
             {
                 // TahminiButceTutari'nı al
                 decimal tahminiButceTutari = GetTahminiButceTutari(_seciliKoyIndex, _seciliDonemIndex);
+             //   MessageBox.Show("Tahmini Bütçe Tutarı: " + tahminiButceTutari.ToString("N2"));
 
-                // Toplam tahmini geliri al
+                // Toplam tahmini gideri al
                 decimal toplamTahminiGider = GetToplamTahminiGider(_seciliKoyIndex, _seciliDonemIndex);
+            //    MessageBox.Show("Toplam Tahmini Gider: " + toplamTahminiGider.ToString("N2"));
 
-                // Kalan tutarı hesapla
-                decimal kalanTutar = tahminiButceTutari - toplamTahminiGider - girilenTutar;
+                // Tahmini bütçe tutarının %20'sini hesapla
+                decimal yedekTutar = tahminiButceTutari * 0.20m;
+
+                // Kalan tutarı hesapla (toplamTahminiGider'e yedekTutar ekleniyor)
+                decimal kalanTutar = tahminiButceTutari - (toplamTahminiGider + yedekTutar + girilenTutar);
+              //  MessageBox.Show("Kalan Tutar: " + kalanTutar.ToString("N2"));
 
                 // Kalan tutarı lblYeniTutar'a yazdır
-                lblYeniTutar.Text = kalanTutar.ToString();
+                lblYeniTutar.Text = kalanTutar.ToString("N2");
 
                 // Eğer kalan tutar 0 veya daha küçükse, yeni kayıt girmeyi engelle
                 if (kalanTutar <= 0)
                 {
                     OgeYerlestir(); // Öğeleri gizle
+                    lblGiderKategori.Visible = false;
+                    cmbGiderKategori.Visible = false;
+                    lblGiderAltKategori.Visible = false;
+                    cmbGiderAltKategori.Visible = false;
                     pcBoxKaydet.Visible = false;
                     lblYeniTutar.Visible = false;
                     lblKalanGiderTutari.Visible = false;
                     pcBoxGuncelle.Visible = false;
                     pcBoxSil.Visible = false;
                     dgvTahminiGiderler.Enabled = false;
+                    lblDegisiklik.Visible=false;
+                    cmbDegisiklik.Visible = false;
+                    lblTutar.Visible=false;
+                    txtTutar.Visible= false;
                 }
                 else
                 {
@@ -362,6 +427,8 @@ namespace Forms
                 MessageBox.Show("Kalan Tutar Güncellenemedi !!! " + ex.Message);
             }
         }
+
+
         private void pcBoxKaydet_Click(object sender, EventArgs e)
         {
             try
@@ -429,28 +496,6 @@ namespace Forms
 
                 // Kalan tutarı güncelle
                 GuncelleKalanTutar(girilenTutar);
-                //// Kalan tutarı hesapla
-                //decimal kalanTutar = KalanTutar(tahminiButceTutari, girilenTutar);
-
-                //// Kalan tutarı mesaj olarak göster
-                //MessageBox.Show(girilenTutar + " girişi yapıldı. Tahmini bütçeden kalan tutar: " + kalanTutar);
-                //lblYeniTutar.Text = kalanTutar.ToString();
-
-                //// Eğer kalan tutar 0 veya daha küçükse, yeni kayıt girmeyi engelle
-                //if (kalanTutar <= 0 )
-                //{
-                //    pcBoxKaydet.Visible = false;
-                //    lblGiderKategori.Visible = false;
-                //    cmbGiderKategori.Visible = false;
-                //    lblGiderAltKategori.Visible = false;
-                //    cmbGiderAltKategori.Visible = false;
-                //    lblDegisiklik.Visible = false;
-                //    cmbDegisiklik.Visible = false;
-                //    lblTutar.Visible = false;
-                //    txtTutar.Visible = false;
-                //    lblYeniTutar.Visible = false;
-                //    lblKalanGiderTutari.Visible = false;
-                //}
 
                 // TahminiButceGelir tablosuna yeni kaydı ekle
                 tahminiButceGiderManager.Add(yeniTahminiGider);

@@ -224,18 +224,18 @@
             lblKalanGiderTutari.AutoSize = true;
             lblKalanGiderTutari.Font = new Font("Calibri", 12F);
             lblKalanGiderTutari.ImeMode = ImeMode.NoControl;
-            lblKalanGiderTutari.Location = new Point(547, 179);
+            lblKalanGiderTutari.Location = new Point(590, 174);
             lblKalanGiderTutari.Name = "lblKalanGiderTutari";
-            lblKalanGiderTutari.Size = new Size(129, 19);
+            lblKalanGiderTutari.Size = new Size(82, 19);
             lblKalanGiderTutari.TabIndex = 127;
-            lblKalanGiderTutari.Text = "Kalan Gider Tutarı:";
+            lblKalanGiderTutari.Text = "Kalan Tutar";
             // 
             // lblYeniTutar
             // 
             lblYeniTutar.AutoSize = true;
             lblYeniTutar.Font = new Font("Calibri", 12F);
             lblYeniTutar.ImeMode = ImeMode.NoControl;
-            lblYeniTutar.Location = new Point(682, 179);
+            lblYeniTutar.Location = new Point(606, 203);
             lblYeniTutar.Name = "lblYeniTutar";
             lblYeniTutar.Size = new Size(17, 19);
             lblYeniTutar.TabIndex = 127;
